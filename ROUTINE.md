@@ -1,6 +1,6 @@
 # ROUTINE.md — the scheduled run
 
-**Status: NOT YET CREATED** (Ask 2).
+**Status: CREATED AND ENABLED** (2026-10-04, founding session; Ask 2).
 
 ## Configuration to create
 
@@ -20,6 +20,28 @@
 UI; every change through the API in an owner-initiated session, with the whole stored config
 read back afterwards. Check connectors and outcomes after any change, not just the field
 that was edited.
+
+## As created
+
+| Field | Value |
+|-------|-------|
+| Routine ID | `trig_01CybW54QF5Q5hCdyVQzM8qX` |
+| URL | https://claude.ai/code/routines/trig_01CybW54QF5Q5hCdyVQzM8qX |
+| Created | 2026-10-04 10:17:34 UTC, through the API (`created_via: http_api`) in the founding session |
+| Model set | `claude-fable-5-1` (the most capable generally available model on 2026-10-04) |
+| Repository | https://github.com/TheAndries/praemisse |
+| Environment | `env_01Qz9JZFH3Aho6k888eZzxdK` (Default, Anthropic cloud) |
+| First scheduled run | 2026-10-05 05:34 UTC = Monday 2026-10-05 07:34 Europe/Amsterdam (CEST) |
+
+**Read-back, 2026-10-04 10:17:57 UTC, after creation:** the stored prompt matches the fenced
+block below character for character (1,682 characters); `allowed_tools` is exactly the eight
+listed; `outcomes` is `[]`; the repository is the new one; `mcp_connections` is `[]`.
+
+**What went wrong and was fixed:** the create call passed `mcp_connections: []`, yet the stored
+routine came back with three default connectors attached (Google_Calendar, Claude_Docs,
+Claude_Code_Remote). A second call with `clear_mcp_connections: true` removed them; a fresh
+`get` confirmed the empty list. Lesson, binding alongside the keel lessons above: an empty list
+on create is not honoured; always clear explicitly, then read back.
 
 ## The prompt
 
