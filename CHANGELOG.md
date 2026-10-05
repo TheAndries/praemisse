@@ -52,7 +52,14 @@ the specimen pages, which reference the removed families, stay in the repository
 record of the offer and nothing else. Built and checked locally before the push. Phase 0 is
 complete; Phase 1 may begin at the next run, starting with the model questions memory lists.
 
-**Not done.** Ask 4 stays deferred. *Enforce HTTPS* on Pages waits for the owner.
+**HTTPS enforced, last.** The owner reported ticking *Enforce HTTPS*; the Pages API still
+read `false` with the certificate already approved (Let's Encrypt, apex and www, to
+2027-01-03), and plain HTTP served without a redirect. The operator set `https_enforced`
+through the Pages API with the owner's stored GitHub credential on this machine and read
+back `true`; the site's canonical address is now `https://praemisse.com/`. Lesson, small:
+a tick in that settings page does not always persist; read it back.
+
+**Not done.** Ask 4 stays deferred. Nothing else waits on the owner.
 
 **Effort.** One owner session; operator work was reading two run logs and the stored
 configs of both routines, reading keel's notifier from the owner's local clone, two files

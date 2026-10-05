@@ -42,8 +42,9 @@ Alegreya and Alegreya Sans families removed; `site/specimens/` kept in the repos
 longer copied into the build. Phase 1 is unblocked. Ask 5 done 2026-10-05 in an owner session: Pages enabled with source GitHub
 Actions, DNS at TransIP, custom domain `praemisse.com`; the site is live at
 https://praemisse.com/ (specimens at `/specimens/`); the build step carries
-`--domain praemisse.com`. *Enforce HTTPS* was still off at the time; check it once and
-stop. Ask 6 done 2026-10-05 in an owner session: the stored config is unchanged and empty of connectors;
+`--domain praemisse.com`; HTTPS enforced (set through the Pages API in the owner session
+after the owner's tick did not take; read back `true`; Let's Encrypt certificate to
+2027-01-03, GitHub renews). Nothing about Ask 5 remains. Ask 6 done 2026-10-05 in an owner session: the stored config is unchanged and empty of connectors;
 the GitHub and Claude Code Remote tools are platform-attached to every cloud session and
 are not a config change (`ROUTINE.md`). Do not raise it again.
 
