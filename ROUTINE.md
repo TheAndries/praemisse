@@ -43,6 +43,21 @@ Claude_Code_Remote). A second call with `clear_mcp_connections: true` removed th
 `get` confirmed the empty list. Lesson, binding alongside the keel lessons above: an empty list
 on create is not honoured; always clear explicitly, then read back.
 
+**Read-back, 2026-10-05 (owner session, Ask 6):** `mcp_connections` `[]`, `outcomes` `[]`,
+`updated_at` still 2026-10-04 10:17:57 UTC. Run 1 nevertheless saw GitHub and Claude Code
+Remote tools in its tool list: the platform attaches those to every cloud session regardless
+of the stored field. This is not a config change and is not to be raised as one again. The
+routine's `notifications` channels (email, push, slack) are all off, as keel's are.
+
+## How the owner is told about asks
+
+Not through the routine. Copied from keel on 2026-10-05: `.github/workflows/notify-asks.yml`
+runs on every push to `main` that touches `ASKS.md` and runs `tools/open_asks_issue.py`,
+which keeps one GitHub issue, *praemisse - open asks*, assigned to the owner. GitHub mails
+the assignment and every comment; a comment is posted only when the set of open asks
+changes and carries the full text of each new ask. Built-in `GITHUB_TOKEN`, no secrets, no
+cost. The routine needs no connector for this and must not be given one for it.
+
 ## The prompt
 
 ```

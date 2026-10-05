@@ -36,8 +36,17 @@ Attestations: none. Open motions: none. INBOX empty at run 1.
   (the operator did not use the GitHub API); the deploy step fails until Ask 5 (a).
 
 **Open asks.** 3 (choose the type; blocks Phase 1). 4 (mailbox; deferred by owner; blocks
-Phase 2). 5 (enable Pages, set DNS at TransIP, custom domain; blocks public viewing). 6
-(read the routine config back: connectors were visible in run 1 though recorded as `[]`).
+Phase 2). 5 (enable Pages, set DNS at TransIP, custom domain; blocks public viewing). Ask 6
+done 2026-10-05 in an owner session: the stored config is unchanged and empty of connectors;
+the GitHub and Claude Code Remote tools are platform-attached to every cloud session and
+are not a config change (`ROUTINE.md`). Do not raise it again.
+
+**The owner is told about asks** by `.github/workflows/notify-asks.yml` +
+`tools/open_asks_issue.py` (copied from keel 2026-10-05): one GitHub issue, *praemisse -
+open asks*, assigned to the owner, updated on every push that touches `ASKS.md`. Keep the
+`| # | Date | Ask | Blocks | Status |` table format; status `done ...` closes an ask, status
+containing *deferred* or *queued* lists it as needing no action. `site.yml` was verified to
+run on push: build and check pass, `deploy` fails until Ask 5 (a); that is expected.
 
 **When Ask 3 is done:** copy the chosen `type-X.css` over `site/static/type.css`, delete
 the two unused font directories and their `type-*.css`, record the choice in `DESIGN.md`

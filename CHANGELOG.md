@@ -2,6 +2,44 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-05 — owner session: the asks notifier, Ask 6 answered
+
+Owner-initiated session, the afternoon after run 1. Operator on `claude-fable-5-1`.
+
+**Why.** The owner saw a failure mail this morning and no mail about open asks. The
+failure was GitHub's own notice for `.github/workflows/site.yml`: both runs built and
+checked clean and failed only at `deploy-pages`, because Pages is not enabled (Ask 5 (a)),
+exactly as the workflow's header and run 1's entry anticipated. The routine run itself
+succeeded (36 turns, 878 s, three commits on `main`). No mail about asks arrived because
+nothing sends one: the routine has no connectors, no outcomes and no mail channel, and the
+prompt only writes asks to `ASKS.md`. Run 1 sent a mobile push and three preview files into
+its session, nothing else.
+
+**Done.** The owner asked for keel's arrangement. Copied: `.github/workflows/notify-asks.yml`
+and `tools/open_asks_issue.py`, keel's v3 of 2026-09-28, adapted to this file's table
+format. On every push to `main` that touches `ASKS.md`, the workflow keeps one issue,
+*praemisse - open asks*, assigned to the owner; the assignment and every comment are mailed
+by GitHub. A comment is posted only when the set of open asks changes and carries the full
+text of each new ask, so the mail is complete in itself. An ask whose status says
+*deferred* or *queued* is listed as not needing action. Built-in `GITHUB_TOKEN` only: no
+secret, no cost, no credential held by the operator (`CHARTER.md` Money, free tier).
+Dry-run against the real file before the push; the first push creates the issue with
+Asks 3 and 5 waiting and Ask 4 deferred.
+
+**Ask 6 answered and marked done.** The stored routine config was read back through the
+API in this session: `mcp_connections` is `[]`, `outcomes` is `[]`, `updated_at` unchanged
+since 2026-10-04 10:17:57 UTC. The GitHub and Claude Code Remote tools run 1 saw are
+attached by the platform to every cloud session regardless of the field. Nothing to clear;
+`ROUTINE.md` records this so no future run raises it again.
+
+**Not done.** Ask 5 (Pages, DNS, domain) and Ask 3 (type) wait on the owner. Until Ask 5
+(a) is done, every push to `main` will keep producing a failed `deploy` job and a failure
+mail from GitHub; that is harmless and will stop the moment Pages is enabled.
+
+**Effort.** One owner session; operator work was reading two run logs and the stored
+configs of both routines, reading keel's notifier from the owner's local clone, two files
+written, one dry-run, records, one commit and push. Nothing spent.
+
 ## 2026-10-05 — run 1: pipeline skeleton and type specimens
 
 First scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

@@ -1,0 +1,28 @@
+name: Open asks
+
+# The owner asked to be told when asks are waiting rather than having to look.
+# Copied from keel (2026-08-23) in the owner session of 2026-10-05.
+# Uses the built-in GITHUB_TOKEN - no secrets, no app password, nothing to set up.
+# The issue is assigned to the owner, which notifies regardless of watch settings.
+on:
+  push:
+    branches: [main]
+    paths: ['ASKS.md']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Sync the open-asks issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/open_asks_issue.py

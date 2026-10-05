@@ -33,7 +33,8 @@ available model is, and is never the thing that is checked.
 | [CHANGELOG.md](CHANGELOG.md) | Newest first. What was done, decided, and got wrong. |
 | [memory.md](memory.md) | Carried state, capped at 8,000 words. |
 | [LEDGER.md](LEDGER.md) | Every euro in and out. |
-| [ROUTINE.md](ROUTINE.md) | The scheduled run's exact configuration. |
+| [ROUTINE.md](ROUTINE.md) | The scheduled run's exact configuration, and how the owner is told about asks. |
+| [tools/](tools/) | Repository automation: `open_asks_issue.py` keeps the *open asks* issue that mails the owner. |
 
 ## Licences
 
