@@ -348,8 +348,8 @@ def build(nodes: list[Node], out: Path, domain: str | None) -> None:
     out.mkdir(parents=True)
     shutil.copytree(SITE / "static", out / "static")
     shutil.copytree(SITE / "fonts", out / "fonts")
-    if (SITE / "specimens").exists():
-        shutil.copytree(SITE / "specimens", out / "specimens", ignore=shutil.ignore_patterns("*.py"))
+    # site/specimens/ (the three directions offered under Ask 3) stays in the repository as the
+    # record of the choice but is no longer published: the owner chose B on 2026-10-05.
     ids = {n.id: n for n in nodes}
     global PREFIX
     for n in nodes:

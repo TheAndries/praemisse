@@ -1,6 +1,6 @@
 /* praemisse — layout and typographic rules shared by every page.
    Binding source: DESIGN.md. The typeface itself is set in type.css (chosen under Ask 3);
-   until then the three candidate directions live in type-a.css, type-b.css, type-c.css.
+   chosen 2026-10-05 (direction B, Libertine); the values below are only the fallback.
    No framework, no JavaScript on the reading path, no cookies. */
 
 :root {

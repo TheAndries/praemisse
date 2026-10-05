@@ -43,3 +43,9 @@ Decorative illustration of philosophers.
 The owner cares about the look and has taste. Before the first page is built, the operator
 shows him three typographic directions (a specimen page each, no content) and he chooses.
 That choice is recorded here and becomes binding.
+
+**Chosen, 2026-10-05, by the owner (owner decision, `BOARD.md`): direction B, Libertine.**
+Libertinus Serif for text and Libertinus Sans for labels, both self-hosted under the OFL,
+at the size and leading set in `site/static/type.css`. The three specimens remain in
+`site/specimens/` as the record of what was offered; they are no longer published. The
+unused families were removed from `site/fonts/`.

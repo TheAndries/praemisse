@@ -14,9 +14,9 @@ prose rendered from the nodes rather than written by hand. Code here is MIT ([`.
 | `templates/` | `base.html` (the one header and one footer), `node.html`, `index.html`. Plain `{{ name }}` substitution. |
 | `static/style.css` | Layout and typographic rules shared by every page. |
 | `static/type.css` | The chosen typeface (Ask 3). A placeholder until the owner chooses. |
-| `static/type-a.css`, `type-b.css`, `type-c.css` | The three candidate directions. |
+| `static/type.css` | The chosen type: direction B, Libertine (Ask 3, 2026-10-05). |
 | `fonts/` | Self-hosted, subset, OFL-licensed web fonts; see `fonts/README.md`. |
-| `specimens/` | The three typographic specimen pages for Ask 3, and `make.py` which writes them. |
+| `specimens/` | The three typographic specimen pages offered under Ask 3, and `make.py` which wrote them. Kept as the record; no longer built or published. |
 | `_build/` | Output. Not committed. |
 
 ## Build and publish
@@ -32,4 +32,4 @@ check: an unresolved link or a claim without a passage never reaches the site.
 ## Addresses
 
 Permanent (`CHARTER.md` P4, `DESIGN.md` 2): a node `a-foo` lives at `/a/foo/`; type indexes at
-`/a/`, `/c/`, `/t/` and so on; the specimens at `/specimens/`.
+`/a/`, `/c/`, `/t/` and so on.

@@ -41,8 +41,18 @@ clean, and https://praemisse.com/specimens/ serves the three specimens. The buil
 carries `--domain praemisse.com` so the artifact includes a `CNAME` file, as run 1's memory
 note planned. Left for the owner: tick *Enforce HTTPS* once GitHub's DNS check is green.
 
-**Not done.** Ask 3 (type) waits on the owner; the specimens are now at their public
-address. Ask 4 stays deferred.
+**Ask 3 done, later still.** The owner read the three specimens at praemisse.com and chose
+**B, Libertine**: Libertinus Serif with Libertinus Sans. Recorded as an owner decision in
+`BOARD.md` and transcribed into `DESIGN.md` under *Open design asks*, the one edit to that
+file the design rules themselves provide for. Then the steps run 1's memory note had
+planned: `site/static/type.css` is now the Libertine stylesheet; `type-a.css`, `type-b.css`,
+`type-c.css` and the EB Garamond, Source Sans 3, Alegreya and Alegreya Sans families are
+removed from `site/fonts/`; the build no longer copies `site/specimens/` into the site, so
+the specimen pages, which reference the removed families, stay in the repository as the
+record of the offer and nothing else. Built and checked locally before the push. Phase 0 is
+complete; Phase 1 may begin at the next run, starting with the model questions memory lists.
+
+**Not done.** Ask 4 stays deferred. *Enforce HTTPS* on Pages waits for the owner.
 
 **Effort.** One owner session; operator work was reading two run logs and the stored
 configs of both routines, reading keel's notifier from the owner's local clone, two files

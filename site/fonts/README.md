@@ -8,15 +8,13 @@ kept (small capitals, old-style figures, ligatures, kerning). Rebuilt with `pyft
 
 | Directory | Family | Source | Version fetched 2026-10-05 |
 |-----------|--------|--------|------|
-| `ebgaramond/` | EB Garamond (variable, upright and italic) | google/fonts `ofl/ebgaramond` | main |
-| `sourcesans3/` | Source Sans 3 (variable, upright and italic) | adobe-fonts/source-sans release `3.052R` (WOFF2 VF); OFL from google/fonts | 3.052 |
 | `libertinus/` | Libertinus Serif (Regular, Italic, Semibold, Semibold Italic), Libertinus Sans (Regular, Italic, Bold) | alerque/libertinus release `v7.051` (static OTF, then subset) | 7.051 |
-| `alegreya/` | Alegreya (variable, upright and italic) | google/fonts `ofl/alegreya` | main |
-| `alegreyasans/` | Alegreya Sans (Regular, Italic, Medium) | google/fonts `ofl/alegreyasans` | main |
 
-Three directions are offered under Ask 3: A = EB Garamond + Source Sans 3, B = Libertinus,
-C = Alegreya + Alegreya Sans. Once the owner chooses, the two unused families are removed
-from this directory and `site/static/type.css` is set to the chosen one.
+Three directions were offered under Ask 3: A = EB Garamond + Source Sans 3, B = Libertinus,
+C = Alegreya + Alegreya Sans. The owner chose B on 2026-10-05 (`DESIGN.md`, `BOARD.md`);
+the two unused families were removed from this directory in the same session and
+`site/static/type.css` carries the chosen one. The specimen pages in `site/specimens/`
+still reference the removed families and are kept only as the record of the offer.
 
 Not used: Source Serif 4 (the google/fonts build lacks polytonic Greek); the Libertinus
 release's own WOFF2 files (their OpenType feature tables are stripped — subset from the OTF).

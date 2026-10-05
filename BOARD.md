@@ -46,3 +46,4 @@ it is tracking. The board meets, and the decisions land here.
 | Date | Decision | Moved by | Notes |
 |------|----------|----------|-------|
 | 2026-10-04 | Project founded; `CHARTER.md`, `DISPUTES.md`, `DESIGN.md`, `MODEL.md` adopted as drafted | both | Founding session. Working name `premise`; renamed `praemisse` the same day under Ask 1. |
+| 2026-10-05 | The site's type is direction B, Libertine (Libertinus Serif and Sans) | owner | Owner decision under Ask 3, given in an owner session after reading the three specimens at praemisse.com. Transcribed into `DESIGN.md`, *Open design asks*. |

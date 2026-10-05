@@ -1,3 +1,18 @@
-/* Placeholder until the owner chooses a direction under Ask 3 (DESIGN.md, last section).
-   When chosen, this file becomes a copy of type-a.css, type-b.css or type-c.css. Until then
-   the site falls back to the system fonts named in style.css. */
+/* The project's type, chosen by the owner on 2026-10-05 under Ask 3 (DESIGN.md, Open design
+   asks): direction B, Libertine. Libertinus Serif and Libertinus Sans (Philipp H. Poll, Khaled
+   Hosny, Caleb Maclennan and contributors; OFL 1.1, see ../fonts/libertinus/OFL.txt). A serif
+   and a sans from the same hand, with full polytonic Greek. Binding; change only by board
+   decision recorded in BOARD.md. */
+@font-face { font-family: "Libertinus Serif"; src: url("../fonts/libertinus/LibertinusSerif-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Libertinus Serif"; src: url("../fonts/libertinus/LibertinusSerif-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Libertinus Serif"; src: url("../fonts/libertinus/LibertinusSerif-Semibold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Libertinus Serif"; src: url("../fonts/libertinus/LibertinusSerif-SemiboldItalic.woff2") format("woff2"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Libertinus Sans"; src: url("../fonts/libertinus/LibertinusSans-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Libertinus Sans"; src: url("../fonts/libertinus/LibertinusSans-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Libertinus Sans"; src: url("../fonts/libertinus/LibertinusSans-Bold.woff2") format("woff2"); font-weight: 600 700; font-style: normal; font-display: swap; }
+:root {
+  --serif: "Libertinus Serif", "Linux Libertine O", Palatino, "Book Antiqua", serif;
+  --sans: "Libertinus Sans", "Linux Biolinum O", "Gill Sans", "Trebuchet MS", sans-serif;
+  --body-size: 1.1875rem;
+  --body-leading: 1.45;
+}
