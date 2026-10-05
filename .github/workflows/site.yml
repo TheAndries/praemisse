@@ -1,0 +1,39 @@
+# Builds map/ into the static site and publishes it with GitHub Pages (free tier,
+# CHARTER.md Money). The owner must enable Pages once: Settings → Pages → Build and
+# deployment → Source: GitHub Actions (Ask 5). Until then this workflow builds and checks on
+# every push and the deploy step simply fails, which is harmless.
+name: site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r site/requirements.txt
+      - run: python3 site/build.py --check
+      - run: python3 site/build.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/_build
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
