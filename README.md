@@ -16,7 +16,7 @@ accumulated in it, not because of what was generated for it. Structure, passages
 attestations and disputes are the asset. Prose is rendered from them by whatever the best
 available model is, and is never the thing that is checked.
 
-**Phase:** founding. Nothing is built. See `PLAN.md`.
+**Phase:** 0, founding. The build pipeline skeleton and three typographic specimens exist (`site/`); no node has been written. See `PLAN.md`.
 
 ## The files
 

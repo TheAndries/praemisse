@@ -4,4 +4,32 @@ The build pipeline that renders `map/` into a static site, and nothing else. The
 [`../DESIGN.md`](../DESIGN.md) (binding) and `CHARTER.md` P6–P8: static files, no frameworks on the
 reading path, no cookies, no tracking beyond an aggregate count, self-hosted fonts, and
 prose rendered from the nodes rather than written by hand. Code here is MIT ([`../LICENSE`](../LICENSE)).
-Empty at founding, 2026-10-04; the first scheduled run starts the pipeline skeleton.
+
+## Layout
+
+| Path | What |
+|------|------|
+| `build.py` | The whole pipeline: read `map/*.md`, validate against `MODEL.md`, render to `_build/`. `python3 site/build.py --check` validates only. |
+| `requirements.txt` | PyYAML. Nothing else. |
+| `templates/` | `base.html` (the one header and one footer), `node.html`, `index.html`. Plain `{{ name }}` substitution. |
+| `static/style.css` | Layout and typographic rules shared by every page. |
+| `static/type.css` | The chosen typeface (Ask 3). A placeholder until the owner chooses. |
+| `static/type-a.css`, `type-b.css`, `type-c.css` | The three candidate directions. |
+| `fonts/` | Self-hosted, subset, OFL-licensed web fonts; see `fonts/README.md`. |
+| `specimens/` | The three typographic specimen pages for Ask 3, and `make.py` which writes them. |
+| `_build/` | Output. Not committed. |
+
+## Build and publish
+
+Locally: `pip install -r site/requirements.txt && python3 site/build.py`, then open
+`site/_build/index.html`. Every page uses relative paths, so the output works from a file,
+from a sub-path and from the root of a domain.
+
+Published by `.github/workflows/site.yml` with GitHub Pages on every push to `main`, once
+the owner has enabled Pages (Ask 5). The workflow fails the build if any node fails the
+check: an unresolved link or a claim without a passage never reaches the site.
+
+## Addresses
+
+Permanent (`CHARTER.md` P4, `DESIGN.md` 2): a node `a-foo` lives at `/a/foo/`; type indexes at
+`/a/`, `/c/`, `/t/` and so on; the specimens at `/specimens/`.

@@ -1,0 +1,181 @@
+/* praemisse — layout and typographic rules shared by every page.
+   Binding source: DESIGN.md. The typeface itself is set in type.css (chosen under Ask 3);
+   until then the three candidate directions live in type-a.css, type-b.css, type-c.css.
+   No framework, no JavaScript on the reading path, no cookies. */
+
+:root {
+  /* Type tokens: overridden by type-*.css. System fallbacks only here. */
+  --serif: Georgia, "Times New Roman", Times, serif;
+  --sans: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --body-size: 1.125rem;
+  --body-leading: 1.5;
+  --sans-size-adjust: 0.92;   /* the sans runs slightly smaller than the serif at the same size */
+
+  /* Four sizes, no more (DESIGN.md 3). */
+  --size-small: 0.8125rem;
+  --size-body: var(--body-size);
+  --size-sub: calc(var(--body-size) * 1.2);
+  --size-title: calc(var(--body-size) * 1.7);
+
+  /* Measure (60–75 characters) and rhythm. */
+  --measure: 66ch;
+  --gutter: 1rem;
+  --line: calc(var(--body-size) * var(--body-leading));
+
+  /* Colour: paper and ink. Dark mode follows the system. */
+  --paper: #fbfaf7;
+  --ink: #1b1b1b;
+  --ink-muted: #5c5a55;
+  --rule: #d9d6cf;
+  --link: #2a4a73;
+  --passage-paper: #f4f1ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #171614;
+    --ink: #e6e2da;
+    --ink-muted: #a39e94;
+    --rule: #3a3833;
+    --link: #9bb6d8;
+    --passage-paper: #1f1e1b;
+  }
+}
+
+html { background: var(--paper); color: var(--ink); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: var(--size-body);
+  line-height: var(--body-leading);
+  font-kerning: normal;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "onum", "pnum";
+  text-rendering: optimizeLegibility;
+  hyphens: manual;
+}
+
+a { color: var(--link); text-decoration: underline; text-decoration-thickness: 0.06em; text-underline-offset: 0.14em; }
+a:hover { text-decoration-thickness: 0.1em; }
+
+/* Labels: the restrained sans. Used for status, node type, headings of link lists, metadata. */
+.label, .status, .site-header, .site-footer, .links h2, .meta, .passage .ref, .specimen-banner, .crumbs {
+  font-family: var(--sans);
+  font-size: var(--size-small);
+  letter-spacing: 0.02em;
+}
+.label, .links h2, .status .word, .passage .ref { text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* Chrome: one header, one footer, nothing else (DESIGN.md 7). */
+.site-header, .site-footer {
+  max-width: calc(var(--measure) * 2 + 4rem);
+  margin: 0 auto;
+  padding: var(--gutter);
+  display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem;
+  color: var(--ink-muted);
+}
+.site-header { border-bottom: 1px solid var(--rule); align-items: baseline; }
+.site-header .wordmark { font-family: var(--serif); font-size: var(--size-sub); color: var(--ink); letter-spacing: 0.01em; text-decoration: none; }
+.site-header nav a { color: var(--ink-muted); text-decoration: none; }
+.site-header nav a:hover { color: var(--ink); text-decoration: underline; }
+.site-footer { border-top: 1px solid var(--rule); margin-top: calc(var(--line) * 3); line-height: 1.6; }
+.site-footer p { margin: 0; }
+
+main { max-width: calc(var(--measure) * 2 + 4rem); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* A node page: the text and its passage, side by side on a wide screen (DESIGN.md 1). */
+.node { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 3rem; }
+.node-text { max-width: var(--measure); }
+.passage { max-width: var(--measure); }
+@media (min-width: 66rem) {
+  .node { grid-template-columns: minmax(0, 11fr) minmax(0, 9fr); }
+  .jump, .return { display: none; }
+}
+
+/* Status and type: words, in one place, on every node (DESIGN.md 4). */
+.status { margin: calc(var(--line) * 1.5) 0 0; color: var(--ink-muted); display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+.status .word { color: var(--ink); font-weight: 600; }
+.status .word.contested { text-decoration: underline; text-decoration-style: double; text-underline-offset: 0.2em; }
+
+h1 { font-size: var(--size-title); line-height: 1.15; font-weight: 400; margin: calc(var(--line) * 0.5) 0 var(--line); letter-spacing: -0.005em; }
+h2 { font-size: var(--size-sub); line-height: 1.25; font-weight: 400; font-style: italic; margin: calc(var(--line) * 1.5) 0 calc(var(--line) * 0.5); }
+h3 { font-size: var(--size-body); font-weight: 600; margin: var(--line) 0 0; }
+p { margin: 0 0 var(--line); }
+p + p { text-indent: 1.5em; margin-top: calc(var(--line) * -1); }
+em, i, cite { font-style: italic; }
+cite { font-style: normal; }
+strong { font-weight: 600; }
+.sc { font-variant-caps: small-caps; letter-spacing: 0.04em; }
+
+/* The argument: premises, inference, conclusion. */
+.argument { margin: 0 0 var(--line); padding: 0; list-style: none; }
+.argument li { display: grid; grid-template-columns: 3.25em 1fr; gap: 0 0.5em; margin: 0 0 calc(var(--line) * 0.5); }
+.argument .n { font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); letter-spacing: 0.06em; padding-top: 0.3em; text-transform: uppercase; }
+.argument .conclusion { border-top: 1px solid var(--rule); padding-top: calc(var(--line) * 0.5); margin-top: calc(var(--line) * 0.5); }
+.argument .assumption { color: var(--ink-muted); font-style: italic; }
+.argument .assumption em { font-style: normal; }
+
+/* The passage: original beside translation, in its own paper (DESIGN.md 1, 9). */
+.passage { background: var(--passage-paper); padding: var(--line) 1.25rem; margin: calc(var(--line) * 1.5) 0 0; }
+.passage .ref { color: var(--ink-muted); margin: 0 0 calc(var(--line) * 0.5); display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.passage .ref a { color: inherit; }
+.passage .original { font-style: normal; margin: 0 0 calc(var(--line) * 0.75); }
+.passage p { text-indent: 0; }
+.passage .original:lang(grc), .passage .original:lang(el) { font-feature-settings: "kern", "liga"; }
+/* No locale substitutions in Latin: a passage shows the letters its edition prints (u, not v). */
+.passage .original:lang(la), [lang="la"] { font-feature-settings: "kern", "liga", "onum", "locl" 0; }
+.passage .translation { color: var(--ink); margin: 0; }
+.passage .translation .by { font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); }
+.passage + .passage { margin-top: var(--line); }
+.passage .verse { white-space: pre-line; }
+
+/* Links are navigation, not decoration (DESIGN.md 6). */
+.links { margin-top: calc(var(--line) * 2); display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: var(--line) 2rem; }
+.links h2 { font-style: normal; margin: 0 0 0.25rem; color: var(--ink-muted); font-weight: 600; }
+.links ul { list-style: none; margin: 0; padding: 0; }
+.links li { margin: 0 0 0.25rem; }
+.links .id { font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); margin-right: 0.5em; }
+
+.meta { color: var(--ink-muted); margin-top: calc(var(--line) * 2); border-top: 1px solid var(--rule); padding-top: calc(var(--line) * 0.5); line-height: 1.6; }
+.meta p { margin: 0; }
+
+/* On a phone the passage is one tap away and returns to the same spot (DESIGN.md 1). */
+.jump { font-family: var(--sans); font-size: var(--size-small); margin: 0 0 var(--line); }
+.return { font-family: var(--sans); font-size: var(--size-small); margin: calc(var(--line) * 0.5) 0 0; }
+
+/* Lists of nodes (index pages). */
+.index { list-style: none; margin: 0; padding: 0; max-width: var(--measure); }
+.index li { margin: 0 0 calc(var(--line) * 0.5); display: grid; grid-template-columns: 5.5em 1fr; gap: 0 0.75em; }
+.index .id { font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); padding-top: 0.35em; }
+
+/* Prose pages (about, protocol). */
+.prose { max-width: var(--measure); }
+.prose ul, .prose ol { padding-left: 1.5em; margin: 0 0 var(--line); }
+.prose li { margin-bottom: 0.25em; }
+.prose blockquote { margin: 0 0 var(--line); padding-left: 1.25em; border-left: 2px solid var(--rule); color: var(--ink-muted); }
+code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.9em; }
+
+/* Specimens only. */
+.specimen-banner { border: 1px solid var(--rule); padding: 0.5rem 0.75rem; margin: var(--line) 0 0; color: var(--ink-muted); max-width: calc(var(--measure) * 2 + 2rem); }
+.specimen-banner strong { color: var(--ink); font-weight: 600; }
+.specimen-notes { margin-top: calc(var(--line) * 3); border-top: 1px solid var(--rule); padding-top: var(--line); }
+.specimen-notes dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1.5rem; margin: 0 0 var(--line); max-width: var(--measure); }
+.specimen-notes dt { font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); padding-top: 0.3em; }
+.specimen-notes dd { margin: 0; }
+.alphabet { max-width: var(--measure); overflow-wrap: anywhere; margin: 0 0 var(--line); }
+.alphabet .label { display: block; color: var(--ink-muted); margin-bottom: 0.25rem; }
+.alphabet p { margin: 0 0 calc(var(--line) * 0.5); }
+.sizes { font-size: var(--size-small); } .sizes b { font-weight: 400; }
+.sizes .s1 { font-size: var(--size-small); font-family: var(--sans); }
+.sizes .s2 { font-size: var(--size-body); }
+.sizes .s3 { font-size: var(--size-sub); }
+.sizes .s4 { font-size: var(--size-title); }
+
+/* Print: a page that prints like the page it is (DESIGN.md 2). */
+@media print {
+  html { background: #fff; color: #000; }
+  .site-header nav, .jump, .return, .specimen-notes { display: none; }
+  .node { grid-template-columns: 11fr 9fr; }
+  a { color: inherit; text-decoration: none; }
+  .passage { background: none; border: 1px solid #999; }
+}
