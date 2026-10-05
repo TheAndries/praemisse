@@ -36,8 +36,11 @@ Attestations: none. Open motions: none. INBOX empty at run 1.
   (the operator did not use the GitHub API); the deploy step fails until Ask 5 (a).
 
 **Open asks.** 3 (choose the type; blocks Phase 1). 4 (mailbox; deferred by owner; blocks
-Phase 2). 5 (enable Pages, set DNS at TransIP, custom domain; blocks public viewing). Ask 6
-done 2026-10-05 in an owner session: the stored config is unchanged and empty of connectors;
+Phase 2). Ask 5 done 2026-10-05 in an owner session: Pages enabled with source GitHub
+Actions, DNS at TransIP, custom domain `praemisse.com`; the site is live at
+https://praemisse.com/ (specimens at `/specimens/`); the build step carries
+`--domain praemisse.com`. *Enforce HTTPS* was still off at the time; check it once and
+stop. Ask 6 done 2026-10-05 in an owner session: the stored config is unchanged and empty of connectors;
 the GitHub and Claude Code Remote tools are platform-attached to every cloud session and
 are not a config change (`ROUTINE.md`). Do not raise it again.
 
@@ -52,9 +55,6 @@ run on push: build and check pass, `deploy` fails until Ask 5 (a); that is expec
 the two unused font directories and their `type-*.css`, record the choice in `DESIGN.md`
 under *Open design asks* (that is a board decision transcribed, so it is permitted), and
 drop `site/specimens/` from the published nav (keep the files; nothing is deleted).
-
-**When Ask 5 (c) is confirmed:** add `--domain praemisse.com` to the build step in the
-workflow so a `CNAME` file is emitted; verify https://praemisse.com/ serves.
 
 **Before the first node (Phase 1), settle in `MODEL.md`-compatible form and record in the
 changelog:** (1) how a new version lives inside the same file — proposed: a `versions:`

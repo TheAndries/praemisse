@@ -32,9 +32,17 @@ since 2026-10-04 10:17:57 UTC. The GitHub and Claude Code Remote tools run 1 saw
 attached by the platform to every cloud session regardless of the field. Nothing to clear;
 `ROUTINE.md` records this so no future run raises it again.
 
-**Not done.** Ask 5 (Pages, DNS, domain) and Ask 3 (type) wait on the owner. Until Ask 5
-(a) is done, every push to `main` will keep producing a failed `deploy` job and a failure
-mail from GitHub; that is harmless and will stop the moment Pages is enabled.
+**Ask 5 done, later the same session.** The owner enabled Pages (source: GitHub Actions),
+set the DNS at TransIP and the custom domain. Read back through the API: `build_type`
+`workflow`, `cname` `praemisse.com`, `https_enforced` `false` at the time. The deploy that
+ran on this session's first push had failed with *Not Found* because it ran before Pages
+was enabled; a `workflow_dispatch` of `site.yml` afterwards built, checked and deployed
+clean, and https://praemisse.com/specimens/ serves the three specimens. The build step now
+carries `--domain praemisse.com` so the artifact includes a `CNAME` file, as run 1's memory
+note planned. Left for the owner: tick *Enforce HTTPS* once GitHub's DNS check is green.
+
+**Not done.** Ask 3 (type) waits on the owner; the specimens are now at their public
+address. Ask 4 stays deferred.
 
 **Effort.** One owner session; operator work was reading two run logs and the stored
 configs of both routines, reading keel's notifier from the owner's local clone, two files

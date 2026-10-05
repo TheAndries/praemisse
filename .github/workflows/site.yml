@@ -24,7 +24,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r site/requirements.txt
       - run: python3 site/build.py --check
-      - run: python3 site/build.py
+      - run: python3 site/build.py --domain praemisse.com
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site/_build
