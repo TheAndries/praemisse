@@ -32,7 +32,8 @@ Attestations: none. Open motions: none. INBOX empty at run 1.
   (Homer Il. 1.1–2, Vergil Aen. 1.1–3, Goethe Faust I 354–357, La Fontaine Fables I.1 1–4)
   with the project's own translations. No node, no claim attributed to anyone.
 - `.github/workflows/site.yml`: check, build, deploy to GitHub Pages on push to `main`.
-  Pushed in a separate commit; see the changelog for whether the push was accepted.
+  Pushed in a separate commit (`953e7a2`); accepted. Whether the workflow ran is unverified
+  (the operator did not use the GitHub API); the deploy step fails until Ask 5 (a).
 
 **Open asks.** 3 (choose the type; blocks Phase 1). 4 (mailbox; deferred by owner; blocks
 Phase 2). 5 (enable Pages, set DNS at TransIP, custom domain; blocks public viewing). 6
