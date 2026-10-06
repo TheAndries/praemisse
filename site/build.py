@@ -19,11 +19,15 @@ No framework, no JavaScript on the reading path, no cookies (CHARTER.md P6–P8,
 Requires: Python 3.11+, PyYAML. The Markdown renderer is the small subset below; node
 bodies should stay within it (paragraphs, headings, emphasis, links, lists, quotes).
 
-Open questions for Phase 1, before the first node is written (see memory.md):
-  - how a new version lives "inside the same file" (MODEL.md): proposed `versions:` list
-    in the front matter, newest first, each with `date`, `supersedes`, `reason`;
-  - the machine validity check for `a-` nodes (what `checked` requires);
-  - how a Dispute node renders on its target node's page.
+Settled 2026-10-06 (MODEL.md, "How the model is applied"; CHANGELOG.md):
+  - a revised node keeps its id and file; `versions:` in the front matter lists every
+    earlier version, newest first, with `date`, `reason`, the superseded `statement` and,
+    when a dispute or attestation caused it, `credit`;
+  - `status: checked` is allowed only on an argument whose `form:` block passes
+    tools/validity.py (truth-table entailment); a `form:` that fails is a build error;
+  - a dispute (`d-`) or attestation (`v-`) names its `target`; the target's page renders
+    every one of them in full, and the target's `disputes`/`verified_by` lists, status
+    and `contested` flag must agree with them.
 """
 from __future__ import annotations
 
@@ -41,6 +45,8 @@ except ImportError:  # pragma: no cover
     sys.exit("PyYAML is required: pip install -r site/requirements.txt")
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+import validity  # noqa: E402  (tools/validity.py, the machine validity check)
 PREFIX = ""  # relative path from the page being rendered to the site root; set per page
 SITE = ROOT / "site"
 MAP = ROOT / "map"
@@ -58,6 +64,9 @@ TYPES = {  # prefix -> (type name, plural label, has status)
     "v": ("attestation", "Attestations", False),
 }
 STATUSES = ("draft", "checked", "attested", "established")
+DISPUTE_KINDS = ("validity", "fidelity")
+# DISPUTES.md steps: 1 published, 2 argued/conceded, 4 contested, 5 resolved, 6 escalated.
+DISPUTE_OUTCOMES = ("published", "argued", "conceded", "contested", "resolved", "escalated")
 LINK_FIELDS = ("depends_on", "supports", "attacked_by", "replies_to", "shares_premise_with")
 ID_RE = re.compile(r"^([twpcarxdv])-[a-z0-9][a-z0-9-]*$")
 
@@ -156,8 +165,103 @@ def check(nodes: list[Node]) -> list[str]:
             for key in ("ref", "original", "work"):
                 if not n.meta.get(key):
                     errors.append(f"{where}: a passage needs {key}")
+        if n.prefix in ("c", "a", "x") and not n.meta.get("statement"):
+            errors.append(f"{where}: a {tname} needs a one-sentence statement")
+        if n.prefix == "a":
+            errors.extend(f"{where}: {e}" for e in check_argument(n))
+        elif n.status == "checked":
+            errors.append(f"{where}: only an argument with a passing form can be checked; a {tname} is draft until a human attests it")
+        for i, v in enumerate(as_list(n.meta.get("versions"))):
+            if not isinstance(v, dict) or not v.get("date") or not v.get("reason") or not v.get("statement"):
+                errors.append(f"{where}: versions[{i}] needs date, reason and the superseded statement")
+            elif v.get("credit") and str(v["credit"]) not in ids:
+                errors.append(f"{where}: versions[{i}].credit -> {v['credit']} does not resolve")
+        if n.prefix == "d":
+            errors.extend(f"{where}: {e}" for e in check_dispute(n, ids))
+        if n.prefix == "v":
+            errors.extend(f"{where}: {e}" for e in check_attestation(n, ids))
+        if has_status:
+            errors.extend(f"{where}: {e}" for e in check_human_record(n, nodes))
         errors.extend(f"{where}: {e}" for e in n.errors)
     return errors
+
+
+def check_argument(n: Node) -> list[str]:
+    """An argument has premises and a conclusion; `checked` needs a `form:` that passes."""
+    errs: list[str] = []
+    prem = as_list(n.meta.get("premises"))
+    if not prem or not n.meta.get("conclusion"):
+        errs.append("an argument needs premises and a conclusion")
+    form = n.meta.get("form")
+    if form is None:
+        if n.status == "checked":
+            errs.append("status checked requires a form: block that passes tools/validity.py")
+        return errs
+    verdict, ferrs = validity.check_form(form)
+    errs.extend(f"form: {e}" for e in ferrs)
+    if verdict is not None:
+        if not verdict.valid:
+            errs.append(f"form is {verdict}")
+        if len(form["premises"]) != len(prem):
+            errs.append(f"form has {len(form['premises'])} premises but the argument lists {len(prem)}; they must correspond one to one")
+    return errs
+
+
+def check_dispute(n: Node, ids: dict) -> list[str]:
+    errs: list[str] = []
+    for key in ("target", "disputant", "date", "kind", "contested_claim", "alternative", "outcome"):
+        if not n.meta.get(key):
+            errs.append(f"a dispute needs {key}")
+    if n.meta.get("target") and str(n.meta["target"]) not in ids:
+        errs.append(f"target -> {n.meta['target']} does not resolve")
+    if n.meta.get("kind") and n.meta["kind"] not in DISPUTE_KINDS:
+        errs.append(f"kind must be one of {DISPUTE_KINDS}")
+    if n.meta.get("outcome") and n.meta["outcome"] not in DISPUTE_OUTCOMES:
+        errs.append(f"outcome must be one of {DISPUTE_OUTCOMES}")
+    if not as_list(n.meta.get("passages")):
+        errs.append("a dispute without a passage reference is returned, not published (DISPUTES.md)")
+    for key in ("reply", "counter", "ruling"):
+        v = n.meta.get(key)
+        if v is not None and (not isinstance(v, dict) or not v.get("date") or not v.get("text")):
+            errs.append(f"{key} needs date and text")
+    if n.meta.get("outcome") in ("argued", "conceded", "contested", "resolved", "escalated") and not n.meta.get("reply"):
+        errs.append(f"outcome {n.meta['outcome']} requires the project's reply")
+    return errs
+
+
+def check_attestation(n: Node, ids: dict) -> list[str]:
+    errs: list[str] = []
+    for key in ("target", "attester", "date", "statement"):
+        if not n.meta.get(key):
+            errs.append(f"an attestation needs {key}")
+    if n.meta.get("target") and str(n.meta["target"]) not in ids:
+        errs.append(f"target -> {n.meta['target']} does not resolve")
+    if n.meta.get("sides_with") and str(n.meta["sides_with"]) not in ids:
+        errs.append(f"sides_with -> {n.meta['sides_with']} does not resolve")
+    return errs
+
+
+def about_node(nodes: list[Node], target: str, prefix: str) -> list[Node]:
+    return [m for m in nodes if m.prefix == prefix and str(m.meta.get("target")) == target]
+
+
+def check_human_record(n: Node, nodes: list[Node]) -> list[str]:
+    """Status and the contested flag must agree with the attestations and disputes on file."""
+    errs: list[str] = []
+    vs = sorted(m.id for m in about_node(nodes, n.id, "v"))
+    ds = sorted(m.id for m in about_node(nodes, n.id, "d"))
+    if sorted(map(str, as_list(n.meta.get("verified_by")))) != vs:
+        errs.append(f"verified_by must list exactly the attestations that target this node: {vs or 'none'}")
+    if sorted(map(str, as_list(n.meta.get("disputes")))) != ds:
+        errs.append(f"disputes must list exactly the disputes that target this node: {ds or 'none'}")
+    if n.status == "attested" and len(vs) < 1:
+        errs.append("status attested needs one attestation on file")
+    if n.status == "established" and len(vs) < 2:
+        errs.append("status established needs two attestations on file")
+    open_contest = any(m.meta.get("outcome") == "contested" for m in about_node(nodes, n.id, "d"))
+    if open_contest != bool(n.meta.get("contested")):
+        errs.append("contested must be true exactly while a dispute on this node has outcome contested")
+    return errs
 
 
 def as_list(v) -> list:
@@ -254,8 +358,9 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
         else:
             status_bits.append(f'<span>Status: <span class="word">{word}</span></span>')
     status_bits.append(f"<span>Produced by {esc(n.meta.get('produced_by'))}</span>")
-    v = as_list(n.meta.get("verified_by"))
-    status_bits.append("<span>Verified by " + (", ".join(link(ids, i) for i in v) if v else "nobody yet") + "</span>")
+    if has_status:
+        v = as_list(n.meta.get("verified_by"))
+        status_bits.append("<span>Verified by " + (", ".join(link(ids, i) for i in v) if v else "nobody yet") + "</span>")
 
     # The argument structure, if any.
     arg = ""
@@ -269,10 +374,32 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
                 cid = p.get("claim") if isinstance(p, dict) else p
                 rows.append(f'<li><span class="n">P{i}</span><span>{link(ids, cid)}</span></li>')
         if n.meta.get("inference"):
-            rows.append(f'<li><span class="n">Form</span><span>{inline(str(n.meta["inference"]))}</span></li>')
+            rows.append(f'<li><span class="n">Infer.</span><span>{inline(str(n.meta["inference"]))}</span></li>')
         if n.meta.get("conclusion"):
             rows.append(f'<li class="conclusion"><span class="n">C</span><span>{link(ids, n.meta["conclusion"])}</span></li>')
-        arg = '<h2>The argument</h2>\n<ol class="argument">' + "".join(rows) + "</ol>"
+        arg = '<h2>The argument</h2>\n<ol class="argument">' + "".join(rows) + "</ol>" + render_form(n)
+
+    statement = f'<p class="statement">{inline(str(n.meta["statement"]))}</p>' if n.meta.get("statement") else ""
+    if n.prefix == "d":
+        statement = render_dispute(n, ids, full=True)
+    elif n.prefix == "v":
+        statement = render_attestation(n, ids, full=True)
+    elif n.prefix in ("t", "w"):
+        statement = render_facts(n, ids)
+
+    record = ""
+    vs = [m for m in ids.values() if m.prefix == "v" and str(m.meta.get("target")) == n.id]
+    ds = [m for m in ids.values() if m.prefix == "d" and str(m.meta.get("target")) == n.id]
+    if vs or ds:
+        record = "<section class=\"record\">" + "".join(render_dispute(d, ids) for d in sorted(ds, key=lambda m: str(m.meta.get("date")))) \
+            + "".join(render_attestation(v, ids) for v in sorted(vs, key=lambda m: str(m.meta.get("date")))) + "</section>"
+    versions = as_list(n.meta.get("versions"))
+    if versions:
+        items = "".join(
+            f"<li><strong>{esc(v.get('date'))}.</strong> {inline(str(v.get('reason')))}"
+            + (f" Credit: {link(ids, v['credit'])}." if v.get("credit") else "")
+            + f" Superseded statement: <q>{inline(str(v.get('statement')))}</q></li>" for v in versions)
+        record += f'<section class="versions"><h2>Earlier versions</h2><p>This is version {len(versions) + 1}. Earlier versions, newest first, stay here at the same address (CHARTER.md P4).</p><ol>{items}</ol></section>'
 
     # Passages beside the text.
     passages = []
@@ -315,15 +442,81 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
         + ["Disputes: " + (", ".join(link(ids, d) for d in disputes) if disputes else "none")]
     )
 
-    body = markdown(n.body)
+    body = "" if n.prefix in ("d", "v") else markdown(n.body)  # a dispute or attestation renders its body itself
     return fill(
         template("node.html"),
-        title=esc(n.title), status=" ".join(status_bits), argument=arg, body=body,
+        title=esc(n.title), status=" ".join(status_bits), argument=statement + arg, body=body + record,
         links="\n".join(links_html), meta=meta_line,
         passages="\n".join(passages),
         jump='<p class="jump"><a href="#passages">The passage</a></p>' if passages else "",
         back='<p class="return"><a href="#top">Back to the text</a></p>' if passages else "",
     )
+
+
+def render_form(n: Node) -> str:
+    form = n.meta.get("form")
+    if not form:
+        return '<p class="form note">No form has been given for this argument yet, so it cannot be <span class="sc">checked</span>.</p>'
+    verdict, _ = validity.check_form(form)
+    glosses = "".join(f"<li><code>{esc(k)}</code> {inline(str(v))}</li>" for k, v in form["atoms"].items())
+    prem = "".join(f"<li><span class=\"n\">P{i}</span><code>{esc(validity.show(validity.parse(f)))}</code></li>" for i, f in enumerate(form["premises"], 1))
+    conc = f"<li class=\"conclusion\"><span class=\"n\">C</span><code>{esc(validity.show(validity.parse(form['conclusion'])))}</code></li>"
+    return (f'<div class="form"><h3>Form</h3><ul class="atoms">{glosses}</ul><ol class="argument">{prem}{conc}</ol>'
+            f'<p class="note">Machine check, truth table: {esc(verdict)}. The check says nothing about whether the premises are true or faithful to the passage; only a named human can (DISPUTES.md).</p></div>')
+
+
+def render_facts(n: Node, ids: dict[str, Node]) -> str:
+    """A thinker or a work: its front-matter facts as a short definition list."""
+    rows = []
+    for key in ("dates", "tradition", "thinker", "year", "edition", "scheme", "source", "editions"):
+        v = n.meta.get(key)
+        if not v:
+            continue
+        if key == "thinker":
+            val = link(ids, v)
+        elif isinstance(v, list):
+            val = "; ".join(inline(str(x)) for x in v)
+        elif isinstance(v, dict):
+            val = "; ".join(f"{esc(k)}: {inline(str(x))}" for k, x in v.items())
+        else:
+            val = inline(str(v))
+        rows.append(f"<dt>{esc(key.capitalize())}</dt><dd>{val}</dd>")
+    return f'<dl class="facts">{"".join(rows)}</dl>' if rows else ""
+
+
+def render_dispute(d: Node, ids: dict[str, Node], full: bool = False) -> str:
+    """A dispute, verbatim, with its exchange (DISPUTES.md steps 1–6)."""
+    m = d.meta
+    head = (f'<h2>Dispute {esc(d.id)}: {esc(m.get("kind"))}</h2>' if not full
+            else f'<p class="statement">A {esc(m.get("kind"))} dispute on {link(ids, m.get("target"))}, filed {esc(m.get("date"))}.</p>')
+    who = esc(m.get("disputant")) + (f", {esc(m['affiliation'])}" if m.get("affiliation") else "")
+    parts = [head,
+             f'<p><strong>{who}</strong>, {esc(m.get("date"))}. Outcome: <span class="sc">{esc(m.get("outcome"))}</span>.' + ("" if full else f' Permanent address: <a href="{href(d)}">{esc(d.url)}</a>.') + "</p>",
+             f'<p><strong>The claim contested.</strong> <q>{inline(str(m.get("contested_claim")))}</q></p>',
+             f'<p><strong>The alternative reading.</strong> {inline(str(m.get("alternative")))}</p>',
+             "<p><strong>Passages.</strong> " + ", ".join(link(ids, x) if str(x) in ids else esc(x) for x in as_list(m.get("passages"))) + "</p>"]
+    if m.get("literature"):
+        parts.append("<p><strong>Literature.</strong> " + "; ".join(inline(str(x)) for x in as_list(m["literature"])) + "</p>")
+    if d.body.strip() and full:
+        parts.append(markdown(d.body))
+    for key, label in (("reply", "The project replies"), ("counter", "The disputant counters"), ("ruling", "Ruling")):
+        v = m.get(key)
+        if v:
+            parts.append(f'<p><strong>{label}, {esc(v.get("date"))}.</strong> {inline(str(v.get("text")))}' + (f" Attestation: {link(ids, v['attestation'])}." if v.get("attestation") else "") + "</p>")
+    return "".join(parts)
+
+
+def render_attestation(v: Node, ids: dict[str, Node], full: bool = False) -> str:
+    m = v.meta
+    who = esc(m.get("attester")) + (f", {esc(m['affiliation'])}" if m.get("affiliation") else "")
+    head = (f'<h2>Attestation {esc(v.id)}</h2>' if not full
+            else f'<p class="statement">An attestation of {link(ids, m.get("target"))}, {esc(m.get("date"))}.</p>')
+    out = head + f'<p><strong>{who}</strong>, {esc(m.get("date"))}: <q>{inline(str(m.get("statement")))}</q>'
+    if m.get("sides_with"):
+        out += f" Sides with {link(ids, m['sides_with'])}."
+    if not full:
+        out += f' Permanent address: <a href="{href(v)}">{esc(v.url)}</a>.'
+    return out + "</p>" + (markdown(v.body) if full and v.body.strip() else "")
 
 
 def href(n: Node) -> str:
@@ -369,6 +562,9 @@ def build(nodes: list[Node], out: Path, domain: str | None) -> None:
     counts = {plural: sum(1 for n in nodes if n.prefix == p) for p, (_, plural, _) in TYPES.items()}
     counts_html = "".join(f'<li><a href="{p}/">{plural}</a> <span class="id">{counts[plural]}</span></li>' for p, (_, plural, _) in TYPES.items())
     (out / "index.html").write_text(page("praemisse", template("index.html").replace("{{ counts }}", counts_html)), encoding="utf-8")
+    PREFIX = "../"
+    (out / "about").mkdir(exist_ok=True)
+    (out / "about" / "index.html").write_text(page("About", template("about.html")), encoding="utf-8")
     (out / ".nojekyll").write_text("")
     if domain:
         (out / "CNAME").write_text(domain + "\n")

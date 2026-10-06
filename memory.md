@@ -2,78 +2,92 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-05 (run 1, end)
+## State as of 2026-10-06 (run 2, end)
 
-**Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP (Ask 1 done;
-DNS pointing is now Ask 5). Repository https://github.com/TheAndries/praemisse, public, `main`.
-Routine `trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`. Run 1 was
-served on the configured model `claude-fable-5-1`; no handover note needed. Open disputes: none.
-Attestations: none. Open motions: none. INBOX empty at run 1.
+**Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
+https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
+renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1 and 2
+were served on that model, no handover note needed. The GitHub and Claude Code Remote tools
+in the tool list are platform-attached to every cloud session and are not a config change
+(`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
+motions: none. INBOX empty at runs 1 and 2. Open asks: 4 only (mailbox; deferred by owner;
+blocks Phase 2). Asks 1, 2, 3, 5, 6 done.
 
-**Phase 0, nearly done.** Built in run 1, all on `main`:
-- `site/build.py`: reads `map/*.md` (YAML front matter + Markdown), validates against
-  `MODEL.md` (id prefix ↔ type, status words, `produced_by` required, every link in
-  `depends_on`/`supports`/`attacked_by`/`replies_to`/`shares_premise_with`/`passages`/
-  `premises`/`conclusion`/`verified_by`/`disputes`/`supersedes`/`superseded_by`/`thinker`/
-  `work` must resolve; a claim or argument must cite a passage), renders to `site/_build/`
-  (gitignored) with relative paths so it works at a sub-path. `--check` for CI. Tested on a
-  scratch map of four dummy nodes (not committed). Own tiny Markdown subset; PyYAML the only
-  dependency.
-- `site/static/style.css` (layout, four sizes, 66ch measure, passage beside text at ≥66rem,
-  dark mode by system, print), `site/templates/` (base, node, index), `site/static/type.css`
-  placeholder.
-- Fonts, self-hosted and subset to Latin + polytonic Greek with features kept. Offered:
-  EB Garamond + Source Sans 3 (A), Libertinus Serif + Sans (B), Alegreya + Alegreya Sans
-  (C). All OFL. `site/fonts/README.md` has provenance. Rejected: Source Serif 4 (no polytonic
-  Greek in the google/fonts build); Libertinus release WOFF2 (features stripped; subset from
-  OTF instead). Since 2026-10-05 only `libertinus/` remains (Ask 3 chose B).
-- `site/specimens/{a,b,c,index}.html`, written by `site/specimens/make.py`: one mock node
-  page, three types. Specimen text is the page's own reasoning plus four verse passages
-  (Homer Il. 1.1–2, Vergil Aen. 1.1–3, Goethe Faust I 354–357, La Fontaine Fables I.1 1–4)
-  with the project's own translations. No node, no claim attributed to anyone.
-- `.github/workflows/site.yml`: check, build, deploy to GitHub Pages on push to `main`.
-  Pushed in a separate commit (`953e7a2`); accepted. Whether the workflow ran is unverified
-  (the operator did not use the GitHub API); the deploy step fails until Ask 5 (a).
+**Phase 0 complete (2026-10-05).** `site/build.py` (reads `map/*.md`, validates against
+`MODEL.md`, renders to `site/_build/`, gitignored; `--check` for CI; PyYAML the only
+dependency; own small Markdown subset), `site/static/style.css` and `type.css` (direction
+B, Libertine, owner decision), `site/fonts/libertinus/` only, `site/specimens/` kept but not
+published, `.github/workflows/site.yml` (check, build with `--domain praemisse.com`, deploy
+on push to `main`), `.github/workflows/notify-asks.yml` + `tools/open_asks_issue.py` (one
+GitHub issue *praemisse - open asks*, assigned to the owner, updated on every push touching
+`ASKS.md`; keep the `| # | Date | Ask | Blocks | Status |` table; `done ...` closes, *deferred*
+or *queued* lists as no action).
 
-**Open asks.** 4 (mailbox; deferred by owner; blocks Phase 2). Ask 3 done 2026-10-05 in an
-owner session: **direction B, Libertine**, transcribed into `DESIGN.md` and `BOARD.md`;
-`site/static/type.css` carries it; `type-a/b/c.css` and the EB Garamond, Source Sans 3,
-Alegreya and Alegreya Sans families removed; `site/specimens/` kept in the repository but no
-longer copied into the build. Phase 1 is unblocked. Ask 5 done 2026-10-05 in an owner session: Pages enabled with source GitHub
-Actions, DNS at TransIP, custom domain `praemisse.com`; the site is live at
-https://praemisse.com/ (specimens at `/specimens/`); the build step carries
-`--domain praemisse.com`; HTTPS enforced (set through the Pages API in the owner session
-after the owner's tick did not take; read back `true`; Let's Encrypt certificate to
-2027-01-03, GitHub renews). Nothing about Ask 5 remains. Ask 6 done 2026-10-05 in an owner session: the stored config is unchanged and empty of connectors;
-the GitHub and Claude Code Remote tools are platform-attached to every cloud session and
-are not a config change (`ROUTINE.md`). Do not raise it again.
+**Phase 1 started (run 2, 2026-10-06).** The three model questions are settled and written
+into `MODEL.md`, section *How the model is applied* (operator's domain, method): `versions:`
+list in the same file; `statement:` one sentence on every claim, argument and comparison;
+`form:` block in propositional logic checked by `tools/validity.py` (truth table, ≤16 atoms,
+`not/and/or/->/<->`), `checked` only on an argument whose form passes, claims stay `draft`
+until attested; `d-` and `v-` nodes name a `target` and render in full on the target's page;
+`verified_by`/`disputes` must equal the set targeting the node; `attested` needs one `v-`,
+`established` two; `contested` iff a `d-` has outcome contested. All enforced by `--check`.
+Dispute outcomes: published, argued, conceded, contested, resolved, escalated. An `about/`
+page exists (template `site/templates/about.html`). Exercised on a scratch map with a
+dispute, an attestation and a version; not committed.
 
-**The owner is told about asks** by `.github/workflows/notify-asks.yml` +
-`tools/open_asks_issue.py` (copied from keel 2026-10-05): one GitHub issue, *praemisse -
-open asks*, assigned to the owner, updated on every push that touches `ASKS.md`. Keep the
-`| # | Date | Ask | Blocks | Status |` table format; status `done ...` closes an ask, status
-containing *deferred* or *queued* lists it as needing no action. `site.yml` was verified to
-run on push: build and check pass, `deploy` fails until Ask 5 (a); that is expected.
+**Kant nodes on `main` (24):** `t-kant`; `w-kant-krv`, `w-kant-prolegomena`; passages
+`p-krv-b-xxvi` (AA 3:16.30–17.07), `p-krv-a24-b38` (3:52.30–53.16), `p-krv-a26-b42`
+(3:55.02–08), `p-krv-a42-b59` (3:65.17–22), `p-krv-a43-b60` (3:65.28–66.04), `p-krv-b307`
+(3:209.32–210.12), `p-krv-b308-309` (3:210.24–34), `p-prol-289` (4:289.03–14), `p-prol-314`
+(4:314.33–315.06); claims `c-kant-space-a-priori`, `c-kant-determinations-not-intuited-a-priori`,
+`c-kant-space-not-of-things-in-themselves`, `c-kant-objects-known-only-as-appearances`,
+`c-kant-knowledge-limited-to-experience`, `c-kant-things-in-themselves-unknown`,
+`c-kant-appearance-presupposes-something-appearing`,
+`c-kant-things-in-themselves-thinkable-not-knowable`, `c-kant-noumenon-negative-only`,
+`c-kant-without-things-in-themselves-appearance-without-appearing`;
+arguments `a-kant-space-not-of-things-in-themselves` (a; s→¬a ⊢ ¬s, checked) and
+`a-kant-appearance-requires-thing-in-itself` (w; ¬t→¬w ⊢ t, checked, a reductio). Translations are the project's own, marked. Every `original` was diffed
+word for word against the korpora.org text before commit.
 
-**Before the first node (Phase 1), settle in `MODEL.md`-compatible form and record in the
-changelog:** (1) how a new version lives inside the same file — proposed: a `versions:`
-list in the front matter, newest first, each with `date`, `reason`, and the superseded
-text; the page shows the current version and links the chain; (2) what the machine validity
-check for `a-` nodes is — proposed: premises and conclusion as propositional/first-order
-schemata in a `form:` field, checked by a small prover, with `checked` set only by the
-tool; (3) how a Dispute node renders on its target's page; (4) a `t-`/`w-` node for Kant,
-KrV and Prolegomena first, with the Akademie-Ausgabe scan as source. Phase 1 starts only
-after Ask 3.
+**Source of Kant's text.** https://korpora.org/kant/aa{03,04}/{page:03d}.html, one Akademie
+page per file with line numbers in a table; the extractor is the small script described in
+the 2026-10-06 changelog (regex over `<tr>`/`<td>`, prints `vol:page.line text`). The
+`korpora.zim.uni-duisburg-essen.de` host resets connections; use `korpora.org`. The Korpus
+joins hyphenated line-end words ("nothwendiggemachte" at 3:17.07) and has an OCR slip at
+3:65.25 ("daßmacht, da"): quote around such lines. A/B pages are not in the Korpus; they
+are given from the standard concordance and the AA line is the authoritative locator.
+AA III = KrV B; AA IV 1–252 = KrV A, 253–383 = Prolegomena.
+
+**The adversarial pass is not optional.** Run 2's first form of the B xxvi argument had an
+assumption that asserted premises-imply-conclusion and a body that denied Kant states the
+bridge he states; the reviewing agent caught it, plus nine smaller faults (see the
+2026-10-06 entry). Give the reviewer the nodes, the fetched corpus files and the brief to
+break validity, fidelity, translation and line references; budget ~80,000 tokens for it.
+
+**Next for Phase 1 (PLAN.md §3, target ~40 nodes, one comparison node).** Kant: the
+critique of dogmatic metaphysics is not yet in the map (candidates: B xxx "Ich mußte also
+das Wissen aufheben", A 235–260/B 294–315 on the land of truth, Prolegomena §57 on the
+limits, AA 4:350–356 already fetched to scratch but lost with the container). Reading nodes
+for the two-aspect / two-object question on "eben dieselben Gegenstände" (B xxvi). Then
+Schopenhauer: WWV I §§ 1–2, 18–23 (will as thing-in-itself), the Anhang "Kritik der
+Kantischen Philosophie" (by section); public-domain German text: zeno.org is reachable
+through the proxy (checked 2026-10-06; de.wikisource returns 404 for the plain titles);
+nietzschesource.org answers too, but its eKGWB is JavaScript-rendered and needs a check. Then Nietzsche: JGB 16, 54; GD "Wie die wahre Welt
+endlich zur Fabel wurde"; Nachlass only where unavoidable and marked. Then `x-thing-in-itself`.
+Checkpoint 1 needs the comparison page; at the present pace (two arguments a run) that is
+roughly ten runs away, which is on plan.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
-run 1. The card used for the domain is still unreported.
+runs 1 or 2. The card used for the domain is still unreported.
 
-**Tooling facts.** The cloud container has Python 3.11, PyYAML, Node 22 with a global
-`playwright` and Chromium at `/opt/pw-browsers/chromium`; `pip install fonttools brotli`
-works through the proxy; GitHub release and raw.githubusercontent.com downloads work, the
-GitHub REST API returns 403 unauthenticated. There is no `gh` CLI. Git author is
+**Tooling facts.** Cloud container: Python 3.11 with PyYAML, Node 22 with a global
+`playwright` and Chromium at `/opt/pw-browsers/chromium` (screenshots: `NODE_PATH=$(npm root
+-g) node script.js`, viewport 390 for phone). `pip install` and raw GitHub downloads work
+through the proxy; the GitHub REST API returns 403 unauthenticated; no `gh` CLI. Git author
 `Claude <noreply@anthropic.com>`; commits carry the session trailer.
 
-**Dropped from memory this run:** the founding-session details of the routine creation
-(three default connectors attached on create, cleared with `clear_mcp_connections`), which
-live in `ROUTINE.md` and the 2026-10-04 changelog; the list of rejected names.
+**Dropped from memory this run:** the Phase 0 build details that are now in `site/README.md`
+and the 2026-10-05 entries (font subsetting, rejected families, the specimen texts), and
+the run-1 verification notes about whether the workflow ran (it does; deploys are green
+since Ask 5).

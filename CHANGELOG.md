@@ -2,6 +2,111 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-06 — run 2: the model applied, and the first Kant nodes
+
+Second scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first.
+
+**Steps 1–3.** Asks 3, 5 and 6 were marked done in yesterday's owner session; Ask 3 was the
+last thing Phase 1 waited on, so Phase 1 starts. Ask 4 stays deferred by the owner and
+blocks only Phase 2. `INBOX.md` empty: nothing to publish, reply to or record. No open
+motion.
+
+**Step 4, the model applied.** Memory carried three questions to settle before the first
+node. Settled as matters of method (`BOARD.md`, tie-break) and written into `MODEL.md`
+under a new section *How the model is applied*; the text of the founding sections is
+untouched. (1) A revised node keeps its id and file; `versions:` lists the superseded
+versions with date, reason, the superseded statement and the dispute or attestation
+credited. (2) Validity: an argument may carry a `form:` in propositional logic; the new
+`tools/validity.py` decides by truth table whether the conclusion holds in every
+assignment that satisfies the premises, and `site/build.py --check` fails on a form that
+fails or is malformed. `checked` is permitted only on an argument whose form passes; a
+claim stays `draft` until a human attests it, because a single sentence has no inference
+to check. The page prints the form and the verdict beside a note that the check says
+nothing about truth or fidelity. (3) A dispute or attestation node names its target and
+is rendered in full on the target's page; the target's `disputes` and `verified_by` lists,
+its status and its `contested` flag must agree with what is on file, and the build
+enforces it. Also: every claim, argument and comparison now carries a one-sentence
+`statement`, the text a dispute quotes; and the `About` page the header has linked to
+since run 1 now exists. Exercised on a scratch copy of the map with a dispute, an
+attestation, a version and a deliberately wrong `contested` flag (caught); not committed.
+
+**Step 4, the first nodes: 24.** Kant and the thing-in-itself, from the Bonner Kant-Korpus
+text of the Akademie-Ausgabe at korpora.org, fetched page by page and cited by A/B page and
+AA volume:page.line. One thinker, two works (KrV, Prolegomena), nine passages (B xxvi–xxvii;
+A 24–25/B 38–40; A 26/B 42; A 42/B 59; A 43/B 60; B 307–308; B 308–309; Prolegomena §13
+Anm. II; §32), ten claims and two arguments. Translations are the project's own and marked
+so. Every passage's `original` was diffed word for word against the fetched text before
+commit: identical apart from the omitted list numerals, a footnote mark and the clipped
+tails of boundary lines. Both arguments are `checked`: *space is not a determination of
+things in themselves* (a; s→¬a ⊢ ¬s, modus tollens, A 26/B 42) and *we must be able to
+think the same objects as things in themselves* (w; ¬t→¬w ⊢ t, a reductio, B xxvi–xxvii).
+Everything else is `draft`.
+
+**The adversarial pass, and what it found.** A second agent was given the nodes, the fetched
+corpus and the brief to break validity, fidelity, translation and line references. It
+returned ten findings; I accepted all ten and changed the nodes before commit.
+- *Serious, validity.* My first form of the B xxvi argument used an assumption "(e ∧ w) → t"
+  that simply asserted premises-imply-conclusion, and the body claimed Kant gives no bridge.
+  Wrong: "Denn sonst würde der ungereimte Satz daraus folgen" (AA 3:17.05–07) is the bridge,
+  a conditional ¬t → ¬w; with ¬w absurd the inference is modus tollens. Rebuilt with a new
+  textual premise node for the conditional; the context premise (we cognize objects only as
+  appearances) is no longer a premise of the step.
+- *Serious, translation.* "aller nur möglichen speculativen Erkenntniß" (3:17.01) had become
+  "all merely possible", a modal weakening of an exhaustive quantifier; now "all possible",
+  in the passage and in the claim built on it. "gar keine Elemente" now "no elements at all".
+- *Validity, gloss.* In the space argument the atom for premise 1 had been glossed "prior to
+  the existence of the things", which is premise 2's content (3:55.06–07); premise 1's
+  passage (3:52.30–31) says only "necessary a priori representation". The passage is
+  extended to the third point and its conclusion, "eine Anschauung a priori ... allen
+  Begriffen von demselben zum Grunde liegt" (3:53.14–16), the claim restated, the gloss
+  reduced to "space is intuited a priori", and the equation of "before the things exist"
+  with "a priori" moved to premise 2, where Kant's "mithin" puts it.
+- A wrong line reference (4:288.36 does not exist; page 288 ends at line 35); a
+  transcription note that said "before that line" where "before that word" was true; a
+  sentence characterizing Kant's footnote without a cited line, removed; a claim that
+  silently fused B xxvi's "something that appears" with Prolegomena §32's "thing in
+  itself", now stated as two halves with their sources; "the same restriction" where B 308
+  restricts the categories, not speculative cognition; a reference to B 307 for a
+  proposition that stands at 3:210.03–06, fixed by extending the passage; "require" where
+  B 307 says "annehmen", now "assumes"; a dropped clause ("die an Gegenständen selbst
+  haftete") restored. Ten nodes it found nothing wrong with are listed in its report.
+The lesson is the one `PLAN.md` §5 anticipated: a confident formalization written in one
+pass had a validity error I would have published. The pass cost about 80,000 tokens of
+the agent's own and is worth it; it stays in every run that writes nodes.
+
+**What else was wrong and why.**
+- My first rendering printed a dispute's body twice on its own page and "Verified by nobody
+  yet" on thinker, work and passage pages, which have no status; both caught on the scratch
+  build and fixed.
+- The one-sentence statement first rendered below the form rather than under the title;
+  seen in the desktop screenshot and moved.
+- `korpora.zim.uni-duisburg-essen.de` resets connections through the proxy; `korpora.org`
+  serves the same pages. The Korpus joins hyphenated line-end words and has an OCR slip at
+  3:65.25; both noted in memory so that no passage quotes across them unawares.
+- Unverified: A/B page numbers, which the Korpus does not carry; they are given from the
+  standard concordance and the AA line is the authoritative locator, as each passage says.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. Pace: two checked arguments and ten
+claims in one run, with the tooling done once; Checkpoint 1 wants ~40 nodes and the
+comparison page, which at this pace is a few more runs of Kant, then Schopenhauer and
+Nietzsche. zeno.org is reachable for Schopenhauer's and Nietzsche's German text.
+
+**Step 6.** `memory.md` rewritten, about 850 words. Dropped: the Phase 0 build details now
+in `site/README.md` and yesterday's entries, and the run-1 doubt about whether the
+workflow ran.
+
+**Step 8.** No new ask. Nothing waits on the owner except the deferred mailbox.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-07; more Kant (the critique of
+dogmatic metaphysics, and reading nodes on "eben dieselben Gegenstände"), each node through
+the adversarial pass; no comparison node yet.
+
+**Effort.** About 150,000 of the 300,000-token ceiling in this session plus about 80,000 in
+the adversarial agent: roughly a third on the tooling and its scratch tests, a third on
+fetching, transcribing, translating and writing the nodes, a third on the review, the
+fixes and the records. Nothing spent.
+
 ## 2026-10-05 — owner session: the asks notifier, Ask 6 answered
 
 Owner-initiated session, the afternoon after run 1. Operator on `claude-fable-5-1`.

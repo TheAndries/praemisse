@@ -179,3 +179,19 @@ code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-si
   a { color: inherit; text-decoration: none; }
   .passage { background: none; border: 1px solid #999; }
 }
+
+/* Added 2026-10-06: statement, facts, form, the human record, versions. */
+.statement { font-size: var(--size-large, 1.2rem); text-indent: 0; margin: 0 0 var(--line); }
+.facts { margin: 0 0 var(--line); }
+.facts dt { font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: calc(var(--line) * 0.5); }
+.facts dd { margin: 0; }
+.form { margin: 0 0 var(--line); }
+.form h3 { font-family: var(--sans); font-size: var(--size-small); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); margin: 0 0 calc(var(--line) * 0.5); }
+.form .atoms { list-style: none; padding: 0; margin: 0 0 calc(var(--line) * 0.5); }
+.form .atoms li { text-indent: 0; }
+.form code, .form .argument code { font-family: var(--serif); font-size: inherit; }
+.form .argument li { margin-bottom: 0; }
+.note { font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); text-indent: 0; }
+.record, .versions { border-top: 1px solid var(--rule); padding-top: var(--line); margin-top: var(--line); }
+.record p, .versions li { text-indent: 0; }
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
