@@ -17,5 +17,5 @@ produced_by: claude-fable-5-1, 2026-10-06
 ---
 B xxvi draws this as what follows from the result that we cognize objects only as
 appearances (AA 3:16.37–17.02). B 308–309 states a parallel restriction on the use of the
-categories, which can in no way reach beyond the boundary of the objects of experience
+categories, which can in no way reach beyond the limit of the objects of experience
 (AA 3:210.24–27).

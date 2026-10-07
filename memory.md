@@ -2,92 +2,118 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-06 (run 2, end)
+## State as of 2026-10-07 (run 3, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1 and 2
-were served on that model, no handover note needed. The GitHub and Claude Code Remote tools
-in the tool list are platform-attached to every cloud session and are not a config change
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–3 were
+served on that model, no handover note needed. The GitHub and Claude Code Remote tools in
+the tool list are platform-attached to every cloud session and are not a config change
 (`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
-motions: none. INBOX empty at runs 1 and 2. Open asks: 4 only (mailbox; deferred by owner;
+motions: none. INBOX empty at runs 1–3. Open asks: 4 only (mailbox; deferred by owner;
 blocks Phase 2). Asks 1, 2, 3, 5, 6 done.
 
 **Phase 0 complete (2026-10-05).** `site/build.py` (reads `map/*.md`, validates against
-`MODEL.md`, renders to `site/_build/`, gitignored; `--check` for CI; PyYAML the only
-dependency; own small Markdown subset), `site/static/style.css` and `type.css` (direction
-B, Libertine, owner decision), `site/fonts/libertinus/` only, `site/specimens/` kept but not
-published, `.github/workflows/site.yml` (check, build with `--domain praemisse.com`, deploy
-on push to `main`), `.github/workflows/notify-asks.yml` + `tools/open_asks_issue.py` (one
-GitHub issue *praemisse - open asks*, assigned to the owner, updated on every push touching
-`ASKS.md`; keep the `| # | Date | Ask | Blocks | Status |` table; `done ...` closes, *deferred*
-or *queued* lists as no action).
+`MODEL.md`, renders to `site/_build/`, gitignored; `--check` for CI; `--domain
+praemisse.com` in the workflow; PyYAML the only dependency; own small Markdown subset with
+`[text](../../c/slug/)` links between node pages, which live at `/<prefix>/<slug>/`),
+`site/static/style.css` and `type.css` (Libertine, owner decision), `.github/workflows/
+site.yml` (check, build, deploy on push to `main`), `notify-asks.yml` + `tools/
+open_asks_issue.py` (one GitHub issue *praemisse - open asks*; keep the `| # | Date | Ask |
+Blocks | Status |` table; `done ...` closes, *deferred*/*queued* lists as no action).
 
-**Phase 1 started (run 2, 2026-10-06).** The three model questions are settled and written
-into `MODEL.md`, section *How the model is applied* (operator's domain, method): `versions:`
-list in the same file; `statement:` one sentence on every claim, argument and comparison;
-`form:` block in propositional logic checked by `tools/validity.py` (truth table, ≤16 atoms,
-`not/and/or/->/<->`), `checked` only on an argument whose form passes, claims stay `draft`
-until attested; `d-` and `v-` nodes name a `target` and render in full on the target's page;
-`verified_by`/`disputes` must equal the set targeting the node; `attested` needs one `v-`,
-`established` two; `contested` iff a `d-` has outcome contested. All enforced by `--check`.
-Dispute outcomes: published, argued, conceded, contested, resolved, escalated. An `about/`
-page exists (template `site/templates/about.html`). Exercised on a scratch map with a
-dispute, an attestation and a version; not committed.
+**Phase 1 in progress.** Model settled in `MODEL.md`, *How the model is applied*:
+`versions:` in the same file (date, reason, superseded statement, credit); `statement:` one
+sentence on every claim, argument and comparison; `form:` in propositional logic checked by
+`tools/validity.py` (truth table, ≤16 atoms, `not/and/or/->/<->`), `checked` only on an
+argument whose form passes, claims `draft` until attested; premises may be `{claim: id}` or
+`{assumption: text}`, and an assumption is where the map's own bridge goes, named as such;
+`depends_on` on a claim names its argument, or a claim it is drawn from by an "also"/
+"denn"/"mithin" step not yet formalized (recorded in MODEL.md on 2026-10-07); `r-` nodes
+carry `reading_of`, `statement`, `passages`, `literature` (author, title, year, chapter), no
+status, and a body with *the texts it rests on*, *what it holds*, *what depends on it*,
+*what tells against it*; the map never picks a reading (P9); `d-`/`v-` nodes name a `target`
+and render in full on it; `verified_by`/`disputes` must equal the set targeting the node;
+`attested` one `v-`, `established` two; `contested` iff a `d-` has outcome contested. All
+enforced by `--check`.
 
-**Kant nodes on `main` (24):** `t-kant`; `w-kant-krv`, `w-kant-prolegomena`; passages
-`p-krv-b-xxvi` (AA 3:16.30–17.07), `p-krv-a24-b38` (3:52.30–53.16), `p-krv-a26-b42`
-(3:55.02–08), `p-krv-a42-b59` (3:65.17–22), `p-krv-a43-b60` (3:65.28–66.04), `p-krv-b307`
-(3:209.32–210.12), `p-krv-b308-309` (3:210.24–34), `p-prol-289` (4:289.03–14), `p-prol-314`
-(4:314.33–315.06); claims `c-kant-space-a-priori`, `c-kant-determinations-not-intuited-a-priori`,
-`c-kant-space-not-of-things-in-themselves`, `c-kant-objects-known-only-as-appearances`,
-`c-kant-knowledge-limited-to-experience`, `c-kant-things-in-themselves-unknown`,
-`c-kant-appearance-presupposes-something-appearing`,
-`c-kant-things-in-themselves-thinkable-not-knowable`, `c-kant-noumenon-negative-only`,
-`c-kant-without-things-in-themselves-appearance-without-appearing`;
-arguments `a-kant-space-not-of-things-in-themselves` (a; s→¬a ⊢ ¬s, checked) and
-`a-kant-appearance-requires-thing-in-itself` (w; ¬t→¬w ⊢ t, checked, a reductio). Translations are the project's own, marked. Every `original` was diffed
-word for word against the korpora.org text before commit.
+**Kant nodes on `main` (53 after run 3):** `t-kant`; `w-kant-krv`, `w-kant-prolegomena`;
+17 passages: `p-krv-b-xxvi` (3:16.30–17.07), `p-krv-b-xxviii-xxix` (3:18.21–30),
+`p-krv-b-xxix-xxx` (3:18.33–19.09), `p-krv-a24-b38`, `p-krv-a26-b42`, `p-krv-a42-b59`,
+`p-krv-a43-b60`, `p-krv-a235-b294` (3:202.12–22), `p-krv-a236-b295` (3:203.04–09),
+`p-krv-b307`, `p-krv-b308-309`, `p-prol-289`, `p-prol-314`, `p-prol-350` (4:350.21–33),
+`p-prol-350-351` (4:350.34–351.12), `p-prol-352` (4:352.21–33), `p-prol-353` (4:353.16–22);
+27 claims (run 2's ten on space, appearance, the limits of knowledge and the noumenon;
+run 3's seventeen on B xxix–xxx: the pretension, its principles, the practical assumption,
+knowledge annulled for faith, dogmatism defined; the island and the understanding's
+principles; Prolegomena §57: the two absurdities, principles taken for conditions of
+things, restricting principles becoming transcendent, the map's absurdity premise, the
+critique clause, bounds against limits, the space for things in themselves, metaphysics
+leads to limits; and the same action in another relation); 4 arguments, all `checked`:
+`a-kant-space-not-of-things-in-themselves` (s→¬a ⊢ ¬s),
+`a-kant-appearance-requires-thing-in-itself` (¬t→¬w, w ⊢ t),
+`a-kant-practical-assumption-requires-removing-speculative-pretension` (k→e, e→x, a→¬x ⊢
+a→¬k; a→¬x is an assumption premise, the map's bridge),
+`a-kant-denying-things-in-themselves-absurd` (n→g, g→u, ¬u ⊢ ¬n; ¬u is the map's claim
+`c-kant-restricting-principles-becoming-transcendent-is-absurd`, said so on the node);
+2 readings, `r-kant-two-aspect` (Prauss 1974; Allison 2004, ch. 2) and `r-kant-two-object`
+(Strawson 1966, Part Four; Guyer 1987, Part V; Van Cleve 1999, ch. 10 "Noumena and Things
+in Themselves"), both `reading_of: c-kant-things-in-themselves-thinkable-not-knowable`.
+Translations are the project's own, marked. *Grenzen* = "limits", *Schranken* = "bounds"
+everywhere (Kant's definition, 4:352.21–25); "aufheben" = "annul", noted on the passage;
+"ihr Ziel setzen" = "put a stop to". Still not in the map: B xxvii–xxviii on the will
+(3:17.08–18.21), A 236–260 / B 295–315 beyond the opening, Prolegomena §§58–59 (symbolic
+anthropomorphism, the limit as a point of contact), Kant's footnote at B xxvii.
 
-**Source of Kant's text.** https://korpora.org/kant/aa{03,04}/{page:03d}.html, one Akademie
-page per file with line numbers in a table; the extractor is the small script described in
-the 2026-10-06 changelog (regex over `<tr>`/`<td>`, prints `vol:page.line text`). The
-`korpora.zim.uni-duisburg-essen.de` host resets connections; use `korpora.org`. The Korpus
-joins hyphenated line-end words ("nothwendiggemachte" at 3:17.07) and has an OCR slip at
-3:65.25 ("daßmacht, da"): quote around such lines. A/B pages are not in the Korpus; they
-are given from the standard concordance and the AA line is the authoritative locator.
-AA III = KrV B; AA IV 1–252 = KrV A, 253–383 = Prolegomena.
+**Source of Kant's text.** https://korpora.org/kant/aa{03,04}/{page:03d}.html, one AA page
+per file, lines in `<tr>` rows: first non-empty `<td>` is the line number, the rest the
+text; join hyphenated words across lines by hand. The extractor and the diff script
+(`original` must be a substring of the joined page text; prints the start and end line) are
+rewritten each run in ten lines; keep them in the scratchpad, not the repository. The
+`korpora.zim.uni-duisburg-essen.de` host fails through the proxy; use `korpora.org`. The
+Korpus joins "nothwendiggemachte" at 3:17.07 and has an OCR slip at 3:65.25. A/B pages are
+not in the Korpus; they are given from the standard concordance and the AA line is the
+authoritative locator (B xxx = "Ich mußte also das Wissen aufheben"; A 235/B 294 = chapter
+opening of Phenomena and Noumena; A 236/B 295 = "Wir haben nämlich gesehen").
 
-**The adversarial pass is not optional.** Run 2's first form of the B xxvi argument had an
-assumption that asserted premises-imply-conclusion and a body that denied Kant states the
-bridge he states; the reviewing agent caught it, plus nine smaller faults (see the
-2026-10-06 entry). Give the reviewer the nodes, the fetched corpus files and the brief to
-break validity, fidelity, translation and line references; budget ~80,000 tokens for it.
+**The adversarial pass is not optional, and it finds what the truth table cannot.** Run 2:
+one form that asserted premises-imply-conclusion. Run 3: both forms valid, both wrong as
+reconstructions, one by a premise the passage's own Hume example contradicts, one by a
+silent identification of the conclusion claim with the form's conclusion. Pattern: when a
+form's conclusion is not word for word the conclusion claim, the missing step is a tacit
+premise; make it an `assumption` premise and say it is the map's. When Kant gives a verdict
+("Ungereimtheit") and then the consequences, the premise that the consequence is
+unacceptable is the map's; make it a claim whose body says so in its first sentence. Brief
+for the reviewer: the node list, the corpus files, the older passages the new nodes cite,
+and the order validity, fidelity, translation, line references, readings, links; it
+costs 80,000–125,000 tokens of its own. Launch it in the foreground and wait; its
+transcript goes quiet for minutes during long turns, so a "quiet file" test returns early.
 
-**Next for Phase 1 (PLAN.md §3, target ~40 nodes, one comparison node).** Kant: the
-critique of dogmatic metaphysics is not yet in the map (candidates: B xxx "Ich mußte also
-das Wissen aufheben", A 235–260/B 294–315 on the land of truth, Prolegomena §57 on the
-limits, AA 4:350–356 already fetched to scratch but lost with the container). Reading nodes
-for the two-aspect / two-object question on "eben dieselben Gegenstände" (B xxvi). Then
-Schopenhauer: WWV I §§ 1–2, 18–23 (will as thing-in-itself), the Anhang "Kritik der
-Kantischen Philosophie" (by section); public-domain German text: zeno.org is reachable
-through the proxy (checked 2026-10-06; de.wikisource returns 404 for the plain titles);
-nietzschesource.org answers too, but its eKGWB is JavaScript-rendered and needs a check. Then Nietzsche: JGB 16, 54; GD "Wie die wahre Welt
-endlich zur Fabel wurde"; Nachlass only where unavoidable and marked. Then `x-thing-in-itself`.
-Checkpoint 1 needs the comparison page; at the present pace (two arguments a run) that is
-roughly ten runs away, which is on plan.
+**Next for Phase 1 (PLAN.md §3, one comparison node).** Schopenhauer: WWV I §§ 1–2 (the
+world as representation; the principle of sufficient reason), §§ 18–23 (the will as
+thing-in-itself), the Anhang *Kritik der Kantischen Philosophie* (by its own paragraphs on
+the thing-in-itself and on the affection of the senses); public-domain German text: zeno.org
+is reachable through the proxy (checked 2026-10-06; de.wikisource returns 404 for plain
+titles); cite by section (§) and, where the edition has them, by page of the edition used,
+named in the `w-` node. Then Nietzsche: JGB 16, 54; GD "Wie die wahre Welt endlich zur
+Fabel wurde"; Nachlass only where unavoidable and marked; nietzschesource.org's eKGWB is
+JavaScript-rendered and needs a check. Then `x-thing-in-itself`, the Checkpoint 1 page.
+PLAN.md's "~40 nodes" is passed by Kant alone; the checkpoint is the comparison page, not
+the count; correct the figure at the next rewrite.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
-runs 1 or 2. The card used for the domain is still unreported.
+runs 1–3. The card used for the domain is still unreported.
 
 **Tooling facts.** Cloud container: Python 3.11 with PyYAML, Node 22 with a global
 `playwright` and Chromium at `/opt/pw-browsers/chromium` (screenshots: `NODE_PATH=$(npm root
--g) node script.js`, viewport 390 for phone). `pip install` and raw GitHub downloads work
-through the proxy; the GitHub REST API returns 403 unauthenticated; no `gh` CLI. Git author
-`Claude <noreply@anthropic.com>`; commits carry the session trailer.
+-g) node script.js`, viewport 390 for phone). WebSearch is available and was used once, to
+confirm chapter titles of the secondary literature before citing them. `pip install` and raw
+GitHub downloads work through the proxy; no `gh` CLI. Git author `Claude
+<noreply@anthropic.com>`; commits carry the session trailer. A stop hook asks for a commit
+whenever the turn ends with uncommitted changes; do not commit nodes before the review
+to satisfy it; keep the reviewer in the foreground instead.
 
-**Dropped from memory this run:** the Phase 0 build details that are now in `site/README.md`
-and the 2026-10-05 entries (font subsetting, rejected families, the specimen texts), and
-the run-1 verification notes about whether the workflow ran (it does; deploys are green
-since Ask 5).
+**Dropped from memory this run:** the itemized list of run 2's ten findings (the lesson is
+kept above), the Phase 0 build details beyond what the file list needs, the specimen and
+font history (in `site/README.md` and the 2026-10-05 entries).

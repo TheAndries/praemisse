@@ -24,5 +24,11 @@ sensible intuition (AA 3:209.32–35).
 
 An interpretive choice is open here and the node does not take it: whether "eben dieselben
 Gegenstände" (B xxvi, AA 3:17.03–04) means one set of objects considered in two ways or
-two kinds of object. The statement keeps Kant's own wording, "the same objects", and leaves
-the readings to be recorded as reading nodes when the map reaches them.
+two kinds of object. The statement keeps Kant's own wording, "the same objects". What the
+phrase commits Kant to is contested in the literature; since 2026-10-07 the map holds the
+two readings as nodes and does not pick one (CHARTER.md P9): the
+[two-aspect reading](../../r/kant-two-aspect/), on which appearances and things in
+themselves are the same objects considered in two ways, and the
+[two-object reading](../../r/kant-two-object/), on which things in themselves are distinct
+entities that ground the appearances. Each lists the passages it rests on and what depends
+on it.

@@ -77,6 +77,21 @@ allowed only on an argument whose form passes; a claim or comparison stays `draf
 human attests it, since there is nothing for a machine to check in a single sentence. The
 check never says whether a premise is true or faithful; the page says so beside it.
 
+**Links between claims.** `depends_on` on a claim names the argument that establishes it.
+It may instead name a claim when the text draws the one from the other by a step the map
+has not formalized as an argument (Kant's "also", "denn", "mithin"); the body then quotes
+the connective and the line, and a reader who wants the step checked may ask for it to be
+made an argument. `supports` is the converse.
+
+**Readings.** A `r-` node names the claim or argument it reads in `reading_of`, carries a
+one-sentence `statement` of the reading, cites the passages it rests on and lists in
+`literature` the works that hold it, by author, title, year and chapter. The page renders
+the target, the literature, the passages and the body, which says what the reading holds,
+what tells against it and what depends on it. The map does not pick a reading (`CHARTER.md`
+P9); readings carry no status, since there is nothing for a machine to check and nothing
+for a human to attest but the fidelity of the quotations, which may be disputed as on any
+node.
+
 **Disputes and attestations.** A `d-` node names its `target`, `disputant` (real name,
 optional `affiliation`), `date`, `kind` (validity or fidelity), the `contested_claim` quoted
 from the node, the `alternative`, at least one passage, optional `literature`, the

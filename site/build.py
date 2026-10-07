@@ -149,7 +149,7 @@ def check(nodes: list[Node]) -> list[str]:
         for key in ("verified_by", "disputes"):
             if key in n.meta and not isinstance(n.meta[key], list):
                 errors.append(f"{where}: {key} must be a list")
-        for key in LINK_FIELDS + ("verified_by", "disputes", "passages", "premises", "supersedes", "superseded_by", "conclusion", "thinker", "work"):
+        for key in LINK_FIELDS + ("verified_by", "disputes", "passages", "premises", "supersedes", "superseded_by", "conclusion", "thinker", "work", "reading_of"):
             for target in as_list(n.meta.get(key)):
                 if isinstance(target, dict):  # premises may be {claim: id} or {assumption: text}
                     target = target.get("claim") or target.get("id")
@@ -386,6 +386,15 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
         statement = render_attestation(n, ids, full=True)
     elif n.prefix in ("t", "w"):
         statement = render_facts(n, ids)
+    elif n.prefix == "r":
+        # A reading says which node it reads and which literature holds it (MODEL.md, Reading).
+        rows = []
+        if n.meta.get("reading_of"):
+            rows.append(f'<dt>A reading of</dt><dd>{link(ids, n.meta["reading_of"])}</dd>')
+        if n.meta.get("literature"):
+            rows.append("<dt>Literature</dt>" + "".join(f"<dd>{inline(str(x))}</dd>" for x in as_list(n.meta["literature"])))
+        if rows:
+            statement += f'<dl class="facts">{"".join(rows)}</dl>'
 
     record = ""
     vs = [m for m in ids.values() if m.prefix == "v" and str(m.meta.get("target")) == n.id]

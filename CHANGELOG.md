@@ -2,6 +2,118 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-07 — run 3: the critique of dogmatic metaphysics, and the two readings
+
+Third scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first.
+
+**Steps 1–3.** No ask changed status since run 2; Ask 4 stays deferred by the owner and
+blocks only Phase 2. `INBOX.md` empty: nothing to publish, reply to or record. No open
+motion.
+
+**Step 4, the nodes: 29 new, 3 revised.** Kant on the critique of dogmatic metaphysics and
+the limits of reason, from the korpora.org text, fetched page by page (AA III 18–19,
+202–203; AA IV 350–357). Eight passages: B xxviii–xxix (the same action in another
+relation); B xxix–xxx ("Ich mußte also das Wissen aufheben"); A 235–236 / B 294–295 (the
+island, the land of truth); A 236 / B 295 (the understanding's principles serve only
+experience); Prolegomena §57 in four spans (the absurdity of cognizing beyond experience;
+the still greater absurdity of admitting no things in themselves; *Grenzen* against
+*Schranken*; metaphysics leads to limits). Seventeen claims, all `draft`. Two arguments,
+both `checked`: *God, freedom and immortality cannot be assumed for practical use unless
+speculative reason gives up its pretension to insight beyond experience* (k→e, e→x, a→¬x
+⊢ a→¬k, B xxix–xxx) and *to admit no things in themselves is absurd* (n→g, g→u, ¬u ⊢ ¬n,
+Prolegomena §57). Two reading nodes on "eben dieselben Gegenstände" (B xxvi), the first
+use of the `r-` type: the two-aspect reading (Prauss 1974; Allison 2004, ch. 2) and the
+two-object reading (Strawson 1966, Part Four; Guyer 1987, Part V; Van Cleve 1999, ch. 10),
+each with the passages it rests on, what it holds, what depends on it and what tells
+against it; the map picks neither (`CHARTER.md` P9). The claim they read now points to
+them. Every passage's `original` was diffed word for word against the fetched text and its
+line range confirmed by the same script; one slip (4:352.32 for 33) was caught that way
+before the review. Translations are the project's own and marked. *Grenzen* is "limits"
+and *Schranken* "bounds" throughout, following Kant's own definition at AA 4:352.21–25;
+the one older passage that had "boundary" (B 308–309) is revised to match, with the
+revision noted on the node.
+
+**Method.** `MODEL.md`, *How the model is applied*, gains two paragraphs, as matters of
+method: how a reading node is applied (`reading_of`, `statement`, `literature`, no
+status) and what `depends_on` means between two claims (an argument, or a step the text
+marks with "also", "denn", "mithin" that the map has not formalized). The build validates
+`reading_of` as a link and renders a reading's target and literature in the facts list.
+
+**The adversarial pass, and what it found.** A second agent was given the nodes, the
+corpus files and the brief to break validity, fidelity, translation and line references;
+it also fetched the five older AA pages the readings cite. It returned 33 findings; I
+accepted all 33 and changed the nodes before commit.
+- *Serious, validity.* My Prolegomena §57 argument had as its third premise "a careful
+  critique guards the limits of reason", from the "wenn nicht" clause (4:351.10–12), and
+  the form negated "the restricting principles become transcendent". But Kant says they
+  *could* become so and that Hume's *Dialogues* are an example of it happening (4:351.09):
+  the passage itself contradicts a factual premise that they do not. And the form's
+  conclusion, "we do not admit no things in themselves", was not the conclusion claim,
+  "it is absurd to admit no things in themselves". The absurdity can only come from a
+  premise that the outcome is absurd, which is the map's, not Kant's wording. Rebuilt:
+  premise 3 is a new claim, *it is absurd that the principles restricting reason to
+  possible experience should themselves become transcendent*, whose body says in its
+  first sentence that it is the map's reading and why; the critique clause is a standalone
+  claim, restated as the counterfactual it is; and my sentence attributing the "greater
+  absurdity" of 4:350.34 to the wrong thing is gone.
+- *Moderate, validity.* The B xxx argument's form concluded ¬x→¬k, "if practical extension
+  is not declared impossible, the pretension is removed", while its conclusion claim says
+  "I cannot assume God, freedom and immortality unless ..."; the identity of "assuming
+  them" with "practical extension not being impossible" was tacit. Added as an explicit
+  assumption premise, a→¬x, named as the map's bridge; the form now concludes a→¬k, which
+  is the claim. The argument's id had named a claim it does not support; renamed before
+  commit, while ids are still free.
+- *Moderate.* A `shares_premise_with` link that shared no premise node; conclusion claims
+  without `depends_on` their argument; "would become transcendent" for "könnten";
+  "set a goal to its pretensions" for "ihr Ziel setzte", which means to put a stop to
+  them; the "Grenze"/"boundary" inconsistency above.
+- *Minor, 24 of them.* Dropped words in statements ("jederzeit", "gar", "gleichsam nur",
+  "wovon wir annehmen", "der jederzeit gar sehr dogmatisch ist"); a claim that fused two
+  passages, now split; a wrong line (3:55.04–06 for 04–05) and a wrong case ("bloße" for
+  "bloßer Verstandeswesen") in the readings; "iceberg" for "Eis"; "avoid" for "ihrer
+  nicht Umgang haben"; "anywhere" for "überall"; a counterfactual rendered as a result
+  clause; a Van Cleve characterization that read like a quotation; the two-aspect
+  reading's "what tells against it" missing the affection clause of §32 (4:314.36–315.01);
+  both readings lacking the "what depends on it" their model paragraph promises; a stale
+  paragraph on the claim they read. Five nodes it found nothing wrong with.
+The lesson is the same as run 2's, sharper: both of my arguments were valid as forms and
+wrong as reconstructions, each by a premise that was either contradicted by the passage
+or silently identified with something else. The pass cost about 123,000 tokens of the
+agent's own and found what no truth table can.
+
+**What else was wrong and why.**
+- The build did not render a reading's `literature` or target at all (the field was only
+  rendered on disputes); seen on the first screenshot and fixed. The first rendering also
+  ran the id into the link text; fixed by dropping the raw id there.
+- The reviewer's transcript stayed quiet for minutes at a time during long turns, and my
+  first wait for it returned early; the run paused on it correctly in the end. Note for
+  next time: launch the reviewer in the foreground and do nothing else, since nothing
+  downstream can proceed without it.
+- Unverified: A/B page numbers, as before; the reviewer judged them consistent with the
+  standard concordance.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. One number in it is already
+wrong: Phase 1's "~40 nodes" is passed with Kant alone (53 nodes), because the model's
+granularity, one passage per span and one claim per sentence, is finer than the founding
+estimate. The checkpoint is the comparison page, not the count, so the plan stands;
+the figure will be corrected when the plan is next rewritten.
+
+**Step 6.** `memory.md` rewritten, about 1,300 words. Dropped: the list of run 2's ten
+findings (the lesson is kept), the specimen and font history, the run-1 pipeline notes.
+
+**Step 8.** No new ask. Nothing waits on the owner except the deferred mailbox.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-08; the first Schopenhauer nodes
+(WWV I §§ 1–2 and 18–23, by section, from a public-domain German text, zeno.org if it
+serves it), each node through the adversarial pass, the pass launched in the foreground;
+no comparison node yet.
+
+**Effort.** About 200,000 of the 300,000-token ceiling in this session plus about 123,000
+in the adversarial agent: roughly a fifth on fetching and transcribing, two fifths on
+writing the 29 nodes and the two tooling changes, two fifths on the review, the 33 fixes
+and the records. Nothing spent.
+
 ## 2026-10-06 — run 2: the model applied, and the first Kant nodes
 
 Second scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
