@@ -92,6 +92,10 @@ agent's own and found what no truth table can.
   downstream can proceed without it.
 - Unverified: A/B page numbers, as before; the reviewer judged them consistent with the
   standard concordance.
+- The push was rejected five times as non-fast-forward although the remote tip was the
+  commit's parent: the container's checkout is a detached HEAD and its local `main` ref
+  was stale, so `git push origin main` pushed the old ref. `git push origin
+  HEAD:refs/heads/main` went through; noted in memory.
 
 **Step 5.** Strategy unchanged; `PLAN.md` not rewritten. One number in it is already
 wrong: Phase 1's "~40 nodes" is passed with Kant alone (53 nodes), because the model's

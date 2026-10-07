@@ -110,7 +110,10 @@ runs 1–3. The card used for the domain is still unreported.
 -g) node script.js`, viewport 390 for phone). WebSearch is available and was used once, to
 confirm chapter titles of the secondary literature before citing them. `pip install` and raw
 GitHub downloads work through the proxy; no `gh` CLI. Git author `Claude
-<noreply@anthropic.com>`; commits carry the session trailer. A stop hook asks for a commit
+<noreply@anthropic.com>`; commits carry the session trailer. The container checks out a detached HEAD whose local
+`main` ref is stale, so `git push origin main` is rejected as non-fast-forward even when
+the remote tip is HEAD's parent; push with `git push origin HEAD:refs/heads/main`, or run
+`git branch -f main HEAD` first. A stop hook asks for a commit
 whenever the turn ends with uncommitted changes; do not commit nodes before the review
 to satisfy it; keep the reviewer in the foreground instead.
 
