@@ -2,6 +2,128 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-08 — run 4: Schopenhauer, the will as thing in itself, and the critique of Kant's derivation
+
+Fourth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first.
+
+**Steps 1–3.** No ask changed status since run 3; Ask 4 stays deferred by the owner and
+blocks only Phase 2. `INBOX.md` empty: nothing to publish, reply to or record. No open
+motion.
+
+**Step 4, the nodes: 36 new, 0 revised.** Schopenhauer, *Die Welt als Wille und
+Vorstellung* I, from the zeno.org transcription of the Zürcher Ausgabe (1977, after
+Hübscher's text of the 1859 edition), cited by book and § with the ZA page as an aid.
+Thinker and work nodes. Thirteen passages: § 1 (the world is my representation; the
+»Objekt an sich« sentence), § 18 (the body given in two ways; the identity of will and
+body can be shown but never proved), § 19 (the law of causality never leads beyond
+representation; the analogy of the body), § 21 (the will alone is the thing in itself),
+§ 22 (denominatio a potiori; the will is not inferred), § 23 (free of the forms of
+appearance; groundless and one), and two from the Anhang, *Kritik der Kantischen
+Philosophie* (Kant's derivation of the thing in itself by the law of causality; only the
+derivation is faulty, not the recognition of a thing in itself). Twenty-one claims, all
+`draft`. Two arguments, both `checked`: *if the corporeal world is more than our
+representation we must say it is in itself will* (m→a, a→(v∨w), m→¬v ⊢ m→w, § 19) and
+*Kant's derivation of the thing in itself cannot bring one in, because the law of
+causality never leads beyond representation* (k, b, (k∧b)→¬e ⊢ ¬e, Anhang with § 19 as the
+premise's passage). The identity of will and body is recorded as a claim and not as an
+argument, because § 18 says of it that it »niemals bewiesen« can be (ZA I 144–145).
+Every passage's `original` was extracted from the fetched text by program and checked to
+be a verbatim substring, with the ZA page markers confirmed around each span; translations
+are the project's own and marked. No attack link on any Kant node (below).
+
+**The adversarial pass, and what it found.** A second agent was given the nodes, the
+corpus files and the brief to break validity, fidelity, translation, references and links;
+it also read the Kant nodes the new ones cite. It returned 47 findings; I accepted 44
+and changed the nodes before commit; three are answered in node bodies rather than by a
+change (below).
+- *Serious, validity.* The appendix argument's two bridge premises were »premises imply
+  the first half of the conclusion« and »first half implies second half«, both the map's,
+  while the textual principle the »Mithin« rests on, § 19's »über welches hinaus es nie
+  führen kann«, was named in the body and listed nowhere. Rebuilt: that claim is premise
+  2, the one remaining assumption is the definition of a thing in itself the paragraph
+  uses (ZA II 535), and the conclusion claim no longer begins with »Hence«.
+- *Serious, fidelity.* I had set `attacked_by` on Kant's *appearance presupposes
+  something that appears* and `replies_to` from the appendix argument. Schopenhauer
+  explicitly accepts what that claim says, »nicht die Anerkennung eines Dinges an sich
+  zur gegebenen Erscheinung« (ZA II 535); his attack is on a causal inference he
+  attributes to Kant without a passage, and the map has no Kant node stating it. Link
+  removed; the Kant node is back to its run-2 text; both Schopenhauer bodies now say
+  this, and name Prolegomena § 13 Anm. II (AA 4:289), not only § 32, as the Kant
+  passages on affection in the map.
+- *Moderate, validity.* The § 19 argument's second premise was glossed as »known or
+  thinkable → will«, but the claim says »will *or* representation«; the elimination of
+  the disjunct is now an explicit assumption premise. Its atoms turned the text's
+  epistemic question, what reality we can *attribute* and what we »müssen sagen«, into an
+  ontological conditional; the atoms and the conclusion claim's statement are now
+  epistemic, and the body quotes the chain of connectives (»Denn«, »daher«, »Wenn also«)
+  and says which sentences the form does not cover. The analogy claim, which the »Denn«
+  supports, now depends on the argument.
+- *Moderate.* Two claim→claim `depends_on` links set without a connective in the text
+  (act and action; the will alone is the thing in itself), removed, with the bodies
+  saying why; two missing converse `supports` links; »nachgewiesen« rendered once as
+  »demonstrated«, which is proof-language, against § 18's »nachgewiesen«/»bewiesen«
+  contrast, now »shown« throughout; »Voraussetzung« rendered as »assumption« in one place
+  and »presupposition« in another, now »presupposition«; the work node had Books 3–4 in
+  the wrong volume; »the last six sentences of § 19« were seven, with five more after.
+- *Minor, 30 of them.* Dropped qualifiers in statements (»nur«, »dennoch«, »durchaus«,
+  »viel«, »auch«, »doch«, »weiterhin«); a first-person resolve made impersonal; »Grund und
+  Boden«, »Besonnenheit«, »verständige Anschauung«, »allerdings«, »Verständigungspunkt«
+  rendered more exactly; a sentence claiming a footnote mark where there is none; a body
+  that read the parenthesis on Kant's »Objekt an sich« as a reading of Kant's doctrine;
+  a body that said the appendix »rests« on § 19 where it does not cite it; one wrong page
+  (153–154 for 153), one wrong distance (»a page later« for two); »innersten« for the
+  edition's »Innersten«; a title that called space the inference's result.
+- *Answered, not changed.* The § 19 passage stays listed on the appendix argument, now as
+  the passage of a premise rather than of the argument; the claim that the body's reality
+  is exhausted by will stays unlinked and is cited in the argument body as the text's
+  ground the form does not cover; and the question what `attacked_by`/`replies_to` mean
+  as converses, and whether a link-only change needs a `versions:` entry, is moot today
+  since the link is gone, and is noted in memory to be settled in `MODEL.md` the first
+  time an attack link is set.
+Eleven nodes it found nothing wrong with. The lesson is the one of runs 2 and 3 with a
+new clause: both forms were valid and both were wrong as reconstructions, one by a
+bridge that did the work of the missing textual premise, one by a disjunction silently
+resolved; and an attack link must be checked against what the attacked node *states*,
+not its topic, since Schopenhauer attacks Kant's derivation while accepting Kant's
+conclusion. The pass cost about 178,000 tokens of the agent's own and found what no
+truth table can.
+
+**What else was wrong and why.**
+- zeno.org serves ISO-8859-1; the first extraction decoded it as UTF-8 and every umlaut
+  was lost; caught on the first read and redone.
+- Several YAML fields (titles and refs containing a colon) were written unquoted and
+  broke the parser; fixed by quoting.
+- The Agent tool launched the reviewer in the background although the foreground was
+  asked for; its transcript then stayed quiet for a quarter of an hour inside one long
+  turn, the quiet-file wait returned early, and the stop hook twice asked for a commit,
+  which I refused since nodes are not committed before the pass. A message to the agent
+  asking for its report made it hand back, and the same report arrived twice. Noted in
+  memory.
+- Unverified: the ZA page of § 1's first paragraph (28), which precedes the first marker
+  of the book; the reviewer confirmed it from page lengths, and the passage says it is
+  inferred.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. Phase 1's »~40 nodes« is now
+passed twice over (89 nodes); the checkpoint is the comparison page, not the count.
+
+**Step 6.** `memory.md` rewritten, about 2,000 words. Dropped: the itemized Kant-run
+findings beyond the lessons, the Kant extractor's description beyond the URL pattern and
+the two Korpus quirks, run 3's separate note on the quiet-file test.
+
+**Step 8.** No new ask. Nothing waits on the owner except the deferred mailbox.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-09; the first Nietzsche nodes
+(JGB 16, 19, 36, 54; GD »Wie die ›wahre Welt‹ endlich zur Fabel wurde« and »Die vier
+großen Irrthümer« § 3), from zeno.org's Schlechta text by aphorism, each node through the
+adversarial pass, with the reviewer messaged for its report if its transcript goes quiet;
+no comparison node yet.
+
+**Effort.** About 200,000 of the 300,000-token ceiling in this session plus about 178,000
+in the adversarial agent: roughly a fifth on fetching, extracting and reading the text,
+two fifths on writing the 36 nodes, two fifths on the review, the 44 fixes and the
+records. Nothing spent.
+
 ## 2026-10-07 — run 3: the critique of dogmatic metaphysics, and the two readings
 
 Third scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

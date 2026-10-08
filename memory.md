@@ -2,16 +2,16 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-07 (run 3, end)
+## State as of 2026-10-08 (run 4, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–3 were
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–4 were
 served on that model, no handover note needed. The GitHub and Claude Code Remote tools in
 the tool list are platform-attached to every cloud session and are not a config change
 (`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
-motions: none. INBOX empty at runs 1–3. Open asks: 4 only (mailbox; deferred by owner;
+motions: none. INBOX empty at runs 1–4. Open asks: 4 only (mailbox; deferred by owner;
 blocks Phase 2). Asks 1, 2, 3, 5, 6 done.
 
 **Phase 0 complete (2026-10-05).** `site/build.py` (reads `map/*.md`, validates against
@@ -66,6 +66,46 @@ everywhere (Kant's definition, 4:352.21–25); "aufheben" = "annul", noted on th
 (3:17.08–18.21), A 236–260 / B 295–315 beyond the opening, Prolegomena §§58–59 (symbolic
 anthropomorphism, the limit as a point of contact), Kant's footnote at B xxvii.
 
+**Schopenhauer nodes on `main` (36 after run 4; 89 nodes in all plus README):** `t-schopenhauer`;
+`w-schopenhauer-wwv1` (Zürcher Ausgabe 1977 text after Hübscher's 1859 text, vol. 1 = Books
+1–2, vol. 2 = Books 3–4 and the Anhang, continuous pagination); 13 passages `p-wwv1-*`:
+§ 1 (the first paragraph, ZA I 28 inferred; the »Objekt an sich« sentence, 30), § 18 (the
+body given in two ways, 142; the identity shown not proved, 144–145), § 19 (causality never
+leads beyond representation, 146–147; the analogy of the body, 147–148), § 21 (the will
+alone is the thing in itself, 153–154), § 22 (denominatio a potiori, 154; the will not
+inferred, 155), § 23 (free of the forms, 156; groundless and one, 157), Anhang (Kant's
+derivation of the thing in itself, ZA II 534–535; only the derivation is faulty, 535);
+21 claims `c-schopenhauer-*`, all `draft`; 2 arguments, both `checked`:
+`a-schopenhauer-corporeal-world-in-itself-is-will` (m→a, a→(v∨w), m→¬v ⊢ m→w; premises 1
+and 3 are the map's, the conclusion is epistemic, »so müssen wir sagen«) and
+`a-schopenhauer-kant-derivation-cannot-reach-thing-in-itself` (k, b, (k∧b)→¬e ⊢ ¬e; b is
+the § 19 principle, which the appendix does not cite and the map reads behind its
+»Mithin«; the bridge is the definition of a thing in itself at ZA II 535). No attack link
+on any Kant node: Schopenhauer accepts »die Anerkennung eines Dinges an sich zur gegebenen
+Erscheinung« (ZA II 535) and the map has no Kant node stating the causal inference he
+attributes to Kant without a passage. `attacked_by`/`replies_to` are still unused in the
+map; settle their convention (converses? a `versions:` entry for a link-only change?) in
+MODEL.md the first time one is set. Terms: Vorstellung "representation", Erscheinung
+"appearance", Objektität "objectity", Satz vom Grunde "principle of sufficient reason",
+nachweisen "show" against beweisen "prove", darthun "show"/"set forth", Voraussetzung
+"presupposition", Annahme "assumption", Besonnenheit "discernment", »Grund und Boden«
+"ground and soil". The identity of will and body is a claim, not an argument, because
+§ 18 says it can never be proved. Still not in the map: § 2, § 20, §§ 24–29, the §§ 18–19
+sentences on pain and pleasure, the Anhang on the Transcendental Aesthetic and on the
+categories.
+
+**Source of Schopenhauer's text.** zeno.org, `http://www.zeno.org/Philosophie/M/Schopenhauer,+Arthur/Die+Welt+als+Wille+und+Vorstellung/Erster+Band/<Erstes+Buch|Zweites+Buch|Anhang.+Kritik+der+Kantischen+Philosophie>`,
+one Book per HTML file, served as ISO-8859-1 (decode as such, not UTF-8); the text is in
+`<div class="zenoCOMain">`, `<h5>` carries the § numbers, `[N]` in `class="zenoTXKonk"`
+anchors marks where ZA page N begins (confirmed by page lengths), footnote numbers are
+glued to the preceding word (»u.s.w.31«). The extractor (strip tags, unescape, keep § and
+page markers) and the passage generator that extracts each `original` by start/end
+substring and strips markers are rewritten in twenty lines each; keep them in the
+scratchpad. Nietzsche: zeno.org serves JGB and GD too (Schlechta, Werke in drei Bänden,
+München 1954, by aphorism groups such as `.../Erstes+Hauptstück.../11-20`); cite by
+aphorism number, which is canonical, and give the KSA volume and page only if verified.
+nietzschesource.org is JavaScript-rendered and returns nothing usable through the proxy.
+
 **Source of Kant's text.** https://korpora.org/kant/aa{03,04}/{page:03d}.html, one AA page
 per file, lines in `<tr>` rows: first non-empty `<td>` is the line number, the rest the
 text; join hyphenated words across lines by hand. The extractor and the diff script
@@ -87,20 +127,31 @@ premise; make it an `assumption` premise and say it is the map's. When Kant give
 unacceptable is the map's; make it a claim whose body says so in its first sentence. Brief
 for the reviewer: the node list, the corpus files, the older passages the new nodes cite,
 and the order validity, fidelity, translation, line references, readings, links; it
-costs 80,000–125,000 tokens of its own. Launch it in the foreground and wait; its
-transcript goes quiet for minutes during long turns, so a "quiet file" test returns early.
+costs 80,000–125,000 tokens of its own. Run 4: 47 findings, the serious ones again
+on the arguments: a bridge premise that was "premises imply conclusion" while the textual
+principle (§ 19) sat unlisted; a disjunction (»Wille und Vorstellung«) silently resolved;
+an epistemic conclusion (»müssen wir sagen«) made ontological; an attack link set on a
+Kant claim that Schopenhauer explicitly accepts. Lesson added: before linking an attack,
+check that the attacked node states what the attacker denies, not merely the nearest
+topic; and quote the connective for every claim→claim `depends_on` or set none. The Agent
+tool launches the reviewer in the background even when asked for the foreground; its
+transcript stays quiet for 15–20 minutes during one long turn, a quiet-file wait returns
+early, and the stop hook then asks for a commit, which must be refused until the report
+is in. A `SendMessage` to the agent asking for the report now makes it hand back (it did
+in run 4, and the same report arrived twice). It cost 178,000 tokens of its own.
 
-**Next for Phase 1 (PLAN.md §3, one comparison node).** Schopenhauer: WWV I §§ 1–2 (the
-world as representation; the principle of sufficient reason), §§ 18–23 (the will as
-thing-in-itself), the Anhang *Kritik der Kantischen Philosophie* (by its own paragraphs on
-the thing-in-itself and on the affection of the senses); public-domain German text: zeno.org
-is reachable through the proxy (checked 2026-10-06; de.wikisource returns 404 for plain
-titles); cite by section (§) and, where the edition has them, by page of the edition used,
-named in the `w-` node. Then Nietzsche: JGB 16, 54; GD "Wie die wahre Welt endlich zur
-Fabel wurde"; Nachlass only where unavoidable and marked; nietzschesource.org's eKGWB is
-JavaScript-rendered and needs a check. Then `x-thing-in-itself`, the Checkpoint 1 page.
-PLAN.md's "~40 nodes" is passed by Kant alone; the checkpoint is the comparison page, not
-the count; correct the figure at the next rewrite.
+**Next for Phase 1 (PLAN.md §3, one comparison node).** Nietzsche: JGB 16 (the »unmittelbare
+Gewißheit« of the I), JGB 54 (the subject as grammatical habit), JGB 15–17 and 36 (the will
+as the only reality, the "will to power" hypothesis as an answer to Schopenhauer), GD "Wie
+die »wahre Welt« endlich zur Fabel wurde" (the abolition of the true world together with
+the apparent), GD "Die vier großen Irrthümer" §3 (the will as a cause; against
+Schopenhauer's »unmittelbar Erkanntes«), and JGB 19 (willing is not simple, against
+§ 18's identity); Nachlass only where unavoidable and marked. Source: zeno.org (above).
+Then `x-thing-in-itself`, the Checkpoint 1 page: Kant's thinkable-not-knowable thing in
+itself and the two readings; Schopenhauer keeping the thing in itself and replacing the
+derivation with the will (ZA II 535) while rejecting an object in itself (ZA I 30);
+Nietzsche denying the distinction. PLAN.md's "~40 nodes" is passed (89); the checkpoint is
+the comparison page, not the count; correct the figure at the next rewrite.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
 runs 1–3. The card used for the domain is still unreported.
@@ -117,6 +168,7 @@ the remote tip is HEAD's parent; push with `git push origin HEAD:refs/heads/main
 whenever the turn ends with uncommitted changes; do not commit nodes before the review
 to satisfy it; keep the reviewer in the foreground instead.
 
-**Dropped from memory this run:** the itemized list of run 2's ten findings (the lesson is
-kept above), the Phase 0 build details beyond what the file list needs, the specimen and
-font history (in `site/README.md` and the 2026-10-05 entries).
+**Dropped from memory this run:** the itemized Kant-run findings beyond the lessons kept
+above, the Kant extractor's line-by-line description (the URL pattern and the two Korpus
+quirks are kept), and run 3's note on the reviewer's "quiet file" test, now folded into the
+adversarial-pass paragraph.
