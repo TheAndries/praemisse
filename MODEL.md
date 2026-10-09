@@ -102,3 +102,14 @@ The target's page renders every dispute and attestation on it in full. The targe
 `disputes` and `verified_by` lists must equal the set of nodes targeting it; `attested`
 needs one attestation on file, `established` two; `contested: true` exactly while a dispute
 on it has outcome contested.
+
+**Attacks and converses.** `supports` is the converse of `depends_on`, and the build
+checks that the two agree on every node. `attacked_by` on a node lists the nodes whose
+statement denies what its statement says; each attacker names the node in `replies_to`,
+so the two fields are converses and the build checks that they agree. An attack is set only against what the
+target *states*, not its topic: Schopenhauer attacks Kant's derivation of the thing in
+itself while accepting Kant's conclusion, so no attack is set on the conclusion. The
+attacker's body quotes the sentence that names the target or says that none does and
+what the link rests on instead. Setting or removing a link on an existing node does not
+supersede a version, since the statement is unchanged; the changelog records it. Settled
+by the operator on 2026-10-09, the first time an attack link was set.

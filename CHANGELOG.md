@@ -2,6 +2,206 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-09 — run 5: Nietzsche against immediate certainty, the will as cause, and the true world
+
+Fifth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first.
+
+**Steps 1–3.** No ask changed status since run 4; Ask 4 stays deferred by the owner and
+blocks only Phase 2. `INBOX.md` empty: nothing to publish, reply to or record. No open
+motion.
+
+**Step 4, the nodes: 53 new, 6 revised by a link only.** Nietzsche, *Jenseits von Gut und
+Böse* (1886) and *Götzen-Dämmerung* (1889), cited by aphorism number and, for GD, by
+chapter and section; the chapter »Wie die ›wahre Welt‹ endlich zur Fabel wurde« by stage.
+Thinker and two work nodes. Thirteen passages: JGB 16 (immediate certainties, with
+Schopenhauer's »ich will« named as superstition; the philosopher's analysis of »ich
+denke«), JGB 17 (»es denkt«; the subject by grammatical habit), JGB 19 (willing is
+something complicated; the belief that will and action are one), JGB 36 (the mechanistic
+world not as representation in the Schopenhauerian sense; the causality of the will and
+the will to power), JGB 54 (the soul and the grammatical subject), GD »Die ›Vernunft‹ in
+der Philosophie« 2, 5 and 6 (the apparent world the only one; the will as cause the great
+error; the four propositions, the fourth naming Kant), the whole Fabel chapter, and »Die
+vier grossen Irrthümer« 3 (the error of a false causality). Thirty-three claims, all
+`draft` (two of them added after the review, below). Three arguments, all `checked`: *the state expressed in »I think« has no immediate
+certainty, because settling what it is presupposes a comparison with other states I know
+in myself* (c, c→b, b→¬g ⊢ ¬g, JGB 16, the two conditionals being the map's identification
+of the comparison with the »Rückbeziehung« and its reading of »wegen«); *the true world, being unattained and so
+unknown, does not obligate us* (¬r, ¬r→¬k, ¬k→¬o ⊢ ¬o, Fabel stage 4, the first
+conditional being the map's bridge for »als unerreicht auch unbekannt«, and the form
+reaching only »verpflichtend« because the stage's ground speaks of obligation alone);
+*the whole alleged empirical evidence for spiritual causes is gone, because neither the
+will nor the motive nor the I is a cause, and these three inner facts were that evidence*
+(¬w, ¬m, ¬i, e→(w∨m∨i) ⊢ ¬e, GD Irrthümer 3, the disjunction being the map's bridge
+from »diesen drei inneren Thatsachen« and »die ganze angebliche Empirie dafür«). Two reading nodes on JGB 36's »sie wäre eben "Wille zur
+Macht" und nichts ausserdem«, the map's second contested claim: the reading on which the
+aphorism asserts it (Richardson 1996, ch. 1) and the reading on which it is a conditional
+whose premises Nietzsche rejects (Clark 1990, ch. 7); both chapter titles confirmed by
+search before citing; the map picks neither (`CHARTER.md` P9). Every passage's
+`original` was extracted from the corpus by program and asserted to be a verbatim
+substring; translations are the project's own and marked. The claims keep the text's
+qualifiers and modes: »jedenfalls«, »scheint mir«, »es dünkt mich«, »Gesetzt ... so hätte
+man«, »ob nicht vielleicht«; the JGB 54 claim reports what »man versuchte« and does not
+put it in Nietzsche's voice.
+
+**The first attack links, and the convention for them.** `attacked_by` and `replies_to`
+had never been set. Settled today in `MODEL.md`, *How the model is applied*, last
+paragraph, as a matter of method: the two fields are converses and the build now checks
+that they agree (a negative test on a scratch copy of the map fails as it should); an
+attack is set only when the attacker's statement denies what the target *states*, not its
+topic; the attacker's body quotes the sentence that names the target or says that none
+does; a link-only change on an old node adds no `versions:` entry and is recorded here.
+Set: JGB 16's »wie es der Aberglaube Schopenhauer's war, "ich will"« and JGB 19's
+»Schopenhauer gab zu verstehen, der Wille allein sei uns eigentlich bekannt ... ein
+Volks-Vorurtheil übernommen und übertrieben« attack Schopenhauer's claim that the will is
+»ein durchaus unmittelbar Erkanntes« (WWV I § 22); JGB 19's »der Wollende glaubt ... dass
+Wille und Aktion irgendwie Eins seien«, as the product of an expected »Wirkung des
+Befehls«, attacks Schopenhauer's identity of act of will and action of the body (§ 18),
+with the body saying that Schopenhauer is named at the aphorism's opening and not in
+that sentence. Also set, after the review: JGB 16's »"Ding an sich" ... eine contradictio in adjecto«
+attacks Kant's claim that things in themselves must at least be thinkable, a concept
+including a contradictio in adjecto being unthinkable; the body says the link rests on
+the words »Ding an sich« alone, since no sentence names Kant. Not set, with the reason on
+each node: JGB 36 against »Die Welt ist meine Vorstellung« (a proposal to attempt the
+contrary is not a denial), GD Vernunft 6's fourth proposition against Kant (a diagnosis
+of motive is not a denial of a claim), and Fabel stage 6 against Kant's B xxvi conditional
+(the stage does not state the conditional; it affirms the antecedent Kant's modus tollens
+denies, which the comparison page will set side by side). The two Schopenhauer nodes and
+one Kant node changed in their `attacked_by` field only; three older nodes
+(`c-kant-understanding-principles-only-for-experience`,
+`c-kant-objects-known-only-as-appearances`,
+`c-schopenhauer-causality-sensation-and-space-are-subjective`) changed in `supports`
+only, where the new converse check found the field disagreeing with a `depends_on`.
+
+**The adversarial pass, and what it found.** A second agent was given the nodes, the
+corpus files and the brief to break validity, fidelity, attack links, translation,
+references, readings, links and format; it also read the twelve Kant and Schopenhauer
+nodes the new ones cite. It returned 46 findings; I accepted 45 and changed the nodes
+before commit; one is answered on the node rather than by a change (below).
+- *Serious, fidelity (P9).* The Fabel's stage 4, »Hahnenschrei des Positivismus«, was
+  attributed to Nietzsche as his own argument, and the argument's body called the
+  attribution »settled« by the chapter's ending. The chapter labels stage 3
+  »königsbergisch« and stage 1 Plato's, and the map attributes neither to Nietzsche;
+  »INCIPIT ZARATHUSTRA« endorses the terminus, not each stage's reasoning. Rebuilt: the
+  three stage-4 claims and the argument now state »At the positivist stage of the
+  history of the error: ...«, the body says this framing is the map's reading, chosen so
+  as not to pick between the reading on which the stages are positions Nietzsche passed
+  through (Clark 1990, ch. 3) and one on which stages 4–6 are his own progression, and
+  invites dispute on either side.
+- *Serious, validity.* The JGB 16 argument's one assumption was »c → ¬g«, premise implies
+  conclusion, while the sentence supplies a middle term, »wegen dieser Rückbeziehung auf
+  anderweitiges Wissen«. Rebuilt with three atoms: the comparison is presupposed (the
+  claim), the comparison is the back-reference (the map's identification, warranted by
+  »dieser«), the back-reference excludes immediate certainty (the »wegen«, instanced not
+  stated); each assumption now does work a reader can dispute. The reviewer also caught
+  that »er« in »hat er ... keine unmittelbare Gewissheit« is »meinen augenblicklichen
+  Zustand«, not the neuter »ich denke«; the atoms, the conclusion claim and its body now
+  say so, and the conclusion claim no longer carries its ground in a »Because« clause.
+- *Serious, P9.* Four bodies said flatly that GD's »Der Wille bewegt nichts mehr« denies
+  the antecedent of JGB 36's conditional, which is what the not-asserted reading holds
+  and the other reading denies; the map had picked a reading in four places while saying
+  it picks none. Each now says »on the reading ... ; the other reading ...«.
+- *Moderate, validity.* The spiritual-causes argument's bridge was ontological, »if
+  there are spiritual causes, one of the three is one«, while the text's own step is
+  epistemic, »Die ganze angebliche Empirie dafür gieng zum Teufel«; run 4's pattern.
+  Rebuilt with the evidence as the atom, the form's conclusion is a new claim that the
+  evidence is gone, and »Es giebt gar keine geistigen Ursachen« depends on it by the
+  text's »Das folgt daraus«, a step the map has not formalized; the argument renamed
+  accordingly while ids are free. Its atom for the motive rested on a comparative (»eher
+  ... verdeckt, als dass es sie darstellt«), which denies nothing outright; it now rests
+  on »ein Nebenher der That«. A non-premise sat in its `depends_on` without a converse;
+  removed, and the build now checks `depends_on`/`supports` converses everywhere, which
+  surfaced three inconsistencies in older Kant and Schopenhauer nodes, fixed by link
+  only. The Fabel argument's conclusion claim stated three predicates where the form
+  reaches one; split into the narrow conclusion and the full sentence as a separate
+  claim no argument reaches. The premise »wozu könnte uns etwas Unbekanntes
+  verpflichten?« was a question; now a statement marked as the map's reading of it.
+- *Moderate, attack links.* The attack on Schopenhauer's identity of will and action
+  rested on a sentence whose denial was in the sentence before (»irrthümlichen
+  Schlüssen«), outside the statement; the statement now begins with it and the claim
+  is renamed. The identification of JGB 16's »ich will« with WWV I § 22 was stated as
+  fact, and § 22 speaks of the concept, not the act; the bodies now say the
+  identification is the map's, name the words of the target denied, and cite § 18
+  beside § 22. The JGB 19 attack denies only »ganz und gar bekannt«, not »durch Schlüsse
+  erreichtes«; said. The refusal to attack Kant's thinkable-not-knowable gave a reason
+  the convention does not recognize (no ground, no passage) while the Schopenhauer link
+  rested on a sentence with no ground either; the rule is now the same for both, and the
+  link is set, with the body saying it rests on the words »Ding an sich« alone. The
+  Fabel stage 6 body said Nietzsche »accepts a consequence Kant rejects«; he denies the
+  consequent as well, rejecting the pair.
+- *Moderate, fidelity and P1.* »es dünkt mich immer wieder« and »scheint mir« dropped
+  from two statements whose bodies said they were kept; the »sagen wir« frame dropped
+  from the three-ingredients claim; an aside folded into an antecedent; a second
+  »gesetzt« and »Ausgestaltung und Verzweigung« compressed; half a supposition dropped.
+  Five bodies quoted Nietzsche outside every passage: three spans widened (JGB 36 to the
+  »Moral der Methode«, JGB 54 whole, GD Vernunft 5 from »Heute umgekehrt«) and two
+  quotations replaced by references. »ohne Abzug und Zuthat« had become »without
+  deduction or addition«, which in the one place it matters reads as »without
+  inference«; now »subtraction«. »Heute wissen wir« attributed to the wrong section.
+- *Minor, 20 of them.* »acts« for »wirkt« against the map's »work«; »certainty« for
+  »Sicherheit« colliding with »Gewissheit«; a calque for »sich hinwegsetzen über«;
+  »illusion« and »deception« for one »Täuschung«; a lost »nicht« in »ob nicht«;
+  »gleichsam« and »doch« dropped; objects supplied to »hineingedacht, untergeschoben«;
+  »seen« added; a reflexive made passive; the »mein Satz« emendation applied silently
+  inside the translation and backed by an unnamed »other editions«, now bracketed in the
+  translation and the claim about editions dropped; »orthography of the first edition«
+  claimed where only consistency with it is known; a four-sentence statement; a
+  narrative sequence set as a claim→claim dependency, removed; a reading that said
+  »without the thing in itself« with no passage; the readings' closing P9 line; a title
+  naming a subject the span does not.
+- *Answered, not changed.* The reviewer judged »unattainable? at any rate unattained«
+  a borderline two-clause statement that may stand; it stands, restated as »unattainable
+  or not, at any rate unattained«.
+Eighteen nodes it found nothing wrong with. The pass cost about 184,000 tokens of the
+agent's own and found, again, what no truth table can: both the serious validity
+findings were valid forms wrong as reconstructions, and the serious fidelity findings
+were attributions the text labels as someone else's or readings the map had quietly
+picked.
+
+**What else was wrong and why.**
+- zeno.org, the source of the Schopenhauer text and the planned source for Nietzsche,
+  reset every connection all run (curl over HTTP and HTTPS, WebFetch 503). Used instead:
+  Project Gutenberg's German texts (eBooks 7204 and 7203), derived from Projekt
+  Gutenberg-DE, in first-edition orthography, whose printed edition the transcriber does
+  not state; the thinker and work nodes say so, and the KSA pages are not given since
+  they could not be verified. The citation by aphorism number is canonical and does not
+  depend on the edition. The Deutsches Textarchiv has no Nietzsche; de.wikisource has
+  neither work.
+- The Gutenberg transcription reads »wie es in ein Satz ist« at JGB 36 where the printed
+  text has »wie es mein Satz ist«; the passage node quotes the transcription unchanged,
+  translates the printed reading and says so.
+- The page for a passage shows the work title followed by the `ref`, and today's refs
+  repeated the work title; the refs were shortened after the review to chapter and
+  number, matching the Kant and Schopenhauer refs.
+- The reviewer was launched in the background again although the foreground was asked
+  for; the wait was used to build and screenshot the site to the scratchpad and to draft
+  memory and this entry.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. All three thinkers of the chain
+are now in the map (142 nodes), and nothing but the comparison node stands between the
+map and Checkpoint 1; the next run writes `x-thing-in-itself`, settling the comparison
+node's model first. The plan's »~40 nodes« will be corrected when the plan is rewritten at
+the checkpoint.
+
+**Step 6.** `memory.md` rewritten, about 2,500 words. Dropped: the itemized run-4
+findings beyond the distilled rules, the §§ 18–19 sentences on pain and pleasure, the
+note that run 4's report arrived twice, the Schopenhauer extractor's description beyond
+the URL and markup facts.
+
+**Step 8.** No new ask. Nothing waits on the owner except the deferred mailbox.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-10; the comparison node
+`x-thing-in-itself` with its model settled in `MODEL.md` and its page given the design
+care `DESIGN.md` 5 asks for, through the adversarial pass; then Checkpoint 1 is the
+owner's to read.
+
+**Effort.** About 290,000 of the 300,000-token ceiling in this session plus about
+184,000 in the adversarial agent: roughly a sixth on finding a source when zeno.org was
+down and extracting the text, two fifths on writing the 51 nodes and the convention, two
+fifths on the review, the 45 fixes and the records. The ceiling was nearly reached
+because the review report was read twice over by mistake, once in full and once in
+chunks. Nothing spent.
+
 ## 2026-10-08 — run 4: Schopenhauer, the will as thing in itself, and the critique of Kant's derivation
 
 Fourth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

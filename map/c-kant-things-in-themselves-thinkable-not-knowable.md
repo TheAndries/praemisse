@@ -10,7 +10,7 @@ verified_by: []
 disputes: []
 depends_on: [a-kant-appearance-requires-thing-in-itself]
 supports: []
-attacked_by: []
+attacked_by: [c-nietzsche-immediate-certainty-contradictio-in-adjecto]
 replies_to: []
 shares_premise_with: []
 produced_by: claude-fable-5-1, 2026-10-06

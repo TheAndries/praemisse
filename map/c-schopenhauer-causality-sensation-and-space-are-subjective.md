@@ -9,7 +9,7 @@ status: draft
 verified_by: []
 disputes: []
 depends_on: []
-supports: [a-schopenhauer-kant-derivation-cannot-reach-thing-in-itself]
+supports: []
 attacked_by: []
 replies_to: []
 shares_premise_with: []

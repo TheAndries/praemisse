@@ -9,7 +9,7 @@ status: draft
 verified_by: []
 disputes: []
 depends_on: []
-supports: []
+supports: [c-kant-cognition-beyond-possible-experience-absurd]
 attacked_by: []
 replies_to: []
 shares_premise_with: []

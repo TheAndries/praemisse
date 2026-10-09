@@ -1,0 +1,19 @@
+---
+id: p-jgb-19-willing-complicated
+type: passage
+title: "JGB 19, willing is something complicated"
+work: w-nietzsche-jgb
+ref: "Erstes Hauptstück, 19 (opening)"
+lang: de
+source: Project Gutenberg eBook 7204, after Projekt Gutenberg-DE
+original: "Die Philosophen pflegen vom Willen zu reden, wie als ob er die bekannteste Sache von der Welt sei; ja Schopenhauer gab zu verstehen, der Wille allein sei uns eigentlich bekannt, ganz und gar bekannt, ohne Abzug und Zuthat bekannt. Aber es dünkt mich immer wieder, dass Schopenhauer auch in diesem Falle nur gethan hat, was Philosophen eben zu thun pflegen: dass er ein Volks-Vorurtheil übernommen und übertrieben hat. Wollen scheint mir vor Allem etwas Complicirtes, Etwas, das nur als Wort eine Einheit ist, - und eben im Einen Worte steckt das Volks-Vorurtheil, das über die allzeit nur geringe Vorsicht der Philosophen Herr geworden ist. Seien wir also einmal vorsichtiger, seien wir \"unphilosophisch\" -, sagen wir: in jedem Wollen ist erstens eine Mehrheit von Gefühlen, nämlich das Gefühl des Zustandes, von dem weg, das Gefühl des Zustandes, zu dem hin, das Gefühl von diesem \"weg\" und \"hin\" selbst, dann noch ein begleitendes Muskelgefühl, welches, auch ohne dass wir \"Arme und Beine\" in Bewegung setzen, durch eine Art Gewohnheit, sobald wir \"wollen\", sein Spiel beginnt. Wie also Fühlen und zwar vielerlei Fühlen als Ingredienz des Willens anzuerkennen ist, so zweitens auch noch Denken: in jedem Willensakte giebt es einen commandirenden Gedanken; - und man soll ja nicht glauben, diesen Gedanken von dem \"Wollen\" abscheiden zu können, wie als ob dann noch Wille übrig bliebe! Drittens ist der Wille nicht nur ein Complex von Fühlen und Denken, sondern vor Allem noch ein Affekt: und zwar jener Affekt des Commando's."
+translation: "Philosophers are accustomed to speak of the will as if it were the best-known thing in the world; indeed Schopenhauer gave to understand that the will alone is really known to us, known entirely and completely, known without subtraction or addition. But it seems to me again and again that Schopenhauer in this case too has only done what philosophers are just accustomed to do: that he has taken over and exaggerated a popular prejudice. Willing seems to me above all something complicated, something that is a unity only as a word, – and precisely in the one word lies the popular prejudice that has become master over the always only slight caution of philosophers. Let us then for once be more cautious, let us be \"unphilosophical\" –, let us say: in every willing there is first a plurality of feelings, namely the feeling of the state away from which, the feeling of the state towards which, the feeling of this \"away\" and \"towards\" itself, then also an accompanying muscular feeling which, even without our setting \"arms and legs\" in motion, begins its play through a kind of habit as soon as we \"will\". As therefore feeling, and indeed manifold feeling, is to be recognized as an ingredient of the will, so secondly also thinking: in every act of will there is a commanding thought; – and one should not believe that this thought can be separated from the \"willing\", as if will would then still be left over! Thirdly, the will is not only a complex of feeling and thinking, but above all also an affect: and indeed that affect of command."
+translation_by: the project
+produced_by: claude-fable-5-1, 2026-10-09
+---
+The opening of aphorism 19, up to the third ingredient. »Volks-Vorurtheil« is rendered
+"popular prejudice"; »ohne Abzug und Zuthat« "without subtraction or addition" (»Abzug« is subtraction, and
+"deduction" would suggest inference, which is the contrast at stake). What
+Schopenhauer »gab zu verstehen« is at WWV I § 22
+([p-wwv1-s22-will-not-inferred](../../p/wwv1-s22-will-not-inferred/)): »was Wille sei,
+viel besser wissen und verstehn, als sonst irgend etwas«.

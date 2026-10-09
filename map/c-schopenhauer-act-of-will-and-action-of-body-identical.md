@@ -10,7 +10,7 @@ verified_by: []
 disputes: []
 depends_on: []
 supports: []
-attacked_by: []
+attacked_by: [c-nietzsche-belief-will-and-action-one-an-erroneous-inference]
 replies_to: []
 shares_premise_with: []
 produced_by: claude-fable-5-1, 2026-10-08

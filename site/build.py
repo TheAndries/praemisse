@@ -161,6 +161,20 @@ def check(nodes: list[Node]) -> list[str]:
                     errors.append(f"{where}: {key} -> {target} does not resolve")
         if n.prefix in ("c", "a") and not as_list(n.meta.get("passages")):
             errors.append(f"{where}: a claim or argument must cite at least one passage (CHARTER.md P1)")
+        # MODEL.md: supports is the converse of depends_on (checked since 2026-10-09).
+        for target in as_list(n.meta.get("depends_on")):
+            if isinstance(target, str) and target in ids and n.id not in as_list(ids[target].meta.get("supports")):
+                errors.append(f"{where}: depends_on {target}, but that node's supports does not name {n.id}")
+        for target in as_list(n.meta.get("supports")):
+            if isinstance(target, str) and target in ids and n.id not in as_list(ids[target].meta.get("depends_on")):
+                errors.append(f"{where}: supports {target}, but that node's depends_on does not name {n.id}")
+        # MODEL.md, Attacks: attacked_by and replies_to are converses.
+        for target in as_list(n.meta.get("attacked_by")):
+            if isinstance(target, str) and target in ids and n.id not in as_list(ids[target].meta.get("replies_to")):
+                errors.append(f"{where}: attacked_by {target}, but that node's replies_to does not name {n.id}")
+        for target in as_list(n.meta.get("replies_to")):
+            if isinstance(target, str) and target in ids and n.id not in as_list(ids[target].meta.get("attacked_by")):
+                errors.append(f"{where}: replies_to {target}, but that node's attacked_by does not name {n.id}")
         if n.prefix == "p":
             for key in ("ref", "original", "work"):
                 if not n.meta.get(key):
