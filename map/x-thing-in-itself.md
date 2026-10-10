@@ -11,13 +11,13 @@ rows:
       t-kant: [c-kant-appearance-presupposes-something-appearing, c-kant-things-in-themselves-thinkable-not-knowable]
       t-schopenhauer: [c-schopenhauer-only-the-derivation-is-faulty, c-schopenhauer-will-alone-is-thing-in-itself]
       t-nietzsche: [c-nietzsche-apparent-world-is-the-only-one, c-nietzsche-abolishing-true-world-abolishes-apparent]
-    note: "Kant and Schopenhauer align, and the premise is shared (below), on the two-aspect reading as a thing considered apart from our sensibility, on the two-object reading as a distinct ground. Nietzsche denies it, the true world of GD being Kant's division on the fourth proposition's naming of Kant, and at stage 6 of the Fabel gives up the apparent world with the true one."
+    note: "Kant and Schopenhauer align, and the premise is shared (below), on the two-aspect reading as a thing considered apart from our sensibility, on the two-object reading as a distinct ground. Nietzsche denies it, the true world of GD being Kant's division on the fourth proposition's naming of Kant, and at stage 6 of the Fabel gives up the apparent world with the true one. The map takes GD's »wahre Welt« to include Kant's thing in itself on three places that reinforce each other: the fourth proposition names Kant, stage 3 of the Fabel is »königsbergisch«, and JGB 16, in another text, puts »Ding an sich« with the immediate certainties it rejects."
   - question: "Can the thing in itself be reached by inference from what appears?"
     positions:
-      t-kant: [a-kant-appearance-requires-thing-in-itself, c-kant-noumenon-negative-only]
+      t-kant: [a-kant-appearance-requires-thing-in-itself]
       t-schopenhauer: [c-schopenhauer-causality-never-leads-beyond-representation, c-schopenhauer-kant-derivation-cannot-reach-thing-in-itself, c-schopenhauer-thing-in-itself-reached-only-through-self-consciousness]
       t-nietzsche: [c-nietzsche-grounds-for-apparent-establish-reality]
-    note: "Kant reaches the thing in itself as what must be thought, by the absurdity of the contrary, and only in the negative sense; on the two-aspect reading that is a point about the concept of appearance, on the two-object reading an inference to a ground. Schopenhauer denies that the law of causality reaches it and attacks a derivation he attributes to Kant, for which the map has no Kant node; his own route is self-consciousness. Nietzsche denies that another kind of reality can be shown at all."
+    note: "Kant reaches the thing in itself as what must be thought, by the absurdity of the contrary; on the two-aspect reading that is a point about the concept of appearance, on the two-object reading an inference to a ground. Schopenhauer denies that the law of causality reaches it and attacks a derivation he attributes to Kant, for which the map has no Kant node; his own route is self-consciousness. Nietzsche denies that another kind of reality can be shown at all."
   - question: "Is anything cognized immediately, without inference?"
     positions:
       t-kant: [c-kant-things-in-themselves-unknown]
@@ -26,16 +26,16 @@ rows:
     note: "Schopenhauer affirms it of the will; Nietzsche denies it of »ich will« and »ich denke« alike, naming Schopenhauer, and the attack links are set on the Schopenhauer node. Kant's nearest statement denies that the thing in itself is cognized at all and says nothing of immediacy."
   - question: "What can be said of the thing in itself?"
     positions:
-      t-kant: [c-kant-things-in-themselves-unknown, c-kant-reason-sees-space-for-things-in-themselves]
+      t-kant: [c-kant-things-in-themselves-unknown, c-kant-noumenon-negative-only, c-kant-reason-sees-space-for-things-in-themselves]
       t-schopenhauer: [c-schopenhauer-will-free-of-forms-of-appearance, c-schopenhauer-will-groundless-and-one, c-schopenhauer-will-named-a-potiori]
       t-nietzsche: [c-nietzsche-world-would-be-will-to-power]
-    note: "Kant: what objects are in themselves remains entirely unknown, though reason sees a space for their cognition. Schopenhauer: the will as thing in itself is free of every form of appearance, groundless and one, and, never being object, bears the name will only a potiori. Nietzsche: on the [reading on which JGB 36 asserts it](../../r/nietzsche-will-to-power-asserted/), that the world seen from inside would be will to power and nothing besides; on the [reading on which it does not](../../r/nietzsche-will-to-power-not-asserted/), that there is no thing in itself, the conditional's premises being ones he rejects."
+    note: "Kant: what objects are in themselves remains entirely unknown; the noumenon is to be understood only in the negative sense, as a thing insofar as it is not an object of our sensible intuition, the positive sense needing an intuition that is not ours; and reason sees a space for their cognition. Schopenhauer: the will as thing in itself is free of every form of appearance, groundless and one, and, never being object, bears the name will only a potiori. Nietzsche: on the [reading on which JGB 36 asserts it](../../r/nietzsche-will-to-power-asserted/), that the world seen from inside would be will to power and nothing besides; on the [reading on which it does not](../../r/nietzsche-will-to-power-not-asserted/), that there is no thing in itself, the conditional's premises being ones he rejects."
   - question: "What is the division of the world into appearance and thing in itself, and what follows from refusing it?"
     positions:
       t-kant: [c-kant-without-things-in-themselves-appearance-without-appearing, c-kant-denying-things-in-themselves-is-absurd]
       t-schopenhauer: [c-schopenhauer-appearance-is-representation, c-schopenhauer-no-object-in-itself]
       t-nietzsche: [c-nietzsche-dividing-world-true-and-apparent-is-decadence, c-nietzsche-true-world-idea-refuted]
-    note: "Kant: without things in themselves there would be appearance without anything that appears (B xxvi), and to admit none is a still greater absurdity (Prolegomena § 57). Schopenhauer: appearance is representation, and the absurdity is an object in itself that is neither representation nor will, into which, he says, Kant's thing in itself degenerated. Nietzsche: the division itself, Kant's included, is décadence; the stage-5 claim is a stage of the history of the error whose parenthesis names the free spirits, its one premise is framed as the positivist stage, and whether Nietzsche speaks there in his own voice is left open on those nodes."
+    note: "Kant: without things in themselves there would be appearance without anything that appears (B xxvi), and to admit none is a still greater absurdity (Prolegomena § 57). Schopenhauer: appearance is representation, and the absurdity is an object in itself that is neither representation nor will, into which, he says, Kant's thing in itself degenerated. Nietzsche: the division itself, Kant's included, is décadence; stages 5 and 6 of the Fabel are read as Nietzsche's own voice, stage 5's parenthesis naming the free spirits, »Teufelslärm aller freien Geister«, and stage 6 ending in »INCIPIT ZARATHUSTRA«, while the stage-4 result that stage 5 draws on keeps its framing as the positivist stage (said on those nodes)."
 shared:
   - premise: "There is a thing in itself to a given appearance."
     claims: [c-kant-appearance-presupposes-something-appearing, c-schopenhauer-only-the-derivation-is-faulty]
@@ -43,11 +43,15 @@ shared:
   - premise: "Space is given a priori."
     claims: [c-kant-space-a-priori, c-schopenhauer-causality-sensation-and-space-are-subjective]
     passages: [p-krv-a24-b38, p-wwv1-anhang-kant-derivation-of-thing-in-itself]
+  - premise: "Space is a subjective form."
+    claims: [c-kant-space-subjective-condition-of-sensibility, c-schopenhauer-causality-sensation-and-space-are-subjective]
+    passages: [p-krv-a26-b42-b, p-wwv1-anhang-kant-derivation-of-thing-in-itself]
   - premise: "Space is no determination of the thing in itself."
     claims: [c-kant-space-not-of-things-in-themselves, c-schopenhauer-will-free-of-forms-of-appearance]
     passages: [p-krv-a26-b42, p-wwv1-s23-will-free-of-forms]
-passages: [p-krv-b-xxvi, p-prol-314, p-krv-b307, p-krv-b308-309, p-krv-a42-b59, p-prol-289, p-krv-a24-b38, p-krv-a26-b42, p-prol-350-351, p-wwv1-anhang-only-the-derivation-is-faulty, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-wwv1-s1-object-in-itself, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-will-not-inferred, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-gd-vernunft-2-apparent-world, p-gd-vernunft-6-four-theses, p-gd-wahre-welt-fabel, p-gd-irrthuemer-3-will-as-cause, p-jgb-36-will-to-power]
-status: draft
+passages: [p-krv-b-xxvi, p-prol-314, p-krv-b307, p-krv-b308-309, p-krv-a42-b59, p-prol-289, p-krv-a24-b38, p-krv-a26-b42, p-krv-a26-b42-b, p-prol-350-351, p-wwv1-anhang-only-the-derivation-is-faulty, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-wwv1-s1-object-in-itself, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-will-not-inferred, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-gd-vernunft-2-apparent-world, p-gd-vernunft-6-four-theses, p-gd-wahre-welt-fabel, p-gd-irrthuemer-3-will-as-cause, p-jgb-36-will-to-power]
+status: checked
+status_note: "claims and readings reviewed by the owner against the project's translations; translations not independently verified"
 verified_by: []
 disputes: []
 depends_on: []
@@ -116,9 +120,20 @@ Form unsers Intellekts« (ZA II 534,
 in a sentence that opens by calling the a priori law of causality Kant's »eigenen und
 richtigen Entdeckung«. Schopenhauer uses the shared premise against Kant: because space,
 the sensation and the law of causality are all subjective, the inference he attributes to
-Kant stays inside representation. The Schopenhauer statement asserts three things; the
-shared premise is the third, and only as far as »a priori gegebene«: that space is a
-»subjektive Form unsers Intellekts« is more than A 24 / B 38 says.
+Kant stays inside representation. The Schopenhauer statement asserts three things; this
+premise and the next are its third, that space is »eine a priori gegebene, folglich
+subjektive Form«, in its two parts.
+
+**Space is a subjective form.** Kant at A 26 / B 42, conclusion (b), space is »die
+Form aller Erscheinungen äußerer Sinne, d. i. die subjective Bedingung der Sinnlichkeit,
+unter der allein uns äußere Anschauung möglich ist« (3:55.09–11,
+[c-kant-space-subjective-condition-of-sensibility](../../c/kant-space-subjective-condition-of-sensibility/));
+Schopenhauer in the same Anhang sentence, »subjektive Form unsers Intellekts« (ZA II
+534). Kant's word is sensibility and »Bedingung«, Schopenhauer's intellect and »Form«;
+the premise covers what both assert, that the form is the subject's, and not the faculty
+each assigns it to. The two texts also run the inference in opposite directions:
+Schopenhauer from »a priori gegebene« to »folglich subjektive«, Kant from the subject's
+receptivity to how the form »a priori im Gemüthe gegeben sein könne«.
 
 **Space is no determination of the thing in itself.** Kant at A 26 / B 42, »Der Raum
 stellt gar keine Eigenschaft irgend einiger Dinge an sich ... vor« (3:55.02–08,
@@ -249,6 +264,13 @@ Kant's B xxvii–xxviii (3:17.08–18.21) and the chapter on phenomena and noume
 / B 294–315) beyond its opening and B 307–309; Schopenhauer's § 2, §§ 24–29, and the
 Anhang on the Transcendental Aesthetic; Nietzsche's JGB 15, 20, 21 and 34. Each would add
 a row or a cell, and none is needed for the rows above, whose every filled cell cites its
-passage. The comparison is `draft`: no human has read it against the texts. That reading
-is Checkpoint 1 of [`PLAN.md`](https://github.com/TheAndries/praemisse/blob/main/PLAN.md),
-and the owner's.
+passage. The comparison is `checked`, with the qualification in its status line: on 2026-10-10
+the owner, Andries ([`BOARD.md`](https://github.com/TheAndries/praemisse/blob/main/BOARD.md)),
+read the claims and readings against the project's translations, Checkpoint 1 of
+[`PLAN.md`](https://github.com/TheAndries/praemisse/blob/main/PLAN.md), and the changes
+he ordered are on the page
+([`CHANGELOG.md`](https://github.com/TheAndries/praemisse/blob/main/CHANGELOG.md)). The
+changes made on his instructions after that reading are the operator's and have not been
+read by him: the claim and passage on A 26 / B 42, conclusion (b), the two shared-premise
+paragraphs on space, and the notes of rows 1, 4 and 5. The translations were not
+independently verified, and no one has attested the page.

@@ -5,6 +5,13 @@ title: An appearance presupposes something that appears
 thinker: t-kant
 statement: "It would be absurd that there be appearance without something that appears; and to regard the objects of the senses as mere appearances is to grant that a thing in itself underlies them."
 passages: [p-krv-b-xxvi, p-prol-314]
+quotes:
+  - passage: p-krv-b-xxvi
+    original: "Gleichwohl wird, welches wohl gemerkt werden muß, doch dabei immer vorbehalten, daß wir eben dieselben Gegenstände auch als Dinge an sich selbst, wenn gleich nicht erkennen, doch wenigstens müssen denken können. Denn sonst würde der ungereimte Satz daraus folgen, daß Erscheinung ohne etwas wäre, was da erscheint."
+    translation: "Nevertheless, and this must be well noted, it is always reserved that we must at least be able to think, even if we cannot cognize, these same objects also as things in themselves. For otherwise the absurd proposition would follow that there is appearance without anything that appears."
+  - passage: p-prol-314
+    original: "In der That, wenn wir die Gegenstände der Sinne wie billig als bloße Erscheinungen ansehen, so gestehen wir hiedurch doch zugleich, daß ihnen ein Ding an sich selbst zum Grunde liege, ob wir dasselbe gleich nicht, wie es an sich beschaffen sei, sondern nur seine Erscheinung, d. i. die Art, wie unsre Sinnen von diesem unbekannten Etwas afficirt werden, kennen."
+    translation: "Indeed, if we regard the objects of the senses, as is proper, as mere appearances, we thereby at the same time grant that a thing in itself underlies them, even though we do not know it as it is constituted in itself but only its appearance, that is, the way our senses are affected by this unknown something."
 status: draft
 verified_by: []
 disputes: []

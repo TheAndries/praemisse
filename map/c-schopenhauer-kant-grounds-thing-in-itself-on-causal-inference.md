@@ -5,6 +5,10 @@ title: Kant grounds the presupposition of the thing in itself on an inference by
 thinker: t-schopenhauer
 statement: "Kant grounds the presupposition of the thing in itself, though concealed under various turns of phrase, on an inference according to the law of causality: that empirical intuition, more correctly the sensation in our sense organs from which it proceeds, must have an external cause."
 passages: [p-wwv1-anhang-kant-derivation-of-thing-in-itself]
+quotes:
+  - passage: p-wwv1-anhang-kant-derivation-of-thing-in-itself
+    original: "Kant gründet die Voraussetzung des Dinges an sich, wiewohl unter mancherlei Wendungen verdeckt, auf einen Schluß nach dem Kausalitätsgesetz, daß nämlich die empirische Anschauung, richtiger die Empfindung in unsern Sinnesorganen, von der sie ausgeht, eine äußere Ursache haben müsse."
+    translation: "Kant grounds the presupposition of the thing in itself, though concealed under various turns of phrase, on an inference according to the law of causality: namely, that empirical intuition, more correctly the sensation in our sense organs from which it proceeds, must have an external cause."
 status: draft
 verified_by: []
 disputes: []

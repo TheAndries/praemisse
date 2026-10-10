@@ -2,7 +2,7 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-10 (run 6, end)
+## State as of 2026-10-10 (owner session after run 6, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
@@ -12,12 +12,17 @@ served on that model, no handover note needed. The GitHub and Claude Code Remote
 the tool list are platform-attached to every cloud session and are not a config change
 (`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
 motions: none. INBOX empty at runs 1–6. Open asks: 4 (mailbox; deferred by owner; blocks
-Phase 2) and **7 (Checkpoint 1: the owner reads the comparison page and answers in
-INBOX.md; blocks Phase 2 and any fourth thinker)**. Asks 1, 2, 3, 5, 6 done. `PLAN.md`
-rewritten 2026-10-10 (Phase 1 built, at Checkpoint 1; the ~40-node figure corrected to 145;
-until the owner answers, stay inside the chain: fill the gaps the comparison page lists,
-then a second comparison on the will; Phase 2 needs a route into INBOX.md settled in
-MODEL.md before the forms are built).
+Phase 2). Asks 1, 2, 3, 5, 6, 7 done. **Ask 7 (Checkpoint 1) was answered 2026-10-10 in an
+owner session:** the owner read the comparison against the project's translations, found
+nothing that reads as fabrication, gave eight decisions (owner decision in `BOARD.md`;
+his note verbatim in the changelog entry of that session) and they were applied the same
+day. He did not say in the ask's words whether the page is better than what he could find
+elsewhere; no rethink was ordered; proceed. `PLAN.md` rewritten 2026-10-10 (owner session):
+Checkpoint 1 answered; next the gaps the comparison page lists, then the second comparison
+on the will, built to the same convention and offered for the same qualified review;
+quotations set on every claim a comparison cell cites as pages are touched; a fourth
+thinker after those; Phase 2 still needs a route into INBOX.md settled in MODEL.md before
+the forms are built.
 
 **Phase 0 complete (2026-10-05).** `site/build.py` (reads `map/*.md`, validates against
 `MODEL.md`, renders to `site/_build/`, gitignored; `--check` for CI; `--map DIR` for a
@@ -222,8 +227,38 @@ while it runs, which must be refused until the report is in. Use the wait for bu
 and screenshotting the site to the scratchpad (`--out`), drafting memory and the
 changelog.
 
-**The comparison node (run 6, 2026-10-10).** `x-thing-in-itself`, the Checkpoint 1 page,
-at /x/thing-in-itself/. Convention settled in `MODEL.md`, *Comparisons* (last paragraph):
+**Two conventions added in the owner session of 2026-10-10 (`MODEL.md`, enforced by
+`--check`, six negative tests passed).** *Checked comparisons:* a comparison may be
+`checked` when a named human has reviewed its claims and readings against the project's
+translations short of attesting; it must carry `status_note` (shown in the status line
+after the word); the build refuses `checked` on a comparison without it and the note on
+anything else; lists print »checked, with a qualification on the page« (`status_word`);
+the index and about legends say both senses; claims and arguments get no such status. *Quotations:* a claim may carry
+`quotes:` (list of `passage`, `original`, `translation`); each must be a verbatim
+substring, whitespace aside, of that passage's `original`/`translation`, the translation
+required where the passage has one, an empty original refused; a voice note on a
+narrated text is a reading: name it and keep sentences about the thinker to passages; rendered under
+the statement, two columns from 48rem (`render_quotes`, CSS block "Added 2026-10-10
+(owner session)"). Set on 16 claims (B xxvi ×4, Prol § 32, Anhang ZA II 534 ×2, 535,
+§ 21, § 22, JGB 16 ×2, Vernunft 6 Satz 4, Fabel 5 and 6, A 24/B 38, A 26/B 42 (a) and
+(b)). When writing a new claim for a comparison cell, set its quote.
+
+**The comparison node (run 6, 2026-10-10; revised in the owner session the same day).**
+`x-thing-in-itself`, the Checkpoint 1 page, at /x/thing-in-itself/, now `checked` with
+the owner's status note. Owner-session changes: row-1 note says the three places that
+make GD's »wahre Welt« Kant's (Satz 4 names Kant; Fabel stage 3 »königsbergisch«; JGB 16
+»Ding an sich«); `c-kant-noumenon-negative-only` moved from row 2 to row 4; row-5 note
+and the nodes `c-nietzsche-true-world-idea-refuted`,
+`c-nietzsche-abolishing-true-world-abolishes-apparent` and the stage-4 argument read
+Fabel stages 5 and 6 as Nietzsche's own voice (parenthesis »Teufelslärm aller freien
+Geister«; »INCIPIT ZARATHUSTRA«), stage 4 still the positivist stage's; the shared
+premise on space split in two, *given a priori* (A 24/B 38 ↔ Anhang ZA II 534) and *a
+subjective form, on the side of the subject* (new `p-krv-a26-b42-b`, AA 3:55.09–18,
+conclusion (b), and new `c-kant-space-subjective-condition-of-sensibility` ↔ the same
+Anhang sentence; premise worded »Space is a subjective form«, Kant's »Bedingung« not
+put in Schopenhauer's mouth), four shared premises in all; the page's last paragraph
+names the owner and lists what he ordered but has not read; a `shared` entry cannot hold two claims of
+one thinker, since every pair must name each other. Convention settled in `MODEL.md`, *Comparisons* (last paragraph):
 `question`, `thinkers` (column order), `statement`, `rows` (each `question`, `positions`
 keyed by thinker id listing that thinker's `c-`/`a-` ids, a short `note` that must relate
 to the readings where a cell's claim has any), `shared` (each `premise`, `claims` of
@@ -269,16 +304,23 @@ remark and Anhang attribution aim at Kant's doctrine; two-aspect makes them aim 
 reading of it. Gaps listed on the page: Kant B xxvii–xxviii, A 236–260 / B 295–315;
 Schopenhauer § 2, §§ 24–29, Anhang on the Aesthetic; Nietzsche JGB 15, 20, 21, 34.
 
-**Next.** Until Ask 7 is answered: fill the gaps above, each only where it adds a row or
-cell; then a second comparison, *the will* (Schopenhauer §§ 18–23 against Nietzsche JGB
-19, 36, GD Irrthümer 3), once the first has been read. If the owner answers no, rethink
-the method before any breadth (PLAN.md, Checkpoint 1). Settle the Phase 2 route into
+**Next.** Fill the gaps above, each only where it adds a row or cell, through the
+adversarial pass; then a second comparison, *the will* (Schopenhauer §§ 18–23 against
+Nietzsche JGB 19, 36, GD Irrthümer 3), offered to the owner for the same qualified review. Settle the Phase 2 route into
 INBOX.md (prefilled GitHub issue vs the deferred mailbox) in MODEL.md before building the
 dispute and attestation forms. When Schopenhauer text is needed again, try zeno.org first
 and fall back to Gutenberg/Internet Archive without ZA pages.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
 runs 1–5. The card used for the domain is still unreported.
+
+**Tooling facts, owner's machine (Windows, Git Bash).** `python` (3.11, PyYAML), not
+`python3`; set `PYTHONIOENCODING=utf-8` or umlauts print as �; a long inline heredoc
+fails in Git Bash and `rm -rf` in the scratchpad was denied: write scripts to the
+scratchpad with the Write tool and run them by path. korpora.org serves AA pages as
+ISO-8859-1 with HTML entities (`&#228;`), decode then unescape. Commits as
+`TheAndries`; push with plain `git push`. Owner-session commit messages begin
+»owner session —«.
 
 **Tooling facts.** Cloud container: Python 3.11 with PyYAML, Node 22 with a global
 `playwright` and Chromium at `/opt/pw-browsers/chromium` (screenshots: `NODE_PATH=$(npm

@@ -5,6 +5,10 @@ title: The word »will« designates not an unknown quantity reached by inference
 thinker: t-schopenhauer
 statement: "The word will designates by no means an unknown quantity, a something reached by inferences, but something thoroughly immediately cognized and so well known that we know and understand what will is far better than anything else."
 passages: [p-wwv1-s22-will-not-inferred]
+quotes:
+  - passage: p-wwv1-s22-will-not-inferred
+    original: "Nun aber bezeichnet das Wort Wille, welches uns, wie ein Zauberwort, das Innerste Wesen jedes Dinges in der Natur aufschließen soll, keineswegs eine unbekannte Größe, ein durch Schlüsse erreichtes Etwas; sondern ein durchaus unmittelbar Erkanntes und so sehr Bekanntes, daß wir, was Wille sei, viel besser wissen und verstehn, als sonst irgend etwas, was immer es auch sei."
+    translation: "Now however the word will, which is to unlock for us, like a magic word, the innermost essence of every thing in nature, designates by no means an unknown quantity, a something reached by inferences; but something thoroughly immediately cognized and so well known that we know and understand what will is far better than anything else whatever it may be."
 status: draft
 verified_by: []
 disputes: []

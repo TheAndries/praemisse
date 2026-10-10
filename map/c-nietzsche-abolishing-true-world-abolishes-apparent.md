@@ -5,6 +5,10 @@ title: "With the true world we have also abolished the apparent one"
 thinker: t-nietzsche
 statement: "With the true world we have also abolished the apparent one."
 passages: [p-gd-wahre-welt-fabel]
+quotes:
+  - passage: p-gd-wahre-welt-fabel
+    original: "6. Die wahre Welt haben wir abgeschafft: welche Welt blieb übrig? die scheinbare vielleicht?... Aber nein! mit der wahren Welt haben wir auch die scheinbare abgeschafft! (Mittag; Augenblick des kürzesten Schattens; Ende des längsten Irrthums; Höhepunkt der Menschheit; INCIPIT ZARATHUSTRA.)"
+    translation: "6. The true world we have abolished: which world remained? the apparent one perhaps?... But no! with the true world we have also abolished the apparent one! (Noon; moment of the shortest shadow; end of the longest error; high point of mankind; INCIPIT ZARATHUSTRA.)"
 status: draft
 verified_by: []
 disputes: []
@@ -32,3 +36,11 @@ appears, and treats that as absurd; this stage affirms the antecedent and denies
 consequent as well, rejecting the pair Kant's conditional presupposes, which the
 comparison page will set side by side. The map sets
 no link between them, since this stage does not state Kant's conditional.
+
+Whose voice. The map reads this stage, with stage 5, as Nietzsche's own, following the
+owner's reading of 2026-10-10 (`CHANGELOG.md`): its parenthesis ends in »INCIPIT
+ZARATHUSTRA«, and stage 5's names the free spirits, »Teufelslärm aller freien Geister«;
+the chapter has no sentence that separates the two. Stage 4 alone keeps its framing as
+the positivist stage, for the reason given on
+[a-nietzsche-true-world-does-not-obligate](../../a/nietzsche-true-world-does-not-obligate/).
+It may be disputed like any other reading.

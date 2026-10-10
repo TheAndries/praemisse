@@ -229,3 +229,15 @@ table.comparison { width: 100%; border-collapse: collapse; table-layout: fixed; 
   .comparison td::before { display: block; content: attr(data-thinker); font-family: var(--sans); font-size: var(--size-small); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); margin-bottom: 0.2em; }
   .comparison tr.note td::before { display: none; }
 }
+
+/* Added 2026-10-10 (owner session, Ask 7): the load-bearing sentence of a claim, original
+   beside the project's translation, under the statement (DESIGN.md 9). Two columns inside
+   the text column where it is wide enough, one otherwise; the passage stays in the aside. */
+.quote { border-left: 2px solid var(--rule); padding-left: 1rem; margin: 0 0 var(--line); display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 1.5rem; }
+.quote p { text-indent: 0; margin: 0 0 calc(var(--line) * 0.5); }
+.quote .quote-translation { color: var(--ink-muted); }
+.quote .quote-ref { grid-column: 1 / -1; font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); letter-spacing: 0.02em; margin: 0; }
+.quote .quote-ref a { color: inherit; }
+.quote + .quote { margin-top: calc(var(--line) * -0.25); }
+@media (min-width: 48rem) { .quote { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+@media print { .quote { border-left-color: #999; } }

@@ -5,6 +5,10 @@ title: "To divide the world into a true and an apparent one, in the manner of Ch
 thinker: t-nietzsche
 statement: "To divide the world into a \"true\" and an \"apparent\" one, whether in the manner of Christianity or in the manner of Kant (a cunning Christian at the last), is only a suggestion of décadence, a symptom of declining life."
 passages: [p-gd-vernunft-6-four-theses]
+quotes:
+  - passage: p-gd-vernunft-6-four-theses
+    original: "Vierter Satz. Die Welt scheiden in eine \"wahre\" und eine \"scheinbare\", sei es in der Art des Christenthums, sei es in der Art Kant's (eines hinterlistigen Christen zu guterletzt) ist nur eine Suggestion der décadence, - ein Symptom niedergehenden Lebens..."
+    translation: "Fourth proposition. To divide the world into a \"true\" and an \"apparent\" one, whether in the manner of Christianity or in the manner of Kant (a cunning Christian at the last), is only a suggestion of décadence, – a symptom of declining life..."
 status: draft
 verified_by: []
 disputes: []

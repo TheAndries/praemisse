@@ -5,6 +5,10 @@ title: "The belief in immediate certainties such as \"I think\" is that of harml
 thinker: t-nietzsche
 statement: "There are still harmless self-observers who believe that there are immediate certainties, for example \"I think\" or, as was Schopenhauer's superstition, \"I will\": as it were as if here cognition got hold of its object pure and naked, as thing in itself, and no falsification took place either on the side of the subject or on the side of the object."
 passages: [p-jgb-16-immediate-certainties]
+quotes:
+  - passage: p-jgb-16-immediate-certainties
+    original: "Es giebt immer noch harmlose Selbst-Beobachter, welche glauben, dass es \"unmittelbare Gewissheiten\" gebe, zum Beispiel \"ich denke\", oder, wie es der Aberglaube Schopenhauer's war, \"ich will\": gleichsam als ob hier das Erkennen rein und nackt seinen Gegenstand zu fassen bekäme, als \"Ding an sich\", und weder von Seiten des Subjekts, noch von Seiten des Objekts eine Fälschung stattfände."
+    translation: "There are still harmless self-observers who believe that there are \"immediate certainties\", for example \"I think\", or, as was Schopenhauer's superstition, \"I will\": as it were as if here cognition got hold of its object pure and naked, as \"thing in itself\", and no falsification took place either on the side of the subject or on the side of the object."
 status: draft
 verified_by: []
 disputes: []

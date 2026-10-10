@@ -5,6 +5,10 @@ title: Only Kant's manner of deriving the thing in itself is faulty, not his rec
 thinker: t-schopenhauer
 statement: "The defect of the Kantian system on this point is the faulty derivation of the thing in itself: only the manner of the derivation, not the recognition of a thing in itself for the given appearance."
 passages: [p-wwv1-anhang-only-the-derivation-is-faulty]
+quotes:
+  - passage: p-wwv1-anhang-only-the-derivation-is-faulty
+    original: "Das, wie gesagt, früh nachgewiesene, große Gebrechen des Kantischen Systems in diesem Punkt ist ein Beleg zu dem schönen Indischen Sprichwort: »Kein Lotus ohne Stengel.« Die fehlerhafte Ableitung des Dinges an sich ist hier der Stengel: jedoch auch nur die Art der Ableitung, nicht die Anerkennung eines Dinges an sich zur gegebenen Erscheinung."
+    translation: "The great defect of the Kantian system on this point, shown early, as said, is a confirmation of the fine Indian proverb: »No lotus without a stem.« The faulty derivation of the thing in itself is here the stem: yet also only the manner of the derivation, not the recognition of a thing in itself for the given appearance."
 status: draft
 verified_by: []
 disputes: []

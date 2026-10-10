@@ -15,4 +15,6 @@ The whole chapter, in six stages, each with a parenthesis. »erreichbar« is ren
 "attainable" and »unerreicht« "unattained"; »verpflichtend« "obligating"; »königsbergisch«
 "Königsbergian", the adjective of Kant's city, which names stage 3 as Kant's. Whose
 position each stage states is discussed on the argument drawn from stage 4, which the
-map frames as the positivist stage's position: [a-nietzsche-true-world-does-not-obligate](../../a/nietzsche-true-world-does-not-obligate/).
+map frames as the positivist stage's position,
+[a-nietzsche-true-world-does-not-obligate](../../a/nietzsche-true-world-does-not-obligate/),
+and on the stage-5 and stage-6 claims, which it reads as Nietzsche's own voice.

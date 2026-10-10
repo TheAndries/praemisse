@@ -5,6 +5,10 @@ title: "Immediate certainty, like absolute cognition and thing in itself, includ
 thinker: t-nietzsche
 statement: "\"Immediate certainty\", just like \"absolute cognition\" and \"thing in itself\", includes a contradictio in adjecto."
 passages: [p-jgb-16-immediate-certainties]
+quotes:
+  - passage: p-jgb-16-immediate-certainties
+    original: "Dass aber \"unmittelbare Gewissheit\", ebenso wie \"absolute Erkenntniss\" und \"Ding an sich\", eine contradictio in adjecto in sich schliesst, werde ich hundertmal wiederholen"
+    translation: "But that \"immediate certainty\", just like \"absolute cognition\" and \"thing in itself\", includes a contradictio in adjecto, I shall repeat a hundred times"
 status: draft
 verified_by: []
 disputes: []

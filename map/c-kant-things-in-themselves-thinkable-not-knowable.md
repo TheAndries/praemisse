@@ -5,6 +5,10 @@ title: The same objects must be thinkable, though not knowable, as things in the
 thinker: t-kant
 statement: "We must at least be able to think, even if we cannot cognize, the same objects that are given to us as appearances also as things in themselves."
 passages: [p-krv-b-xxvi, p-krv-b307]
+quotes:
+  - passage: p-krv-b-xxvi
+    original: "Gleichwohl wird, welches wohl gemerkt werden muß, doch dabei immer vorbehalten, daß wir eben dieselben Gegenstände auch als Dinge an sich selbst, wenn gleich nicht erkennen, doch wenigstens müssen denken können."
+    translation: "Nevertheless, and this must be well noted, it is always reserved that we must at least be able to think, even if we cannot cognize, these same objects also as things in themselves."
 status: draft
 verified_by: []
 disputes: []

@@ -57,11 +57,15 @@ ends by calling stage 6 »Höhepunkt der Menschheit; INCIPIT ZARATHUSTRA«, whic
 that Nietzsche endorses the terminus, not that he endorses each stage's reasoning; and
 stage 6 discards what stage 4 still keeps, »die scheinbare«. The map therefore frames
 the three stage-4 claims and this argument as the positivist stage's position, which is
-what the text states, and leaves open whether it is also Nietzsche's; that is the map's
-reading, chosen in order not to pick between the reading on which the stages are
+what the text states, and leaves open whether it is also Nietzsche's: stage 4's
+parenthesis names a position, »Positivismus«, as stages 1 and 3 name Plato and
+Königsberg, and the map does not pick between the reading on which the stages are
 positions Nietzsche passed through and left (Clark 1990, ch. 3, on the chapter as
 Nietzsche's own development) and one on which stages 4 to 6 are a single progression he
-endorses. A reader may dispute the framing on either side. Stage 5 continues from the
-conclusion by »folglich«,
-[c-nietzsche-true-world-idea-refuted](../../c/nietzsche-true-world-idea-refuted/), a step
-the map has not formalized.
+endorses. Stages 5 and 6 are different: their parentheses name no position but the free
+spirits and »INCIPIT ZARATHUSTRA«, and since the owner's review of 2026-10-10 the map
+reads them as Nietzsche's own voice, said on
+[c-nietzsche-true-world-idea-refuted](../../c/nietzsche-true-world-idea-refuted/) and
+[c-nietzsche-abolishing-true-world-abolishes-apparent](../../c/nietzsche-abolishing-true-world-abolishes-apparent/).
+A reader may dispute the framing on either side. Stage 5 continues from the conclusion
+by »folglich«, a step the map has not formalized.

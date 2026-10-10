@@ -5,6 +5,16 @@ title: Space is a necessary a priori representation and a pure a priori intuitio
 thinker: t-kant
 statement: "Space is a necessary a priori representation that underlies all outer intuitions, the condition of the possibility of appearances and not a determination dependent on them; it is not a general concept but a pure intuition, and an a priori intuition underlies all concepts of it."
 passages: [p-krv-a24-b38]
+quotes:
+  - passage: p-krv-a24-b38
+    original: "Der Raum ist eine nothwendige Vorstellung a priori, die allen äußeren Anschauungen zum Grunde liegt."
+    translation: "Space is a necessary a priori representation that underlies all outer intuitions."
+  - passage: p-krv-a24-b38
+    original: "Der Raum ist kein discursiver oder, wie man sagt, allgemeiner Begriff von Verhältnissen der Dinge überhaupt, sondern eine reine Anschauung."
+    translation: "Space is not a discursive or, as one says, general concept of relations of things in general, but a pure intuition."
+  - passage: p-krv-a24-b38
+    original: "Hieraus folgt, daß in Ansehung seiner eine Anschauung a priori (die nicht empirisch ist) allen Begriffen von demselben zum Grunde liegt."
+    translation: "From this it follows that, with respect to space, an a priori intuition (which is not empirical) underlies all concepts of it."
 status: draft
 verified_by: []
 disputes: []

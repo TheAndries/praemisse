@@ -31,7 +31,7 @@ Every claim, argument and comparison has exactly one of:
 | Status | Meaning |
 |--------|---------|
 | `draft` | Produced by the operator. No human has read it against the passage. |
-| `checked` | Machine-checked for validity (the inference is sound given the premises). Fidelity unchecked. |
+| `checked` | On an argument: machine-checked for validity (the inference is sound given the premises), fidelity unchecked. On a comparison: reviewed by a named human short of attestation, with the qualification shown in the status line (*Checked comparisons*, below). |
 | `attested` | One named human has read it against the passage and signed off. |
 | `established` | Two or more independent named humans have. |
 
@@ -76,6 +76,8 @@ assignment that satisfies the premises. A form that fails is a build error. `che
 allowed only on an argument whose form passes; a claim or comparison stays `draft` until a
 human attests it, since there is nothing for a machine to check in a single sentence. The
 check never says whether a premise is true or faithful; the page says so beside it.
+A comparison may instead be `checked` on a qualified human review (*Checked comparisons*,
+below).
 
 **Links between claims.** `depends_on` on a claim names the argument that establishes it.
 It may instead name a claim when the text draws the one from the other by a step the map
@@ -133,6 +135,30 @@ that every pair in a `shared` entry names each other, that every pair in the map
 by some comparison, that a `shared` entry's passages are cited by its claims, that every
 »...« quotation in a comparison's body or notes is inside a listed passage, and that the
 body links every reading of a claim in the table. A comparison stays
-`draft` until a human attests it (there is no form to check); its body says what depends
+`draft` until a human attests it (there is no form to check) or reviews it as *Checked
+comparisons* below allows; its body says what depends
 on each reading where a cell's claim has `r-` nodes, and lists what the map does not yet
 contain. Settled by the operator on 2026-10-10, before the first comparison.
+
+**Checked comparisons.** A comparison may carry `checked` when a named human has read its
+claims and readings against the project's translations and ordered or approved what is on
+the page, without attesting it: an attestation (`v-`) is a reading against the passage in
+the original, and this is less. The node must then carry `status_note`, a clause or two in
+plain words saying who reviewed what and what was not verified, and the status line shows
+it after the word; the build refuses `checked` on a comparison without the note and the
+note on anything else. The page's own text says the same in full. A claim or argument
+gets no such status: a claim is `draft` until attested, an argument `checked` only by its
+form. Owner decision of 2026-10-10 (`BOARD.md`), given on the first comparison, so that
+later comparisons can use the same status.
+
+**Quotations.** A claim may carry `quotes:`, a list of the load-bearing sentences, each
+with `passage` (one of the claim's own passages), `original` and `translation`. The build
+checks that each is a verbatim substring, whitespace aside, of that passage's `original`
+and `translation` (P1), and the page shows the two side by side under the statement, with
+the reference, so that a reader who will compare the original with the English finds both
+in front of them without going to the passage list. The quotation adds nothing the
+passage does not already carry; it is the passage's sentence brought up to the claim.
+Settled by the operator on 2026-10-10 on the owner's request in the review of the first
+comparison; set on the sentences that review named (B xxvi, Prolegomena § 32, Anhang ZA
+II 534–535, WWV I §§ 21–22, JGB 16, »Die ›Vernunft‹ in der Philosophie« 6 fourth
+proposition, Fabel stages 5–6) and on the shared-premise sentences on space.

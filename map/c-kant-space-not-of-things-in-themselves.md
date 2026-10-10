@@ -5,6 +5,10 @@ title: Space is not a property or relation of things in themselves
 thinker: t-kant
 statement: "Space represents no property of any things in themselves and no relation of them to one another: no determination of them that would attach to the objects themselves and would remain if one abstracted from all subjective conditions of intuition."
 passages: [p-krv-a26-b42]
+quotes:
+  - passage: p-krv-a26-b42
+    original: "Der Raum stellt gar keine Eigenschaft irgend einiger Dinge an sich, oder sie in ihrem Verhältniß auf einander vor, d. i. keine Bestimmung derselben, die an Gegenständen selbst haftete, und welche bliebe, wenn man auch von allen subjectiven Bedingungen der Anschauung abstrahirte."
+    translation: "Space represents no property at all of any things in themselves, nor them in their relation to one another; that is, no determination of them that would attach to the objects themselves and that would remain even if one abstracted from all subjective conditions of intuition."
 status: draft
 verified_by: []
 disputes: []

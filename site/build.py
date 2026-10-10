@@ -28,6 +28,14 @@ Settled 2026-10-06 (MODEL.md, "How the model is applied"; CHANGELOG.md):
   - a dispute (`d-`) or attestation (`v-`) names its `target`; the target's page renders
     every one of them in full, and the target's `disputes`/`verified_by` lists, status
     and `contested` flag must agree with them.
+
+Settled 2026-10-10 (owner session, Ask 7; MODEL.md, "Checked comparisons" and "Quotations"):
+  - a comparison may be `checked` when a named human has reviewed it against the project's
+    translations without attesting it; it must then carry `status_note`, which the status
+    line shows after the word, saying who reviewed what and what was not verified;
+  - a claim may carry `quotes:`, each with `passage`, `original` and `translation`; the
+    build checks that each is a verbatim substring (whitespace normalized) of that passage's
+    `original` and `translation`, and the page shows the two beside the statement.
 """
 from __future__ import annotations
 
@@ -189,8 +197,17 @@ def check(nodes: list[Node]) -> list[str]:
             errors.append(f"{where}: a {tname} needs a one-sentence statement")
         if n.prefix == "a":
             errors.extend(f"{where}: {e}" for e in check_argument(n))
+        elif n.status == "checked" and n.prefix == "x":
+            # MODEL.md, Checked comparisons (settled 2026-10-10): a human review short of attestation.
+            note = n.meta.get("status_note")
+            if not isinstance(note, str) or not note.strip():
+                errors.append(f"{where}: a checked comparison needs status_note saying who reviewed it against what, and what was not verified")
         elif n.status == "checked":
             errors.append(f"{where}: only an argument with a passing form can be checked; a {tname} is draft until a human attests it")
+        if n.meta.get("status_note") and not (n.prefix == "x" and n.status == "checked"):
+            errors.append(f"{where}: status_note is allowed only on a checked comparison")
+        if n.meta.get("quotes") is not None:
+            errors.extend(f"{where}: {e}" for e in check_quotes(n, ids))
         for i, v in enumerate(as_list(n.meta.get("versions"))):
             if not isinstance(v, dict) or not v.get("date") or not v.get("reason") or not v.get("statement"):
                 errors.append(f"{where}: versions[{i}] needs date, reason and the superseded statement")
@@ -215,6 +232,50 @@ def check(nodes: list[Node]) -> list[str]:
             if isinstance(target, str) and (n.id, target) not in named:
                 errors.append(f"{n.path.name}: shares_premise_with {target}, but no comparison names the shared premise")
     return errors
+
+
+def norm(text) -> str:
+    return " ".join(str(text if text is not None else "").split())
+
+
+def check_quotes(n: Node, ids: dict) -> list[str]:
+    """MODEL.md, Quotations (settled 2026-10-10): a claim's `quotes:` list the load-bearing
+    sentences in the original and the project's translation; each must be a verbatim
+    substring of a passage the claim cites (CHARTER.md P1), so that what the page shows
+    beside the statement is exactly what the passage shows below it. A substring check
+    cannot tell that the translation is of the same sentence as the original; the
+    reviewer's eye does that."""
+    errs: list[str] = []
+    if n.prefix != "c":
+        return ["quotes are allowed on a claim only"]
+    quotes = n.meta.get("quotes")
+    if not isinstance(quotes, list) or not quotes:
+        return ["quotes must be a non-empty list"]
+    cited = [str(x) for x in as_list(n.meta.get("passages"))]
+    for i, q in enumerate(quotes):
+        if not isinstance(q, dict) or not q.get("passage") or not q.get("original"):
+            errs.append(f"quotes[{i}] needs passage and original")
+            continue
+        pid = str(q["passage"])
+        if pid not in cited:
+            errs.append(f"quotes[{i}].passage -> {pid} is not among this claim's passages")
+            continue
+        p = ids.get(pid)
+        if p is None or p.prefix != "p":
+            errs.append(f"quotes[{i}].passage -> {pid} is not a passage")
+            continue
+        if not norm(q["original"]):
+            errs.append(f"quotes[{i}].original is empty")
+        elif norm(q["original"]) not in norm(p.meta.get("original")):
+            errs.append(f"quotes[{i}].original is not inside the original of {pid} (CHARTER.md P1)")
+        if p.meta.get("translation") and not norm(q.get("translation")):
+            errs.append(f"quotes[{i}] needs the translation, since {pid} has one")
+        elif q.get("translation") and norm(q["translation"]) not in norm(p.meta.get("translation")):
+            errs.append(f"quotes[{i}].translation is not inside the translation of {pid} (CHARTER.md P1)")
+        for key in q:
+            if key not in ("passage", "original", "translation"):
+                errs.append(f"quotes[{i}] has an unknown key {key!r}")
+    return errs
 
 
 def check_argument(n: Node) -> list[str]:
@@ -472,10 +533,11 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
     status_bits = [f'<span><span class="label">{esc(tname)}</span></span>']
     if has_status:
         word = esc(n.status)
+        note = f': {inline(str(n.meta["status_note"]))}' if n.meta.get("status_note") else ""
         if n.meta.get("contested"):
-            status_bits.append(f'<span>Status: <span class="word">{word}</span>, <span class="word contested">contested</span></span>')
+            status_bits.append(f'<span>Status: <span class="word">{word}</span>, <span class="word contested">contested</span>{note}</span>')
         else:
-            status_bits.append(f'<span>Status: <span class="word">{word}</span></span>')
+            status_bits.append(f'<span>Status: <span class="word">{word}</span>{note}</span>')
     status_bits.append(f"<span>Produced by {esc(n.meta.get('produced_by'))}</span>")
     if has_status:
         v = as_list(n.meta.get("verified_by"))
@@ -499,6 +561,7 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
         arg = '<h2>The argument</h2>\n<ol class="argument">' + "".join(rows) + "</ol>" + render_form(n)
 
     statement = f'<p class="statement">{inline(str(n.meta["statement"]))}</p>' if n.meta.get("statement") else ""
+    statement += render_quotes(n, ids)
     if n.prefix == "d":
         statement = render_dispute(n, ids, full=True)
     elif n.prefix == "v":
@@ -633,6 +696,29 @@ def render_comparison(n: Node, ids: dict[str, Node]) -> tuple[str, str]:
     return table, shared
 
 
+def render_quotes(n: Node, ids: dict[str, Node]) -> str:
+    """The load-bearing sentence in the original beside the project's translation, under the
+    statement (DESIGN.md 9; settled 2026-10-10). The passage itself stays in the aside; the
+    reference links to it there."""
+    blocks = []
+    for q in as_list(n.meta.get("quotes")):
+        if not isinstance(q, dict):
+            continue
+        p = ids.get(str(q.get("passage")))
+        if p is None:
+            continue
+        work = ids.get(str(p.meta.get("work")))
+        work_title = esc(work.title) if work else esc(p.meta.get("work"))
+        lang = esc(p.meta.get("lang", ""))
+        blocks.append(
+            f'<div class="quote">'
+            f'<p class="quote-original" lang="{lang}">{esc(q.get("original"))}</p>'
+            + (f'<p class="quote-translation" lang="en">{esc(q.get("translation"))}</p>' if q.get("translation") else "")
+            + f'<p class="quote-ref"><a href="#{esc(p.id)}">{work_title} {esc(p.meta.get("ref"))}</a></p>'
+            "</div>")
+    return "".join(blocks)
+
+
 def render_form(n: Node) -> str:
     form = n.meta.get("form")
     if not form:
@@ -699,6 +785,13 @@ def render_attestation(v: Node, ids: dict[str, Node], full: bool = False) -> str
     return out + "</p>" + (markdown(v.body) if full and v.body.strip() else "")
 
 
+def status_word(n: Node) -> str:
+    """The status in a list: the word, and on a checked comparison the fact of the
+    qualification, so that no list shows the bare word under a legend that defines it as
+    machine checking (CHARTER.md P2)."""
+    return esc(n.status) + (", with a qualification on the page" if n.meta.get("status_note") else "")
+
+
 def href(n: Node) -> str:
     return PREFIX + n.url[1:]
 
@@ -734,7 +827,7 @@ def build(nodes: list[Node], out: Path, domain: str | None) -> None:
     for prefix, (tname, plural, _) in TYPES.items():
         group = [n for n in nodes if n.prefix == prefix]
         items = "".join(f'<li><span class="id">{esc(n.id)}</span><a href="{href(n)}">{esc(n.title)}</a>'
-                        + (f' <span class="id">{esc(n.status)}</span>' if n.status else "") + "</li>" for n in group)
+                        + (f' <span class="id">{status_word(n)}</span>' if n.status else "") + "</li>" for n in group)
         content = f"<h1>{plural}</h1>" + (f'<ul class="index">{items}</ul>' if items else "<p class=\"prose\">Nothing here yet.</p>")
         (out / prefix).mkdir(exist_ok=True)
         (out / prefix / "index.html").write_text(page(plural, content), encoding="utf-8")
@@ -742,7 +835,7 @@ def build(nodes: list[Node], out: Path, domain: str | None) -> None:
     counts = {plural: sum(1 for n in nodes if n.prefix == p) for p, (_, plural, _) in TYPES.items()}
     counts_html = "".join(f'<li><a href="{p}/">{plural}</a> <span class="id">{counts[plural]}</span></li>' for p, (_, plural, _) in TYPES.items())
     xs = [n for n in nodes if n.prefix == "x"]
-    comparisons_html = ("".join(f'<li><a href="{href(n)}">{esc(n.title)}</a> <span class="id">{esc(n.status)}</span></li>' for n in xs)
+    comparisons_html = ("".join(f'<li><a href="{href(n)}">{esc(n.title)}</a> <span class="id">{status_word(n)}</span></li>' for n in xs)
                         if xs else '<li>none yet</li>')
     (out / "index.html").write_text(page("praemisse", template("index.html").replace("{{ counts }}", counts_html).replace("{{ comparisons }}", comparisons_html)), encoding="utf-8")
     PREFIX = "../"

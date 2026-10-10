@@ -5,6 +5,10 @@ title: The thing in itself is the will alone
 thinker: t-schopenhauer
 statement: "Thing in itself is the will alone: as such it is not representation at all but toto genere different from it; it is that of which all representation, every object, is the appearance, the visibility, the objectity; it is the innermost kernel of every particular thing and of the whole."
 passages: [p-wwv1-s21-will-alone-is-thing-in-itself]
+quotes:
+  - passage: p-wwv1-s21-will-alone-is-thing-in-itself
+    original: "Ding an sich aber ist allein der Wille: als solcher ist er durchaus nicht Vorstellung, sondern toto genere von ihr verschieden: er ist es, wovon alle Vorstellung, alles Objekt, die Erscheinung, die Sichtbarkeit, die Objektität ist. Er ist das Innerste, der Kern jedes Einzelnen und eben so des Ganzen"
+    translation: "Thing in itself, however, is the will alone: as such it is not representation at all but toto genere different from it: it is that of which all representation, every object, is the appearance, the visibility, the objectity. It is the innermost, the kernel of every particular thing and likewise of the whole"
 status: draft
 verified_by: []
 disputes: []

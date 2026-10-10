@@ -5,6 +5,10 @@ title: If the same objects could not be thought as things in themselves, there w
 thinker: t-kant
 statement: "If we could not think the same objects that are given to us as appearances also as things in themselves, it would follow that there is appearance without anything that appears."
 passages: [p-krv-b-xxvi]
+quotes:
+  - passage: p-krv-b-xxvi
+    original: "Denn sonst würde der ungereimte Satz daraus folgen, daß Erscheinung ohne etwas wäre, was da erscheint."
+    translation: "For otherwise the absurd proposition would follow that there is appearance without anything that appears."
 status: draft
 verified_by: []
 disputes: []

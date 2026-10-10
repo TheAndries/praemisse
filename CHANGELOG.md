@@ -2,6 +2,160 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-10 — owner session: Ask 7 answered, the comparison checked
+
+Owner-initiated session, the afternoon after run 6, on the owner's machine. Operator on
+`claude-fable-5-1`. The local copy was five runs behind `main` and was fast-forwarded
+first.
+
+**The owner's answer to Ask 7, verbatim.** Given in the session instead of `INBOX.md`,
+and recorded here as the inbox protocol would have moved it:
+
+> Feedback on /x/thing-in-itself/ — owner review, 2026-10-10
+>
+> I read the comparison, the notes, and the passages in the project's translations. Decisions and changes:
+>
+> Status. Set to checked, with a qualifier shown in the status line: "checked: claims and readings reviewed by the owner against the project's translations; translations not independently verified." If MODEL.md or PLAN.md doesn't yet allow a qualified checked status, add that convention there so later comparisons can use it.
+>
+> Nietzsche's target (row 1, "Nietzsche denies it"). Keep as is. No further hedge on whether GD's "wahre Welt" is Kant's thing in itself: the fourth proposition names Kant, stage 3 of the Fabel says "königsbergisch," and JGB 16 names "Ding an sich" directly. The three sources reinforce each other; the note may say so in one sentence.
+>
+> Fabel stage 5 (c-nietzsche-true-world-idea-refuted). Remove the "left open" hedge. Read stages 5 and 6 as Nietzsche's own voice: stage 5's parenthesis, "Teufelslärm aller freien Geister," is his name for himself and his allies, and stage 6 ends in Incipit Zarathustra. Treating 5 as someone else's position while 6 is his own has no textual basis. Update the reading note on the node and the row-5 note accordingly. Stage 4 may keep its positivist framing.
+>
+> Shared premise "Space is given a priori." The note says "subjektive Form unsers Intellekts" is more than A 24/B 38 says. Add A 26/B 42, where Kant calls space a subjective condition of sensibility, so the shared premise covers the "subjective form" part too and the restriction can be dropped.
+>
+> Placement. Move c-kant-noumenon-negative-only from the row "Can the thing in itself be reached by inference?" to "What can be said of the thing in itself?"; the passage is about the limits of the concept, not about inference.
+>
+> Kant / stage 6 parallel ("On what the division is"). Accepted as written: it is labelled the map's reading and no link is set. Leave it.
+>
+> Schopenhauer's attack with no Kant target. Accepted: pointing to "afficirt" (Prol §32) and "wirken" (§13 Anm. II) and leaving the question open is the right handling.
+>
+> German beside English. For the load-bearing sentences, show the German next to the English inside the claim node itself, not only in the passage list at the bottom. At minimum: B xxvi, Prol §32, Anhang ZA II 534, WWV §21 and §22, JGB 16, "Vernunft" 6 fourth proposition, Fabel stage 6. A bilingual reader filing a dispute will compare them first; put both in front of them.
+>
+> Nothing found that reads as fabrication. The mein Satz emendation in JGB 36 is correct and should stay.
+
+**What was done with it, point by point.** All eight are owner decisions on the page
+(`BOARD.md`); the two conventions they needed are the operator's, as matters of method.
+
+- *Status.* `MODEL.md` had no qualified status: `checked` was an argument's by its form,
+  and a comparison was `draft` until attested. Added, *Checked comparisons*: a comparison
+  may be `checked` when a named human has read its claims and readings against the
+  project's translations without attesting it; it must carry `status_note`, which the
+  status line shows after the word; the build refuses `checked` on a comparison without
+  the note and the note on anything else; the page's last section says the same in full.
+  Not extended to claims or arguments. The note is the owner's wording unchanged.
+- *Row 1.* One sentence added to the note: the three places that reinforce each other.
+  Nothing else touched.
+- *Fabel stages 5 and 6.* The »left open« was in the row-5 note and on the argument node;
+  the stage-5 node had no note on voice at all. Both claim nodes now carry a paragraph
+  *Whose voice*: the map reads the stage as Nietzsche's own, on the stage-5 parenthesis
+  and stage 6's »INCIPIT ZARATHUSTRA«, set in the owner's review, disputable like any
+  reading; the argument node says the same in one sentence and keeps its framing of stage
+  4; the row-5 note is rewritten. The owner's ground is accepted as the map's: treating
+  stage 5 as a position passed through while stage 6 is endorsed has no sentence of the
+  chapter behind it, and the stage-4 framing rests on a parenthesis that names a
+  position, which stage 5's does not. Statements unchanged, so no `versions:` entry;
+  this record is the version.
+- *Space.* The map had conclusion (a) of A 26 / B 42 only. Added conclusion (b), first
+  paragraph, as `p-krv-a26-b42-b` (AA 3:55.09–18, read from korpora.org, which serves the
+  page as ISO-8859-1 with HTML entities), and a claim on it,
+  `c-kant-space-subjective-condition-of-sensibility`, keeping Kant's modal »läßt sich
+  verstehen, wie ... gegeben sein könne«. The shared premise could not simply grow: the
+  build requires every claim in a `shared` entry to name every other, and two Kant claims
+  do not share a premise with each other. Split instead into two entries, *Space is given
+  a priori* (A 24 / B 38 ↔ Anhang) and *Space is a subjective form, a condition on the
+  side of the subject* (A 26 / B 42 (b) ↔ the same Anhang sentence), and the body says
+  that Kant's word is sensibility and Schopenhauer's intellect, which the premise does not
+  cover. The restriction sentence is gone. Four shared premises now.
+- *Placement.* `c-kant-noumenon-negative-only` moved to the row on what can be said; the
+  row-2 note loses »and only in the negative sense«, the row-4 note gains the claim.
+- *Parallel; Schopenhauer's attack.* Unchanged.
+- *German beside English.* Added, *Quotations* in `MODEL.md`: a claim may carry
+  `quotes:`, each the load-bearing sentence with `passage`, `original` and `translation`;
+  the build checks both are verbatim substrings of that passage (P1 by machine, as the
+  comparison check does for »...« quotations), and the page shows the two side by side
+  under the statement, two columns from 48rem, with the reference anchored to the passage
+  in the aside. Set on sixteen claims: the eight sentences the owner named, each on every
+  claim that rests on it (B xxvi on four Kant claims, Prolegomena § 32, Anhang ZA II 534
+  on two, ZA II 535, § 21, § 22, JGB 16 on two, the fourth proposition, Fabel stage 6),
+  plus stage 5 and the three shared-premise sentences on space. Not set on the other
+  claims yet; `PLAN.md` says when.
+
+**Checks.** `build.py --check` passes on 147 nodes. Six negative tests on a scratch copy
+fail as they should: a quotation's original altered, its translation altered, its passage
+not cited by the claim, `checked` on the comparison without a note, a note on a claim, a
+`quotes:` block on an argument. The site was built to the scratchpad and the rendered
+status line, a quote block and the four shared premises read as intended.
+
+**The adversarial pass, and what it found.** A second agent was given the eight
+decisions, the changed files, the conventions and the build, with the brief to break the
+new claim and passage, the shared premises, the Fabel reading, the notes, the quotation
+cuts, the status convention and the build. It confirmed the korpora text character for
+character and returned 13 findings; all but one changed something.
+- *Serious, P2.* The home page, the comparisons index and the about page printed the
+  bare word »checked« under a legend that defined it as machine checking. Legend and
+  about page now say the comparison sense too; lists print »checked, with a
+  qualification on the page«; the `MODEL.md` status cell no longer says »fidelity
+  unchecked« of a comparison.
+- *Serious, P2.* The status note said the owner had reviewed »the claims and readings«,
+  but the page now carries work written after his reading on his instructions. The last
+  paragraph names it (the A 26 / B 42 (b) claim and passage, the two shared-premise
+  paragraphs on space, the notes of rows 1, 4 and 5) and says he has not read it; the
+  note itself, his wording, stands. The paragraph also names him, since the convention
+  says a named human and the site named none.
+- *Moderate, P1 and P9.* The voice paragraphs said the free spirits are Nietzsche's
+  »name for himself and his allies«, a sentence about Nietzsche with no passage in the
+  map (MA's subtitle and JGB 44 are not in it), and »has no basis in the text«
+  overclaimed. Now: the parenthesis names the free spirits, that he writes of himself
+  under that name elsewhere is not in the map, the chapter has no sentence that separates
+  stages 5 and 6, and the reading followed is named, with the note that Clark's reading,
+  cited on the argument, gives stage 5 to Nietzsche as well.
+- *Moderate.* The argument node held two policies in one paragraph (leave the voice open;
+  stages 5–6 are his). Rewritten: stage 4 is left open because its parenthesis names a
+  position, as stages 1 and 3 do; stages 5 and 6 name none, and are read as his. The
+  Fabel passage's pointer updated.
+- *Moderate, fidelity.* The row-1 sentence said GD's true world »is« Kant's thing in
+  itself; GD's true world is a genus (Plato's, Christianity's, Kant's), no GD passage in
+  the map contains »Ding an sich«, and JGB 16 is another text. Now »include«, and JGB 16
+  »in another text«.
+- *Moderate, build.* A quote with no translation passed and rendered the German alone;
+  the translation is now required wherever the passage has one, an empty original is
+  refused, and the docstring says what a substring check cannot tell (that the
+  translation is of the same sentence).
+- *Minor.* The premise »a condition on the side of the subject« used Kant's word
+  (»Bedingung«) for both; now »Space is a subjective form«, with a sentence on the two
+  words and on the two texts' opposite directions of inference. Three cuts widened or
+  aligned: the second and third points of A 24 / B 38 on the space claim, the lotus
+  sentence before »hier der Stengel«, the English of B xxvi now starting at »consequently«
+  as the German does at »folglich«; the new claim's statement regains »necessarily« and
+  »to be affected by objects« and quotes its second sentence. `MODEL.md` says »a clause
+  or two«. The CRLF the editor wrote is normalized by `.gitattributes`.
+- *Observed, unchanged.* Stage 5, now in Nietzsche's voice, depends on stage 4's
+  not-obligating, framed as the positivist stage's; the body explains the step and the
+  reader sees both framings. The agent cost about 144,000 tokens of its own.
+
+**What else was wrong and why.**
+- The owner's note does not say, in the ask's own words, whether the page is better than
+  what he could find elsewhere. Recorded as such in `ASKS.md` and `PLAN.md`; no rethink
+  was ordered, and the plan proceeds on that until he says otherwise.
+- The first shared-premise edit put three claims in one entry and the build refused it;
+  the split above is better than the fix the build would have allowed.
+- Git Bash on the owner's machine fails on a long inline Python heredoc and the
+  scratch-copy command with `rm -rf` was denied; scripts written to the scratchpad and
+  run from there worked. Noted in memory.
+
+**Records.** Ask 7 done; owner decision in `BOARD.md`; `PLAN.md` rewritten (Checkpoint
+1 answered, what follows, the fourth thinker no longer blocked by it but after the gaps
+and the second comparison); README phase line; `MODEL.md` two new paragraphs and two
+sentences; `memory.md` updated. `INBOX.md` stays empty.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-11; the gaps the comparison
+page lists, where they add a row or a cell, through the adversarial pass; nothing waits
+on the owner except Ask 4, deferred.
+
+**Effort.** One owner session; the operator's work was reading the map and the owner's
+note, the two conventions and their checks, two new nodes, twenty revised files and the
+records, plus the reviewing agent. Nothing spent.
+
 ## 2026-10-10 — run 6: the comparison page, and Checkpoint 1
 
 Sixth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
