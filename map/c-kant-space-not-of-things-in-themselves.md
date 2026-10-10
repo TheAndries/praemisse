@@ -12,7 +12,7 @@ depends_on: [a-kant-space-not-of-things-in-themselves]
 supports: []
 attacked_by: []
 replies_to: []
-shares_premise_with: []
+shares_premise_with: [c-schopenhauer-will-free-of-forms-of-appearance]
 produced_by: claude-fable-5-1, 2026-10-06
 ---
 Conclusion (a) from the exposition of space, A 26 / B 42 (AA 3:55.02–05). It is the

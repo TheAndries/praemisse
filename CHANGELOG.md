@@ -2,6 +2,166 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-10 — run 6: the comparison page, and Checkpoint 1
+
+Sixth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first.
+
+**Steps 1–3.** No ask changed status since run 5; Ask 4 stays deferred by the owner and
+blocks only Phase 2. `INBOX.md` empty: nothing to publish, reply to or record. No open
+motion.
+
+**Step 4, the node: 1 new, 6 revised by a link only, and the convention for comparisons.**
+`x-thing-in-itself`, the page `PLAN.md` §3 names as the test of the method, at
+https://praemisse.com/x/thing-in-itself/. Settled first, in `MODEL.md`, *How the model is
+applied*, *Comparisons*, as a matter of method: a comparison carries a one-sentence
+`question`, its `thinkers` in column order, a `statement`, `rows` (each a question, the
+`positions` per thinker as that thinker's claims or arguments, and a short `note`),
+`shared` premises (each in one sentence, with the claims of different thinkers that
+assert it and the passage of each) and the `passages` its body quotes; it stays `draft`
+until a human attests it. `shares_premise_with`, never used before, is set only when both
+statements assert the proposition or one asserts it and the other expressly keeps that
+thinker's assertion of it; the field is symmetric, and the build now checks that, that
+every pair in the map is named by some comparison, that a shared entry's passages are
+cited by its claims, that every »...« quotation in a comparison's body or notes is inside
+a listed passage (P1, enforced by machine for the first time), and that the body links
+every reading of a claim in the table (P9). Five negative tests on a scratch copy fail as
+they should. Rendering: a new template sets the table across the whole page, one column
+per thinker and one row per question, each cell the statements with id, status word,
+passage references anchored to the passages in the aside, and the readings where there
+are any; the text and the passages take the usual two columns below; on a phone the table
+stacks with the thinker's name over each cell and no JavaScript; the index page lists the
+comparisons by title.
+
+Five rows: whether there is a thing in itself to a given appearance; whether it can be
+reached by inference; whether anything is cognized immediately; what can be said of it;
+what the division is and what follows from refusing it. Three shared premises, all
+Kant–Schopenhauer and each named in Schopenhauer's text: that there is a thing in itself
+to a given appearance (B xxvi, Prolegomena § 32; Anhang ZA II 535, »nicht die Anerkennung
+eines Dinges an sich zur gegebenen Erscheinung«); that space is given a priori (A 24 / B
+38; Anhang ZA II 534); that space is no determination of the thing in itself (A 26 / B 42;
+§ 23, which calls that »den Sinn der Kantischen Lehre«). None with Nietzsche, with the
+reasons on the page. The divergences set side by side: Kant's ground at B xxvi against
+the causal inference Schopenhauer attributes to him, with the two affection passages
+(§ 32 »afficirt«, § 13 Anm. II »wirken«) left for the reader; B xxvi against Fabel stage 6;
+immediacy (§§ 18, 22 against JGB 16, 19, with Kant's A 42 / B 59 on a side as to the
+thing in itself and silent on immediacy); the will (§ 23 against GD Irrthümer 3, JGB 19,
+and JGB 36 under its two readings). A section says what changes under each reading of
+Kant, and a last section lists what the map does not yet contain. Six older nodes changed
+in `shares_premise_with` only.
+
+**The adversarial pass, and what it found.** A second agent was given the node, the
+convention, the build and the rendered page, with the brief to break fidelity, the shared
+premises, the divergences, the readings section, quotations and references, the
+statement, the convention and its enforcement, the rendering and the format. It returned
+34 findings; I accepted 31 and changed the node, the build, the stylesheet and `MODEL.md`
+before commit; three are answered on the page or here.
+- *Serious, P9.* The question, the statement and the first shared premise all said a
+  thing in itself »behind« the appearance. No passage says behind: Kant says »zum Grunde
+  liege« and »etwas ..., was da erscheint«, Schopenhauer »zur gegebenen Erscheinung«;
+  »behind« is a second entity, the two-object reading, which the page's own last section
+  says the map does not pick. Reworded in the texts' terms, »to a given appearance«, and
+  the shared paragraph now says what the premise comes to on each reading. The same
+  finding in small: the row-1 and row-2 notes related to the contested Kant claim and
+  its argument without the »on the reading ... ; on the other« clause; added, and the
+  build now requires the body to link each reading of a claim in the table.
+- *Serious, fidelity.* The row-5 note said the stage-5 claim »is framed as the
+  positivist stage«. False twice: that claim is not framed (only the stage-4 claims
+  and the argument are), and the text puts positivism at stage 4, stage 5's parenthesis
+  naming the free spirits. The note now says what the nodes say and that whether
+  Nietzsche speaks there in his own voice is left open.
+- *Serious, P1.* Eight passages the body quotes were not in `passages:`, so their text
+  was not beside the quotation. Added, and the build now checks every »...« quotation
+  in a comparison against the listed passages, with an ellipsis splitting the quotation
+  into pieces that must all lie in one passage.
+- *Moderate, shared premises.* Schopenhauer's Anhang claim does not assert the first
+  premise; its sentence excepts Kant's »Anerkennung« from a defect. Kept, because that
+  is where the text names the sharing, and the convention amended to say so. The second
+  premise outran A 24 / B 38 (»belonging to the subject, not taken from the things« is A
+  26 / B 42); shrunk to what both assert. A third pair the text itself names was
+  unlinked, A 26 / B 42 with § 23's will free of time and space; set, with § 23's
+  sentence on »den Sinn der Kantischen Lehre« as the naming.
+- *Moderate, divergences.* »Erscheinung« in guillemets as what Kant and Nietzsche agree
+  on, where stage 6 says »die scheinbare«; »Schopenhauer stands between«, with no
+  passage; »not as a cause« read as a claim about Kant's thing in itself rather than the
+  B xxvi ground; the affection paragraph missing § 13 Anm. II's »wirken«; »Kant is on
+  neither side« on immediacy, where A 42 / B 59 and §§ 21–22 contradict on the thing in
+  itself; JGB 36's hinge »ob wir an die Causalität des Willens glauben« dropped;
+  Schopenhauer's § 1 remark said to be aimed at what Kant »holds« on the two-object
+  reading, now »has on that reading a target in Kant«. All reworded.
+- *Moderate, rows.* GD's »Der Wille bewegt nichts« in the row on what can be said of the
+  thing in itself, where it does not answer; removed. The Kant cell on immediacy empty
+  while the body gave him a position from A 42 / B 59, and its note claimed B xxvii–
+  xxviii answers the question, a sentence about Kant with no passage; the cell now holds
+  A 42 / B 59 and the note says it is silent on immediacy. Row-4 and row-5 notes stronger
+  or different than the statements they summarized; rewritten to them.
+- *Moderate, the convention and the build.* Notes were not one sentence as the
+  convention said; it now says a short note. The convention promised four things the
+  build did not check (every link named by a comparison, shared passages cited by the
+  claims, quotations in listed passages, readings linked) and let a duplicate thinker, a
+  thinker with no position anywhere and an argument in `shared` pass; all six checks
+  added. »Not in the map yet« conflated absent with silent; now »No position in the
+  map«, and the convention says the note must say which.
+- *Moderate, rendering.* Body headings rendered one level below the generated »Premises
+  shared«, inverting the hierarchy on the showpiece; the shared premises rendered in
+  spaced capitals, the label style; cell references left the page for the passage
+  already in the aside; the print stylesheet stacked the table and hid the thinkers'
+  names; the note lost its label on a phone. All fixed.
+- *Minor, 11 of them.* »die Art Kant's« for »in der Art Kant's«; five locators copied
+  inconsistently from the nodes; »known immediately« where the map renders »Erkanntes«
+  as cognized; »shows« for the map's own result where show is reserved for nachweisen;
+  a stray parenthesis; internal file names cited to readers without a link; »every
+  cell cites its passage« with one cell empty; the fourth proposition's »die Art
+  Kant's« said to be unsupplied where the claim's node supplies it.
+- *Answered, not changed.* A second candidate pair, § 19's law of causality and Kant's
+  understanding's principles, stays unlinked: »Vorstellung« is not »Erfahrung«. An
+  attack link from § 21–22 on Kant's A 42 / B 59 is not set: the convention requires the
+  denying words inside one statement, and here two statements do it between them; the
+  page says so and invites the dispute. The shared premises appear twice, as a list and
+  in prose: the list is the record, the prose carries the passages. Cell text stays at
+  body size with the question column narrowed.
+The pass cost about 231,000 tokens of the agent's own. Its serious findings were all of
+one kind, the map picking a reading in a word (»behind«) or misdescribing its own
+framing, and its most useful finding was structural: a rule the model stated (passages
+are the spans the body quotes) that nothing enforced, now enforced for comparisons by a
+check that would have caught every quotation slip of runs 2–5 had it existed.
+
+**What else was wrong and why.**
+- The founding figure of ~40 nodes for Phase 1 was wrong by a factor of three (145);
+  memory also carried Schopenhauer's count as 36 where it is 38. Both corrected.
+- The README still said no node had been written.
+- The reviewer was launched in the background again; a watcher on its transcript fired
+  after three quiet minutes while it was still working, since the transcript is written
+  only at the end. A fixed twelve-minute wake was used instead; the report arrived by
+  message before it fired. Noted in memory: do not watch the file, wait a fixed time.
+
+**Step 5.** Strategy changed in one respect and `PLAN.md` is rewritten with today's
+date: Phase 1 is built and the checkpoint is now the owner's; until he answers, the
+operator stays inside the chain, filling the gaps the comparison page lists only where
+they add a row or a cell, then a second comparison on the will; Phase 2 needs a route
+into `INBOX.md` settled in `MODEL.md` before the forms are built. The capacity section
+now records what the adversarial pass costs.
+
+**Step 6.** `memory.md` rewritten, about 3,400 words. Dropped: the run-5 note on
+zeno.org's outage beyond the one line in the source paragraph, the list of attacks
+»deliberately not set« (the reasons are on the nodes), and the itemized run-5 findings
+beyond the distilled rules.
+
+**Step 8.** Ask 7 opened: Checkpoint 1, the owner reads the comparison page against the
+texts he knows and answers in `INBOX.md` whether it is better than what he could find
+elsewhere; it blocks Phase 2 and any fourth thinker. The asks notifier parses the row
+(dry run).
+
+**Tomorrow's run should produce:** an entry dated 2026-10-11; if Ask 7 is answered,
+what follows from the answer; otherwise Kant's B xxvii–xxviii (3:17.08–18.21) and the
+rest of the chapter on phenomena and noumena, added where they fill the empty and thin
+cells of the comparison, through the adversarial pass.
+
+**Effort.** About 270,000 of the 300,000-token ceiling in this session plus about
+231,000 in the adversarial agent: roughly a quarter on reading the map and settling the
+convention, a quarter on writing the node, the build and the page, half on the review,
+the 31 fixes, the new checks and the records. Nothing spent.
+
 ## 2026-10-09 — run 5: Nietzsche against immediate certainty, the will as cause, and the true world
 
 Fifth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

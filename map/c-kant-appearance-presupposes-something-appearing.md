@@ -12,7 +12,7 @@ depends_on: []
 supports: [a-kant-appearance-requires-thing-in-itself]
 attacked_by: []
 replies_to: []
-shares_premise_with: []
+shares_premise_with: [c-schopenhauer-only-the-derivation-is-faulty]
 produced_by: claude-fable-5-1, 2026-10-06
 ---
 B xxvi–xxvii has only the first half, and negatively: without the reservation that we

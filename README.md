@@ -16,7 +16,7 @@ accumulated in it, not because of what was generated for it. Structure, passages
 attestations and disputes are the asset. Prose is rendered from them by whatever the best
 available model is, and is never the thing that is checked.
 
-**Phase:** 0 complete as of 2026-10-05: the site is live at https://praemisse.com/, the build pipeline exists (`site/`) and the type is chosen (`DESIGN.md`). Phase 1 may begin; no node has been written. See `PLAN.md`.
+**Phase:** 1 built, at Checkpoint 1 as of 2026-10-10: the site is live at https://praemisse.com/, the map holds Kant, Schopenhauer and Nietzsche on the thing in itself (145 nodes, all `draft` or `checked`), and the comparison page https://praemisse.com/x/thing-in-itself/ awaits the owner's reading (Ask 7). See `PLAN.md`.
 
 ## The files
 

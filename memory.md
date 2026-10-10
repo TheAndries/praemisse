@@ -2,17 +2,22 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-09 (run 5, end)
+## State as of 2026-10-10 (run 6, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–5 were
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–6 were
 served on that model, no handover note needed. The GitHub and Claude Code Remote tools in
 the tool list are platform-attached to every cloud session and are not a config change
 (`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
-motions: none. INBOX empty at runs 1–5. Open asks: 4 only (mailbox; deferred by owner;
-blocks Phase 2). Asks 1, 2, 3, 5, 6 done.
+motions: none. INBOX empty at runs 1–6. Open asks: 4 (mailbox; deferred by owner; blocks
+Phase 2) and **7 (Checkpoint 1: the owner reads the comparison page and answers in
+INBOX.md; blocks Phase 2 and any fourth thinker)**. Asks 1, 2, 3, 5, 6 done. `PLAN.md`
+rewritten 2026-10-10 (Phase 1 built, at Checkpoint 1; the ~40-node figure corrected to 145;
+until the owner answers, stay inside the chain: fill the gaps the comparison page lists,
+then a second comparison on the will; Phase 2 needs a route into INBOX.md settled in
+MODEL.md before the forms are built).
 
 **Phase 0 complete (2026-10-05).** `site/build.py` (reads `map/*.md`, validates against
 `MODEL.md`, renders to `site/_build/`, gitignored; `--check` for CI; `--map DIR` for a
@@ -69,7 +74,7 @@ marked. *Grenzen* = "limits", *Schranken* = "bounds" (Kant's definition, 4:352.2
 xxvii–xxviii on the will (3:17.08–18.21), A 236–260 / B 295–315 beyond the opening,
 Prolegomena §§58–59, Kant's footnote at B xxvii.
 
-**Schopenhauer nodes on `main` (36 after run 4):** `t-schopenhauer`; `w-schopenhauer-wwv1`
+**Schopenhauer nodes on `main` (38 after run 4):** `t-schopenhauer`; `w-schopenhauer-wwv1`
 (Zürcher Ausgabe 1977 text after Hübscher's 1859 text, vol. 1 = Books 1–2, vol. 2 = Books
 3–4 and the Anhang, continuous pagination); 13 passages `p-wwv1-*`: § 1 (the first
 paragraph, ZA I 28 inferred; the »Objekt an sich« sentence, 30), § 18 (the body given in
@@ -92,7 +97,7 @@ Besonnenheit "discernment". The identity of will and body is a claim, not an arg
 because § 18 says it can never be proved. Still not in the map: § 2, § 20, §§ 24–29, the
 Anhang on the Transcendental Aesthetic and on the categories.
 
-**Nietzsche nodes on `main` (53 after run 5; 144 nodes in all plus README):**
+**Nietzsche nodes on `main` (53 after run 5; 145 nodes in all after run 6, plus README):**
 `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889); cited by aphorism number
 and, for GD, chapter and section (the Fabel chapter by stage 1–6); KSA pages not given
 (unverified). 13 passages: `p-jgb-16-immediate-certainties`,
@@ -138,12 +143,7 @@ first in the map: `c-schopenhauer-will-not-inferred-but-immediately-known` ←
 opening with the »irrthümlichen Schlüssen« of the sentence before, Schopenhauer named at
 the aphorism's opening, not in the sentence); `c-kant-things-in-themselves-thinkable-not-knowable`
 ← `c-nietzsche-immediate-certainty-contradictio-in-adjecto` (JGB 16, on the words »Ding
-an sich« alone, no sentence naming Kant). Attacks deliberately not set, with the reason in
-the bodies: on Schopenhauer's world-is-my-representation (JGB 36 proposes an
-attempt, not a denial), on Kant via GD Vernunft 6 Satz 4 (a diagnosis of motive, not a
-denial), on Kant's conditional via Fabel stage 6 (stage 6 does not state the conditional;
-it affirms the antecedent Kant's modus tollens denies, which the comparison page will
-show). Claim→claim `depends_on` with the connective quoted: true-world-not-obligating →
+an sich« alone, no sentence naming Kant). Claim→claim `depends_on` with the connective quoted: true-world-not-obligating →
 idea-refuted (»nicht einmal mehr verpflichtend ... folglich«); evidence-gone →
 no-spiritual-causes (»Das folgt daraus«). Not set: idea-refuted → abolishing (narrative
 sequence, »schaffen wir sie ab!« / »haben wir abgeschafft«, is not a step). Terms: Gewissheit
@@ -204,26 +204,78 @@ antecedent decides the atom's subject; a comparative (»eher ... als«) denies n
 an attack rests on the attacker's statement, so the denying words must be inside it;
 the refusal reason for an attack must be of the kind the convention names; a body may
 quote only text inside a passage node (P1), so widen the span or refer without quoting;
-"orthography of the first edition" is a claim about an edition, say "consistent with". The Agent tool launches the reviewer in the background even
-when the foreground is asked for; its transcript stays quiet for 15–20 minutes; a
-`SendMessage` asking for the report makes it hand back; the stop hook asks for a commit
+"orthography of the first edition" is a claim about an edition, say "consistent with". Run 6 (the comparison, 34 findings, 31 accepted): the map
+picked a reading in one word (»behind«) in the question, statement and shared premise;
+a note misdescribed the map's own framing of a Nietzsche stage; eight quoted passages
+were not listed. Rules: word a shared premise in the texts' own terms and say what it
+comes to under each reading; a note that summarizes a statement must not outrun it; a
+rule the model states and nothing enforces will be broken, so write the check (the
+quotation check now exists for comparisons; consider extending it to all bodies, after
+measuring how many old nodes fail). Reviewer brief for a comparison: rows' fit, shared
+premises asserted by both, divergences supported, readings section not picking,
+quotations, references, statement, convention vs build, rendered page, format. The Agent tool launches the reviewer in the background even
+when the foreground is asked for; its transcript file is written only at the end, so a
+quiet-file watcher fires at once and is useless: wait a fixed 10–12 minutes in a
+background sleep instead, then `SendMessage` for the report if it has not arrived (run 6:
+it arrived by itself after 11 minutes); the stop hook asks for a commit
 while it runs, which must be refused until the report is in. Use the wait for building
 and screenshotting the site to the scratchpad (`--out`), drafting memory and the
 changelog.
 
-**Next for Phase 1 (PLAN.md §3, one comparison node).** The three thinkers are in. Next
-run: `x-thing-in-itself`, the Checkpoint 1 page. Settle the comparison node's model first
-(MODEL.md says: which claims align, which premises are shared, where they diverge, with
-links; it needs `statement`, `status` draft, `thinkers`, and a structure of questions).
-Material already linked: Kant's thinkable-not-knowable thing in itself with its two
-readings and the B xxvi conditional (¬t→¬w, modus tollens); Schopenhauer keeping the thing
-in itself, rejecting the derivation (ZA II 535) and an object in itself (ZA I 30), and
-naming it will, immediately known; Nietzsche denying immediate certainty (JGB 16),
-calling the thing in itself a contradictio in adjecto, affirming the antecedent of Kant's
-conditional (Fabel 6), making the division décadence (Vernunft 6, 4), and the will to
-power under two readings. Then the owner reads it (Checkpoint 1). PLAN.md's "~40 nodes"
-is passed (142); rewrite the figure when the plan is next rewritten, which should be when
-the comparison page exists.
+**The comparison node (run 6, 2026-10-10).** `x-thing-in-itself`, the Checkpoint 1 page,
+at /x/thing-in-itself/. Convention settled in `MODEL.md`, *Comparisons* (last paragraph):
+`question`, `thinkers` (column order), `statement`, `rows` (each `question`, `positions`
+keyed by thinker id listing that thinker's `c-`/`a-` ids, a short `note` that must relate
+to the readings where a cell's claim has any), `shared` (each `premise`, `claims` of
+different thinkers, `passages` cited by those claims), `passages` = every span the body or
+a note quotes; status `draft` until attested; an empty cell renders "No position in the
+map" and the note says whether the text is absent or silent. `shares_premise_with`: both
+statements assert the proposition, or one asserts and the other expressly keeps that
+thinker's assertion (Schopenhauer's »nicht die Anerkennung«). The build
+(`check_comparison`) checks thinkers resolve to `t-` with no duplicate and each placed
+somewhere, every position belongs to its column's thinker, `shared` claims are `c-` of
+different thinkers naming each other, shared passages are cited by the claims, every
+`shares_premise_with` pair in the map is named by some comparison, every »...« quotation
+in body or notes is inside a listed passage (pieces split at »...« must all lie in one
+passage; a chapter title matches a passage's `ref`), and the body links every `r-` whose
+`reading_of` is a cell claim (six negative tests passed on a scratch copy).
+Rendering: `site/templates/comparison.html`, the table full-width above the two-column
+text/passages grid, `render_comparison` in build.py, CSS block "Added 2026-10-10" (phone:
+cells stack with `data-thinker` labels via `::before`, no JavaScript); the index page lists
+the comparisons by title. Body headings are `#` (the
+renderer adds a level); cell refs anchor to `#p-id` in the aside; readings listed in the
+cell. Five rows: whether there is a thing in itself *to* a given appearance (never
+»behind«, which picks the two-object reading); whether it can be reached by inference;
+whether anything is cognized immediately (Kant cell: A 42/B 59, silent on immediacy);
+what can be said of it; what the division is and what follows from refusing it. Shared
+premises, the first `shares_premise_with` links, all Kant–Schopenhauer and each named in
+Schopenhauer's text: there is a thing in itself to a given appearance (B xxvi, Prol § 32 ↔
+Anhang ZA II 535); space is given a priori (A 24/B 38 ↔ Anhang ZA II 534); space is no
+determination of the thing in itself (A 26/B 42 ↔ § 23, ZA I 156–157, »den Sinn der
+Kantischen Lehre«). None with
+Nietzsche, with the reasons on the page (JGB 16 hits the term »Ding an sich« as such;
+Vernunft 6 Satz 4 diagnoses; Fabel stage 4 is framed as the positivist stage). Divergences
+on the page: Kant's B xxvi ground is the absurdity of appearance without anything that
+appears, not a causal inference, and the map has no Kant node stating the inference
+Schopenhauer attacks (Prol § 32 »afficirt« and § 13 Anm. II are the nearest; left open);
+B xxvi against Fabel stage 6, both treating »Erscheinung« as not standing alone, Kant
+keeping the thing in itself, stage 6 giving up »scheinbar« (the map's reading, via Vernunft
+6 Satz 1); immediacy (Schopenhauer § 22, § 18 against JGB 16, 19; Kant silent on immediacy but on a
+side as to the thing in itself, A 42/B 59 against §§ 21–22, no attack link because the
+denying words sit in two statements, said on the page);
+the will (§ 23 against GD Irrthümer 3, JGB 19; JGB 36 under its two readings, the map not
+picking). "What depends on the reading of Kant": two-object makes Schopenhauer's § 1
+remark and Anhang attribution aim at Kant's doctrine; two-aspect makes them aim at a
+reading of it. Gaps listed on the page: Kant B xxvii–xxviii, A 236–260 / B 295–315;
+Schopenhauer § 2, §§ 24–29, Anhang on the Aesthetic; Nietzsche JGB 15, 20, 21, 34.
+
+**Next.** Until Ask 7 is answered: fill the gaps above, each only where it adds a row or
+cell; then a second comparison, *the will* (Schopenhauer §§ 18–23 against Nietzsche JGB
+19, 36, GD Irrthümer 3), once the first has been read. If the owner answers no, rethink
+the method before any breadth (PLAN.md, Checkpoint 1). Settle the Phase 2 route into
+INBOX.md (prefilled GitHub issue vs the deferred mailbox) in MODEL.md before building the
+dispute and attestation forms. When Schopenhauer text is needed again, try zeno.org first
+and fall back to Gutenberg/Internet Archive without ZA pages.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
 runs 1–5. The card used for the domain is still unreported.
@@ -238,7 +290,6 @@ The container checks out a detached HEAD whose local `main` ref is stale; push w
 push origin HEAD:refs/heads/main`. A stop hook asks for a commit whenever the turn ends
 with uncommitted changes; do not commit nodes before the review to satisfy it.
 
-**Dropped from memory this run:** the itemized run-4 findings (the lessons are kept in
-the distilled rules), the list of §§ 18–19 sentences on pain and pleasure, the run-4
-remark that the same report arrived twice, the Schopenhauer extractor's description
-(the URL pattern and the markup facts are kept).
+**Dropped from memory this run:** the run-5 note on zeno.org's outage beyond the one line
+in the source paragraph, the list of attacks deliberately not set (the reasons are on the
+nodes), the itemized run-5 findings beyond the distilled rules.

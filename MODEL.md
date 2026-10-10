@@ -113,3 +113,26 @@ attacker's body quotes the sentence that names the target or says that none does
 what the link rests on instead. Setting or removing a link on an existing node does not
 supersede a version, since the statement is unchanged; the changelog records it. Settled
 by the operator on 2026-10-09, the first time an attack link was set.
+
+**Comparisons.** An `x-` node sets two or more thinkers side by side on one question. It
+carries `question` (one sentence), `thinkers` (the `t-` ids, in the order of the columns),
+`statement` (the one sentence a dispute quotes), `rows` (each a `question`, `positions`
+keyed by thinker id and listing that thinker's claims or arguments, and an optional
+short `note` saying who aligns and where they part, and, where a cell's claim has readings,
+how the row reads under each), `shared` (each a `premise` in
+one sentence, the `claims` of different thinkers that assert it, and the passages where
+each does) and `passages`, the spans the body quotes. The page renders the rows as a table,
+one column per thinker, each cell the statements with their ids, status words and passage
+references; a thinker with no position in a row is shown as having none in the map, never
+supplied by the operator, and the row's note says whether that thinker's text on the
+question is absent from the map or silent. `shares_premise_with` is set between two claims only when both
+statements assert the same proposition, possibly among others, or one asserts it and the
+other expressly keeps that thinker's assertion of it, and the comparison's `shared` entry
+names the proposition and the passage of each; the field is symmetric, and the build checks
+that every pair in a `shared` entry names each other, that every pair in the map is named
+by some comparison, that a `shared` entry's passages are cited by its claims, that every
+»...« quotation in a comparison's body or notes is inside a listed passage, and that the
+body links every reading of a claim in the table. A comparison stays
+`draft` until a human attests it (there is no form to check); its body says what depends
+on each reading where a cell's claim has `r-` nodes, and lists what the map does not yet
+contain. Settled by the operator on 2026-10-10, before the first comparison.

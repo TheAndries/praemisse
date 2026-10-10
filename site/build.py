@@ -159,8 +159,8 @@ def check(nodes: list[Node]) -> list[str]:
                     errors.append(f"{where}: {key} contains a non-id value {target!r}")
                 elif target not in ids:
                     errors.append(f"{where}: {key} -> {target} does not resolve")
-        if n.prefix in ("c", "a") and not as_list(n.meta.get("passages")):
-            errors.append(f"{where}: a claim or argument must cite at least one passage (CHARTER.md P1)")
+        if n.prefix in ("c", "a", "x") and not as_list(n.meta.get("passages")):
+            errors.append(f"{where}: a claim, argument or comparison must cite at least one passage (CHARTER.md P1)")
         # MODEL.md: supports is the converse of depends_on (checked since 2026-10-09).
         for target in as_list(n.meta.get("depends_on")):
             if isinstance(target, str) and target in ids and n.id not in as_list(ids[target].meta.get("supports")):
@@ -175,6 +175,12 @@ def check(nodes: list[Node]) -> list[str]:
         for target in as_list(n.meta.get("replies_to")):
             if isinstance(target, str) and target in ids and n.id not in as_list(ids[target].meta.get("attacked_by")):
                 errors.append(f"{where}: replies_to {target}, but that node's attacked_by does not name {n.id}")
+        # MODEL.md, Comparisons: shares_premise_with is symmetric (checked since 2026-10-10).
+        for target in as_list(n.meta.get("shares_premise_with")):
+            if isinstance(target, str) and target in ids and n.id not in as_list(ids[target].meta.get("shares_premise_with")):
+                errors.append(f"{where}: shares_premise_with {target}, but that node does not name {n.id}")
+        if n.prefix == "x":
+            errors.extend(f"{where}: {e}" for e in check_comparison(n, ids))
         if n.prefix == "p":
             for key in ("ref", "original", "work"):
                 if not n.meta.get(key):
@@ -197,6 +203,17 @@ def check(nodes: list[Node]) -> list[str]:
         if has_status:
             errors.extend(f"{where}: {e}" for e in check_human_record(n, nodes))
         errors.extend(f"{where}: {e}" for e in n.errors)
+    # MODEL.md, Comparisons: every shares_premise_with pair is named in some comparison's shared entry.
+    named = set()
+    for x in nodes:
+        if x.prefix == "x":
+            for sh in as_list(x.meta.get("shared")):
+                cl = [str(c) for c in as_list((sh or {}).get("claims"))] if isinstance(sh, dict) else []
+                named.update((a, b) for a in cl for b in cl if a != b)
+    for n in nodes:
+        for target in as_list(n.meta.get("shares_premise_with")):
+            if isinstance(target, str) and (n.id, target) not in named:
+                errors.append(f"{n.path.name}: shares_premise_with {target}, but no comparison names the shared premise")
     return errors
 
 
@@ -218,6 +235,94 @@ def check_argument(n: Node) -> list[str]:
             errs.append(f"form is {verdict}")
         if len(form["premises"]) != len(prem):
             errs.append(f"form has {len(form['premises'])} premises but the argument lists {len(prem)}; they must correspond one to one")
+    return errs
+
+
+def check_comparison(n: Node, ids: dict) -> list[str]:
+    """A comparison (MODEL.md, Comparisons): at least two thinkers, a one-sentence question, rows
+    of positions per thinker (claims or arguments of that thinker), and shared premises whose
+    claims belong to different thinkers and name each other in shares_premise_with."""
+    errs: list[str] = []
+    thinkers = [str(t) for t in as_list(n.meta.get("thinkers"))]
+    if len(thinkers) < 2:
+        errs.append("a comparison needs at least two thinkers")
+    if len(set(thinkers)) != len(thinkers):
+        errs.append("thinkers lists a thinker twice")
+    for t in thinkers:
+        if t not in ids or ids[t].prefix != "t":
+            errs.append(f"thinkers -> {t} is not a thinker in the map")
+    if not n.meta.get("question"):
+        errs.append("a comparison needs a one-sentence question")
+    rows = as_list(n.meta.get("rows"))
+    if not rows:
+        errs.append("a comparison needs rows: each a question and the positions per thinker")
+    placed: set[str] = set()
+    cell_claims: list[str] = []
+    for i, row in enumerate(rows):
+        if not isinstance(row, dict) or not row.get("question"):
+            errs.append(f"rows[{i}] needs a question")
+            continue
+        pos = row.get("positions") or {}
+        placed.update(str(t) for t in pos if as_list(pos[t]))
+        cell_claims.extend(str(c) for v in pos.values() for c in as_list(v))
+        if not isinstance(pos, dict) or not pos:
+            errs.append(f"rows[{i}] needs positions keyed by thinker id")
+            continue
+        for t, cids in pos.items():
+            if t not in thinkers:
+                errs.append(f"rows[{i}].positions: {t} is not among this comparison's thinkers")
+            for cid in as_list(cids):
+                c = ids.get(str(cid))
+                if c is None:
+                    errs.append(f"rows[{i}].positions.{t} -> {cid} does not resolve")
+                elif c.prefix not in ("c", "a"):
+                    errs.append(f"rows[{i}].positions.{t} -> {cid} is not a claim or argument")
+                elif str(c.meta.get("thinker")) != t:
+                    errs.append(f"rows[{i}].positions.{t} -> {cid} belongs to {c.meta.get('thinker')}")
+    for t in thinkers:
+        if t not in placed:
+            errs.append(f"thinker {t} has no position in any row")
+    # the body says what depends on each reading of a cell's claim (MODEL.md, Comparisons)
+    for r in ids.values():
+        if r.prefix == "r" and str(r.meta.get("reading_of")) in cell_claims and f"/r/{r.id[2:]}/" not in n.body:
+            errs.append(f"the body does not link {r.id}, a reading of a claim in the table")
+    # every »...« quotation in the body or a note is found in a listed passage (CHARTER.md P1)
+    listed = [ids[str(pid)] for pid in as_list(n.meta.get("passages")) if str(pid) in ids]
+    texts: list[str] = []
+    for p in listed:
+        texts.append(" ".join(str(p.meta.get("original", "")).split()))
+        texts.append(" ".join(str(p.meta.get("ref", "")).split()))
+    sources = n.body + " " + " ".join(str(r.get("note", "")) for r in rows if isinstance(r, dict))
+    for q in re.findall(r"»([^»«]+)«", " ".join(sources.split())):
+        pieces = [x.strip(" ,;:") for x in q.split("...")]
+        pieces = [x for x in pieces if x]
+        if not any(all(piece in t for piece in pieces) for t in texts):
+            errs.append(f"the quotation »{q}« is not inside any listed passage (CHARTER.md P1)")
+    for i, sh in enumerate(as_list(n.meta.get("shared"))):
+        if not isinstance(sh, dict) or not sh.get("premise"):
+            errs.append(f"shared[{i}] needs the premise in one sentence")
+            continue
+        cl = [str(c) for c in as_list(sh.get("claims"))]
+        if len(cl) < 2:
+            errs.append(f"shared[{i}] needs at least two claims")
+        for c in cl:
+            if c not in ids:
+                errs.append(f"shared[{i}].claims -> {c} does not resolve")
+            elif ids[c].prefix != "c":
+                errs.append(f"shared[{i}].claims -> {c} is not a claim")
+        cited = {str(pid) for c in cl if c in ids for pid in as_list(ids[c].meta.get("passages"))}
+        owners = {str(ids[c].meta.get("thinker")) for c in cl if c in ids}
+        if len(cl) >= 2 and len(owners) < 2:
+            errs.append(f"shared[{i}]: the claims must belong to different thinkers")
+        for a in cl:
+            for b in cl:
+                if a != b and a in ids and b not in as_list(ids[a].meta.get("shares_premise_with")):
+                    errs.append(f"shared[{i}]: {a} does not name {b} in shares_premise_with")
+        for pid in as_list(sh.get("passages")):
+            if str(pid) not in ids:
+                errs.append(f"shared[{i}].passages -> {pid} does not resolve")
+            elif str(pid) not in cited:
+                errs.append(f"shared[{i}].passages -> {pid} is cited by none of the shared claims")
     return errs
 
 
@@ -434,7 +539,7 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
         work_title = esc(work.title) if work else esc(p.meta.get("work"))
         src = p.meta.get("source") or (work.meta.get("source") if work else "")
         passages.append(
-            f'<div class="passage" lang="{esc(p.meta.get("lang", ""))}">'
+            f'<div class="passage" lang="{esc(p.meta.get("lang", ""))}" id="{esc(p.id)}">'
             f'<p class="ref" lang="en"><span><a href="{href(p)}">{work_title} {esc(p.meta.get("ref"))}</a></span><span>{esc(src)}</span></p>'
             f'<p class="original verse" lang="{esc(p.meta.get("lang", ""))}">{esc(p.meta.get("original"))}</p>'
             + (f'<p class="translation" lang="en">{esc(p.meta.get("translation"))} <span class="by">— {esc(p.meta.get("translation_by", "translation"))}</span></p>' if p.meta.get("translation") else "")
@@ -466,6 +571,17 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
     )
 
     body = "" if n.prefix in ("d", "v") else markdown(n.body)  # a dispute or attestation renders its body itself
+    if n.prefix == "x":
+        table, shared = render_comparison(n, ids)
+        return fill(
+            template("comparison.html"),
+            title=esc(n.title), status=" ".join(status_bits), question=inline(str(n.meta.get("question", ""))),
+            statement=statement, table=table, shared=shared, body=body + record,
+            links="\n".join(links_html), meta=meta_line,
+            passages="\n".join(passages),
+            jump='<p class="jump"><a href="#passages">The passages</a></p>' if passages else "",
+            back='<p class="return"><a href="#top">Back to the text</a></p>' if passages else "",
+        )
     return fill(
         template("node.html"),
         title=esc(n.title), status=" ".join(status_bits), argument=statement + arg, body=body + record,
@@ -474,6 +590,47 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
         jump='<p class="jump"><a href="#passages">The passage</a></p>' if passages else "",
         back='<p class="return"><a href="#top">Back to the text</a></p>' if passages else "",
     )
+
+
+def render_comparison(n: Node, ids: dict[str, Node]) -> tuple[str, str]:
+    """The side-by-side table (DESIGN.md 5) and the shared premises. One column per thinker,
+    one row per question; each cell carries the thinker's statements, each with its id, its
+    status in words and the passages it cites; the row's note follows the row."""
+    thinkers = [ids[str(t)] for t in as_list(n.meta.get("thinkers")) if str(t) in ids]
+    listed = {str(pid) for pid in as_list(n.meta.get("passages"))}
+    head = '<tr><th scope="col">Question</th>' + "".join(f'<th scope="col">{esc(t.title)}</th>' for t in thinkers) + "</tr>"
+    rows = []
+    for row in as_list(n.meta.get("rows")):
+        cells = []
+        for t in thinkers:
+            items = []
+            for cid in as_list((row.get("positions") or {}).get(t.id)):
+                c = ids.get(str(cid))
+                if c is None:
+                    continue
+                refs = []
+                for pid in as_list(c.meta.get("passages")):
+                    p = ids.get(str(pid))
+                    if p is not None:  # a passage listed on this page is one tap away, in the aside (DESIGN.md 1)
+                        target = f"#{p.id}" if str(pid) in listed else href(p)
+                        refs.append(f'<a href="{target}">{esc(p.meta.get("ref"))}</a>')
+                readings = [r for r in ids.values() if r.prefix == "r" and str(r.meta.get("reading_of")) == c.id]
+                items.append(f'<li><p class="cell-statement">{inline(str(c.meta.get("statement", "")))}</p>'
+                             f'<p class="cell-ref"><a href="{href(c)}">{esc(c.id)}</a> <span class="word">{esc(c.status)}</span>'
+                             + (" · " + "; ".join(refs) if refs else "")
+                             + (" · readings: " + ", ".join(f'<a href="{href(r)}">{esc(r.title)}</a>' for r in readings) if readings else "") + "</p></li>")
+            cells.append(f'<td data-thinker="{esc(t.title)}">' + (f"<ul>{''.join(items)}</ul>" if items else '<p class="cell-empty">No position in the map.</p>') + "</td>")
+        rows.append(f'<tr><th scope="row">{inline(str(row.get("question", "")))}</th>' + "".join(cells) + "</tr>")
+        if row.get("note"):
+            rows.append(f'<tr class="note"><th scope="row"><span class="label">Note</span></th><td colspan="{len(thinkers)}">{inline(str(row["note"]))}</td></tr>')
+    table = f'<table class="comparison"><thead>{head}</thead><tbody>{"".join(rows)}</tbody></table>'
+    shared_items = []
+    for sh in as_list(n.meta.get("shared")):
+        claims = ", ".join(link(ids, c, with_id=True) for c in as_list(sh.get("claims")))
+        pas = ", ".join(link(ids, p) for p in as_list(sh.get("passages")))
+        shared_items.append(f'<dt>{inline(str(sh.get("premise", "")))}</dt><dd>Held in {claims}.' + (f" Passages: {pas}." if pas else "") + "</dd>")
+    shared = f'<section class="shared"><h2>Premises shared</h2><dl class="facts">{"".join(shared_items)}</dl></section>' if shared_items else ""
+    return table, shared
 
 
 def render_form(n: Node) -> str:
@@ -584,7 +741,10 @@ def build(nodes: list[Node], out: Path, domain: str | None) -> None:
     PREFIX = ""
     counts = {plural: sum(1 for n in nodes if n.prefix == p) for p, (_, plural, _) in TYPES.items()}
     counts_html = "".join(f'<li><a href="{p}/">{plural}</a> <span class="id">{counts[plural]}</span></li>' for p, (_, plural, _) in TYPES.items())
-    (out / "index.html").write_text(page("praemisse", template("index.html").replace("{{ counts }}", counts_html)), encoding="utf-8")
+    xs = [n for n in nodes if n.prefix == "x"]
+    comparisons_html = ("".join(f'<li><a href="{href(n)}">{esc(n.title)}</a> <span class="id">{esc(n.status)}</span></li>' for n in xs)
+                        if xs else '<li>none yet</li>')
+    (out / "index.html").write_text(page("praemisse", template("index.html").replace("{{ counts }}", counts_html).replace("{{ comparisons }}", comparisons_html)), encoding="utf-8")
     PREFIX = "../"
     (out / "about").mkdir(exist_ok=True)
     (out / "about" / "index.html").write_text(page("About", template("about.html")), encoding="utf-8")

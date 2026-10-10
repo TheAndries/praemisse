@@ -12,7 +12,7 @@ depends_on: []
 supports: [c-schopenhauer-will-groundless-and-one]
 attacked_by: []
 replies_to: []
-shares_premise_with: []
+shares_premise_with: [c-kant-space-not-of-things-in-themselves]
 produced_by: claude-fable-5-1, 2026-10-08
 ---
 § 23, ZA I 156: »Der Wille als Ding an sich ist von seiner Erscheinung gänzlich verschieden und völlig frei von allen Formen derselben ... Schon die allgemeinste Form aller Vorstellung, die des Objekts für ein Subjekt, trifft ihn nicht; noch weniger die dieser untergeordneten, welche insgesammt ihren gemeinschaftlichen Ausdruck im Satz vom Grunde haben, wohin bekanntlich auch Zeit und Raum gehören, und folglich auch die durch diese allein bestehende und möglich gewordene Vielheit.« What follows from this for the will's unity is [c-schopenhauer-will-groundless-and-one](../../c/schopenhauer-will-groundless-and-one/).

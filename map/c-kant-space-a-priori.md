@@ -12,7 +12,7 @@ depends_on: []
 supports: [a-kant-space-not-of-things-in-themselves]
 attacked_by: []
 replies_to: []
-shares_premise_with: []
+shares_premise_with: [c-schopenhauer-causality-sensation-and-space-are-subjective]
 produced_by: claude-fable-5-1, 2026-10-06
 ---
 The first half is the second point of the metaphysical exposition of space (A 24 / B 38–39,

@@ -12,7 +12,7 @@ depends_on: []
 supports: []
 attacked_by: []
 replies_to: []
-shares_premise_with: []
+shares_premise_with: [c-kant-appearance-presupposes-something-appearing]
 produced_by: claude-fable-5-1, 2026-10-08
 ---
 Anhang, ZA II 535: »Die fehlerhafte Ableitung des Dinges an sich ist hier der Stengel: jedoch auch nur die Art der Ableitung, nicht die Anerkennung eines Dinges an sich zur gegebenen Erscheinung.« What Schopenhauer keeps is Kant's distinction of appearance from thing in itself, which the paragraph before the one on the derivation calls Kant's »Hauptverdienst« (ZA II 532); what he replaces is the derivation, [a-schopenhauer-kant-derivation-cannot-reach-thing-in-itself](../../a/schopenhauer-kant-derivation-cannot-reach-thing-in-itself/), with the route through self-consciousness.

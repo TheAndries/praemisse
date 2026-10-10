@@ -195,3 +195,37 @@ code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-si
 .record, .versions { border-top: 1px solid var(--rule); padding-top: var(--line); margin-top: var(--line); }
 .record p, .versions li { text-indent: 0; }
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/* Added 2026-10-10: the comparison page (DESIGN.md 5). The table sets the thinkers side by
+   side across the whole page; below it the text and the passages take the usual two columns.
+   On a phone the table stacks, each cell carrying its thinker's name, with no JavaScript. */
+.comparison-head { max-width: var(--measure); }
+.comparison-head .question { font-style: italic; text-indent: 0; margin: 0 0 calc(var(--line) * 0.5); }
+table.comparison { width: 100%; border-collapse: collapse; table-layout: fixed; margin: var(--line) 0 calc(var(--line) * 2); }
+.comparison th, .comparison td { vertical-align: top; text-align: left; font-weight: 400; padding: calc(var(--line) * 0.5) 1rem calc(var(--line) * 0.5) 0; border-top: 1px solid var(--rule); }
+.comparison th:last-child, .comparison td:last-child { padding-right: 0; }
+.comparison thead th { font-family: var(--sans); font-size: var(--size-small); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); border-top: 0; border-bottom: 1px solid var(--ink); padding-top: 0; }
+.comparison th[scope="row"] { font-style: italic; width: 14%; }
+.comparison thead th:first-child { width: 14%; }
+.comparison td ul { list-style: none; margin: 0; padding: 0; }
+.comparison td li { margin: 0 0 calc(var(--line) * 0.75); }
+.comparison td li:last-child { margin-bottom: 0; }
+.comparison td p { margin: 0; text-indent: 0; }
+.comparison .cell-ref { font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); margin-top: 0.2em; letter-spacing: 0.02em; }
+.comparison .cell-ref .word { text-transform: uppercase; letter-spacing: 0.08em; }
+.comparison .cell-empty { color: var(--ink-muted); font-style: italic; }
+.comparison tr.note th, .comparison tr.note td { border-top: 0; padding-top: 0; font-family: var(--sans); font-size: var(--size-small); color: var(--ink-muted); font-style: normal; line-height: 1.6; }
+.comparison td::before { display: none; }
+.shared { margin: 0 0 var(--line); }
+.shared dt { font-family: var(--serif); font-size: var(--size-body); text-transform: none; letter-spacing: 0; color: var(--ink); margin-top: calc(var(--line) * 0.5); }
+.shared dd { color: var(--ink-muted); }
+@media (max-width: 66rem) {
+  .comparison, .comparison thead, .comparison tbody, .comparison tr, .comparison th, .comparison td { display: block; width: auto; }
+  .comparison thead { display: none; }
+  .comparison tr { border-top: 1px solid var(--rule); padding: calc(var(--line) * 0.5) 0; }
+  .comparison tr.note { border-top: 0; padding-top: 0; }
+  .comparison th, .comparison td { border-top: 0; padding: 0 0 calc(var(--line) * 0.5); }
+  .comparison th[scope="row"] { width: auto; }
+  .comparison td::before { display: block; content: attr(data-thinker); font-family: var(--sans); font-size: var(--size-small); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); margin-bottom: 0.2em; }
+  .comparison tr.note td::before { display: none; }
+}
