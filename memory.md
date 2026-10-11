@@ -2,16 +2,16 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-10 (owner session after run 6, end)
+## State as of 2026-10-11 (run 7, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–6 were
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–7 were
 served on that model, no handover note needed. The GitHub and Claude Code Remote tools in
 the tool list are platform-attached to every cloud session and are not a config change
 (`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
-motions: none. INBOX empty at runs 1–6. Open asks: 4 (mailbox; deferred by owner; blocks
+motions: none. INBOX empty at runs 1–7. Open asks: 4 (mailbox; deferred by owner; blocks
 Phase 2). Asks 1, 2, 3, 5, 6, 7 done. **Ask 7 (Checkpoint 1) was answered 2026-10-10 in an
 owner session:** the owner read the comparison against the project's translations, found
 nothing that reads as fabrication, gave eight decisions (owner decision in `BOARD.md`;
@@ -54,7 +54,7 @@ statement denies what the target *states*, not its topic; the attacker's body qu
 sentence naming the target or says none does; a link-only change on an old node does not
 add a `versions:` entry, the changelog records it. All enforced by `--check`.
 
-**Kant nodes on `main` (53 after run 3):** `t-kant`; `w-kant-krv`, `w-kant-prolegomena`;
+**Kant nodes on `main` (53 after run 3; 55 after the owner session of 2026-10-10; 67 after run 7):** `t-kant`; `w-kant-krv`, `w-kant-prolegomena`;
 17 passages: `p-krv-b-xxvi` (3:16.30–17.07), `p-krv-b-xxviii-xxix` (3:18.21–30),
 `p-krv-b-xxix-xxx` (3:18.33–19.09), `p-krv-a24-b38`, `p-krv-a26-b42`, `p-krv-a42-b59`,
 `p-krv-a43-b60`, `p-krv-a235-b294` (3:202.12–22), `p-krv-a236-b295` (3:203.04–09),
@@ -75,9 +75,32 @@ a→¬k; a→¬x is the map's bridge), `a-kant-denying-things-in-themselves-absu
 Guyer 1987, Part V; Van Cleve 1999, ch. 10), both `reading_of:
 c-kant-things-in-themselves-thinkable-not-knowable`. Translations are the project's own,
 marked. *Grenzen* = "limits", *Schranken* = "bounds" (Kant's definition, 4:352.21–25);
-"aufheben" = "annul"; "ihr Ziel setzen" = "put a stop to". Still not in the map: B
-xxvii–xxviii on the will (3:17.08–18.21), A 236–260 / B 295–315 beyond the opening,
-Prolegomena §§58–59, Kant's footnote at B xxvii.
+"aufheben" = "annul"; "ihr Ziel setzen" = "put a stop to". **Run 7 (2026-10-11) added B xxvii–xxix, 3:17.07–18.21, in four passages**
+(`p-krv-b-xxvii-distinction-not-made` 17.07–18, `p-krv-b-xxvii-xxviii-same-will-free`
+17.18–28, `p-krv-b-xxviii-freedom-thinkable` 17.28–18.11, `p-krv-b-xxviii-morality-would-yield`
+18.11–21; the Korpus's »nothwendiggemachte« kept and noted), seven claims (without the
+distinction causality would hold of all things; without it a free will under natural
+necessity is a contradiction, drawn by »also«; if the deduction is right causality applies
+only to things as objects of experience, the »mithin«; the same will not free as appearance
+and free »als einem Dinge an sich selbst angehörig«, conditional as the sentence is;
+freedom cannot be cognized by speculative reason; freedom thinkable if the critical
+distinction holds, »wenigstens« kept; had freedom been proved unthinkable morality would
+yield, both limbs under »supposing«) and one argument, `checked`,
+`a-kant-freedom-thinkable-under-the-critical-distinction` ((k∧r)→f, f→t ⊢ (k∧r)→t; f→t is
+the map's bridge from the will of B xxvii–xxviii to the freedom of B xxviii, and the two
+»Widerspruch« differ, between two predicates of one will vs inside the representation of
+freedom; the conclusion claim's antecedent, »kritische Unterscheidung beider
+Vorstellungsarten und die davon herrührende Einschränkung«, is read as k∧r, the two
+meanings of the object identified with the two kinds of representation, said on the node;
+the deduction sentence, e→r by »mithin«, is not a premise, since the conclusion's antecedent
+has r and not e; the review caught a first form d→t with d including the deduction, which
+proved a weaker conditional than the claim). The two readings each cite the
+B xxvii–xxviii passage (»in zweierlei Bedeutung«; »als einem Dinge an sich selbst
+angehörig« claimable by both). Kant says the will *belongs to* a thing in itself, never
+that it is one: the hinge of the comparison with Schopenhauer's § 21. Still not in the
+map: A 236–260 / B 295–315 beyond the opening, Prolegomena §§58–59, Kant's footnote at B
+xxvi–xxvii (3:17.05 mark), the Grundlegung and the second Critique (so no sentence may say
+Kant asserts that morality presupposes freedom; B xxviii only supposes it).
 
 **Schopenhauer nodes on `main` (38 after run 4):** `t-schopenhauer`; `w-schopenhauer-wwv1`
 (Zürcher Ausgabe 1977 text after Hübscher's 1859 text, vol. 1 = Books 1–2, vol. 2 = Books
@@ -102,7 +125,7 @@ Besonnenheit "discernment". The identity of will and body is a claim, not an arg
 because § 18 says it can never be proved. Still not in the map: § 2, § 20, §§ 24–29, the
 Anhang on the Transcendental Aesthetic and on the categories.
 
-**Nietzsche nodes on `main` (53 after run 5; 145 nodes in all after run 6, plus README):**
+**Nietzsche nodes on `main` (53 after run 5; 145 nodes in all after run 6, 147 after the owner session, 159 after run 7, plus README):**
 `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889); cited by aphorism number
 and, for GD, chapter and section (the Fabel chapter by stage 1–6); KSA pages not given
 (unverified). 13 passages: `p-jgb-16-immediate-certainties`,
@@ -218,7 +241,18 @@ rule the model states and nothing enforces will be broken, so write the check (t
 quotation check now exists for comparisons; consider extending it to all bodies, after
 measuring how many old nodes fail). Reviewer brief for a comparison: rows' fit, shared
 premises asserted by both, divergences supported, readings section not picking,
-quotations, references, statement, convention vs build, rendered page, format. The Agent tool launches the reviewer in the background even
+quotations, references, statement, convention vs build, rendered page, format. Run 7 (20
+findings, 2 serious, all but one accepted): a form's antecedent must be the conclusion
+claim's antecedent atom for atom, not a condition that implies it (a form proving a weaker
+conditional is not a check of the claim); when a premise claim turns out idle in the form,
+take it out of `premises:` and say in the body what it supplies; an argument's `statement`
+must contain the map's bridge, since that is the sentence a dispute quotes; two
+occurrences of one word (»Widerspruch«) in two sentences are not one atom until the body
+says why; keep the indicative where Kant keeps it inside a counterfactual (»genommen
+habe«); a claim statement must be readable alone, so restate the supposition it stands
+under; "Kant does not say X" is a universal about the corpus, write "no passage in the map
+says X"; a quote block should be the load-bearing sentence, not the whole passage, or the
+page shows the passage twice; two passages may not share a title. The Agent tool launches the reviewer in the background even
 when the foreground is asked for; its transcript file is written only at the end, so a
 quiet-file watcher fires at once and is useless: wait a fixed 10–12 minutes in a
 background sleep instead, then `SendMessage` for the report if it has not arrived (run 6:
@@ -301,12 +335,24 @@ denying words sit in two statements, said on the page);
 the will (§ 23 against GD Irrthümer 3, JGB 19; JGB 36 under its two readings, the map not
 picking). "What depends on the reading of Kant": two-object makes Schopenhauer's § 1
 remark and Anhang attribution aim at Kant's doctrine; two-aspect makes them aim at a
-reading of it. Gaps listed on the page: Kant B xxvii–xxviii, A 236–260 / B 295–315;
-Schopenhauer § 2, §§ 24–29, Anhang on the Aesthetic; Nietzsche JGB 15, 20, 21, 34.
+reading of it. Run 7 added a sixth row, *What is the will, in relation to appearance and thing in
+itself?* (Kant: the same will free as belonging to a thing in itself, not cognized;
+Schopenhauer: § 21, a potiori; Nietzsche: JGB 19 complicated, Irrthümer 3 moves nothing,
+JGB 36 under its two readings), Kant sentences at the head of the »On the will« paragraph
+and a closing sentence there, two Kant passages in `passages:`, and the closing paragraph
+now names the row and those sentences as unread by the owner; the `statement` was not
+changed, since it speaks of rows 1–2. Gaps still listed on the page: Kant A 236–260 / B
+295–315 beyond the opening and the B xxvi footnote; Schopenhauer § 2, §§ 24–29, Anhang on
+the Aesthetic; Nietzsche JGB 15, 20, 21, 34.
 
-**Next.** Fill the gaps above, each only where it adds a row or cell, through the
-adversarial pass; then a second comparison, *the will* (Schopenhauer §§ 18–23 against
-Nietzsche JGB 19, 36, GD Irrthümer 3), offered to the owner for the same qualified review. Settle the Phase 2 route into
+**Next.** Fill the remaining gaps above, each only where it adds a row or cell, through
+the adversarial pass (Schopenhauer §§ 24–29 and the Anhang on the Aesthetic need zeno.org;
+Nietzsche JGB 15, 20, 21, 34 from the Gutenberg corpus, which must be re-fetched into the
+scratchpad each run); then the second comparison, *the will* (Kant B xxvii–xxviii, now in
+the map, against Schopenhauer §§ 18–23 and Nietzsche JGB 19, 36, GD Irrthümer 3; JGB 36's
+»"intelligiblen Charakter"« is in Nietzsche's own quotation marks and no Kant passage in
+the map carries the term, so the page may not call it Kant's without adding A 538–541 / B
+566–569), offered to the owner for the same qualified review. Settle the Phase 2 route into
 INBOX.md (prefilled GitHub issue vs the deferred mailbox) in MODEL.md before building the
 dispute and attestation forms. When Schopenhauer text is needed again, try zeno.org first
 and fall back to Gutenberg/Internet Archive without ZA pages.
@@ -332,6 +378,5 @@ The container checks out a detached HEAD whose local `main` ref is stale; push w
 push origin HEAD:refs/heads/main`. A stop hook asks for a commit whenever the turn ends
 with uncommitted changes; do not commit nodes before the review to satisfy it.
 
-**Dropped from memory this run:** the run-5 note on zeno.org's outage beyond the one line
-in the source paragraph, the list of attacks deliberately not set (the reasons are on the
-nodes), the itemized run-5 findings beyond the distilled rules.
+**Dropped from memory this run:** nothing; the file grew from about 3,900 to about 4,600
+words of 8,000 (the run-7 Kant paragraph, the comparison row and the distilled rules).

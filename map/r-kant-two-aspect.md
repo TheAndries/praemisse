@@ -5,7 +5,7 @@ title: The two-aspect reading of "eben dieselben Gegenstände"
 thinker: t-kant
 reading_of: c-kant-things-in-themselves-thinkable-not-knowable
 statement: "Appearances and things in themselves are not two kinds of object but the same objects considered in two ways: as they appear under the subjective conditions of our sensibility, and as they are in themselves, apart from those conditions."
-passages: [p-krv-b-xxvi, p-krv-b-xxviii-xxix, p-krv-a26-b42]
+passages: [p-krv-b-xxvi, p-krv-b-xxvii-xxviii-same-will-free, p-krv-b-xxviii-xxix, p-krv-a26-b42]
 literature:
   - "Gerold Prauss, *Kant und das Problem der Dinge an sich* (Bonn: Bouvier, 1974), which reads Kant's 'Ding an sich' as the elliptical 'Ding, an sich selbst betrachtet'"
   - "Henry E. Allison, *Kant's Transcendental Idealism: An Interpretation and Defense*, revised edition (New Haven: Yale University Press, 2004), ch. 2, 'Transcendental Realism and Transcendental Idealism'"
@@ -18,7 +18,13 @@ produced_by: claude-fable-5-1, 2026-10-07
 ---
 **The texts it rests on.** B xxvi: it is reserved "daß wir eben dieselben Gegenstände auch
 als Dinge an sich selbst, wenn gleich nicht erkennen, doch wenigstens müssen denken
-können" (AA 3:17.03–05): the same objects, thought also as things in themselves. B xxviii–
+können" (AA 3:17.03–05): the same objects, thought also as things in themselves. B xxvii–
+xxviii: the critique "das Object in zweierlei Bedeutung nehmen lehrt, nämlich als Erscheinung
+oder als Ding an sich selbst" (3:17.19–20), and "eben derselbe Wille" is thought as not free
+in the appearance and as free "als einem Dinge an sich selbst angehörig" (3:17.24–27): one
+object in two meanings, one will under both, though »als einem Dinge an sich selbst
+angehörig« is a phrase the two-object reading can also claim
+([c-kant-same-will-not-free-as-appearance-free-as-thing-in-itself](../../c/kant-same-will-not-free-as-appearance-free-as-thing-in-itself/)). B xxviii–
 xxix: freedom puts no obstacle in the way of "dem Naturmechanism eben derselben Handlung
 (in anderer Beziehung genommen)" (3:18.24–25): one action, two relations. A 26 / B 42:
 space is no determination of things "die an Gegenständen selbst haftete, und welche bliebe,

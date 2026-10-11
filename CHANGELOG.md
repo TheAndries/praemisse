@@ -2,6 +2,145 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-11 — run 7: Kant on the will at B xxvii–xxviii, and a sixth row
+
+Seventh scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first.
+
+**Steps 1–3.** No ask changed status since the owner session of 2026-10-10; Ask 4 stays
+deferred by the owner and blocks only Phase 2. `INBOX.md` empty: nothing to publish, reply
+to or record. No open motion.
+
+**Step 4, the nodes: 12 new, 3 revised.** The first gap the comparison page listed, Kant's
+B xxvii–xxviii (AA 3:17.07–18.21), the case of the will in the preface to the second
+edition, read from korpora.org and split into four passages at the sentence breaks: the
+supposition that the distinction of appearances from things in themselves had not been
+made (3:17.07–18); the sentence that answers it, the same will thought as not free in the
+appearance and as free »als einem Dinge an sich selbst angehörig« (3:17.18–28); the
+concessive sentence that freedom so thought cannot be cognized but can be thought
+(3:17.28–18.11); and the supposition that speculative reason had proved freedom unthinkable
+(3:18.11–21), which ends where the map's older passage at B xxviii–xxix begins. Seven
+claims, all `draft`, each with its load-bearing sentence set as a quotation in German and
+English, each keeping the sentence's mode: the two counterfactual claims under »had« and
+»then«, the positive result conditional on the critique's not having erred, the morality
+claim under »supposing« in both limbs, since Kant holds neither that freedom is unthinkable
+nor, in this text, that morality presupposes it. One argument, `checked`,
+`a-kant-freedom-thinkable-under-the-critical-distinction` ((k∧r)→f, f→t ⊢ (k∧r)→t): if
+the critique has not erred in taking the object in two meanings and causality is restricted
+to things as objects of experience, the same will is thought not free and free without
+contradiction; so, under the same condition, freedom can be thought, its representation
+containing no contradiction. The second premise, from the will thinkable as free to the
+representation of freedom without contradiction, is the map's bridge across Kant's »Ob ich
+nun gleich ... so kann ich mir doch«, named as an assumption in the statement itself; the
+identification of the two sentences' antecedents is said on the node, and the sentence on
+the deduction (»wenn die Deduction ... richtig ist, mithin«) is a claim the argument cites
+but not a premise, since the conclusion's antecedent names the restriction and not the
+deduction. One claim→claim `depends_on` with its connective quoted
+(»Von eben demselben Wesen also«). No attack link: no Schopenhauer or Nietzsche statement in
+the map denies what a new Kant statement states; Nietzsche's »Der Wille bewegt nichts« denies
+a cause, and Kant's will here is thought free, not said to move anything.
+
+The two readings of Kant each gained the B xxvii–xxviii passage: the two-aspect reading
+rests on »das Object in zweierlei Bedeutung nehmen« and »eben derselbe Wille«, and the
+two-object reading's page says so against itself and claims »als einem Dinge an sich selbst
+angehörig« as a phrase either reading can have. The comparison `x-thing-in-itself` gained a
+sixth row, *What is the will, in relation to appearance and thing in itself?*: Kant's will
+belongs to a thing in itself and is thought free there and not cognized; Schopenhauer's will
+is the thing in itself and bears the name a potiori; Nietzsche's willing is a unity only as
+a word, the will moves nothing, and JGB 36's closing sentence answers the question on one
+reading and not on the other. The paragraph *On the will* now opens with Kant and closes by
+placing his will apart from both readings of JGB 36; the closing paragraph names the row and
+those sentences as unread by the owner, beside the changes of 2026-10-10 it already named.
+The `statement` of the comparison is unchanged, since it speaks of the first two rows, and
+the status stays `checked` with the owner's note. The hinge of the new row is a difference
+the texts state and the map had not yet set side by side: Kant says the will is thought
+»als einem Dinge an sich selbst angehörig«, Schopenhauer that »Ding an sich aber ist allein
+der Wille«.
+
+**The adversarial pass, and what it found.** A second agent was given the twelve new
+nodes, the three revised ones, the Korpus pages, the older nodes they cite and the
+conventions, with the brief to break validity, fidelity, translation, quotations, links,
+readings, the comparison row, references, format and the rendered page. It verified every
+`original:` and every quotation character for character against the Korpus lines and the
+rendered pages, and returned 20 findings; I accepted 19 and changed the nodes before
+commit; one is answered here.
+- *Serious, validity.* The form as first written had one atom `d` for »the critique takes
+  the object in two meanings and its deduction is right« and concluded `d → t`, while the
+  conclusion claim's antecedent is the distinction *and the restriction* of the pure
+  concepts, which never mentions the deduction. Since the deduction implies the restriction
+  and not conversely, the form proved a weaker conditional than the claim it marked
+  `checked`, and the body's justification had the restriction derived from the wrong
+  thing. Rebuilt: `k` (the two meanings) and `r` (the restriction) are separate atoms, the
+  premises are `(k ∧ r) → f` and `f → t`, the conclusion `(k ∧ r) → t`; the sentence on
+  the deduction, which draws `r` by »mithin«, is idle in that form and is no longer a
+  premise but the claim that supplies `r`, said on both nodes. The truth table had passed
+  the first form; only a reader of the two antecedents could catch it.
+- *Serious, fidelity.* The statement of the will claim dropped Kant's second condition,
+  »wenn die Deduction ihrer Verstandesbegriffe richtig ist«, keeping only its »mithin«
+  consequence, while its own body said the result depends on the deduction. Restored.
+- *Moderate.* The argument's statement lacked the map's bridge, the one sentence a dispute
+  quotes; added. The bridge equated two senses of »Widerspruch«, between the two
+  predicates of one will (3:17.28) and inside the representation of freedom (3:18.07–08),
+  without saying so; the body now names the two and the passage from one to the other as
+  the disputable step. »Genommen habe ... nehmen konnte« is indicative inside Kant's
+  counterfactual, the taking actual and only the saying counterfactual; the translation
+  had »would have taken« and is corrected in the passage, the statement and the quote. The
+  counterfactual claim's statement opened with »then« and could not be read alone;
+  it now restates the supposition. Two bodies made claims about Kant texts not in the map
+  (the B xxvi footnote, said to require more than non-contradiction for thinking, which it
+  does not; the Grundlegung and second Critique as where he asserts that morality
+  presupposes freedom), P1 violations; both removed. The comparison said »Kant does not
+  say« the will is a thing in itself, a universal about the corpus; now »no Kant passage in
+  the map says«, in the row note and the paragraph.
+- *Minor.* »durchaus« (3:17.11) restored as »without exception«; »the will moves nothing«
+  regains Nietzsche's »any more«; two quote blocks re-cut to the load-bearing sentence
+  (the will claim's showed the whole passage twice; the morality claim's began mid-
+  supposition); a title that read »as such« for »überhaupt«; a line reference 3:16.34–17.01
+  that ended mid-clause; »in one line« for two lines; »data for it« made »data of it« with
+  morality added as a third antecedent for »derselben«; the new passage's B pages, which
+  duplicated the older node's »B xxviii–xxix« and its title, made B xxviii with a distinct
+  title, the break placed as the older node places it; the two reading nodes made symmetric
+  on »als einem Dinge an sich selbst angehörig«, each saying the other can claim it; the
+  closing paragraph's »B xxvii–xxviii« made »B xxvii–xxix«.
+- *Answered, not changed.* The reviewer asked whether the inference label needed
+  »absorption«; with the deduction premise gone the form is a plain hypothetical syllogism,
+  and the label stays. It found no attack link missing: § 21's »allein der Wille« does not
+  deny »angehörig«, and »Der Wille bewegt nichts mehr« denies a causality no new Kant
+  statement asserts. It confirmed every other AA line reference and found nothing wrong on
+  the rendered pages.
+The pass cost about 165,000 tokens of the agent's own. Its serious finding was of a kind
+the earlier runs had not seen: a valid form whose antecedent was not the conclusion claim's
+antecedent, so that the truth table checked a different conditional from the one the page
+shows as `checked`. The rule is now in memory: the form's antecedent must be the claim's
+atom for atom.
+
+**What else was wrong and why.**
+- The Korpus prints »nothwendiggemachte« as one word at 3:17.07; the earlier passage at
+  B xxvi stopped before the word for that reason. The new passage includes it as the
+  transcription has it and says so, as the map does for Gutenberg's JGB 36.
+- The README and `PLAN.md` carried the node count 147; the README now says 159, and
+  `PLAN.md` is not rewritten for a count.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The gaps are being filled in the
+order the page lists them, and the second comparison on the will now has a Kant column to
+draw on.
+
+**Step 6.** `memory.md` rewritten in place, about 4,600 words. Dropped: nothing; the file
+grew by about 700 words with the Kant paragraph, the comparison row and the distilled
+rules.
+
+**Step 8.** No ask opened; nothing waits on the owner except Ask 4, deferred.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-12; the next gap, Nietzsche's JGB
+15, 20, 21 and 34 from the Gutenberg corpus (re-fetched into the scratchpad) or
+Schopenhauer §§ 24–29 if zeno.org answers, each only where it adds a row or a cell, through
+the adversarial pass.
+
+**Effort.** About 200,000 of the 300,000-token ceiling in this session plus about
+165,000 in the adversarial agent: a third on reading the governing files and the map, a
+third on the four passages, seven claims, the argument and the comparison row, a third on
+the review, the 19 fixes and the records. Nothing spent.
+
 ## 2026-10-10 — owner session: Ask 7 answered, the comparison checked
 
 Owner-initiated session, the afternoon after run 6, on the owner's machine. Operator on

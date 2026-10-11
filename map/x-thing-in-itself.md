@@ -36,6 +36,12 @@ rows:
       t-schopenhauer: [c-schopenhauer-appearance-is-representation, c-schopenhauer-no-object-in-itself]
       t-nietzsche: [c-nietzsche-dividing-world-true-and-apparent-is-decadence, c-nietzsche-true-world-idea-refuted]
     note: "Kant: without things in themselves there would be appearance without anything that appears (B xxvi), and to admit none is a still greater absurdity (Prolegomena § 57). Schopenhauer: appearance is representation, and the absurdity is an object in itself that is neither representation nor will, into which, he says, Kant's thing in itself degenerated. Nietzsche: the division itself, Kant's included, is décadence; stages 5 and 6 of the Fabel are read as Nietzsche's own voice, stage 5's parenthesis naming the free spirits, »Teufelslärm aller freien Geister«, and stage 6 ending in »INCIPIT ZARATHUSTRA«, while the stage-4 result that stage 5 draws on keeps its framing as the positivist stage (said on those nodes)."
+  - question: "What is the will, in relation to appearance and thing in itself?"
+    positions:
+      t-kant: [c-kant-same-will-not-free-as-appearance-free-as-thing-in-itself, c-kant-freedom-cannot-be-cognized-by-speculative-reason]
+      t-schopenhauer: [c-schopenhauer-will-alone-is-thing-in-itself, c-schopenhauer-will-named-a-potiori]
+      t-nietzsche: [c-nietzsche-willing-is-complicated, c-nietzsche-will-moves-nothing, c-nietzsche-world-would-be-will-to-power]
+    note: "Kant: if the critique is right to take the object in two meanings, the very same will is thought as not free in the appearance and as free as belonging to a thing in itself, without contradiction, and freedom so thought cannot be cognized; the will belongs to a thing in itself and no passage in the map says it is one. Schopenhauer: the will alone is the thing in itself, and bears the name will a potiori. Nietzsche: willing is a unity only as a word, and the will moves nothing any more; JGB 36's closing sentence answers the question on the [reading on which it asserts](../../r/nietzsche-will-to-power-asserted/) that the world seen from inside would be will to power, and on the [reading on which it does not](../../r/nietzsche-will-to-power-not-asserted/) states nothing of a will in itself, its premises being ones he rejects."
 shared:
   - premise: "There is a thing in itself to a given appearance."
     claims: [c-kant-appearance-presupposes-something-appearing, c-schopenhauer-only-the-derivation-is-faulty]
@@ -49,7 +55,7 @@ shared:
   - premise: "Space is no determination of the thing in itself."
     claims: [c-kant-space-not-of-things-in-themselves, c-schopenhauer-will-free-of-forms-of-appearance]
     passages: [p-krv-a26-b42, p-wwv1-s23-will-free-of-forms]
-passages: [p-krv-b-xxvi, p-prol-314, p-krv-b307, p-krv-b308-309, p-krv-a42-b59, p-prol-289, p-krv-a24-b38, p-krv-a26-b42, p-krv-a26-b42-b, p-prol-350-351, p-wwv1-anhang-only-the-derivation-is-faulty, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-wwv1-s1-object-in-itself, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-will-not-inferred, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-gd-vernunft-2-apparent-world, p-gd-vernunft-6-four-theses, p-gd-wahre-welt-fabel, p-gd-irrthuemer-3-will-as-cause, p-jgb-36-will-to-power]
+passages: [p-krv-b-xxvi, p-prol-314, p-krv-b307, p-krv-b308-309, p-krv-a42-b59, p-prol-289, p-krv-a24-b38, p-krv-a26-b42, p-krv-a26-b42-b, p-prol-350-351, p-wwv1-anhang-only-the-derivation-is-faulty, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-wwv1-s1-object-in-itself, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-will-not-inferred, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-gd-vernunft-2-apparent-world, p-gd-vernunft-6-four-theses, p-gd-wahre-welt-fabel, p-gd-irrthuemer-3-will-as-cause, p-jgb-36-will-to-power, p-krv-b-xxvii-xxviii-same-will-free, p-krv-b-xxviii-freedom-thinkable]
 status: checked
 status_note: "claims and readings reviewed by the owner against the project's translations; translations not independently verified"
 verified_by: []
@@ -222,7 +228,17 @@ unsrige ist« (B 307–308, 3:209.32–210.12); whether Schopenhauer's self-cons
 an intuition of that kind is not stated in any passage in the map, and the map does not
 say.
 
-**On the will.** Schopenhauer's will as thing in itself is »völlig frei von allen Formen«
+**On the will.** Kant's will at B xxvii–xxviii is thought »als einem Dinge an sich selbst
+angehörig« and so »als frei«, and in the appearance »als dem Naturgesetze nothwendig
+gemäß und so fern nicht frei«, the two »ohne daß hiebei ein Widerspruch vorgeht«, if the
+critique is right to take the object »in zweierlei Bedeutung« (3:17.18–28,
+[c-kant-same-will-not-free-as-appearance-free-as-thing-in-itself](../../c/kant-same-will-not-free-as-appearance-free-as-thing-in-itself/));
+freedom so thought is not cognized, since I would have to cognize such a being »seiner
+Existenz nach und doch nicht in der Zeit bestimmt« (3:18.04–05,
+[c-kant-freedom-cannot-be-cognized-by-speculative-reason](../../c/kant-freedom-cannot-be-cognized-by-speculative-reason/)).
+The will belongs to a thing in itself; no Kant passage in the map says it is one.
+Schopenhauer says of the will what no Kant passage in the map says of any object, »Ding an sich aber ist allein der Wille« (§ 21, ZA I
+153–154), and his will as thing in itself is »völlig frei von allen Formen«
 of appearance, even »die des Objekts für ein Subjekt« (§ 23, ZA I 156), groundless and one
 (§ 23, ZA I 157). Nietzsche's GD has the will among the »Trugbilder und Irrlichter« of the
 »innere Welt«, »der Wille ist eins von ihnen. Der Wille bewegt nichts mehr« (»Die vier
@@ -239,7 +255,10 @@ und nichts ausserdem.« Whether that is asserted is the map's second contested r
 Nietzsche puts a will in the place Schopenhauer's will held, »von innen gesehen«, and the
 comparison has three answers to the question what the world is in itself; on the second
 it has two, and Nietzsche's answer to the question is that the question divides the world
-(»Die ›Vernunft‹ in der Philosophie« 6, fourth proposition). The map does not pick.
+(»Die ›Vernunft‹ in der Philosophie« 6, fourth proposition). The map does not pick. Kant's
+will stands apart from both readings: thought free »als einem Dinge an sich selbst
+angehörig«, it is not offered as what the world is in itself, and what the thing in itself
+it belongs to is remains, on his other sentences in the map, unknown (A 42 / B 59).
 
 # What depends on the reading of Kant
 
@@ -260,8 +279,8 @@ and to the Fabel's stage 3, »königsbergisch«, and the comparison adds nothing
 
 # What the map does not yet contain
 
-Kant's B xxvii–xxviii (3:17.08–18.21) and the chapter on phenomena and noumena (A 235–260
-/ B 294–315) beyond its opening and B 307–309; Schopenhauer's § 2, §§ 24–29, and the
+Kant's chapter on phenomena and noumena (A 235–260 / B 294–315) beyond its opening and
+B 307–309, and the footnote at B xxvi on thinking and cognizing; Schopenhauer's § 2, §§ 24–29, and the
 Anhang on the Transcendental Aesthetic; Nietzsche's JGB 15, 20, 21 and 34. Each would add
 a row or a cell, and none is needed for the rows above, whose every filled cell cites its
 passage. The comparison is `checked`, with the qualification in its status line: on 2026-10-10
@@ -272,5 +291,7 @@ he ordered are on the page
 ([`CHANGELOG.md`](https://github.com/TheAndries/praemisse/blob/main/CHANGELOG.md)). The
 changes made on his instructions after that reading are the operator's and have not been
 read by him: the claim and passage on A 26 / B 42, conclusion (b), the two shared-premise
-paragraphs on space, and the notes of rows 1, 4 and 5. The translations were not
+paragraphs on space, and the notes of rows 1, 4 and 5; and, added on 2026-10-11 with the
+nodes on B xxvii–xxix, the row on the will and the sentences on Kant in the paragraph on
+the will. The translations were not
 independently verified, and no one has attested the page.
