@@ -45,8 +45,16 @@ the build from `site/site.yaml`; only palette `a` exists.
 | `--head-align`, `--head-rule` | center, 1px `--rule` | | the running head (B would be left, 2px `--rule-strong`) |
 | `--grid-rule`, `--grid-name-weight`, `--grid-name-family`, `--grid-gap` | `--rule`, 400, `--serif`, 1.25rem | | the comparison grid; B's values are in a comment in the file |
 
-Contrast ratios, measured (WCAG 2 relative luminance), recorded in *Verification* below once
-the specimen is built.
+Contrast ratios, measured (WCAG 2 relative luminance, computed from the hex values above on
+2026-10-11), all above 4.5:1 for text and 3:1 for the small caps and the accent underline:
+
+| Pair | Light | Dark |
+|------|-------|------|
+| `--ink` on `--paper` | 14.95:1 | 13.75:1 |
+| `--ink-2` on `--paper` | 8.62:1 | 9.73:1 |
+| `--muted` on `--paper` | 5.22:1 | 5.64:1 |
+| `--accent` on `--paper` (links, the current menu word; also `--contested`) | 8.14:1 | 6.46:1 |
+| `--rule` on `--paper` (a hairline, not text) | 1.37:1 | 1.44:1 |
 
 Rules for using them: one accent and one warning, which may be the same hue, and nothing else
 on the site is coloured; old-style figures in running text and the colophon, lining and tabular
@@ -94,9 +102,10 @@ rendered from the map is not rewritten; only its order and setting change.
    from `start_here` in `site/site.yaml`; omitted if empty), *Thinkers* (a contents list), *To
    dispute a node*. The counts leave this page for the colophon.
 2. **Comparison.** Page width. The label line *Comparison · status, qualification*, the title, the
-   question as an italic lead, the statement, the grid, then for each row the row's note beside the
-   passage pairs of that row (text column 3fr, apparatus 2fr), each passage once and anchored by
-   its id, then the body, then the dependency lists, then the apparatus note.
+   question as an italic lead, the statement, the grid, then *The texts, by row*: for each row the
+   passage pairs of that row in the text column (3fr), grouped by thinker, each passage once and
+   anchored by its id, and the row's note in the apparatus column (2fr) with a link back to that
+   row of the grid; then the premises shared, the body, the dependency lists, the apparatus note.
 3. **Node (claim, argument).** Page width, two columns: the label, the claim at `--size-2`, the
    argument's premises and conclusion, the quotations, the prose; the apparatus column with the
    status word, source, passage pairs; the dependency lists full width beneath.
@@ -117,9 +126,12 @@ Each from the brief and `DESIGN.md`, with its reasoning in one line.
 - *Each passage is shown once, under the first row that cites it, anchored by its id; a later cell
   links to that anchor.* Nine of the 34 citations in the grid repeat a passage shown in an earlier
   row, and repeating 1,200 words would cost weight and reading without adding a text.
-- *The row's note moves from inside the grid to the text column of that row's passages.* The brief's
-  cell holds statement, reference and status, so the grid stays a grid; the note is the map's
-  commentary on the row and sits where an edition puts commentary, beside the sources.
+- *The row's note moves from inside the grid to the apparatus column beside that row's passages.*
+  The brief's cell holds statement, reference and status, so the grid stays a grid; the note is the
+  map's commentary on the row and sits where an edition puts commentary, in the margin of the sources.
+- *In the texts section the passages take the text column (3fr) and the note the apparatus column
+  (2fr), not the other way round.* The passages are the text of that section, 7,000 words of it;
+  in the 2fr column they ran to 37,000px, in the 3fr column at the measure to 23,000px.
 - *The six passages the comparison lists but no cell cites follow the rows as a last group,
   "Cited in the shared premises and the text".* The body quotes them (P1), so they must be on the page.
 - *The label line above the title is a `p`, not an `h2`.* It is the title's kicker, not a section;
@@ -139,6 +151,13 @@ Each from the brief and `DESIGN.md`, with its reasoning in one line.
   with both; it is a design-layer input, not a build input in the sense the brief protects.
 - *Specimens are not published; the owner opens the file from the branch or reads the screenshots.*
   GitHub Pages deploys `main` only, so there is no branch preview.
+- *The committed screenshots show the head, the grid and the first row of texts (6,600px at 1280,
+  12,600px at 390), not the whole page.* The whole page is 38,700px at 1280 and 66,000px at 390,
+  and four full-page PNGs weigh 33 MB; the HTML file beside them is the whole page.
+- *The weight budget of the brief (a node page under 120 KB with fonts) cannot be met with the
+  fonts as they are.* The seven Libertinus files weigh 100–136 KB each, 820 KB in all, and a page
+  needs at least the serif roman, serif italic and sans roman; the fonts are off limits to this
+  work, so the measured numbers are recorded and the gap goes to the board as a note.
 - *The build's `--specimen ID PATH` writes one node's page with the specimen's relative paths.*
   The brief asks for the real comparison rendered by the existing build, not a copy made by hand.
 

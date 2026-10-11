@@ -2,6 +2,77 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-11 — owner session: the design brief, branch `design`, the comparison specimen (Ask 8)
+
+Owner-initiated session on the owner's machine. Operator on `claude-fable-5-1`. The owner gave
+a design brief (*praemisse design brief for the operator.md*) with two mockups of the front
+page, A *the edition* and B *the apparatus*, and had chosen A. The brief is filed verbatim in
+`INBOX.md` as an owner note; the choice of A is an owner decision in `BOARD.md`; the mockups
+are kept in `site/specimens/`. Everything is on branch `design`; `main` is untouched and
+`DESIGN.md` is unchanged, as the brief requires until the owner has approved the specimen.
+
+**What the brief asks.** Colour, spacing, page grammar and a menu under the ten principles
+as they stand, as an amendment to `DESIGN.md` under *Colour, space and pages*: one token
+file, eleven components, seven templates and the index pages built by the existing build,
+the counts moved from the front page to the colophon. Two asks: the comparison specimen
+first (this session stops there), the merge at the end. Off limits: the map, the model, the
+status vocabulary, the protocol, the type and the fonts, the rendered prose.
+
+**Done, in the brief's order.** Step 1: the records above and the first draft of the
+amendment, `site/DESIGN-amendment.md`, with every operator decision and its one line of
+reasoning. Step 2: `site/static/tokens.css` (imports `type.css`; the brief's values, the
+four sizes, the spacing scale, the palette light and dark, the grid's four levers with B's
+values in a comment), `site/static/site.css` (every component and the comparison template,
+nothing but tokens), `site/specimens/components.html` with screenshots at 390 and 1280,
+light and dark; `base.html` rewritten as the running head, the menu with the current
+section marked, a skip link, and the colophon with the counts from the build;
+`site/site.yaml` for the palette and the *Start here* list. Step 3: the comparison template
+and its rendering in `build.py` (the label line, the title, the question, the statement,
+the grid as a table with `th` cells for the thinkers and each row's question a `th` across
+the width, the texts by row beneath it, the premises shared, the body, the dependency
+lists, the apparatus note), a `--specimen ID PATH` flag that writes one node's page with the
+specimen's paths, `site/specimens/comparison-a.html` rendered from the real map, and its
+screenshots. Ask 8 filed: *Comparison specimen: yes, or what to change?* The other
+templates still render with the new chrome and the old body markup; they are step 5, after
+the answer.
+
+**Decisions taken by the operator** (all in `site/DESIGN-amendment.md` with reasoning): the
+first statement of a cell at `--size-2` and the rest at `--size-3`, since cells hold up to
+three statements of up to 92 words; each passage shown once, under the first row that cites
+it, a later cell linking to that anchor (nine of the 34 citations repeat); the row's note
+out of the grid and into the margin beside that row's passages; the six passages the
+comparison lists but no cell cites in a last group, since the body quotes them (P1); the
+label line above the title a `p`, not an `h2`; links in running text underlined in the
+accent, links in a list or a cell in ink without underline until hover; the statement in a
+cell plain text and the type word (Claim, Argument) the link to the node; the thinker's full
+name in the grid header; no key term per cell, the model having no field for it; the
+screenshots the head, grid and first row of texts rather than the whole page.
+
+**What was wrong.** The first rendering put the passages in the 2fr apparatus column and
+the note in the 3fr text column, as a literal reading of "the passage pairs in a two-column
+node layout"; 7,000 words of passages in 426px ran the page to 49,500px. Swapped: the
+passages are the text of that section and take the measure, the note is the apparatus; the
+page is 38,700px at 1280, of which the grid is 4,300 and the texts 23,000. Headless Edge
+with `--force-dark-mode` did not switch the colour scheme, so the screenshots were taken
+with Playwright's Chromium, which emulates it. The old build's `status` line, the `node`
+layout and the aside are still used by the non-comparison templates and have no styles in
+`site.css` yet; those pages look unstyled on the branch until step 5, which is expected.
+
+**A conflict in the brief, for the board.** The weight budget, a node page under 120 KB on
+first visit including fonts, cannot be met with the fonts as they stand: the seven
+Libertinus files are 100–136 KB each, 820 KB together, and a page needs at least three of
+them. The fonts are off limits to this work. The operator will measure and record the real
+numbers at step 6; whether to re-subset the fonts (drop features, split Greek into its own
+file, or drop the semibold faces the templates do not use) is a board matter, noted in
+`PLAN.md`'s risks for a scheduled run and raised in the ask's answer if the owner wants it.
+
+**Not done, by design.** Templates 1 and 3–7 and the index pages; the verification of step
+6; the amendment to `DESIGN.md`; the merge. `style.css` stays until the templates that use
+it are rebuilt. No `start_here` nodes chosen yet (step 5).
+
+**Effort.** The owner session's own context, about a third of a run's ceiling; no
+adversarial pass, since no node changed.
+
 ## 2026-10-10 — owner session: Ask 7 answered, the comparison checked
 
 Owner-initiated session, the afternoon after run 6, on the owner's machine. Operator on

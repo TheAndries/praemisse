@@ -1,6 +1,7 @@
 # PLAN.md
 
-Current strategy. Rewritten, with the date, whenever it changes. Last rewritten 2026-10-10,
+Current strategy. Rewritten, with the date, whenever it changes. One risk (weight) added
+2026-10-11 in the owner session of the design brief. Last rewritten 2026-10-10,
 owner session (Checkpoint 1 answered; the comparison `checked` with a qualification; what
 follows). Earlier versions: 2026-10-10 run 6 (the comparison node exists; the node count
 corrected) and 2026-10-04 (founding), in the git history.
@@ -93,5 +94,10 @@ reading what was built and filing notes; nothing in this plan blocks on more.
 - Silence: no humans dispute or attest. Mitigated by the owner's invitations in Phase 2;
   if after a quarter nobody has, that is a board matter, not a reason to fake it.
 - Taste: the site looks like every other site. Mitigated by `DESIGN.md` and Ask 3 (done).
+- Weight: the design brief of 2026-10-11 (`INBOX.md`) sets a node page at under 120 KB on
+  first visit including fonts; the Libertinus files under `site/fonts/` weigh 820 KB and a page
+  needs three of them, and the fonts are off limits to the design branch. The measured numbers
+  go into `DESIGN.md` at the branch's verification step; re-subsetting (features, Greek in its
+  own file, the unused semibold faces) is a board matter.
 - Sources: zeno.org was unreachable for a whole run; Gutenberg served for Nietzsche. Each
   thinker node says which transcription was used and what it could not verify.

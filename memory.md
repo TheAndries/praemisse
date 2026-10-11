@@ -2,6 +2,31 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
+## State as of 2026-10-11 (owner session: the design brief, branch `design`)
+
+**Design branch, open at Ask 8.** On 2026-10-11 the owner gave a design brief (filed
+verbatim in `INBOX.md`; owner decision in `BOARD.md`: direction A, *the edition*). Branch
+`design`, not merged; `main` and `DESIGN.md` untouched. Built: `site/static/tokens.css`
+(imports `type.css`; four sizes, spacing scale, palette light and dark, grid levers with
+B's values in a comment), `site/static/site.css` (eleven components, the comparison
+template), `site/templates/base.html` (running head, menu with `aria-current`, skip link,
+colophon with the counts), `site/site.yaml` (`palette: a`, `start_here: []`), the
+comparison template and rendering in `build.py` (`render_comparison`, `render_texts`,
+`render_shared`, `deps_html`, `status_html`, `page(kind, section, measure, after)`,
+`--specimen ID PATH`), `site/specimens/components.html` and `comparison-a.html` with
+screenshots. Draft amendment with every decision: `site/DESIGN-amendment.md`; it moves
+into `DESIGN.md` under *Colour, space and pages* only on the owner's yes. **Ask 8 is
+open and blocks step 5 of the brief** (node, front page, thinker and work, passage, index
+pages, dispute, about), step 6 (verification into `DESIGN.md`) and the merge ask. If the
+owner asks for a colour or spacing change: `tokens.css` only. If he asks for B's grid:
+the four `--grid-*` tokens. If a different direction: stop, note in `INBOX.md`, no build
+without a `BOARD.md` line. Known: the brief's 120 KB weight budget cannot be met with the
+fonts (820 KB, off limits); measure at step 6 and put the gap to the board. The old
+templates (node, index, front, about) still use `style.css` classes and look unstyled on
+the branch until step 5. Screenshots: Playwright's Chromium (installed on the owner's
+machine with `pip install playwright; python -m playwright install chromium`); headless
+Edge cannot emulate dark mode.
+
 ## State as of 2026-10-10 (owner session after run 6, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at

@@ -59,6 +59,10 @@ PREFIX = ""  # relative path from the page being rendered to the site root; set 
 SITE = ROOT / "site"
 MAP = ROOT / "map"
 OUT = SITE / "_build"
+# Design-layer settings (site/site.yaml, added 2026-10-11 with the design brief): the palette
+# set on <html>, and the "Start here" list of the front page. Not the map, not the model.
+CONFIG = yaml.safe_load((SITE / "site.yaml").read_text(encoding="utf-8")) or {}
+COUNTS: dict[str, int] = {}  # per type prefix, set by build() and rendered in every colophon
 
 TYPES = {  # prefix -> (type name, plural label, has status)
     "t": ("thinker", "Thinkers", False),
@@ -627,23 +631,25 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
     if n.meta.get("superseded_by"):
         chain.append("Superseded by " + link(ids, n.meta["superseded_by"]))
     disputes = as_list(n.meta.get("disputes"))
+    verified = as_list(n.meta.get("verified_by"))
     meta_line = " · ".join(
         [f"Permanent address: {esc(n.url)}", f"Produced by {esc(n.meta.get('produced_by'))}"]
         + chain
+        + (["Verified by " + (", ".join(link(ids, i) for i in verified) if verified else "nobody yet")] if has_status else [])
         + ["Disputes: " + (", ".join(link(ids, d) for d in disputes) if disputes else "none")]
     )
 
     body = "" if n.prefix in ("d", "v") else markdown(n.body)  # a dispute or attestation renders its body itself
     if n.prefix == "x":
-        table, shared = render_comparison(n, ids)
+        # The comparison page (DESIGN.md P5; the design brief of 2026-10-11): the label line,
+        # the title, the question, the statement, the grid, the texts by row, the shared
+        # premises, the body, the dependency lists, the apparatus note.
+        table, shown = render_comparison(n, ids)
         return fill(
             template("comparison.html"),
-            title=esc(n.title), status=" ".join(status_bits), question=inline(str(n.meta.get("question", ""))),
-            statement=statement, table=table, shared=shared, body=body + record,
-            links="\n".join(links_html), meta=meta_line,
-            passages="\n".join(passages),
-            jump='<p class="jump"><a href="#passages">The passages</a></p>' if passages else "",
-            back='<p class="return"><a href="#top">Back to the text</a></p>' if passages else "",
+            title=esc(n.title), status=status_line(n), question=inline(str(n.meta.get("question", ""))),
+            statement=statement, table=table, texts=render_texts(n, ids, shown), shared=render_shared(n, ids),
+            body=body + record, links=deps_html(n, ids), meta=meta_line,
         )
     return fill(
         template("node.html"),
@@ -655,15 +661,81 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
     )
 
 
-def render_comparison(n: Node, ids: dict[str, Node]) -> tuple[str, str]:
-    """The side-by-side table (DESIGN.md 5) and the shared premises. One column per thinker,
-    one row per question; each cell carries the thinker's statements, each with its id, its
-    status in words and the passages it cites; the row's note follows the row."""
+def status_html(n: Node) -> str:
+    """The status word component: the word in small caps, contested in the one warning colour,
+    and on a checked comparison the fact of the qualification (CHARTER.md P2, DESIGN.md P4)."""
+    if not n.status:
+        return ""
+    out = f'<span class="status-word">{esc(n.status)}</span>'
+    if n.meta.get("contested"):
+        out += ', <span class="status-word contested">contested</span>'
+    if n.meta.get("status_note"):
+        out += '<span class="status-more">, with a qualification on the page</span>'
+    return out
+
+
+def status_line(n: Node) -> str:
+    """The status for the label line above a title: the word, contested if so, and the
+    qualification in full on a checked comparison (MODEL.md, Checked comparisons)."""
+    out = f'<span class="status-word">{esc(n.status)}</span>'
+    if n.meta.get("contested"):
+        out += ', <span class="status-word contested">contested</span>'
+    if n.meta.get("status_note"):
+        out += f', <span class="qualification">{inline(str(n.meta["status_note"]))}</span>'
+    return out
+
+
+def type_word(n: Node) -> str:
+    return TYPES[n.prefix][0].capitalize()
+
+
+def render_pair(p: Node, ids: dict[str, Node], anchor: bool = True) -> str:
+    """The passage pair component: the original first, in its script and serif italic, the
+    translation beneath, the reference line last (DESIGN.md P1, P9)."""
+    work = ids.get(str(p.meta.get("work")))
+    work_title = esc(work.title) if work else esc(p.meta.get("work"))
+    src = p.meta.get("source") or (work.meta.get("source") if work else "")
+    lang = esc(p.meta.get("lang", ""))
+    ref = f'<a href="{href(p)}">{work_title}, {esc(p.meta.get("ref"))}</a>'
+    if src:
+        ref += f" · {esc(src)}"
+    if p.meta.get("translation"):
+        ref += f' · <span class="by">{esc(p.meta.get("translation_by", "translation"))}</span>'
+    return (f'<div class="pair" lang="{lang}"' + (f' id="{esc(p.id)}"' if anchor else "") + ">"
+            f'<p class="pair-original verse" lang="{lang}">{esc(p.meta.get("original"))}</p>'
+            + (f'<p class="pair-translation" lang="en">{esc(p.meta.get("translation"))}</p>' if p.meta.get("translation") else "")
+            + f'<p class="pair-ref" lang="en">{ref}</p></div>')
+
+
+def row_passages(row: dict, thinkers: list[Node], ids: dict[str, Node]) -> list[tuple[Node, list[Node]]]:
+    """For one row of a comparison: each thinker in column order with the passages its
+    positions cite, in citation order, each passage once."""
+    out = []
+    for t in thinkers:
+        seen: list[Node] = []
+        for cid in as_list((row.get("positions") or {}).get(t.id)):
+            c = ids.get(str(cid))
+            for pid in as_list(c.meta.get("passages")) if c else []:
+                p = ids.get(str(pid))
+                if p is not None and p not in seen:
+                    seen.append(p)
+        out.append((t, seen))
+    return out
+
+
+def render_comparison(n: Node, ids: dict[str, Node]) -> tuple[str, set[str]]:
+    """The comparison grid (DESIGN.md P5): a table, one column per thinker with th cells for
+    the thinkers, each row's question a th across the width, each cell the thinker's
+    statements (the first at the lead size), each with the type word linking to the node,
+    the passage references linking to the pair shown beneath the grid, the status word and
+    the readings. Returns the table and the ids of the passages the cells cite, which the
+    texts section shows."""
     thinkers = [ids[str(t)] for t in as_list(n.meta.get("thinkers")) if str(t) in ids]
-    listed = {str(pid) for pid in as_list(n.meta.get("passages"))}
-    head = '<tr><th scope="col">Question</th>' + "".join(f'<th scope="col">{esc(t.title)}</th>' for t in thinkers) + "</tr>"
-    rows = []
-    for row in as_list(n.meta.get("rows")):
+    head = "".join(f'<th scope="col"><span class="grid-name">{esc(t.title)}</span>'
+                   + (f'<span class="grid-dates">{esc(t.meta["dates"])}</span>' if t.meta.get("dates") else "") + "</th>" for t in thinkers)
+    shown: set[str] = set()
+    groups = []
+    for i, row in enumerate(as_list(n.meta.get("rows")), 1):
         cells = []
         for t in thinkers:
             items = []
@@ -674,26 +746,88 @@ def render_comparison(n: Node, ids: dict[str, Node]) -> tuple[str, str]:
                 refs = []
                 for pid in as_list(c.meta.get("passages")):
                     p = ids.get(str(pid))
-                    if p is not None:  # a passage listed on this page is one tap away, in the aside (DESIGN.md 1)
-                        target = f"#{p.id}" if str(pid) in listed else href(p)
-                        refs.append(f'<a href="{target}">{esc(p.meta.get("ref"))}</a>')
+                    if p is not None:  # the passage is one tap away, beneath the grid (DESIGN.md P1)
+                        shown.add(p.id)
+                        refs.append(f'<a href="#{esc(p.id)}">{esc(p.title)}</a>')
                 readings = [r for r in ids.values() if r.prefix == "r" and str(r.meta.get("reading_of")) == c.id]
                 items.append(f'<li><p class="cell-statement">{inline(str(c.meta.get("statement", "")))}</p>'
-                             f'<p class="cell-ref"><a href="{href(c)}">{esc(c.id)}</a> <span class="word">{esc(c.status)}</span>'
+                             f'<p class="cell-ref"><a href="{href(c)}">{type_word(c)}</a>'
                              + (" · " + "; ".join(refs) if refs else "")
+                             + " · " + status_html(c)
                              + (" · readings: " + ", ".join(f'<a href="{href(r)}">{esc(r.title)}</a>' for r in readings) if readings else "") + "</p></li>")
-            cells.append(f'<td data-thinker="{esc(t.title)}">' + (f"<ul>{''.join(items)}</ul>" if items else '<p class="cell-empty">No position in the map.</p>') + "</td>")
-        rows.append(f'<tr><th scope="row">{inline(str(row.get("question", "")))}</th>' + "".join(cells) + "</tr>")
-        if row.get("note"):
-            rows.append(f'<tr class="note"><th scope="row"><span class="label">Note</span></th><td colspan="{len(thinkers)}">{inline(str(row["note"]))}</td></tr>')
-    table = f'<table class="comparison"><thead>{head}</thead><tbody>{"".join(rows)}</tbody></table>'
-    shared_items = []
+            cells.append(f'<td data-thinker="{esc(t.title)}">' + (f'<ul class="cell">{"".join(items)}</ul>' if items else '<p class="cell-empty">No position in the map.</p>') + "</td>")
+        groups.append(f'<tbody id="row-{i}"><tr class="grid-q"><th scope="rowgroup" colspan="{len(thinkers)}"><span class="n">{i}</span>{inline(str(row.get("question", "")))}</th></tr>'
+                      f'<tr class="grid-cells">{"".join(cells)}</tr></tbody>')
+    box = "grid-box wide" if len(thinkers) > 3 else "grid-box"
+    table = f'<div class="{box}"><table class="grid" data-thinkers="{len(thinkers)}"><thead><tr>{head}</tr></thead>{"".join(groups)}</table></div>'
+    return table, shown
+
+
+def render_texts(n: Node, ids: dict[str, Node], shown: set[str]) -> str:
+    """Beneath the grid, for each row: the row's note in the text column and the passage
+    pairs of that row in the apparatus column, grouped by thinker, each passage shown once
+    under the first row that cites it and anchored by its id; a passage shown in an earlier
+    row is given as one line linking there. The passages the comparison lists that no cell
+    cites follow as a last group, since the body quotes them (CHARTER.md P1)."""
+    thinkers = [ids[str(t)] for t in as_list(n.meta.get("thinkers")) if str(t) in ids]
+    placed: dict[str, int] = {}
+    out = []
+    for i, row in enumerate(as_list(n.meta.get("rows")), 1):
+        groups = []
+        for t, ps in row_passages(row, thinkers, ids):
+            if not ps:
+                continue
+            parts = []
+            for p in ps:
+                if p.id in placed:
+                    parts.append(f'<p class="pair-again"><a href="#{esc(p.id)}">{esc(p.title)}</a>, shown at row {placed[p.id]}</p>')
+                else:
+                    placed[p.id] = i
+                    parts.append(render_pair(p, ids))
+            groups.append(f'<div class="pair-group" id="{esc(t.id[2:])}-{i}"><h4 class="label">{esc(t.title)}</h4>{"".join(parts)}</div>')
+        # The passages are the text of this section and take the text column; the row's note
+        # is the map's commentary and sits in the apparatus column, with the way back.
+        note = f'<p class="text-i">{inline(str(row["note"]))}</p>' if row.get("note") else ""
+        back = f'<p><a href="#row-{i}">Back to row {i} of the grid</a></p>'
+        out.append(f'<section class="row-texts" id="texts-{i}"><h3 class="row-q"><span class="n">{i}</span>{inline(str(row.get("question", "")))}</h3>'
+                   f'<div class="two-col"><div class="text">{"".join(groups)}</div><div class="apparatus">{note}{back}</div></div></section>')
+    rest = [ids[str(pid)] for pid in as_list(n.meta.get("passages")) if str(pid) in ids and str(pid) not in placed]
+    if rest:
+        by_thinker: dict[str, list[Node]] = {}
+        for p in rest:
+            work = ids.get(str(p.meta.get("work")))
+            by_thinker.setdefault(str(work.meta.get("thinker")) if work else "", []).append(p)
+        groups = []
+        for t in thinkers:
+            if t.id in by_thinker:
+                groups.append(f'<div class="pair-group"><h4 class="label">{esc(t.title)}</h4>{"".join(render_pair(p, ids) for p in by_thinker[t.id])}</div>')
+        out.append('<section class="row-texts" id="texts-more"><h3 class="row-q">Cited in the shared premises and the text</h3>'
+                   f'<div class="two-col"><div class="text">{"".join(groups)}</div><div class="apparatus"></div></div></section>')
+    return "\n".join(out)
+
+
+def render_shared(n: Node, ids: dict[str, Node]) -> str:
+    """The premises shared (MODEL.md, Comparisons): each in one sentence, with the claims that
+    assert it and the passages where each does."""
+    items = []
     for sh in as_list(n.meta.get("shared")):
-        claims = ", ".join(link(ids, c, with_id=True) for c in as_list(sh.get("claims")))
-        pas = ", ".join(link(ids, p) for p in as_list(sh.get("passages")))
-        shared_items.append(f'<dt>{inline(str(sh.get("premise", "")))}</dt><dd>Held in {claims}.' + (f" Passages: {pas}." if pas else "") + "</dd>")
-    shared = f'<section class="shared"><h2>Premises shared</h2><dl class="facts">{"".join(shared_items)}</dl></section>' if shared_items else ""
-    return table, shared
+        claims = ", ".join(link(ids, c) for c in as_list(sh.get("claims")))
+        pas = ", ".join(f'<a href="#{esc(p)}">{esc(ids[str(p)].title)}</a>' if str(p) in ids else esc(p) for p in as_list(sh.get("passages")))
+        items.append(f'<li><p class="shared-premise">{inline(str(sh.get("premise", "")))}</p>'
+                     f'<p class="shared-held">Held in {claims}.' + (f" Passages: {pas}." if pas else "") + "</p></li>")
+    return f'<h2 class="label">Premises shared</h2><ol class="shared">{"".join(items)}</ol>' if items else ""
+
+
+def deps_html(n: Node, ids: dict[str, Node]) -> str:
+    """The dependency lists (DESIGN.md P6): a section label and a contents list for each
+    relation the node has; an empty relation is omitted."""
+    out = []
+    for key in LINK_FIELDS:
+        targets = [ids[str(t)] for t in as_list(n.meta.get(key)) if str(t) in ids]
+        if targets:
+            items = "".join(f'<li><span class="name"><a href="{href(t)}">{esc(t.title)}</a></span><span class="note">{status_html(t) or esc(TYPES[t.prefix][0])}</span></li>' for t in targets)
+            out.append(f'<h2 class="label">{esc(key.replace("_", " ").capitalize())}</h2><ul class="contents">{items}</ul>')
+    return "\n".join(out)
 
 
 def render_quotes(n: Node, ids: dict[str, Node]) -> str:
@@ -804,8 +938,22 @@ def link(ids: dict[str, Node], target, with_id: bool = False) -> str:
     return f'{idspan}<a href="{href(t)}">{esc(t.title)}</a>'
 
 
-def page(title: str, content: str) -> str:
-    return fill(template("base.html"), title=esc(title), content=content, root=PREFIX)
+MENU = (("t", "Thinkers"), ("w", "Works"), ("x", "Comparisons"), ("d", "Disputes"), ("about", "About"))
+SINGULAR = {"t": "thinker", "w": "work", "p": "passage", "c": "claim", "a": "argument", "r": "reading", "x": "comparison", "d": "dispute", "v": "attestation"}
+
+
+def counts_html() -> str:
+    """The colophon's counts line: every count a link to its index (the design brief, 2026-10-11)."""
+    return " · ".join(f'<a href="{PREFIX}{p}/">{COUNTS.get(p, 0)} {SINGULAR[p] if COUNTS.get(p, 0) == 1 else TYPES[p][1].lower()}</a>' for p in TYPES)
+
+
+def page(title: str, content: str, kind: str = "node", section: str = "", measure: bool = False, after: str = "") -> str:
+    """One page: the running head with the menu (the current section marked), the body, the
+    colophon with the counts. `kind` names the template for the body class; `measure` sets the
+    reading width instead of the page width."""
+    menu = " ".join(f'<a href="{PREFIX}{key}/"' + (' aria-current="page"' if key == section else "") + f">{label}</a>" for key, label in MENU)
+    return fill(template("base.html"), title=esc(title), content=content, root=PREFIX, palette=esc(CONFIG.get("palette", "a")),
+                kind=kind, menu=menu, main_class="main-measure" if measure else "main-page", counts=counts_html(), after=after)
 
 
 def build(nodes: list[Node], out: Path, domain: str | None) -> None:
@@ -818,11 +966,12 @@ def build(nodes: list[Node], out: Path, domain: str | None) -> None:
     # record of the choice but is no longer published: the owner chose B on 2026-10-05.
     ids = {n.id: n for n in nodes}
     global PREFIX
+    COUNTS.update({p: sum(1 for n in nodes if n.prefix == p) for p in TYPES})
     for n in nodes:
         PREFIX = "../../"
         d = out / n.prefix / n.id[2:]
         d.mkdir(parents=True, exist_ok=True)
-        (d / "index.html").write_text(page(n.title, render_node(n, ids)), encoding="utf-8")
+        (d / "index.html").write_text(page(n.title, render_node(n, ids), kind=TYPES[n.prefix][0], section=n.prefix), encoding="utf-8")
     PREFIX = "../"
     for prefix, (tname, plural, _) in TYPES.items():
         group = [n for n in nodes if n.prefix == prefix]
@@ -830,20 +979,32 @@ def build(nodes: list[Node], out: Path, domain: str | None) -> None:
                         + (f' <span class="id">{status_word(n)}</span>' if n.status else "") + "</li>" for n in group)
         content = f"<h1>{plural}</h1>" + (f'<ul class="index">{items}</ul>' if items else "<p class=\"prose\">Nothing here yet.</p>")
         (out / prefix).mkdir(exist_ok=True)
-        (out / prefix / "index.html").write_text(page(plural, content), encoding="utf-8")
+        (out / prefix / "index.html").write_text(page(plural, content, kind="index", section=prefix, measure=True), encoding="utf-8")
     PREFIX = ""
-    counts = {plural: sum(1 for n in nodes if n.prefix == p) for p, (_, plural, _) in TYPES.items()}
-    counts_html = "".join(f'<li><a href="{p}/">{plural}</a> <span class="id">{counts[plural]}</span></li>' for p, (_, plural, _) in TYPES.items())
+    counts_html = "".join(f'<li><a href="{p}/">{plural}</a> <span class="id">{COUNTS[p]}</span></li>' for p, (_, plural, _) in TYPES.items())
     xs = [n for n in nodes if n.prefix == "x"]
     comparisons_html = ("".join(f'<li><a href="{href(n)}">{esc(n.title)}</a> <span class="id">{status_word(n)}</span></li>' for n in xs)
                         if xs else '<li>none yet</li>')
-    (out / "index.html").write_text(page("praemisse", template("index.html").replace("{{ counts }}", counts_html).replace("{{ comparisons }}", comparisons_html)), encoding="utf-8")
+    (out / "index.html").write_text(page("praemisse", template("index.html").replace("{{ counts }}", counts_html).replace("{{ comparisons }}", comparisons_html), kind="front", measure=True), encoding="utf-8")
     PREFIX = "../"
     (out / "about").mkdir(exist_ok=True)
-    (out / "about" / "index.html").write_text(page("About", template("about.html")), encoding="utf-8")
+    (out / "about" / "index.html").write_text(page("About", template("about.html"), kind="about", section="about", measure=True), encoding="utf-8")
     (out / ".nojekyll").write_text("")
     if domain:
         (out / "CNAME").write_text(domain + "\n")
+
+
+def specimen(nodes: list[Node], node_id: str, out: Path) -> None:
+    """One node's page written as a specimen under site/specimens/ (the design brief,
+    2026-10-11): the real page from the real map, with the specimen's relative paths, and
+    one line at the foot saying what it is. Links to other pages resolve on the site only."""
+    ids = {n.id: n for n in nodes}
+    n = ids[node_id]
+    global PREFIX
+    COUNTS.update({p: sum(1 for m in nodes if m.prefix == p) for p in TYPES})
+    PREFIX = "../"
+    line = f'<p class="specimen-line">Specimen: the {TYPES[n.prefix][0]} page {esc(n.url)} rendered from the map by site/build.py, direction A, 2026-10-11. Links to other pages resolve on the site, not here.</p>'
+    out.write_text(page(n.title, render_node(n, ids), kind=TYPES[n.prefix][0], section=n.prefix, after=line), encoding="utf-8")
 
 
 def main(argv=None) -> int:
@@ -852,6 +1013,7 @@ def main(argv=None) -> int:
     ap.add_argument("--map", type=Path, default=MAP)
     ap.add_argument("--out", type=Path, default=OUT)
     ap.add_argument("--domain", default=None, help="write a CNAME file for this custom domain")
+    ap.add_argument("--specimen", nargs=2, metavar=("ID", "PATH"), default=None, help="write one node's page as a specimen to PATH instead of building")
     a = ap.parse_args(argv)
     nodes = read_nodes(a.map)
     errors = check(nodes)
@@ -860,7 +1022,10 @@ def main(argv=None) -> int:
     print(f"{len(nodes)} nodes, {len(errors)} errors", file=sys.stderr)
     if errors:
         return 1
-    if not a.check:
+    if a.specimen:
+        specimen(nodes, a.specimen[0], Path(a.specimen[1]))
+        print(f"wrote specimen {a.specimen[1]}", file=sys.stderr)
+    elif not a.check:
         build(nodes, a.out, a.domain)
         print(f"built {a.out}", file=sys.stderr)
     return 0
