@@ -1,0 +1,12 @@
+# praemisse — site configuration read by site/build.py. Design-layer settings only; the
+# map and the model are not configured here (MODEL.md). Added 2026-10-11 with the design
+# brief (INBOX.md; BOARD.md, direction A).
+
+# The palette, set as data-palette on <html>. Only "a" (the edition) exists; the tokens are
+# in site/static/tokens.css, so a future palette is one block there and one value here.
+palette: a
+
+# Up to three node ids shown under "Start here" on the front page, with the one-line note
+# the front page shows after each (the note is the node's own title if left empty). Chosen
+# by the operator; the owner may change the list. Empty: the section is omitted.
+start_here: []
