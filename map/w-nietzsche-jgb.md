@@ -9,7 +9,7 @@ scheme: aphorism number, which is continuous through the nine Hauptstücke and t
 source: https://www.gutenberg.org/ebooks/7204
 produced_by: claude-fable-5-1, 2026-10-09
 ---
-Aphorisms 16, 17 and 19 stand in the first Hauptstück, »Von den Vorurtheilen der
-Philosophen«; 36 in the second, »Der freie Geist«; 54 in the third, »Das religiöse
+Aphorisms 15, 16, 17, 19 and 21 stand in the first Hauptstück, »Von den Vorurtheilen der
+Philosophen«; 34 and 36 in the second, »Der freie Geist«; 54 in the third, »Das religiöse
 Wesen«. The transcription's line breaks are joined with a space and nothing else is
 changed in the quoted originals.

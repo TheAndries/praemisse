@@ -2,6 +2,227 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-12 — run 8: Nietzsche's JGB 15, 21 and 34, a seventh row, and the owner's mockups
+
+Eighth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first.
+
+**Step 1.** No ask changed status since run 7; Ask 4 stays deferred by the owner and blocks
+only Phase 2.
+
+**Step 2, an owner note that arrived as an upload.** `INBOX.md` was empty, but the
+repository was not as run 7 left it: on 2026-10-11 at 14:38 Europe/Amsterdam the owner
+committed, through the GitHub web UI (commit `1823719`, the UI's own message »Add files via
+upload«), two files at the root, `praemisse-mockup-a.html` (»direction A, the edition«, a
+home page) and `praemisse-mockup-b.html` (»direction B, the apparatus«, a comparison page
+with a three-column grid and a node specimen). Each carries a comment calling itself a
+»reference mockup for the praemisse design brief, 2026-10-11«, set in stand-in Google fonts
+because the mockup tool could not load Libertinus, »a sketch of colour, proportion and
+order, not production markup: the brief wins where they differ, DESIGN.md wins over both«.
+No brief is in the repository and no note came with the files. The operator treats the
+upload as an owner note under `BOARD.md`: a note is not an instruction, and the operator
+decides what to do with it and argues it here. Source recorded: the commit above, the
+owner's GitHub account, the two files' own comments.
+
+What is accepted: the files stay where the owner put them. They are not published (the
+build reads only `map/` and `site/`, confirmed on the scratch build), they violate no
+charter principle by existing, and moving or renaming an owner's files on the operator's
+own authority would be the kind of overwrite P4 forbids of others. What is not acted on:
+nothing in them changes the site. The type is a board decision of 2026-10-05 and is not
+in question; the layouts they sketch (a centred header and a reading order on the home
+page; a full-width three-column grid with the thinkers' dates, a node specimen beside its
+passage, a count line in the footer) are inside `DESIGN.md` as far as the operator can
+see and could be built on a note, but there is no note, and a mockup that calls itself a
+reference for a brief is not the brief. Four things in them the operator would not carry
+over as they stand, and says so now so that the brief can take them into account: both
+copy lines say »what, if anything, lies behind appearances«, and »behind« was struck from
+the comparison page on 2026-10-10 because it picks the two-object reading of Kant (P9);
+mockup B shows `checked` on a claim (»Space and time are forms of our intuition«), where
+under `MODEL.md` a claim is `draft` until a human attests it, and `contested` on a
+Nietzsche claim with no dispute on file, which as a placeholder is harmless and on a
+built page would break P2; both legends say `checked` »has had its inference checked«,
+which since 2026-10-10 is only half the word's meaning; and the Google Fonts stylesheet,
+which `DESIGN.md` 8 rules out and the comment already concedes. The counts in both
+footers (48 passages, 88 claims, 10 arguments, 4 readings) were the map's at run 7 and are
+not today's. Ask 8 asks the owner what the brief is and whether it wants pages the
+operator can build inside `DESIGN.md` or a change to `DESIGN.md`, which is a motion. The
+plan proceeds meanwhile; the ask blocks nothing.
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 19 new, 1 revised.** The last Nietzsche gaps the comparison page
+listed, JGB 15, 21 and 34, from the Gutenberg corpus re-fetched into the scratchpad; JGB 20
+read and not added (below). Six passages, each cut at sentence breaks and asserted to be a
+verbatim substring of the transcription: JGB 15 in two (the sense organs not appearances
+in the sense of idealist philosophy; the reductio from »Wie?« to the closing »-?«), JGB 21
+in two (the causa sui the best self-contradiction, the first sentence only, the free and
+unfree will left for the comparison on the will; cause and effect as conventional fictions,
+the »"An-sich"«, and the sign-world read »als "an sich"« into things), JGB 34 in two (the
+belief in immediate certainties a moral naïveté; truth and semblance, from the moral
+prejudice to the painters' valeurs). Twelve claims, all `draft`, each with its load-bearing
+sentence set as a quotation in German and English and each keeping the sentence's mode: the
+two »dann« steps of JGB 15 as two conditionals; the conclusion under its »gesetzt« and with
+the text's question mark noted; JGB 21's »soll« kept as a prescription and every pair of
+its quotation marks kept, »"An-sich"« above all, so that no reader takes Nietzsche to
+assert an in-itself; JGB 34's two closing questions reported as questions, »It is asked
+...«, not turned into the assertions a reader hears in them. One argument, `checked`,
+`a-nietzsche-external-world-not-work-of-organs` (w→b, b→o, s→¬o ⊢ s→¬w): the external
+world the work of our organs, then the body as a piece of it, then the organs themselves;
+and, supposing the concept causa sui thoroughly absurd, the organs are not their own work,
+the map's bridge, named as such in the statement, which reads organs that are their own
+work as a case of causa sui; the conclusion is the conditional the text's »gesetzt« makes
+it, its antecedent the supposition atom for atom. JGB 21's assertion that the causa sui is
+a self-contradiction is cited and not taken as a premise, since JGB 15 supposes and the
+conclusion would otherwise lose the supposition the text gives it.
+
+No attack link and no shared-premise link was set, and each absence is argued on the node
+and on the page. JGB 15's »Andere« are unnamed and its »idealistische Philosophie« is not
+identified as Schopenhauer's, whose statements speak of representation and the body, not
+the organs. JGB 34 judges the belief in immediate certainties a naïveté and a stupidity,
+where JGB 16 denies it, and the attack on Schopenhauer rests on JGB 16. JGB 21's »Im
+"An-sich" giebt es nichts von "Causal-Verbänden"«, beside Kant's B xxvii (causality only on
+things so far as they are objects of experience, the same things as things in themselves
+not subject to it) and Schopenhauer's § 23 (the will free of the forms whose common
+expression is the principle of sufficient reason), is the nearest the map has come to a
+premise shared by all three; the link is not set, because Kant's clause stands under »wenn
+die Deduction ... richtig ist« and Nietzsche's term is in his own quotation marks and his
+next sentence says we invented what we read into it, and the page says so and invites the
+dispute.
+
+The comparison `x-thing-in-itself` gained a seventh row, *Is the world of appearance the
+subject's own work?*: Kant's space as the subjective condition of sensibility, a statement
+about the form; Schopenhauer's world as representation, with the note that no passage in
+the map says the world is the work of the organs; Nietzsche's JGB 15, the sense organs not
+appearances and the reductio, the sentence ending in a question mark and no one named.
+Nietzsche cells were added to rows 2 (cause and effect as fictions; the sign-world read
+into things as mythology), 3 (the belief a naïveté), 4 (nothing of causal connection in
+the »An-sich«) and 5 (the moral prejudice; the converse of stage 6, that doing away with
+the apparent world leaves nothing of truth; the questions on degrees of apparentness). A
+new divergence paragraph, *On causality and the in-itself*, sets the three apart on what
+causality is: a principle whose application Kant restricts, a law Schopenhauer makes a
+function of the intellect inside representation, a conventional fiction Nietzsche says we
+invented, so that JGB 21 takes away the instrument of the inference Schopenhauer's Anhang
+attacks. JGB 20 was read and struck from the gaps list: it concerns the kinship of
+philosophical concepts under the common philosophy of grammar and adds no cell on this
+question, which JGB 17 and 54 already serve. The closing paragraph names everything added
+today as unread by the owner; the `statement` is unchanged, since it still speaks of rows
+1 and 2.
+
+**The adversarial pass, and what it found.** A second agent was given the nineteen new
+nodes, the revised comparison, the Gutenberg corpus, the eighteen older nodes they cite and the
+conventions, with the brief to break validity, fidelity, translation, quotations, the absent
+links, the comparison, references, format and the rendered pages. It verified every
+`original:` and every quotation character for character against the corpus and the form by
+the truth table, and returned 26 findings, none serious, 8 moderate; I accepted 25 and changed
+the nodes before commit, and one is answered here.
+- *Moderate, fidelity.* The conclusion claim of JGB 15 dropped the text's closing »-?« from
+  its statement, the one sentence a dispute quotes, keeping it only in the quotation and the
+  body; the mark is now in the statement, and the body says that reading the chain as an
+  argument Nietzsche makes rather than one he stands away from is the map's reading, with no
+  literature named, open to dispute or to a pair of readings.
+- *Moderate, fidelity.* The JGB 34 claim on the apparent world had »wollte man« as »did«,
+  lost the »manche Philosophen« of »tugendhafter Begeisterung und Tölpelei«, and made
+  »eurer "Wahrheit"« an impersonal »one's truth«, so that the ironic possessive became truth
+  in general, while the title still said »your«. The statement now keeps »wanted«, the
+  philosophers, »they« and »their "truth"« with Nietzsche's quotation marks.
+- *Moderate, P9.* The page called that sentence »the converse of stage 6« and said that in
+  the map's two Nietzsche texts »neither term of the division stands without the other«,
+  which identifies JGB 34's »"Wahrheit"« with GD's »wahre Welt«, against the standard the
+  same paragraph applies to Kant two sentences later. Now »the nearest the map holds to a
+  converse«, the identification named as the map's, on the row note, the paragraph and the
+  claim.
+- *Moderate, P2.* The status note, the owner's wording, said »claims and readings reviewed
+  by the owner« while the table now carries twenty-three claims he has not read, eleven from
+  run 7 and twelve from today. The two earlier passes had left the note as his words and let
+  the closing paragraph carry the exception; with the unread cells now more than a third of
+  the table the operator amended the note itself, as a matter of method: his clause stands
+  first, dated, and a clause follows, »cells added since then not reviewed by him«. He may
+  object to the amendment in `INBOX.md`, and the closing paragraph now lists the clause among
+  what he has not read.
+- *Moderate, links.* The absence of an attack from JGB 21's »conventioneller Fiktionen« on
+  the Anhang's law of causality »a priori bekannt« was argued only on »nicht der Erklärung«,
+  while the page's own gloss said JGB 21 »denies the law any standing but convention«. The
+  claim now says the sentence is a »soll«, a prescription on the use of two words, which
+  asserts nothing of the law's origin and so denies nothing the Schopenhauer statement
+  states; the gloss is softened to match. And »None with Nietzsche« omitted the nearest new
+  candidate for a shared premise, »Wir sind es, die allein die Ursachen ... erdichtet haben«
+  beside the Anhang's »Funktion unsers Intellekts, also subjektiven Ursprungs«; added, with
+  the reason no link is set (both put the origin in us, neither words that as a proposition,
+  and an invention is not an a priori function) and the invitation to dispute.
+- *Moderate, P1.* Three connections the map made were written as the texts': »and the
+  inference with it«, »takes the instrument away«, »not a fiction« of Kant's principle, and
+  »a causa sui« stated flatly on the page where the argument node calls it the map's bridge.
+  Each now says »as the map reads it« or »on the map's bridge«, and »not a fiction« is gone.
+- *Minor, 17 of them.* The passage body said the claim kept the question mark when it did
+  not; one passage body said JGB 15 »supposes what this sentence asserts« where the claim
+  body refuses to identify an absurdity with a self-contradiction (now »something near«);
+  »It is asked« made agentless and »gleichsam« and »valeurs« dropped from the
+  degrees-of-apparentness statement (now »Nietzsche asks ... and, as it were, ... different
+  valeurs«); the physiology frame of JGB 15's first sentence missing from the title and the
+  row note; »is Nietzsche's ground« as fact (now »reads as«); »the valuation under the
+  division« as an unsourced link between two works (now »a valuation the map sets beside«);
+  two passage bodies quoting in guillemets sentences outside any stored span, the free-will
+  words of JGB 21 and the fiction sentence of JGB 34 (now paraphrased, by the run-5 rule);
+  the JGB 21 translation making man rather than his pride the one entangled, and
+  »unnature« (now »unnaturalness«, in passage, quotation and statement); »wäre« of
+  reported speech as »would be« (now »is«, and the dropped »ja« said); »das regiert kein
+  "Gesetz"« with »das« as adverb (now »governs that«), »bis sie "Wirkt"« as »effects« (now
+  »works«), and the methods for »Causal-Verbänden«, »Nacheinander« and »Für-einander« said
+  in the body; »Schätzungen« as »estimates« (now »estimations«); »"nur moralische"« as
+  »merely« against the glossary (now »only«); the row-7 question worded in Nietzsche's
+  »Werk« for all three columns (now »What in the world of appearance is the subject's own,
+  and is the world the work of our organs?«); »by the checked argument« without naming the
+  bridge premise; »asserted of« ungrammatical, »three sentences deny causality« imprecise
+  for Kant's conditional and for § 23, whose passage at ZA I 156 names the Satz vom Grunde
+  and at 157 causality (now cited); the Anhang's »Entdeckung« described as the law rather
+  than its a priori knowledge; the gaps paragraph omitting JGB 34's opening and JGB 15's
+  sentence on sensualism; the JGB work node's list of Hauptstücke not updated.
+- *Answered, not changed.* The revised comparison carries no `versions:` entry and its
+  `produced_by` date stands, by the run-7 precedent: the `statement` is unchanged, a
+  version is a superseded statement, and this entry is the record of the revision. The
+  reviewer confirmed every original and quotation verbatim in the corpus, the form valid
+  and its conclusion the claim's atom for atom, the handling of the »Andere«, the
+  unidentified idealism, the scare-quoted »"An-sich"« and JGB 34's naming no one consistent
+  across passage, claim, argument and page, every sentence about the older nodes true to
+  them, and the rendered pages correct.
+The pass cost about 157,000 tokens of the agent's own. Its findings were of two kinds the
+earlier runs had met and one they had not: statements that lost a mode or a person (the
+question mark, the »ihr«), the map's connections written as the texts' (the converse of stage
+6, the inference, the causa sui), and a status note that had quietly become false by
+accretion, which no single run's addition had made false on its own.
+
+**What else was wrong and why.**
+- The first version of the page quoted three phrases the build refused, one for a
+  capital (»der Glaube« for »Der Glaube«) and two from sentences not in any passage (JGB
+  34's »Warum dürfte die Welt ... nicht eine Fiktion sein?« and JGB 20's »gemeinsamen
+  Philosophie der Grammatik«); the check that was written on 2026-10-10 did its work, and
+  the two are now referred to without quotation.
+- The README carried 159 nodes; now 178 (3 thinkers, 5 works, 54 passages, 100 claims, 11
+  arguments, 4 readings, 1 comparison).
+- zeno.org answered HTTP 200 this morning, for the first time since 2026-10-09; it was not
+  used today and the Schopenhauer gaps can be taken from it next.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The Nietzsche gaps the page listed
+are filled; the Schopenhauer gaps are next, then the comparison on the will. The owner's
+mockups may change the plan's design side once the brief exists; nothing is changed on a
+guess.
+
+**Step 6.** `memory.md` rewritten in place, about 5,500 words. Dropped: nothing; the file
+grew with the mockups, the run-8 Nietzsche nodes, the seventh row and the distilled rules.
+
+**Step 8.** Ask 8 opened, the design brief the mockups refer to; it blocks nothing. Ask 4
+stays deferred.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-13; if the owner has answered Ask
+8, what follows from the answer; otherwise Schopenhauer §§ 24–29 or the Anhang on the
+Transcendental Aesthetic from zeno.org, each only where it adds a row or a cell, through the
+adversarial pass.
+
+**Effort.** About 245,000 of the 300,000-token ceiling in this session plus about
+157,000 in the adversarial agent: a quarter on reading the governing files, the map and the
+owner's mockups, a third on the six passages, twelve claims, the argument and the comparison,
+the rest on the review, the 25 fixes and the records. Nothing spent.
+
 ## 2026-10-11 — run 7: Kant on the will at B xxvii–xxviii, and a sixth row
 
 Seventh scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

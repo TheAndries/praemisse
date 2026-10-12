@@ -2,17 +2,34 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-11 (run 7, end)
+## State as of 2026-10-12 (run 8, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–7 were
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–8 were
 served on that model, no handover note needed. The GitHub and Claude Code Remote tools in
 the tool list are platform-attached to every cloud session and are not a config change
 (`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
-motions: none. INBOX empty at runs 1–7. Open asks: 4 (mailbox; deferred by owner; blocks
-Phase 2). Asks 1, 2, 3, 5, 6, 7 done. **Ask 7 (Checkpoint 1) was answered 2026-10-10 in an
+motions: none. INBOX empty at runs 1–8. Open asks: 4 (mailbox; deferred by owner; blocks
+Phase 2) and **8 (the design brief the mockups refer to; blocks nothing)**. Asks 1, 2, 3, 5,
+6, 7 done. **The mockups:** on 2026-10-11 the owner uploaded through the GitHub web UI
+(commit `1823719`, »Add files via upload«, no INBOX note) `praemisse-mockup-a.html`
+(»direction A, the edition«, a home page) and `praemisse-mockup-b.html` (»direction B, the
+apparatus«, a comparison page) at the repository root, each calling itself a reference
+mockup »for the praemisse design brief, 2026-10-11«, set in stand-in Google fonts, and saying
+the brief wins where they differ and `DESIGN.md` over both. No brief exists in the
+repository. Run 8 treated the upload as an owner note (`BOARD.md`: a note is not an
+instruction), left the files where they are (the build reads only `map/` and `site/`, so
+they are not published), changed nothing on the site, and opened Ask 8 asking what the
+brief is and whether it wants pages inside `DESIGN.md` (operator's, on a note) or a change
+to `DESIGN.md` (a motion). Four things in them not to carry over as they stand: »behind«
+in the copy (picks the two-object reading, struck from the comparison on 2026-10-10);
+`checked` on a claim (claims are `draft` until attested); a legend omitting the comparison
+sense of `checked`; Google Fonts (`DESIGN.md` 8). Their counts (48 passages, 88 claims, 10
+arguments, 4 readings) were the map's at run 7. When the owner answers, read the brief
+before building anything, and treat any page layout the brief asks for as the operator's
+to build on a note unless it touches a `DESIGN.md` principle. **Ask 7 (Checkpoint 1) was answered 2026-10-10 in an
 owner session:** the owner read the comparison against the project's translations, found
 nothing that reads as fabrication, gave eight decisions (owner decision in `BOARD.md`;
 his note verbatim in the changelog entry of that session) and they were applied the same
@@ -125,16 +142,19 @@ Besonnenheit "discernment". The identity of will and body is a claim, not an arg
 because § 18 says it can never be proved. Still not in the map: § 2, § 20, §§ 24–29, the
 Anhang on the Transcendental Aesthetic and on the categories.
 
-**Nietzsche nodes on `main` (53 after run 5; 145 nodes in all after run 6, 147 after the owner session, 159 after run 7, plus README):**
+**Nietzsche nodes on `main` (53 after run 5; 72 after run 8; 145 nodes in all after run 6, 147 after the owner session, 159 after run 7, 178 after run 8: 3 t, 5 w, 54 p, 100 c, 11 a, 4 r, 1 x):**
 `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889); cited by aphorism number
 and, for GD, chapter and section (the Fabel chapter by stage 1–6); KSA pages not given
-(unverified). 13 passages: `p-jgb-16-immediate-certainties`,
+(unverified). 19 passages: `p-jgb-16-immediate-certainties`,
 `p-jgb-16-ich-denke-presupposes-comparison`, `p-jgb-17-es-denkt`,
 `p-jgb-19-willing-complicated`, `p-jgb-19-will-and-action-one`,
 `p-jgb-36-not-representation`, `p-jgb-36-will-to-power`, `p-jgb-54-grammatical-subject`,
 `p-gd-vernunft-2-apparent-world`, `p-gd-vernunft-5-will-as-cause`,
-`p-gd-vernunft-6-four-theses`, `p-gd-wahre-welt-fabel`, `p-gd-irrthuemer-3-will-as-cause`.
-33 claims `c-nietzsche-*`, all `draft`: JGB 16 (Schopenhauer's »ich will« a superstition;
+`p-gd-vernunft-6-four-theses`, `p-gd-wahre-welt-fabel`, `p-gd-irrthuemer-3-will-as-cause`,
+and from run 8 `p-jgb-15-sense-organs-not-appearances`, `p-jgb-15-external-world-not-work-of-organs`,
+`p-jgb-21-causa-sui`, `p-jgb-21-cause-and-effect-fictions`, `p-jgb-34-immediate-certainties`,
+`p-jgb-34-truth-and-semblance` (JGB 34 is Zweites Hauptstück).
+45 claims `c-nietzsche-*`, all `draft`: JGB 16 (Schopenhauer's »ich will« a superstition;
 immediate certainty a contradictio in adjecto; »ich denke« presupposes comparison; has no
 immediate certainty), JGB 17 (subject as condition a falsification; »es denkt« already an
 interpretation; subject inferred by grammatical habit), JGB 54 (the soul believed like the
@@ -151,7 +171,23 @@ idea refuted; abolishing the true abolishes the apparent; the stage-4 nodes all 
 ch. 3 cited for the stages as Nietzsche's own development), GD Irrthümer 3
 (belief in causation from inner facts; will moves nothing; motive a surface phenomenon;
 the I a fable; the evidence for spiritual causes gone; no spiritual causes, by »Das folgt
-daraus«, unformalized). 3 arguments, all `checked`:
+daraus«, unformalized); **run 8:** JGB 15 (sense organs not appearances in the idealist
+sense, the sense unidentified; the two »dann« steps as two conditional claims; the external
+world not the work of our organs, the statement keeping »gesetzt, dass der Begriff causa sui
+etwas gründlich Absurdes ist« inside it and the text's closing »-?« noted on node and
+passage), JGB 21 (causa sui the best self-contradiction; cause and effect only as conventional
+fictions, a »soll«; in the »"An-sich"« nothing of causal connections, every quotation mark
+Nietzsche's and kept; we alone invented causes ... and reading the sign-world »als "an sich"«
+into things is mythology; the free/unfree will sentences left for the will comparison), JGB 34
+(belief in immediate certainties a moral naïveté and a stupidity, naming no one; truth worth
+more than semblance a moral prejudice; doing away with the apparent world leaves nothing of
+truth, the converse of Fabel stage 6, »gesetzt, ihr könntet das« kept, »eurer« made
+impersonal; the degrees-of-apparentness claim reported as the two questions it is, »It is
+asked ...«). 4 arguments, all `checked`: `a-nietzsche-external-world-not-work-of-organs`
+(w→b, b→o, s→¬o ⊢ s→¬w; s→¬o is the map's bridge reading organs that are their own work as a
+causa sui, which the supposition excludes; the conclusion is the conditional the text's
+»gesetzt« makes it, atom for atom the claim's; JGB 21's assertion is not taken as a premise so
+the supposition stays);
 `a-nietzsche-ich-denke-has-no-immediate-certainty` (c, c→b, b→¬g ⊢ ¬g; both conditionals
 are the map's, the identification via »dieser« and the »wegen«; »er« is the state, not
 »ich denke«), `a-nietzsche-true-world-does-not-obligate` (¬r, ¬r→¬k, ¬k→¬o ⊢
@@ -162,7 +198,11 @@ from »diesen drei inneren Thatsachen« and »die ganze angebliche Empirie dafü
 on »Nebenher der That«, not the comparative). 2 readings on
 `c-nietzsche-world-would-be-will-to-power`: `r-nietzsche-will-to-power-asserted`
 (Richardson 1996, ch. 1 "Being") and `r-nietzsche-will-to-power-not-asserted` (Clark 1990,
-ch. 7 "The will to power"; both chapter titles confirmed by search). Attack links set, the
+ch. 7 "The will to power"; both chapter titles confirmed by search). No attack or shared-premise link was set in run 8; the absences are argued on the nodes and
+the page (JGB 15's »Andere« unnamed and the idealist sense unidentified; JGB 34 judges the
+belief, JGB 16 denies it; JGB 21's »"An-sich"« in scare quotes against Kant's B xxvii clause
+under »wenn die Deduction ... richtig ist« and § 23's Satz vom Grunde, the nearest three-way
+shared premise the map has, left open on the page for dispute). Attack links set, the
 first in the map: `c-schopenhauer-will-not-inferred-but-immediately-known` ←
 `c-nietzsche-schopenhauer-ich-will-a-superstition` (JGB 16) and
 `c-nietzsche-schopenhauer-took-over-popular-prejudice` (JGB 19);
@@ -180,8 +220,10 @@ scheinbar "apparent", Täuschung "deception", wirken "work", nachweisen "show", 
 "fact", Empirie "empirical evidence", Verhängniss "calamity", der Wollende "the one who
 wills". Gutenberg's »wie es in ein Satz ist« (JGB 36) is a transcription slip for »mein
 Satz«; rendered "as is my proposition" and said so on the passage. Still not in the map:
-JGB 15, 20, 21 (causa sui, free will), 34 (the "apparent world"), 230; GD Irrthümer 7–8;
-Nachlass nothing, by design.
+JGB 20 (struck from the comparison's gaps list: the common philosophy of grammar adds no
+cell on this question; JGB 17 and 54 carry grammar), JGB 21's free/unfree will sentences,
+JGB 34's »Warum dürfte die Welt ... nicht eine Fiktion sein?« and its close on grammar, JGB
+230; GD Irrthümer 7–8; Nachlass nothing, by design.
 
 **Source of Nietzsche's text.** zeno.org reset every connection on 2026-10-09 (curl,
 HTTP and HTTPS, and WebFetch 503); it may be back later for a cross-check of the KSA/
@@ -341,14 +383,25 @@ Schopenhauer: § 21, a potiori; Nietzsche: JGB 19 complicated, Irrthümer 3 move
 JGB 36 under its two readings), Kant sentences at the head of the »On the will« paragraph
 and a closing sentence there, two Kant passages in `passages:`, and the closing paragraph
 now names the row and those sentences as unread by the owner; the `statement` was not
-changed, since it speaks of rows 1–2. Gaps still listed on the page: Kant A 236–260 / B
+changed, since it speaks of rows 1–2. Run 8 added a seventh row, *Is the world of appearance the subject's own
+work?* (Kant: space the subjective condition of sensibility, about the form only;
+Schopenhauer: the world is my representation, appearance is representation; Nietzsche: JGB 15,
+the sense organs not appearances in the idealist sense, and the checked reductio), Nietzsche
+cells in rows 2 (JGB 21 cause/effect fictions, sign-world mythology), 3 (JGB 34 the belief a
+naïveté), 4 (JGB 21 »An-sich«), 5 (JGB 34 ×3); a divergence paragraph *On causality and the
+in-itself* (Kant restricts the principle, Schopenhauer makes the law a function of the
+intellect inside representation, Nietzsche a conventional fiction we invented, and JGB 21
+takes away the instrument of the inference Schopenhauer's Anhang attacks); JGB 21 under *None
+with Nietzsche* as the nearest shared premise, link not set; JGB 34 under immediacy and the
+division (the converse of stage 6); the closing paragraph names all of it as unread by the
+owner. The `statement` still unchanged. Gaps still listed on the page: Kant A 236–260 / B
 295–315 beyond the opening and the B xxvi footnote; Schopenhauer § 2, §§ 24–29, Anhang on
-the Aesthetic; Nietzsche JGB 15, 20, 21, 34.
+the Aesthetic; Nietzsche JGB 34 on the world as a fiction, JGB 21 on the will, GD Irrthümer
+7–8.
 
 **Next.** Fill the remaining gaps above, each only where it adds a row or cell, through
-the adversarial pass (Schopenhauer §§ 24–29 and the Anhang on the Aesthetic need zeno.org;
-Nietzsche JGB 15, 20, 21, 34 from the Gutenberg corpus, which must be re-fetched into the
-scratchpad each run); then the second comparison, *the will* (Kant B xxvii–xxviii, now in
+the adversarial pass (Schopenhauer §§ 24–29 and the Anhang on the Aesthetic need zeno.org,
+which answered HTTP 200 on 2026-10-12; the Nietzsche gaps left are small); then the second comparison, *the will* (Kant B xxvii–xxviii, now in
 the map, against Schopenhauer §§ 18–23 and Nietzsche JGB 19, 36, GD Irrthümer 3; JGB 36's
 »"intelligiblen Charakter"« is in Nietzsche's own quotation marks and no Kant passage in
 the map carries the term, so the page may not call it Kant's without adding A 538–541 / B
@@ -378,5 +431,21 @@ The container checks out a detached HEAD whose local `main` ref is stale; push w
 push origin HEAD:refs/heads/main`. A stop hook asks for a commit whenever the turn ends
 with uncommitted changes; do not commit nodes before the review to satisfy it.
 
-**Dropped from memory this run:** nothing; the file grew from about 3,900 to about 4,600
-words of 8,000 (the run-7 Kant paragraph, the comparison row and the distilled rules).
+Run 8 (26 findings, 0 serious, 8 moderate, 25 accepted): a mark the text puts on a sentence
+(»-?«) belongs in the statement, not only in the quotation; keep the person the text
+addresses (»ihr«, »eurer«) and say who they are; when the map calls one sentence the converse
+of another in a different work, the identification of their terms is the map's and is said
+so; a connection the page draws between texts (»the inference with it«, »takes the
+instrument away«) is written »as the map reads it«; a prescription (»soll«) on the use of a
+word asserts nothing of the thing's origin and so attacks nothing that states the origin;
+when a sentence sets two origins in the subject (»erdichtet«, »Funktion des Intellekts«),
+name the pair under *None with Nietzsche* and say why no link; a status note is re-read
+against the whole table every run, since a note true when written becomes false by
+accretion (the owner's note now carries a dated clause on unreviewed cells, the operator's
+amendment, which he may object to); a row question must be worded for all three columns,
+not in one thinker's word; passage bodies may not quote sentences outside the stored span
+in guillemets either. The reviewer again verified every original mechanically and found no
+slip; its cost was 157,000 tokens and it took ten minutes.
+
+**Dropped from memory this run:** nothing; the file grew to about 5,600 words of 8,000
+(the mockups, the run-8 Nietzsche nodes, the seventh row, the distilled rules).
