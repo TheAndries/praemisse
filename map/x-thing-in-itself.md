@@ -9,27 +9,27 @@ rows:
   - question: "Is there a thing in itself to a given appearance?"
     positions:
       t-kant: [c-kant-appearance-presupposes-something-appearing, c-kant-things-in-themselves-thinkable-not-knowable]
-      t-schopenhauer: [c-schopenhauer-only-the-derivation-is-faulty, c-schopenhauer-will-alone-is-thing-in-itself]
+      t-schopenhauer: [c-schopenhauer-only-the-derivation-is-faulty, c-schopenhauer-will-alone-is-thing-in-itself, c-schopenhauer-objects-not-empty-phantoms-must-point-to-thing-in-itself]
       t-nietzsche: [c-nietzsche-apparent-world-is-the-only-one, c-nietzsche-abolishing-true-world-abolishes-apparent]
-    note: "Kant and Schopenhauer align, and the premise is shared (below), on the two-aspect reading as a thing considered apart from our sensibility, on the two-object reading as a distinct ground. Nietzsche denies it, the true world of GD being Kant's division on the fourth proposition's naming of Kant, and at stage 6 of the Fabel gives up the apparent world with the true one. The map takes GD's »wahre Welt« to include Kant's thing in itself on three places that reinforce each other: the fourth proposition names Kant, stage 3 of the Fabel is »königsbergisch«, and JGB 16, in another text, puts »Ding an sich« with the immediate certainties it rejects."
+    note: "Kant and Schopenhauer align, and the premise is shared (below), on the two-aspect reading as a thing considered apart from our sensibility, on the two-object reading as a distinct ground. Nietzsche denies it, the true world of GD being Kant's division on the fourth proposition's naming of Kant, and at stage 6 of the Fabel gives up the apparent world with the true one. The map takes GD's »wahre Welt« to include Kant's thing in itself on three places that reinforce each other: the fourth proposition names Kant, stage 3 of the Fabel is »königsbergisch«, and JGB 16, in another text, puts »Ding an sich« with the immediate certainties it rejects. Schopenhauer's § 24 adds his own conditional: should the objects appearing in the forms not be empty phantoms but have a meaning, they would have to point to something that is no representation but a thing in itself, and the question is then one that »wenigstens« can be asked; the sentence asserts neither limb."
   - question: "Can the thing in itself be reached by inference from what appears?"
     positions:
       t-kant: [a-kant-appearance-requires-thing-in-itself]
-      t-schopenhauer: [c-schopenhauer-causality-never-leads-beyond-representation, c-schopenhauer-kant-derivation-cannot-reach-thing-in-itself, c-schopenhauer-thing-in-itself-reached-only-through-self-consciousness]
+      t-schopenhauer: [c-schopenhauer-causality-never-leads-beyond-representation, c-schopenhauer-kant-derivation-cannot-reach-thing-in-itself, c-schopenhauer-thing-in-itself-reached-only-through-self-consciousness, c-schopenhauer-mathematics-and-etiology-never-penetrate-inner-nature]
       t-nietzsche: [c-nietzsche-grounds-for-apparent-establish-reality, c-nietzsche-cause-and-effect-conventional-fictions, c-nietzsche-projecting-sign-world-as-in-itself-is-mythology]
-    note: "Kant reaches the thing in itself as what must be thought, by the absurdity of the contrary; on the two-aspect reading that is a point about the concept of appearance, on the two-object reading an inference to a ground. Schopenhauer denies that the law of causality reaches it and attacks a derivation he attributes to Kant, for which the map has no Kant node; his own route is self-consciousness. Nietzsche denies that another kind of reality can be shown at all, and JGB 21, on the map's reading of its bearing on this row, takes the instrument away: cause and effect are to be used only as conventional fictions, not for explanation, and to read this sign-world »als \"an sich\"« into things is mythology."
+    note: "Kant reaches the thing in itself as what must be thought, by the absurdity of the contrary; on the two-aspect reading that is a point about the concept of appearance, on the two-object reading an inference to a ground. Schopenhauer denies that the law of causality reaches it and attacks a derivation he attributes to Kant, for which the map has no Kant node; his own route is self-consciousness, and § 24 adds that mathematics and etiology, however complete, never penetrate the inner nature of things, the thing in itself being never reducible to the form of the principle of sufficient reason, a claim about explanation by the sciences, set in this row as the sciences' route from what appears. Nietzsche denies that another kind of reality can be shown at all, and JGB 21, on the map's reading of its bearing on this row, takes the instrument away: cause and effect are to be used only as conventional fictions, not for explanation, and to read this sign-world »als \"an sich\"« into things is mythology."
   - question: "Is anything cognized immediately, without inference?"
     positions:
       t-kant: [c-kant-things-in-themselves-unknown]
-      t-schopenhauer: [c-schopenhauer-will-not-inferred-but-immediately-known, c-schopenhauer-identity-of-will-and-body-cannot-be-proved]
+      t-schopenhauer: [c-schopenhauer-will-not-inferred-but-immediately-known, c-schopenhauer-identity-of-will-and-body-cannot-be-proved, c-schopenhauer-thing-in-itself-makes-itself-known-in-what-forms-do-not-condition]
       t-nietzsche: [c-nietzsche-immediate-certainty-contradictio-in-adjecto, c-nietzsche-schopenhauer-ich-will-a-superstition, c-nietzsche-ich-denke-has-no-immediate-certainty, c-nietzsche-belief-in-immediate-certainties-a-moral-naivete]
-    note: "Schopenhauer affirms it of the will; Nietzsche denies it of »ich will« and »ich denke« alike, naming Schopenhauer, and the attack links are set on the Schopenhauer node; JGB 34 calls the belief in immediate certainties a moral naïveté and a stupidity, naming no one, and no link is set from it. Kant's nearest statement denies that the thing in itself is cognized at all and says nothing of immediacy."
+    note: "Schopenhauer affirms it of the will, and § 24 places the thing in itself's making itself known »unmittelbar« in what in the appearance is not conditioned by time, space and causality, a sentence about where, not about a cognition, set here for its »unmittelbar«; Nietzsche denies it of »ich will« and »ich denke« alike, naming Schopenhauer, and the attack links are set on the Schopenhauer node; JGB 34 calls the belief in immediate certainties a moral naïveté and a stupidity, naming no one, and no link is set from it. Kant's nearest statement denies that the thing in itself is cognized at all and says nothing of immediacy."
   - question: "What can be said of the thing in itself?"
     positions:
       t-kant: [c-kant-things-in-themselves-unknown, c-kant-noumenon-negative-only, c-kant-reason-sees-space-for-things-in-themselves]
-      t-schopenhauer: [c-schopenhauer-will-free-of-forms-of-appearance, c-schopenhauer-will-groundless-and-one, c-schopenhauer-will-named-a-potiori]
+      t-schopenhauer: [c-schopenhauer-will-free-of-forms-of-appearance, c-schopenhauer-will-groundless-and-one, c-schopenhauer-will-named-a-potiori, a-schopenhauer-will-knows-no-plurality]
       t-nietzsche: [c-nietzsche-world-would-be-will-to-power, c-nietzsche-in-the-in-itself-nothing-of-causal-connections]
-    note: "Kant: what objects are in themselves remains entirely unknown; the noumenon is to be understood only in the negative sense, as a thing insofar as it is not an object of our sensible intuition, the positive sense needing an intuition that is not ours; and reason sees a space for their cognition. Schopenhauer: the will as thing in itself is free of every form of appearance, groundless and one, and, never being object, bears the name will only a potiori. Nietzsche: on the [reading on which JGB 36 asserts it](../../r/nietzsche-will-to-power-asserted/), that the world seen from inside would be will to power and nothing besides; on the [reading on which it does not](../../r/nietzsche-will-to-power-not-asserted/), that there is no thing in itself, the conditional's premises being ones he rejects; and JGB 21, the term in his own quotation marks, that in the »An-sich« there is nothing of causal connections, necessity or law."
+    note: "Kant: what objects are in themselves remains entirely unknown; the noumenon is to be understood only in the negative sense, as a thing insofar as it is not an object of our sensible intuition, the positive sense needing an intuition that is not ours; and reason sees a space for their cognition. Schopenhauer: the will as thing in itself is free of every form of appearance, groundless and one, and, never being object, bears the name will only a potiori; § 25 draws, and the map's checked argument formalizes on two bridges it names, that if the thing in itself is the will it lies outside time and space and knows no plurality. Nietzsche: on the [reading on which JGB 36 asserts it](../../r/nietzsche-will-to-power-asserted/), that the world seen from inside would be will to power and nothing besides; on the [reading on which it does not](../../r/nietzsche-will-to-power-not-asserted/), that there is no thing in itself, the conditional's premises being ones he rejects; and JGB 21, the term in his own quotation marks, that in the »An-sich« there is nothing of causal connections, necessity or law."
   - question: "What is the division of the world into appearance and thing in itself, and what follows from refusing it?"
     positions:
       t-kant: [c-kant-without-things-in-themselves-appearance-without-appearing, c-kant-denying-things-in-themselves-is-absurd]
@@ -45,9 +45,9 @@ rows:
   - question: "What in the world of appearance is the subject's own, and is the world the work of our organs?"
     positions:
       t-kant: [c-kant-space-subjective-condition-of-sensibility]
-      t-schopenhauer: [c-schopenhauer-world-is-my-representation, c-schopenhauer-appearance-is-representation]
+      t-schopenhauer: [c-schopenhauer-world-is-my-representation, c-schopenhauer-appearance-is-representation, c-schopenhauer-forms-in-consciousness-independent-of-objects]
       t-nietzsche: [c-nietzsche-sense-organs-not-appearances-in-idealist-sense, c-nietzsche-external-world-not-work-of-our-organs]
-    note: "Kant: space, the form of all appearances of outer sense, is the subjective condition of sensibility; the statement is about the form, and no Kant passage in the map says the world is the subject's product. Schopenhauer: the whole world is object in relation to the subject, representation, and appearance means representation and nothing more; no passage in the map says it is the work of the organs. Nietzsche, JGB 15: to do physiology one must insist that the sense organs are not appearances in the sense of idealist philosophy, since as such they could be no causes, and, supposing the concept causa sui absurd, the external world is not the work of our organs, by the checked argument, whose third premise is the map's bridge, the sentence ending in a question mark and the »Andere« who say otherwise unnamed. No attack link is set, since no Kant or Schopenhauer statement in the map says what the chain denies; the idealist sense Nietzsche names is not identified as either's, and a reader may dispute the absence."
+    note: "Kant: space, the form of all appearances of outer sense, is the subjective condition of sensibility; the statement is about the form, and no Kant passage in the map says the world is the subject's product. Schopenhauer: the whole world is object in relation to the subject, representation, and appearance means representation and nothing more; no passage in the map says it is the work of the organs; § 24 has time, space and causality present in consciousness independently of the objects, »von dem großen Kant gelernt«, nameable with equal right as the subject's ways of intuiting or as qualities of the object so far as it is representation. Nietzsche, JGB 15: to do physiology one must insist that the sense organs are not appearances in the sense of idealist philosophy, since as such they could be no causes, and, supposing the concept causa sui absurd, the external world is not the work of our organs, by the checked argument, whose third premise is the map's bridge, the sentence ending in a question mark and the »Andere« who say otherwise unnamed. No attack link is set, since no Kant or Schopenhauer statement in the map says what the chain denies; the idealist sense Nietzsche names is not identified as either's, and a reader may dispute the absence."
 shared:
   - premise: "There is a thing in itself to a given appearance."
     claims: [c-kant-appearance-presupposes-something-appearing, c-schopenhauer-only-the-derivation-is-faulty]
@@ -61,7 +61,13 @@ shared:
   - premise: "Space is no determination of the thing in itself."
     claims: [c-kant-space-not-of-things-in-themselves, c-schopenhauer-will-free-of-forms-of-appearance]
     passages: [p-krv-a26-b42, p-wwv1-s23-will-free-of-forms]
-passages: [p-krv-b-xxvi, p-prol-314, p-krv-b307, p-krv-b308-309, p-krv-a42-b59, p-prol-289, p-krv-a24-b38, p-krv-a26-b42, p-krv-a26-b42-b, p-prol-350-351, p-wwv1-anhang-only-the-derivation-is-faulty, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-wwv1-s1-object-in-itself, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-will-not-inferred, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-gd-vernunft-2-apparent-world, p-gd-vernunft-6-four-theses, p-gd-wahre-welt-fabel, p-gd-irrthuemer-3-will-as-cause, p-jgb-36-will-to-power, p-krv-b-xxvii-xxviii-same-will-free, p-krv-b-xxviii-freedom-thinkable, p-jgb-15-sense-organs-not-appearances, p-jgb-15-external-world-not-work-of-organs, p-jgb-21-causa-sui, p-jgb-21-cause-and-effect-fictions, p-jgb-34-immediate-certainties, p-jgb-34-truth-and-semblance]
+  - premise: "Space is no determination of the thing in itself."
+    claims: [c-kant-space-not-of-things-in-themselves, c-schopenhauer-kant-rightly-concluded-forms-not-determinations-of-thing-in-itself]
+    passages: [p-krv-a26-b42, p-wwv1-s24-kant-rightly-concluded]
+  - premise: "Space is not dependent on the objects that appear in it."
+    claims: [c-kant-space-a-priori, c-schopenhauer-forms-in-consciousness-independent-of-objects]
+    passages: [p-krv-a24-b38, p-wwv1-s24-forms-learned-from-kant-and-the-question]
+passages: [p-krv-b-xxvi, p-prol-314, p-krv-b307, p-krv-b308-309, p-krv-a42-b59, p-prol-289, p-krv-a24-b38, p-krv-a26-b42, p-krv-a26-b42-b, p-prol-350-351, p-wwv1-anhang-only-the-derivation-is-faulty, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-wwv1-s1-object-in-itself, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-will-not-inferred, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-gd-vernunft-2-apparent-world, p-gd-vernunft-6-four-theses, p-gd-wahre-welt-fabel, p-gd-irrthuemer-3-will-as-cause, p-jgb-36-will-to-power, p-krv-b-xxvii-xxviii-same-will-free, p-krv-b-xxviii-freedom-thinkable, p-jgb-15-sense-organs-not-appearances, p-jgb-15-external-world-not-work-of-organs, p-jgb-21-causa-sui, p-jgb-21-cause-and-effect-fictions, p-jgb-34-immediate-certainties, p-jgb-34-truth-and-semblance, p-wwv1-s24-forms-learned-from-kant-and-the-question, p-wwv1-s24-kant-rightly-concluded, p-wwv1-s24-etiology-never-fathoms-the-thing-in-itself, p-wwv1-s25-will-outside-time-and-space-knows-no-plurality]
 status: checked
 status_note: "claims and readings reviewed by the owner against the project's translations on 2026-10-10; cells added since then not reviewed by him; translations not independently verified"
 verified_by: []
@@ -158,6 +164,27 @@ Sinn der Kantischen Lehre ..., daß Zeit, Raum und Kausalität nicht dem Dinge a
 zukommen, sondern nur Formen des Erkennens sind« (ZA I 157). The Schopenhauer statement
 asserts more, that the thing in itself is will and free of every form including that of
 object for a subject; the shared premise is the part about space.
+The same premise is named a second time, with Kant's name, at § 24: »Was auch immer das
+Ding an sich sei, so hat Kant richtig geschlossen, daß Zeit, Raum und Kausalität ... nicht
+Bestimmungen desselben seyn, sondern ihm erst zukommen konnten, nachdem und sofern es
+Vorstellung geworden« ([c-schopenhauer-kant-rightly-concluded-forms-not-determinations-of-thing-in-itself](../../c/schopenhauer-kant-rightly-concluded-forms-not-determinations-of-thing-in-itself/)),
+Schopenhauer's »Bestimmungen« being Kant's word at A 26 / B 42, »keine Bestimmung
+derselben«; the link is set on that sentence too, and a second entry under the same premise names the pair. § 25
+restates it, »nur unsere Erkenntnißform, nicht Eigenschaft des Dinges an sich«
+([c-schopenhauer-plurality-conditioned-by-time-and-space-not-of-thing-in-itself](../../c/schopenhauer-plurality-conditioned-by-time-and-space-not-of-thing-in-itself/)), and no third
+link is set on it: § 25 asserts it by reference back, »wie oben auseinandergesetzt«, as a
+restatement of §§ 23–24, and the map sets the link where the doctrine is stated, not where
+it is recalled; a reader may ask for it.
+
+**Space is not dependent on the objects that appear in it.** Kant at A 24 / B 38, space
+»nicht als eine von ihnen abhängende Bestimmung« ([c-kant-space-a-priori](../../c/kant-space-a-priori/));
+Schopenhauer at § 24, the forms »ganz unabhängig von den Objekten, die in ihnen erscheinen«
+([c-schopenhauer-forms-in-consciousness-independent-of-objects](../../c/schopenhauer-forms-in-consciousness-independent-of-objects/)), in a sentence
+that names its source, »von dem großen Kant gelernt«. Kant's sentence is about a
+determination's dependence on appearances, Schopenhauer's about the forms' presence in
+consciousness independently of the objects; the premise covers what both assert, that space
+does not depend on what appears in it, and the Schopenhauer statement asserts it of time and
+causality too.
 
 **None with Nietzsche.** No Nietzsche statement in the map asserts, in his own voice, a
 proposition that a Kant or Schopenhauer node states. The nearest are these, and each
@@ -215,7 +242,20 @@ things we are given are known only through »die Vorstellungen, die sie in uns w
 indem sie unsere Sinne afficiren« (4:289.03–14): a causal verb, »wirken«, of things as
 they are in themselves. Whether that is the »Schluß nach dem Kausalitätsgesetz« the
 Anhang names is a question about Kant that a reader can put to the texts here, side by
-side, and that the map leaves open.
+side, and that the map leaves open. Schopenhauer's own way of raising the question, at § 24, is a
+conditional of his own: »Sollten nun aber die in diesen Formen erscheinenden Objekte nicht
+leere Phantome seyn; sondern eine Bedeutung haben: so müßten sie auf etwas deuten ..., das
+... keine Vorstellung, sondern ein Ding an sich wäre«, after which the question »ließe sich
+wenigstens fragen« ([c-schopenhauer-objects-not-empty-phantoms-must-point-to-thing-in-itself](../../c/schopenhauer-objects-not-empty-phantoms-must-point-to-thing-in-itself/)); the answer, the will, is § 21's and comes by the route of self-consciousness, not from this conditional.
+Set beside B xxvi, the two conditionals run from different antecedents, Kant's from our
+being unable to think the objects also as things in themselves to an absurdity, Schopenhauer's from the objects' having a
+meaning to a thing in itself, and neither is the causal inference the Anhang attributes to
+Kant; the map sets no link between them, since neither states the other's conditional. § 24
+adds what the sciences cannot do: mathematics, however complete, gives only spatial and temporal relation,
+etiology only why each appearance shows itself here and now, and »so dringen wir mit deren Hülfe doch
+nimmermehr in das innere Wesen der Dinge«
+([c-schopenhauer-mathematics-and-etiology-never-penetrate-inner-nature](../../c/schopenhauer-mathematics-and-etiology-never-penetrate-inner-nature/)), a claim about
+explanation that the map keeps apart from § 19's claim about the law of causality.
 
 **On causality and the in-itself.** The three texts deny causality of the thing in itself
 and part on what causality is. Kant at B xxvii: if the deduction is right, »der Grundsatz der
@@ -295,7 +335,10 @@ objects are in themselves »bleibt uns gänzlich unbekannt« (A 42 / B 59,
 Schopenhauer's § 21 names the thing in itself will and § 22 calls the will »ein durchaus
 unmittelbar Erkanntes«. The map sets no attack link from Schopenhauer on the Kant claim,
 because its convention requires the denying words inside one statement and here two
-statements do it between them; a reader who wants the link may dispute its absence. JGB 34 adds, naming no one, that »Der
+statements do it between them; a reader who wants the link may dispute its absence. § 24 places the thing in itself's making itself known »unmittelbar« in »Dasjenige in der
+Erscheinung, was nicht durch Zeit, Raum und Kausalität bedingt«
+([c-schopenhauer-thing-in-itself-makes-itself-known-in-what-forms-do-not-condition](../../c/schopenhauer-thing-in-itself-makes-itself-known-in-what-forms-do-not-condition/)), a sentence
+about where, not about a cognition, and the map links it to no § 22 claim and sets no attack from it on Kant's claim that what things are in themselves remains unknown, for the same reason, which a reader may dispute. JGB 34 adds, naming no one, that »Der
 Glaube an "unmittelbare Gewissheiten"« is »eine moralische Naivetät« and, morality aside, »eine
 Dummheit« ([c-nietzsche-belief-in-immediate-certainties-a-moral-naivete](../../c/nietzsche-belief-in-immediate-certainties-a-moral-naivete/));
 the sentence judges the belief and does not say what JGB 16 says, so no attack link is set from
@@ -357,7 +400,7 @@ and to the Fabel's stage 3, »königsbergisch«, and the comparison adds nothing
 # What the map does not yet contain
 
 Kant's chapter on phenomena and noumena (A 235–260 / B 294–315) beyond its opening and
-B 307–309, and the footnote at B xxvi on thinking and cognizing; Schopenhauer's § 2, §§ 24–29, and the
+B 307–309, and the footnote at B xxvi on thinking and cognizing; Schopenhauer's § 2, § 24 beyond its first paragraph and the three spans of its second that the map holds (the paragraph's middle, between the two stored spans, on the complete cognizability of the forms and the pure sciences a priori, and its close, on necessity and objective content, are not in the map), § 25 beyond its first paragraph's opening, §§ 26–29, and the
 Anhang on the Transcendental Aesthetic; Nietzsche's JGB 34 at its opening, on the erroneousness of
 the world as the surest thing and on those who take this world, with space, time, shape and
 motion, as falsely inferred, and at its close, on the world as a fiction, the sentence after
@@ -380,5 +423,5 @@ nodes on B xxvii–xxix, the row on the will and the sentences on Kant in the pa
 the will; and, added on 2026-10-12 with the nodes on JGB 15, 21 and 34, the row on the
 subject's work, the Nietzsche cells added to rows 2 to 5, the paragraph on causality and the
 in-itself, the sentences on JGB 21 under *None with Nietzsche* and on JGB 34 under immediacy
-and the division, this paragraph, and the clause added to the status note saying so. The translations were not
+and the division, this paragraph, and the clause added to the status note saying so; and, added on 2026-10-13 with the nodes on §§ 24–25, the Schopenhauer cells added to rows 1 to 4 and 7 and the sentences added to their notes, the second entry under the premise that space is no determination of the thing in itself and its paragraph, the entry and paragraph on the premise that space is not dependent on the objects, the sentences on § 24 under the inference and under immediacy, the sentence added to the list of what the map does not yet contain, and this paragraph. The translations were not
 independently verified, and no one has attested the page.

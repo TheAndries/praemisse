@@ -2,16 +2,16 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-12 (run 8, end)
+## State as of 2026-10-13 (run 9, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–8 were
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–9 were
 served on that model, no handover note needed. The GitHub and Claude Code Remote tools in
 the tool list are platform-attached to every cloud session and are not a config change
 (`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
-motions: none. INBOX empty at runs 1–8. Open asks: 4 (mailbox; deferred by owner; blocks
+motions: none. INBOX empty at runs 1–9; the owner made no commit between runs 8 and 9, so Ask 8 is unanswered and nothing on the design side changed. Open asks: 4 (mailbox; deferred by owner; blocks
 Phase 2) and **8 (the design brief the mockups refer to; blocks nothing)**. Asks 1, 2, 3, 5,
 6, 7 done. **The mockups:** on 2026-10-11 the owner uploaded through the GitHub web UI
 (commit `1823719`, »Add files via upload«, no INBOX note) `praemisse-mockup-a.html`
@@ -119,7 +119,7 @@ map: A 236–260 / B 295–315 beyond the opening, Prolegomena §§58–59, Kant
 xxvi–xxvii (3:17.05 mark), the Grundlegung and the second Critique (so no sentence may say
 Kant asserts that morality presupposes freedom; B xxviii only supposes it).
 
-**Schopenhauer nodes on `main` (38 after run 4):** `t-schopenhauer`; `w-schopenhauer-wwv1`
+**Schopenhauer nodes on `main` (38 after run 4; 50 after run 9):** `t-schopenhauer`; `w-schopenhauer-wwv1`
 (Zürcher Ausgabe 1977 text after Hübscher's 1859 text, vol. 1 = Books 1–2, vol. 2 = Books
 3–4 and the Anhang, continuous pagination); 13 passages `p-wwv1-*`: § 1 (the first
 paragraph, ZA I 28 inferred; the »Objekt an sich« sentence, 30), § 18 (the body given in
@@ -139,10 +139,43 @@ from Nietzsche (below). Terms: Vorstellung "representation", Erscheinung "appear
 Objektität "objectity", Satz vom Grunde "principle of sufficient reason", nachweisen
 "show" against beweisen "prove", Voraussetzung "presupposition", Annahme "assumption",
 Besonnenheit "discernment". The identity of will and body is a claim, not an argument,
-because § 18 says it can never be proved. Still not in the map: § 2, § 20, §§ 24–29, the
-Anhang on the Transcendental Aesthetic and on the categories.
+because § 18 says it can never be proved. **Run 9 (2026-10-13) added §§ 24–25 from Projekt Gutenberg-DE (below), four passages
+with Grisebach's page (pp. 174–178, 184) and no ZA page:** `p-wwv1-s24-forms-learned-from-kant-and-the-question` (§ 24 first
+paragraph, »Wir haben von dem großen Kant gelernt« to »bei Seite setze«),
+`p-wwv1-s24-kant-rightly-concluded` (second paragraph to »kund giebt«),
+`p-wwv1-s24-etiology-never-fathoms-the-thing-in-itself` (»Wenn daher auch alle Mathematik«
+to »nicht im Mindesten erklärt«; the transcription's »in Hinsicht aus« kept and noted),
+`p-wwv1-s25-will-outside-time-and-space-knows-no-plurality` (§ 25 to »untheilbar«); seven
+claims, each with its quote: the forms in consciousness independent of the objects,
+»von dem großen Kant gelernt«, »mit gleichem Recht« two namings, `shares_premise_with`
+`c-kant-space-a-priori` (»nicht als eine von ihnen abhängende Bestimmung«), a third `shared`
+entry *space is not dependent on the objects that appear in it*; the conditional »Sollten nun aber ... nicht leere Phantome seyn ... so müßten
+sie ... ein Ding an sich« with the »wenigstens fragen« kept, neither limb asserted, set
+beside Kant's B xxvi conditional on the page, no link; »Was auch immer das Ding an sich sei,
+so hat Kant richtig geschlossen« that time, space and causality are »nicht Bestimmungen
+desselben«, Kant's own word at A 26 / B 42, so `shares_premise_with`
+`c-kant-space-not-of-things-in-themselves` and a second `shared` entry with the same
+premise sentence (the build allows two entries with one premise; a `shared` entry cannot
+hold two claims of one thinker); »Umgekehrt« what is unconditioned by the forms is where
+the thing in itself »sich unmittelbar ... kund giebt«, kept as a where, not a cognition, no
+link to § 22; mathematics and etiology »nimmermehr in das innere Wesen der Dinge«, about
+explanation, kept apart from § 19's law of causality; § 25's plurality conditioned by time
+and space, the principium individuationis, »nicht Eigenschaft des Dinges an sich«, no
+third link, said so; and the conditional conclusion »Ist nun dieses Ding an sich ... der
+Wille; so liegt er ... außer der Zeit und dem Raum, und kennt demnach keine Vielheit«. One
+argument, `checked`, `a-schopenhauer-will-knows-no-plurality` (p∧f1∧f2, (f1∧f2∧w)→o, (p∧o)→¬m
+⊢ w→(o∧¬m); f2 is »frei von aller Form der Erkenntniß«, the text's middle term; w is not a premise, the text draws the step conditionally and the claim keeps
+it; both bridges the map's, named in the statement; »folglich einer« not formalized, § 23
+has it). Comparison cells added: row 1 (the conditional), row 2 (etiology), row 3
+(»unmittelbar« where), row 4 (the argument), row 7 (the forms in consciousness). Still not
+in the map: § 2, § 20, § 24 beyond its first two paragraphs (the attack on materialism,
+the method of philosophy against etiology, Spinoza's stone), § 25 beyond its first
+paragraph (grades of objectivation), §§ 26–29, the Anhang on the Transcendental
+Aesthetic (»Kants größtes Verdienst ist die Unterscheidung der Erscheinung vom Dinge an
+sich« is at ch74.txt paragraph 15 of the PG-DE extract; the Aesthetic praised as
+»unumstößliche Wahrheiten« further on) and on the categories.
 
-**Nietzsche nodes on `main` (53 after run 5; 72 after run 8; 145 nodes in all after run 6, 147 after the owner session, 159 after run 7, 178 after run 8: 3 t, 5 w, 54 p, 100 c, 11 a, 4 r, 1 x):**
+**Nietzsche nodes on `main` (53 after run 5; 72 after run 8; 145 nodes in all after run 6, 147 after the owner session, 159 after run 7, 178 after run 8, 190 after run 9: 3 t, 5 w, 58 p, 107 c, 12 a, 4 r, 1 x):**
 `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889); cited by aphorism number
 and, for GD, chapter and section (the Fabel chapter by stage 1–6); KSA pages not given
 (unverified). 19 passages: `p-jgb-16-immediate-certainties`,
@@ -240,9 +273,19 @@ nietzschesource.org is JavaScript-rendered and unusable through the proxy.
 **Source of Schopenhauer's text.** zeno.org, `http://www.zeno.org/Philosophie/M/Schopenhauer,+Arthur/Die+Welt+als+Wille+und+Vorstellung/Erster+Band/<Erstes+Buch|Zweites+Buch|Anhang.+Kritik+der+Kantischen+Philosophie>`,
 one Book per HTML file, served as ISO-8859-1; the text is in `<div class="zenoCOMain">`,
 `<h5>` carries the § numbers, `[N]` in `class="zenoTXKonk"` anchors marks where ZA page N
-begins, footnote numbers are glued to the preceding word. If zeno.org stays down, the
-fallback for more Schopenhauer is Gutenberg or the Internet Archive scans of the 1859
-edition; none has ZA pages.
+begins, footnote numbers are glued to the preceding word. zeno.org was down again on 2026-10-13 (HTTP timed out, HTTPS reset); run 8's HTTP 200 was
+a single morning. **Fallback used in run 9: Projekt Gutenberg-DE**,
+`https://projekt-gutenberg.org/authors/arthur-schopenhauer/books/die-welt-als-wille-und-vorstellung-band-i/chapter/N`
+(the old `/schopenh/wwv/` paths 404), Grisebach's edition (Reclam, Leipzig 1892, »zweiter,
+mehrfach berichtigter Abdruck«), chapters 3–73 are §§ 1–71 (chapter = § + 2), chapter 74
+the Anhang (650k chars, all in one page), chapter 2 the prefaces; the text is in `<p>`
+elements and the page repeats every paragraph once (strip the duplicate half) and ends
+in two advertising paragraphs (»Zeitgenössische Bücher«, »Projekt Gutenberg lebt«); the
+extracted files are in the scratchpad as `chN.txt`. No ZA pages, but Grisebach's: the HTML has `<a name="pageN">` anchors (§ 24 pp. 174–184, § 25
+from 184); cite by § and paragraph, say »ZA page not given; Grisebach's pagination ... p. N« in `ref`, name the edition in `source`, and keep its orthography
+(»seyn«, »Gränze«). Passages of one § from two editions may differ in a letter; each
+passage names its transcription. The Internet Archive has the 1859 scans
+(`bub_gb_xhfF5h_0EggC`, vol. 2) if a page number is ever needed.
 
 **Source of Kant's text.** https://korpora.org/kant/aa{03,04}/{page:03d}.html, one AA page
 per file, lines in `<tr>` rows: first non-empty `<td>` is the line number, the rest the
@@ -299,7 +342,17 @@ when the foreground is asked for; its transcript file is written only at the end
 quiet-file watcher fires at once and is useless: wait a fixed 10–12 minutes in a
 background sleep instead, then `SendMessage` for the report if it has not arrived (run 6:
 it arrived by itself after 11 minutes); the stop hook asks for a commit
-while it runs, which must be refused until the report is in. Use the wait for building
+while it runs, which must be refused until the report is in. Run 9 (21 findings, 2 serious, 20 accepted): a
+coverage sentence (»beyond its first two paragraphs«) false by omission when two spans of
+one paragraph are stored with a gap between, so say exactly which spans are held; a
+relative pronoun's gender decides its antecedent (»die aber« = »Erkenntniß«, not »Satz«)
+and a truth table cannot see it; when a premise claim states a middle term (»frei von aller
+Form der Erkenntniß«) the atom must carry it or the bridge swallows it; before arguing an
+absent link, reread every Kant statement on the page for the same proposition (A 24 / B 38
+»nicht als eine von ihnen abhängende Bestimmung« was missed); a cell placed in a row for one
+word (»unmittelbar«) must say so in the note; a sentence that denies a Kant statement in one
+sentence needs the attack absence argued; check a source for page anchors before writing
+»no page marks«. Use the wait for building
 and screenshotting the site to the scratchpad (`--out`), drafting memory and the
 changelog.
 
@@ -394,9 +447,13 @@ intellect inside representation, Nietzsche a conventional fiction we invented, a
 takes away the instrument of the inference Schopenhauer's Anhang attacks); JGB 21 under *None
 with Nietzsche* as the nearest shared premise, link not set; JGB 34 under immediacy and the
 division (the converse of stage 6); the closing paragraph names all of it as unread by the
-owner. The `statement` still unchanged. Gaps still listed on the page: Kant A 236–260 / B
-295–315 beyond the opening and the B xxvi footnote; Schopenhauer § 2, §§ 24–29, Anhang on
-the Aesthetic; Nietzsche JGB 34 on the world as a fiction, JGB 21 on the will, GD Irrthümer
+owner. The `statement` still unchanged. Run 9 added Schopenhauer cells to rows 1–4 and 7 (above), a
+second `shared` entry on space with § 24's »Bestimmungen« sentence, a paragraph under the
+shared premise, § 24's own conditional beside B xxvi under *On the inference* and the
+etiology claim there, the »unmittelbar« sentence under *On immediacy*, and the closing
+paragraph names all of it as unread by the owner. Gaps still listed on the page: Kant A
+236–260 / B 295–315 beyond the opening and the B xxvi footnote; Schopenhauer § 2, § 24 and
+§ 25 beyond their openings, §§ 26–29, Anhang on the Aesthetic; Nietzsche JGB 34 on the world as a fiction, JGB 21 on the will, GD Irrthümer
 7–8.
 
 **Next.** Fill the remaining gaps above, each only where it adds a row or cell, through

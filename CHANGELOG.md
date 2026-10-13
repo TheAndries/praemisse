@@ -2,6 +2,176 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-13 — run 9: Schopenhauer's §§ 24–25, the forms learned from Kant, and the will outside plurality
+
+Ninth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first.
+
+**Step 1.** No ask changed status since run 8. Ask 8 (the design brief the mockups refer to)
+is unanswered: no commit, note or file arrived between runs 8 and 9; it blocks nothing, and
+nothing on the design side was touched. Ask 4 stays deferred by the owner and blocks only
+Phase 2.
+
+**Step 2.** `INBOX.md` empty; the repository as run 8 left it. No dispute, no attestation, no
+owner note.
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 12 new, 4 revised, from a second source.** The plan's next gap was
+Schopenhauer §§ 24–29 or the Anhang on the Transcendental Aesthetic »from zeno.org«. zeno.org
+was unreachable again all run (HTTP timed out, HTTPS reset by peer; run 8's HTTP 200 was one
+morning), so the text was taken from Projekt Gutenberg-DE, whose Band I is Eduard Grisebach's
+edition (Reclam, Leipzig 1892, second corrected printing) rather than the Zürcher Ausgabe the
+map has used; the four new passages name that transcription in `source`, carry no ZA page in
+`ref`, keep the edition's orthography (»seyn«, »Gränze«), and the work and thinker nodes say
+so. The § is the locator in both editions, so nothing in the citation scheme changes. Of the
+six sections only §§ 24–25 were taken, and of those only their openings, each where it adds a
+cell: § 24's first paragraph (the forms learned from Kant; the conditional on empty phantoms;
+the question whether representations are something besides, and the will as the answer set
+aside), the opening of its second (Kant »richtig geschlossen«; what is unconditioned by the
+forms is where the thing in itself makes itself known), its three sentences on mathematics and
+etiology, and § 25's first paragraph to »untheilbar«. §§ 26–29 (the forces of nature, the
+conflict of grades, teleology, the will's groundlessness) were not read in full and add no cell
+on this question that § 23 does not already fill; § 29 is for the comparison on the will.
+
+Seven claims, all `draft`, each with its load-bearing sentence as a quotation in German and
+English, each keeping its sentence's mode: the forms in consciousness independently of the
+objects, with Kant named as the sentence names him and its two namings »mit gleichem Recht«;
+the conditional »Sollten nun aber ... so müßten sie«, with the »wenigstens fragen« that
+follows and neither limb asserted; »Was auch immer das Ding an sich sei, so hat Kant richtig
+geschlossen«, under its opening clause; the »Umgekehrt« sentence on where the thing in itself
+»sich unmittelbar ... kund giebt«, kept as a where and not as a cognition; the concession
+»wenn auch ... so dringen wir ... doch nimmermehr«; § 25's two sentences on plurality and the
+principium individuationis; and the conditional conclusion »Ist nun dieses Ding an sich ...
+der Wille; so liegt er ... außer der Zeit und dem Raum, und kennt demnach keine Vielheit«.
+One argument, `checked`, `a-schopenhauer-will-knows-no-plurality` (p∧f, (f∧w)→o, (p∧o)→¬m
+⊢ w→(o∧¬m)): the antecedent, that the thing in itself is the will, is not a premise, since
+the text draws the step conditionally and the claim keeps the conditional, so the form proves
+the claim atom for atom; both bridges are the map's, for »so liegt er« and for »demnach«,
+and are named in the statement; the sentence's »folglich einer« is left to § 23, which
+already states the unity.
+
+One link set, the clearest sharing the map has: § 24's »nicht Bestimmungen desselben« is
+Kant's own word at A 26 / B 42, »keine Bestimmung derselben«, and Schopenhauer's sentence
+names Kant and calls the conclusion right, so `shares_premise_with` joins the two claims and
+the comparison carries a second entry under the premise that space is no determination of the
+thing in itself (the build allows two entries with one premise sentence, and an entry cannot
+hold two claims of one thinker). Three absences argued on the nodes: no link on § 24's first
+sentence, which asserts that the forms are present in consciousness independently of the
+objects and licenses two namings, a proposition no Kant statement in the map words; none on §
+25's restatement, the two already set carrying it; none between § 24's conditional and Kant's
+at B xxvi, which run from different antecedents and neither of which is the causal inference
+the Anhang attributes to Kant. No attack link: nothing today denies what any node states.
+
+The comparison `x-thing-in-itself` gained Schopenhauer cells in rows 1 (his own conditional),
+2 (etiology never penetrates the inner nature), 3 (the »unmittelbar« sentence), 4 (the
+argument) and 7 (the forms in consciousness), a paragraph under the shared premise on space,
+§ 24's conditional set beside B xxvi under *On the inference* with the etiology claim after
+it, the »unmittelbar« sentence under *On immediacy*, an updated gaps paragraph, and the closing
+paragraph names all of it as unread by the owner. The `statement` is unchanged.
+
+**The adversarial pass, and what it found.** A second agent was given the twelve new nodes,
+the diff of the comparison and the three revised nodes, the two chapter texts, the eleven
+older nodes they cite and the conventions, with the brief to break validity, fidelity,
+translation, quotations, the one new link and the argued absences, the comparison, references,
+format and the rendered pages. It verified every `original:` against the corpus and every
+quotation against its passage character for character, the form by the truth table, the new
+pair reciprocal and its passages cited, and returned 21 findings, 2 serious, 8 moderate; I
+accepted 20 and changed the nodes before commit, and one is answered the other way.
+- *Serious, coverage.* The gaps paragraph said the map held § 24 »beyond its first two
+  paragraphs«, and the second passage's note said the paragraph »continues ... in the next
+  passage«; between the two stored spans lie some 2,400 characters of the same paragraph, on
+  the complete cognizability of the forms and the pure sciences a priori, and its close is not
+  stored either. The paragraph and both passage notes now say exactly which spans are held.
+- *Serious, fidelity, in the argument's premise.* The § 25 claim read »die aber ... nur unsere
+  Erkenntnißform ... ist« as a relative clause on »Satz vom Grunde«; the pronoun is feminine
+  and its antecedent is »alle unsere Erkenntniß a priori«. Statement, passage translation and
+  quotation now predicate it of that cognition, and the argument's body says that time and
+  space carry it as its shapes.
+- *Moderate, links.* The absence of a shared-premise link on § 24's first sentence was argued
+  on a false reason: `c-kant-space-a-priori` says space is »nicht als eine von ihnen abhängende
+  Bestimmung«, which asserts of space what the sentence asserts of the three forms. The link is
+  now set, with a third `shared` entry on the page, *space is not dependent on the objects that
+  appear in it*, and its paragraph; the Kant node `c-kant-space-a-priori` gained the converse
+  link, as `c-kant-space-not-of-things-in-themselves` had earlier in the run (MODEL.md: a link
+  set on an existing node does not supersede a version; this entry records both).
+- *Moderate, validity.* The bridge for »so liegt er ... außer der Zeit und dem Raum« swallowed
+  the text's own middle term, that the thing in itself »frei ist von aller Form der
+  Erkenntniß«, which the premise claim states and the atom omitted. The form now has f1 and
+  f2, the bridge says that to be free of a form of cognition is to lie outside it, the
+  statement and body follow, and the truth table still passes; the body also now says that
+  the passage's last sentence asserts the conclusion outright and the map keeps the
+  conditional form, and no longer reads JGB 21's fictions onto space.
+- *Moderate, the comparison.* The page called § 24's conditional Schopenhauer's »ground« for
+  the thing in itself while row 2 says his route is self-consciousness and the node says the
+  conditional yields a question (now »his own way of raising the question«, with the answer
+  named as § 21's); said one entry »carries both« where there are two; left a stray »is« on
+  the page; put the »unmittelbar« sentence in the immediacy row against the node's own account
+  of it (the note now says it is a sentence about where, set there for its »unmittelbar«) and
+  argued no attack absence against Kant's A 42 / B 59, whose denial it does state in one
+  sentence (now argued on node and page: »sich kund geben« is not cognition, the forces stay
+  »qualitates occultae«, a reader may dispute); and the first sentence of the C1 node called
+  the second paragraph »the same doctrine« where it draws from it (now said, with the
+  »Denn da« quoted).
+- *Moderate, references.* The passages said the source »carries no page marks«; the
+  Gutenberg HTML carries Grisebach's page anchors, verified by the operator before the
+  change: § 24 at pp. 174–178 for the three spans, § 25's opening at p. 184. The refs now give
+  Grisebach's pages beside »ZA page not given«, and the work and thinker nodes say so.
+- *Minor, 11 of them.* »wird ... seyn« kept as a future in the statement; »Schopenhauer says«
+  made »in Schopenhauer's words« with »make up their content« restored and »oder mit anderen
+  Worten« as the equivalence it is; »without such dependence« completed with its object;
+  »could« for »ließe sich«; »§ 25 draws by the checked argument« made »the map's checked
+  argument formalizes«; »teach only why« said of mathematics, which the text credits with
+  exhaustive cognition of relations; Kant's antecedent at B xxvi described as the absence of
+  a thing in itself where it is our being unable to think the objects as such; »den Sinn der
+  Kantischen Lehre« cited to the wrong § 23 claim; »zweiter, mehrfach berichtigter Abdruck«
+  rendered »second, repeatedly corrected printing«; »geberden« as »posture«, »nachgewiesen«
+  as »demonstrated«; the closing paragraph's list of what the owner has not read completed
+  with the notes' sentences and the gaps sentence.
+- *Answered the other way.* The reviewer asked for a third link, on § 25's restatement, or a
+  reason of the kind the convention names; the map gives the reason: § 25 asserts the
+  doctrine by reference back, »wie oben auseinandergesetzt«, and the link is set where a
+  doctrine is stated, §§ 23 and 24, not where it is recalled, which node and page now say,
+  with the invitation to ask for it.
+The pass cost about 133,000 tokens of the agent's own. New kinds today: a coverage claim
+false by omission between two spans of one paragraph, and a feminine pronoun bound to the
+wrong noun inside a premise the truth table had passed.
+
+One slip of the operator's after the pass: the rewritten gaps sentence quoted three phrases
+from the unstored middle of § 24 in guillemets, and the build refused them (P1); they are now
+referred to without quotation, by the run-5 rule.
+
+**What else was wrong and why.**
+- The first version of the four passage nodes left `title` and `ref` unquoted in YAML, and a
+  colon inside a `ref` (»ZA page not given: the source ...«) broke the parse; the fields are
+  now quoted, as the Kant passages' are.
+- The first edit of the comparison searched for a sentence across a line break and missed it;
+  nothing reached the file wrong, the script stopped, and the remaining edits were rerun.
+- The README carried 178 nodes; now 190 (3 thinkers, 5 works, 58 passages, 107 claims, 12
+  arguments, 4 readings, 1 comparison).
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The Schopenhauer gaps are now
+§ 2, the rest of §§ 24–25, §§ 26–29 and the Anhang on the Aesthetic, and the next content
+run should take the Anhang's opening paragraphs on Kant's greatest merit and on the
+Transcendental Aesthetic, which name the sharing with Kant in Schopenhauer's own words and
+belong under the shared premises, then begin the comparison on the will.
+
+**Step 6.** `memory.md` rewritten in place, about 6,500 words. Dropped: nothing; added the
+Projekt Gutenberg-DE route (chapter = § + 2, duplicated paragraphs, the advertising tail),
+the run-9 nodes and the review's rules.
+
+**Step 8.** No new ask. Asks 4 and 8 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-14; if the owner has answered Ask
+8, what follows from the answer; otherwise the Anhang's opening on Kant's greatest merit and
+the Transcendental Aesthetic from Projekt Gutenberg-DE chapter 74 (zeno.org if it answers),
+through the adversarial pass, then the comparison on the will.
+
+**Effort.** About 250,000 of the 300,000-token ceiling in this session plus about 133,000 in
+the adversarial agent: a third on reading the governing files and finding a text source with
+zeno.org down, a third on the four passages, seven claims, the argument and the comparison,
+the rest on the review, the 20 fixes and the records. Nothing spent.
+
 ## 2026-10-12 — run 8: Nietzsche's JGB 15, 21 and 34, a seventh row, and the owner's mockups
 
 Eighth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

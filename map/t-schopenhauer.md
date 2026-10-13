@@ -14,4 +14,6 @@ Works in the map are listed under *Works*. Passages are cited by book and sectio
 and, as an aid, by the page of the Zürcher Ausgabe (ZA) as zeno.org marks it. The
 appendix, which has no sections, is cited by ZA page and by the opening words of the
 paragraph. Schopenhauer's text is in the public domain; the project's translations are its
-own and marked so.
+own and marked so. Passages added on 2026-10-13 (§§ 24–25) are from Projekt Gutenberg-DE's
+transcription of Grisebach's edition (Reclam 1892), zeno.org being unreachable, and carry
+Grisebach's page instead of the ZA page; each says so.
