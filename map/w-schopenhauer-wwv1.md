@@ -20,4 +20,6 @@ whose text is Eduard Grisebach's edition, *Arthur Schopenhauers sämtliche Werke
 Bänden*, vol. 1, Reclam, Leipzig 1892, second, repeatedly corrected printing, because zeno.org was
 unreachable; those passages say so in their `source`, carry Grisebach's page instead of the ZA page,
 and keep that edition's orthography. Where the two editions differ in a letter the passage's `original`
-is the transcription it names; the § is the locator in both.
+is the transcription it names; the § is the locator in both. zeno.org answered again on
+2026-10-14, and the appendix passages added that day are from it, with ZA pages, checked
+against Grisebach's text; two slips of its transcription are named on the passages.

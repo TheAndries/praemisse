@@ -2,6 +2,157 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-14 — run 10: the Anhang's opening on Kant's greatest merit, and the Transcendental Aesthetic
+
+Tenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first.
+
+**Step 1.** No ask changed status since run 9. Ask 8 (the design brief the mockups refer to)
+is unanswered: no commit, note or file arrived between runs 9 and 10; it blocks nothing, and
+nothing on the design side was touched. Ask 4 stays deferred by the owner and blocks only
+Phase 2.
+
+**Step 2.** `INBOX.md` empty; the repository as run 9 left it. No dispute, no attestation, no
+owner note.
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 15 new, 5 revised, from zeno.org again.** zeno.org answered at once
+this morning (HTTP 200, the whole Anhang in one page), so the three passages carry Zürcher
+Ausgabe pages as the two older Anhang passages do; the Projekt Gutenberg-DE text of
+Grisebach's edition was fetched as well and every span compared with it word by word. The
+comparison found two transcription slips in zeno.org's text, »Kam zeigte« for »Kant zeigte«
+and »hohem« for »höhern«, and four variants between the editions (»Auf« / »Aus diesen Weg«,
+Grisebach's error; a comma; »des« / »der Kantischen«; »weil Bedingungen« / »weil die
+Bedingungen desselben«); the originals keep the transcription's letters, the passages name
+each, the translations render the sense. The plan's next gap was the Anhang's opening on
+Kant's greatest merit and its paragraph on the Transcendental Aesthetic, which name the
+sharing with Kant in Schopenhauer's own words. Three passages: the first six sentences of
+the appendix (ZA II 513–514, Kant's greatest merit and its ground, Locke's primary and
+secondary qualities, and what the Kantian distinction declares of the primary ones and why);
+four sentences from later in the same paragraph (ZA II 516, »Er zeigte, daß die Gesetze ...
+nicht anzuwenden sind, um das Daseyn selbst abzuleiten« to »wie das Eichhörnchen im Rade«);
+and the whole paragraph on the Transcendental Aesthetic (ZA II 536–537), from its merit to
+»Erkenntnisse a priori« and »selbsteigene Formen des Intellekts« as »gewissermaaßen
+Synonyma«.
+
+Eleven claims, all `draft`, each with its load-bearing sentence as a quotation in German and
+English, each keeping its sentence's mode: the distinction as Kant's greatest merit, on the
+ground of the showing that the intellect stands between the things and us; the Kantian
+distinction's taking Locke's primary qualities too for appearance, »und zwar gerade deshalb,
+weil Bedingungen desselben, Raum, Zeit und Kausalität, von uns a priori erkannt werden«;
+what Kant showed of the laws of experience, in two claims, with »zeigte« read as asserting
+what is shown and the reported subjunctive kept as »would«; the Aesthetic's theorems among
+the irrefutable truths, in the first person; the fact that we are conscious of a part of our
+cognitions a priori, and the thesis that it admits no other explanation than that these are
+the forms of our intellect; and the three sentences of the chain that grounds the thesis,
+the definition of a priori, what is in the intellect without coming from outside, and the
+conditional on the manner all objects must present themselves, with its »Demnach«
+conclusion, »im Grunde nur« and »gewissermaaßen« kept. One argument, `checked`,
+`a-schopenhauer-cognitions-a-priori-are-the-intellects-own-forms` (a, a→¬e, ¬e→b, m,
+(b∧m)→f, f→s ⊢ s): the »Denn ... Demnach« chain, with the thesis (»gar keine andere
+Erklärung«) kept out, since the chain supports it without proving the uniqueness; two
+bridges, both the map's and named in the statement, the antecedent of the text's conditional,
+which its »Demnach« treats as discharged without asserting it, and the step from the forms to
+the synonymy.
+
+Three links `shares_premise_with` set, with three `shared` entries on the comparison: the
+»weil« sentence beside A 24 / B 38 (a second entry under *Space is given a priori*; the
+clause is Schopenhauer's own ground, outside the report, so both statements assert it); the
+»Er zeigte« sentence beside A 236 / B 295 under a new premise, *The laws that govern
+experience are not to be applied beyond it*, with the identification of Kant's principles of
+the understanding and Schopenhauer's laws of experience said to be the map's step and carried
+by Prolegomena § 57, »Zeit, Raum und alle Verstandesbegriffe«, the Kant claim's second
+passage; and, on the review's finding, the first sentence's »weshalb« clause beside A 42 /
+B 59 under *Things cannot be cognized as they may be in themselves*, since »auf Grund der
+Nachweisung, daß« is the factive construction of »Er zeigte, daß« in nominal form and the map
+reads the two alike. Three absences argued on nodes and page: no link on the endorsement of
+the Aesthetic, which names no proposition; none on the argument's conclusion, which is about
+a priori cognition as such where Kant's statements in the map are about space (the nearest,
+A 26 / B 42 (b), named for a reader to dispute); none on the sentence that the laws and the
+world are conditioned by the subject's mode of cognition, which no Kant statement in the map
+words. No attack link: nothing today denies what any node states. The comparison gained
+Schopenhauer cells in rows 2 (the laws lead no step toward the world in itself), 4 (the
+intellect stands between things and us) and 7 (cognitions a priori as the intellect's own
+forms, the argument, the world conditioned by the subject), sentences on those notes, the
+three entries and their paragraphs, a paragraph on the Aesthetic as a whole, a gaps sentence
+naming exactly which four spans of the Anhang the map holds, and the closing paragraph names
+all of it as unread by the owner. The `statement` is unchanged.
+
+**The adversarial pass, and what it found.** A second agent was given the fifteen new nodes,
+the diff of the five revised ones, both corpus texts, the fourteen older nodes they cite and
+the conventions, with the brief to break validity, fidelity, translation, quotations, the two
+links then set and the argued absences, the comparison, references, format and anything one
+would be ashamed to see under Schopenhauer's name. It verified every `original:` against the
+zeno.org text and every quotation against its passage, the ZA pages against the marks, the
+form by its own truth table, »Er« as Kant from the sentence before, and returned 14 findings,
+0 serious, 6 moderate, 8 minor; I accepted all 14 and changed the nodes before commit.
+- *Moderate, the text's sequence.* The Aesthetic passage's body said the paragraph before it
+  was »on Fichte«; the paragraph before it is on Kant's failure to separate intuitive from
+  abstract cognition (ZA II 535–536), and the Fichte sentences are the unstored remainder of
+  the »Kein Lotus ohne Stengel« paragraph whose first two sentences the map holds. Rewritten
+  from the corpus.
+- *Moderate, coverage.* The gaps sentence counted »the two paragraphs at ZA II 534–535« as
+  held where only the opening of the second is, and described what lies between the two spans
+  of the opening paragraph wrongly (»the dogmatists« are after the second span). Now exact.
+- *Moderate, collation.* The first passage's note listed one variant against Grisebach and
+  named »seyn« as a difference, which it is not there; three more variants were missed, one
+  inside the load-bearing sentence (»weil die Bedingungen«). All four now named.
+- *Moderate, fidelity, a pronoun.* The second »desselben« in »Bedingungen desselben« cannot
+  be »der Erscheinung« and the statement's »its«, after an »its« for the thing in itself,
+  let a reader take the conditions cognized a priori to be the thing in itself's. The claim
+  body now says what the pronoun can bind to and how »its« is to be read.
+- *Moderate, links.* The absence of a link on the »weshalb« clause was argued on a reason the
+  convention does not name, and inconsistently with »Er zeigte«; the link is now set, with
+  the converse on the Kant node, the entry and its paragraph.
+- *Moderate, links.* The page said the identification of Kant's and Schopenhauer's subjects
+  was »what the paragraph's last sentence says of Kant, not something the map adds«;
+  »conditioned by the subject's mode of cognition« is not »what the understanding draws from
+  itself«. Now said to be the map's step, carried by Prolegomena § 57, added to the entry's
+  passages; the premise reworded to cover both predicates.
+- *Minor, 8 of them.* The bridge's parenthesis claimed »discharged by its Demnach« where the
+  body rightly says the text treats it as discharged; »atom for atom« was not literally true
+  of a conclusion atom without the two hedges; »ungleich« dropped from a statement; »doch«
+  dropped from another; two statements opened with an anaphor (»Its«, »those laws«) and one
+  turned a reported subjunctive into the indicative; »is conscious to us« for »uns bewußt
+  ist« and »this function of its« for »diese seine Funktion«, changed across passage, quotes,
+  statements and atoms; a ZA page given as 514 for a quotation beginning on 513; »Locke had
+  shown« for »Dieser hatte nachgewiesen« and »existed« supplied for »wäre«.
+The pass cost about 121,000 tokens of the agent's own and took seven minutes. New kinds today:
+a factive noun treated unlike its verb when deciding a link; a collation note that named a
+non-variant and missed one inside the load-bearing sentence; a claim about the neighbouring
+paragraph written from memory of the text rather than from it.
+
+**What else was wrong and why.**
+- The first attempt to check the passage spans ran a Python heredoc through the shell and hung
+  for two minutes; scripts were written to the scratchpad and run by path thereafter, as the
+  memory's note for the owner's machine already advises.
+- The duplicate-stripping in the Projekt Gutenberg-DE extractor assumed the page's two halves
+  are byte-identical; they are not, so the collation searched the whole text instead.
+- The README carried 190 nodes; now 205 (3 thinkers, 5 works, 61 passages, 118 claims, 13
+  arguments, 4 readings, 1 comparison).
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The Schopenhauer gaps the comparison
+page lists are now small and none adds a row; the next content run should begin the
+comparison on the will, as the plan's order has it.
+
+**Step 6.** `memory.md` rewritten in place, about 7,300 words of 8,000. Dropped: nothing;
+added zeno.org's return and its slips, the collation routine, the run-10 nodes and the
+review's rules. The next run that needs room should compress the per-run node inventories.
+
+**Step 8.** No new ask. Asks 4 and 8 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-15; if the owner has answered Ask
+8, what follows from the answer; otherwise the comparison on the will, `x-the-will`, built to
+the convention of `MODEL.md` from the nodes already in the map (Kant B xxvii–xxviii,
+Schopenhauer §§ 18–23 and 25, Nietzsche JGB 19, 36, GD Irrthümer 3), through the adversarial
+pass, and offered to the owner for the same qualified review.
+
+**Effort.** About 215,000 of the 300,000-token ceiling in this session plus about 121,000 in
+the adversarial agent: a third on reading the governing files, a third on the three passages,
+eleven claims, the argument and the comparison, the rest on the review, the 14 fixes and the
+records. Nothing spent.
+
 ## 2026-10-13 — run 9: Schopenhauer's §§ 24–25, the forms learned from Kant, and the will outside plurality
 
 Ninth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

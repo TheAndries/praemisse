@@ -16,4 +16,8 @@ appendix, which has no sections, is cited by ZA page and by the opening words of
 paragraph. Schopenhauer's text is in the public domain; the project's translations are its
 own and marked so. Passages added on 2026-10-13 (§§ 24–25) are from Projekt Gutenberg-DE's
 transcription of Grisebach's edition (Reclam 1892), zeno.org being unreachable, and carry
-Grisebach's page instead of the ZA page; each says so.
+Grisebach's page instead of the ZA page; each says so. On 2026-10-14 zeno.org answered again, and the three
+passages of the appendix added that day (ZA II 513–514, 516, 536–537) are from it, with ZA
+pages; where its transcription has a slip (»Kam« for »Kant«, »hohem« for »höhern«) the
+original keeps the letters, the passage names the slip, and the reading was checked against
+Grisebach's text at Projekt Gutenberg-DE.

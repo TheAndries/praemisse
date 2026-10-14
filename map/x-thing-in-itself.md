@@ -15,9 +15,9 @@ rows:
   - question: "Can the thing in itself be reached by inference from what appears?"
     positions:
       t-kant: [a-kant-appearance-requires-thing-in-itself]
-      t-schopenhauer: [c-schopenhauer-causality-never-leads-beyond-representation, c-schopenhauer-kant-derivation-cannot-reach-thing-in-itself, c-schopenhauer-thing-in-itself-reached-only-through-self-consciousness, c-schopenhauer-mathematics-and-etiology-never-penetrate-inner-nature]
+      t-schopenhauer: [c-schopenhauer-causality-never-leads-beyond-representation, c-schopenhauer-kant-derivation-cannot-reach-thing-in-itself, c-schopenhauer-thing-in-itself-reached-only-through-self-consciousness, c-schopenhauer-mathematics-and-etiology-never-penetrate-inner-nature, c-schopenhauer-kant-showed-laws-and-world-conditioned-by-subjects-mode-of-cognition]
       t-nietzsche: [c-nietzsche-grounds-for-apparent-establish-reality, c-nietzsche-cause-and-effect-conventional-fictions, c-nietzsche-projecting-sign-world-as-in-itself-is-mythology]
-    note: "Kant reaches the thing in itself as what must be thought, by the absurdity of the contrary; on the two-aspect reading that is a point about the concept of appearance, on the two-object reading an inference to a ground. Schopenhauer denies that the law of causality reaches it and attacks a derivation he attributes to Kant, for which the map has no Kant node; his own route is self-consciousness, and § 24 adds that mathematics and etiology, however complete, never penetrate the inner nature of things, the thing in itself being never reducible to the form of the principle of sufficient reason, a claim about explanation by the sciences, set in this row as the sciences' route from what appears. Nietzsche denies that another kind of reality can be shown at all, and JGB 21, on the map's reading of its bearing on this row, takes the instrument away: cause and effect are to be used only as conventional fictions, not for explanation, and to read this sign-world »als \"an sich\"« into things is mythology."
+    note: "Kant reaches the thing in itself as what must be thought, by the absurdity of the contrary; on the two-aspect reading that is a point about the concept of appearance, on the two-object reading an inference to a ground. Schopenhauer denies that the law of causality reaches it and attacks a derivation he attributes to Kant, for which the map has no Kant node; his own route is self-consciousness, and § 24 adds that mathematics and etiology, however complete, never penetrate the inner nature of things, the thing in itself being never reducible to the form of the principle of sufficient reason, a claim about explanation by the sciences, set in this row as the sciences' route from what appears. Nietzsche denies that another kind of reality can be shown at all, and JGB 21, on the map's reading of its bearing on this row, takes the instrument away: cause and effect are to be used only as conventional fictions, not for explanation, and to read this sign-world »als \"an sich\"« into things is mythology. The Anhang has Schopenhauer state Kant's result in the same sense: Kant showed the laws of experience, and with them the world, »als durch die Erkenntnißweise des Subjekts bedingt«, so that along their guiding thread one comes »keinen Schritt vorwärts« in the cognition of the essence of the world in itself (ZA II 516), a sentence about what Kant showed, which Schopenhauer's »zeigte« asserts."
   - question: "Is anything cognized immediately, without inference?"
     positions:
       t-kant: [c-kant-things-in-themselves-unknown]
@@ -27,9 +27,9 @@ rows:
   - question: "What can be said of the thing in itself?"
     positions:
       t-kant: [c-kant-things-in-themselves-unknown, c-kant-noumenon-negative-only, c-kant-reason-sees-space-for-things-in-themselves]
-      t-schopenhauer: [c-schopenhauer-will-free-of-forms-of-appearance, c-schopenhauer-will-groundless-and-one, c-schopenhauer-will-named-a-potiori, a-schopenhauer-will-knows-no-plurality]
+      t-schopenhauer: [c-schopenhauer-kants-greatest-merit-distinction-of-appearance-from-thing-in-itself, c-schopenhauer-will-free-of-forms-of-appearance, c-schopenhauer-will-groundless-and-one, c-schopenhauer-will-named-a-potiori, a-schopenhauer-will-knows-no-plurality]
       t-nietzsche: [c-nietzsche-world-would-be-will-to-power, c-nietzsche-in-the-in-itself-nothing-of-causal-connections]
-    note: "Kant: what objects are in themselves remains entirely unknown; the noumenon is to be understood only in the negative sense, as a thing insofar as it is not an object of our sensible intuition, the positive sense needing an intuition that is not ours; and reason sees a space for their cognition. Schopenhauer: the will as thing in itself is free of every form of appearance, groundless and one, and, never being object, bears the name will only a potiori; § 25 draws, and the map's checked argument formalizes on two bridges it names, that if the thing in itself is the will it lies outside time and space and knows no plurality. Nietzsche: on the [reading on which JGB 36 asserts it](../../r/nietzsche-will-to-power-asserted/), that the world seen from inside would be will to power and nothing besides; on the [reading on which it does not](../../r/nietzsche-will-to-power-not-asserted/), that there is no thing in itself, the conditional's premises being ones he rejects; and JGB 21, the term in his own quotation marks, that in the »An-sich« there is nothing of causal connections, necessity or law."
+    note: "Kant: what objects are in themselves remains entirely unknown; the noumenon is to be understood only in the negative sense, as a thing insofar as it is not an object of our sensible intuition, the positive sense needing an intuition that is not ours; and reason sees a space for their cognition. Schopenhauer: the will as thing in itself is free of every form of appearance, groundless and one, and, never being object, bears the name will only a potiori; § 25 draws, and the map's checked argument formalizes on two bridges it names, that if the thing in itself is the will it lies outside time and space and knows no plurality. Nietzsche: on the [reading on which JGB 36 asserts it](../../r/nietzsche-will-to-power-asserted/), that the world seen from inside would be will to power and nothing besides; on the [reading on which it does not](../../r/nietzsche-will-to-power-not-asserted/), that there is no thing in itself, the conditional's premises being ones he rejects; and JGB 21, the term in his own quotation marks, that in the »An-sich« there is nothing of causal connections, necessity or law. The Anhang's first sentence states the ground of the distinction Schopenhauer calls Kant's greatest merit: between the things and us stands the intellect, »weshalb sie nicht nach dem, was sie an sich selbst seyn mögen, erkannt werden können« (ZA II 513), set here as what Schopenhauer says, with Kant's name, of what can be said of the thing in itself."
   - question: "What is the division of the world into appearance and thing in itself, and what follows from refusing it?"
     positions:
       t-kant: [c-kant-without-things-in-themselves-appearance-without-appearing, c-kant-denying-things-in-themselves-is-absurd]
@@ -45,9 +45,9 @@ rows:
   - question: "What in the world of appearance is the subject's own, and is the world the work of our organs?"
     positions:
       t-kant: [c-kant-space-subjective-condition-of-sensibility]
-      t-schopenhauer: [c-schopenhauer-world-is-my-representation, c-schopenhauer-appearance-is-representation, c-schopenhauer-forms-in-consciousness-independent-of-objects]
+      t-schopenhauer: [c-schopenhauer-world-is-my-representation, c-schopenhauer-appearance-is-representation, c-schopenhauer-forms-in-consciousness-independent-of-objects, c-schopenhauer-cognitions-a-priori-and-forms-of-the-intellect-two-expressions-for-one-thing, a-schopenhauer-cognitions-a-priori-are-the-intellects-own-forms, c-schopenhauer-kant-showed-laws-and-world-conditioned-by-subjects-mode-of-cognition]
       t-nietzsche: [c-nietzsche-sense-organs-not-appearances-in-idealist-sense, c-nietzsche-external-world-not-work-of-our-organs]
-    note: "Kant: space, the form of all appearances of outer sense, is the subjective condition of sensibility; the statement is about the form, and no Kant passage in the map says the world is the subject's product. Schopenhauer: the whole world is object in relation to the subject, representation, and appearance means representation and nothing more; no passage in the map says it is the work of the organs; § 24 has time, space and causality present in consciousness independently of the objects, »von dem großen Kant gelernt«, nameable with equal right as the subject's ways of intuiting or as qualities of the object so far as it is representation. Nietzsche, JGB 15: to do physiology one must insist that the sense organs are not appearances in the sense of idealist philosophy, since as such they could be no causes, and, supposing the concept causa sui absurd, the external world is not the work of our organs, by the checked argument, whose third premise is the map's bridge, the sentence ending in a question mark and the »Andere« who say otherwise unnamed. No attack link is set, since no Kant or Schopenhauer statement in the map says what the chain denies; the idealist sense Nietzsche names is not identified as either's, and a reader may dispute the absence."
+    note: "Kant: space, the form of all appearances of outer sense, is the subjective condition of sensibility; the statement is about the form, and no Kant passage in the map says the world is the subject's product. Schopenhauer: the whole world is object in relation to the subject, representation, and appearance means representation and nothing more; no passage in the map says it is the work of the organs; § 24 has time, space and causality present in consciousness independently of the objects, »von dem großen Kant gelernt«, nameable with equal right as the subject's ways of intuiting or as qualities of the object so far as it is representation. Nietzsche, JGB 15: to do physiology one must insist that the sense organs are not appearances in the sense of idealist philosophy, since as such they could be no causes, and, supposing the concept causa sui absurd, the external world is not the work of our organs, by the checked argument, whose third premise is the map's bridge, the sentence ending in a question mark and the »Andere« who say otherwise unnamed. No attack link is set, since no Kant or Schopenhauer statement in the map says what the chain denies; the idealist sense Nietzsche names is not identified as either's, and a reader may dispute the absence. The Anhang adds Schopenhauer's general form of what is the subject's own: cognitions a priori and the intellect's own forms are two expressions for one thing (ZA II 537), by the map's checked argument from what a priori means, and the laws of experience, and with them the world itself, are conditioned by the subject's mode of cognition (ZA II 516), said of what Kant showed."
 shared:
   - premise: "There is a thing in itself to a given appearance."
     claims: [c-kant-appearance-presupposes-something-appearing, c-schopenhauer-only-the-derivation-is-faulty]
@@ -55,6 +55,9 @@ shared:
   - premise: "Space is given a priori."
     claims: [c-kant-space-a-priori, c-schopenhauer-causality-sensation-and-space-are-subjective]
     passages: [p-krv-a24-b38, p-wwv1-anhang-kant-derivation-of-thing-in-itself]
+  - premise: "Space is given a priori."
+    claims: [c-kant-space-a-priori, c-schopenhauer-kant-makes-primary-qualities-appearance-because-forms-cognized-a-priori]
+    passages: [p-krv-a24-b38, p-wwv1-anhang-kants-greatest-merit]
   - premise: "Space is a subjective form."
     claims: [c-kant-space-subjective-condition-of-sensibility, c-schopenhauer-causality-sensation-and-space-are-subjective]
     passages: [p-krv-a26-b42-b, p-wwv1-anhang-kant-derivation-of-thing-in-itself]
@@ -67,7 +70,13 @@ shared:
   - premise: "Space is not dependent on the objects that appear in it."
     claims: [c-kant-space-a-priori, c-schopenhauer-forms-in-consciousness-independent-of-objects]
     passages: [p-krv-a24-b38, p-wwv1-s24-forms-learned-from-kant-and-the-question]
-passages: [p-krv-b-xxvi, p-prol-314, p-krv-b307, p-krv-b308-309, p-krv-a42-b59, p-prol-289, p-krv-a24-b38, p-krv-a26-b42, p-krv-a26-b42-b, p-prol-350-351, p-wwv1-anhang-only-the-derivation-is-faulty, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-wwv1-s1-object-in-itself, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-will-not-inferred, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-gd-vernunft-2-apparent-world, p-gd-vernunft-6-four-theses, p-gd-wahre-welt-fabel, p-gd-irrthuemer-3-will-as-cause, p-jgb-36-will-to-power, p-krv-b-xxvii-xxviii-same-will-free, p-krv-b-xxviii-freedom-thinkable, p-jgb-15-sense-organs-not-appearances, p-jgb-15-external-world-not-work-of-organs, p-jgb-21-causa-sui, p-jgb-21-cause-and-effect-fictions, p-jgb-34-immediate-certainties, p-jgb-34-truth-and-semblance, p-wwv1-s24-forms-learned-from-kant-and-the-question, p-wwv1-s24-kant-rightly-concluded, p-wwv1-s24-etiology-never-fathoms-the-thing-in-itself, p-wwv1-s25-will-outside-time-and-space-knows-no-plurality]
+  - premise: "The laws that govern experience are not to be applied beyond it."
+    claims: [c-kant-understanding-principles-only-for-experience, c-schopenhauer-kant-showed-laws-of-experience-not-applicable-to-derive-existence]
+    passages: [p-krv-a236-b295, p-prol-350, p-wwv1-anhang-laws-of-experience-not-applicable-to-existence-itself]
+  - premise: "Things cannot be cognized as they may be in themselves."
+    claims: [c-kant-things-in-themselves-unknown, c-schopenhauer-kants-greatest-merit-distinction-of-appearance-from-thing-in-itself]
+    passages: [p-krv-a42-b59, p-wwv1-anhang-kants-greatest-merit]
+passages: [p-krv-b-xxvi, p-prol-314, p-krv-b307, p-krv-b308-309, p-krv-a42-b59, p-prol-289, p-krv-a24-b38, p-krv-a26-b42, p-krv-a26-b42-b, p-prol-350-351, p-wwv1-anhang-only-the-derivation-is-faulty, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-wwv1-s1-object-in-itself, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-will-not-inferred, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-gd-vernunft-2-apparent-world, p-gd-vernunft-6-four-theses, p-gd-wahre-welt-fabel, p-gd-irrthuemer-3-will-as-cause, p-jgb-36-will-to-power, p-krv-b-xxvii-xxviii-same-will-free, p-krv-b-xxviii-freedom-thinkable, p-jgb-15-sense-organs-not-appearances, p-jgb-15-external-world-not-work-of-organs, p-jgb-21-causa-sui, p-jgb-21-cause-and-effect-fictions, p-jgb-34-immediate-certainties, p-jgb-34-truth-and-semblance, p-wwv1-s24-forms-learned-from-kant-and-the-question, p-wwv1-s24-kant-rightly-concluded, p-wwv1-s24-etiology-never-fathoms-the-thing-in-itself, p-wwv1-s25-will-outside-time-and-space-knows-no-plurality, p-krv-a236-b295, p-wwv1-anhang-kants-greatest-merit, p-wwv1-anhang-laws-of-experience-not-applicable-to-existence-itself, p-wwv1-anhang-transcendental-aesthetic-a-priori-cognitions-forms-of-the-intellect, p-prol-350]
 status: checked
 status_note: "claims and readings reviewed by the owner against the project's translations on 2026-10-10; cells added since then not reviewed by him; translations not independently verified"
 verified_by: []
@@ -141,6 +150,15 @@ the sensation and the law of causality are all subjective, the inference he attr
 Kant stays inside representation. The Schopenhauer statement asserts three things; this
 premise and the next are its third, that space is »eine a priori gegebene, folglich
 subjektive Form«, in its two parts.
+The appendix's opening says the same with Kant's name and gives it as the ground of his
+distinction: the Kantian distinction declares Locke's primary qualities too to belong only to
+the appearance, »und zwar gerade deshalb, weil Bedingungen desselben, Raum, Zeit und
+Kausalität, von uns a priori erkannt werden« (ZA II 513–514,
+[c-schopenhauer-kant-makes-primary-qualities-appearance-because-forms-cognized-a-priori](../../c/schopenhauer-kant-makes-primary-qualities-appearance-because-forms-cognized-a-priori/)); the link is set on that sentence too, and a second entry under this premise names
+the pair. The sentence's subject is the Kantian distinction, and the map reads its »weil«
+clause, in the indicative, as expressly keeping Kant's assertion; Kant's word at A 24 / B 38 is
+»Vorstellung a priori«, Schopenhauer's »a priori erkannt«, and the premise covers what both
+assert, that space is given a priori, not the faculty each assigns it to.
 
 **Space is a subjective form.** Kant at A 26 / B 42, conclusion (b), space is »die
 Form aller Erscheinungen äußerer Sinne, d. i. die subjective Bedingung der Sinnlichkeit,
@@ -185,6 +203,51 @@ determination's dependence on appearances, Schopenhauer's about the forms' prese
 consciousness independently of the objects; the premise covers what both assert, that space
 does not depend on what appears in it, and the Schopenhauer statement asserts it of time and
 causality too.
+
+**The laws that govern experience are not to be applied beyond it.** Kant at A 236 / B 295, »alles,
+was der Verstand aus sich selbst schöpft, ohne es von der Erfahrung zu borgen, das habe er
+dennoch zu keinem andern Behuf, als lediglich zum Erfahrungsgebrauch« (3:203.04–09,
+[c-kant-understanding-principles-only-for-experience](../../c/kant-understanding-principles-only-for-experience/)); Schopenhauer in the appendix, where Kant »zeigte, daß die Gesetze, welche im
+Daseyn, d.h. in der Erfahrung überhaupt, mit unverbrüchlicher Nothwendigkeit herrschen, nicht
+anzuwenden sind, um das Daseyn selbst abzuleiten und zu erklären, daß also die Gültigkeit
+derselben doch nur eine relative ist« (ZA II 516, [c-schopenhauer-kant-showed-laws-of-experience-not-applicable-to-derive-existence](../../c/schopenhauer-kant-showed-laws-of-experience-not-applicable-to-derive-existence/)). Schopenhauer's sentence reports
+what Kant showed, and »zeigte« keeps the assertion as true; his next sentence names the laws,
+»Zeit und Raum sowohl als Kausalität und Schlußfolge«, the principle of sufficient reason, and
+the paragraph's last sentence has Kant show them »als durch die Erkenntnißweise des Subjekts
+bedingt« ([c-schopenhauer-kant-showed-laws-and-world-conditioned-by-subjects-mode-of-cognition](../../c/schopenhauer-kant-showed-laws-and-world-conditioned-by-subjects-mode-of-cognition/)). Kant's subject is what the understanding draws from itself, his
+»Grundsätze des reinen Verstandes«; Schopenhauer's is the laws that rule »im Daseyn«, time,
+space, causality and inference; the identification of the two is a step the map takes,
+supported by the Kant claim's second passage, Prolegomena § 57, where Kant says of »Zeit,
+Raum und alle Verstandesbegriffe« that they have »keinen andern Gebrauch ..., als blos
+Erfahrung möglich zu machen« (4:350.27–33), Schopenhauer's list less inference, and by
+Schopenhauer's last sentence, where Kant showed those laws conditioned by the subject. The
+premise is worded to cover both predicates, Kant's »Erfahrungsgebrauch« and Schopenhauer's
+»nicht anzuwenden ..., um das Daseyn selbst abzuleiten«, not what each takes the laws to be. A
+reader who holds the two subjects distinct may dispute the link.
+
+**Things cannot be cognized as they may be in themselves.** Kant at A 42 / B 59, what objects
+may be in themselves »bleibt uns gänzlich unbekannt« (3:65.17–22,
+[c-kant-things-in-themselves-unknown](../../c/kant-things-in-themselves-unknown/)); Schopenhauer in the appendix's first sentence, Kant's distinction resting
+»auf Grund der Nachweisung, daß zwischen den Dingen und uns immer noch der Intellekt steht,
+weshalb sie nicht nach dem, was sie an sich selbst seyn mögen, erkannt werden können« (ZA II
+513, [c-schopenhauer-kants-greatest-merit-distinction-of-appearance-from-thing-in-itself](../../c/schopenhauer-kants-greatest-merit-distinction-of-appearance-from-thing-in-itself/)). »Nachweisung« is read as »zeigte« is in the entry above, as saying
+that the thing was shown, so both statements assert it; the Schopenhauer statement asserts
+more, that the distinction is Kant's greatest merit and that the intellect stands between
+the things and us, which is the ground and not the premise. A reader who holds that a
+sentence praising a doctrine for its ground does not assert the ground may dispute the link.
+
+**The Transcendental Aesthetic as a whole.** Schopenhauer counts its theorems among »den
+unumstößlichen Wahrheiten« and calls it »eine wirkliche, große Entdeckung in der Metaphysik«
+(ZA II 536, [c-schopenhauer-theorems-of-transcendental-aesthetic-irrefutable-truths](../../c/schopenhauer-theorems-of-transcendental-aesthetic-irrefutable-truths/)); the paragraph then argues, from what a priori means, that »Erkenntnisse
+a priori« and »selbsteigene Formen des Intellekts« are two expressions for one thing
+([a-schopenhauer-cognitions-a-priori-are-the-intellects-own-forms](../../a/schopenhauer-cognitions-a-priori-are-the-intellects-own-forms/), [c-schopenhauer-cognitions-a-priori-and-forms-of-the-intellect-two-expressions-for-one-thing](../../c/schopenhauer-cognitions-a-priori-and-forms-of-the-intellect-two-expressions-for-one-thing/)). No link is set on either sentence: the endorsement names no proposition
+of the Aesthetic, and the convention asks that both statements word the one they share; the
+conclusion is about a priori cognition as such, where Kant's statements in the map, A 24 /
+B 38 and A 26 / B 42, are about space. The proposition the two come nearest to sharing is that
+what is cognized a priori is a form of the subject's own, which Schopenhauer's conclusion
+asserts of all a priori cognition and Kant's A 26 / B 42, conclusion (b), of space
+([c-kant-space-subjective-condition-of-sensibility](../../c/kant-space-subjective-condition-of-sensibility/)); a reader may dispute the absence
+of a link, and the sharing on space itself is set two entries above.
 
 **None with Nietzsche.** No Nietzsche statement in the map asserts, in his own voice, a
 proposition that a Kant or Schopenhauer node states. The nearest are these, and each
@@ -400,8 +463,7 @@ and to the Fabel's stage 3, »königsbergisch«, and the comparison adds nothing
 # What the map does not yet contain
 
 Kant's chapter on phenomena and noumena (A 235–260 / B 294–315) beyond its opening and
-B 307–309, and the footnote at B xxvi on thinking and cognizing; Schopenhauer's § 2, § 24 beyond its first paragraph and the three spans of its second that the map holds (the paragraph's middle, between the two stored spans, on the complete cognizability of the forms and the pure sciences a priori, and its close, on necessity and objective content, are not in the map), § 25 beyond its first paragraph's opening, §§ 26–29, and the
-Anhang on the Transcendental Aesthetic; Nietzsche's JGB 34 at its opening, on the erroneousness of
+B 307–309, and the footnote at B xxvi on thinking and cognizing; Schopenhauer's § 2, § 24 beyond its first paragraph and the three spans of its second that the map holds (the paragraph's middle, between the two stored spans, on the complete cognizability of the forms and the pure sciences a priori, and its close, on necessity and objective content, are not in the map), § 25 beyond its first paragraph's opening, §§ 26–29, and the Anhang beyond the four spans the map holds (the first six sentences of its opening paragraph, ZA II 513–514; the same paragraph's four sentences from »Er zeigte« to »wie das Eichhörnchen im Rade«, ZA II 516, the sentences between the two spans not held (on Kant's subtraction of the brain-functions' share after Locke's subtraction of the sense-organs', the separation of cognition a priori from a posteriori, Kant's threefold relation to Locke, Hume and Leibniz-Wolff, the identity-philosophy, Plato, the Vedas and Kant as the waker of the sleepers); the paragraph at ZA II 534–535 and the first two sentences of the next, ZA II 535, its remainder on Fichte, Schelling and Hegel not held; and the first paragraph on the Transcendental Aesthetic, ZA II 536–537), so neither its theorems on time nor the critique of the categories; Nietzsche's JGB 34 at its opening, on the erroneousness of
 the world as the surest thing and on those who take this world, with space, time, shape and
 motion, as falsely inferred, and at its close, on the world as a fiction, the sentence after
 the passage on degrees of apparentness; JGB 15's sentence on sensualism as a regulative
@@ -423,5 +485,5 @@ nodes on B xxvii–xxix, the row on the will and the sentences on Kant in the pa
 the will; and, added on 2026-10-12 with the nodes on JGB 15, 21 and 34, the row on the
 subject's work, the Nietzsche cells added to rows 2 to 5, the paragraph on causality and the
 in-itself, the sentences on JGB 21 under *None with Nietzsche* and on JGB 34 under immediacy
-and the division, this paragraph, and the clause added to the status note saying so; and, added on 2026-10-13 with the nodes on §§ 24–25, the Schopenhauer cells added to rows 1 to 4 and 7 and the sentences added to their notes, the second entry under the premise that space is no determination of the thing in itself and its paragraph, the entry and paragraph on the premise that space is not dependent on the objects, the sentences on § 24 under the inference and under immediacy, the sentence added to the list of what the map does not yet contain, and this paragraph. The translations were not
+and the division, this paragraph, and the clause added to the status note saying so; and, added on 2026-10-13 with the nodes on §§ 24–25, the Schopenhauer cells added to rows 1 to 4 and 7 and the sentences added to their notes, the second entry under the premise that space is no determination of the thing in itself and its paragraph, the entry and paragraph on the premise that space is not dependent on the objects, the sentences on § 24 under the inference and under immediacy, the sentence added to the list of what the map does not yet contain, and this paragraph; and, added on 2026-10-14 with the nodes on the appendix's opening and on the Transcendental Aesthetic, the Schopenhauer cells added to rows 2, 4 and 7 and the sentences added to their notes, the second entry under the premise that space is given a priori and the sentences added to its paragraph, the entry and paragraph on the premise that the laws governing experience are not to be applied beyond it, the entry and paragraph on the premise that things cannot be cognized as they may be in themselves, the paragraph on the Transcendental Aesthetic under the shared premises, the sentence changed in the list of what the map does not yet contain, and this paragraph. The translations were not
 independently verified, and no one has attested the page.

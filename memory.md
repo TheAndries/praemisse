@@ -2,16 +2,16 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-13 (run 9, end)
+## State as of 2026-10-14 (run 10, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–9 were
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–10 were
 served on that model, no handover note needed. The GitHub and Claude Code Remote tools in
 the tool list are platform-attached to every cloud session and are not a config change
 (`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
-motions: none. INBOX empty at runs 1–9; the owner made no commit between runs 8 and 9, so Ask 8 is unanswered and nothing on the design side changed. Open asks: 4 (mailbox; deferred by owner; blocks
+motions: none. INBOX empty at runs 1–10; the owner made no commit between runs 8 and 10, so Ask 8 is unanswered and nothing on the design side changed. Open asks: 4 (mailbox; deferred by owner; blocks
 Phase 2) and **8 (the design brief the mockups refer to; blocks nothing)**. Asks 1, 2, 3, 5,
 6, 7 done. **The mockups:** on 2026-10-11 the owner uploaded through the GitHub web UI
 (commit `1823719`, »Add files via upload«, no INBOX note) `praemisse-mockup-a.html`
@@ -119,7 +119,7 @@ map: A 236–260 / B 295–315 beyond the opening, Prolegomena §§58–59, Kant
 xxvi–xxvii (3:17.05 mark), the Grundlegung and the second Critique (so no sentence may say
 Kant asserts that morality presupposes freedom; B xxviii only supposes it).
 
-**Schopenhauer nodes on `main` (38 after run 4; 50 after run 9):** `t-schopenhauer`; `w-schopenhauer-wwv1`
+**Schopenhauer nodes on `main` (38 after run 4; 50 after run 9; 65 after run 10):** `t-schopenhauer`; `w-schopenhauer-wwv1`
 (Zürcher Ausgabe 1977 text after Hübscher's 1859 text, vol. 1 = Books 1–2, vol. 2 = Books
 3–4 and the Anhang, continuous pagination); 13 passages `p-wwv1-*`: § 1 (the first
 paragraph, ZA I 28 inferred; the »Objekt an sich« sentence, 30), § 18 (the body given in
@@ -173,9 +173,47 @@ the method of philosophy against etiology, Spinoza's stone), § 25 beyond its fi
 paragraph (grades of objectivation), §§ 26–29, the Anhang on the Transcendental
 Aesthetic (»Kants größtes Verdienst ist die Unterscheidung der Erscheinung vom Dinge an
 sich« is at ch74.txt paragraph 15 of the PG-DE extract; the Aesthetic praised as
-»unumstößliche Wahrheiten« further on) and on the categories.
+»unumstößliche Wahrheiten« further on) and on the categories. **Run 10 (2026-10-14) added three Anhang passages from zeno.org (back up), with ZA pages:**
+`p-wwv1-anhang-kants-greatest-merit` (ZA II 513–514, the opening paragraph's first six
+sentences to »von uns a priori erkannt werden«; zeno's »hohem« for Grisebach's »höhern«
+kept and noted; »des Kantischen« vs Grisebach »der Kantischen« noted),
+`p-wwv1-anhang-laws-of-experience-not-applicable-to-existence-itself` (ZA II 516, the same
+paragraph's four sentences »Er zeigte, daß die Gesetze« to »Eichhörnchen im Rade«; zeno's
+»Kam zeigte« slip for »Kant zeigte« kept and noted; the sentences between the two spans, on
+Plato, the Vedas, Maja and the dogmatists, not held),
+`p-wwv1-anhang-transcendental-aesthetic-a-priori-cognitions-forms-of-the-intellect` (ZA II
+536–537, the whole paragraph »Die transscendentale Aesthetik ist ein so überaus
+verdienstvolles Werk« to »gewissermaaßen Synonyma«; zeno »Formen seines Erkennens« vs
+Grisebach »seiner Erkenntniß« noted). Eleven claims, each with its quote: Kant's greatest
+merit is the distinction, on the ground that the intellect stands between things and us
+(C1, row 4 cell; no link to A 42/B 59, argued: praise of a doctrine for its ground); the
+Kantian distinction makes Locke's primary qualities appearance »weil Bedingungen desselben,
+Raum, Zeit und Kausalität, von uns a priori erkannt werden« (C2, `shares_premise_with`
+`c-kant-space-a-priori`, a second `shared` entry *Space is given a priori*); Kant showed the
+laws ruling in experience not applicable to derive existence itself, validity only relative
+(C3, `shares_premise_with` `c-kant-understanding-principles-only-for-experience`, A 236/B
+295, new `shared` entry *The laws that govern experience have no use beyond it*, the
+identification of Kant's Grundsätze with Schopenhauer's Gesetze conceded on the page as what
+Schopenhauer's last sentence says of Kant); Kant showed those laws and the world conditioned
+by the subject's Erkenntnißweise, »woraus folgte« no step toward the essence of the world in
+itself (C4, rows 2 and 7, no link); the Aesthetic's theorems among the »unumstößlichen
+Wahrheiten«, first person kept (C5, no link: names no proposition); a part of our cognitions
+a priori, a fact Kant proved (C6a); that fact admits no other explanation than that these
+are the forms of our intellect (C6, the thesis, not in the argument); a priori means not
+gained from experience, not from outside (C7); what is in the intellect without coming from
+outside is its own essence (C8); if what is thus in it is the universal manner all its
+objects must present themselves, it is the forms of its cognizing (C9, conditional kept);
+»Erkenntnisse a priori« and »selbsteigene Formen des Intellekts« two expressions for one
+thing, »im Grunde nur«, »gewissermaaßen« kept (C10, row 7). One argument, `checked`,
+`a-schopenhauer-cognitions-a-priori-are-the-intellects-own-forms` (a, a→¬e, ¬e→b, m,
+(b∧m)→f, f→s ⊢ s; m is the map's bridge discharging C9's antecedent, which the text's
+»Demnach« does tacitly and the Aesthetic's theorems state of space and time; f→s the bridge
+for »Demnach«; the form proves the synonymy, not C6's uniqueness). Still not in the map:
+the Anhang beyond those four spans (nothing of 517–533 or 537–650 but the Fichte paragraph
+is skipped, the Aesthetic's theorems on time, the categories, the Analytic), § 2, the rest
+of §§ 24–25, §§ 26–29.
 
-**Nietzsche nodes on `main` (53 after run 5; 72 after run 8; 145 nodes in all after run 6, 147 after the owner session, 159 after run 7, 178 after run 8, 190 after run 9: 3 t, 5 w, 58 p, 107 c, 12 a, 4 r, 1 x):**
+**Nietzsche nodes on `main` (53 after run 5; 72 after run 8; 145 nodes in all after run 6, 147 after the owner session, 159 after run 7, 178 after run 8, 190 after run 9, 205 after run 10: 3 t, 5 w, 61 p, 118 c, 13 a, 4 r, 1 x):**
 `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889); cited by aphorism number
 and, for GD, chapter and section (the Fabel chapter by stage 1–6); KSA pages not given
 (unverified). 19 passages: `p-jgb-16-immediate-certainties`,
@@ -273,8 +311,13 @@ nietzschesource.org is JavaScript-rendered and unusable through the proxy.
 **Source of Schopenhauer's text.** zeno.org, `http://www.zeno.org/Philosophie/M/Schopenhauer,+Arthur/Die+Welt+als+Wille+und+Vorstellung/Erster+Band/<Erstes+Buch|Zweites+Buch|Anhang.+Kritik+der+Kantischen+Philosophie>`,
 one Book per HTML file, served as ISO-8859-1; the text is in `<div class="zenoCOMain">`,
 `<h5>` carries the § numbers, `[N]` in `class="zenoTXKonk"` anchors marks where ZA page N
-begins, footnote numbers are glued to the preceding word. zeno.org was down again on 2026-10-13 (HTTP timed out, HTTPS reset); run 8's HTTP 200 was
-a single morning. **Fallback used in run 9: Projekt Gutenberg-DE**,
+begins, footnote numbers are glued to the preceding word. zeno.org was down on 2026-10-13 (HTTP timed out, HTTPS reset) and up again on 2026-10-14
+(HTTP 200 in seconds; the Anhang page 374k bytes, extracted by `extract_zeno.py` to
+`anhang.txt` with ⟦N⟧ page marks). Its transcription has OCR slips (»Kam« for »Kant«,
+»hohem«/»tiefem«/»grobem« for »höhern«/»tiefern«/»gröbern«): cross-check every span word by
+word against Grisebach's `ch74.txt` (`slipcheck.py`; the PG-DE page's duplicate half is not
+byte-identical, so strip by searching, not by halving), keep the transcription's letters,
+name the slip on the passage, translate the sense. **Fallback used in run 9: Projekt Gutenberg-DE**,
 `https://projekt-gutenberg.org/authors/arthur-schopenhauer/books/die-welt-als-wille-und-vorstellung-band-i/chapter/N`
 (the old `/schopenh/wwv/` paths 404), Grisebach's edition (Reclam, Leipzig 1892, »zweiter,
 mehrfach berichtigter Abdruck«), chapters 3–73 are §§ 1–71 (chapter = § + 2), chapter 74
@@ -451,14 +494,22 @@ owner. The `statement` still unchanged. Run 9 added Schopenhauer cells to rows 1
 second `shared` entry on space with § 24's »Bestimmungen« sentence, a paragraph under the
 shared premise, § 24's own conditional beside B xxvi under *On the inference* and the
 etiology claim there, the »unmittelbar« sentence under *On immediacy*, and the closing
-paragraph names all of it as unread by the owner. Gaps still listed on the page: Kant A
+paragraph names all of it as unread by the owner. Run 10 added Schopenhauer cells to rows 2
+(C4), 4 (C1) and 7 (C10, the argument, C4) with sentences on their notes, a second entry
+under *Space is given a priori* (A 24/B 38 ↔ C2) with sentences in its paragraph, the entry
+and paragraph *The laws that govern experience have no use beyond it* (A 236/B 295 ↔ C3;
+`p-krv-a236-b295` now in `passages:`), a paragraph *The Transcendental Aesthetic as a whole*
+arguing no link on C5/C10 (Kant's statements are about space, Schopenhauer's about a priori
+cognition as such; nearest: A 26/B 42 (b)), the gaps sentence naming the four Anhang spans
+held, and the closing paragraph names all of it as unread by the owner. Seven `shared`
+entries now. Gaps still listed on the page: Kant A
 236–260 / B 295–315 beyond the opening and the B xxvi footnote; Schopenhauer § 2, § 24 and
 § 25 beyond their openings, §§ 26–29, Anhang on the Aesthetic; Nietzsche JGB 34 on the world as a fiction, JGB 21 on the will, GD Irrthümer
 7–8.
 
-**Next.** Fill the remaining gaps above, each only where it adds a row or cell, through
-the adversarial pass (Schopenhauer §§ 24–29 and the Anhang on the Aesthetic need zeno.org,
-which answered HTTP 200 on 2026-10-12; the Nietzsche gaps left are small); then the second comparison, *the will* (Kant B xxvii–xxviii, now in
+**Next.** The thing-in-itself page's Schopenhauer gaps are now small (§ 2, the rest of
+§§ 24–25, §§ 26–29, the Anhang's Aesthetic theorems on time and the categories) and none
+adds a row; the next content run should **begin the second comparison, *the will*** (Kant B xxvii–xxviii, now in
 the map, against Schopenhauer §§ 18–23 and Nietzsche JGB 19, 36, GD Irrthümer 3; JGB 36's
 »"intelligiblen Charakter"« is in Nietzsche's own quotation marks and no Kant passage in
 the map carries the term, so the page may not call it Kant's without adding A 538–541 / B
@@ -504,5 +555,23 @@ not in one thinker's word; passage bodies may not quote sentences outside the st
 in guillemets either. The reviewer again verified every original mechanically and found no
 slip; its cost was 157,000 tokens and it took ten minutes.
 
-**Dropped from memory this run:** nothing; the file grew to about 5,600 words of 8,000
-(the mockups, the run-8 Nietzsche nodes, the seventh row, the distilled rules).
+Run 10 (14 findings, 0 serious, 6 moderate, 14 accepted; the reviewer verified every original
+and quotation mechanically and the ZA pages against the marks, 121,000 tokens, seven
+minutes): a factive noun (»auf Grund der Nachweisung, daß«) asserts its content as a factive
+verb (»Er zeigte, daß«) does, so treat the two alike when deciding a shared-premise link (C1
+now linked to A 42/B 59); when a link rests on identifying two texts' subjects (Kant's
+Grundsätze, Schopenhauer's Gesetze), say the identification is the map's and find the Kant
+passage that carries it (Prol § 57 did); a shared premise must be worded to cover both
+texts' predicates, not one's (»Erfahrungsgebrauch« vs »nicht anzuwenden«); a collation note
+must list every non-orthographic variant, above all one inside the load-bearing sentence
+(»die Bedingungen«), and must not name a non-variant; a statement that opens with an anaphor
+(»Its«, »those laws«) is unreadable alone, so resolve it; keep a reported subjunctive
+(»käme«) as »would« in the statement as in the translation; a bridge's parenthesis may not
+claim more than the argument's body (»discharged by Demnach« vs »treats as discharged«); »X
+ist uns bewußt« is »we are conscious of X«, never »X is conscious to us«; "the paragraph
+before" must be checked in the corpus, not remembered; a gaps sentence that says a paragraph
+is held must check whether only its opening is.
+
+**Dropped from memory this run:** nothing; the file is about 7,100 words of 8,000. Next run
+should compress the per-run node inventories (runs 7–10) into the node lists if it needs
+room.
