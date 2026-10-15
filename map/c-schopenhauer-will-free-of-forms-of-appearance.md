@@ -5,6 +5,10 @@ title: The will as thing in itself is free of all the forms of appearance, even 
 thinker: t-schopenhauer
 statement: "The will as thing in itself is entirely different from its appearance and wholly free from all its forms, which it enters only as it appears: even the most general form of all representation, that of the object for a subject, does not touch it, still less the forms subordinate to it that have their common expression in the principle of sufficient reason, among them time and space and the plurality they alone make possible."
 passages: [p-wwv1-s23-will-free-of-forms]
+quotes:
+  - passage: p-wwv1-s23-will-free-of-forms
+    original: "Der Wille als Ding an sich ist von seiner Erscheinung gänzlich verschieden und völlig frei von allen Formen derselben, in welche er eben erst eingeht, indem er erscheint, die daher nur seine Objektität betreffen, ihm selbst fremd sind."
+    translation: "The will as thing in itself is entirely different from its appearance and wholly free from all the forms of the latter, into which it only enters as it appears, and which therefore concern only its objectity and are foreign to the will itself."
 status: draft
 verified_by: []
 disputes: []

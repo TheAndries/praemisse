@@ -5,6 +5,10 @@ title: "At the beginning stands the great calamity of error that the will is som
 thinker: t-nietzsche
 statement: "At the beginning stands the great calamity of an error, that the will is something that works, that will is a faculty; today we know that it is merely a word."
 passages: [p-gd-vernunft-5-will-as-cause]
+quotes:
+  - passage: p-gd-vernunft-5-will-as-cause
+    original: "Am Anfang steht das grosse Verhängniss von Irrthum, dass der Wille Etwas ist, das wirkt, - dass Wille ein Vermögen ist... Heute wissen wir, dass er bloss ein Wort ist..."
+    translation: "At the beginning stands the great calamity of an error, that the will is something that works, – that will is a faculty... Today we know that it is merely a word..."
 status: draft
 verified_by: []
 disputes: []

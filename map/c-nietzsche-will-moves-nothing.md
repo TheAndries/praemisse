@@ -5,6 +5,10 @@ title: "The will is one of the phantoms of the inner world: it moves nothing, co
 thinker: t-nietzsche
 statement: "The \"inner world\" is full of phantoms and will-o'-the-wisps, and the will is one of them: the will moves nothing any more, consequently explains nothing any more either; it merely accompanies processes, it can also be absent."
 passages: [p-gd-irrthuemer-3-will-as-cause]
+quotes:
+  - passage: p-gd-irrthuemer-3-will-as-cause
+    original: "Die \"innere Welt\" ist voller Trugbilder und Irrlichter: der Wille ist eins von ihnen. Der Wille bewegt nichts mehr, erklärt folglich auch nichts mehr - er begleitet bloss Vorgänge, er kann auch fehlen."
+    translation: "The \"inner world\" is full of phantoms and will-o'-the-wisps: the will is one of them. The will moves nothing any more, consequently explains nothing any more either – it merely accompanies processes, it can also be absent."
 status: draft
 verified_by: []
 disputes: []

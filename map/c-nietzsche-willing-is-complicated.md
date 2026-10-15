@@ -5,6 +5,10 @@ title: "Willing is something complicated, a unity only as a word"
 thinker: t-nietzsche
 statement: "Willing seems to me above all something complicated, something that is a unity only as a word; and precisely in the one word lies the popular prejudice that has become master over the always only slight caution of philosophers."
 passages: [p-jgb-19-willing-complicated]
+quotes:
+  - passage: p-jgb-19-willing-complicated
+    original: "Wollen scheint mir vor Allem etwas Complicirtes, Etwas, das nur als Wort eine Einheit ist, - und eben im Einen Worte steckt das Volks-Vorurtheil, das über die allzeit nur geringe Vorsicht der Philosophen Herr geworden ist."
+    translation: "Willing seems to me above all something complicated, something that is a unity only as a word, – and precisely in the one word lies the popular prejudice that has become master over the always only slight caution of philosophers."
 status: draft
 verified_by: []
 disputes: []

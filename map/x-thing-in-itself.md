@@ -392,7 +392,7 @@ will known »ganz und gar«: the two attacks set on
 JGB 19's »dass Wille und Aktion irgendwie Eins seien«, as the product of an expected
 »Wirkung des Befehls«, attacks the identity of act of will and action of the body
 (§ 18, [c-schopenhauer-act-of-will-and-action-of-body-identical](../../c/schopenhauer-act-of-will-and-action-of-body-identical/)).
-Kant says nothing of immediacy, but he is on a side as to the thing in itself: what
+No Kant passage in the map speaks of immediacy, but he is on a side as to the thing in itself: what
 objects are in themselves »bleibt uns gänzlich unbekannt« (A 42 / B 59,
 [c-kant-things-in-themselves-unknown](../../c/kant-things-in-themselves-unknown/)), where
 Schopenhauer's § 21 names the thing in itself will and § 22 calls the will »ein durchaus
@@ -441,7 +441,9 @@ it has two, and Nietzsche's answer to the question is that the question divides 
 (»Die ›Vernunft‹ in der Philosophie« 6, fourth proposition). The map does not pick. Kant's
 will stands apart from both readings: thought free »als einem Dinge an sich selbst
 angehörig«, it is not offered as what the world is in itself, and what the thing in itself
-it belongs to is remains, on his other sentences in the map, unknown (A 42 / B 59).
+it belongs to is remains, on his other sentences in the map, unknown (A 42 / B 59). Since
+2026-10-15 the will has its own comparison, [the will](../../x/the-will/), five questions
+side by side, built from nodes already in the map.
 
 # What depends on the reading of Kant
 
@@ -485,5 +487,5 @@ nodes on B xxvii–xxix, the row on the will and the sentences on Kant in the pa
 the will; and, added on 2026-10-12 with the nodes on JGB 15, 21 and 34, the row on the
 subject's work, the Nietzsche cells added to rows 2 to 5, the paragraph on causality and the
 in-itself, the sentences on JGB 21 under *None with Nietzsche* and on JGB 34 under immediacy
-and the division, this paragraph, and the clause added to the status note saying so; and, added on 2026-10-13 with the nodes on §§ 24–25, the Schopenhauer cells added to rows 1 to 4 and 7 and the sentences added to their notes, the second entry under the premise that space is no determination of the thing in itself and its paragraph, the entry and paragraph on the premise that space is not dependent on the objects, the sentences on § 24 under the inference and under immediacy, the sentence added to the list of what the map does not yet contain, and this paragraph; and, added on 2026-10-14 with the nodes on the appendix's opening and on the Transcendental Aesthetic, the Schopenhauer cells added to rows 2, 4 and 7 and the sentences added to their notes, the second entry under the premise that space is given a priori and the sentences added to its paragraph, the entry and paragraph on the premise that the laws governing experience are not to be applied beyond it, the entry and paragraph on the premise that things cannot be cognized as they may be in themselves, the paragraph on the Transcendental Aesthetic under the shared premises, the sentence changed in the list of what the map does not yet contain, and this paragraph. The translations were not
+and the division, this paragraph, and the clause added to the status note saying so; and, added on 2026-10-13 with the nodes on §§ 24–25, the Schopenhauer cells added to rows 1 to 4 and 7 and the sentences added to their notes, the second entry under the premise that space is no determination of the thing in itself and its paragraph, the entry and paragraph on the premise that space is not dependent on the objects, the sentences on § 24 under the inference and under immediacy, the sentence added to the list of what the map does not yet contain, and this paragraph; and, added on 2026-10-14 with the nodes on the appendix's opening and on the Transcendental Aesthetic, the Schopenhauer cells added to rows 2, 4 and 7 and the sentences added to their notes, the second entry under the premise that space is given a priori and the sentences added to its paragraph, the entry and paragraph on the premise that the laws governing experience are not to be applied beyond it, the entry and paragraph on the premise that things cannot be cognized as they may be in themselves, the paragraph on the Transcendental Aesthetic under the shared premises, the sentence changed in the list of what the map does not yet contain, and this paragraph; and, added on 2026-10-15, the sentence under *On the will* that links the comparison on the will, the first sentence on Kant under *On immediacy*, reworded to speak of the map's Kant passages and not of Kant (`CHARTER.md` P1, on the adversarial reviewer's finding of the same fault on the new page), and this paragraph. The translations were not
 independently verified, and no one has attested the page.

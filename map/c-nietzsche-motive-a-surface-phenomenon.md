@@ -5,6 +5,10 @@ title: "The so-called motive is another error: a surface phenomenon of conscious
 thinker: t-nietzsche
 statement: "The so-called \"motive\" is another error: merely a surface phenomenon of consciousness, something alongside the deed, which sooner conceals the antecedentia of a deed than represents them."
 passages: [p-gd-irrthuemer-3-will-as-cause]
+quotes:
+  - passage: p-gd-irrthuemer-3-will-as-cause
+    original: "Das sogenannte \"Motiv\": ein andrer Irrthum. Bloss ein Oberflächenphänomen des Bewusstseins, ein Nebenher der That, das eher noch die antecedentia einer That verdeckt, als dass es sie darstellt."
+    translation: "The so-called \"motive\": another error. Merely a surface phenomenon of consciousness, something alongside the deed, which sooner conceals the antecedentia of a deed than represents them."
 status: draft
 verified_by: []
 disputes: []

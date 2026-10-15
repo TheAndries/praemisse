@@ -5,6 +5,10 @@ title: The act of will and the action of the body are one and the same, given in
 thinker: t-schopenhauer
 statement: "The act of will and the action of the body are not two objectively cognized different states linked by the bond of causality, and do not stand in the relation of cause and effect; they are one and the same, only given in two entirely different ways, once quite immediately and once in intuition for the understanding."
 passages: [p-wwv1-s18-body-given-in-two-ways]
+quotes:
+  - passage: p-wwv1-s18-body-given-in-two-ways
+    original: "Der Willensakt und die Aktion des Leibes sind nicht zwei objektiv erkannte verschiedene Zustände, die das Band der Kausalität verknüpft, stehn nicht im Verhältniß der Ursache und Wirkung; sondern sie sind Eines und das Selbe, nur auf zwei gänzlich verschiedene Weisen gegeben: ein Mal ganz unmittelbar und ein Mal in der Anschauung für den Verstand."
+    translation: "The act of will and the action of the body are not two objectively cognized different states which the bond of causality links, they do not stand in the relation of cause and effect; rather they are one and the same, only given in two entirely different ways: once quite immediately and once in intuition for the understanding."
 status: draft
 verified_by: []
 disputes: []

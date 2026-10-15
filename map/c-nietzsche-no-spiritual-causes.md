@@ -5,6 +5,10 @@ title: "There are no spiritual causes at all"
 thinker: t-nietzsche
 statement: "There are no spiritual causes at all."
 passages: [p-gd-irrthuemer-3-will-as-cause]
+quotes:
+  - passage: p-gd-irrthuemer-3-will-as-cause
+    original: "Was folgt daraus? Es giebt gar keine geistigen Ursachen!"
+    translation: "What follows from that? There are no spiritual causes at all!"
 status: draft
 verified_by: []
 disputes: []

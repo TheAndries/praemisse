@@ -2,17 +2,17 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-14 (run 10, end)
+## State as of 2026-10-15 (run 11, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–10 were
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–11 were
 served on that model, no handover note needed. The GitHub and Claude Code Remote tools in
 the tool list are platform-attached to every cloud session and are not a config change
 (`ROUTINE.md`, Ask 6): do not raise it again. Open disputes: none. Attestations: none. Open
-motions: none. INBOX empty at runs 1–10; the owner made no commit between runs 8 and 10, so Ask 8 is unanswered and nothing on the design side changed. Open asks: 4 (mailbox; deferred by owner; blocks
-Phase 2) and **8 (the design brief the mockups refer to; blocks nothing)**. Asks 1, 2, 3, 5,
+motions: none. INBOX empty at runs 1–11; the owner made no commit between runs 8 and 11, so Ask 8 is unanswered and nothing on the design side changed. Open asks: 4 (mailbox; deferred by owner; blocks
+Phase 2), **8 (the design brief the mockups refer to; blocks nothing)** and **9 (the owner's qualified review of the second comparison, https://praemisse.com/x/the-will/, opened 2026-10-15; blocks nothing)**. Asks 1, 2, 3, 5,
 6, 7 done. **The mockups:** on 2026-10-11 the owner uploaded through the GitHub web UI
 (commit `1823719`, »Add files via upload«, no INBOX note) `praemisse-mockup-a.html`
 (»direction A, the edition«, a home page) and `praemisse-mockup-b.html` (»direction B, the
@@ -285,11 +285,7 @@ the aphorism's opening, not in the sentence); `c-kant-things-in-themselves-think
 an sich« alone, no sentence naming Kant). Claim→claim `depends_on` with the connective quoted: true-world-not-obligating →
 idea-refuted (»nicht einmal mehr verpflichtend ... folglich«); evidence-gone →
 no-spiritual-causes (»Das folgt daraus«). Not set: idea-refuted → abolishing (narrative
-sequence, »schaffen wir sie ab!« / »haben wir abgeschafft«, is not a step). Terms: Gewissheit
-"certainty", Erkenntniss "cognition", Vorstellung "representation", Schein "semblance",
-scheinbar "apparent", Täuschung "deception", wirken "work", nachweisen "show", Thatsache
-"fact", Empirie "empirical evidence", Verhängniss "calamity", der Wollende "the one who
-wills". Gutenberg's »wie es in ein Satz ist« (JGB 36) is a transcription slip for »mein
+sequence, »schaffen wir sie ab!« / »haben wir abgeschafft«, is not a step). Terms: Gewissheit "certainty", Erkenntniss "cognition", Vorstellung "representation", Schein and Anschein "semblance", scheinbar "apparent", Täuschung "deception", wirken "work", nachweisen "show", Thatsache "fact", Empirie "empirical evidence", Verhängniss "calamity", der Wollende "the one who wills". Gutenberg's »wie es in ein Satz ist« (JGB 36) is a transcription slip for »mein
 Satz«; rendered "as is my proposition" and said so on the passage. Still not in the map:
 JGB 20 (struck from the comparison's gaps list: the common philosophy of grammar adds no
 cell on this question; JGB 17 and 54 carry grammar), JGB 21's free/unfree will sentences,
@@ -507,15 +503,60 @@ entries now. Gaps still listed on the page: Kant A
 § 25 beyond their openings, §§ 26–29, Anhang on the Aesthetic; Nietzsche JGB 34 on the world as a fiction, JGB 21 on the will, GD Irrthümer
 7–8.
 
+**The second comparison, `x-the-will` (run 11, 2026-10-15), at /x/the-will/, `draft`,
+offered under Ask 9.** Built from nodes already in the map, no new passage; same convention
+and body order as the first (what the three say; where a premise is shared; where they
+diverge; what depends on the readings; what the map does not contain; closing paragraph
+with provenance dates). Five rows: what the will is in relation to appearance and thing in
+itself; is it immediately known; is it the cause of the body's actions (Kant's cell empty:
+B xxvii–xxviii has the will subject to the law, A 538–541 / B 566–569 not in the map); is it
+free, and free of what (Kant: the B xxvii–xxix case and the checked argument; Schopenhauer:
+§ 23's »frei von allen Formen« and »schlechthin grundlos, obwohl jede seiner Erscheinungen
+... unterworfen«, set for the word »frei« and the two-sidedness; Nietzsche: JGB 21's »die
+Freiheit« among the invented signs and »"psychologischer Unfreiheit"«, set for those words,
+neither about a will free in its actions); what is drawn from it (Kant: morality's place,
+B xxviii–xxix; Schopenhauer: the key to nature, § 19; Nietzsche: no spiritual causes, the I
+a fable, JGB 36's attempt). `shared: []`; the two nearest argued and left open: Kant's B
+xxvii causality clause (conditional on the deduction, asserts nothing outright) beside §
+23's groundlessness; § 18's »stehn nicht im Verhältniß der Ursache und Wirkung« beside GD's
+»Der Wille bewegt nichts mehr« (the shared proposition is Schopenhauer's wording and an
+instance of Nietzsche's; the same sentence has the will »auch fehlen«; »mehr«). The hinge
+throughout: Kant's will is *thought* »als einem Dinge an sich selbst angehörig« if the
+critique is right, Schopenhauer's *is* the thing in itself; never write »belongs to« flat.
+The two senses of »frei« (»jenem nicht unterworfen« vs »frei von allen Formen« / »grundlos«)
+left open; the freedom in B xxviii is »als Eigenschaft eines Wesens«, not the will. JGB 19
+and § 18 both refuse a cause–effect relation between will and action for opposite reasons
+(identity; the »Anschein« became a feeling of necessity). Link set on the review's finding:
+`c-schopenhauer-body-given-in-two-ways` ← `c-nietzsche-schopenhauer-ich-will-a-superstition`
+(JGB 16 on § 18's »jenes Jedem unmittelbar Bekannte«), converse set, JGB 16's body says so;
+not set on the identity claim (immediacy there is the ground, »eben weil«; argued on the
+page). The readings of JGB 36: the move that GD's denial concerns »the will as an inner
+faculty only« lives on the claim nodes and in the not-asserted reading's *what tells against
+it*, not on `r-nietzsche-will-to-power-asserted`, which should gain it in a run that revises
+readings. »intelligibler Charakter«: no Kant or Schopenhauer passage in the map carries the
+term; the claim node now says so instead of calling it theirs. Quotations set on the 25 cell
+claims that lacked them (every cell claim of both comparisons now carries one), chosen as the
+sentence the notes quote, verified by `add_quotes.py` (scratchpad; substring check of
+original and translation before writing) and by the build. The first page gained a sentence
+linking the second under *On the will*, and its »Kant says nothing of immediacy« became »No
+Kant passage in the map speaks of immediacy« (P1); both recorded in its closing paragraph as
+unread by the owner. Review rules from run 11 (19 findings, 2 serious, all accepted): before
+writing »the map holds only X of aphorism N«, `ls map/p-*N*` and grep; never write »thinker
+is silent on X«, write »no passage in the map speaks of X«; a page inherits a claim node's
+unmarked attributions, so read the node bodies it cites for sentences about thinkers; when a
+cell is set for a word, say so in the note; a conditional's antecedent the author never
+asserts in the map stays a reason against a shared link; name absent texts by reference
+only, never by what they contain.
+
 **Next.** The thing-in-itself page's Schopenhauer gaps are now small (§ 2, the rest of
 §§ 24–25, §§ 26–29, the Anhang's Aesthetic theorems on time and the categories) and none
-adds a row; the next content run should **begin the second comparison, *the will*** (Kant B xxvii–xxviii, now in
-the map, against Schopenhauer §§ 18–23 and Nietzsche JGB 19, 36, GD Irrthümer 3; JGB 36's
-»"intelligiblen Charakter"« is in Nietzsche's own quotation marks and no Kant passage in
-the map carries the term, so the page may not call it Kant's without adding A 538–541 / B
-566–569), offered to the owner for the same qualified review. Settle the Phase 2 route into
-INBOX.md (prefilled GitHub issue vs the deferred mailbox) in MODEL.md before building the
-dispute and attestation forms. When Schopenhauer text is needed again, try zeno.org first
+adds a row; the comparison on the will is built (above). **Next: settle the Phase 2 route
+into INBOX.md** (a prefilled GitHub issue the owner pastes in, vs the deferred mailbox of
+Ask 4) in MODEL.md as a method question, then design the dispute and attestation forms on
+the node page inside DESIGN.md; give `r-nietzsche-will-to-power-asserted` the inner-faculty
+reply; a fourth thinker after that, by lineage (PLAN.md Phase 3), not before Phase 2 has a
+route. If the owner answers Ask 9, apply his decisions as under Ask 7 (status `checked` with
+`status_note`; versions for changed statements with credit). When Schopenhauer text is needed again, try zeno.org first
 and fall back to Gutenberg/Internet Archive without ZA pages.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in

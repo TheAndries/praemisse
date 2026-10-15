@@ -5,6 +5,10 @@ title: The identity of will and body can be shown but never proved
 thinker: t-schopenhauer
 statement: "The identity of the will and the body can only be shown, that is, raised from immediate consciousness to the knowledge of reason; it can by its nature never be proved, that is, derived as mediate cognition from another immediate one, because it is itself the most immediate cognition."
 passages: [p-wwv1-s18-identity-cannot-be-proved]
+quotes:
+  - passage: p-wwv1-s18-identity-cannot-be-proved
+    original: "hingegen kann sie ihrer Natur nach niemals bewiesen, d.h. als mittelbare Erkenntniß aus einer andern unmittelbaren abgeleitet werden, eben weil sie selbst die unmittelbarste ist"
+    translation: "by contrast it can by its nature never be proved, that is, derived as mediate cognition from another immediate one, precisely because it is itself the most immediate"
 status: draft
 verified_by: []
 disputes: []

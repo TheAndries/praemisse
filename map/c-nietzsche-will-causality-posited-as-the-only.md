@@ -5,6 +5,10 @@ title: "If we believe in the causality of the will, we must try positing it hypo
 thinker: t-nietzsche
 statement: "If we really recognize the will as working, if we believe in the causality of the will (and at bottom the belief in it is precisely our belief in causality itself), then we must make the attempt to posit the causality of the will hypothetically as the only one."
 passages: [p-jgb-36-will-to-power]
+quotes:
+  - passage: p-jgb-36-will-to-power
+    original: "Die Frage ist zuletzt, ob wir den Willen wirklich als wirkend anerkennen, ob wir an die Causalität des Willens glauben: thun wir das - und im Grunde ist der Glaube daran eben unser Glaube an Causalität selbst -, so müssen wir den Versuch machen, die Willens-Causalität hypothetisch als die einzige zu setzen."
+    translation: "The question is in the end whether we really recognize the will as working, whether we believe in the causality of the will: if we do – and at bottom the belief in it is precisely our belief in causality itself –, then we must make the attempt to posit the causality of the will hypothetically as the only one."
 status: draft
 verified_by: []
 disputes: []

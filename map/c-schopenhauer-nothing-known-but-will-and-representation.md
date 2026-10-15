@@ -5,6 +5,10 @@ title: Besides the will and the representation nothing at all is known to us, no
 thinker: t-schopenhauer
 statement: "Besides the will and the representation nothing at all is known to us, nor thinkable."
 passages: [p-wwv1-s19-analogy-of-the-body]
+quotes:
+  - passage: p-wwv1-s19-analogy-of-the-body
+    original: "Außer dem Willen und der Vorstellung ist uns gar nichts bekannt, noch denkbar."
+    translation: "Besides the will and the representation nothing at all is known to us, nor thinkable."
 status: draft
 verified_by: []
 disputes: []

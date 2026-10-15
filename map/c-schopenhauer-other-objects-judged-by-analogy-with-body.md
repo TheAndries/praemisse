@@ -5,6 +5,10 @@ title: We shall judge all other objects by analogy with our own body and assume 
 thinker: t-schopenhauer
 statement: "We shall henceforth use the double cognition we have of our own body as a key to the essence of every appearance in nature, judge all objects given only as representations on the analogy of that body, and therefore assume that what remains of them when their existence as representation is set aside must in its inner essence be the same as what we in ourselves call will."
 passages: [p-wwv1-s19-analogy-of-the-body]
+quotes:
+  - passage: p-wwv1-s19-analogy-of-the-body
+    original: "alle Objekte, die nicht unser eigener Leib, daher nicht auf doppelte Weise, sondern allein als Vorstellungen unserm Bewußtseyn gegeben sind, eben nach Analogie jenes Leibes beurtheilen und daher annehmen, daß, wie sie einerseits, ganz so wie er, Vorstellung und darin mit ihm gleichartig sind, auch andererseits, wenn man ihr Daseyn als Vorstellung des Subjekts bei Seite setzt, das dann noch übrig Bleibende, seinem innern Wesen nach, das selbe seyn muß, als was wir an uns Wille nennen."
+    translation: "judge all objects which are not our own body, and are therefore given to our consciousness not in a double way but only as representations, on the analogy of that body, and therefore assume that, as on the one hand they are, just like it, representation and in this of the same kind as it, so on the other hand, if one sets aside their existence as representation of the subject, what then still remains must, in its inner essence, be the same as what we in ourselves call will."
 status: draft
 verified_by: []
 disputes: []

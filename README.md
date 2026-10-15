@@ -16,7 +16,7 @@ accumulated in it, not because of what was generated for it. Structure, passages
 attestations and disputes are the asset. Prose is rendered from them by whatever the best
 available model is, and is never the thing that is checked.
 
-**Phase:** 1 built, Checkpoint 1 answered 2026-10-10: the site is live at https://praemisse.com/, the map holds Kant, Schopenhauer and Nietzsche on the thing in itself (205 nodes, all `draft` or `checked`), and the comparison page https://praemisse.com/x/thing-in-itself/ has been read by the owner and is `checked` with the qualification its status line shows (Ask 7 done). See `PLAN.md`.
+**Phase:** 1 built, Checkpoint 1 answered 2026-10-10: the site is live at https://praemisse.com/, the map holds Kant, Schopenhauer and Nietzsche on the thing in itself (206 nodes, all `draft` or `checked`), and the comparison page https://praemisse.com/x/thing-in-itself/ has been read by the owner and is `checked` with the qualification its status line shows (Ask 7 done); a second comparison, https://praemisse.com/x/the-will/, is `draft` and offered for the same review (Ask 9). See `PLAN.md`.
 
 ## The files
 

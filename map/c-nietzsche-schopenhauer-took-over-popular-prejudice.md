@@ -5,6 +5,10 @@ title: "In saying that the will alone is known to us entirely, Schopenhauer took
 thinker: t-nietzsche
 statement: "Schopenhauer gave to understand that the will alone is really known to us, known entirely and completely, known without subtraction or addition; but it seems to me again and again that in this case too he has only done what philosophers are accustomed to do: he has taken over and exaggerated a popular prejudice."
 passages: [p-jgb-19-willing-complicated]
+quotes:
+  - passage: p-jgb-19-willing-complicated
+    original: "ja Schopenhauer gab zu verstehen, der Wille allein sei uns eigentlich bekannt, ganz und gar bekannt, ohne Abzug und Zuthat bekannt. Aber es dünkt mich immer wieder, dass Schopenhauer auch in diesem Falle nur gethan hat, was Philosophen eben zu thun pflegen: dass er ein Volks-Vorurtheil übernommen und übertrieben hat."
+    translation: "indeed Schopenhauer gave to understand that the will alone is really known to us, known entirely and completely, known without subtraction or addition. But it seems to me again and again that Schopenhauer in this case too has only done what philosophers are just accustomed to do: that he has taken over and exaggerated a popular prejudice."
 status: draft
 verified_by: []
 disputes: []
