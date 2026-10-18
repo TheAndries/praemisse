@@ -5,7 +5,7 @@ title: "The reading on which JGB 36 asserts that the world is will to power"
 thinker: t-nietzsche
 reading_of: c-nietzsche-world-would-be-will-to-power
 statement: "JGB 36 presents, in a conditional and cautious form, Nietzsche's own view that the world is will to power: the attempt it calls commanded is one Nietzsche makes, and its result is the ontology of will to power."
-passages: [p-jgb-36-will-to-power, p-jgb-36-not-representation]
+passages: [p-jgb-36-will-to-power, p-jgb-36-not-representation, p-gd-irrthuemer-3-will-as-cause, p-gd-vernunft-5-will-as-cause]
 literature:
   - "John Richardson, *Nietzsche's System* (New York: Oxford University Press, 1996), ch. 1, 'Being', which develops the thesis that the world is will to power as Nietzsche's 'power ontology'"
 depends_on: []
@@ -40,4 +40,31 @@ is the antecedent »ob wir an die Causalität des Willens glauben«
 own voice: »Der Wille bewegt nichts mehr, erklärt folglich auch nichts mehr«
 ([c-nietzsche-will-moves-nothing](../../c/nietzsche-will-moves-nothing/), [c-nietzsche-will-as-cause-the-great-error](../../c/nietzsche-will-as-cause-the-great-error/)).
 That is the ground of the other reading, [r-nietzsche-will-to-power-not-asserted](../../r/nietzsche-will-to-power-not-asserted/).
-The map does not pick a reading (`CHARTER.md` P9).
+
+**What it answers to GD (added 2026-10-18).** On this reading GD's denial does not reach
+the premise of JGB 36. The answer is the map's articulation of what this reading needs,
+drawn from the passages; it is not taken from Richardson 1996, which the node lists for the
+thesis, not for this reply. What »Die vier grossen Irrthümer« 3 denies is the will as the
+first of the »"inneren Thatsachen"«, the will of »Wir glaubten uns selbst im Akt des
+Willens ursächlich«, one of the »Trugbilder und Irrlichter« of the »"innere Welt"«
+([p-gd-irrthuemer-3-will-as-cause](../../p/gd-irrthuemer-3-will-as-cause/)); what »Die
+›Vernunft‹ in der Philosophie« 5 calls the error is »dass der Wille Etwas ist, das wirkt, -
+dass Wille ein Vermögen ist«, the will as something that works, a faculty
+([p-gd-vernunft-5-will-as-cause](../../p/gd-vernunft-5-will-as-cause/)). The
+»Willens-Causalität« JGB 36 posits is not that: it is will working on will, »ob nicht
+überall, wo "Wirkungen" anerkannt werden, Wille auf Wille wirkt«, in »alles mechanische
+Geschehen« as »Willenskraft, Willens-Wirkung«, and »"Wille" kann natürlich nur auf "Wille"
+wirken - und nicht auf "Stoffe"«
+([p-jgb-36-will-to-power](../../p/jgb-36-will-to-power/)); neither GD passage in the map
+speaks of will working on will. So read, the denial of the will as inner fact and the
+hypothesis of the world as will to power stand together. What tells against this answer,
+from the same passages: »Die ›Vernunft‹ in der Philosophie« 5 has the belief »an Willen
+als Ursache überhaupt«, as cause in general, not only as a faculty, in a reason that »sieht
+überall Thäter und Thun« and projects its belief »auf alle Dinge«, the nearest thing in GD
+to JGB 36's »überall, wo "Wirkungen" anerkannt werden«; its »das wirkt« is the »wirkend« of
+JGB 36's own question, »ob wir den Willen wirklich als wirkend anerkennen«, the same verb on
+both sides; the same section counts »Ursache« itself among what »das Vernunft-Vorurtheil
+uns zwingt« to posit, so that on GD's ground the belief in causality falls with the belief
+in the will, as JGB 36 says the two stand or fall together, »im Grunde ist der Glaube daran
+eben unser Glaube an Causalität selbst«. The map does not pick a reading (`CHARTER.md`
+P9).

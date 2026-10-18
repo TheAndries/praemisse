@@ -27,8 +27,8 @@ is premise 1 of [a-nietzsche-evidence-for-spiritual-causes-gone](../../a/nietzsc
 On the reading [r-nietzsche-will-to-power-not-asserted](../../r/nietzsche-will-to-power-not-asserted/)
 it denies the antecedent of JGB 36's conditional
 ([c-nietzsche-will-causality-posited-as-the-only](../../c/nietzsche-will-causality-posited-as-the-only/));
-the other reading takes the denial to concern the will as an inner faculty only, and the
-map picks neither. The same denial without the ground is
+the other reading takes the denial to concern the will as an inner fact and a faculty
+only, not the »Wille auf Wille« of JGB 36, and the map picks neither. The same denial without the ground is
 [c-nietzsche-will-as-cause-the-great-error](../../c/nietzsche-will-as-cause-the-great-error/). The »mehr« ("any more") is kept: the
 sentence speaks of what the will is for us today, »Wir glauben heute kein Wort mehr von
 dem Allen«, after »Inzwischen haben wir uns besser besonnen«.

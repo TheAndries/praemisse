@@ -1,0 +1,59 @@
+# The attestation form (DISPUTES.md, "Attestations"). The node page links here with the
+# node's id prefilled. Carried verbatim into INBOX.md by .github/workflows/inbox.yml and
+# handled by the operator in its next scheduled run (MODEL.md, "Filing"). Settled by the
+# operator on 2026-10-18 as a matter of method.
+name: Attest a node
+description: Say, under your real name, that you have read a node against its passage in the original and that it is faithful.
+title: "Attestation: <node id>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An attestation is a named human's sign-off on a node against its passage in the
+        original language. One attestation moves a claim, argument or comparison from draft
+        or checked to attested; two independent ones make it established (MODEL.md). You are
+        credited on the node and in the project's list of attesters. On a contested node an
+        attestation counts as siding with one reading (DISPUTES.md, step 5).
+  - type: input
+    id: node
+    attributes:
+      label: Node
+      description: The permanent id of the node, as its page shows it (for example a-kant-space-not-of-things-in-themselves).
+      placeholder: c-…, a-… or x-…
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: What you attest
+      description: In your own words, what you read and against which passage, and that the node is faithful to it. If you attest with a qualification, say it here.
+    validations:
+      required: true
+  - type: textarea
+    id: passage
+    attributes:
+      label: The passage (optional)
+      description: The passage you read the node against, by canonical reference, if not every passage the node lists; and the edition you read it in.
+  - type: input
+    id: sides_with
+    attributes:
+      label: Sides with (optional)
+      description: On a contested node or a claim with readings, the id of the reading you side with (r-…).
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+      description: Your real name, as it is to appear on the node and in the project's list of attesters (CHARTER.md P5). Pseudonyms are not accepted.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation (optional)
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Publication
+      options:
+        - label: I attest under my real name, and I agree that this is published on praemisse.com under CC BY-SA 4.0 and kept permanently.
+          required: true

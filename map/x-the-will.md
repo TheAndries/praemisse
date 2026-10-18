@@ -271,9 +271,9 @@ Willens-Causalität hypothetisch als die einzige zu setzen«
 on the [reading on which the aphorism does not assert its conclusion](../../r/nietzsche-will-to-power-not-asserted/),
 GD's »bewegt nichts mehr« denies the antecedent, on the
 [reading on which it does](../../r/nietzsche-will-to-power-asserted/) GD's denial
-concerns the will as an inner faculty only, a move the other reading's node records as
-what tells against itself and the asserted reading's node does not yet state, and the map
-picks neither. Kant has no
+concerns the will as an inner fact and a faculty only, not the »Wille auf Wille« of JGB 36,
+an answer that reading's node states since 2026-10-18 with the passages and with what tells
+against it, and the map picks neither. Kant has no
 position in this row: B xxvii–xxviii's will in the appearance is »dem Naturgesetze nothwendig
 gemäß«, a will whose visible actions are under the law, and no passage in the map has
 Kant on the will as a cause of actions.
@@ -405,7 +405,9 @@ map (Kant's A 42 / B 59 added 2026-10-06, B xxvii–xxix on 2026-10-07 and 2026-
 Schopenhauer's §§ 18–23 and the Anhang's sentence on self-consciousness added 2026-10-08,
 § 25 on 2026-10-13; Nietzsche's JGB 16, 19, 36 and GD added 2026-10-09, JGB 21 on
 2026-10-12), with no new node and one link set on an existing pair, JGB 16's attack on
-§ 18's first sentence, recorded in `CHANGELOG.md`, and offered to the owner, Andries
+§ 18's first sentence, recorded in `CHANGELOG.md` (the sentence on the two readings of JGB
+36 under *On the will as cause* was reworded on 2026-10-18, when the asserted reading's node
+gained its answer to GD), and offered to the owner, Andries
 ([`BOARD.md`](https://github.com/TheAndries/praemisse/blob/main/BOARD.md)), for the same
 qualified review the [comparison on the thing in itself](../../x/thing-in-itself/) had
 (`ASKS.md`, Ask 9). No human has read it; the translations were not independently verified,

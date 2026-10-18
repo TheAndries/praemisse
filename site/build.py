@@ -56,6 +56,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 import validity  # noqa: E402  (tools/validity.py, the machine validity check)
 PREFIX = ""  # relative path from the page being rendered to the site root; set per page
+REPO = "https://github.com/TheAndries/praemisse"  # where the dispute and attestation forms live (MODEL.md, Filing)
 SITE = ROOT / "site"
 MAP = ROOT / "map"
 OUT = SITE / "_build"
@@ -387,8 +388,17 @@ def check_comparison(n: Node, ids: dict) -> list[str]:
     return errs
 
 
+def check_filing_issue(n: Node) -> list[str]:
+    """`issue:` on a d- or v- node is the number of the GitHub issue it was filed as, by
+    which the inbox workflow tells the filer where their record is (MODEL.md, Filing)."""
+    v = n.meta.get("issue")
+    if v is not None and (not isinstance(v, int) or isinstance(v, bool) or v < 1):
+        return ["issue must be the number of the GitHub issue the filing was made as"]
+    return []
+
+
 def check_dispute(n: Node, ids: dict) -> list[str]:
-    errs: list[str] = []
+    errs: list[str] = check_filing_issue(n)
     for key in ("target", "disputant", "date", "kind", "contested_claim", "alternative", "outcome"):
         if not n.meta.get(key):
             errs.append(f"a dispute needs {key}")
@@ -410,7 +420,7 @@ def check_dispute(n: Node, ids: dict) -> list[str]:
 
 
 def check_attestation(n: Node, ids: dict) -> list[str]:
-    errs: list[str] = []
+    errs: list[str] = check_filing_issue(n)
     for key in ("target", "attester", "date", "statement"):
         if not n.meta.get(key):
             errs.append(f"an attestation needs {key}")
@@ -627,11 +637,14 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
     if n.meta.get("superseded_by"):
         chain.append("Superseded by " + link(ids, n.meta["superseded_by"]))
     disputes = as_list(n.meta.get("disputes"))
+    filing = render_filing(n)
     meta_line = " · ".join(
         [f"Permanent address: {esc(n.url)}", f"Produced by {esc(n.meta.get('produced_by'))}"]
         + chain
         + ["Disputes: " + (", ".join(link(ids, d) for d in disputes) if disputes else "none")]
     )
+    if filing:
+        meta_line += "</p><p>" + filing
 
     body = "" if n.prefix in ("d", "v") else markdown(n.body)  # a dispute or attestation renders its body itself
     if n.prefix == "x":
@@ -694,6 +707,24 @@ def render_comparison(n: Node, ids: dict[str, Node]) -> tuple[str, str]:
         shared_items.append(f'<dt>{inline(str(sh.get("premise", "")))}</dt><dd>Held in {claims}.' + (f" Passages: {pas}." if pas else "") + "</dd>")
     shared = f'<section class="shared"><h2>Premises shared</h2><dl class="facts">{"".join(shared_items)}</dl></section>' if shared_items else ""
     return table, shared
+
+
+def render_filing(n: Node) -> str:
+    """The two links by which a reader files a dispute or an attestation on this node
+    (DISPUTES.md: "Filed through the form on the node page"; MODEL.md, Filing). Plain links
+    to the two issue forms with the node's id prefilled, no script, no button (DESIGN.md 2, 7).
+    A dispute may be filed on any claim, argument, passage, reading or comparison; an
+    attestation only on what carries a status. Thinkers, works, disputes and attestations
+    themselves get neither."""
+    from urllib.parse import quote_plus
+    parts = []
+    if n.prefix in ("c", "a", "p", "r", "x"):
+        parts.append(f'<a href="{REPO}/issues/new?template=dispute.yml&amp;title={quote_plus("Dispute: " + n.id)}&amp;node={quote_plus(n.id)}">Dispute this node</a>')
+    if n.prefix in ("c", "a", "x"):
+        parts.append(f'<a href="{REPO}/issues/new?template=attestation.yml&amp;title={quote_plus("Attestation: " + n.id)}&amp;node={quote_plus(n.id)}">Attest this node</a>')
+    if not parts:
+        return ""
+    return " · ".join(parts) + f' — under your real name, citing a passage; the form is a GitHub issue, and what you file is published on this page under <a href="{REPO}/blob/main/DISPUTES.md">DISPUTES.md</a>.'
 
 
 def render_quotes(n: Node, ids: dict[str, Node]) -> str:

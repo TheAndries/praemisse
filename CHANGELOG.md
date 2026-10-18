@@ -2,6 +2,169 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-18 — run 12: Phase 2 opened, the filing route, and the asserted reading's answer to GD
+
+Twelfth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. **No run is recorded for
+2026-10-16 or 2026-10-17:** the last commit before this one is run 11's of 2026-10-15, and
+no changelog entry, memory change or branch exists for the two days between. The operator
+cannot see the routine's run history from inside a run and does not know whether the runs
+fired and failed before committing or did not fire; the owner is asked to look (Ask 10).
+No checkpoint was missed by it, and no dispute was pending; from today a filing's deadlines
+count in runs, so a run that does not fire would matter, and `PLAN.md` §5 now tracks it.
+
+**Step 1.** No ask changed status since run 11. Asks 8 and 9 are unanswered: no commit, note
+or file arrived between runs 11 and 12; neither blocks anything. Ask 4 stays deferred by the
+owner; it no longer blocks Phase 2 (below), and is now the second filing route.
+
+**Step 2.** `INBOX.md` empty; the repository as run 11 left it. No dispute, no attestation, no
+owner note.
+
+**Step 3.** No open motion.
+
+**Step 4a, the method question: how a dispute or attestation reaches `INBOX.md`.** The plan
+named it the next thing to settle before the forms are built, with two candidates: a
+prefilled GitHub issue the owner pastes in, or the mailbox of Ask 4. Settled as a matter of
+method (`BOARD.md`, tie-break; `MODEL.md`, *Filing*) in a third form that depends on nobody
+reading mail and on no connector: the issue form plus an Action that carries it in. Why not
+the owner pasting: his time is one session a week and the protocol's deadlines are in runs;
+a filing that waits a week for a paste makes the deadline a fiction. Why not the mailbox
+alone: it is deferred, and mail needs a reader. Why an Action: `notify-asks.yml` already
+proved the pattern, built-in token, no secrets, nothing spent; a push by the token does not
+start the site build, and the build never reads `INBOX.md`, so nothing is published by a
+machine, which `CHARTER.md` P4 and `DISPUTES.md` step 1 require to be the operator's act in a
+run. What a filer needs is a GitHub account; reading needs none (P6). Built today:
+- `.github/ISSUE_TEMPLATE/dispute.yml` and `attestation.yml`, whose fields are the five
+  items of *What a dispute contains* plus kind, real name, affiliation and a consent box to
+  publication by name under CC BY-SA 4.0; the attestation form asks what is attested, the
+  passage read against (optional), the reading sided with (optional), name, affiliation,
+  consent.
+- `site/build.py`: every claim, argument, passage, reading and comparison page ends with the
+  link *Dispute this node*, and claims, arguments and comparisons also with *Attest this
+  node*, each opening the form with the node's id prefilled, followed by one sentence on the
+  terms and a link to `DISPUTES.md` in the repository. Plain anchors in the `.meta` line,
+  no script, nothing loaded from GitHub, readable with JavaScript off; thinker, work,
+  dispute and attestation pages get neither. Inside `DESIGN.md` 2, 6 and 7 as a line of two
+  links among the lists of links; argued here rather than moved as a motion because it
+  changes no principle. A `d-` or `v-` node may carry `issue:` (the number), checked as a
+  positive integer (negative test passed on a scratch copy).
+- `.github/workflows/inbox.yml` and `tools/inbox_from_issue.py`: on an issue opened from a
+  form (recognized by the forms' headings in the body, not the title, which a filer may
+  edit), the issue is appended verbatim to `INBOX.md` with its date, kind, node, number,
+  login and address, committed to `main` as the Actions bot with retries that rebase on the
+  daily run's push, and a receipt is posted on the issue; on a push that adds or changes a
+  `d-`/`v-` node naming an issue, or a changelog line `Returned (issue #N, date): reason.`,
+  the workflow posts the node's permanent address and outcome, or the return, once per
+  state, after checking the issue is a filing. Every posted text is signed as the project
+  and says an AI operator writes the replies and the workflow posted it (P11); nothing is
+  posted to anyone who did not write in (P10). Dry runs of every path passed on fake issues.
+- The about page, `README.md`, `INBOX.md`'s header and `PLAN.md` say so.
+The daily run must from now on fetch and rebase before pushing, since the workflow may have
+committed `INBOX.md` meanwhile (memory).
+
+**Step 4b, the node: 1 revised, no new passage, no new claim.** Run 11's review found that
+the move »GD's denial concerns the will as an inner faculty only« was credited to the
+asserted reading of JGB 36 on the page and on two claim nodes while
+`r-nietzsche-will-to-power-asserted` nowhere stated it. The node now has the paragraph
+*What it answers to GD*, with the two GD passages added to its `passages:`: what GD
+»Irrthümer« 3 denies is the will as the first of the »"inneren Thatsachen"«, what »Vernunft«
+5 calls the error is »dass der Wille Etwas ist, das wirkt, - dass Wille ein Vermögen ist«,
+and the »Willens-Causalität« JGB 36 posits is »Wille auf Wille wirkt«, of which neither GD
+passage in the map speaks; against the answer, from the same passages, »an Willen als
+Ursache überhaupt« in a reason that »sieht überall Thäter und Thun«, the »wirkt« that is JGB
+36's own »wirkend«, and »Ursache« itself among what the prejudice of reason compels us to
+posit, so that on GD's ground causality falls with the will, as JGB 36 says the two stand
+or fall together. The paragraph says the answer is the map's articulation of what the
+reading needs, not Richardson's, and the map picks neither reading. The statement is
+unchanged, so no version is superseded; the paragraph is dated. The sentence on it in
+`x-the-will` under *On the will as cause* was reworded and the page's closing paragraph
+records it; the two nodes that paraphrased the move (`c-nietzsche-will-moves-nothing`,
+`r-nietzsche-will-to-power-not-asserted`) now word it as the reading's node does.
+
+**The adversarial pass, and what it found.** A second agent was given the revised node and
+its diff, its four passages, the other reading, the three claim nodes it relates to, the
+comparison's diff, and the whole filing route against `CHARTER.md`, `DISPUTES.md`,
+`DESIGN.md`, `BOARD.md`, `ROUTINE.md` and GitHub's own mechanics, with the brief to break
+fidelity, P1, P9, the form fields against the protocol, the posture of every text a
+stranger would read, and the code. It verified every quotation mechanically, built the site
+to a scratch directory, ran the script with a stubbed `gh`, and returned 20 findings, 2
+serious, 8 moderate, 10 minor; I accepted all 20 and changed the files before commit.
+- *Serious, rendering.* Two line breaks in the new paragraph fell where Markdown sees list
+  markers (»JGB\n36.« and »wirkt,\n- dass«), so the page rendered the paragraph's second
+  half as the only ordered list on the site, and `--check` cannot see it. Rewrapped; the
+  rebuilt page has no list.
+- *Serious, P9 in a gloss.* »dass der Wille Etwas ist, das wirkt, - dass Wille ein Vermögen
+  ist« was glossed »the will as a faculty«, keeping the clause that helps the asserted
+  reading and dropping »das wirkt«, the very verb of JGB 36's »wirkend«, which the GD passage
+  node says it was translated to match. Now »the will as something that works, a faculty«,
+  and the verb match stands under what tells against the answer.
+- *Moderate.* The counter-evidence missed »sieht überall Thäter und Thun« and »auf alle
+  Dinge«, the nearest thing in GD to JGB 36's »überall«, and the closing clause implied GD
+  keeps causality in general where the same section counts »Ursache« among the errors;
+  both rewritten. The answer read as Richardson's, with nothing of his cited for it; now
+  said to be the map's articulation. The script took the kind from the issue title, which a
+  filer may edit, so a retitled filing would have vanished without a receipt; now from the
+  body's headings. A concurrency group would have let GitHub drop the middle of three
+  filings opened within one run; removed. The about page and README said all node pages
+  carry both links; corrected to which carry which. The receipt promised a return for an
+  attestation without a passage, which that form never asked for; kind-specific now, and
+  the form gained an optional passage field. A returned filing was to reach the filer only
+  if the owner pasted the reason, against the paragraph's own promise; the workflow now
+  posts a `Returned (issue #N, date): reason.` line from the changelog. The comparison
+  referred to a changelog entry that did not yet exist; it does now.
+- *Minor, 10 of them.* The claim node and the other reading still said »inner faculty only«;
+  »the denial of the inner fact« where GD names three; the paragraph undated; `DISPUTES.md`
+  named as bare text on the site, now linked, and »is published« qualified by the protocol;
+  the intake dry run documented as needing `gh`; an unused variable, the AI sentence added
+  to the record comment, and a check that the target issue is a filing before anything is
+  posted; `contents: write` moved to the intake job and a dispatch input for re-running an
+  intake; `INBOX.md`'s header named the workflow; the plan's risk item counted the receipt
+  as a mitigation of a run that does not fire, which it is not; Ask 10 told the owner to
+  write »test« in the name field, against the form's own consent box, and did not ask him
+  to approve the texts a stranger first reads, which are public posture and his.
+The pass cost about 120,000 tokens of the agent's own and took seven minutes. New kinds
+today: a Markdown list marker born of a line wrap, which no check sees; a gloss that picks a
+reading by keeping one of two clauses; a route that silently drops what it was built to
+carry (an edited title, a concurrency group); and a promise in a form's preamble that the
+code behind it did not keep.
+
+**What else was wrong and why.**
+- The first MODEL paragraph's sentence on returned filings was incoherent (»through the same
+  `issue:` field on no node«); rewritten before the review, and again after it.
+- The first quotation of JGB 36's »unser Glaube an Causalität selbst« skipped »der Glaube
+  daran« in the middle; caught by the operator's own substring check before the review.
+- `memory.md` had reached 7,950 of 8,000 words; rewritten at about 5,000 (Step 6).
+
+**Step 5.** Strategy changed: `PLAN.md` rewritten with the date. Phase 2 is opened: the
+route is settled and built; what follows is the owner's test (Ask 10), filings handled
+inside the deadlines, which now bind, his invitations in his own name, and the mailbox as a
+second route when he sets it up; a fourth thinker comes after Phase 2 has seen a filing or
+the owner says to go on; §5 gains the risk of an unexercised route and a run that does not
+fire.
+
+**Step 6.** `memory.md` rewritten, about 5,000 of 8,000 words. Dropped: the per-run node
+inventories of runs 7–11, merged into the three node lists and the comparison paragraph;
+the per-run review summaries, merged into one list of rules; the list of the sixteen claims
+that first carried quotes; the screenshot detail. Added: the filing route in full, how to
+handle a filing in a run, the fetch-and-rebase rule, the missing runs, Ask 10.
+
+**Step 8.** Ask 10 opened: test the filing route once from a node page under his own name,
+approve or change the texts a stranger first reads, and look at the routine's run history
+for 2026-10-16 and 2026-10-17. Asks 4, 8 and 9 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-19; first, if `INBOX.md` has an
+entry, the filing handled under `DISPUTES.md` (published as a `d-` or `v-` node with
+`issue:`, or returned with a `Returned (issue #N, date): reason.` line here); if the owner
+has answered Ask 8, 9 or 10, what follows; otherwise a content run on a gap both pages
+list, Kant's A 538–541 / B 566–569 first, since it would fill the one empty cell on the
+will as cause, through the adversarial pass, with a quote on every new cell claim.
+
+**Effort.** About 250,000 of the 300,000-token ceiling in this session plus about 120,000 in
+the adversarial agent: a third on reading the governing files and the nodes around JGB 36,
+a third on the route (the forms, the workflow, the script and its tests, the build, the
+model paragraph), the rest on the review, the 20 fixes, the memory rewrite and the records.
+Nothing spent.
+
 ## 2026-10-15 — run 11: the comparison on the will, and quotations on the cells
 
 Eleventh scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

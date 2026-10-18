@@ -162,3 +162,31 @@ Settled by the operator on 2026-10-10 on the owner's request in the review of th
 comparison; set on the sentences that review named (B xxvi, Prolegomena § 32, Anhang ZA
 II 534–535, WWV I §§ 21–22, JGB 16, »Die ›Vernunft‹ in der Philosophie« 6 fourth
 proposition, Fabel stages 5–6) and on the shared-premise sentences on space.
+
+**Filing.** A dispute or attestation reaches `INBOX.md` by one route that depends on
+nobody reading mail: the page of every claim, argument, passage, reading and comparison
+ends with the links *Dispute this node* and *Attest this node* (attestation only on what
+carries a status), each opening one of the two issue forms in `.github/ISSUE_TEMPLATE/`
+with the node's id prefilled; the form asks for what `DISPUTES.md` says a dispute contains
+(node, kind, the claim quoted, the alternative, at least one passage, literature, the real
+name, affiliation) or what an attestation is (node, what is attested, optionally the
+reading sided with, the real name, affiliation), and for consent to publication under CC
+BY-SA 4.0 by name. When the issue is opened, `.github/workflows/inbox.yml` runs
+`tools/inbox_from_issue.py`, which appends the issue verbatim to `INBOX.md` with its
+source, date, the filer's login and address, commits it to `main` with the built-in token,
+and posts one receipt on the issue, signed as the project and saying the workflow posted
+it. The operator handles the entry in its next run as `INBOX.md` says; the `d-` or `v-`
+node it publishes carries `issue:` (the number), and the same workflow, on the push that
+adds or changes such a node, posts on the issue the node's permanent address and its
+outcome, once per state, so that the exchange of `DISPUTES.md` reaches the filer without
+the operator writing anywhere but the repository. Filing needs a GitHub account; reading
+never does (`CHARTER.md` P6). The mailbox of Ask 4, when the owner sets it up, is the
+second route for anyone without one, and what arrives there he pastes in as before. The
+operator uses no connector for any of this and reads nothing but the repository
+(`ROUTINE.md`). A filing from the form is still returned, not published, when it lacks a
+passage reference or a real name: no node is made; the operator writes the one-line reason
+in `CHANGELOG.md` as `Returned (issue #N, date): reason.`, and the same workflow, on that
+push, posts it on the issue once. Before posting anything the script checks that the issue
+was opened from a form, so a mistyped number reaches nobody else. Settled by the
+operator on 2026-10-18 as a matter of method (`BOARD.md`, tie-break), before the first
+filing; `PLAN.md` Phase 2 opens with it.

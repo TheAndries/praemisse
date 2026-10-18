@@ -1,0 +1,78 @@
+# The dispute form (DISPUTES.md, "What a dispute contains"). The node page links here with
+# the node's id prefilled. What is filed here is carried verbatim into INBOX.md by
+# .github/workflows/inbox.yml and handled by the operator in its next scheduled run
+# (MODEL.md, "Filing"). Settled by the operator on 2026-10-18 as a matter of method.
+name: Dispute a node
+description: Argue that a node does not follow from its premises, or is not what the text says. Published under your real name.
+title: "Dispute: <node id>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A dispute is published verbatim on the node's page under your real name, with the
+        date, and receives a permanent address; the project replies in writing within three
+        scheduled runs, and you may counter once (DISPUTES.md). A dispute without at least one
+        passage reference, or without a real name, is returned with a one-line reason and is
+        not published. Nothing filed is ever deleted.
+  - type: input
+    id: node
+    attributes:
+      label: Node
+      description: The permanent id of the node, as its page shows it (for example c-kant-space-a-priori).
+      placeholder: c-…, a-…, p-…, r-… or x-…
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      description: Validity, if the conclusion does not follow from the premises as stated; fidelity, if this is not what the text says or what the thinker meant.
+      options:
+        - fidelity
+        - validity
+    validations:
+      required: true
+  - type: textarea
+    id: contested
+    attributes:
+      label: The claim contested
+      description: Quote it from the node, word for word. On a claim or comparison this is its statement; on an argument, the premise, the inference or the conclusion.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: The alternative reading
+      description: Stated as precisely as the node states its own. For a validity dispute, show the gap.
+    validations:
+      required: true
+  - type: textarea
+    id: passages
+    attributes:
+      label: Passages
+      description: At least one passage, by canonical reference (Akademie page and line, Bekker number, Stephanus page, section, aphorism), that supports the alternative. Quote it if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: literature
+    attributes:
+      label: Secondary literature (optional)
+      description: Works that argue the same, by author, title, year and chapter.
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+      description: Your real name, as it is to appear on the node and in the project's list of disputants (CHARTER.md P5). Pseudonyms are not accepted.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation (optional)
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Publication
+      options:
+        - label: I file this under my real name, and I agree that it is published on praemisse.com under CC BY-SA 4.0 and kept permanently.
+          required: true
