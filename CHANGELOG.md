@@ -2,6 +2,85 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-19 — owner session: the brief filed, the reservations accepted, the motion *Colour, space and pages* tabled, the specimen re-rendered (Ask 11)
+
+Owner-initiated session on the owner's machine, on branch `design`. Operator on
+`claude-fable-5-1`. The owner's message asked for the state first, then five things; each
+is recorded here with what was done. `main` is untouched and `DESIGN.md` is unchanged.
+
+**State, as reported.** Branch `design` existed locally and on `origin`, three commits
+above `84f17ee` (2026-10-10), stopped at the branch's Ask 8 with `site/specimens/comparison-a.html`
+and its screenshots present; nothing on it was rebuilt. `main` had meanwhile moved seven
+commits (runs 7–13, 2026-10-11 to 2026-10-19, and the owner's upload `1823719`): 227 nodes,
+a seventh row on `x-thing-in-itself`, the comparison `x-the-will`, and run 12's filing route
+in `build.py`. The brief was not at the root as the message said, and not on `main`; the
+only copies were the verbatim one filed in `INBOX.md` on 2026-10-11 and the owner's document
+*praemisse design brief for the operator.md* in his Downloads folder, which is the INBOX copy
+to the character apart from two blank lines. That document was copied to the root unchanged
+as `DESIGN-BRIEF-2026-10-11.md` and committed as it is.
+
+**The merge.** `origin/main` merged into `design` (`524d00e`) before anything else, so the
+specimen renders from the map as it stands. Five files conflicted. `ASKS.md`, `CHANGELOG.md`,
+`PLAN.md` and `memory.md` were taken from `main` and the branch's entries put back: the
+2026-10-11 owner-session entry above run 7 (the run was the morning, the session the
+afternoon), the weight risk under §5 of the plan. In `build.py` the two sides touched the
+same line of `render_node`, the branch's *Verified by* and `main`'s filing links; both kept.
+The build checks clean (227 nodes, 0 errors) and builds every page.
+
+**The ask numbers collided.** The branch's session of 2026-10-11 filed Ask 8 (the
+specimen); run 8 on `main`, not seeing the branch, filed its own Ask 8 (the brief the
+mockups refer to) the next day. `main`'s numbering stands: Ask 8 is run 8's and is marked
+done today with the owner's answer (the brief is the INBOX document; direction A; note and
+motion both; the four reservations accepted). The specimen is re-filed as **Ask 11**,
+non-blocking by the owner's instruction (the plan proceeds), while on the branch the other
+templates, the verification and the merge wait for the answer. The owner note of
+2026-10-19 is filed in `INBOX.md` in his words.
+
+**Note or motion: both.** The owner's answer to run 8's question: the seven templates the
+brief describes are a note, inside `DESIGN.md` as it stands, and may proceed; a palette, a
+spacing scale, a page grammar and a menu added to `DESIGN.md` are a board matter. The motion
+*Colour, space and pages* is tabled in `BOARD.md`, drafted from the brief's amendment
+section, with the comparison specimen as its exhibit; it says three things plainly (one
+accent colour for links and the word *contested*, no second colour; the counts visible but
+in the colophon on every page, not on the front page; the header the one header of P7, set
+as a running head), says what it leaves alone, and names its relation to the decision of
+2026-10-11, whose route it replaces: approval of the specimen answers the ask, the vote
+amends `DESIGN.md`. The operator votes for; the owner votes when he answers Ask 11. The
+draft amendment's status paragraph now says the same.
+
+**The four reservations.** Run 8's four objections to the mockups are accepted, and stand
+in `site/DESIGN-amendment.md` in the owner's words: mockup copy is illustrative and no
+rendered prose is rewritten, so »behind« does not travel; status words come from `MODEL.md`
+and the map, so no claim shows `checked`; the status explanation on the front page is the
+map's own text, including the comparison sense of `checked`; fonts are Libertinus from
+`site/fonts/`, never Google. The front-page template and the apparatus-note component in the
+amendment carry the consequences.
+
+**The specimen, re-rendered.** `site/specimens/comparison-a.html` was written again by
+`build.py --specimen` from the merged map: seven rows, the Nietzsche cells of run 8, the
+filing links of run 12 in the apparatus note. Screenshots at 1280px and 390px, light and
+dark, with Playwright's Chromium, now of the head, the grid and the first passage pair,
+reduced to 64-colour PNGs (0.7–0.9 MB each). Measured: the page is 71,224px tall at 1280
+and 121,059px at 390; the grid alone 10,838px at 1280 (665–11,503), against 4,300px on
+2026-10-11 with five rows. That height is the map's, not the template's, and is noted in
+the amendment for the owner to judge at the ask.
+
+**What was wrong.** `main`'s filing links are spliced into the meta line as a second
+paragraph with no class, which on the comparison template fell out of the apparatus setting
+and rendered as body prose; the splice now carries the note's class on that template, and
+the decision is recorded. The first screenshots clipped at the second row of texts, as on
+2026-10-11, and ran to 18,570px and 3.9 MB a file with seven rows; re-clipped and reduced.
+The specimen's foot line carried the date 2026-10-11 as a literal; it now says when and
+from what it was rendered.
+
+**Not done, by instruction.** Nothing else is built: step 4 of the brief (record the
+approval), step 5 (the other templates), step 6 (verification) and the merge ask wait for
+the owner's answer to Ask 11 and his vote on the motion. The weight gap (`PLAN.md` §5)
+stands.
+
+**Effort.** The owner session's own context, about a third of a run's ceiling; no
+adversarial pass, since no node changed.
+
 ## 2026-10-19 — run 13: Kant's resolution of the third antinomy, A 538–541 / B 566–569, and the empty cell on the will as cause
 
 Thirteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

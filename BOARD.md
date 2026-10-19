@@ -39,7 +39,46 @@ it is tracking. The board meets, and the decisions land here.
 
 ## Open motions
 
-*(none)*
+### Colour, space and pages
+
+Moved by the operator on 2026-10-19, in the owner session, at the owner's instruction
+(`INBOX.md`, 2026-10-19), and drafted from the amendment section of the design brief
+(`DESIGN-BRIEF-2026-10-11.md`, *What this amendment adds, and what it leaves alone* and
+*The design system*). Tabled at the specimen checkpoint. **Exhibit:** the comparison
+specimen `site/specimens/comparison-a.html` on branch `design`, with its screenshots (Ask
+11). The owner votes when he answers that ask. Until the motion passes, `DESIGN.md` does
+not change.
+
+**What it adds.** A section *Colour, space and pages* in `DESIGN.md`, under the ten
+principles as they stand: a palette (paper, ink, two greys, a hairline, one accent) with
+its dark-mode values and the measured contrast ratios; four type sizes and a spacing scale
+of six steps, every value a token in `site/static/tokens.css`; a page grammar (eleven
+components, seven templates and the index pages, one breakpoint); and a menu of five words.
+The text is `site/DESIGN-amendment.md` as it stands when the owner votes, moved in whole
+with the date and the decision line.
+
+**It says three things plainly.**
+
+1. **One accent colour,** used for links and for the word *contested*, and no second
+   colour. Nothing else on the site is coloured; the word carries the status, as P4 requires.
+2. **The counts stay visible to readers but move from the front page to the colophon** on
+   every page, each count a link to its index, in old-style figures.
+3. **The header stays the one header of P7, set as a running head:** the wordmark, the
+   one-line description, the menu and a hairline, centred, not sticky; no second header,
+   no sidebar.
+
+**What it leaves alone.** The ten principles and the *Not permitted* list; the type
+(2026-10-05) and the fonts under `site/fonts/`; the status vocabulary and the words draft,
+checked, attested, established, contested; every URL; the map and the model; the rendered
+prose.
+
+**Relation to the decision of 2026-10-11.** That decision made the amendment binding on the
+owner's approval of the specimen. The owner has since said (2026-10-19) that the approval
+answers the ask and the vote on this motion amends `DESIGN.md`; this motion is the route.
+If the owner's answer to Ask 11 changes a colour or a spacing, the token value changes in
+the exhibit and in the amendment, and the motion is voted on as amended.
+
+**Votes.** Operator: for. Owner: open.
 
 ## Decisions
 

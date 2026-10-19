@@ -1,11 +1,15 @@
 # Colour, space and pages (draft amendment to `DESIGN.md`)
 
-**Status: a draft, not yet binding.** Written on branch `design` from the owner's design brief
-of 2026-10-11 (`INBOX.md`), under the ten principles as they stand. It moves into `DESIGN.md`
-under the heading *Colour, space and pages* only after the owner has approved the comparison
-specimen (`site/specimens/comparison-a.html`), with the date and the decision line from
-`BOARD.md`. Until then nothing in `DESIGN.md` changes. Every decision the operator took on
-its own is listed under *Decisions*, each with its one line of reasoning.
+**Status: a draft, not yet binding; the text of the motion *Colour, space and pages* tabled
+in `BOARD.md` on 2026-10-19.** Written on branch `design` from the owner's design brief of
+2026-10-11 (`DESIGN-BRIEF-2026-10-11.md`; filed verbatim in `INBOX.md`), under the ten
+principles as they stand. The owner said on 2026-10-19 (`INBOX.md`) that the templates are
+built inside `DESIGN.md` on the note, and that a palette, a spacing scale, a page grammar and
+a menu are a board matter: this file moves into `DESIGN.md` under the heading *Colour, space
+and pages* only when that motion passes, with the date and the decision line from
+`BOARD.md`; the exhibit is the comparison specimen (`site/specimens/comparison-a.html`,
+Ask 11). Until then nothing in `DESIGN.md` changes. Every decision the operator took on its
+own is listed under *Decisions*, each with its one line of reasoning.
 
 ## The direction
 
@@ -16,6 +20,19 @@ small caps and the menu beneath it; the comparison grid with its column rules in
 colour and the thinkers' names in the serif. The reference is a critical edition: text,
 apparatus in the margin, the sources in full. Direction B, *the apparatus*, is not built; its
 grid survives as four tokens so that a firmer grid is a swap, not a rebuild.
+
+## The operator's four reservations, accepted
+
+Run 8 (`CHANGELOG.md`, 2026-10-12) named four things in the mockups the operator would not
+carry over as they stood. The owner accepted all four on 2026-10-19 (`INBOX.md`), in these
+words, which bind this work:
+
+1. Mockup copy is illustrative and no rendered prose is rewritten, so the word "behind"
+   does not travel.
+2. Status words come from `MODEL.md` and the map, so no claim shows checked.
+3. The status explanation on the front page is the map's own text, including the
+   comparison sense of checked.
+4. Fonts are Libertinus from `site/fonts/`, never Google.
 
 ## Tokens
 
@@ -80,6 +97,8 @@ all shown light and dark in `site/specimens/components.html`.
    Always the word; never a colour alone.
 6. **Apparatus note.** `--size-4`, sans labels and serif italic text in `--ink-2`; the right column
    (`minmax(0, 2fr)` beside `minmax(0, 3fr)`) above 720px, beneath the text with a hairline above below it.
+   On a claim, argument, passage, reading or comparison it also carries the two filing links
+   of run 12 (*Dispute this node*, *Attest this node*), in the same setting.
 7. **Passage pair.** The original first, in its script, serif italic, `lang` set; the translation in
    serif roman `--ink-2`; the reference line in `--size-4` sans. Never transliterated.
 8. **Comparison grid.** A `table`: one column per thinker, `th` cells for the thinkers with their
@@ -100,7 +119,8 @@ rendered from the map is not rewritten; only its order and setting change.
 1. **Front page.** Reading width. Title, the description as an italic lead, the status paragraph,
    *Comparisons* (one entry per comparison, title at `--size-2`), *Start here* (up to three nodes
    from `start_here` in `site/site.yaml`; omitted if empty), *Thinkers* (a contents list), *To
-   dispute a node*. The counts leave this page for the colophon.
+   dispute a node*. The counts leave this page for the colophon. The status paragraph is the map's
+   own text, including the comparison sense of checked (reservation 3).
 2. **Comparison.** Page width. The label line *Comparison · status, qualification*, the title, the
    question as an italic lead, the statement, the grid, then *The texts, by row*: for each row the
    passage pairs of that row in the text column (3fr), grouped by thinker, each passage once and
@@ -160,6 +180,22 @@ Each from the brief and `DESIGN.md`, with its reasoning in one line.
   work, so the measured numbers are recorded and the gap goes to the board as a note.
 - *The build's `--specimen ID PATH` writes one node's page with the specimen's relative paths.*
   The brief asks for the real comparison rendered by the existing build, not a copy made by hand.
+
+- *The filing links of run 12 (`main`, 2026-10-18), Dispute this node and Attest this node,
+  render inside the apparatus note of the comparison, in the apparatus setting.* They are the
+  map's route for a reader's filing (`MODEL.md`, Filing), and the apparatus note is where the
+  page already says what the node is and who produced it; the build's splice of a second
+  paragraph now carries the note's class.
+- *The specimen was re-rendered on 2026-10-19 from the map as merged from `main`.* The brief
+  asks for the real page, and the real page grew by two rows and twenty-odd cells between
+  2026-10-11 and 2026-10-19 (seven rows, 227 nodes); the grid alone is now 10,800px tall at
+  1280px, which is the map's height and not the template's, and whether a cell of three
+  statements wants a tighter setting is the owner's to say at the ask.
+- *The screenshots show the head, the grid and the first passage pair, as 64-colour PNGs.*
+  With seven rows the earlier clip (head, grid, the whole first row of texts) ran to 18,500px
+  and 3.9 MB a file; the first pair shows the component, and 64 colours keep the text legible
+  at a fifth of the weight (0.7–0.9 MB a file; the whole page is 71,000px at 1280 and
+  121,000px at 390).
 
 ## Verification
 
