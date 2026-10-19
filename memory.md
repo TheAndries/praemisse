@@ -14,14 +14,14 @@ the operator cannot see the routine's run history and asked the owner to look (A
 The GitHub and Claude Code Remote tools in the tool list are platform-attached to every
 cloud session and are not a config change (`ROUTINE.md`, Ask 6): do not raise it again, and
 do not use them; everything goes through git and the repository. Open disputes: none.
-Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX empty at runs 1–13; no form filing yet; the owner made no commit
+Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: two owner notes of 2026-10-19 (front-page lead; font subsetting) wait for run 14; empty at runs 1–13; no form filing yet; the owner made no commit
 between runs 8 and 13. Open asks: 4 (mailbox; deferred by owner; now the second filing
 route, for anyone without a GitHub account), 9 (the owner's qualified review of https://praemisse.com/x/the-will/,
 opened 2026-10-15; blocks nothing), **10 (opened 2026-10-18: test the filing route once from
 a node page, and look at the routine's run history for 10-16 and 10-17; blocks the
-confidence of Phase 2, not the plan)**. **12 (the merge of branch `design`; blocks the merge, not the plan)**. Asks 1, 2, 3, 5, 6, 7, 8, 11 done.
+confidence of Phase 2, not the plan)**. Asks 1, 2, 3, 5, 6, 7, 8, 11, 12 done. INBOX holds two owner notes of 2026-10-19 for the next run.
 
-**The design branch (Ask 12, the merge ask; blocking).** The owner's design brief of
+**The design branch, merged into `main` on 2026-10-19 (Ask 12 done).** The owner's design brief of
 2026-10-11 (`DESIGN-BRIEF-2026-10-11.md`; verbatim in `INBOX.md`) chose direction A, *the
 edition*. On 2026-10-19 the owner approved the comparison specimen ("Yes to all") and said
 the look of the site is his to decide, not the board's; *Colour, space and pages* is in
@@ -33,9 +33,11 @@ rendering in `build.py` (`render_node`, `render_index`, `render_front`, `render_
 `contents`, `deps_html`, `status_html`, `meta_line`, `--specimen ID PATH`), the specimens and
 screenshots under `site/specimens/`, and the verification in `DESIGN.md`. `style.css` is gone.
 `main` was merged into the branch on 2026-10-19 (`524d00e`); the runs keep moving `main`.
-**Ask 12 blocks the merge and nothing else:** on the yes, merge `origin/main` into `design`
-once more if it moved, then `design` into `main`; the site rebuilds; the routine inherits the
-templates and `DESIGN.md` binds every page it writes. Known: the 120 KB weight budget is not
+The owner said merge the same day; `design` is merged into `main` and the routine
+inherits the templates; `DESIGN.md` binds every page it writes. **Two owner notes wait in
+`INBOX.md` for the next run:** the front page's lead to start at "broken into explicit
+premises"; the fonts to be subset to the characters the map uses, under 180 KB on first
+visit, as a separate decision with the weight before (357 KB) and after. Known: the 120 KB weight budget is not
 met (fonts 820 KB, off limits; `PLAN.md` §5); the dispute and attestation templates have no
 page to render until the first filing (Ask 10); two copy notes in `PLAN.md` §5. A colour or
 spacing change: `tokens.css` only; B's grid: the four `--grid-*` tokens. The scheduled runs

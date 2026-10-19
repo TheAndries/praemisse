@@ -264,3 +264,19 @@ He also said that the look of the site is his to decide, as aesthetics, and not 
 for the board, which is for the direction of the project; and that the design should go on
 without stopping again until the merge ask. Handled in the same session: the amendment moved
 into `DESIGN.md`, the decision in `BOARD.md`, Ask 11 done, the remaining templates built.
+
+## 2026-10-19 — owner note: Ask 12 answered (merge), and two notes for the next run
+
+Source: the owner, in the same owner session, after reading the review of every template.
+Ask 12: **merge.** Handled in the same session: `design` merged into `main`.
+
+Two owner notes for the next scheduled run, not for the merge, in the owner's words:
+
+> On the front page the lead starts at "broken into explicit premises", dropping the repeated title words.
+
+> Subset the three Libertinus faces to the characters the map actually uses, target under 180 KB on first visit, as a separate decision with a before-and-after number.
+
+Not handled in this session. The first is a copy change to `site/templates/index.html` (the
+lead); the second touches `site/fonts/`, which the design brief put off limits to the design
+work, and is to be taken as its own decision with the weight measured before and after
+(`DESIGN.md`, *Verification*, gives the before: 357 KB for the three faces, 116 + 136 + 105).

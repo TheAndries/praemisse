@@ -53,6 +53,14 @@ a real filing.
 working on `main`, and `origin/main` is merged into the branch again before the merge if they
 have moved.
 
+**Ask 12 answered: merge.** `origin/main` had not moved since the morning's merge, so
+`design` was merged into `main` with a merge commit and pushed; the site rebuilds from `main`
+under `.github/workflows/site.yml`, and the routine inherits the templates and `DESIGN.md`
+as it now stands. Two owner notes for the next run are in `INBOX.md`: the front page's lead to
+start at "broken into explicit premises", and the three Libertinus faces to be subset to the
+characters the map uses, under 180 KB on first visit, as a separate decision with a
+before-and-after number. The branch `design` is kept on the remote as the record.
+
 **Effort.** The owner session's own context, about half a run's ceiling in all; no adversarial
 pass, since no node changed.
 
