@@ -2,6 +2,51 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-19 — owner session, third part: type on wide screens, the front page's lead, the fonts subset (branch `design-type`, merged)
+
+The owner's third message of the day: three owner decisions, done on branch `design-type` and
+merged by the operator once the checks passed, none a board matter. The two notes filed at the
+merge for a run were withdrawn as such and done here.
+
+**A. Type on wide screens.** `--size-3` is fluid, `clamp(var(--body-size), 0.8125rem + 0.47vw,
+1.4rem)`, 19px on a phone and at 1280 and 22px at 1920; the other three sizes derive from it by
+their ratios (P3 holds); leading unchanged. The owner's formula, `1rem + 0.45vw`, gives 21.8px at
+1280, which would have enlarged the setting approved that morning, so the slope and intercept
+were set to the sizes he named instead, and this entry says so. The measure: the owner asked for
+68ch and for 62–70 characters a line; 68ch gave lines of 75 and 76 characters, because in
+Libertinus the ch unit is the width of the zero and wider than the average letter; 62ch gave a
+first line of 72; 60ch gives 69, 65, 67 and is what is set, on every reading-width page and in
+the text column of the node and comparison pages, whose page width is unchanged. Hyphenation
+automatic below 720px and manual above, passages manual throughout. The front page's lead in
+roman at `--size-3` in `--ink-2`. The palette, the running head and the layouts are untouched.
+
+**B. The lead's text** starts at "Broken into explicit premises"; About and the metadata
+unchanged (`BOARD.md`, owner decision).
+
+**C. The fonts.** `tools/subset_fonts.py` subsets the seven faces, now kept as fetched under
+`site/fonts/libertinus/full/` (unpublished; the build skips the directory), to the 106
+characters the map and templates use plus Basic Latin, Latin-1, Latin Extended-A, Greek and
+Coptic, General Punctuation, arrows and the logical symbols, every layout feature kept and
+checked (smcp, c2sc, onum, lnum, tnum, pnum, liga, GPOS). Before and after per file in
+`DESIGN.md`: 800 KB to 352 KB for the seven, 357 KB to 151 KB for the three a page needs. A
+first pass kept Greek Extended (polytonic) and came to 172 KB for the three, 182 KB with the
+page, over the owner's 180 KB; the range was dropped, and a passage that uses polytonic Greek
+brings its characters in through the map scan when the script is rerun. `build.py` now fails if
+a rendered page carries a character the subsets lack (`check_font_coverage`, fontTools in
+`site/requirements.txt`). A node page is 161 KB on first visit.
+
+**The checks** (all in `DESIGN.md`): 1920 screenshots of the front page, a claim and the
+comparison, light and dark, 41–93 KB each, under `site/specimens/`; body 19/19.0/22.0px at
+390/1280/1920; 69, 65, 67 characters on the lead's lines at 1920; the lead at 8.62:1 and
+9.73:1; coverage check green on 238 pages and every text element in a Libertinus face; 161 KB.
+
+**Merged** into `main` and pushed; the live site confirmed serving the fluid `tokens.css` and
+the subset fonts (the entry below this one records the morning's merge). `BOARD.md` carries B
+and C as owner decisions; A lives in `tokens.css` and `site.css` under the amendment.
+
+**Effort.** The owner session's own context, about a quarter of a run's ceiling for this part;
+no adversarial pass, since no node changed.
+
 ## 2026-10-19 — owner session, continued: the specimen approved, the templates built, verification, the merge ask (Ask 12)
 
 The same owner session, after the entry below. The owner was shown the comparison specimen

@@ -19,6 +19,9 @@ body {
   -webkit-hyphens: auto;
   overflow-wrap: break-word;
 }
+/* hyphenation only where the measure is short: below 720px; at 720px and above body and lead text
+   break at spaces (owner decision 2026-10-19); passages keep manual hyphenation at every width */
+@media (min-width: 720px) { body { hyphens: manual; -webkit-hyphens: manual; } }
 *, *::before, *::after { box-sizing: border-box; }
 main { display: block; margin: 0 auto; padding: var(--s-5) var(--gutter) 0; }
 .main-measure { max-width: calc(var(--measure) + 2 * var(--gutter)); }
@@ -317,7 +320,7 @@ p .status-word, li .status-word { font-size: inherit; }  /* inline in body text,
 .entry-status .status-word { color: var(--ink); }
 .entry-status .qualification { font-family: var(--serif); font-style: italic; color: var(--ink-2); }
 .status-paragraph { max-width: var(--measure); margin-bottom: var(--s-4); }
-.page-front .lead { margin-bottom: var(--s-3); }
+.page-front .lead { margin-bottom: var(--s-3); font-style: normal; font-size: var(--size-3); color: var(--ink-2); }  /* the front page's lead in roman (owner decision 2026-10-19) */
 
 /* an index page: the count after the title, the line naming the nine indexes */
 .count { color: var(--muted); font-variant-numeric: oldstyle-nums; margin-left: 0.15em; }

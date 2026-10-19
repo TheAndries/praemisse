@@ -91,11 +91,11 @@ the build from `site/site.yaml`; only palette `a` exists.
 
 | Token | Light | Dark | Used for |
 |-------|-------|------|----------|
-| `--size-1` | 2.5rem (2rem under 720px), leading 1.15 | | the page title |
-| `--size-2` | 1.6rem, leading 1.3 | | the claim on a node page, the lead statement of a comparison cell, the wordmark |
-| `--size-3` | `--body-size` from `type.css` (1.1875rem), `--body-leading` (1.45) | | body, passages, statements after the lead |
-| `--size-4` | 0.9rem, leading 1.5 | | labels, status words, apparatus, references, menu, colophon |
-| `--measure` | 66ch | | reading pages and the text column |
+| `--size-3` | `clamp(var(--body-size), 0.8125rem + 0.47vw, 1.4rem)`: 19px on a phone and at 1280, 22px at 1920 and above; `--body-leading` (1.45) | | body, passages, statements; the front page's lead (since 2026-10-19) |
+| `--size-1` | `--size-3` × 2.105 (× 1.684 under 720px): 40px at 1280, 46px at 1920, 32px on a phone; leading 1.15 | | the page title |
+| `--size-2` | `--size-3` × 1.347: 25.6px at 1280, 29.7px at 1920; leading 1.3 | | the claim on a node page, the lead statement of a comparison cell, the wordmark |
+| `--size-4` | `--size-3` × 0.758: 14.4px at 1280, 16.7px at 1920; leading 1.5 | | labels, status words, apparatus, references, menu, colophon |
+| `--measure` | 60ch (66ch until 2026-10-19): 530px at 1280, 614px at 1920, lines of 62–69 characters | | reading pages and the text column |
 | `--page` | 1120px | | the comparison grid and the two-column node layout |
 | `--gutter` | 2rem (1.25rem under 640px) | | the page's side gutter |
 | `--s-1` … `--s-6` | 0.5, 1, 1.5, 2.5, 3.5, 5rem | | every vertical space |
@@ -280,6 +280,63 @@ Each from the brief and `DESIGN.md`, with its reasoning in one line.
 - *`site/static/style.css` is removed; every page is styled from `tokens.css` and `site.css`.*
 - *The specimens of the templates are screenshots of the first 3,000px of each page, as
   64-colour PNGs.* A whole page runs to 11,000px (the claims index) and a full-page PNG to 3 MB.
+
+### Type on wide screens and the fonts (owner decisions, 2026-10-19, branch `design-type`)
+
+**A. Fluid type (2026-10-19).** At 1920px the reading column was sized as at 1280px and the
+page sat as a small block in an empty field. The body size `--size-3` is now
+`clamp(var(--body-size), 0.8125rem + 0.47vw, 1.4rem)`: 19px on a phone and at 1280, rising to
+22px at 1920 and no further; `--size-1`, `--size-2` and `--size-4` are derived from it by the
+ratios they had (2.105, 1.347, 0.758; 1.684 for the title under 720px), so the four-size rule
+(P3) holds at every width and the leading is unchanged. The owner's formula was
+`1rem + 0.45vw`, which gives 21.8px at 1280 and would have enlarged the approved 1280 setting;
+the slope and intercept were set so that the sizes the owner named hold (19px at 1280, 22px at
+1920, never below today's on a phone), and the changelog says so. The measure is 60ch on every
+reading-width page and in the text column of the node and comparison pages, whose page width
+is unchanged: the owner asked for 68ch and for 62–70 characters a line, and in Libertinus the
+ch unit (the zero) is wider than the average letter, so 68ch gave lines of 75 characters and
+60ch gives 62–69. Hyphenation is automatic below 720px and manual at 720px and above for body
+and lead text; passages are manual at every width. The front page's lead is roman, at
+`--size-3`, in `--ink-2`; italic stays everywhere this section names it.
+
+**B. The front page's lead (2026-10-19).** It starts at "Broken into explicit premises",
+dropping the words that repeated the title above it; nothing else in the description changed,
+and the description on About and in the metadata is as it was (`BOARD.md`).
+
+**C. The fonts (2026-10-19).** The brief's bar on `site/fonts/` was lifted by the owner for this
+one purpose. `tools/subset_fonts.py` subsets each face in `site/fonts/libertinus/full/` (the
+faces as fetched and subset on 2026-10-05, kept unpublished) to the characters the map and the
+templates use (106 on 2026-10-19) plus Basic Latin, Latin-1, Latin Extended-A, Greek and
+Coptic, General Punctuation, the arrows and the logical symbols (858 code points), with every
+OpenType layout feature kept; the small capitals, old-style and lining figures, ligatures and
+kerning the templates use were checked present in every subset. Polytonic Greek (Greek
+Extended) is not in the ranges and enters through the map scan when a passage uses it. The
+build fails if a rendered page carries a character the subsets lack
+(`site/build.py`, `check_font_coverage`), so the script is rerun when the map grows.
+
+| Face | Before (2026-10-05 subset) | After (2026-10-19) | Glyphs before | Glyphs after |
+|------|-------:|------:|------:|------:|
+| `LibertinusSerif-Regular.woff2` | 113 KB | 50 KB | 1745 | 809 |
+| `LibertinusSerif-Italic.woff2` | 133 KB | 57 KB | 1697 | 806 |
+| `LibertinusSans-Regular.woff2` | 103 KB | 44 KB | 1685 | 782 |
+| `LibertinusSerif-Semibold.woff2` | 111 KB | 48 KB | 1689 | 806 |
+| `LibertinusSerif-SemiboldItalic.woff2` | 129 KB | 58 KB | 1675 | 804 |
+| `LibertinusSans-Italic.woff2` | 115 KB | 51 KB | 1676 | 779 |
+| `LibertinusSans-Bold.woff2` | 97 KB | 44 KB | 1595 | 760 |
+| the three faces a node page needs | 357 KB | 151 KB | | |
+| all seven | 800 KB | 352 KB | | |
+
+**The checks of 2026-10-19,** all passed before the merge of `design-type`:
+- Screenshots at 1920px, first screen, light and dark, under `site/specimens/`:
+  `front-1920-*.png`, `claim-1920-*.png`, `comparison-1920-*.png`, 41–93 KB each.
+- Body size, computed in Chromium: 19px at 390, 19.0px at 1280, 22.0px at 1920.
+- Characters per line on the front page at 1920, measured on the lead's rendered lines:
+  69, 65, 67 (a capacity of 69 at an average advance of 8.92px in a 614px column).
+- Contrast of the lead, `--ink-2` on `--paper`: 8.62:1 light, 9.73:1 dark.
+- No character falls back: the build's coverage check passes on all 238 pages, and every
+  text element on the comparison page computes to Libertinus Serif or Libertinus Sans.
+- A node page on first visit: 3.1 KB of HTML and 7.0 KB of stylesheets gzipped with the three
+  faces, 151 KB, is **161 KB**, under 180 KB; the budget of 120 KB in the brief remains unmet.
 
 ### Verification
 
