@@ -2,7 +2,7 @@
    (BOARD.md; the brief in INBOX.md). Type is in type.css (owner decision 2026-10-05) and is
    imported, not replaced. Every colour, size and spacing on the site is a property here; no
    template or stylesheet carries a hex value or a pixel size of its own. Binding under
-   DESIGN.md, "Colour, space and pages", once the owner has approved the comparison specimen. */
+   DESIGN.md, "Colour, space and pages" (owner decision 2026-10-19, after the comparison specimen). */
 @import url("type.css");
 
 :root {

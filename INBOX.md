@@ -253,3 +253,14 @@ not change. The four accepted reservations are written into `site/DESIGN-amendme
 the owner's words. The first stop remains the comparison specimen in Libertinus, filed as a
 non-blocking ask with the motion beside it (Ask 11); nothing else is built until the owner
 answers.
+
+## 2026-10-19 — owner note: the specimen approved, "Yes to all"
+
+Source: the owner, in the same owner session, after reading the comparison specimen and
+its screenshots at 1280 and 390, light and dark. Asked the five questions of Ask 11 (the
+look as a whole; A's hairline grid or B's firmer one; the first statement of a cell at the
+claim size; the counts into the colophon; dark mode as shown), he answered: "Yes to all!"
+He also said that the look of the site is his to decide, as aesthetics, and not a matter
+for the board, which is for the direction of the project; and that the design should go on
+without stopping again until the merge ask. Handled in the same session: the amendment moved
+into `DESIGN.md`, the decision in `BOARD.md`, Ask 11 done, the remaining templates built.
