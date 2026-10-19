@@ -662,7 +662,8 @@ def render_node(n: Node, ids: dict[str, Node]) -> str:
             template("comparison.html"),
             title=esc(n.title), status=status_line(n), question=inline(str(n.meta.get("question", ""))),
             statement=statement, table=table, texts=render_texts(n, ids, shown), shared=render_shared(n, ids),
-            body=body + record, links=deps_html(n, ids), meta=meta_line,
+            body=body + record, links=deps_html(n, ids),
+            meta=meta_line.replace("</p><p>", '</p><p class="apparatus-note">'),  # the filing links keep the apparatus setting
         )
     return fill(
         template("node.html"),
@@ -1034,7 +1035,7 @@ def specimen(nodes: list[Node], node_id: str, out: Path) -> None:
     global PREFIX
     COUNTS.update({p: sum(1 for m in nodes if m.prefix == p) for p in TYPES})
     PREFIX = "../"
-    line = f'<p class="specimen-line">Specimen: the {TYPES[n.prefix][0]} page {esc(n.url)} rendered from the map by site/build.py, direction A, 2026-10-11. Links to other pages resolve on the site, not here.</p>'
+    line = f'<p class="specimen-line">Specimen: the {TYPES[n.prefix][0]} page {esc(n.url)} rendered from the map by site/build.py, direction A, re-rendered 2026-10-19 from the map as merged from main. Links to other pages resolve on the site, not here.</p>'
     out.write_text(page(n.title, render_node(n, ids), kind=TYPES[n.prefix][0], section=n.prefix, after=line), encoding="utf-8")
 
 
