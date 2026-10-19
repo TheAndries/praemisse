@@ -14,30 +14,36 @@ rows:
     note: "Kant: if the critique is right to take the object in two meanings and the deduction is right, the very same will is thought in the appearance »als dem Naturgesetze nothwendig gemäß und so fern nicht frei« and »als einem Dinge an sich selbst angehörig ... mithin als frei«, without contradiction; the will is thought as belonging to a thing in itself, and no passage in the map says that it is one or what the thing in itself it is thought as belonging to is; freedom so thought cannot be cognized. Schopenhauer: »Ding an sich aber ist allein der Wille«, toto genere different from representation, the name borrowed a potiori from its most perfect appearance, the will of man; the will as thing in itself is free of every form of its appearance, groundless and one, and, by the checked argument of § 25, lies outside time and space and knows no plurality if the thing in itself is the will; § 19 reaches the identification conditionally and epistemically, what we must say, »so müssen wir sagen«, if the corporeal world is more than our representation, by the checked argument whose first and third premises are the map's. Nietzsche: willing »scheint mir vor Allem etwas Complicirtes, Etwas, das nur als Wort eine Einheit ist«, a plurality of feelings, a commanding thought and the affect of command; GD has the belief that the will is something that works as »das grosse Verhängniss von Irrthum« and the will as »bloss ein Wort«; and JGB 36 closes with a conditional whose consequent, that the world seen from inside would be will to power and nothing besides, is asserted on one reading and not on the other, so that on the first reading Nietzsche puts a will in the place of Schopenhauer's and on the second his answer is that the will is a word."
   - question: "Is the will immediately known?"
     positions:
-      t-kant: [c-kant-freedom-cannot-be-cognized-by-speculative-reason]
+      t-kant: [c-kant-intelligible-character-never-known-immediately, c-kant-freedom-cannot-be-cognized-by-speculative-reason]
       t-schopenhauer: [c-schopenhauer-body-given-in-two-ways, c-schopenhauer-will-not-inferred-but-immediately-known, c-schopenhauer-identity-of-will-and-body-cannot-be-proved, c-schopenhauer-thing-in-itself-reached-only-through-self-consciousness]
       t-nietzsche: [c-nietzsche-schopenhauer-ich-will-a-superstition, c-nietzsche-schopenhauer-took-over-popular-prejudice, c-nietzsche-willing-is-complicated]
-    note: "Schopenhauer: the body is given to the subject in two entirely different ways, as representation and as »jenes Jedem unmittelbar Bekannte, welches das Wort Wille bezeichnet«; the word will designates »keineswegs eine unbekannte Größe, ein durch Schlüsse erreichtes Etwas; sondern ein durchaus unmittelbar Erkanntes«; the identity of will and body can be shown but never proved, »eben weil sie selbst die unmittelbarste ist«; and the Anhang names self-consciousness as the only route to the essence in itself. Nietzsche: JGB 16 puts Schopenhauer's »ich will« with the immediate certainties of harmless self-observers, as »der Aberglaube Schopenhauer's«, and JGB 19 says, »es dünkt mich immer wieder«, that in giving to understand that the will alone is »ganz und gar bekannt« Schopenhauer »ein Volks-Vorurtheil übernommen und übertrieben hat«, willing seeming to him complicated; the two attack links are set on the § 22 claim, and the identification of what JGB 16 denies, immediacy, with »ein durchaus unmittelbar Erkanntes« is the map's, said on the Nietzsche node. Kant: the nearest sentence in the map is that the soul, considered from the side of the thing in itself, cannot be cognized »durch keine speculative Vernunft, (noch weniger durch empirische Beobachtung)«, and hence neither can freedom; it is a sentence about cognizing and says nothing of immediacy, and it is set here as what Kant says of knowing the soul, and freedom, from that side, the sentence naming neither immediacy nor the will; no Kant passage in the map speaks of an immediate cognition of the will."
+    note: "Schopenhauer: the body is given to the subject in two entirely different ways, as representation and as »jenes Jedem unmittelbar Bekannte, welches das Wort Wille bezeichnet«; the word will designates »keineswegs eine unbekannte Größe, ein durch Schlüsse erreichtes Etwas; sondern ein durchaus unmittelbar Erkanntes«; the identity of will and body can be shown but never proved, »eben weil sie selbst die unmittelbarste ist«; and the Anhang names self-consciousness as the only route to the essence in itself. Nietzsche: JGB 16 puts Schopenhauer's »ich will« with the immediate certainties of harmless self-observers, as »der Aberglaube Schopenhauer's«, and JGB 19 says, »es dünkt mich immer wieder«, that in giving to understand that the will alone is »ganz und gar bekannt« Schopenhauer »ein Volks-Vorurtheil übernommen und übertrieben hat«, willing seeming to him complicated; the two attack links are set on the § 22 claim, and the identification of what JGB 16 denies, immediacy, with »ein durchaus unmittelbar Erkanntes« is the map's, said on the Nietzsche node. Kant: since 2026-10-19 the map holds A 540 / B 566–569, »Dieser intelligibele Charakter könnte zwar niemals unmittelbar gekannt werden, weil wir nichts wahrnehmen können, als so fern es erscheint«, set here for the word »unmittelbar«: what could never be known immediately is the intelligible character of an acting subject of the world of sense, the law of its causality as a thing in itself, and the sentence does not name the will, so that whether Schopenhauer's will, »ein durchaus unmittelbar Erkanntes«, is such a character is the map's question and no passage's; the other sentence is B xxviii's, that the soul, considered from the side of the thing in itself, cannot be cognized »durch keine speculative Vernunft, (noch weniger durch empirische Beobachtung)«, and hence neither can freedom, a sentence about cognizing that names neither immediacy nor the will; no Kant passage in the map speaks of an immediate cognition of the will by name."
   - question: "Is the will the cause of the body's actions?"
     positions:
-      t-kant: []
+      t-kant: [c-kant-causality-of-a-being-considered-from-two-sides, c-kant-intelligible-character-cause-of-actions-as-appearances, c-kant-actions-explicable-by-laws-of-nature-by-empirical-character, c-kant-subject-begins-its-effects-of-itself]
       t-schopenhauer: [c-schopenhauer-act-of-will-and-action-of-body-identical, c-schopenhauer-reality-of-body-exhausted-by-will]
       t-nietzsche: [c-nietzsche-belief-will-and-action-one-an-erroneous-inference, c-nietzsche-belief-in-causation-from-inner-facts, c-nietzsche-will-moves-nothing, c-nietzsche-motive-a-surface-phenomenon, a-nietzsche-evidence-for-spiritual-causes-gone, c-nietzsche-no-spiritual-causes, c-nietzsche-will-causality-posited-as-the-only]
-    note: "Schopenhauer: the act of will and the action of the body »sind nicht zwei objektiv erkannte verschiedene Zustände, die das Band der Kausalität verknüpft, stehn nicht im Verhältniß der Ursache und Wirkung; sondern sie sind Eines und das Selbe«; the action of the body is the act of will entered into intuition, and the reality of the body, apart from its being representation, is nothing but will. Nietzsche: JGB 19 has the belief »dass Wille und Aktion irgendwie Eins seien« among a chain of erroneous inferences, born of the expected »Wirkung des Befehls«, and the attack link is set on the § 18 claim; GD has the belief in causation taken from the inner facts, the will as cause the first of them, and »Der Wille bewegt nichts mehr, erklärt folglich auch nichts mehr«, the motive a surface phenomenon, from which the checked argument reaches that the evidence for spiritual causes is gone and the text, by »Das folgt daraus«, that there are none; JGB 36 then asks whether we believe in the causality of the will and makes the attempt to posit it as the only causality conditional on that belief, which the two readings relate to GD's denial in two ways. Kant: no position in the map. B xxvii–xxviii has the will in the appearance »dem Naturgesetze nothwendig gemäß«, a will subject to the law, and no passage in the map has Kant on the will as a cause of actions; A 538–541 / B 566–569 is not in the map."
+    note: "Schopenhauer: the act of will and the action of the body »sind nicht zwei objektiv erkannte verschiedene Zustände, die das Band der Kausalität verknüpft, stehn nicht im Verhältniß der Ursache und Wirkung; sondern sie sind Eines und das Selbe«; the action of the body is the act of will entered into intuition, and the reality of the body, apart from its being representation, is nothing but will. Nietzsche: JGB 19 has the belief »dass Wille und Aktion irgendwie Eins seien« among a chain of erroneous inferences, born of the expected »Wirkung des Befehls«, and the attack link is set on the § 18 claim; GD has the belief in causation taken from the inner facts, the will as cause the first of them, and »Der Wille bewegt nichts mehr, erklärt folglich auch nichts mehr«, the motive a surface phenomenon, from which the checked argument reaches that the evidence for spiritual causes is gone and the text, by »Das folgt daraus«, that there are none; JGB 36 then asks whether we believe in the causality of the will and makes the attempt to posit it as the only causality conditional on that belief, which the two readings relate to GD's denial in two ways. Kant: since 2026-10-19 the map holds A 538–541 / B 566–569, and the four sentences set here are set for the words »Ursache«, »Handlungen« and »Wirkungen«, since the word »Wille« does not occur in that section and its subject is »einem Subjecte der Sinnenwelt«, »Dieses handelnde Subject«, »dieses thätige Wesen«: if an appearance has in itself a faculty by which it can be the cause of appearances, its causality can be considered from two sides, »als intelligibel nach ihrer Handlung als eines Dinges an sich selbst, und als sensibel nach den Wirkungen derselben als einer Erscheinung in der Sinnenwelt«; such a subject would have to be granted an intelligible character, »dadurch es zwar die Ursache jener Handlungen als Erscheinungen ist«, beside the empirical character under which »müßten sich alle seine Handlungen nach Naturgesetzen erklären lassen«; and one would rightly say that it »seine Wirkungen in der Sinnenwelt von selbst anfange, ohne daß die Handlung in ihm selbst anfängt«; the first of the four is conditional, »so kann man«, and the other three stand under »würde«. That this subject is the will of B xxvii–xxviii, which is thought in »den sichtbaren Handlungen« as under the law and »als einem Dinge an sich selbst angehörig« as free, is the map's reading, said on the Kant nodes and below, and no passage in the map says it; the section says what the subject causes, its actions as appearances, and not that it causes them by willing."
   - question: "Is the will free, and free of what?"
     positions:
-      t-kant: [c-kant-without-distinction-causality-holds-of-all-things, c-kant-without-distinction-free-will-is-a-contradiction, c-kant-same-will-not-free-as-appearance-free-as-thing-in-itself, a-kant-freedom-thinkable-under-the-critical-distinction, c-kant-freedom-thinkable-if-critical-distinction-holds]
-      t-schopenhauer: [c-schopenhauer-will-free-of-forms-of-appearance, c-schopenhauer-will-groundless-and-one]
+      t-kant: [c-kant-without-distinction-causality-holds-of-all-things, c-kant-without-distinction-free-will-is-a-contradiction, c-kant-same-will-not-free-as-appearance-free-as-thing-in-itself, a-kant-freedom-thinkable-under-the-critical-distinction, c-kant-freedom-thinkable-if-critical-distinction-holds, c-kant-intelligible-character-under-no-conditions-of-time, c-kant-active-being-free-of-natural-necessity-by-intelligible-character, c-kant-freedom-and-nature-together-in-the-same-actions]
+      t-schopenhauer: [c-schopenhauer-will-free-of-forms-of-appearance, c-schopenhauer-will-groundless-and-one, c-schopenhauer-kant-rightly-concluded-forms-not-determinations-of-thing-in-itself]
       t-nietzsche: [c-nietzsche-projecting-sign-world-as-in-itself-is-mythology, c-nietzsche-in-the-in-itself-nothing-of-causal-connections]
-    note: "Kant: had the distinction of things as objects of experience from the same things as things in themselves not been made, causality would hold of all things, and to say of one being that its will is free and yet subject to natural necessity would be to fall »in einen offenbaren Widerspruch«; with it, the very same will is thought as not free in the appearance and as free »als einem Dinge an sich selbst angehörig«, and freedom can be thought, »d. i. die Vorstellung davon enthält wenigstens keinen Widerspruch in sich«, if the critical distinction holds, by the checked argument whose bridge from the two predicates of one will to the representation of freedom is the map's; the whole stands under »Wenn aber die Kritik nicht geirrt hat«, and freedom is thought, not cognized. Schopenhauer: the will as thing in itself is »völlig frei von allen Formen« of its appearance and »schlechthin grundlos, obwohl jede seiner Erscheinungen durchaus dem Satz vom Grunde unterworfen ist«; »frei« here is freedom from the forms of representation, and groundlessness is said of the thing in itself while every appearance of it is under the principle; the two statements are set in this row for the word »frei« and for that two-sidedness, and the paragraph on freedom below says what is and is not parallel to Kant's; no passage in the map has Schopenhauer on the freedom of the will in the sense of B xxvii, a will free or not free in its actions, and the map says nothing of it. Nietzsche: JGB 21 has »die Freiheit« among what »Wir sind es, die allein ... erdichtet haben«, in Nietzsche's own voice, and »\"psychologischer Unfreiheit\"« among what there is nothing of in the »\"An-sich\"«, the term in his quotation marks; the two sentences are set here for those words, and neither speaks of a will free or not free in its actions, as B xxvii–xxviii does; JGB 21 beyond the two spans the map holds, and JGB 19 beyond its two, are not in the map."
+    note: "Kant, since 2026-10-19 also A 539–541 / B 566–569, set for the words »frei« and »Freiheit«: the acting subject would by its intelligible character stand under no conditions of time, »denn die Zeit ist nur die Bedingung der Erscheinungen, nicht aber der Dinge an sich selbst«, the clause in which Kant says outright, not under a »würde«, what time is the condition of and what not, and the shared premise set on this page; by that character »dieses thätige Wesen« would be »von aller Naturnothwendigkeit, als die lediglich in der Sinnenwelt angetroffen wird, unabhängig und frei«; and »Freiheit und Natur, jedes in seiner vollständigen Bedeutung« would be found »bei eben denselben Handlungen ... zugleich und ohne allen Widerstreit«, every main clause under »würde«, and the subject »dieses Subject«, not the will by name. Kant, B xxvii–xxix: had the distinction of things as objects of experience from the same things as things in themselves not been made, causality would hold of all things, and to say of one being that its will is free and yet subject to natural necessity would be to fall »in einen offenbaren Widerspruch«; with it, the very same will is thought as not free in the appearance and as free »als einem Dinge an sich selbst angehörig«, and freedom can be thought, »d. i. die Vorstellung davon enthält wenigstens keinen Widerspruch in sich«, if the critical distinction holds, by the checked argument whose bridge from the two predicates of one will to the representation of freedom is the map's; the whole stands under »Wenn aber die Kritik nicht geirrt hat«, and freedom is thought, not cognized. Schopenhauer: the will as thing in itself is »völlig frei von allen Formen« of its appearance and »schlechthin grundlos, obwohl jede seiner Erscheinungen durchaus dem Satz vom Grunde unterworfen ist«; »frei« here is freedom from the forms of representation, and groundlessness is said of the thing in itself while every appearance of it is under the principle; § 24 adds that Kant »richtig geschlossen« that »Zeit, Raum und Kausalität ... nicht Bestimmungen desselben seyn ..., d. h. nur seiner Erscheinung angehörten, nicht ihm selbst«, the factive sentence that shares its premise on time with Kant's »denn« clause; the three statements are set in this row for the word »frei« and for that two-sidedness, and the paragraph on freedom below says what is and is not parallel to Kant's; no passage in the map has Schopenhauer on the freedom of the will in the sense of B xxvii, a will free or not free in its actions, and the map says nothing of it. Nietzsche: JGB 21 has »die Freiheit« among what »Wir sind es, die allein ... erdichtet haben«, in Nietzsche's own voice, and »\"psychologischer Unfreiheit\"« among what there is nothing of in the »\"An-sich\"«, the term in his quotation marks; the two sentences are set here for those words, and neither speaks of a will free or not free in its actions, as B xxvii–xxviii does; JGB 21 beyond the two spans the map holds, and JGB 19 beyond its two, are not in the map."
   - question: "What is drawn from the will?"
     positions:
       t-kant: [c-kant-if-freedom-unthinkable-morality-yields-to-mechanism, c-kant-same-action-in-another-relation]
       t-schopenhauer: [c-schopenhauer-other-objects-judged-by-analogy-with-body, c-schopenhauer-nothing-known-but-will-and-representation]
       t-nietzsche: [c-nietzsche-no-spiritual-causes, c-nietzsche-ich-become-a-fable, c-nietzsche-mechanistic-world-not-representation-in-schopenhauers-sense]
     note: "Kant: supposing that morality presupposes freedom and that speculative reason had proved freedom unthinkable, morality would have to give way to the mechanism of nature; »So aber«, since morality needs only that freedom »sich nur nicht selbst widerspreche«, the doctrine of morality and the doctrine of nature each hold their place, the mechanism of nature and freedom being of »eben derselben Handlung (in anderer Beziehung genommen)«; both limbs of the supposition are kept as supposition, and no passage in the map has Kant assert that morality presupposes freedom in the strictest sense as a property of our will; B xxviii–xxix asserts only that morality needs »daß Freiheit sich nur nicht selbst widerspreche«. Schopenhauer: the double cognition of one's own body is the key to the essence of every appearance in nature, all other objects being judged »nach Analogie jenes Leibes«, because »Außer dem Willen und der Vorstellung ist uns gar nichts bekannt, noch denkbar«. Nietzsche: »Es giebt gar keine geistigen Ursachen!«, and the I is »zur Fabel geworden«; and JGB 36 proposes, under its »Gesetzt«, to understand the mechanistic world from the reality of the drives, not as »\"Vorstellung\" (im Berkeley'schen und Schopenhauerischen Sinne)«, a proposal the map does not set as an attack on § 1, since a proposal to attempt the contrary is not a denial, said on the Nietzsche node."
-shared: []
-passages: [p-krv-b-xxvii-distinction-not-made, p-krv-b-xxvii-xxviii-same-will-free, p-krv-b-xxviii-freedom-thinkable, p-krv-b-xxviii-morality-would-yield, p-krv-b-xxviii-xxix, p-wwv1-s18-body-given-in-two-ways, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s19-analogy-of-the-body, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-denominatio-a-potiori, p-wwv1-s22-will-not-inferred, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-wwv1-s25-will-outside-time-and-space-knows-no-plurality, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-jgb-21-causa-sui, p-jgb-21-cause-and-effect-fictions, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-krv-a42-b59, p-jgb-36-not-representation, p-jgb-36-will-to-power, p-gd-vernunft-5-will-as-cause, p-gd-irrthuemer-3-will-as-cause]
+shared:
+  - premise: "Time is a condition or form of appearances only, and no determination of the thing in itself."
+    claims: [c-kant-intelligible-character-under-no-conditions-of-time, c-schopenhauer-kant-rightly-concluded-forms-not-determinations-of-thing-in-itself]
+    passages: [p-krv-b566-569-no-time-conditions, p-wwv1-s24-kant-rightly-concluded]
+  - premise: "Time is a condition or form of appearances only, and no determination of the thing in itself."
+    claims: [c-kant-intelligible-character-under-no-conditions-of-time, c-schopenhauer-will-free-of-forms-of-appearance]
+    passages: [p-krv-b566-569-no-time-conditions, p-wwv1-s23-will-free-of-forms]
+passages: [p-krv-b-xxvii-distinction-not-made, p-krv-b-xxvii-xxviii-same-will-free, p-krv-b-xxviii-freedom-thinkable, p-krv-b-xxviii-morality-would-yield, p-krv-b-xxviii-xxix, p-krv-b566-569-intelligible, p-krv-b566-569-double-side, p-krv-b566-569-two-characters, p-krv-b566-569-no-time-conditions, p-krv-b566-569-freedom-and-nature, p-wwv1-s24-kant-rightly-concluded, p-wwv1-s18-body-given-in-two-ways, p-wwv1-s18-identity-cannot-be-proved, p-wwv1-s19-analogy-of-the-body, p-wwv1-s21-will-alone-is-thing-in-itself, p-wwv1-s22-denominatio-a-potiori, p-wwv1-s22-will-not-inferred, p-wwv1-s23-will-free-of-forms, p-wwv1-s23-will-groundless-and-one, p-wwv1-s25-will-outside-time-and-space-knows-no-plurality, p-jgb-16-immediate-certainties, p-jgb-19-willing-complicated, p-jgb-19-will-and-action-one, p-jgb-21-causa-sui, p-jgb-21-cause-and-effect-fictions, p-wwv1-anhang-kant-derivation-of-thing-in-itself, p-krv-a42-b59, p-jgb-36-not-representation, p-jgb-36-will-to-power, p-gd-vernunft-5-will-as-cause, p-gd-irrthuemer-3-will-as-cause]
 status: draft
 verified_by: []
 disputes: []
@@ -64,6 +70,23 @@ freedom either, »so kann ich mir doch die Freiheit denken, d. i. die Vorstellun
 enthält wenigstens keinen Widerspruch in sich« (B xxviii, 3:17.28–18.11,
 [c-kant-freedom-cannot-be-cognized-by-speculative-reason](../../c/kant-freedom-cannot-be-cognized-by-speculative-reason/),
 [c-kant-freedom-thinkable-if-critical-distinction-holds](../../c/kant-freedom-thinkable-if-critical-distinction-holds/)).
+Kant, A 538–541 / B 566–569, since 2026-10-19: if what must be regarded as appearance »an
+sich selbst auch ein Vermögen hat, welches kein Gegenstand der sinnlichen Anschauung ist,
+wodurch es aber doch die Ursache von Erscheinungen sein kann«, its causality can be
+considered »auf zwei Seiten«, intelligible and sensible (AA 3:366.09–16,
+[c-kant-causality-of-a-being-considered-from-two-sides](../../c/kant-causality-of-a-being-considered-from-two-sides/));
+such a subject would have to be granted »einen intelligibelen Charakter ..., dadurch es zwar
+die Ursache jener Handlungen als Erscheinungen ist, der aber selbst unter keinen Bedingungen
+der Sinnlichkeit steht« (3:366.35–367.03,
+[c-kant-intelligible-character-cause-of-actions-as-appearances](../../c/kant-intelligible-character-cause-of-actions-as-appearances/)),
+a character that »könnte zwar niemals unmittelbar gekannt werden« (3:367.15–16,
+[c-kant-intelligible-character-never-known-immediately](../../c/kant-intelligible-character-never-known-immediately/)),
+under which »dieses thätige Wesen« would be »von aller Naturnothwendigkeit ... unabhängig und
+frei« (3:368.01–02,
+[c-kant-active-being-free-of-natural-necessity-by-intelligible-character](../../c/kant-active-being-free-of-natural-necessity-by-intelligible-character/)),
+so that freedom and nature would be found »bei eben denselben Handlungen ... zugleich und ohne allen Widerstreit« (3:368.10–13,
+[c-kant-freedom-and-nature-together-in-the-same-actions](../../c/kant-freedom-and-nature-together-in-the-same-actions/)).
+The section's subject is »einem Subjecte der Sinnenwelt« and its »Handlungen«; the word »Wille« does not occur in it; its first paragraph defines, supposes and asserts, and every main clause of its second, third and fourth paragraphs stands under »würde«.
 
 Schopenhauer, §§ 18–23: the body is given to the subject »auf zwei ganz verschiedene
 Weisen«, as representation and »als jenes Jedem unmittelbar Bekannte, welches das Wort
@@ -98,12 +121,24 @@ a sentence whose force is the map's second contested reading, the one of Nietzsc
 
 # Where a premise is shared
 
-No `shares_premise_with` link is set on this page, and it carries no `shared` entry. The
-pairs the map holds that touch the will are set on the
-[comparison on the thing in itself](../../x/thing-in-itself/), where § 23's will as thing
-in itself, free of the forms among which are »Zeit und Raum«, shares with A 26 / B 42 the
-premise that space is no determination of the thing in itself; this page adds none, and
-says why for the two nearest candidates.
+One premise is shared on this page, since 2026-10-19, in two entries, and it is on time, not
+on the will. Kant, A 539 / B 566–569, in the clause in which he says outright, not under a »würde«, what time is the condition of and what not: the acting subject would by its intelligible character stand
+under no conditions of time, »denn die Zeit ist nur die Bedingung der Erscheinungen, nicht
+aber der Dinge an sich selbst« (AA 3:367.07–08,
+[c-kant-intelligible-character-under-no-conditions-of-time](../../c/kant-intelligible-character-under-no-conditions-of-time/)).
+Schopenhauer, § 24: »Was auch immer das Ding an sich sei, so hat Kant richtig geschlossen, daß Zeit, Raum und Kausalität ... nicht Bestimmungen desselben seyn, sondern ihm erst zukommen konnten, nachdem und sofern es Vorstellung geworden, d. h. nur seiner Erscheinung angehörten, nicht ihm selbst« (§ 24, Grisebach pp. 175–176, the ZA page not given on the passage, [c-schopenhauer-kant-rightly-concluded-forms-not-determinations-of-thing-in-itself](../../c/schopenhauer-kant-rightly-concluded-forms-not-determinations-of-thing-in-itself/)), the factive »richtig geschlossen« asserting what it reports, as the map already reads it for the premise on space;
+and § 23: the will as thing in itself is »völlig frei von allen Formen« of its appearance,
+the forms subordinate to that of object for a subject, »wohin bekanntlich auch Zeit und Raum
+gehören« (ZA I 156,
+[c-schopenhauer-will-free-of-forms-of-appearance](../../c/schopenhauer-will-free-of-forms-of-appearance/)).
+The premise is worded to cover both texts' terms, Kant's »Bedingung der Erscheinungen, nicht aber der Dinge an sich selbst« and Schopenhauer's »nicht Bestimmungen desselben ... nur seiner Erscheinung« and »Formen derselben«: time is a condition or form of appearances only, and no determination of the thing in itself. Each
+of the three statements asserts it among other things; Kant's main clause, what would hold of
+the acting subject, is under »würde« and is shared with nobody, and the link rests on the
+»denn« clause alone. The parallel premise on space, between A 26 / B 42 and the same two
+sections, is set on the [comparison on the thing in itself](../../x/thing-in-itself/), where both Schopenhauer claims already name A 26 / B 42; the identification of Kant's »Bedingung« with
+Schopenhauer's »Form« is the map's, and the other page makes the same step for space. No
+other link is set on this page, and it says why for the two nearest candidates on the will
+itself.
 
 **Kant and Schopenhauer on the law and the thing in itself.** Kant at B xxvii: if the
 deduction is right, »der Grundsatz der Causalität nur auf Dinge im ersten Sinne genommen,
@@ -188,8 +223,21 @@ and GD says of the will, »Heute wissen wir, dass er bloss ein Wort ist« (»Die
 der Philosophie« 5,
 [c-nietzsche-will-as-cause-the-great-error](../../c/nietzsche-will-as-cause-the-great-error/)).
 What JGB 36 then does with »Wille zur Macht« is the contested reading, below; the aphorism
-puts »"intelligiblen Charakter"« in Nietzsche's own quotation marks, and since no Kant
-passage in the map carries the term, the page does not call it Kant's.
+puts »"intelligiblen Charakter"« in Nietzsche's own quotation marks; since 2026-10-19 the
+map holds Kant's A 539 / B 566–569, where a subject of the world of sense would have to be granted an »intelligibelen Charakter«, the law of its causality, which one could call the character of the thing in itself, »der aber selbst unter keinen Bedingungen der Sinnlichkeit steht und selbst nicht Erscheinung ist«
+([c-kant-intelligible-character-cause-of-actions-as-appearances](../../c/kant-intelligible-character-cause-of-actions-as-appearances/)),
+and no passage in the map says whether Nietzsche's quotation marks point at Kant's term, so
+the page sets the two side by side and does not call Nietzsche's Kant's. That section also
+gives, in Kant's words, the two sides the hinge turns on: the causality of a being that has in
+itself a faculty to cause appearances can be considered »als intelligibel nach ihrer Handlung
+als eines Dinges an sich selbst, und als sensibel nach den Wirkungen derselben als einer
+Erscheinung in der Sinnenwelt«
+([c-kant-causality-of-a-being-considered-from-two-sides](../../c/kant-causality-of-a-being-considered-from-two-sides/)),
+and the two characters may be called »den Charakter eines solchen Dinges in der Erscheinung«
+and »den Charakter des Dinges an sich selbst«; there, as at B xxvii–xxviii, the thing in
+itself is what the action is the action *of* and what the character is the character *of*,
+and the section does not say that the subject, or its faculty, is the thing in itself, nor
+does it name the will.
 
 **On immediacy, and the attacks.** Schopenhauer's will is »ein durchaus unmittelbar
 Erkanntes und so sehr Bekanntes, daß wir, was Wille sei, viel besser wissen und verstehn,
@@ -210,8 +258,15 @@ statements in the same row also word immediacy, »jenes Jedem unmittelbar Bekann
 statement too, with its converse, and the JGB 16 node says so; it is not set on the
 identity's statement, which asserts that the identity can be shown and not proved and gives
 its immediacy as the ground, »eben weil«, where JGB 16 names no identity, and a reader may
-dispute that absence. No Kant passage in the map speaks of immediacy; what the map has of
-him here is a denial of cognition from that side: the soul »von der
+dispute that absence. One Kant passage in the map speaks of immediacy, since 2026-10-19, and it is not of the will:
+the intelligible character of the acting subject »könnte zwar niemals unmittelbar gekannt
+werden, weil wir nichts wahrnehmen können, als so fern es erscheint; aber er würde doch dem
+empirischen Charakter gemäß gedacht werden müssen« (A 540 / B 566–569, AA 3:367.15–18,
+[c-kant-intelligible-character-never-known-immediately](../../c/kant-intelligible-character-never-known-immediately/)).
+Set beside § 22, Kant's sentence has the intelligible character, the law of a supposed subject's causality, as what could never be known immediately, and asserts the ground, that perception reaches only what appears, where Schopenhauer has the will known »unmittelbar« in self-consciousness, and no passage in the map has Schopenhauer on perception; whether Schopenhauer's will is such a character, so that the two sentences meet, is the map's
+question and no passage's, and no attack link is set, since neither statement names what the
+other's does; a reader who holds that § 22 denies what A 539–540 states may dispute the
+absence. What the map had of Kant here before is a denial of cognition from that side: the soul »von der
 letzteren Seite betrachtet«, that of the thing in itself the will is thought as belonging to, I cannot
 cognize »durch keine speculative Vernunft, (noch weniger durch empirische Beobachtung)«,
 because I would have to cognize such a being »seiner Existenz nach und doch nicht in der
@@ -273,10 +328,31 @@ GD's »bewegt nichts mehr« denies the antecedent, on the
 [reading on which it does](../../r/nietzsche-will-to-power-asserted/) GD's denial
 concerns the will as an inner fact and a faculty only, not the »Wille auf Wille« of JGB 36,
 an answer that reading's node states since 2026-10-18 with the passages and with what tells
-against it, and the map picks neither. Kant has no
-position in this row: B xxvii–xxviii's will in the appearance is »dem Naturgesetze nothwendig
-gemäß«, a will whose visible actions are under the law, and no passage in the map has
-Kant on the will as a cause of actions.
+against it, and the map picks neither. Kant's cell in this row is filled since 2026-10-19 from A 538–541 / B 566–569, and for
+words other than »Wille«, which does not occur in that section: the subject is »einem Subjecte
+der Sinnenwelt«, »Dieses handelnde Subject«, »dieses thätige Wesen«, and what it causes is
+its »Handlungen als Erscheinungen«. If what must be regarded as appearance has in itself »ein
+Vermögen ..., wodurch es aber doch die Ursache von Erscheinungen sein kann«, its causality can
+be considered from two sides
+([c-kant-causality-of-a-being-considered-from-two-sides](../../c/kant-causality-of-a-being-considered-from-two-sides/));
+the subject would have to be granted an intelligible character »dadurch es zwar die Ursache
+jener Handlungen als Erscheinungen ist«
+([c-kant-intelligible-character-cause-of-actions-as-appearances](../../c/kant-intelligible-character-cause-of-actions-as-appearances/)),
+while by its empirical character »müßten sich alle seine Handlungen nach Naturgesetzen
+erklären lassen«
+([c-kant-actions-explicable-by-laws-of-nature-by-empirical-character](../../c/kant-actions-explicable-by-laws-of-nature-by-empirical-character/));
+and one would rightly say »daß es seine Wirkungen in der Sinnenwelt von selbst anfange, ohne
+daß die Handlung in ihm selbst anfängt«
+([c-kant-subject-begins-its-effects-of-itself](../../c/kant-subject-begins-its-effects-of-itself/)).
+Set beside the other two, the causality of Kant's subject would be considered on two sides, as an appearance's under laws of nature and, by a character that is not appearance, »nach ihrer Handlung als eines Dinges an sich selbst«, the two concepts of it, the passage says of the concepts and not of two causings, occurring »bei einer und derselben Wirkung«, every verb under »würde« or »kann«; Schopenhauer refuses cause and effect between act of will
+and action because they are one, Nietzsche because the will moves nothing. The map does not
+set Kant's subject as the will: B xxvii–xxviii's will is thought in »den sichtbaren
+Handlungen« and »als einem Dinge an sich selbst angehörig«, and the section gives a subject's
+causality the same two sides, »nach ihrer Handlung als eines Dinges an sich selbst« and as an
+appearance; that the preface's will is the faculty of this section's subject is the map's
+reading, and no passage in the map says it or says that the subject causes its actions by
+willing. No link of any kind is set between Kant's cell and the others here: no Kant
+statement in it asserts or denies what § 18 or GD states of the will.
 
 **On freedom.** Kant's case at B xxvii–xxviii is the case of the will: without the
 distinction, causality would have to hold »durchaus von allen Dingen überhaupt als
@@ -292,7 +368,19 @@ bridge from the two predicates of one will to the representation of freedom is t
 and whose antecedent takes the restriction of causality as given. Kant's »frei« is »jenem
 nicht unterworfen«, not subject to the law of nature, and the freedom in question is
 freedom »als Eigenschaft eines Wesens, dem ich Wirkungen in der Sinnenwelt zuschreibe«
-(B xxviii). Schopenhauer's two
+(B xxviii). The resolution of the third antinomy says, as the map reads it, the same of its acting subject, since 2026-10-19 in the map and under »würde« throughout: by its intelligible character it would
+stand under no conditions of time, »denn die Zeit ist nur die Bedingung der Erscheinungen,
+nicht aber der Dinge an sich selbst«
+([c-kant-intelligible-character-under-no-conditions-of-time](../../c/kant-intelligible-character-under-no-conditions-of-time/)),
+»dieses thätige Wesen« would be »von aller Naturnothwendigkeit, als die lediglich in der
+Sinnenwelt angetroffen wird, unabhängig und frei«
+([c-kant-active-being-free-of-natural-necessity-by-intelligible-character](../../c/kant-active-being-free-of-natural-necessity-by-intelligible-character/)),
+and »Freiheit und Natur, jedes in seiner vollständigen Bedeutung« would be found »bei eben
+denselben Handlungen ... zugleich und ohne allen Widerstreit«
+([c-kant-freedom-and-nature-together-in-the-same-actions](../../c/kant-freedom-and-nature-together-in-the-same-actions/)),
+the sentence nearest to B xxviii–xxix's »eben derselben Handlung (in anderer Beziehung
+genommen)«; »Widerstreit« is not »Widerspruch«, and the map does not identify the two. Kant's »frei« there is independence from natural necessity in the subject's actions, the same freedom as B xxvii's »jenem nicht unterworfen« as the map reads the two, and not Schopenhauer's freedom from the forms; what the two texts share
+is the clause on time, set out under the shared premise above. Schopenhauer's two
 sentences in this row say of the will as thing in itself that it is »völlig frei von allen
 Formen derselben«, the forms of its appearance, and »schlechthin grundlos, obwohl jede
 seiner Erscheinungen durchaus dem Satz vom Grunde unterworfen ist«. What is parallel: both
@@ -388,26 +476,27 @@ thing in itself is; the comparison with § 21 rests on that silence either way.
 
 # What the map does not yet contain
 
-Kant's A 538–541 / B 566–569, the Grundlegung and the second Critique, so that no
-sentence here says Kant asserts that morality presupposes freedom in the strictest sense,
-which B xxviii supposes; the footnote at B
-xxvi–xxvii. Schopenhauer's § 20, § 23 beyond the two spans of its first paragraph that the map
+Kant's resolution of the third antinomy beyond A 538–541 / B 566–569 (A 532–537 / B
+560–565 before it, and the explanation of the cosmological idea from A 542 / B 570 on), the Grundlegung and the
+second Critique, so that no sentence here says Kant asserts that morality presupposes freedom
+in the strictest sense, which B xxviii supposes; the footnote at B xxvi–xxvii. Schopenhauer's § 20, § 23 beyond the two spans of its first paragraph that the map
 holds (ZA I 156 and ZA I 157) and the sentence between them, § 25 beyond its first paragraph's opening, §§ 26–29,
 and the fourth Book, including § 55. Nietzsche's JGB 19 beyond the two spans the map holds
 (its opening, to the affect of command, and the sentences on the »Wunderlichste am
 Willen«), JGB 21 beyond the two spans the map holds (its first sentence, and from »Man
 soll nicht« to »mythologisch«), and GD »Die vier grossen Irrthümer« 7–8. Each
-would add a cell; none is needed for the rows above, whose every filled cell cites its
-passage, and the one empty cell says what is absent.
+would add a cell; none is needed for the rows above, whose every filled cell cites its passage.
 
-The comparison is `draft`: built on 2026-10-15 by the operator from nodes already in the
-map (Kant's A 42 / B 59 added 2026-10-06, B xxvii–xxix on 2026-10-07 and 2026-10-11;
+The comparison is `draft`: built on 2026-10-15 by the operator, then from nodes already in the map (Kant's A 42 / B 59 added 2026-10-06, B xxvii–xxix on 2026-10-07 and 2026-10-11;
 Schopenhauer's §§ 18–23 and the Anhang's sentence on self-consciousness added 2026-10-08,
 § 25 on 2026-10-13; Nietzsche's JGB 16, 19, 36 and GD added 2026-10-09, JGB 21 on
 2026-10-12), with no new node and one link set on an existing pair, JGB 16's attack on
 § 18's first sentence, recorded in `CHANGELOG.md` (the sentence on the two readings of JGB
 36 under *On the will as cause* was reworded on 2026-10-18, when the asserted reading's node
-gained its answer to GD), and offered to the owner, Andries
+gained its answer to GD; on 2026-10-19 Kant's A 538–541 / B 566–569 was added to the map and
+to this page: the Kant cells in the rows on immediacy, on the will as cause, which was empty,
+and on freedom, the § 24 claim in the Schopenhauer cell on freedom, the two `shared` entries on time, with § 24 and § 23, and the paragraph under *Where a premise is shared*, and the sentences dated so in the
+notes and under *Where they diverge*), and offered to the owner, Andries
 ([`BOARD.md`](https://github.com/TheAndries/praemisse/blob/main/BOARD.md)), for the same
 qualified review the [comparison on the thing in itself](../../x/thing-in-itself/) had
 (`ASKS.md`, Ask 9). No human has read it; the translations were not independently verified,

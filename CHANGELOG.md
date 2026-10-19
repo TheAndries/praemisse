@@ -2,6 +2,225 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-19 — run 13: Kant's resolution of the third antinomy, A 538–541 / B 566–569, and the empty cell on the will as cause
+
+Thirteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day
+after run 12; the gap of 2026-10-16 and 2026-10-17 stands as recorded and is with the owner
+(Ask 10).
+
+**Step 1.** No ask changed status since run 12. Asks 8, 9 and 10 are unanswered: no commit,
+note or file arrived between runs 12 and 13 (`origin/main` was at run 12's commit when this
+run began); none blocks the plan. Ask 4 stays deferred by the owner.
+
+**Step 2.** `INBOX.md` empty; no issue was filed through the forms (the workflow made no
+commit). No dispute, no attestation, no owner note.
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 21 new, 5 revised.** The plan's next content item was the one gap that
+would fill an empty cell: Kant's A 538–541 / B 566–569, the section »Möglichkeit der
+Causalität durch Freiheit in Vereinigung mit dem allgemeinen Gesetze der Naturnothwendigkeit«
+in the resolution of the third antinomy, AA 3:366.08–368.13, fetched from korpora.org this
+morning (pages 365–368, HTTP 200) and held in five passages by AA line, each `original`
+asserted verbatim against the transcription by script before writing and by the build after:
+the definition of »intelligibel« and the two sides of a causality (3:366.08–19); the double
+side's contradicting no concept of experience and its ground (3:366.19–27); the empirical and
+the intelligible character (3:366.27–367.05); the acting subject under no conditions of time,
+its intellectual causality outside the series, the intelligible character never known
+immediately (3:367.06–20); the subject under natural necessity as appearance and free as
+noumenon, the beginning of its effects, freedom and nature at the same actions
+(3:367.21–368.13). The korpora transcription does not mark where B 567, 568 and 569 begin
+inside the section, so every passage gives the A/B pages as the section's and the AA line as
+the locator.
+
+Fifteen claims, all `draft`, each keeping its sentence's mode: the section is subjunctive
+almost throughout, »würde«, »könnte«, »stände«, »müßten«, rendered »would« and »could«, and
+the claims say which clauses are asserted outright, the definition »Ich nenne«, »Es muß aber
+eine jede wirkende Ursache einen Charakter haben«, »widerspricht keinem«, and the grounds
+»denn die Zeit ist nur die Bedingung der Erscheinungen, nicht aber der Dinge an sich selbst«,
+»weil wir nichts wahrnehmen können, als so fern es erscheint«, »da in ihm, so fern es
+Noumenon ist, nichts geschieht«. The word »Wille« does not occur in the section; its subject is
+»einem Subjecte der Sinnenwelt«, »Dieses handelnde Subject«, »dieses thätige Wesen«, and
+every claim and every cell says so. One argument, `checked`,
+`a-kant-double-side-contradicts-no-concept-of-experience` (n ∧ (n→g), g→h, h→d ⊢ d): the
+»Denn« sentence as the ground of the one before it, with the bridge from the unhindered
+attribution of a non-appearing causality to the transcendental object back to the double
+side of the faculty of an object of the senses declared the map's, and the identification of
+the transcendental object with what the object of the senses is in itself named as the
+map's too. One claim→claim `depends_on` with the connective quoted, »So würde denn«, from the
+closing sentence to the two it sums. Quotations on every claim.
+
+Two `shares_premise_with` links set, the first on the comparison on the will, which had
+`shared: []`: Kant's »denn« clause on time, the clause of the section in which he says
+outright, not under a »würde«, what time is the condition of and what not, beside § 24's
+»Kant richtig geschlossen, daß Zeit, Raum und Kausalität ... nicht Bestimmungen desselben
+seyn ... d. h. nur seiner Erscheinung angehörten, nicht ihm selbst« and § 23's will as
+thing in itself »völlig frei von allen Formen« of its appearance, »wohin bekanntlich auch
+Zeit und Raum gehören«, the two Schopenhauer claims that already share the premise on space
+with A 26 / B 42; the premise, *time is a condition or form of appearances only, and no
+determination of the thing in itself*, is worded in both texts' terms, the identification of
+Kant's »Bedingung« with Schopenhauer's »Form« is said to be the map's step, as the other
+page's premise on space already makes it, and the page says the link rests on the »denn«
+clause alone, the main clause being under »würde«. Before the review the second link was on
+§ 25 instead of § 24 (below). No attack link: nothing today
+denies what any node states, and the page argues the absence between Kant's »niemals
+unmittelbar gekannt« and Schopenhauer's »unmittelbar Erkanntes«, which name different things.
+
+The comparison on the will, `x-the-will`: the Kant cell in the row on the will as cause,
+empty since the page was built, is filled with four sentences set for the words »Ursache«,
+»Handlungen« and »Wirkungen«, the note saying that reading the section's subject as the will
+of B xxvii–xxviii is the map's step and that the section does not say the subject causes its
+actions by willing; the Kant cell on immediacy gains »Dieser intelligibele Charakter könnte
+zwar niemals unmittelbar gekannt werden«, set for the word »unmittelbar«; the Kant cell on
+freedom gains the three sentences on the subject under no conditions of time, free of natural
+necessity, and freedom and nature at the same actions, and the Schopenhauer cell the § 24
+claim; the two `shared` entries and a new paragraph under *Where a premise is shared*;
+paragraphs under *Where they diverge* on »intelligibler Charakter«, now in the map on Kant's
+side, on immediacy, on the will as cause and on freedom; the gaps paragraph names what of the
+antinomy's resolution is not held; the closing paragraph records all of it as unread by the
+owner. The `statement` is unchanged, so no version is superseded. The JGB 36 claim's sentence
+that no Kant passage carries »intelligibler Charakter« was corrected, and the two
+Schopenhauer claims gained the converse link (link-only, no version). The README counts 227
+nodes (3 thinkers, 5 works, 66 passages, 133 claims, 14 arguments, 4 readings, 2
+comparisons).
+
+**The adversarial pass, and what it found.** A second agent was given the twenty-one new
+nodes and the diffs of the five revised ones, the four korpora pages, the conventions and the
+distilled rules, with the brief to break the argument's validity and its bridge, the fidelity
+of every statement to its sentence's mode and pronouns, the translations, the A/B page
+attributions, the shared premise against the convention, the comparison's new cells against
+a section that never names the will, the readings, the links, the format and the rendered
+pages. It verified every `original` and every AA line against the transcription, every
+quotation in every body against the passages, the form by the build, the node count, the
+rendered pages for broken links and stray lists, and the A page breaks against the
+page-by-page Wikisource transcription of the 1781 scan, and returned 28 findings, 3 serious,
+13 moderate, 12 minor; I accepted 26 and changed the files before commit, and declined 2 with
+the reasons below.
+- *Serious, a false generalization about the text's mode.* The comparison said twice that
+  Kant's »denn« clause on time is »the one clause of the section asserted outright«, which the
+  map's own passage bodies refute: »Ich nenne«, »widerspricht keinem«, »so hindert nichts«,
+  »Es muß«, the »weil« and »da« grounds are all indicative. Now »the clause in which Kant
+  says outright, not under a ›würde‹, what time is the condition of and what not«. The same
+  kind twice more at moderate: »every main clause stands under ›würde‹« said of the section
+  and of the four sentences in the Kant cell on cause, the first of which is »so kann man«;
+  and the definition called »the one sentence of the five passages that is neither
+  conditional nor subjunctive«.
+- *Serious, a link whose node argued against it.* The time link was set on § 25's claim,
+  whose body still said the map sets the link on § 23 and § 24 »and not here«, and whose
+  statement predicates »nur unsere Erkenntnißform« of the cognition a priori, not of time, so
+  that the premise was reached by a step no node named; and the claim and the page said the
+  space premise sits on »the same two Schopenhauer sections«, which was false of § 25 and is
+  true of § 24. The link is moved to § 24's claim, »Kant richtig geschlossen, daß Zeit, Raum
+  und Kausalität ... nicht Bestimmungen desselben seyn«, the partner the space premise
+  already uses; the premise reworded in the three texts' terms; the row, the note, the entry
+  and the paragraph follow.
+- *Serious, a quotation transplanted and a reading picked.* »Kant's subject causes its
+  actions twice over, as appearance ... and as thing in itself ..., and the two are ›bei
+  einer und derselben Wirkung‹« took a clause said of the two *concepts* of one causality and
+  said it of two causings, asserted »as thing in itself« of the subject where the page itself
+  says the section does not, and put in the indicative what the text has under »würde« and
+  »könnte«. Rewritten in the text's mode and of the concepts.
+- *Moderate, mode dropped,* in five places: the JGB 36 node and the page had the intelligible
+  character »name« the character of a thing in itself where Kant has »würde man ... einräumen
+  müssen« and »könnte ... nennen«; »Kant denies immediate knowledge« where the text has
+  »könnte zwar niemals«; »which was granted«, »does stand in the series«, »in the indicative
+  of the law« of paragraphs that are subjunctive throughout. All rewritten.
+- *Moderate, statements not readable alone.* Four statements opened with »This acting
+  subject«, »this subject«, »the same subject«, »Secondly ... those actions«; each now
+  restates the supposition of the section's second sentence, »a subject of the world of sense
+  that has in itself a faculty by which it can be the cause of appearances«.
+- *Moderate, a comparison made a condition.* »So wie äußere Erscheinungen in dasselbe
+  einflössen, wie sein empirischer Charakter ... erkannt wäre« was rendered in one statement
+  as »were ... cognized« with the first »wie« clause dropped; now »as ... flowed into it and as
+  ... were cognized«, both clauses, in the statement and the title.
+- *Moderate, paragraphs miscounted.* Three claims placed sentences of the fourth paragraph in
+  the third, and the closing sentence was said to be drawn »from the paragraph before« where
+  »So würde denn« gathers two; renumbered.
+- *Moderate, sentences with no passage behind them.* The opening passage described the text
+  before the heading by its content; a claim called the »denn« clause »the Transcendental
+  Aesthetic's result on time« with no Aesthetic passage on time in the map; »the standard
+  concordance« was an unnamed source; »the first edition's form« was unsourced; a heading
+  outside every span was quoted in »...«; »not by perception« was said of Schopenhauer with
+  no passage. All reduced to references or struck.
+- *Moderate, the A/B pages.* The passage titles gave B pages inside the section that no
+  source in hand supports. The reviewer verified the A breaks against the Wikisource
+  transcription of the 1781 scan (A 538 ends at 3:366.24, A 539 at 367.09, A 540 at 367.30,
+  A 541 at 368.13), and the operator checked two of those pages; the A pages stand, the
+  opening passage says how they were checked and how the 1781 orthography differs, and every
+  B attribution narrower than the section is widened to B 566–569, with the AA line as
+  locator, on the passages, the page and the JGB 36 node; one reference to »A 539–540« for a
+  sentence wholly on A 540 corrected.
+- *Moderate, the argument's bridge.* The body said both identifications were »named in the
+  statement«, which names only the assumption; a third identification, »hindert nichts« with
+  »widerspricht keinem«, was unnamed; atom `g` dropped the »muß«; and the form's reading of
+  the causal »da ..., so« as `g -> h` was not said to be the map's, with the alternative, the
+  bare `h` and premise 1 idle, open to dispute. All four said now.
+- *Moderate, connections unmarked as the map's.* »Says the same of its acting subject« and
+  »the same freedom as B xxvii's« now carry »as the map reads it«.
+- *Moderate, true when written, false by the same run.* »The one empty cell says what is
+  absent« with no empty cell left; »built ... with no new node« governing a page carrying
+  today's nodes. Both reworded.
+- *Minor, 12, of which 11 changed:* a B xxvi quotation missing »wäre«; »intelligibler
+  Charakter« in »...« in a form no passage has, now the inflected forms; »würden wir« for »Wir
+  würden«; »bloß« dropped from a statement and two restrictions from a title; »Kant calls«
+  for the text's »Ich nenne«; a dangling »would«; the translation's »with« in the double-side
+  sentence now said to decide a construction the German leaves open; the premise worded
+  without § 23's term, now with it; »the one sentence not in the subjunctive« made »whose main
+  clause«; »the ›nachdem‹ of alternatives« made »in the sense of ›je nachdem‹«;
+  »acquaintance« for »gekannt« struck.
+- *Declined, 2.* (M12) Adding a clause to the comparison's `statement` on the new Kant cells:
+  the statement is the sentence a dispute quotes and has not been changed when cells were
+  added before (runs 7–10 on the first page), the disclaimer that the section does not name
+  the will stands in every note and body paragraph the cells touch, and a changed statement
+  would supersede a version on a page the owner has been asked to review as it is (Ask 9); the
+  reviewer called it optional. (m12) Moving the »since 2026-10-19« dates out of the notes and
+  body: the dates are how the pages tell a reader what the owner has not read, the convention
+  the first page's status note uses, and they are removed when a review covers them.
+The pass cost about 212,000 tokens of the agent's own and took sixteen minutes. New kinds
+today: a generalization about a text's mode that the project's own passage bodies refute; a
+link set in front matter against the node's own prose; a verbatim quotation moved to a
+different subject; a cross-reference that misstates which sections carry the parallel link;
+page attributions the corpus cannot carry, verifiable only outside the map; a comparative
+»wie« read as a counterfactual; and sentences falsified by the same run's additions.
+
+**What else was wrong and why.**
+- The first build refused two quotations on the comparison: »ist nur unsere Erkenntnißform
+  ...«, where the text has »d. h. nur unsere Erkenntnißform« and the »ist« was the operator's,
+  and »Erläuterung«, the heading after the section, which no listed passage holds; both fixed.
+- The comparison cited § 25 as »ZA I 158«, a page the operator supplied from memory; the § 25
+  passage came from Projekt Gutenberg-DE and carries Grisebach's page 184 and no ZA page, and
+  the citation now says so. Caught by the operator's own grep before the review.
+- Two quotations in the notes gave the text's »einem Subjecte der Sinnenwelt« and »Dieses
+  handelnde Subject« in altered case and number; fixed before the build, which would have
+  refused them.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The gap the plan named first is
+filled; the second comparison has no empty cell. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10), and the content runs meanwhile are the
+gaps the pages list: Schopenhauer's § 2 and the Anhang's theorems on time; Nietzsche's JGB 21
+and 34 beyond the spans held; and, now that the first comparison's row on immediacy has a
+Kant sentence on immediacy in the map, that page could take it in the Kant cell of its row
+on cognizing immediately, which would need its status note's dated clause extended.
+
+**Step 6.** `memory.md` updated in place, about 5,600 of 8,000 words: the run-13 state, the
+A 538–541 nodes in the Kant list, the shared premise on time, the korpora fact that no A/B
+page break is marked and how the A pages were checked, the review's rules. Dropped: nothing;
+run 12's compression left room.
+
+**Step 8.** No new ask. Asks 4, 8, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-20; first, if `INBOX.md` has an
+entry, the filing handled under `DISPUTES.md`; if the owner has answered Ask 8, 9 or 10, what
+follows; otherwise a content run on a gap the pages list, with the first comparison's Kant
+cell on immediacy as the smallest item and Schopenhauer's § 2 or the Anhang's theorems on
+time as the next, through the adversarial pass, with a quote on every new cell claim.
+
+**Effort.** About 285,000 of the 300,000-token ceiling in this session plus about 212,000 in
+the adversarial agent: a quarter on reading the governing files and the nodes around B xxvii
+and the will page, a third on the five passages, fifteen claims, the argument and the
+comparison, the rest on the review, the 26 fixes and the records. Nothing spent.
+
 ## 2026-10-18 — run 12: Phase 2 opened, the filing route, and the asserted reading's answer to GD
 
 Twelfth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

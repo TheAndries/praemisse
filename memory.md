@@ -2,20 +2,20 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-18 (run 12, end)
+## State as of 2026-10-19 (run 13, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–12 were
-served on that model, no handover note needed. **No run is recorded for 2026-10-16 or
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–13 were
+served on that model, no handover note needed. Run 13 fired the day after run 12. **No run is recorded for 2026-10-16 or
 2026-10-17** (no commit, no changelog entry between run 11 on 10-15 and run 12 on 10-18);
 the operator cannot see the routine's run history and asked the owner to look (Ask 10).
 The GitHub and Claude Code Remote tools in the tool list are platform-attached to every
 cloud session and are not a config change (`ROUTINE.md`, Ask 6): do not raise it again, and
 do not use them; everything goes through git and the repository. Open disputes: none.
-Attestations: none. Open motions: none. INBOX empty at runs 1–12; the owner made no commit
-between runs 8 and 12. Open asks: 4 (mailbox; deferred by owner; now the second filing
+Attestations: none. Open motions: none. INBOX empty at runs 1–13; no form filing yet; the owner made no commit
+between runs 8 and 13. Open asks: 4 (mailbox; deferred by owner; now the second filing
 route, for anyone without a GitHub account), 8 (the design brief the mockups refer to;
 blocks nothing), 9 (the owner's qualified review of https://praemisse.com/x/the-will/,
 opened 2026-10-15; blocks nothing), **10 (opened 2026-10-18: test the filing route once from
@@ -148,11 +148,15 @@ and that the body links every `r-` whose `reading_of` is a cell claim. Templates
 `site/templates/{base,index,about,node,comparison}.html`; comparison table full-width above
 the text/passages grid, phone cells stack with `data-thinker` labels, no JavaScript.
 
-**Kant nodes on `main` (66: 1 t, 2 w, 22 p, 35 c, 5 a, 2 r):** `t-kant`; `w-kant-krv`, `w-kant-prolegomena`;
+**Kant nodes on `main` (87: 1 t, 2 w, 27 p, 50 c, 6 a, 2 r):** `t-kant`; `w-kant-krv`, `w-kant-prolegomena`;
 22 passages `p-krv-*`, `p-prol-*` by AA page and line (B xxvi 3:16.30–17.07; B xxvii–xxix
 in four spans 3:17.07–18.21, run 7; B xxviii–xxix, B xxix–xxx; A 24/B 38; A 26/B 42 and
 `p-krv-a26-b42-b` conclusion (b) 3:55.09–18; A 42/B 59; A 43/B 60; A 235/B 294; A 236/B 295;
-B 307; B 308–309; Prol 289, 314, 350, 350–351, 352, 353); 35 claims (space a priori, a
+B 307; B 308–309; Prol 289, 314, 350, 350–351, 352, 353; **run 13: A 538–541 / B 566–569,
+the section »Möglichkeit der Causalität durch Freiheit ...« of the third antinomy's
+resolution, AA 3:366.08–368.13 in five spans `p-krv-b566-569-{intelligible,double-side,
+two-characters,no-time-conditions,freedom-and-nature}`, A/B pages given as the section's
+since korpora marks no B page break, AA line the locator**); 50 claims (space a priori, a
 subjective condition of sensibility, not of things in themselves; appearance requires a
 thing in itself; things in themselves thinkable not knowable; the noumenon negative only;
 B xxix–xxx the pretension, annulling knowledge for faith, dogmatism; the island and the
@@ -160,14 +164,29 @@ understanding's principles only for experience; Prol § 57 the two absurdities, 
 against limits, metaphysics leads to limits; B xxvii–xxix the same will not free as
 appearance and free »als einem Dinge an sich selbst angehörig«, conditional; freedom not
 cognized by speculative reason; freedom thinkable if the critical distinction holds,
-»wenigstens«; morality would yield had freedom been proved unthinkable, under »supposing«);
-5 arguments, all `checked`: `a-kant-space-not-of-things-in-themselves` (s→¬a ⊢ ¬s),
+»wenigstens«; morality would yield had freedom been proved unthinkable, under »supposing«; **run 13, 15
+claims from A 538–541, all subjunctive »würde« kept as »would« except the asserted clauses:
+»intelligibel« defined; the causality of a being from two sides, conditional; the double side
+contradicts no concept of experience; a transcendental object must underlie appearances; nothing
+hinders attributing it a non-appearing causality; every efficient cause has a character; the
+empirical and the intelligible character, »den Charakter des Dinges an sich selbst«; under no
+conditions of time, »denn die Zeit ist nur die Bedingung der Erscheinungen, nicht aber der
+Dinge an sich selbst« (asserted; the shared premise on time, with § 24 and § 23); intellectual causality not in the
+series; the intelligible character »niemals unmittelbar gekannt«; actions explicable by laws of
+nature; the active being free of natural necessity; begins its effects of itself; freedom and
+nature at the same actions, `depends_on` the two it sums by »So würde denn«. The word »Wille«
+does not occur in the section: every cell set from it says it is set for »Ursache«,
+»Handlungen«, »Wirkungen«, »frei«, »unmittelbar«, and that reading its »handelndes Subject« as
+the will of B xxvii–xxviii is the map's step**);
+6 arguments, all `checked`: `a-kant-space-not-of-things-in-themselves` (s→¬a ⊢ ¬s),
 `a-kant-appearance-requires-thing-in-itself` (¬t→¬w, w ⊢ t),
 `a-kant-practical-assumption-requires-removing-speculative-pretension` (k→e, e→x, a→¬x ⊢
 a→¬k; a→¬x the map's bridge), `a-kant-denying-things-in-themselves-absurd` (n→g, g→u, ¬u ⊢
 ¬n; ¬u the map's claim), `a-kant-freedom-thinkable-under-the-critical-distinction` ((k∧r)→f,
 f→t ⊢ (k∧r)→t; f→t the map's bridge; the two »Widerspruch« differ; the deduction sentence
-e→r is not a premise); 2 readings, `r-kant-two-aspect` (Prauss 1974; Allison 2004, ch. 2)
+e→r is not a premise), `a-kant-double-side-contradicts-no-concept-of-experience` (n∧(n→g),
+g→h, h→d ⊢ d; h→d the map's bridge, the transcendental object = what the object of the senses
+is in itself also the map's); 2 readings, `r-kant-two-aspect` (Prauss 1974; Allison 2004, ch. 2)
 and `r-kant-two-object` (Strawson 1966, Part Four; Guyer 1987, Part V; Van Cleve 1999, ch.
 10), both `reading_of: c-kant-things-in-themselves-thinkable-not-knowable`, each citing B
 xxvii–xxviii (»in zweierlei Bedeutung«). Translations the project's own. *Grenzen* =
@@ -175,8 +194,8 @@ xxvii–xxviii (»in zweierlei Bedeutung«). Translations the project's own. *Gr
 "put a stop to"; the Korpus's »nothwendiggemachte« at 3:17.07 kept and noted. Kant says the
 will *belongs to* a thing in itself, thought so if the critique is right, never that it is
 one: the hinge of both comparisons; never write »belongs to« flat. Not in the map: A 236–260
-/ B 295–315 beyond the opening, Prol §§ 58–59, the B xxvi–xxvii footnote, A 538–541 / B
-566–569, the Grundlegung and the second Critique (so no sentence may say Kant asserts that
+/ B 295–315 beyond the opening, Prol §§ 58–59, the B xxvi–xxvii footnote, the antinomy's
+resolution outside A 538–541 (A 532–537, A 542 ff.), the Grundlegung and the second Critique (so no sentence may say Kant asserts that
 morality presupposes freedom; B xxviii only supposes it, »da ich zur Moral nichts weiter
 brauche, als daß Freiheit sich nur nicht selbst widerspreche«).
 
@@ -219,8 +238,8 @@ proved. Not in the map: § 2, § 20, § 24 beyond its first two paragraphs, § 2
 first paragraph, §§ 26–29, the fourth Book, the Anhang beyond the four spans held (nothing
 of 517–533 or 537–650, the Fichte paragraph, the theorems on time, the categories).
 
-**Nietzsche nodes on `main` (71: 1 t, 2 w, 19 p, 44 c, 4 a, 2 r; 206 nodes in all: 3 t, 5 w,
-61 p, 118 c, 13 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
+**Nietzsche nodes on `main` (71: 1 t, 2 w, 19 p, 44 c, 4 a, 2 r; 227 nodes in all: 3 t, 5 w,
+66 p, 133 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
 cited by aphorism and, for GD, chapter and section (Fabel by stage 1–6), KSA pages not
 given; 19 passages: JGB 15 (two spans), 16 (two), 17, 19 (two), 21 (two: the first sentence;
 »Man soll nicht« to »mythologisch«), 34 (two), 36 (two), 54; GD Vernunft 2, 5, 6; Fabel;
@@ -285,19 +304,31 @@ absurdity of appearance without anything that appears, not a causal inference; B
 against Fabel stage 6; immediacy; the will; causality and the in-itself), what depends on
 the reading of Kant, gaps, and a closing paragraph naming what the owner ordered and what
 he has not read (everything since 2026-10-10, listed). `x-the-will` (/x/the-will/,
-`draft`, Ask 9): five rows (what the will is; immediately known; cause of the body's
-actions, Kant's cell empty; free, and free of what, the Schopenhauer and Nietzsche cells set
-for the word »frei« / »die Freiheit«; what is drawn from it), `shared: []` with the two
-nearest argued and left open (Kant's B xxvii causality clause, conditional, beside § 23's
+`draft`, Ask 9): five rows (what the will is; immediately known, Kant's cell since run 13
+with »niemals unmittelbar gekannt« for the word »unmittelbar«; cause of the body's
+actions, Kant's cell filled in run 13 from A 538–541 for »Ursache«/»Handlungen«/»Wirkungen«;
+free, and free of what, the Schopenhauer and Nietzsche cells set for the word »frei« / »die
+Freiheit«, Kant's since run 13 also the three antinomy sentences, Schopenhauer's also § 24;
+what is drawn from it), two `shared` entries since run 13, both the premise on time, *a
+condition or form of appearances only, and no determination of the thing in itself* (Kant's
+»denn« clause ↔ § 24's »Kant richtig geschlossen, daß Zeit, Raum und Kausalität ... nicht
+Bestimmungen desselben seyn« and ↔ § 23's »frei von allen Formen«, the same two claims that
+share the space premise with A 26 / B 42; »Bedingung« = »Form« the map's step; not § 25,
+whose statement predicates »Erkenntnißform« of the cognition a priori and whose body says the
+link is not set there), with the two nearest on the will itself argued and left open (Kant's B xxvii causality clause, conditional, beside § 23's
 groundlessness; § 18's »stehn nicht im Verhältniß der Ursache und Wirkung« beside GD's »Der
 Wille bewegt nichts mehr«), the three attack links described, divergences (the hinge above;
 immediacy; the will as cause, where JGB 19 and § 18 refuse cause and effect for opposite
 reasons; the two senses of »frei«; what each draws), the readings of JGB 36 and of Kant
 without picking, gaps, closing paragraph with provenance dates. »intelligibler Charakter«:
-no Kant or Schopenhauer passage in the map carries the term.
+since run 13 Kant's A 539 / B 567 carries it (»intelligibelen Charakter«); no Schopenhauer
+passage does, and no passage says whether JGB 36's quotation marks point at Kant's; the JGB
+36 node and both pages say so.
 
 **Sources.** *Kant:* https://korpora.org/kant/aa{03,04}/{page:03d}.html, one AA page per
-file, lines in `<tr>` rows, ISO-8859-1 with HTML entities; join hyphenated words by hand;
+file, lines in `<tr>` rows, ISO-8859-1 with HTML entities; join hyphenated words by hand; the
+transcription marks no A/B page breaks, so inside a section longer than a page give the A/B
+range of the section and the AA line (the section A 538 / B 566 begins at 3:366.05; A 236 / B 295 at 3:203.04; B 307 at 3:209.32);
 the `korpora.zim.uni-duisburg-essen.de` host fails through the proxy. *Schopenhauer:*
 zeno.org `http://www.zeno.org/Philosophie/M/Schopenhauer,+Arthur/Die+Welt+als+Wille+und+Vorstellung/Erster+Band/<Erstes+Buch|Zweites+Buch|Anhang.+Kritik+der+Kantischen+Philosophie>`,
 ISO-8859-1, text in `<div class="zenoCOMain">`, `<h5>` the § numbers, `[N]` in
@@ -358,7 +389,20 @@ no non-variant; a bridge's parenthesis may not claim more than the body; a quote
 the load-bearing sentence, not the whole passage; two passages may not share a title;
 "orthography of the first edition" becomes "consistent with"; a rule the model states and
 nothing enforces will be broken, so write the check; a status note true when written
-becomes false by accretion, so re-read it every run.
+becomes false by accretion, so re-read it every run. Run 13 added: a generalization about a
+text's mode (»the one clause asserted outright«, »every main clause under ›würde‹«) must be
+checked against every passage body of the span, which are the project's own refutation; a
+link set in front matter must agree with the node's prose, which the build never checks; a
+quotation can be verbatim, inside a listed passage, and still transplanted to another
+subject (said of two concepts, used of two causings); when citing the other comparison for a
+parallel link, re-read which claims carry it; a comparative »so wie ... wie« is not a
+condition; »the same X« across two texts is a connection the map drew, so »as the map reads
+it«; a sentence true when written (»the one empty cell«, »with no new node«) is falsified by
+the same run's additions, so grep the page for them before the review; the A page of a KrV
+span is checked against de.wikisource.org's page-by-page transcription of the 1781 scan
+(`Seite:Kant_Critik_der_reinen_Vernunft_NNN.png`, `action=raw`, different orthography), the
+B page inside a long section is unverified and is given as the section's range. The review
+of run 13 took 212,000 tokens and sixteen minutes on 21 new nodes.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
 runs 1–12. The card used for the domain is still unreported.
@@ -387,13 +431,15 @@ run them by path.
 (above). If the owner answered Ask 9: apply as under Ask 7 (`checked` with `status_note`;
 versions for changed statements with credit). If Ask 8: read the brief before building.
 Otherwise: a fourth thinker is not yet due (Phase 2 should see one filing or the owner's
-word first); useful content runs meanwhile are the gaps both pages list (Kant A 538–541 /
-B 566–569 would fill the empty cell on the will as cause; Schopenhauer § 2 and the Anhang's
-theorems on time; Nietzsche JGB 21 and 34 beyond the spans held), each only where it adds a
-cell or a row, with quotes on every new cell claim; and the quotation check could be
-extended from comparisons to all bodies after measuring how many old nodes fail.
+word first); useful content runs meanwhile are the gaps both pages list (the first
+comparison's Kant cell on cognizing immediately could take
+`c-kant-intelligible-character-never-known-immediately`, which needs its status note's dated
+clause and closing paragraph extended; Schopenhauer § 2 and the Anhang's theorems on time;
+Nietzsche JGB 21 and 34 beyond the spans held; the antinomy's resolution outside A 538–541),
+each only where it adds a cell or a row, with quotes on every new cell claim; and the
+quotation check could be extended from comparisons to all bodies after measuring how many old
+nodes fail.
 
-**Dropped from memory this run:** the per-run node inventories of runs 7–11 (merged into
-the three node lists and the comparison paragraph), the per-run review summaries (merged
-into the rules list), the list of the sixteen claims that first carried quotes, and the
-screenshot instructions' detail; about 4,900 words of 8,000, so the next runs have room.
+**Dropped from memory this run:** nothing; run 12's compression left room, and run 13 added
+the A 538–541 nodes, the shared premise on time and the korpora page-break fact; about 5,450
+words of 8,000.
