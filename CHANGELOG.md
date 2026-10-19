@@ -2,6 +2,60 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-19 — owner session, continued: the specimen approved, the templates built, verification, the merge ask (Ask 12)
+
+The same owner session, after the entry below. The owner was shown the comparison specimen
+and its screenshots with five questions (the look as a whole; A's hairline grid or B's firmer
+one; the first statement of a cell at the claim size; the counts into the colophon; dark mode)
+and answered "Yes to all". He also said that the look of the site is his to decide as
+aesthetics and not a board matter, which is for the direction of the project, and that the
+work should go on without stopping again until the merge ask.
+
+**Step 4, the approval recorded.** The draft amendment moved from `site/DESIGN-amendment.md`
+into `DESIGN.md` under *Colour, space and pages*, binding as an owner decision of 2026-10-19;
+the decision row in `BOARD.md`; the motion of the morning closed as moot, with the note that
+`DESIGN.md`'s rule (amendable only by board decision) is met either way since both seats were
+for; Ask 11 done; the owner's note in `INBOX.md`. No token changed.
+
+**Step 5, the templates,** all from the existing build, in one pass rather than one commit
+each: the node (claim, argument, and the reading with it) on the page width in two columns,
+the claim and its statement with the quotations in the text column, the status, the thinker,
+the passage pairs and the readings in the apparatus column, the prose and the dependency
+lists beneath, the apparatus note with the filing links at the foot; the front page at the
+measure (title, the description as lead, the status paragraph as it was, the comparisons as
+entries with question and status line, *Start here* from `site/site.yaml`, the thinkers, how to
+dispute, from `DISPUTES.md`); thinker and work, passage, dispute and attestation on one
+reading-width template with a kicker, a top block and contents lists; the nine index pages
+with the count after the title, the model's line on the type, the line naming all nine, and
+one contents list; About with a paragraph on the board from `BOARD.md`. `style.css` is gone.
+Every decision is in `DESIGN.md`, *Decisions taken at step 5*.
+
+**Step 6, verification,** written into `DESIGN.md` under *Verification*: screenshots of eight
+templates at 1280 and 390, light and dark, under `site/specimens/`; weight (a node page 3 KB
+of HTML and 7 KB of stylesheets gzipped, with 357 KB of fonts on first visit, so the brief's
+120 KB budget is not met and cannot be with the fonts off limits; the second page 10 KB);
+speed on Chromium's Fast 3G (first paint 0.6–0.7 s, the load event 2.5 s on the front page
+and 4.4 s on the comparison, the node page 1.0 s warm); contrast as measured on 2026-10-11;
+every one of the 238 paths of `main`'s build present in the branch's build; a keyboard pass by
+script on three pages (skip link first, outline on every stop); a structural pass over the
+grid and a passage pair (no real screen reader was run, and the entry says so); print PDFs of
+the argument page and the comparison; the *Not permitted* list item by item.
+
+**What was wrong.** The first screenshot pass clipped the comparison's grid in the middle;
+re-clipped. The first timing script crashed on a page with no paint entry; guarded. The front
+page's lead, taken verbatim from the old front page as the brief says, opens with the words of
+the new title above it; the brief forbids rewriting copy here, so it stands and is noted in
+`PLAN.md`. The dispute and attestation templates have no page to render and are unverified on
+a real filing.
+
+**Step 7, the merge ask.** Ask 12, blocking: "Design branch complete; verification in
+`DESIGN.md`; merge?" Nothing merges to `main` until the owner says so; the scheduled runs keep
+working on `main`, and `origin/main` is merged into the branch again before the merge if they
+have moved.
+
+**Effort.** The owner session's own context, about half a run's ceiling in all; no adversarial
+pass, since no node changed.
+
 ## 2026-10-19 — owner session: the brief filed, the reservations accepted, the motion *Colour, space and pages* tabled, the specimen re-rendered (Ask 11)
 
 Owner-initiated session on the owner's machine, on branch `design`. Operator on

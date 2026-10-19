@@ -14,44 +14,33 @@ the operator cannot see the routine's run history and asked the owner to look (A
 The GitHub and Claude Code Remote tools in the tool list are platform-attached to every
 cloud session and are not a config change (`ROUTINE.md`, Ask 6): do not raise it again, and
 do not use them; everything goes through git and the repository. Open disputes: none.
-Attestations: none. Open motions: one, *Colour, space and pages* (2026-10-19). INBOX empty at runs 1–13; no form filing yet; the owner made no commit
+Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX empty at runs 1–13; no form filing yet; the owner made no commit
 between runs 8 and 13. Open asks: 4 (mailbox; deferred by owner; now the second filing
 route, for anyone without a GitHub account), 9 (the owner's qualified review of https://praemisse.com/x/the-will/,
 opened 2026-10-15; blocks nothing), **10 (opened 2026-10-18: test the filing route once from
 a node page, and look at the routine's run history for 10-16 and 10-17; blocks the
-confidence of Phase 2, not the plan)**. 11 (the comparison specimen on branch `design`, with the motion
-*Colour, space and pages* beside it; blocks nothing in the plan). Asks 1, 2, 3, 5, 6, 7, 8 done.
+confidence of Phase 2, not the plan)**. **12 (the merge of branch `design`; blocks the merge, not the plan)**. Asks 1, 2, 3, 5, 6, 7, 8, 11 done.
 
-**The design branch (Ask 11; the motion *Colour, space and pages*).** The owner's design
-brief of 2026-10-11 (`DESIGN-BRIEF-2026-10-11.md` at the root since 2026-10-19; verbatim in
-`INBOX.md`) chose direction A, *the edition* (`BOARD.md`, owner decision 2026-10-11). Built
-on branch `design`, not merged, `main` and `DESIGN.md` untouched: `site/static/tokens.css`
-(imports `type.css`; four sizes, spacing scale, palette light and dark, the grid's four
-levers with B's values in a comment), `site/static/site.css` (eleven components, the
-comparison template), `base.html` (running head, menu with `aria-current`, skip link,
-colophon with the counts), `site/site.yaml` (`palette: a`, `start_here: []`), the
-comparison rendering in `build.py` (`render_comparison`, `render_texts`, `render_shared`,
-`deps_html`, `status_html`, `page(kind, section, measure, after)`, `--specimen ID PATH`),
-`site/specimens/components.html` and `comparison-a.html` with screenshots. `main` was
-merged into the branch on 2026-10-19 (`524d00e`), so the branch carries runs 7–13 and the
-filing links; the specimen is rendered from the merged map (seven rows; grid 10,800px tall
-at 1280). Draft amendment with every decision and its reasoning: `site/DESIGN-amendment.md`.
-The owner answered run 8's question on 2026-10-19 (`INBOX.md`): note *and* motion. The
-templates are built inside `DESIGN.md` on the note; the palette, spacing scale, page grammar
-and menu are the motion *Colour, space and pages*, tabled in `BOARD.md` (operator for; owner
-votes when he answers Ask 11), exhibit the specimen; `DESIGN.md` changes only when it passes.
-The four reservations of run 8 are accepted and stand in the amendment in the owner's words.
-**Ask 11 (the specimen; replaces the branch's Ask 8, whose number collided with run 8's)
-blocks nothing in the plan, but on the branch step 4 of the brief (record the approval,
-move the amendment into `DESIGN.md`, log it), step 5 (node, front page, thinker and work,
-passage, index pages, dispute, about), step 6 (verification) and the merge ask wait for it.**
-A colour or spacing change: `tokens.css` only. B's grid: the four `--grid-*` tokens. A
-different direction: stop, note in `INBOX.md`, no build without a `BOARD.md` line. Known: the
-brief's 120 KB weight budget cannot be met with the fonts (820 KB, off limits; `PLAN.md` §5).
-The old templates still use `style.css` and look unstyled on the branch until step 5. The
-scheduled runs work on `main` and must not touch the branch; when the branch merges, the
-routine inherits the templates. Screenshots: Playwright's Chromium on the owner's machine;
-PIL for the 64-colour reduction.
+**The design branch (Ask 12, the merge ask; blocking).** The owner's design brief of
+2026-10-11 (`DESIGN-BRIEF-2026-10-11.md`; verbatim in `INBOX.md`) chose direction A, *the
+edition*. On 2026-10-19 the owner approved the comparison specimen ("Yes to all") and said
+the look of the site is his to decide, not the board's; *Colour, space and pages* is in
+`DESIGN.md` as binding (owner decision, `BOARD.md`), and the branch `design` (pushed) carries
+`site/static/tokens.css`, `site.css`, `base.html`, the templates `comparison.html`, `node.html`
+(claim, argument, reading), `measure.html` (thinker, work, passage, dispute, attestation),
+`index.html` (front page), `about.html`, `site/site.yaml` (palette, `start_here`), the
+rendering in `build.py` (`render_node`, `render_index`, `render_front`, `render_pair`,
+`contents`, `deps_html`, `status_html`, `meta_line`, `--specimen ID PATH`), the specimens and
+screenshots under `site/specimens/`, and the verification in `DESIGN.md`. `style.css` is gone.
+`main` was merged into the branch on 2026-10-19 (`524d00e`); the runs keep moving `main`.
+**Ask 12 blocks the merge and nothing else:** on the yes, merge `origin/main` into `design`
+once more if it moved, then `design` into `main`; the site rebuilds; the routine inherits the
+templates and `DESIGN.md` binds every page it writes. Known: the 120 KB weight budget is not
+met (fonts 820 KB, off limits; `PLAN.md` §5); the dispute and attestation templates have no
+page to render until the first filing (Ask 10); two copy notes in `PLAN.md` §5. A colour or
+spacing change: `tokens.css` only; B's grid: the four `--grid-*` tokens. The scheduled runs
+must not touch the branch. Screenshots: Playwright's Chromium on the owner's machine, PIL for
+the 64-colour reduction.
 
 **Checkpoint 1 (Ask 7) was answered 2026-10-10 in an owner session:** the owner read the
 first comparison against the project's translations, found nothing that reads as
