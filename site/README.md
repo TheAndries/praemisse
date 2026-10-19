@@ -11,14 +11,13 @@ prose rendered from the nodes rather than written by hand. Code here is MIT ([`.
 |------|------|
 | `build.py` | The whole pipeline: read `map/*.md`, validate against `MODEL.md`, render to `_build/`. `python3 site/build.py --check` validates only. |
 | `requirements.txt` | PyYAML. Nothing else. |
-| `templates/` | `base.html` (the running head, the menu, the colophon), `comparison.html`, `node.html`, `index.html`, `about.html`. Plain `{{ name }}` substitution. |
+| `templates/` | `base.html` (the running head, the menu, the colophon), `comparison.html`, `node.html` (claim, argument, reading), `measure.html` (thinker, work, passage, dispute, attestation), `index.html` (the front page), `about.html`. Plain `{{ name }}` substitution. |
 | `site.yaml` | Design-layer settings: the palette set on `<html>`, the front page's `start_here` list. Added 2026-10-11. |
-| `static/tokens.css` | Every colour, size and spacing as a custom property; imports `type.css`. Direction A, the edition (owner decision 2026-10-11, branch `design`). |
+| `static/tokens.css` | Every colour, size and spacing as a custom property; imports `type.css`. Direction A, the edition (`DESIGN.md`, Colour, space and pages; owner decisions 2026-10-11 and 2026-10-19). |
 | `static/site.css` | Page and component styles, all from the tokens. |
-| `static/style.css` | The stylesheet before the design branch; still carries the templates not yet rebuilt, removed when they are. |
 | `static/type.css` | The chosen type: direction B, Libertine (Ask 3, 2026-10-05). |
 | `fonts/` | Self-hosted, subset, OFL-licensed web fonts; see `fonts/README.md`. |
-| `specimens/` | The three typographic specimen pages offered under Ask 3 (`a.html`, `b.html`, `c.html`, `make.py`); the two mockups the owner gave with the design brief of 2026-10-11 (`mockup-a.html`, `mockup-b.html`); the components (`components.html`) and the comparison specimen (`comparison-a.html`, written by `build.py --specimen x-thing-in-itself PATH`) with their screenshots. Kept as the record; not published. |
+| `specimens/` | The three typographic specimen pages offered under Ask 3 (`a.html`, `b.html`, `c.html`, `make.py`); the two mockups the owner gave with the design brief of 2026-10-11 (`mockup-a.html`, `mockup-b.html`); the components (`components.html`), the comparison specimen (`comparison-a.html`, written by `build.py --specimen x-thing-in-itself PATH`), the screenshots of every template and the two print PDFs of the verification (`DESIGN.md`). Kept as the record; not published. |
 | `_build/` | Output. Not committed. |
 
 ## Build and publish

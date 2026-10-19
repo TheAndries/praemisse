@@ -245,8 +245,108 @@ Each from the brief and `DESIGN.md`, with its reasoning in one line.
   at a fifth of the weight (0.7–0.9 MB a file; the whole page is 71,000px at 1280 and
   121,000px at 390).
 
+### Decisions taken at step 5 (the other templates, 2026-10-19)
+
+- *The node page's title is set at `--size-2`, the claim size, and its statement at `--size-3`.*
+  The brief names "the claim at `--size-2`" and no title; a node's title is itself a sentence of
+  up to thirty words, and at `--size-1` it would run to four lines before the statement.
+- *The apparatus column of a node holds the status word, the thinker, every passage the node
+  cites as a passage pair at `--size-4`, and the readings of the node.* The brief lists the
+  status, the source and the passage; the pair at the small size keeps the column shorter than
+  the text beside it on most pages, and the pair's reference line is the link to the passage page.
+- *The prose and the dependency lists sit beneath both columns, full width at the measure.*
+  On a phone the apparatus then follows the claim and precedes the prose, as the brief and P1
+  require, with no jump link and no script.
+- *Thinker, work, passage, dispute and attestation pages share one template, `measure.html`:
+  a kicker, the title, a top block, the prose, the contents lists, the apparatus note.* They
+  differ only in what fills the top block and the lists.
+- *The one line under an index title is taken from `MODEL.md`, Node types.* The brief asks
+  for a line on what the list is and the operator writes no copy of its own; the model's own
+  description of each type is that line.
+- *The note at the right of an index entry is the status word where the node has one, else
+  the fact that places it: a thinker's dates, a work's thinker and year, a passage's work, a
+  reading's thinker, a dispute's outcome, an attestation's date.* The brief asks for a status
+  word; the types without one need something at the right or the list reads as unfinished.
+- *An empty index says "No dispute is in the map yet", in that form for each type.*
+- *Start here lists three checked arguments, one per thinker, each the first step of its
+  chain on the thing in itself (`site/site.yaml`); the note at the right is the type and the
+  status word.* The brief leaves the choice to the operator and the owner may change the list.
+- *The front page's lead is the description from the old front page, verbatim, which opens
+  with the same words as the new title above it.* The brief fixes both; the repetition is a copy
+  matter the brief forbids this work to settle, and it is noted in `PLAN.md` for a run.
+- *The dispute and attestation templates are built but no page of either kind exists to
+  render; the dispute exchange is shown as a form in `site/specimens/components.html`.* The
+  first real filing (Ask 10) will be the first test, and the operator checks the page then.
+- *`site/static/style.css` is removed; every page is styled from `tokens.css` and `site.css`.*
+- *The specimens of the templates are screenshots of the first 3,000px of each page, as
+  64-colour PNGs.* A whole page runs to 11,000px (the claims index) and a full-page PNG to 3 MB.
+
 ### Verification
 
-Filled in at step 6 of the brief: screenshots per template, weight and speed of a node page and
-the comparison, contrast ratios for every pair, every pre-branch URL answering, the keyboard and
-screen-reader passes, the print PDFs, and the *Not permitted* list item by item.
+Done on 2026-10-19 on branch `design`, on the map as merged from `main` that day (227 nodes),
+with Playwright's Chromium 1280px and 390px, light and dark; the scripts are not part of the
+site.
+
+**Screenshots,** one page per template, under `site/specimens/`: `front`, `node` (a claim),
+`argument`, `thinker`, `work`, `passage`, `index` (the claims), `about`, each at 1280 and 390,
+light and dark, the first 3,000px; the comparison as `comparison-a-*` (its head, grid and first
+passage pair) and the components as `components-*`. No dispute or attestation exists to render.
+
+**Weight,** measured on the built files; GitHub Pages serves text gzipped, fonts as they are.
+
+| Page | HTML raw | HTML gzip | Stylesheets gzip (tokens, type, site) | Fonts on first visit |
+|------|---------|-----------|------------------|------------------|
+| Node (`/c/kant-space-a-priori/`) | 9.2 KB | 3.1 KB | 6.6 KB | 357 KB (serif regular and italic, sans regular); 471 KB where the page uses a semibold |
+| Argument (`/a/kant-appearance-requires-thing-in-itself/`) | 10.9 KB | 3.6 KB | 6.6 KB | the same |
+| Front page | 5.5 KB | 2.0 KB | 6.6 KB | the same |
+| Comparison (`/x/thing-in-itself/`) | 217 KB | 62 KB | 6.6 KB | 574 KB (all seven faces) |
+
+The brief's budget of a node page under 120 KB on first visit is not met and cannot be met
+with the fonts as they are: the three faces a page needs weigh 357 KB, and the fonts are off
+limits to this work (`PLAN.md` §5, the weight risk). The second page is 10 KB with the fonts
+cached, inside the brief's 30 KB.
+
+**Speed,** Chromium with its *Fast 3G* profile (1.6 Mbit/s down, 150 ms round trip) against a
+local server, cold cache: first contentful paint 0.59 s on the front page and 0.68 s on the
+comparison (the text renders in the fallback face and swaps, `font-display: swap`); the load
+event, which waits for the fonts, 2.5 s on the front page and 4.4 s on the comparison; the node
+page with the fonts cached loads in 1.0 s. The brief's "first render under one second" holds;
+"loads in under a second on a weak connection" (P8) holds for the text and not for the fonts.
+
+**Contrast,** every pair, light and dark, in the table under *Tokens* above: `--ink` 14.95:1
+and 13.75:1, `--ink-2` 8.62:1 and 9.73:1, `--muted` 5.22:1 and 5.64:1, `--accent` 8.14:1 and
+6.46:1 on `--paper`; all above 4.5:1 for text and 3:1 for the small caps and the accent underline.
+
+**Every URL that existed before the branch still answers.** The build of `origin/main`
+(`cf1a115`) and the build of the branch, the same day and map, each write 238 pages; the two
+lists of paths are identical (227 nodes, 9 indexes, the front page, About). Nothing moved.
+
+**Keyboard,** on the front page, a claim and the comparison: the first Tab lands on the skip
+link, then the wordmark and the five menu words, then the links in reading order; every stop
+shows the 2px `--ink` outline (`outline-style: solid`, `outline-width: 2px` on each of the
+first twelve stops, checked by script); 26, 29 and 332 focusable elements, all links, no
+tabindex anywhere. Links in running text are underlined, not coloured alone.
+
+**Screen reader,** a structural pass over the comparison grid and a passage pair, by script,
+not by a screen reader: the page has one `h1`, a heading order that skips no level, a `nav`
+labelled *Sections*, a `main` the skip link targets, `lang="en"` on the page; the grid is a
+`table` with `th scope="col"` for the three thinkers and their dates, seven `tbody` groups each
+opened by a `th scope="rowgroup"` carrying the row's question; every passage pair sets
+`lang="de"` on the original and `lang="en"` on the translation. Under 720px the same table is
+restyled, not rebuilt, and its header row stays in the tree for a reader. A pass with a real
+screen reader has not been made.
+
+**Print,** `site/specimens/print-node.pdf` (the argument page, A4 portrait, one column) and
+`print-comparison.pdf` (A4 landscape, the grid, the texts in two columns), from Chromium with
+`@media print`: black on white, the menu and the counts removed, the wordmark and the licence
+line kept, the site path printed after every linked node.
+
+**Not permitted** (`DESIGN.md`), item by item: ads: none. Pop-ups: none. Infinite scroll:
+none; every index is one page. Autoplay: none; nothing plays. Carousels: none. Skeleton
+loaders: none; no script runs. "You may also like": none. Reading-time badges: none.
+Engagement metrics shown to readers: none; the counts in the colophon count nodes, not
+readers. Stock imagery: none. Decorative illustration of philosophers: none; no image on the
+site. Also checked: no hex value and no pixel size outside `tokens.css`; four sizes and no
+fifth in `site.css`; no `<script>` in any template or page; the counts on no front page but
+in the colophon; body text 19px; the menu on one line at 390px; no horizontal scroll at 390
+or 1280 on any template (scroll width equal to the viewport on every screenshot).
