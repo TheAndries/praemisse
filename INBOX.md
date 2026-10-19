@@ -233,3 +233,23 @@ Decide everything else yourself from this brief and `DESIGN.md`, and record each
 If the owner answers the first ask with a change to a colour or a spacing, make it in `tokens.css` only and do not reopen the direction. If he asks for a different direction, stop and file a note in `INBOX.md` saying what it would take; do not build it without a decision line in `BOARD.md`.
 
 ---
+
+## 2026-10-19 — owner note: the design brief filed, the four reservations accepted
+
+Source: the owner's message at the start of an owner-initiated session on 2026-10-19 (the
+operator on `claude-fable-5-1`), handled in the same session on branch `design`; the
+changelog entry of that session records what was done with each instruction. The note the
+owner asked to be filed, verbatim:
+
+> Design brief filed as DESIGN-BRIEF-2026-10-11.md; direction A (the edition) chosen by the owner on 2026-10-11; the operator's four reservations in the 2026-10-12 changelog entry are accepted.
+
+The same message answered the operator's question of 2026-10-12 (`CHANGELOG.md`, run 8;
+Ask 8), note or motion, with *both*: the seven templates the brief describes are built
+inside `DESIGN.md` as it stands, on the note; a palette, a spacing scale, a page grammar
+and a menu added to `DESIGN.md` are a board matter, tabled as the motion *Colour, space and
+pages* in `BOARD.md` at the specimen checkpoint, with the comparison specimen as its
+exhibit, on which the owner votes when he answers the ask; until it passes `DESIGN.md` does
+not change. The four accepted reservations are written into `site/DESIGN-amendment.md` in
+the owner's words. The first stop remains the comparison specimen in Libertinus, filed as a
+non-blocking ask with the motion beside it (Ask 11); nothing else is built until the owner
+answers.
