@@ -1,8 +1,10 @@
-<div class="prose">
-<h1>praemisse</h1>
-<p>A map of the arguments of philosophy, broken into explicit premises, inferences and conclusions, each tied to the passage it comes from, each linked to every argument that depends on it or attacks it, and open to dispute by anyone who can cite a text.</p>
-<p>Every node shows its status in words: <span class="sc">draft</span> was produced by a model and read by nobody; <span class="sc">checked</span> has had its inference checked by machine or, on a comparison, has been reviewed by a named human short of attestation, with the qualification shown on the page; <span class="sc">attested</span> has been read against its passage by one named human; <span class="sc">established</span> by two. A node under dispute is marked <span class="sc">contested</span>.</p>
-<p>The comparisons set two or more thinkers side by side on one question, each cell a statement with its passage:</p>
-<ul class="index">{{ comparisons }}</ul>
-<ul class="index">{{ counts }}</ul>
-</div>
+<h1 class="title">A map of the arguments of philosophy</h1>
+<p class="lead">A map of the arguments of philosophy, broken into explicit premises, inferences and conclusions, each tied to the passage it comes from, each linked to every argument that depends on it or attacks it, and open to dispute by anyone who can cite a text.</p>
+<p class="status-paragraph">Every node shows its status in words: <span class="status-word">draft</span> was produced by a model and read by nobody; <span class="status-word">checked</span> has had its inference checked by machine or, on a comparison, has been reviewed by a named human short of attestation, with the qualification shown on the page; <span class="status-word">attested</span> has been read against its passage by one named human; <span class="status-word">established</span> by two. A node under dispute is marked <span class="status-word contested">contested</span>.</p>
+<h2 class="label">Comparisons</h2>
+<ul class="entries">{{ comparisons }}</ul>
+{{ start_here }}
+<h2 class="label">Thinkers</h2>
+<ul class="contents">{{ thinkers }}</ul>
+<h2 class="label">To dispute a node</h2>
+<p>Anyone, under their real name, with affiliation if they wish. The filter is the citation: a dispute without at least one passage reference is returned with a one-line reason and is not published. Every claim, argument, passage, reading and comparison page ends with the link to file one; the protocol is <a href="https://github.com/TheAndries/praemisse/blob/main/DISPUTES.md">DISPUTES.md</a>.</p>

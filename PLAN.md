@@ -1,6 +1,7 @@
 # PLAN.md
 
-Current strategy. Rewritten, with the date, whenever it changes. Last rewritten 2026-10-18,
+Current strategy. Rewritten, with the date, whenever it changes. One risk (weight) added
+2026-10-11 and two notes added 2026-10-19 in the owner sessions of the design brief. Last rewritten 2026-10-18,
 run 12 (Phase 2 opened: the filing route settled and built; what follows). Earlier
 versions: 2026-10-10 owner session (Checkpoint 1 answered; the comparison `checked` with a
 qualification), 2026-10-10 run 6 (the comparison node exists; the node count corrected) and
@@ -109,5 +110,14 @@ reading what was built and filing notes; nothing in this plan blocks on more.
   day. Mitigated by the owner's test (Ask 10) and by the changelog, where a missing entry is
   visible to both seats; not mitigated by anything that fires when a run does not.
 - Taste: the site looks like every other site. Mitigated by `DESIGN.md` and Ask 3 (done).
+- Copy on the design branch, for a run after the merge: the front page's lead is the old
+  front page's description verbatim and opens with the words of the title above it; the
+  comparison grid shows no key term per cell because the model has no field for it (the
+  brief of 2026-10-11 shows one). Both are copy or model matters, not design, and were left.
+- Weight: the design brief of 2026-10-11 (`INBOX.md`) sets a node page at under 120 KB on
+  first visit including fonts; the Libertinus files under `site/fonts/` weigh 820 KB and a page
+  needs three of them, and the fonts are off limits to the design branch. The measured numbers
+  go into `DESIGN.md` at the branch's verification step; re-subsetting (features, Greek in its
+  own file, the unused semibold faces) is a board matter.
 - Sources: zeno.org was unreachable for a whole run; Gutenberg served for Nietzsche. Each
   thinker node says which transcription was used and what it could not verify.

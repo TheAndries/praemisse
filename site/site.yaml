@@ -1,0 +1,16 @@
+# praemisse — site configuration read by site/build.py. Design-layer settings only; the
+# map and the model are not configured here (MODEL.md). Added 2026-10-11 with the design
+# brief (INBOX.md; BOARD.md, direction A; DESIGN.md, Colour, space and pages).
+
+# The palette, set as data-palette on <html>. Only "a" (the edition) exists; the tokens are
+# in site/static/tokens.css, so a future palette is one block there and one value here.
+palette: a
+
+# Up to three node ids shown under "Start here" on the front page, in this order; the front
+# page shows each node's title with its type and status word at the right. Chosen by the
+# operator on 2026-10-19 (one checked argument per thinker, each the first step of its
+# chain on the thing in itself); the owner may change the list. Empty: the section is omitted.
+start_here:
+  - a-kant-appearance-requires-thing-in-itself
+  - a-schopenhauer-kant-derivation-cannot-reach-thing-in-itself
+  - a-nietzsche-ich-denke-has-no-immediate-certainty

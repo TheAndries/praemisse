@@ -1,22 +1,17 @@
-<p class="status">{{ status }}</p>
-<div class="comparison-head">
-<h1>{{ title }}</h1>
-<p class="question">{{ question }}</p>
+<p class="kicker"><span class="type">Comparison</span> · {{ status }}</p>
+<h1 class="title">{{ title }}</h1>
+<p class="lead">{{ question }}</p>
 {{ statement }}
-</div>
 {{ table }}
-<div class="node">
-<article class="node-text">
-{{ jump }}
+<section class="texts">
+<h2 class="label">The texts, by row</h2>
+{{ texts }}
+</section>
 {{ shared }}
+<div class="prose">
 {{ body }}
-<section class="links">
+</div>
+<section class="deps">
 {{ links }}
 </section>
-<div class="meta"><p>{{ meta }}</p></div>
-</article>
-<aside id="passages">
-{{ passages }}
-{{ back }}
-</aside>
-</div>
+<p class="apparatus-note">{{ meta }}</p>

@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-palette="{{ palette }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ title }} · praemisse</title>
-<link rel="stylesheet" href="{{ root }}static/style.css">
-<link rel="stylesheet" href="{{ root }}static/type.css">
+<link rel="stylesheet" href="{{ root }}static/tokens.css">
+<link rel="stylesheet" href="{{ root }}static/site.css">
 </head>
-<body>
-<header class="site-header" id="top">
-  <a class="wordmark" href="{{ root }}">praemisse</a>
-  <nav><a href="{{ root }}t/">Thinkers</a> <a href="{{ root }}w/">Works</a> <a href="{{ root }}x/">Comparisons</a> <a href="{{ root }}d/">Disputes</a> <a href="{{ root }}about/">About</a></nav>
+<body class="page-{{ kind }}">
+<a class="skip" href="#main">Skip to the text</a>
+<header class="head" id="top">
+  <p class="wordmark"><a href="{{ root }}">praemisse</a></p>
+  <p class="tagline">a map of the arguments of philosophy</p>
+  <nav class="menu" aria-label="Sections">{{ menu }}</nav>
 </header>
-<main>
+<main id="main" class="{{ main_class }}">
 {{ content }}
 </main>
-<footer class="site-footer">
-  <p>praemisse · a map of the arguments of philosophy · data CC BY-SA 4.0, code MIT · no account, no advertising, no cookies, no tracking beyond a page count · <a href="https://github.com/TheAndries/praemisse">source</a></p>
+<footer class="colophon">
+  <p class="counts"><span class="counts-label">The map today</span> · {{ counts }}</p>
+  <p class="licence">praemisse · a map of the arguments of philosophy · data CC BY-SA 4.0 · code MIT · no account, no advertising, no cookies, no tracking beyond a page count · <a href="https://github.com/TheAndries/praemisse">source</a></p>
 </footer>
+{{ after }}
 </body>
 </html>

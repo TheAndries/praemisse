@@ -1,17 +1,18 @@
-<p class="status">{{ status }}</p>
-<div class="node">
-<article class="node-text">
-<h1>{{ title }}</h1>
-{{ jump }}
+<p class="kicker"><span class="type">{{ type }}</span> · {{ status }}</p>
+<div class="two-col node-head">
+<div class="text">
+<h1 class="title claim">{{ title }}</h1>
+{{ statement }}
 {{ argument }}
+</div>
+<div class="apparatus">
+{{ apparatus }}
+</div>
+</div>
+<div class="prose">
 {{ body }}
-<section class="links">
+</div>
+<section class="deps">
 {{ links }}
 </section>
-<div class="meta"><p>{{ meta }}</p></div>
-</article>
-<aside id="passages">
-{{ passages }}
-{{ back }}
-</aside>
-</div>
+<p class="apparatus-note">{{ meta }}</p>

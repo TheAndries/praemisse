@@ -2,6 +2,147 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-19 — owner session, continued: the specimen approved, the templates built, verification, the merge ask (Ask 12)
+
+The same owner session, after the entry below. The owner was shown the comparison specimen
+and its screenshots with five questions (the look as a whole; A's hairline grid or B's firmer
+one; the first statement of a cell at the claim size; the counts into the colophon; dark mode)
+and answered "Yes to all". He also said that the look of the site is his to decide as
+aesthetics and not a board matter, which is for the direction of the project, and that the
+work should go on without stopping again until the merge ask.
+
+**Step 4, the approval recorded.** The draft amendment moved from `site/DESIGN-amendment.md`
+into `DESIGN.md` under *Colour, space and pages*, binding as an owner decision of 2026-10-19;
+the decision row in `BOARD.md`; the motion of the morning closed as moot, with the note that
+`DESIGN.md`'s rule (amendable only by board decision) is met either way since both seats were
+for; Ask 11 done; the owner's note in `INBOX.md`. No token changed.
+
+**Step 5, the templates,** all from the existing build, in one pass rather than one commit
+each: the node (claim, argument, and the reading with it) on the page width in two columns,
+the claim and its statement with the quotations in the text column, the status, the thinker,
+the passage pairs and the readings in the apparatus column, the prose and the dependency
+lists beneath, the apparatus note with the filing links at the foot; the front page at the
+measure (title, the description as lead, the status paragraph as it was, the comparisons as
+entries with question and status line, *Start here* from `site/site.yaml`, the thinkers, how to
+dispute, from `DISPUTES.md`); thinker and work, passage, dispute and attestation on one
+reading-width template with a kicker, a top block and contents lists; the nine index pages
+with the count after the title, the model's line on the type, the line naming all nine, and
+one contents list; About with a paragraph on the board from `BOARD.md`. `style.css` is gone.
+Every decision is in `DESIGN.md`, *Decisions taken at step 5*.
+
+**Step 6, verification,** written into `DESIGN.md` under *Verification*: screenshots of eight
+templates at 1280 and 390, light and dark, under `site/specimens/`; weight (a node page 3 KB
+of HTML and 7 KB of stylesheets gzipped, with 357 KB of fonts on first visit, so the brief's
+120 KB budget is not met and cannot be with the fonts off limits; the second page 10 KB);
+speed on Chromium's Fast 3G (first paint 0.6–0.7 s, the load event 2.5 s on the front page
+and 4.4 s on the comparison, the node page 1.0 s warm); contrast as measured on 2026-10-11;
+every one of the 238 paths of `main`'s build present in the branch's build; a keyboard pass by
+script on three pages (skip link first, outline on every stop); a structural pass over the
+grid and a passage pair (no real screen reader was run, and the entry says so); print PDFs of
+the argument page and the comparison; the *Not permitted* list item by item.
+
+**What was wrong.** The first screenshot pass clipped the comparison's grid in the middle;
+re-clipped. The first timing script crashed on a page with no paint entry; guarded. The front
+page's lead, taken verbatim from the old front page as the brief says, opens with the words of
+the new title above it; the brief forbids rewriting copy here, so it stands and is noted in
+`PLAN.md`. The dispute and attestation templates have no page to render and are unverified on
+a real filing.
+
+**Step 7, the merge ask.** Ask 12, blocking: "Design branch complete; verification in
+`DESIGN.md`; merge?" Nothing merges to `main` until the owner says so; the scheduled runs keep
+working on `main`, and `origin/main` is merged into the branch again before the merge if they
+have moved.
+
+**Ask 12 answered: merge.** `origin/main` had not moved since the morning's merge, so
+`design` was merged into `main` with a merge commit and pushed; the site rebuilds from `main`
+under `.github/workflows/site.yml`, and the routine inherits the templates and `DESIGN.md`
+as it now stands. Two owner notes for the next run are in `INBOX.md`: the front page's lead to
+start at "broken into explicit premises", and the three Libertinus faces to be subset to the
+characters the map uses, under 180 KB on first visit, as a separate decision with a
+before-and-after number. The branch `design` is kept on the remote as the record.
+
+**Effort.** The owner session's own context, about half a run's ceiling in all; no adversarial
+pass, since no node changed.
+
+## 2026-10-19 — owner session: the brief filed, the reservations accepted, the motion *Colour, space and pages* tabled, the specimen re-rendered (Ask 11)
+
+Owner-initiated session on the owner's machine, on branch `design`. Operator on
+`claude-fable-5-1`. The owner's message asked for the state first, then five things; each
+is recorded here with what was done. `main` is untouched and `DESIGN.md` is unchanged.
+
+**State, as reported.** Branch `design` existed locally and on `origin`, three commits
+above `84f17ee` (2026-10-10), stopped at the branch's Ask 8 with `site/specimens/comparison-a.html`
+and its screenshots present; nothing on it was rebuilt. `main` had meanwhile moved seven
+commits (runs 7–13, 2026-10-11 to 2026-10-19, and the owner's upload `1823719`): 227 nodes,
+a seventh row on `x-thing-in-itself`, the comparison `x-the-will`, and run 12's filing route
+in `build.py`. The brief was not at the root as the message said, and not on `main`; the
+only copies were the verbatim one filed in `INBOX.md` on 2026-10-11 and the owner's document
+*praemisse design brief for the operator.md* in his Downloads folder, which is the INBOX copy
+to the character apart from two blank lines. That document was copied to the root unchanged
+as `DESIGN-BRIEF-2026-10-11.md` and committed as it is.
+
+**The merge.** `origin/main` merged into `design` (`524d00e`) before anything else, so the
+specimen renders from the map as it stands. Five files conflicted. `ASKS.md`, `CHANGELOG.md`,
+`PLAN.md` and `memory.md` were taken from `main` and the branch's entries put back: the
+2026-10-11 owner-session entry above run 7 (the run was the morning, the session the
+afternoon), the weight risk under §5 of the plan. In `build.py` the two sides touched the
+same line of `render_node`, the branch's *Verified by* and `main`'s filing links; both kept.
+The build checks clean (227 nodes, 0 errors) and builds every page.
+
+**The ask numbers collided.** The branch's session of 2026-10-11 filed Ask 8 (the
+specimen); run 8 on `main`, not seeing the branch, filed its own Ask 8 (the brief the
+mockups refer to) the next day. `main`'s numbering stands: Ask 8 is run 8's and is marked
+done today with the owner's answer (the brief is the INBOX document; direction A; note and
+motion both; the four reservations accepted). The specimen is re-filed as **Ask 11**,
+non-blocking by the owner's instruction (the plan proceeds), while on the branch the other
+templates, the verification and the merge wait for the answer. The owner note of
+2026-10-19 is filed in `INBOX.md` in his words.
+
+**Note or motion: both.** The owner's answer to run 8's question: the seven templates the
+brief describes are a note, inside `DESIGN.md` as it stands, and may proceed; a palette, a
+spacing scale, a page grammar and a menu added to `DESIGN.md` are a board matter. The motion
+*Colour, space and pages* is tabled in `BOARD.md`, drafted from the brief's amendment
+section, with the comparison specimen as its exhibit; it says three things plainly (one
+accent colour for links and the word *contested*, no second colour; the counts visible but
+in the colophon on every page, not on the front page; the header the one header of P7, set
+as a running head), says what it leaves alone, and names its relation to the decision of
+2026-10-11, whose route it replaces: approval of the specimen answers the ask, the vote
+amends `DESIGN.md`. The operator votes for; the owner votes when he answers Ask 11. The
+draft amendment's status paragraph now says the same.
+
+**The four reservations.** Run 8's four objections to the mockups are accepted, and stand
+in `site/DESIGN-amendment.md` in the owner's words: mockup copy is illustrative and no
+rendered prose is rewritten, so »behind« does not travel; status words come from `MODEL.md`
+and the map, so no claim shows `checked`; the status explanation on the front page is the
+map's own text, including the comparison sense of `checked`; fonts are Libertinus from
+`site/fonts/`, never Google. The front-page template and the apparatus-note component in the
+amendment carry the consequences.
+
+**The specimen, re-rendered.** `site/specimens/comparison-a.html` was written again by
+`build.py --specimen` from the merged map: seven rows, the Nietzsche cells of run 8, the
+filing links of run 12 in the apparatus note. Screenshots at 1280px and 390px, light and
+dark, with Playwright's Chromium, now of the head, the grid and the first passage pair,
+reduced to 64-colour PNGs (0.7–0.9 MB each). Measured: the page is 71,224px tall at 1280
+and 121,059px at 390; the grid alone 10,838px at 1280 (665–11,503), against 4,300px on
+2026-10-11 with five rows. That height is the map's, not the template's, and is noted in
+the amendment for the owner to judge at the ask.
+
+**What was wrong.** `main`'s filing links are spliced into the meta line as a second
+paragraph with no class, which on the comparison template fell out of the apparatus setting
+and rendered as body prose; the splice now carries the note's class on that template, and
+the decision is recorded. The first screenshots clipped at the second row of texts, as on
+2026-10-11, and ran to 18,570px and 3.9 MB a file with seven rows; re-clipped and reduced.
+The specimen's foot line carried the date 2026-10-11 as a literal; it now says when and
+from what it was rendered.
+
+**Not done, by instruction.** Nothing else is built: step 4 of the brief (record the
+approval), step 5 (the other templates), step 6 (verification) and the merge ask wait for
+the owner's answer to Ask 11 and his vote on the motion. The weight gap (`PLAN.md` §5)
+stands.
+
+**Effort.** The owner session's own context, about a third of a run's ceiling; no
+adversarial pass, since no node changed.
+
 ## 2026-10-19 — run 13: Kant's resolution of the third antinomy, A 538–541 / B 566–569, and the empty cell on the will as cause
 
 Thirteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
@@ -1080,6 +1221,77 @@ adversarial pass.
 157,000 in the adversarial agent: a quarter on reading the governing files, the map and the
 owner's mockups, a third on the six passages, twelve claims, the argument and the comparison,
 the rest on the review, the 25 fixes and the records. Nothing spent.
+
+## 2026-10-11 — owner session: the design brief, branch `design`, the comparison specimen (Ask 8)
+
+Owner-initiated session on the owner's machine. Operator on `claude-fable-5-1`. The owner gave
+a design brief (*praemisse design brief for the operator.md*) with two mockups of the front
+page, A *the edition* and B *the apparatus*, and had chosen A. The brief is filed verbatim in
+`INBOX.md` as an owner note; the choice of A is an owner decision in `BOARD.md`; the mockups
+are kept in `site/specimens/`. Everything is on branch `design`; `main` is untouched and
+`DESIGN.md` is unchanged, as the brief requires until the owner has approved the specimen.
+
+**What the brief asks.** Colour, spacing, page grammar and a menu under the ten principles
+as they stand, as an amendment to `DESIGN.md` under *Colour, space and pages*: one token
+file, eleven components, seven templates and the index pages built by the existing build,
+the counts moved from the front page to the colophon. Two asks: the comparison specimen
+first (this session stops there), the merge at the end. Off limits: the map, the model, the
+status vocabulary, the protocol, the type and the fonts, the rendered prose.
+
+**Done, in the brief's order.** Step 1: the records above and the first draft of the
+amendment, `site/DESIGN-amendment.md`, with every operator decision and its one line of
+reasoning. Step 2: `site/static/tokens.css` (imports `type.css`; the brief's values, the
+four sizes, the spacing scale, the palette light and dark, the grid's four levers with B's
+values in a comment), `site/static/site.css` (every component and the comparison template,
+nothing but tokens), `site/specimens/components.html` with screenshots at 390 and 1280,
+light and dark; `base.html` rewritten as the running head, the menu with the current
+section marked, a skip link, and the colophon with the counts from the build;
+`site/site.yaml` for the palette and the *Start here* list. Step 3: the comparison template
+and its rendering in `build.py` (the label line, the title, the question, the statement,
+the grid as a table with `th` cells for the thinkers and each row's question a `th` across
+the width, the texts by row beneath it, the premises shared, the body, the dependency
+lists, the apparatus note), a `--specimen ID PATH` flag that writes one node's page with the
+specimen's paths, `site/specimens/comparison-a.html` rendered from the real map, and its
+screenshots. Ask 8 filed: *Comparison specimen: yes, or what to change?* The other
+templates still render with the new chrome and the old body markup; they are step 5, after
+the answer.
+
+**Decisions taken by the operator** (all in `site/DESIGN-amendment.md` with reasoning): the
+first statement of a cell at `--size-2` and the rest at `--size-3`, since cells hold up to
+three statements of up to 92 words; each passage shown once, under the first row that cites
+it, a later cell linking to that anchor (nine of the 34 citations repeat); the row's note
+out of the grid and into the margin beside that row's passages; the six passages the
+comparison lists but no cell cites in a last group, since the body quotes them (P1); the
+label line above the title a `p`, not an `h2`; links in running text underlined in the
+accent, links in a list or a cell in ink without underline until hover; the statement in a
+cell plain text and the type word (Claim, Argument) the link to the node; the thinker's full
+name in the grid header; no key term per cell, the model having no field for it; the
+screenshots the head, grid and first row of texts rather than the whole page.
+
+**What was wrong.** The first rendering put the passages in the 2fr apparatus column and
+the note in the 3fr text column, as a literal reading of "the passage pairs in a two-column
+node layout"; 7,000 words of passages in 426px ran the page to 49,500px. Swapped: the
+passages are the text of that section and take the measure, the note is the apparatus; the
+page is 38,700px at 1280, of which the grid is 4,300 and the texts 23,000. Headless Edge
+with `--force-dark-mode` did not switch the colour scheme, so the screenshots were taken
+with Playwright's Chromium, which emulates it. The old build's `status` line, the `node`
+layout and the aside are still used by the non-comparison templates and have no styles in
+`site.css` yet; those pages look unstyled on the branch until step 5, which is expected.
+
+**A conflict in the brief, for the board.** The weight budget, a node page under 120 KB on
+first visit including fonts, cannot be met with the fonts as they stand: the seven
+Libertinus files are 100–136 KB each, 820 KB together, and a page needs at least three of
+them. The fonts are off limits to this work. The operator will measure and record the real
+numbers at step 6; whether to re-subset the fonts (drop features, split Greek into its own
+file, or drop the semibold faces the templates do not use) is a board matter, noted in
+`PLAN.md`'s risks for a scheduled run and raised in the ask's answer if the owner wants it.
+
+**Not done, by design.** Templates 1 and 3–7 and the index pages; the verification of step
+6; the amendment to `DESIGN.md`; the merge. `style.css` stays until the templates that use
+it are rebuilt. No `start_here` nodes chosen yet (step 5).
+
+**Effort.** The owner session's own context, about a third of a run's ceiling; no
+adversarial pass, since no node changed.
 
 ## 2026-10-11 — run 7: Kant on the will at B xxvii–xxviii, and a sixth row
 

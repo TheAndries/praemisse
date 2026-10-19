@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components · praemisse</title>
+<link rel="stylesheet" href="../static/tokens.css">
+<link rel="stylesheet" href="../static/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the text</a>
+<header class="head">
+  <p class="wordmark"><a href="#">praemisse</a></p>
+  <p class="tagline">a map of the arguments of philosophy</p>
+  <nav class="menu" aria-label="Sections"><a href="#">Thinkers</a> <a href="#">Works</a> <a href="#" aria-current="page">Comparisons</a> <a href="#">Disputes</a> <a href="#">About</a></nav>
+</header>
+<main id="main" class="main-page">
+
+<p class="kicker"><span class="type">Specimen</span> · the eleven components, direction A, set in Libertinus</p>
+<h1 class="title">Components</h1>
+<p class="lead">Each component once, in the markup the build writes and the classes <code>site.css</code> holds. The page follows the system's colour scheme; the screenshots beside it show light and dark at 390px and 1280px. The passages and claims are the map's own, cited as on their pages.</p>
+
+<h2 class="label">1 · Running head, 2 · Menu, 11 · Colophon</h2>
+<p class="prose">Above and below this page: the wordmark in serif small caps, the one-line description, the five words of the menu with the current section underlined in the accent, a hairline; and the colophon above a strong rule, with the counts (each a link to its index) and the licence line. Neither sticks.</p>
+
+<h2 class="label">3 · Section label</h2>
+<p class="prose">This heading and the ones like it: <code>--size-4</code> sans, muted, uppercase, letterspaced 0.14em; an <code>h2</code> even though it is small. The only uppercase text on the site.</p>
+
+<h2 class="label">4 · Contents list</h2>
+<ul class="contents">
+  <li><span class="name"><a href="#">Immanuel Kant</a></span><span class="note">1724–1804</span></li>
+  <li><span class="name"><a href="#">Arthur Schopenhauer</a></span><span class="note">1788–1860</span></li>
+  <li><span class="name"><a href="#">Friedrich Nietzsche</a></span><span class="note">1844–1900</span></li>
+</ul>
+<ul class="contents">
+  <li><span class="name"><a href="#">An appearance presupposes something that appears</a></span><span class="note"><span class="status-word">draft</span></span></li>
+  <li><span class="name"><a href="#">We must be able to think the same objects as things in themselves, or there would be appearance without anything that appears</a></span><span class="note"><span class="status-word">checked</span></span></li>
+  <li><span class="name"><a href="#">The thing in itself: Kant, Schopenhauer, Nietzsche</a></span><span class="note"><span class="status-word">checked</span><span class="status-more">, with a qualification on the page</span></span></li>
+</ul>
+<ol class="contents">
+  <li><span class="name"><a href="#">An appearance presupposes something that appears</a></span><span class="note">the distinction the other two inherit</span></li>
+  <li><span class="name"><a href="#">The thing in itself is will</a></span><span class="note">the inheritance, and the first attack</span></li>
+</ol>
+
+<h2 class="label">5 · Status word</h2>
+<p class="prose">Inline, at the text's size: <span class="status-word">draft</span>, <span class="status-word">checked</span>, <span class="status-word">attested</span>, <span class="status-word">established</span>, and under dispute <span class="status-word contested">contested</span>. At <code>--size-4</code>, as in a list or a reference line: <span class="status-word size-4">draft</span> <span class="status-word size-4">checked</span> <span class="status-word size-4">attested</span> <span class="status-word size-4">established</span> <span class="status-word contested size-4">contested</span>. Always the word; the one warning colour sits beside <em>contested</em> and nowhere else.</p>
+
+<h2 class="label">6 · Apparatus note, in the two-column node layout, with 7 · Passage pair</h2>
+<div class="two-col">
+  <div class="text">
+    <p class="kicker"><span class="type">Claim</span></p>
+    <p class="size-2">It would be absurd that there be appearance without something that appears; and to regard the objects of the senses as mere appearances is to grant that a thing in itself underlies them.</p>
+    <div class="prose">
+    <p>B xxvi–xxvii has only the first half, and negatively: without the reservation that we can think the same objects as things in themselves, "the absurd proposition would follow that there is appearance without anything that appears" (AA 3:17.05–07); it says "something that appears", not "thing in itself". The second half is Prolegomena §32, which puts it positively: by admitting appearances the understanding also admits the existence of things in themselves, and the representation of such beings is not only admissible but unavoidable (AA 4:314.33–315.06).</p>
+    <p>A link in running text, such as <a href="#">the argument this claim supports</a>, takes the accent and an underline; a link in a list takes neither until hover.</p>
+    </div>
+  </div>
+  <div class="apparatus">
+    <p><span class="term">Status</span> <span class="status-word">draft</span> · <span class="term">Produced by</span> claude-fable-5-1, 2026-10-06 · <span class="term">Verified by</span> nobody yet</p>
+    <p><span class="term">Source</span> Kritik der reinen Vernunft, B xxvi–xxvii (AA 3:16.30–17.07) · <a href="#">the passage</a></p>
+    <div class="pair" lang="de">
+      <p class="pair-original" lang="de">Gleichwohl wird, welches wohl gemerkt werden muß, doch dabei immer vorbehalten, daß wir eben dieselben Gegenstände auch als Dinge an sich selbst, wenn gleich nicht erkennen, doch wenigstens müssen denken können. Denn sonst würde der ungereimte Satz daraus folgen, daß Erscheinung ohne etwas wäre, was da erscheint.</p>
+      <p class="pair-translation" lang="en">Nevertheless, and this must be well noted, it is always reserved that we must at least be able to think, even if we cannot cognize, these same objects also as things in themselves. For otherwise the absurd proposition would follow that there is appearance without anything that appears.</p>
+      <p class="pair-ref"><a href="#">Kritik der reinen Vernunft, B xxvi–xxvii (AA 3:16.30–17.07)</a> · korpora.org, AA III 16–17 · <span class="by">the project's translation</span></p>
+    </div>
+    <div class="pair" lang="grc">
+      <p class="pair-original verse" lang="grc">Μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος
+οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε,</p>
+      <p class="pair-translation" lang="en">Sing, goddess, the wrath of Peleus' son Achilles, the ruinous wrath that laid countless griefs on the Achaeans,</p>
+      <p class="pair-ref">Homer, <cite>Iliad</cite> 1.1–2 · Perseus (Monro and Allen, 1920) · <span class="by">the project's translation</span>. Greek, with <code>lang</code> set, to show the script.</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="label">8 · Comparison grid</h2>
+<div class="grid-box">
+<table class="grid" data-thinkers="3">
+<thead><tr>
+  <th scope="col"><span class="grid-name">Immanuel Kant</span><span class="grid-dates">1724–1804</span></th>
+  <th scope="col"><span class="grid-name">Arthur Schopenhauer</span><span class="grid-dates">1788–1860</span></th>
+  <th scope="col"><span class="grid-name">Friedrich Nietzsche</span><span class="grid-dates">1844–1900</span></th>
+</tr></thead>
+<tbody id="row-1">
+  <tr class="grid-q"><th scope="rowgroup" colspan="3"><span class="n">1</span>Is there a thing in itself to a given appearance?</th></tr>
+  <tr class="grid-cells">
+    <td data-thinker="Immanuel Kant"><ul class="cell">
+      <li><p class="cell-statement">It would be absurd that there be appearance without something that appears; and to regard the objects of the senses as mere appearances is to grant that a thing in itself underlies them.</p><p class="cell-ref"><a href="#">Claim</a> · <a href="#">B xxvi–xxvii</a>; <a href="#">§32</a> · <span class="status-word">draft</span></p></li>
+      <li><p class="cell-statement">We can at least think, though not cognize, the same objects also as things in themselves; the noumenon is a limiting concept, not an object of cognition.</p><p class="cell-ref"><a href="#">Claim</a> · <a href="#">B xxvi–xxvii</a>; <a href="#">B 307–308</a> · <span class="status-word">draft</span> · readings: <a href="#">two-aspect</a>, <a href="#">two-object</a></p></li>
+    </ul></td>
+    <td data-thinker="Arthur Schopenhauer"><ul class="cell">
+      <li><p class="cell-statement">What is faulty in Kant is only the manner of the derivation of the thing in itself, not the recognition of a thing in itself to the given appearance.</p><p class="cell-ref"><a href="#">Claim</a> · <a href="#">Anhang, ZA II 535</a> · <span class="status-word">draft</span></p></li>
+    </ul></td>
+    <td data-thinker="Friedrich Nietzsche"><ul class="cell">
+      <li><p class="cell-statement">The "apparent" world is the only one: the true world is only added on by a lie.</p><p class="cell-ref"><a href="#">Claim</a> · <a href="#">»Die ›Vernunft‹ in der Philosophie«, 2</a> · <span class="status-word contested">contested</span></p></li>
+    </ul></td>
+  </tr>
+</tbody>
+<tbody id="row-2">
+  <tr class="grid-q"><th scope="rowgroup" colspan="3"><span class="n">2</span>Can the thing in itself be reached by inference from what appears?</th></tr>
+  <tr class="grid-cells">
+    <td data-thinker="Immanuel Kant"><ul class="cell">
+      <li><p class="cell-statement">If we could not think the objects given to us as appearances also as things in themselves, there would be appearance without anything that appears; that is absurd; so we must at least be able to think them as things in themselves.</p><p class="cell-ref"><a href="#">Argument</a> · <a href="#">B xxvi–xxvii</a>; <a href="#">§32</a> · <span class="status-word">checked</span></p></li>
+    </ul></td>
+    <td data-thinker="Arthur Schopenhauer"><p class="cell-empty">No position in the map.</p></td>
+    <td data-thinker="Friedrich Nietzsche"><p class="cell-empty">No position in the map.</p></td>
+  </tr>
+</tbody>
+</table>
+</div>
+<p class="prose">The statements here are the map's and the first cell in each row is what the comparison page shows; the empty cells and the <span class="status-word">contested</span> word are set only to show the component. A real row is at <a href="comparison-a.html">the comparison specimen</a>.</p>
+
+<h2 class="label">9 · Dependency lists</h2>
+<div class="deps">
+  <h2 class="label">Depends on</h2>
+  <ul class="contents">
+    <li><span class="name"><a href="#">An appearance presupposes something that appears</a></span><span class="note"><span class="status-word">draft</span></span></li>
+    <li><span class="name"><a href="#">Without things in themselves there would be appearance without anything that appears</a></span><span class="note"><span class="status-word">draft</span></span></li>
+  </ul>
+  <h2 class="label">Supports</h2>
+  <ul class="contents">
+    <li><span class="name"><a href="#">Things in themselves can be thought but not known</a></span><span class="note"><span class="status-word">draft</span></span></li>
+  </ul>
+</div>
+
+<h2 class="label">10 · Dispute exchange</h2>
+<p class="prose">No dispute has been filed yet; the form is shown with the roles and no text. Each turn is dated and signed; the project's one reply is marked <em>the map replies</em> in the same form; no indentation, no bubbles.</p>
+<div class="exchange">
+  <div class="turn"><p class="turn-head"><span class="who">The disputant, in their own name</span> · a date · fidelity</p><p>The alternative reading, stated as precisely as the node states its own, with at least one passage by canonical reference.</p></div>
+  <div class="turn"><p class="turn-head"><span class="who">the map replies</span> · a date</p><p>One reply, signed as the project, citing passages: concede, or argue.</p></div>
+  <div class="turn"><p class="turn-head"><span class="who">The disputant</span> · a date · counter</p><p>One counter. The operator does not reply again; the node is marked <span class="status-word contested">contested</span> until a second, independent, named human attests.</p></div>
+</div>
+
+<p class="apparatus-note">Apparatus note, at the foot of a node: Permanent address /c/kant-appearance-presupposes-something-appearing/ · Produced by claude-fable-5-1, 2026-10-06 · Disputes: none</p>
+
+</main>
+<footer class="colophon">
+  <p class="counts"><span class="counts-label">The map today</span> · <a href="#">3 thinkers</a> · <a href="#">5 works</a> · <a href="#">44 passages</a> · <a href="#">81 claims</a> · <a href="#">9 arguments</a> · <a href="#">4 readings</a> · <a href="#">1 comparison</a> · <a href="#">0 disputes</a> · <a href="#">0 attestations</a></p>
+  <p class="licence">praemisse · a map of the arguments of philosophy · data CC BY-SA 4.0 · code MIT · no account, no advertising, no cookies, no tracking beyond a page count · <a href="https://github.com/TheAndries/praemisse">source</a></p>
+</footer>
+<p class="specimen-line">Specimen: the components of direction A, 2026-10-11. Not a page of the site.</p>
+</body>
+</html>
