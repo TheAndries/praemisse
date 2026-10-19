@@ -291,6 +291,48 @@ p .status-word, li .status-word { font-size: inherit; }  /* inline in body text,
 /* specimens only: one line at the foot saying what the page is */
 .specimen-line { max-width: calc(var(--page) + 2 * var(--gutter)); margin: 0 auto; padding: 0 var(--gutter) var(--s-4); font-family: var(--sans); font-size: var(--size-4); line-height: var(--leading-4); color: var(--muted); }
 
+
+/* ------------------------------------------------------------------ the node page (claim, argument, reading) */
+.title.claim { font-size: var(--size-2); line-height: var(--leading-2); letter-spacing: 0; max-width: var(--measure); }
+.node-head > .text > .statement { margin-bottom: var(--s-3); }
+.node-head > .apparatus > .label { margin: var(--s-3) 0 var(--s-2); }
+.node-head > .apparatus > .label:first-child { margin-top: 0; }
+.node-head .pair-original, .node-head .pair-translation { font-size: var(--size-4); line-height: var(--leading-4); }
+.node-head .contents { margin-bottom: 0; }
+.node-head .contents .name { font-family: var(--serif); font-size: var(--size-3); }
+.node-head .argument { margin-top: 0; }
+.node-head .form { margin-top: var(--s-2); }
+.kicker .dates, .kicker .ref { font-variant-numeric: oldstyle-nums; }
+.kicker .quiet a { color: var(--ink); }
+
+/* the front page's entries: one per comparison, a strong rule above the first */
+.entries { list-style: none; margin: 0 0 var(--s-4); padding: 0; border-top: calc(2 * var(--hairline)) solid var(--rule-strong); }
+.entry { border-bottom: var(--hairline) solid var(--rule); padding: var(--s-3) 0; }
+.entry p { margin: 0 0 var(--s-1); }
+.entry-title { font-size: var(--size-2); line-height: var(--leading-2); }
+.entry-title a { color: var(--ink); text-decoration: none; }
+.entry-title a:hover, .entry-title a:focus-visible { text-decoration: underline; }
+.entry-thinkers { color: var(--ink-2); }
+.entry-status { font-family: var(--sans); font-size: var(--size-4); line-height: var(--leading-4); color: var(--muted); }
+.entry-status .status-word { color: var(--ink); }
+.entry-status .qualification { font-family: var(--serif); font-style: italic; color: var(--ink-2); }
+.status-paragraph { max-width: var(--measure); margin-bottom: var(--s-4); }
+.page-front .lead { margin-bottom: var(--s-3); }
+
+/* an index page: the count after the title, the line naming the nine indexes */
+.count { color: var(--muted); font-variant-numeric: oldstyle-nums; margin-left: 0.15em; }
+.indexes { font-family: var(--sans); font-size: var(--size-4); line-height: var(--leading-4); color: var(--muted); margin: 0 0 var(--s-4); }
+.indexes a { color: inherit; text-decoration: none; }
+.indexes a:hover, .indexes a:focus-visible { text-decoration: underline; }
+.indexes a[aria-current] { color: var(--ink); border-bottom: var(--hairline) solid var(--accent); }
+.page-index .contents .name { hyphens: manual; }
+
+/* the measure templates: the passage pair at the body size on its own page */
+.page-passage .pair { margin-bottom: var(--s-4); }
+.page-passage .pair-original, .page-passage .pair-translation { font-size: var(--size-3); line-height: var(--leading-3); }
+.page-thinker .facts, .page-work .facts { margin-bottom: var(--s-4); }
+.page-dispute .statement .quiet a, .page-attestation .quiet a { color: var(--ink); }
+
 /* ------------------------------------------------------------------ print */
 @media print {
   :root { --paper: var(--print-paper); --ink: var(--print-ink); --ink-2: var(--print-ink); --muted: var(--print-muted); --rule: var(--print-rule); --rule-strong: var(--print-ink); --accent: var(--print-ink); --contested: var(--print-ink); --grid-rule: var(--print-rule); }
@@ -300,7 +342,7 @@ p .status-word, li .status-word { font-size: inherit; }  /* inline in body text,
   .menu, .counts, .skip, .jump, .return, .specimen-line { display: none; }
   .head { padding-top: 0; }
   a { color: inherit; text-decoration: none; }
-  .prose a[data-url]::after, .contents a[data-url]::after, .cell-ref a[data-url]::after { content: " " attr(data-url); font-family: var(--sans); font-size: var(--size-4); color: var(--muted); }
+  a[data-url]::after { content: " " attr(data-url); font-family: var(--sans); font-size: var(--size-4); color: var(--muted); }
   .two-col { grid-template-columns: minmax(0, 1fr); }
   .page-comparison .two-col { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); }
   .grid-box.wide { overflow: visible; }
