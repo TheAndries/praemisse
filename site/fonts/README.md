@@ -1,10 +1,17 @@
 # site/fonts/
 
 Self-hosted web fonts (DESIGN.md 8), every one under the SIL Open Font License 1.1, with the
-licence text beside the files. Subset to Latin, Latin Extended, Greek and Greek Extended
-(polytonic), general punctuation and a few symbol ranges, with all OpenType layout features
-kept (small capitals, old-style figures, ligatures, kerning). Rebuilt with `pyftsubset`
-(fontTools) from the sources below; nothing was redrawn.
+licence text beside the files. Two sets. `libertinus/full/` holds the faces as fetched on
+2026-10-05 and subset then to Latin, Latin Extended, Greek and Greek Extended (polytonic),
+general punctuation and a few symbol ranges, with all OpenType layout features kept; the site
+does not load them and the build does not publish them. `libertinus/*.woff2`, the files
+`type.css` loads, are subset again from those on 2026-10-19 (owner decision) by
+`tools/subset_fonts.py` to the characters the map and the templates use plus Basic Latin,
+Latin-1, Latin Extended-A, Greek and Coptic, General Punctuation, the arrows and the logical
+symbols, every layout feature kept (small capitals, old-style and lining figures, ligatures,
+kerning): 800 KB to 352 KB for the seven, 357 KB to 151 KB for the three a page needs. Rerun
+the script when the map grows; `site/build.py` fails if a rendered page carries a character
+the subsets lack. Nothing was redrawn.
 
 | Directory | Family | Source | Version fetched 2026-10-05 |
 |-----------|--------|--------|------|

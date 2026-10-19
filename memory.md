@@ -14,12 +14,12 @@ the operator cannot see the routine's run history and asked the owner to look (A
 The GitHub and Claude Code Remote tools in the tool list are platform-attached to every
 cloud session and are not a config change (`ROUTINE.md`, Ask 6): do not raise it again, and
 do not use them; everything goes through git and the repository. Open disputes: none.
-Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: two owner notes of 2026-10-19 (front-page lead; font subsetting) wait for run 14; empty at runs 1–13; no form filing yet; the owner made no commit
+Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; empty at runs 1–13; no form filing yet; the owner made no commit
 between runs 8 and 13. Open asks: 4 (mailbox; deferred by owner; now the second filing
 route, for anyone without a GitHub account), 9 (the owner's qualified review of https://praemisse.com/x/the-will/,
 opened 2026-10-15; blocks nothing), **10 (opened 2026-10-18: test the filing route once from
 a node page, and look at the routine's run history for 10-16 and 10-17; blocks the
-confidence of Phase 2, not the plan)**. Asks 1, 2, 3, 5, 6, 7, 8, 11, 12 done. INBOX holds two owner notes of 2026-10-19 for the next run.
+confidence of Phase 2, not the plan)**. Asks 1, 2, 3, 5, 6, 7, 8, 11, 12 done.
 
 **The design branch, merged into `main` on 2026-10-19 (Ask 12 done).** The owner's design brief of
 2026-10-11 (`DESIGN-BRIEF-2026-10-11.md`; verbatim in `INBOX.md`) chose direction A, *the
@@ -34,10 +34,14 @@ rendering in `build.py` (`render_node`, `render_index`, `render_front`, `render_
 screenshots under `site/specimens/`, and the verification in `DESIGN.md`. `style.css` is gone.
 `main` was merged into the branch on 2026-10-19 (`524d00e`); the runs keep moving `main`.
 The owner said merge the same day; `design` is merged into `main` and the routine
-inherits the templates; `DESIGN.md` binds every page it writes. **Two owner notes wait in
-`INBOX.md` for the next run:** the front page's lead to start at "broken into explicit
-premises"; the fonts to be subset to the characters the map uses, under 180 KB on first
-visit, as a separate decision with the weight before (357 KB) and after. Known: the 120 KB weight budget is not
+inherits the templates; `DESIGN.md` binds every page it writes. The same day, on branch `design-type` (merged): the type is fluid (`--size-3`
+clamped 19px to 22px at 1920, the other sizes derived by ratio; `--measure` 60ch; hyphens off
+at 720px and above except in passages; the front page's lead in roman and starting at
+"Broken into explicit premises"), and the fonts are subset by `tools/subset_fonts.py` to what
+the map uses plus Latin, Latin Extended-A, Greek, punctuation and symbols (the full faces in
+`site/fonts/libertinus/full/`, unpublished); **rerun the script when a passage brings a new
+character, since `build.py` fails on a character the subsets lack** (polytonic Greek is not in
+the ranges and comes in through the map scan). A node page is 161 KB on first visit. Known: the 120 KB weight budget is not
 met (fonts 820 KB, off limits; `PLAN.md` §5); the dispute and attestation templates have no
 page to render until the first filing (Ask 10); two copy notes in `PLAN.md` §5. A colour or
 spacing change: `tokens.css` only; B's grid: the four `--grid-*` tokens. The scheduled runs

@@ -276,7 +276,22 @@ Two owner notes for the next scheduled run, not for the merge, in the owner's wo
 
 > Subset the three Libertinus faces to the characters the map actually uses, target under 180 KB on first visit, as a separate decision with a before-and-after number.
 
-Not handled in this session. The first is a copy change to `site/templates/index.html` (the
-lead); the second touches `site/fonts/`, which the design brief put off limits to the design
-work, and is to be taken as its own decision with the weight measured before and after
-(`DESIGN.md`, *Verification*, gives the before: 357 KB for the three faces, 116 + 136 + 105).
+Superseded the same day: the owner's third message of 2026-10-19 (below) made both owner
+decisions for this session, not notes for a run. Both done on branch `design-type` and merged.
+
+## 2026-10-19 — owner note: three follow-ups to the merged design, done in this session
+
+Source: the owner, the third message of the owner session of 2026-10-19, in full to the
+operator. Three owner decisions, none a board matter, to be done on branch `design-type` and
+merged by the operator once the checks pass: (A) the type grows with the viewport (fluid
+`--size-3`, the other sizes derived by their ratios, the measure on every reading-width page,
+hyphenation off at 720px and above except in passages, the front page's lead in roman);
+(B) the front page's lead starts at "Broken into explicit premises"; (C) the Libertinus faces
+subset to what the map uses plus Latin, Latin Extended-A, Greek, punctuation and symbols,
+features kept, under 180 KB on first visit, the full faces kept beside the subsets, a script
+under `tools/` and a build check for a missing character. Checks named by the owner: 1920
+screenshots under 100 KB; body size 17px or more on a phone and 21–23px at 1920; 62–70
+characters a line on the front page at 1920; the lead's contrast 4.5:1 or better; no
+character falling back to the system face; a node page under 180 KB on first visit. Handled
+in the same session: `CHANGELOG.md`, the entry of this session; `DESIGN.md`, *Colour, space
+and pages*, the dated lines; `BOARD.md`, the two owner decisions.

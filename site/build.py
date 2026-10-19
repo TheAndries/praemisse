@@ -1159,7 +1159,7 @@ def build(nodes: list[Node], out: Path, domain: str | None) -> None:
         shutil.rmtree(out)
     out.mkdir(parents=True)
     shutil.copytree(SITE / "static", out / "static")
-    shutil.copytree(SITE / "fonts", out / "fonts")
+    shutil.copytree(SITE / "fonts", out / "fonts", ignore=shutil.ignore_patterns("full"))  # the full faces stay in the repository, unpublished
     # site/specimens/ (the type directions of Ask 3, the mockups and the design specimens)
     # stays in the repository as the record and is not published.
     ids = {n.id: n for n in nodes}
@@ -1183,6 +1183,25 @@ def build(nodes: list[Node], out: Path, domain: str | None) -> None:
     (out / ".nojekyll").write_text("")
     if domain:
         (out / "CNAME").write_text(domain + "\n")
+    missing = check_font_coverage(out)
+    if missing:
+        sys.exit("error: the subset fonts lack " + ", ".join(f"U+{ord(ch):04X} {ch!r}" for ch in missing) + "; rerun tools/subset_fonts.py")
+
+
+def check_font_coverage(out: Path) -> list[str]:
+    """Every character a rendered page shows must be in every subset face under site/fonts/
+    (owner decision 2026-10-19, tools/subset_fonts.py), or a word would fall back to the
+    system face. Returns the characters missing from any face."""
+    from fontTools.ttLib import TTFont  # site/requirements.txt
+    cmaps = [set(TTFont(f).getBestCmap()) for f in sorted((SITE / "fonts" / "libertinus").glob("*.woff2"))]
+    if not cmaps:
+        return []
+    covered = set.intersection(*cmaps)
+    seen: set[str] = set()
+    for p in out.rglob("*.html"):
+        text = html.unescape(re.sub(r"<[^>]+>", " ", p.read_text(encoding="utf-8")))
+        seen.update(ch for ch in text if not ch.isspace() and ord(ch) >= 0x20)
+    return sorted(ch for ch in seen if ord(ch) not in covered)
 
 
 def specimen(nodes: list[Node], node_id: str, out: Path) -> None:
