@@ -13,3 +13,13 @@ The § numbers are Schopenhauer's and stable across the three editions of his li
 ZA page is only a finding aid. Footnote marks and the bracketed page markers of zeno.org
 are omitted from the quoted originals; nothing else is changed. The appendix stands in
 vol. 2 of the Zürcher Ausgabe, pp. 509–651 by zeno.org's markers.
+
+Second source, from 2026-10-13: the passages of §§ 24–25 were taken from Projekt
+Gutenberg-DE (https://projekt-gutenberg.org/authors/arthur-schopenhauer/books/die-welt-als-wille-und-vorstellung-band-i),
+whose text is Eduard Grisebach's edition, *Arthur Schopenhauers sämtliche Werke in sechs
+Bänden*, vol. 1, Reclam, Leipzig 1892, second, repeatedly corrected printing, because zeno.org was
+unreachable; those passages say so in their `source`, carry Grisebach's page instead of the ZA page,
+and keep that edition's orthography. Where the two editions differ in a letter the passage's `original`
+is the transcription it names; the § is the locator in both. zeno.org answered again on
+2026-10-14, and the appendix passages added that day are from it, with ZA pages, checked
+against Grisebach's text; two slips of its transcription are named on the passages.

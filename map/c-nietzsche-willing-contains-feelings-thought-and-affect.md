@@ -5,6 +5,10 @@ title: "In every willing there is a plurality of feelings, a commanding thought 
 thinker: t-nietzsche
 statement: "Let us say: in every willing there is first a plurality of feelings, secondly also thinking (in every act of will there is a commanding thought), and thirdly, above all, an affect, the affect of command."
 passages: [p-jgb-19-willing-complicated]
+quotes:
+  - passage: p-jgb-19-willing-complicated
+    original: "Drittens ist der Wille nicht nur ein Complex von Fühlen und Denken, sondern vor Allem noch ein Affekt: und zwar jener Affekt des Commando's."
+    translation: "Thirdly, the will is not only a complex of feeling and thinking, but above all also an affect: and indeed that affect of command."
 status: draft
 verified_by: []
 disputes: []

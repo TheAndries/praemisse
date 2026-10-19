@@ -12,7 +12,7 @@ depends_on: []
 supports: [c-kant-cognition-beyond-possible-experience-absurd]
 attacked_by: []
 replies_to: []
-shares_premise_with: []
+shares_premise_with: [c-schopenhauer-kant-showed-laws-of-experience-not-applicable-to-derive-existence]
 produced_by: claude-fable-5-1, 2026-10-07
 ---
 A 236 / B 295 states it as the result of the Analytic (AA 3:203.04–09). Prolegomena §57

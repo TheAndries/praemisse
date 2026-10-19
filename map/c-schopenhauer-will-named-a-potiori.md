@@ -5,6 +5,10 @@ title: The thing in itself is named »will« after its most perfect appearance, 
 thinker: t-schopenhauer
 statement: "The thing in itself, which as such is never object, had, if it was nevertheless to be thought objectively, to borrow name and concept from its most perfect appearance, the will of man; this is only a denominatio a potiori, by which the concept will receives a greater extension than it had before."
 passages: [p-wwv1-s22-denominatio-a-potiori]
+quotes:
+  - passage: p-wwv1-s22-denominatio-a-potiori
+    original: "Man hat jedoch wohl zu bemerken, daß wir hier allerdings nur eine denominatio a potiori gebrauchen, durch welche eben deshalb der Begriff Wille eine größere Ausdehnung erhält, als er bisher hatte."
+    translation: "One must however note well that here we are admittedly using only a denominatio a potiori, through which precisely for that reason the concept will receives a greater extension than it had before."
 status: draft
 verified_by: []
 disputes: []

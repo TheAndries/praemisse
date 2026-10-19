@@ -5,6 +5,10 @@ title: "The belief that will and action are somehow one is among the erroneous i
 thinker: t-nietzsche
 statement: "Among the chain of erroneous inferences attached to willing: because in the very great majority of cases there has been willing only where the effect of the command, that is obedience, that is the action, could also be expected, the appearance has translated itself into the feeling as if there were a necessity of effect there; enough, the one who wills believes, with a fair degree of assurance, that will and action are somehow one."
 passages: [p-jgb-19-will-and-action-one]
+quotes:
+  - passage: p-jgb-19-will-and-action-one
+    original: "Weil in den allermeisten Fällen nur gewollt worden ist, wo auch die Wirkung des Befehls, also der Gehorsam, also die Aktion erwartet werden durfte, so hat sich der Anschein in das Gefühl übersetzt, als ob es da eine Nothwendigkeit von Wirkung gäbe; genug, der Wollende glaubt, mit einem ziemlichen Grad von Sicherheit, dass Wille und Aktion irgendwie Eins seien"
+    translation: "Because in the very great majority of cases there has been willing only where the effect of the command, that is obedience, that is the action, could also be expected, the appearance has translated itself into the feeling, as if there were a necessity of effect there; enough, the one who wills believes, with a fair degree of assurance, that will and action are somehow one"
 status: draft
 verified_by: []
 disputes: []

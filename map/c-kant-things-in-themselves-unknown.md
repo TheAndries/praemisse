@@ -12,7 +12,7 @@ depends_on: []
 supports: []
 attacked_by: []
 replies_to: []
-shares_premise_with: []
+shares_premise_with: [c-schopenhauer-kants-greatest-merit-distinction-of-appearance-from-thing-in-itself]
 produced_by: claude-fable-5-1, 2026-10-06
 ---
 A 42 / B 59 states it directly (AA 3:65.17–19), and A 43 / B 60 adds that no degree of

@@ -15,7 +15,7 @@ disputes: []
 depends_on: []
 supports: []
 attacked_by: []
-replies_to: [c-schopenhauer-will-not-inferred-but-immediately-known]
+replies_to: [c-schopenhauer-will-not-inferred-but-immediately-known, c-schopenhauer-body-given-in-two-ways]
 shares_premise_with: []
 produced_by: claude-fable-5-1, 2026-10-09
 ---
@@ -31,7 +31,10 @@ inference. § 22 speaks of knowing »was Wille sei«, the concept, and Nietzsche
 is a first-person certainty of a present act; the nearer Schopenhauer sentence for the
 act is § 18's »jenes Jedem unmittelbar Bekannte, welches das Wort Wille bezeichnet«
 ([p-wwv1-s18-body-given-in-two-ways](../../p/wwv1-s18-body-given-in-two-ways/)), and the
-map cites it beside § 22. The next sentence,
+map cites it beside § 22; since 2026-10-15 the attack is set on that § 18 statement too, whose
+words »jenes Jedem unmittelbar Bekannte, welches das Wort Wille bezeichnet« assert of the act
+what this sentence denies of »ich will«, the identification being the map's as above, and
+the § 18 sentence names no one. The next sentence,
 [c-nietzsche-immediate-certainty-contradictio-in-adjecto](../../c/nietzsche-immediate-certainty-contradictio-in-adjecto/),
 and the analysis of »ich denke« that follows,
 [a-nietzsche-ich-denke-has-no-immediate-certainty](../../a/nietzsche-ich-denke-has-no-immediate-certainty/),

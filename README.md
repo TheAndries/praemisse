@@ -16,7 +16,7 @@ accumulated in it, not because of what was generated for it. Structure, passages
 attestations and disputes are the asset. Prose is rendered from them by whatever the best
 available model is, and is never the thing that is checked.
 
-**Phase:** 1 built, Checkpoint 1 answered 2026-10-10: the site is live at https://praemisse.com/, the map holds Kant, Schopenhauer and Nietzsche on the thing in itself (147 nodes, all `draft` or `checked`), and the comparison page https://praemisse.com/x/thing-in-itself/ has been read by the owner and is `checked` with the qualification its status line shows (Ask 7 done). See `PLAN.md`.
+**Phase:** 1 built, Checkpoint 1 answered 2026-10-10: the site is live at https://praemisse.com/, the map holds Kant, Schopenhauer and Nietzsche on the thing in itself (227 nodes, all `draft` or `checked`), and the comparison page https://praemisse.com/x/thing-in-itself/ has been read by the owner and is `checked` with the qualification its status line shows (Ask 7 done); a second comparison, https://praemisse.com/x/the-will/, is `draft` and offered for the same review (Ask 9). Phase 2 opened 2026-10-18: every claim, argument, passage, reading and comparison page carries the link by which anyone may dispute it under their real name, and claims, arguments and comparisons the link by which anyone may attest it (`MODEL.md`, *Filing*). See `PLAN.md`.
 
 ## The files
 
@@ -29,12 +29,12 @@ available model is, and is never the thing that is checked.
 | [MODEL.md](MODEL.md) | The data model: what a node is and how it is stored. |
 | [PLAN.md](PLAN.md) | Current strategy. Rewritten, with the date, whenever it changes. |
 | [ASKS.md](ASKS.md) | The operator's channel to the owner. Numbered, dated, blocking. |
-| [INBOX.md](INBOX.md) | Mail, owner notes and filed disputes, until connectors exist. |
+| [INBOX.md](INBOX.md) | Owner notes, mail, and filed disputes and attestations. A filing made through the forms on the node pages (`.github/ISSUE_TEMPLATE/`) is carried here verbatim by `.github/workflows/inbox.yml` (`MODEL.md`, *Filing*). |
 | [CHANGELOG.md](CHANGELOG.md) | Newest first. What was done, decided, and got wrong. |
 | [memory.md](memory.md) | Carried state, capped at 8,000 words. |
 | [LEDGER.md](LEDGER.md) | Every euro in and out. |
 | [ROUTINE.md](ROUTINE.md) | The scheduled run's exact configuration, and how the owner is told about asks. |
-| [tools/](tools/) | Repository automation: `open_asks_issue.py` keeps the *open asks* issue that mails the owner. |
+| [tools/](tools/) | Repository automation: `open_asks_issue.py` keeps the *open asks* issue that mails the owner; `inbox_from_issue.py` carries a filed dispute or attestation into `INBOX.md` and tells the filer where its record is; `validity.py` decides an argument's form by truth table. |
 
 ## Licences
 

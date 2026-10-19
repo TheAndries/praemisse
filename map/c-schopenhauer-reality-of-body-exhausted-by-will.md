@@ -5,6 +5,10 @@ title: Apart from being our representation, the reality of one's own body is not
 thinker: t-schopenhauer
 statement: "If we analyse the reality of our own body and its actions, we meet in it, apart from its being our representation, nothing but the will; with this its reality is exhausted."
 passages: [p-wwv1-s19-analogy-of-the-body]
+quotes:
+  - passage: p-wwv1-s19-analogy-of-the-body
+    original: "Aber wenn wir nun die Realität dieses Leibes und seiner Aktionen analysiren, so treffen wir, außerdem daß er unsere Vorstellung ist, nichts darin an, als den Willen: damit ist selbst seine Realität erschöpft."
+    translation: "But if we now analyse the reality of this body and its actions, we meet in it, apart from its being our representation, nothing but the will: with this even its reality is exhausted."
 status: draft
 verified_by: []
 disputes: []

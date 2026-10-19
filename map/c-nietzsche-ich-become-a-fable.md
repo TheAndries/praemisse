@@ -5,6 +5,10 @@ title: "The I has become a fable, a fiction, a play on words; it has ceased to t
 thinker: t-nietzsche
 statement: "The I has become a fable, a fiction, a play on words: it has altogether ceased to think, to feel and to will."
 passages: [p-gd-irrthuemer-3-will-as-cause]
+quotes:
+  - passage: p-gd-irrthuemer-3-will-as-cause
+    original: "Und gar das Ich! Das ist zur Fabel geworden, zur Fiktion, zum Wortspiel: das hat ganz und gar aufgehört, zu denken, zu fühlen und zu wollen!..."
+    translation: "And then the I! That has become a fable, a fiction, a play on words: it has altogether ceased to think, to feel and to will!..."
 status: draft
 verified_by: []
 disputes: []

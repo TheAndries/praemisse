@@ -5,6 +5,10 @@ title: "The mechanistic world may be understood from the reality of the drives, 
 thinker: t-nietzsche
 statement: "Supposing that nothing else is given as real than our world of desires and passions, that we can get down or up to no other reality than precisely the reality of our drives, it is permitted (and, the aphorism adds, from the conscience of method commanded) to attempt to understand the mechanistic world from what is like this given: not as a deception, a semblance, a representation in the Berkeleyan and Schopenhauerian sense, but as of the same rank of reality that our affect itself has."
 passages: [p-jgb-36-not-representation]
+quotes:
+  - passage: p-jgb-36-not-representation
+    original: "Gesetzt, dass nichts Anderes als real \"gegeben\" ist als unsre Welt der Begierden und Leidenschaften, dass wir zu keiner anderen \"Realität\" hinab oder hinauf können als gerade zur Realität unsrer Triebe - denn Denken ist nur ein Verhalten dieser Triebe zu einander -: ist es nicht erlaubt, den Versuch zu machen und die Frage zu fragen, ob dies Gegeben nicht ausreicht, um aus Seines-Gleichen auch die sogenannte mechanistische (oder \"materielle\") Welt zu verstehen? Ich meine nicht als eine Täuschung, einen \"Schein\", eine \"Vorstellung\" (im Berkeley'schen und Schopenhauerischen Sinne), sondern als vom gleichen Realitäts-Range, welchen unser Affekt selbst hat"
+    translation: "Supposing that nothing else is \"given\" as real than our world of desires and passions, that we can get down or up to no other \"reality\" than precisely the reality of our drives – for thinking is only a relation of these drives to one another –: is it not permitted to make the attempt and to ask the question whether this given does not suffice for understanding, from what is like it, also the so-called mechanistic (or \"material\") world? I do not mean as a deception, a \"semblance\", a \"representation\" (in the Berkeleyan and Schopenhauerian sense), but as of the same rank of reality that our affect itself has"
 status: draft
 verified_by: []
 disputes: []

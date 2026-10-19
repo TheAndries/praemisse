@@ -5,6 +5,10 @@ title: "Our belief that we know what a cause is was taken from the inner facts: 
 thinker: t-nietzsche
 statement: "Our belief that we know what a cause is was taken from the realm of the famous \"inner facts\", of which none has so far proved to be factual; of these three inner facts by which causality seemed to be vouched for, the will as cause is the first and most convincing, and consciousness as cause and the I as cause are merely born afterwards."
 passages: [p-gd-irrthuemer-3-will-as-cause]
+quotes:
+  - passage: p-gd-irrthuemer-3-will-as-cause
+    original: "Von diesen drei \"inneren Thatsachen\", mit denen sich die Ursächlichkeit zu verbürgen schien, ist die erste und überzeugendste die vom Willen als Ursache; die Conception eines Bewusstseins (\"Geistes\") als Ursache und später noch die des Ich (des \"Subjekts\") als Ursache sind bloss nachgeboren"
+    translation: "Of these three \"inner facts\" by which causality seemed to be vouched for, the first and most convincing is that of the will as cause; the conception of a consciousness (\"spirit\") as cause and later still that of the I (the \"subject\") as cause are merely born afterwards"
 status: draft
 verified_by: []
 disputes: []

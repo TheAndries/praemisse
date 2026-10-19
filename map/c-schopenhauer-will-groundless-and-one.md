@@ -5,6 +5,10 @@ title: The will as thing in itself is groundless and one, as what lies outside t
 thinker: t-schopenhauer
 statement: "The will as thing in itself lies outside the domain of the principle of sufficient reason in all its shapes and is therefore absolutely groundless, though each of its appearances is subject to that principle; it is free of all plurality and is one, not as an object or a concept is one, but as that which lies outside time and space, the principium individuationis."
 passages: [p-wwv1-s23-will-groundless-and-one]
+quotes:
+  - passage: p-wwv1-s23-will-groundless-and-one
+    original: "Der Wille als Ding an sich liegt, dem Gesagten zufolge, außerhalb des Gebietes des Satzes vom Grund in allen seinen Gestaltungen, und ist folglich schlechthin grundlos, obwohl jede seiner Erscheinungen durchaus dem Satz vom Grunde unterworfen ist: er ist ferner frei von aller Vielheit, obwohl seine Erscheinungen in Zeit und Raum unzählig sind: er selbst ist Einer"
+    translation: "The will as thing in itself lies, according to what has been said, outside the domain of the principle of sufficient reason in all its shapes, and is consequently absolutely groundless, although each of its appearances is thoroughly subject to the principle of sufficient reason: it is further free from all plurality, although its appearances in time and space are innumerable: it is itself one"
 status: draft
 verified_by: []
 disputes: []

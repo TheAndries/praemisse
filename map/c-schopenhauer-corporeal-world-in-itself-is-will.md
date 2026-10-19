@@ -5,6 +5,10 @@ title: If the corporeal world is more than our representation, we must say it is
 thinker: t-schopenhauer
 statement: "If the corporeal world is to be something more than merely our representation, we must say that, apart from representation, hence in itself and in its innermost essence, it is that which we find in ourselves immediately as will."
 passages: [p-wwv1-s19-analogy-of-the-body]
+quotes:
+  - passage: p-wwv1-s19-analogy-of-the-body
+    original: "Wenn also die Körperwelt noch etwas mehr seyn soll, als bloß unsere Vorstellung, so müssen wir sagen, daß sie außer der Vorstellung, also an sich und ihrem Innersten Wesen nach, Das sei, was wir in uns selbst unmittelbar als Willen finden."
+    translation: "If, then, the corporeal world is to be something more than merely our representation, we must say that, apart from representation, hence in itself and in its innermost essence, it is that which we find in ourselves immediately as will."
 status: draft
 verified_by: []
 disputes: []

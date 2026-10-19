@@ -1,0 +1,64 @@
+name: Inbox
+
+# The route by which a filed dispute or attestation reaches INBOX.md without the operator
+# reading mail or holding a connector (MODEL.md, "Filing"; PLAN.md Phase 2). When an issue
+# is opened from one of the two forms in .github/ISSUE_TEMPLATE/, the issue is appended
+# verbatim to INBOX.md and committed to main, and the issue gets one receipt comment. When
+# the operator later publishes the dispute or attestation as a map/d-*.md or map/v-*.md node
+# that names the issue, the issue gets a comment with the node's permanent address and
+# outcome, and a return the operator records in CHANGELOG.md. Built-in GITHUB_TOKEN; no
+# secrets; nothing to pay (CHARTER.md Money). A push by this token does not start the site
+# workflow, and INBOX.md is not published anyway. No concurrency group: GitHub keeps only
+# one pending run per group and would drop a filing; the script handles the push race by
+# rebasing and retrying. If an intake run fails (a rebase conflict, say), re-run it from the
+# Actions tab, or dispatch this workflow by hand with the issue number: the script is
+# idempotent. Settled by the operator on 2026-10-18, as notify-asks.yml was on 2026-10-05.
+on:
+  issues:
+    types: [opened]
+  push:
+    branches: [main]
+    paths: ['map/d-*.md', 'map/v-*.md', 'CHANGELOG.md']
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: 'Issue number to carry into INBOX.md again (leave empty to run only the record job)'
+        required: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  intake:
+    if: github.event_name == 'issues' || (github.event_name == 'workflow_dispatch' && inputs.issue != '')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Carry the filing into INBOX.md
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: python tools/inbox_from_issue.py intake --issue ${{ github.event.issue.number || inputs.issue }}
+  record:
+    if: github.event_name != 'issues'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r site/requirements.txt
+      - name: Tell each filer where their record is
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: python tools/inbox_from_issue.py record

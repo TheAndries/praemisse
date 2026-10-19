@@ -1,10 +1,11 @@
 # PLAN.md
 
 Current strategy. Rewritten, with the date, whenever it changes. One risk (weight) added
-2026-10-11 in the owner session of the design brief. Last rewritten 2026-10-10,
-owner session (Checkpoint 1 answered; the comparison `checked` with a qualification; what
-follows). Earlier versions: 2026-10-10 run 6 (the comparison node exists; the node count
-corrected) and 2026-10-04 (founding), in the git history.
+2026-10-11 in the owner session of the design brief. Last rewritten 2026-10-18,
+run 12 (Phase 2 opened: the filing route settled and built; what follows). Earlier
+versions: 2026-10-10 owner session (Checkpoint 1 answered; the comparison `checked` with a
+qualification), 2026-10-10 run 6 (the comparison node exists; the node count corrected) and
+2026-10-04 (founding), in the git history.
 
 ## §1. What this is, in one sentence
 
@@ -58,12 +59,22 @@ for the same qualified review; quotations (`MODEL.md`, *Quotations*) set on the
 load-bearing sentence of every claim a comparison cell cites, as the pages are touched. A
 fourth thinker is no longer blocked by this checkpoint, but comes after those two.
 
-**Phase 2 — first humans.** The dispute form and the attestation form go live. They need a
-route into `INBOX.md` that does not depend on the operator reading mail: the next method
-question, to be settled in `MODEL.md` before the forms are built (a prefilled GitHub issue
-the owner pastes in, or the mailbox of Ask 4, deferred by the owner). The owner, in his own
-name, invites two or three people he thinks could dispute or attest. The operator does no
-outreach. Target: five attestations and two disputes handled end to end within the protocol.
+**Phase 2 — first humans. Opened 2026-10-18.** The route into `INBOX.md` that depends on
+nobody reading mail is settled in `MODEL.md`, *Filing*, and built: every claim, argument,
+passage, reading and comparison page ends with *Dispute this node* and *Attest this node*,
+each a link to an issue form with the node's id prefilled; a workflow carries the filing
+verbatim into `INBOX.md`, commits it, posts a receipt, and, once the operator has published
+the `d-` or `v-` node, posts its permanent address on the issue. The second comparison, on
+the will, was built on 2026-10-15 and awaits the owner's qualified review (Ask 9). What
+follows, in order: the owner tests the route once from a node page (Ask 10), so that the
+first stranger's filing is not the first test; the operator reads `INBOX.md` every run and
+handles a filing inside the deadlines of `DISPUTES.md` (publish next run; reply within three
+runs), which now bind; the owner, in his own name, invites two or three people he thinks
+could dispute or attest, and the operator does no outreach (`CHARTER.md` P10). The mailbox
+of Ask 4 remains the second route, for anyone without a GitHub account, when the owner sets
+it up. Meanwhile the map grows where a filing or the owner's review points, and otherwise
+by the plan below. Target: five attestations and two disputes handled end to end within the
+protocol.
 
 **Checkpoint 2:** at least one dispute has gone through all steps and the exchange reads as
 something a philosopher would be glad to have their name on. If the protocol produced
@@ -93,6 +104,11 @@ reading what was built and filing notes; nothing in this plan blocks on more.
   is now live.
 - Silence: no humans dispute or attest. Mitigated by the owner's invitations in Phase 2;
   if after a quarter nobody has, that is a board matter, not a reason to fake it.
+- The route: a filing arrives through a GitHub Action that nobody has yet exercised end to
+  end, and a run that fails to fire (none is recorded for 2026-10-16 and 2026-10-17) would
+  let a dispute's deadline pass unnoticed, while the receipt the filer gets promises a run a
+  day. Mitigated by the owner's test (Ask 10) and by the changelog, where a missing entry is
+  visible to both seats; not mitigated by anything that fires when a run does not.
 - Taste: the site looks like every other site. Mitigated by `DESIGN.md` and Ask 3 (done).
 - Weight: the design brief of 2026-10-11 (`INBOX.md`) sets a node page at under 120 KB on
   first visit including fonts; the Libertinus files under `site/fonts/` weigh 820 KB and a page

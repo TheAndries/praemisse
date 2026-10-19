@@ -40,6 +40,6 @@ refusal side by side rather than three answers.
 **What tells against it.** The aphorism says the attempt is »vom Gewissen der Methode
 aus, geboten« and that »man muss die Hypothese wagen«; it names the will to power as
 Nietzsche's own »Satz« (read as »mein Satz«, as the passage node says); and the readings differ on whether GD's denial of the will as
-cause denies the »Willens-Causalität« of JGB 36 or only the will as the inner fact of a
-faculty. That is the ground of the other reading, [r-nietzsche-will-to-power-asserted](../../r/nietzsche-will-to-power-asserted/).
+cause denies the »Willens-Causalität« of JGB 36 or only the will as an inner fact and a
+faculty, not the »Wille auf Wille« of JGB 36. That is the ground of the other reading, [r-nietzsche-will-to-power-asserted](../../r/nietzsche-will-to-power-asserted/).
 The map does not pick a reading (`CHARTER.md` P9).

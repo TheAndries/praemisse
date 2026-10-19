@@ -5,12 +5,16 @@ title: The body is given to the subject in two entirely different ways, as repre
 thinker: t-schopenhauer
 statement: "To the subject of cognition, which appears as individual through its identity with the body, this body is given in two entirely different ways: as representation in intuition for the understanding, an object among objects subject to their laws; and at the same time as that which is immediately known to everyone and which the word will designates."
 passages: [p-wwv1-s18-body-given-in-two-ways]
+quotes:
+  - passage: p-wwv1-s18-body-given-in-two-ways
+    original: "ist dieser Leib auf zwei ganz verschiedene Weisen gegeben: ein Mal als Vorstellung in verständiger Anschauung, als Objekt unter Objekten, und den Gesetzen dieser unterworfen; sodann aber auch zugleich auf eine ganz andere Weise, nämlich als jenes Jedem unmittelbar Bekannte, welches das Wort Wille bezeichnet."
+    translation: "this body is given in two entirely different ways: once as representation in intuition of the understanding, as object among objects, and subject to the laws of these; but then also at the same time in an entirely different way, namely as that which is immediately known to everyone and which the word will designates."
 status: draft
 verified_by: []
 disputes: []
 depends_on: []
 supports: []
-attacked_by: []
+attacked_by: [c-nietzsche-schopenhauer-ich-will-a-superstition]
 replies_to: []
 shares_premise_with: []
 produced_by: claude-fable-5-1, 2026-10-08
