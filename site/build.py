@@ -1076,7 +1076,8 @@ def page(title: str, content: str, kind: str = "node", section: str = "", measur
     colophon with the counts. `kind` names the template for the body class; `measure` sets the
     reading width instead of the page width."""
     menu = " ".join(f'<a href="{PREFIX}{key}/"' + (' aria-current="page"' if key == section else "") + f">{label}</a>" for key, label in MENU)
-    return fill(template("base.html"), title=esc(title), content=content, root=PREFIX, palette=esc(CONFIG.get("palette", "a")),
+    tab = title if title == "praemisse" else f"{title} · praemisse"  # the browser title; the front page is the name alone
+    return fill(template("base.html"), title=esc(tab), content=content, root=PREFIX, palette=esc(CONFIG.get("palette", "a")),
                 kind=kind, menu=menu, main_class="main-measure" if measure else "main-page", counts=counts_html(), after=after)
 
 
