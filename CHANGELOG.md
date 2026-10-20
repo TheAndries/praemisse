@@ -2,6 +2,173 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-20 — run 14: JGB 21 whole, the free and the unfree will, and Kant's cell on immediacy on the first page
+
+Fourteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 13; `origin/main` stood at the merge commit of the owner's third session of 2026-10-19 when
+it began, and nothing arrived in between.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan. Asks 8, 11 and 12 were marked done in the owner sessions of 2026-10-19 and unblocked
+nothing that the routine had been waiting on: the design is merged and the routine's pages are
+rendered by the merged templates, which this run used without touching.
+
+**Step 2.** `INBOX.md` carries the three owner notes of 2026-10-19, each marked handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 6 new, 5 revised, both comparisons touched.** The plan's next content
+items, after run 13 filled the last empty cell, were the gaps the two pages list, smallest
+first. Two were taken.
+
+*A. The first comparison's Kant cell on immediacy.* The row »Is anything cognized
+immediately, without inference?« on `x-thing-in-itself` had one Kant statement, A 42 / B 59,
+and its paragraph *On immediacy* said »No Kant passage in the map speaks of immediacy«, a
+sentence true when written on 2026-10-15 and false since run 13 added A 539–540 / B 566–569,
+»Dieser intelligibele Charakter könnte zwar niemals unmittelbar gekannt werden, weil wir
+nichts wahrnehmen können, als so fern es erscheint«. That claim now leads the Kant cell, set
+for the word »unmittelbar«; the note, the paragraph (the false sentence replaced and the
+replacement dated), the `passages` list, the gaps list and the closing paragraph say so. The
+status note's generic clause, »cells added since then not reviewed by him«, already covers
+it; the closing paragraph's frame sentence, which said every change after the owner's reading
+was »on his instructions«, was no longer true and now says »on his instructions and later the
+operator's own«. The claim node's body now names both comparisons.
+
+*B. JGB 21 whole.* The map held the aphorism's first sentence and its three middle sentences
+from »Man soll nicht« to »mythologisch«; the sentences between and after them, on the desire
+for freedom of the will as the causa sui and on the unfree will as mythology, were listed as
+gaps on both pages and answer the will page's row on freedom, where the Nietzsche cell had
+been set for two words only. Two passages from the same Gutenberg text (eBook 7204, lines
+joined with one space, each `original` extracted by substring and asserted verbatim by script
+and by the build): from »Das Verlangen« to »hinausläuft« and from »Der "unfreie Wille"« to the
+end; with the two older spans the aphorism is held whole, four spans, one space between each,
+verified by the reviewer. Four claims, all `draft`, each with its quote: the desire for
+»"Freiheit des Willens"« »in jenem metaphysischen Superlativ-Verstande« is »nichts Geringeres,
+als eben jene causa sui zu sein«, the whole sentence kept with its relative clause on the
+half-educated and its Münchhausen clause; whoever sees through the »Unbegriff« »"freier
+Wille"« is asked, under »Gesetzt« and in the first person »so bitte ich ihn nunmehr«, to
+strike its »Umkehrung«, the »"unfreien Willen", der auf einen Missbrauch von Ursache und
+Wirkung hinausläuft«; »Der "unfreie Wille" ist Mythologie: im wirklichen Leben handelt es sich
+nur um starken und schwachen Willen«; and a thinker who feels »Zwang, Noth, Folgen-Müssen,
+Druck, Unfreiheit« in all »"Causal-Verknüpfung" und "psychologischer Nothwendigkeit"« is
+»fast immer schon« showing a lack in himself. The three closing sentences, on the two sides
+from which »die "Unfreiheit des Willens"« is taken as a problem, on those who take up the
+cause of criminals and on the fatalism of the weak-willed, are in the passage and in no claim,
+and every page that lists the aphorism says so. No link: the »nämlich« of the desire sentence
+explains the clause after the causa sui sentence's colon, which is in no statement; no
+connective joins »nämlich mythologisch« to »Der "unfreie Wille" ist Mythologie«, so no
+`depends_on` and no argument, which a reader may ask for; no attack link on Kant's B xxviii
+(the denial would need the causa sui sentence joined to the desire sentence, two statements
+where the convention requires one, and Kant's stands under »wenn unsere kritische
+Unterscheidung ... statt hat«), none on B xxvii's »so fern nicht frei« (a predicate thought of
+the will in the appearance; whether it is Nietzsche's »unfreie Wille« no passage says), none on
+Schopenhauer's »frei von allen Formen« (a freedom from the forms of representation; no passage
+in the map has Schopenhauer on a will free or unfree in its actions); each absence argued on
+the node and open to dispute. `x-the-will`: the four claims set first in the Nietzsche cell of
+the row on freedom, the mythology sentence leading at the claim size, the note rewritten from
+»Nietzsche« on, the paragraph *On freedom* rewritten from »Nietzsche's cells« on with what is
+and is not parallel to Kant (neither map statement says of one will in one sense that it is
+free and unfree; Kant keeps »frei« for the will »als einem Dinge an sich selbst angehörig«
+where Nietzsche's freedom in the superlative sense is the causa sui), the `passages` list, the
+gaps list and the closing paragraph. The opening passage and claim of JGB 21, which had said
+the map »leaves« these sentences for the will page, now link to them. README counts 233 nodes
+(3 thinkers, 5 works, 68 passages, 137 claims, 14 arguments, 4 readings, 2 comparisons); the
+colophon's counts agree.
+
+**The adversarial pass, and what it found.** A second agent was given the six new nodes, the
+diffs of the five revised ones, the Gutenberg text, the conventions and the distilled rules,
+with the brief to verify every original against the transcription, every quote against its
+passage, the four spans' coverage of the aphorism, every translation word by word, every
+statement against its sentence's qualifiers and mode, every sentence about a thinker against a
+passage, every »...« quotation on both comparison pages against their listed passages, the
+arguments for every absent link, the fit of cells, notes and paragraphs, the status note and
+closing paragraph of the checked page, and the rendered pages. It returned 17 findings, 0
+serious, 7 moderate, 10 minor; all 17 accepted and changed before commit, none declined.
+- *Moderate, adverbs dropped beside a kept mode.* The »Gesetzt« statement kept the
+  supposition and the first person but dropped »dergestalt« and »nunmehr« and turned »dieses«
+  into »the« while its body said it »keeps the rest«; now »in this way«, »I now ask him«, »this
+  famous concept«.
+- *Moderate, a count wrong.* »The two dashes« of the closing passage are three.
+- *Moderate, an unsourced negative about a thinker.* »Schopenhauer's will ..., which is not a
+  will free or unfree in its actions« said of the will what no passage says; now said of his
+  statement, with »no passage in the map has Schopenhauer on the latter«.
+- *Moderate, a supposition made the author's act,* three times: »Nietzsche by striking both
+  terms«, »the sense of freedom the aphorism strikes«, »the two terms it strikes«; the text
+  supposes one term struck and asks that the other be, and the page now says so. In the same
+  sentence »neither text says« became »neither map statement says«.
+- *Moderate, a generalization over three sentences true of one.* »These sentences ... speak of
+  a will free or unfree in its actions«: only the desire sentence mentions actions; now »none
+  of which speaks of a thing in itself; the first speaks of responsibility for one's actions«.
+- *Moderate, the cells called the aphorism whole* while three of its sentences sit in no
+  claim; now »eight of its eleven sentences in claims, six of them in this cell, and the last
+  three in none«, and »the second, third and seventh sentences« for »the rest of the aphorism«.
+- *Moderate, one sentence with two references.* The first page gave the »niemals unmittelbar
+  gekannt« sentence as A 539–540 / B 566–569, the passage's range, where the will page gives
+  A 540, the page it lies on by the A breaks run 13 checked; now A 540 / B 566–569, AA
+  3:367.15–20 in the paragraph, and the note says »in the passage at A 539–540«.
+- *Minor, 10, all changed:* the symptom statement had changed the sentence's colon to a
+  semicolon and dropped the dash unsaid; the desire claim's body said the statement dropped
+  »only ›nämlich‹« where it also added an »and« to a list, and said the sentence »names no one«
+  where it names the half-educated; »the pair free and unfree« and »a difference of degree«
+  were the map's reading unmarked, and a prepositional phrase was quoted as an object; the
+  identification of the »Missbrauch von Ursache und Wirkung« with the next sentence's
+  »fehlerhaft verdinglichen« is drawn across two passages with no connective and is now »as
+  the map reads the two«, on the claim and the passage; the closing passage's body miscounted
+  which of its sentences are claims; the causa sui claim's new sentence had the »nämlich«
+  explain »this one« where it explains the clause after the colon, in no statement; the will
+  page's note dropped »und "psychologischer Nothwendigkeit"« and »schon« from a summary and hid
+  the first person the paragraph keeps; the gaps list said »held whole« without naming the
+  three sentences in no claim; the first page's gaps list said the aphorism »adds no cell« under
+  a sentence promising a row or a cell, and its closing paragraph's frame sentence was false;
+  and the translation »feels out of all "causal connection"« did not parse in English alone and
+  is now »feels out, in all "causal connection" and "psychological necessity", something of«,
+  on the passage, the quote and the statement, with »Noth« glossed as the stem of
+  »Nothwendigkeit« in the passage body.
+The pass cost about 145,000 tokens of the agent's own and took seven minutes. New kinds today:
+adverbs dropped beside a mode that was kept; a supposition joined to a request reported as the
+author's act; a generalization over several sentences true of one; cells described as the
+whole of a text that has sentences in no claim; one sentence referenced two ways on two pages;
+a translation that cannot be parsed without the German; the closing paragraph's frame
+sentence falsified by a run's own additions. All in `memory.md`.
+
+**What else was wrong and why.**
+- The edit script's regex replacement wrote a literal »\1« over the head of both comparisons'
+  `passages` lines (`re.sub` with a lambda does not expand backreferences); the build caught
+  it as a YAML error at once, and the lines were rebuilt from `git show HEAD:` with the
+  additions. The lesson is in `memory.md`.
+- The generation script had a Python string broken by a quotation mark inside a reference;
+  caught before running.
+- A full build needs fontTools and brotli, which the container lacks; `--check` does not run
+  the font-coverage check, so the full build was run to a scratch directory before the review
+  and after the fixes (233 nodes, 0 errors, every character covered).
+- Three fix patterns missed on the first try because the generated files hold the
+  translation with escaped quotation marks; patched and rerun, the first block skipped.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10); the content runs meanwhile are the gaps the
+pages still list: Schopenhauer's § 2 and the Anhang's theorems on time; Nietzsche's JGB 34
+beyond its two spans and JGB 19 beyond its two; GD »Die vier grossen Irrthümer« 7–8; Kant's
+antinomy outside A 538–541 and the B xxvi–xxvii footnote.
+
+**Step 6.** `memory.md` updated in place, about 6,400 of 8,000 words: the run-14 state, the
+four JGB 21 spans and claims in the Nietzsche list, the two cell changes on the comparison
+paragraph, the fontTools and regex notes, the review's rules. Dropped: nothing.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-21; first, if `INBOX.md` has an
+entry, the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what
+follows; otherwise a content run on a gap the pages list, Schopenhauer's § 2 or JGB 34's
+opening as the smallest, through the adversarial pass, with a quote on every new cell claim.
+
+**Effort.** About 235,000 of the 300,000-token ceiling in this session plus about 145,000 in
+the adversarial agent: a third on reading the governing files, the two pages and the nodes
+around JGB 21 and A 539–540, a third on the six nodes and the two pages' edits, the rest on
+the review, the 17 fixes and the records. Nothing spent.
+
 ## 2026-10-19 — owner session, third part: type on wide screens, the front page's lead, the fonts subset (branch `design-type`, merged)
 
 The owner's third message of the day: three owner decisions, done on branch `design-type` and

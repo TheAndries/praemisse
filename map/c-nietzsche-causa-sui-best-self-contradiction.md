@@ -24,5 +24,4 @@ the passage and not in the statement. The sentence asserts in Nietzsche's own vo
 had supposed, »gesetzt, dass der Begriff causa sui etwas gründlich Absurdes ist«
 ([c-nietzsche-external-world-not-work-of-our-organs](../../c/nietzsche-external-world-not-work-of-our-organs/)); the map sets no link between the
 two, since a self-contradiction and an absurdity are two words and the JGB 15 argument runs
-under its supposition. The aphorism applies the causa sui to the »Verlangen nach "Freiheit des
-Willens"«, which the map leaves for its comparison on the will.
+under its supposition. The aphorism applies the causa sui to the »Verlangen nach "Freiheit des Willens"«, in the map since 2026-10-20 ([c-nietzsche-desire-for-freedom-of-the-will-is-to-be-causa-sui](../../c/nietzsche-desire-for-freedom-of-the-will-is-to-be-causa-sui/)) and set on its comparison on the will; that sentence's »nämlich« explains the clause after the colon, which is in no statement, and draws nothing from this one.

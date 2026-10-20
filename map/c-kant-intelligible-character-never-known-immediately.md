@@ -29,8 +29,7 @@ sense
 ([c-kant-intelligible-character-cause-of-actions-as-appearances](../../c/kant-intelligible-character-cause-of-actions-as-appearances/));
 the statement says whose it is, since the sentence opens with an anaphor. What is denied
 immediate knowledge is the intelligible character, the law of the subject's causality as a
-thing in itself; the sentence does not name the will, and the comparison on the will sets it
-in the row on immediacy for the word »unmittelbar«, beside Schopenhauer's will as »ein
+thing in itself; the sentence does not name the will, and both comparisons set it in their rows on immediacy for the word »unmittelbar«, [x-the-will](../../x/the-will/) since 2026-10-19 and [x-thing-in-itself](../../x/thing-in-itself/) since 2026-10-20, beside Schopenhauer's will as »ein
 durchaus unmittelbar Erkanntes«
 ([c-schopenhauer-will-not-inferred-but-immediately-known](../../c/schopenhauer-will-not-inferred-but-immediately-known/)),
 saying that whether Schopenhauer's will is such a character is the map's question and no

@@ -2,20 +2,20 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-19 (run 13, end; owner session on branch `design` the same day)
+## State as of 2026-10-20 (run 14, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–13 were
-served on that model, no handover note needed. Run 13 fired the day after run 12. **No run is recorded for 2026-10-16 or
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–14 were
+served on that model, no handover note needed. Runs 12, 13 and 14 fired on consecutive days. **No run is recorded for 2026-10-16 or
 2026-10-17** (no commit, no changelog entry between run 11 on 10-15 and run 12 on 10-18);
 the operator cannot see the routine's run history and asked the owner to look (Ask 10).
 The GitHub and Claude Code Remote tools in the tool list are platform-attached to every
 cloud session and are not a config change (`ROUTINE.md`, Ask 6): do not raise it again, and
 do not use them; everything goes through git and the repository. Open disputes: none.
-Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; empty at runs 1–13; no form filing yet; the owner made no commit
-between runs 8 and 13. Open asks: 4 (mailbox; deferred by owner; now the second filing
+Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; nothing new at runs 1–14; no form filing yet; nothing arrived
+between run 13 and run 14 (`origin/main` at run 13's merge commit when run 14 began). Open asks: 4 (mailbox; deferred by owner; now the second filing
 route, for anyone without a GitHub account), 9 (the owner's qualified review of https://praemisse.com/x/the-will/,
 opened 2026-10-15; blocks nothing), **10 (opened 2026-10-18: test the filing route once from
 a node page, and look at the routine's run history for 10-16 and 10-17; blocks the
@@ -249,12 +249,12 @@ proved. Not in the map: § 2, § 20, § 24 beyond its first two paragraphs, § 2
 first paragraph, §§ 26–29, the fourth Book, the Anhang beyond the four spans held (nothing
 of 517–533 or 537–650, the Fichte paragraph, the theorems on time, the categories).
 
-**Nietzsche nodes on `main` (71: 1 t, 2 w, 19 p, 44 c, 4 a, 2 r; 227 nodes in all: 3 t, 5 w,
-66 p, 133 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
+**Nietzsche nodes on `main` (77: 1 t, 2 w, 21 p, 48 c, 4 a, 2 r; 233 nodes in all: 3 t, 5 w,
+68 p, 137 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
 cited by aphorism and, for GD, chapter and section (Fabel by stage 1–6), KSA pages not
-given; 19 passages: JGB 15 (two spans), 16 (two), 17, 19 (two), 21 (two: the first sentence;
-»Man soll nicht« to »mythologisch«), 34 (two), 36 (two), 54; GD Vernunft 2, 5, 6; Fabel;
-Irrthümer 3 (to »Das folgt daraus!«). 44 claims, all `draft`: JGB 16 (Schopenhauer's »ich
+given; 21 passages: JGB 15 (two spans), 16 (two), 17, 19 (two), 21 whole in four spans since run 14 (the first sentence;
+»Das Verlangen« to »hinausläuft«; »Man soll nicht« to »mythologisch«; »Der "unfreie Wille"« to the end, from the same Gutenberg text), 34 (two), 36 (two), 54; GD Vernunft 2, 5, 6; Fabel;
+Irrthümer 3 (to »Das folgt daraus!«). 48 claims, all `draft`: JGB 16 (Schopenhauer's »ich
 will« a superstition; immediate certainty a contradictio in adjecto; »ich denke«
 presupposes comparison), 17 and 54 (the subject a grammatical habit; the I a synthesis), 19
 (Schopenhauer took over a popular prejudice; willing complicated; the belief that will and
@@ -272,7 +272,19 @@ causa sui etwas gründlich Absurdes ist« inside it, »-?« noted), 21 (causa su
 self-contradiction; cause and effect conventional fictions, a »soll«; in the »"An-sich"«
 nothing of causal connections, »"psychologischer Unfreiheit"« among them; we alone
 invented causes, »die Freiheit« among them, and reading the sign-world »als "an sich"« into
-things is mythology), 34 (belief in immediate certainties a naïveté; truth worth more than
+things is mythology; **run 14, the rest of JGB 21:** the desire for »"Freiheit des Willens"« »in jenem
+metaphysischen Superlativ-Verstande« is »nichts Geringeres, als eben jene causa sui zu sein«, the
+»nämlich« explaining the causa sui sentence, no link; whoever strikes the »Unbegriff« »"freier Wille"« is
+asked, »Gesetzt« and »bitte ich« kept, to strike the »"unfreien Willen"«, »der auf einen Missbrauch von
+Ursache und Wirkung hinausläuft«; »Der "unfreie Wille" ist Mythologie: im wirklichen Leben handelt es
+sich nur um starken und schwachen Willen«, no connective to »mythologisch«, no `depends_on`; feeling
+»Unfreiheit« in all »"Causal-Verknüpfung"« is »fast immer« a symptom of a lack in the thinker; the
+sentences on the two sides from which »die "Unfreiheit des Willens"« is taken as a problem are in the
+passage and in no claim; no attack on Kant's B xxviii (the denial would need the causa sui sentence
+joined to the desire sentence, two statements; Kant's conditional) nor on »so fern nicht frei« (a
+predicate thought in the appearance; whether it is Nietzsche's »unfreie Wille« no passage says), said on
+the nodes; the four set first in the Nietzsche cell of `x-the-will`'s row on freedom, the mythology
+sentence leading), 34 (belief in immediate certainties a naïveté; truth worth more than
 semblance a moral prejudice; doing away with the apparent world leaves nothing of truth,
 »gesetzt, ihr könntet das«). 4 arguments, all `checked`:
 `a-nietzsche-external-world-not-work-of-organs` (w→b, b→o, s→¬o ⊢ s→¬w; s→¬o the map's
@@ -302,13 +314,15 @@ Terms: Gewissheit "certainty", Erkenntniss "cognition", Schein/Anschein "semblan
 scheinbar "apparent", wirken "work", Thatsache "fact", Empirie "empirical evidence",
 Verhängniss "calamity", Vermögen "faculty". Gutenberg's »wie es in ein Satz ist« (JGB 36)
 is read as »mein Satz«, "as is my proposition", said on the passage. Not in the map: JGB
-20 (adds no cell), JGB 21 and 34 beyond the spans held, JGB 230; GD Irrthümer 7–8; Nachlass
+20 (adds no cell), JGB 34 beyond the spans held, JGB 19 beyond its two spans, JGB 230; GD Irrthümer 7–8; Nachlass
 nothing, by design.
 
 **The two comparisons.** `x-thing-in-itself` (/x/thing-in-itself/, `checked` with the
 owner's status note of 2026-10-10, which carries the operator's dated clause on cells
 added since; re-read it against the whole table every run): seven rows (a thing in itself
-*to* a given appearance, never »behind«; reached by inference; cognized immediately; what
+*to* a given appearance, never »behind«; reached by inference; cognized immediately, Kant's cell since run 14 also
+`c-kant-intelligible-character-never-known-immediately`, set for »unmittelbar«, the *On immediacy* paragraph's
+sentence »No Kant passage in the map speaks of immediacy« replaced, since it was false from run 13 on; what
 can be said of it; the division and refusing it; the will; the world of appearance the
 subject's own work), seven `shared` entries (above), divergences (B xxvi's ground is the
 absurdity of appearance without anything that appears, not a causal inference; B xxvi
@@ -318,8 +332,8 @@ he has not read (everything since 2026-10-10, listed). `x-the-will` (/x/the-will
 `draft`, Ask 9): five rows (what the will is; immediately known, Kant's cell since run 13
 with »niemals unmittelbar gekannt« for the word »unmittelbar«; cause of the body's
 actions, Kant's cell filled in run 13 from A 538–541 for »Ursache«/»Handlungen«/»Wirkungen«;
-free, and free of what, the Schopenhauer and Nietzsche cells set for the word »frei« / »die
-Freiheit«, Kant's since run 13 also the three antinomy sentences, Schopenhauer's also § 24;
+free, and free of what, the Schopenhauer cell set for the word »frei«, the Nietzsche cell since run 14 the four
+JGB 21 claims first and then the two set for »die Freiheit« / »"psychologischer Unfreiheit"«, Kant's since run 13 also the three antinomy sentences, Schopenhauer's also § 24;
 what is drawn from it), two `shared` entries since run 13, both the premise on time, *a
 condition or form of appearances only, and no determination of the thing in itself* (Kant's
 »denn« clause ↔ § 24's »Kant richtig geschlossen, daß Zeit, Raum und Kausalität ... nicht
@@ -413,7 +427,19 @@ the same run's additions, so grep the page for them before the review; the A pag
 span is checked against de.wikisource.org's page-by-page transcription of the 1781 scan
 (`Seite:Kant_Critik_der_reinen_Vernunft_NNN.png`, `action=raw`, different orthography), the
 B page inside a long section is unverified and is given as the section's range. The review
-of run 13 took 212,000 tokens and sixteen minutes on 21 new nodes.
+of run 13 took 212,000 tokens and sixteen minutes on 21 new nodes. Run 14 added: a statement that keeps a
+sentence's mode must also keep the adverbs beside it (»dergestalt«, »nunmehr«) or the body must say what it
+drops, down to an added "and"; count the dashes before writing "the two dashes"; a supposition joined to a
+request (»Gesetzt ... so bitte ich«) is not the author's act, so never "Nietzsche strikes", write "supposes
+struck and asks"; a generalization over several sentences ("these sentences speak of actions") must hold of
+each; "the cells are the aphorism" is false while sentences of it sit in no claim, so count them; one
+sentence carries one reference on both pages (A 540, not the passage's A 539–540, for a sentence on one
+page); a translation must parse in English alone ("feels out of all" did not); gloss a shared stem the
+sentence plays on (»Noth« / »Nothwendigkeit«); the closing paragraph's frame sentence ("on his
+instructions") must still be true after a run's additions; an identification drawn across two passages
+with no connective is "as the map reads it"; "X's will is not a will free in its actions" is unsourced
+where "X's statement speaks of freedom from the forms" is not. The review of run 14 took 145,000 tokens
+and seven minutes on 6 new and 5 revised nodes and returned 17 findings, 7 moderate, all accepted.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
 runs 1–12. The card used for the domain is still unreported.
@@ -430,7 +456,10 @@ Commits as `TheAndries`; push with plain `git push`. Owner-session commit messag
 catalogue pages return nothing useful); `pip install` and raw downloads work through the
 proxy; `gh` exists on the path but is not to be used by the routine (no connector; the
 scripts that call it run only in Actions). Git author `Claude <noreply@anthropic.com>`;
-commits carry the session trailer. The container checks out a detached HEAD whose local
+commits carry the session trailer. A full build needs fontTools and brotli, which the container lacks and which `pip install -r site/requirements.txt`
+did not supply for this interpreter: `python3 -m pip install fonttools brotli` did; `--check` runs no font-coverage
+check, so run a full build to a scratch `--out` before the review. In an edit script, `re.sub` with a lambda does not
+expand `\1`; a mangled front-matter line is recovered from `git show HEAD:map/<file>`. The container checks out a detached HEAD whose local
 `main` is stale: `git fetch origin main && git pull --rebase origin main` is not possible on
 a detached HEAD, so `git fetch origin main`, `git rebase origin/main` if the inbox workflow
 has pushed, then `git push origin HEAD:refs/heads/main`. A stop hook asks for a commit
@@ -442,15 +471,12 @@ run them by path.
 (above). If the owner answered Ask 9: apply as under Ask 7 (`checked` with `status_note`;
 versions for changed statements with credit). If Ask 8: read the brief before building.
 Otherwise: a fourth thinker is not yet due (Phase 2 should see one filing or the owner's
-word first); useful content runs meanwhile are the gaps both pages list (the first
-comparison's Kant cell on cognizing immediately could take
-`c-kant-intelligible-character-never-known-immediately`, which needs its status note's dated
-clause and closing paragraph extended; Schopenhauer § 2 and the Anhang's theorems on time;
-Nietzsche JGB 21 and 34 beyond the spans held; the antinomy's resolution outside A 538–541),
+word first); useful content runs meanwhile are the gaps both pages list (Schopenhauer § 2 and the Anhang's
+theorems on time; Nietzsche JGB 34 beyond the spans held and JGB 19 beyond its two; GD Irrthümer 7–8;
+the antinomy's resolution outside A 538–541; the B xxvi–xxvii footnote),
 each only where it adds a cell or a row, with quotes on every new cell claim; and the
 quotation check could be extended from comparisons to all bodies after measuring how many old
 nodes fail.
 
-**Dropped from memory this run:** nothing; run 12's compression left room, and run 13 added
-the A 538–541 nodes, the shared premise on time and the korpora page-break fact; about 5,450
-words of 8,000.
+**Dropped from memory this run:** nothing; run 14 added the JGB 21 nodes, the two cell changes, the
+fontTools note and the review's rules; about 6,400 words of 8,000.
