@@ -2,20 +2,20 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-20 (run 14, end)
+## State as of 2026-10-21 (run 15, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–14 were
-served on that model, no handover note needed. Runs 12, 13 and 14 fired on consecutive days. **No run is recorded for 2026-10-16 or
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–15 were
+served on that model, no handover note needed. Runs 12 to 15 fired on consecutive days. **No run is recorded for 2026-10-16 or
 2026-10-17** (no commit, no changelog entry between run 11 on 10-15 and run 12 on 10-18);
 the operator cannot see the routine's run history and asked the owner to look (Ask 10).
 The GitHub and Claude Code Remote tools in the tool list are platform-attached to every
 cloud session and are not a config change (`ROUTINE.md`, Ask 6): do not raise it again, and
 do not use them; everything goes through git and the repository. Open disputes: none.
-Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; nothing new at runs 1–14; no form filing yet; nothing arrived
-between run 13 and run 14 (`origin/main` at run 13's merge commit when run 14 began). Open asks: 4 (mailbox; deferred by owner; now the second filing
+Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; nothing new at runs 1–15; no form filing yet; nothing arrived
+between run 14 and run 15 (`origin/main` at run 14's commit when run 15 began). Open asks: 4 (mailbox; deferred by owner; now the second filing
 route, for anyone without a GitHub account), 9 (the owner's qualified review of https://praemisse.com/x/the-will/,
 opened 2026-10-15; blocks nothing), **10 (opened 2026-10-18: test the filing route once from
 a node page, and look at the routine's run history for 10-16 and 10-17; blocks the
@@ -249,12 +249,12 @@ proved. Not in the map: § 2, § 20, § 24 beyond its first two paragraphs, § 2
 first paragraph, §§ 26–29, the fourth Book, the Anhang beyond the four spans held (nothing
 of 517–533 or 537–650, the Fichte paragraph, the theorems on time, the categories).
 
-**Nietzsche nodes on `main` (77: 1 t, 2 w, 21 p, 48 c, 4 a, 2 r; 233 nodes in all: 3 t, 5 w,
-68 p, 137 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
+**Nietzsche nodes on `main` (83: 1 t, 2 w, 23 p, 52 c, 4 a, 2 r; 239 nodes in all: 3 t, 5 w,
+70 p, 141 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
 cited by aphorism and, for GD, chapter and section (Fabel by stage 1–6), KSA pages not
-given; 21 passages: JGB 15 (two spans), 16 (two), 17, 19 (two), 21 whole in four spans since run 14 (the first sentence;
-»Das Verlangen« to »hinausläuft«; »Man soll nicht« to »mythologisch«; »Der "unfreie Wille"« to the end, from the same Gutenberg text), 34 (two), 36 (two), 54; GD Vernunft 2, 5, 6; Fabel;
-Irrthümer 3 (to »Das folgt daraus!«). 48 claims, all `draft`: JGB 16 (Schopenhauer's »ich
+given; 23 passages: JGB 15 (two spans), 16 (two), 17, 19 (two), 21 whole in four spans since run 14 (the first sentence;
+»Das Verlangen« to »hinausläuft«; »Man soll nicht« to »mythologisch«; »Der "unfreie Wille"« to the end, from the same Gutenberg text), 34 in four spans since run 15 (the opening, »Auf welchen Standpunkt« to »Fragen mehr sind«, three sentences; »Der Glaube an« to »wenig Ehre macht«; »Es ist nicht mehr« to »die Sprache der Maler«; the close, »Warum dürfte« to the end, six questions; the span between the second and the third, »Mag im bürgerlichen Leben« to »Warum nicht?«, in no passage), 36 (two), 54; GD Vernunft 2, 5, 6; Fabel;
+Irrthümer 3 (to »Das folgt daraus!«). 52 claims, all `draft`: JGB 16 (Schopenhauer's »ich
 will« a superstition; immediate certainty a contradictio in adjecto; »ich denke«
 presupposes comparison), 17 and 54 (the subject a grammatical habit; the I a synthesis), 19
 (Schopenhauer took over a popular prejudice; willing complicated; the belief that will and
@@ -286,7 +286,7 @@ predicate thought in the appearance; whether it is Nietzsche's »unfreie Wille«
 the nodes; the four set first in the Nietzsche cell of `x-the-will`'s row on freedom, the mythology
 sentence leading), 34 (belief in immediate certainties a naïveté; truth worth more than
 semblance a moral prejudice; doing away with the apparent world leaves nothing of truth,
-»gesetzt, ihr könntet das«). 4 arguments, all `checked`:
+»gesetzt, ihr könntet das«; **run 15, the opening and the close:** »die Irrthümlichkeit der Welt, in der wir zu leben glauben« is »das Sicherste und Festeste«, the grounds »verlocken möchten« to conjectures about a deceptive principle in the »"Wesen der Dinge"«, a temptation reported, set in row 5 of the first page; whoever makes »"den Geist"« responsible for the world's falseness and takes it »sammt Raum, Zeit, Gestalt, Bewegung, als falsch erschlossen« »hätte mindestens guten Anlass« to distrust all thinking, the two questions after that colon in no statement, names no one, no attack link on Kant's subjective condition or Schopenhauer's forms (a consequence drawn, no denial), row 7; the innocence of thinkers permits them to ask consciousness for honest answers, »ob es "real" sei«, no connective to »Der Glaube an«, row 3 for the request to consciousness; the close's first three questions, why the world that concerns us might not be a fiction and whether the »"Gehört"« of »zur Fiktion gehört ein Urheber« belongs to the fiction, kept as questions, row 5 after the »"wahr"« / »"falsch"« questions they follow in the text (the reviewer moved them from row 7, where they had been set for the word »Urheber«; »die uns etwas angeht« is "that is of any concern to us", »mit zur Fiktion« "also belong"), the last three questions (irony towards subject, predicate and object; faith in grammar; the governesses) in the passage and in no claim, no link to JGB 17 / 54). 4 arguments, all `checked`:
 `a-nietzsche-external-world-not-work-of-organs` (w→b, b→o, s→¬o ⊢ s→¬w; s→¬o the map's
 bridge), `a-nietzsche-ich-denke-has-no-immediate-certainty` (c, c→b, b→¬g ⊢ ¬g),
 `a-nietzsche-true-world-does-not-obligate` (¬r, ¬r→¬k, ¬k→¬o ⊢ ¬o; stage 4),
@@ -314,7 +314,7 @@ Terms: Gewissheit "certainty", Erkenntniss "cognition", Schein/Anschein "semblan
 scheinbar "apparent", wirken "work", Thatsache "fact", Empirie "empirical evidence",
 Verhängniss "calamity", Vermögen "faculty". Gutenberg's »wie es in ein Satz ist« (JGB 36)
 is read as »mein Satz«, "as is my proposition", said on the passage. Not in the map: JGB
-20 (adds no cell), JGB 34 beyond the spans held, JGB 19 beyond its two spans, JGB 230; GD Irrthümer 7–8; Nachlass
+20 (adds no cell), JGB 34's span from »Mag im bürgerlichen Leben« to »Warum nicht?«, JGB 19 beyond its two spans, JGB 230; GD Irrthümer 7–8; Nachlass
 nothing, by design.
 
 **The two comparisons.** `x-thing-in-itself` (/x/thing-in-itself/, `checked` with the
@@ -324,7 +324,7 @@ added since; re-read it against the whole table every run): seven rows (a thing 
 `c-kant-intelligible-character-never-known-immediately`, set for »unmittelbar«, the *On immediacy* paragraph's
 sentence »No Kant passage in the map speaks of immediacy« replaced, since it was false from run 13 on; what
 can be said of it; the division and refusing it; the will; the world of appearance the
-subject's own work), seven `shared` entries (above), divergences (B xxvi's ground is the
+subject's own work; Nietzsche's cells in rows 3, 5 and 7 since run 15 also JGB 34's opening and close, with a sentence each under *On immediacy* and *On what the division is*), seven `shared` entries (above), divergences (B xxvi's ground is the
 absurdity of appearance without anything that appears, not a causal inference; B xxvi
 against Fabel stage 6; immediacy; the will; causality and the in-itself), what depends on
 the reading of Kant, gaps, and a closing paragraph naming what the owner ordered and what
@@ -439,7 +439,18 @@ sentence plays on (»Noth« / »Nothwendigkeit«); the closing paragraph's frame
 instructions") must still be true after a run's additions; an identification drawn across two passages
 with no connective is "as the map reads it"; "X's will is not a will free in its actions" is unsourced
 where "X's statement speaks of freedom from the forms" is not. The review of run 14 took 145,000 tokens
-and seven minutes on 6 new and 5 revised nodes and returned 17 findings, 7 moderate, all accepted.
+and seven minutes on 6 new and 5 revised nodes and returned 17 findings, 7 moderate, all accepted. Run 15 added: a quote
+block's translation must be checked for length against its original (a script that cut at the first occurrence of a phrase
+cut one to five words, and the build accepted it, since five words are a substring); a cell is placed where the text's
+neighbouring sentences point (the fiction questions follow »"wahr"« / »"falsch"«, so the division row), not where one word
+matches the row's question; a gaps list that names one remainder in a passage and in no claim must name them all; count a
+text's sentences one way across all its passages (by full stop and question mark, a colon joining halves) and fix the older
+pages when a new one counts otherwise; »etwas«, »da«, »mit«, »aller-« and an added "and" are qualifiers too; a body may not
+claim for the English what only the German carries (the antecedent of »welche«); backslash escapes belong in YAML, never in
+a Markdown body, where they render; keep the text's dashes when commas would move an apposition; inside »...« keep the
+text's case and start the English sentence otherwise; a "does not say" sentence about a sentence is still an unsourced
+absence. The review of run 15 took 144,000 tokens and eight and a half minutes on 6 new and 3 revised nodes and returned 18
+findings, 1 serious, 9 moderate, 8 minor, all accepted.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
 runs 1–12. The card used for the domain is still unreported.
@@ -459,8 +470,8 @@ scripts that call it run only in Actions). Git author `Claude <noreply@anthropic
 commits carry the session trailer. A full build needs fontTools and brotli, which the container lacks and which `pip install -r site/requirements.txt`
 did not supply for this interpreter: `python3 -m pip install fonttools brotli` did; `--check` runs no font-coverage
 check, so run a full build to a scratch `--out` before the review. In an edit script, `re.sub` with a lambda does not
-expand `\1`; a mangled front-matter line is recovered from `git show HEAD:map/<file>`. The container checks out a detached HEAD whose local
-`main` is stale: `git fetch origin main && git pull --rebase origin main` is not possible on
+expand `\1`; a mangled front-matter line is recovered from `git show HEAD:map/<file>`. The container has checked out a detached HEAD whose local
+`main` is stale (runs up to 14; run 15 found `main` checked out and tracking `origin/main`): `git fetch origin main && git pull --rebase origin main` is not possible on
 a detached HEAD, so `git fetch origin main`, `git rebase origin/main` if the inbox workflow
 has pushed, then `git push origin HEAD:refs/heads/main`. A stop hook asks for a commit
 whenever the turn ends with uncommitted changes; do not commit nodes before the review.
@@ -472,11 +483,11 @@ run them by path.
 versions for changed statements with credit). If Ask 8: read the brief before building.
 Otherwise: a fourth thinker is not yet due (Phase 2 should see one filing or the owner's
 word first); useful content runs meanwhile are the gaps both pages list (Schopenhauer § 2 and the Anhang's
-theorems on time; Nietzsche JGB 34 beyond the spans held and JGB 19 beyond its two; GD Irrthümer 7–8;
+theorems on time; Nietzsche JGB 19 beyond its two spans; GD Irrthümer 7–8;
 the antinomy's resolution outside A 538–541; the B xxvi–xxvii footnote),
 each only where it adds a cell or a row, with quotes on every new cell claim; and the
 quotation check could be extended from comparisons to all bodies after measuring how many old
 nodes fail.
 
-**Dropped from memory this run:** nothing; run 14 added the JGB 21 nodes, the two cell changes, the
-fontTools note and the review's rules; about 6,400 words of 8,000.
+**Dropped from memory this run:** nothing; run 15 added the JGB 34 spans and claims, their rows, the
+review's rules and the `main` checkout note; about 7,000 words of 8,000.

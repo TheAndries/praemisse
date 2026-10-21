@@ -12,7 +12,7 @@ translation_by: the project
 produced_by: claude-fable-5-1, 2026-10-12
 ---
 Four sentences from the second half of aphorism 34, ending before the question whether the
-world that concerns us might not be a fiction, which the map does not yet hold. »Schätzungen«
+world that concerns us might not be a fiction, in the map since 2026-10-21 ([p-jgb-34-the-world-a-fiction](../../p/jgb-34-the-world-a-fiction/)). »Schätzungen«
 is "estimations", a valuing, not a reckoning. »Schein«
 is rendered "semblance" and »scheinbar« "apparent", as in the GD passages
 ([p-gd-vernunft-2-apparent-world](../../p/gd-vernunft-2-apparent-world/)); »Scheinbarkeit« "apparentness", to keep the

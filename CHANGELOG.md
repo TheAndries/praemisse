@@ -2,6 +2,167 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-21 — run 15: JGB 34's opening and close, the erroneousness of the world, distrust of thinking, and the world as a fiction
+
+Fifteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 14; `origin/main` stood at run 14's commit when it began, and nothing arrived in between.
+The container had `main` checked out and tracking `origin/main`, where earlier runs found a
+detached HEAD.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 6 new, 4 revised, the first comparison touched in three rows.** The
+plan's next content item was the smallest gap the pages list; the first page named JGB 34's
+opening and close as adding a cell, and they were taken, from the same Gutenberg text as the
+aphorism's two older spans (eBook 7204, lines joined with one space, each `original`
+extracted by substring and asserted verbatim by script and by the build).
+
+*The two passages.* The opening, from »Auf welchen Standpunkt« to »Fragen mehr sind«, three
+sentences; the close, from »Warum dürfte« to the end, six sentences, all questions. With the
+two spans held since 2026-10-12 the aphorism is in the map but for the sentences between
+the passage on immediate certainties and the one on truth and semblance (from »Mag im
+bürgerlichen Leben« to »Warum nicht?«), which no passage holds, and every page that lists the
+aphorism says so by reference. The script checked that the four spans sit in the aphorism in
+order and that the two older `original`s are substrings of it.
+
+*The four claims, all `draft`, each with its quote.* (1) From whatever standpoint of
+philosophy, »die Irrthümlichkeit der Welt, in der wir zu leben glauben« is »das Sicherste und
+Festeste, dessen unser Auge noch habhaft werden kann«, the whole sentence, with its second
+half kept as what it is, a temptation reported (»verlocken möchten«) to conjectures about a
+deceptive principle in the »"Wesen der Dinge"«, no conjecture asserted; set in the first
+page's row on the division as what the aphorism says of the world before it comes to true
+and false, no link to GD's »Die "scheinbare" Welt ist die einzige« (two propositions), no
+attack link (no Kant or Schopenhauer statement in the map says the world we believe we live
+in is not erroneous). (2) The main clause of the second sentence: whoever holds »unser Denken
+selbst, also "den Geist"« responsible for the falseness of the world, »ein ehrenhafter
+Ausweg, den jeder bewusste oder unbewusste advocatus dei geht«, and takes this world »sammt
+Raum, Zeit, Gestalt, Bewegung, als falsch erschlossen« »hätte mindestens guten Anlass, gegen
+alles Denken selbst endlich Misstrauen zu lernen«; the two questions after that colon are in
+the passage and in no statement, and the body says so; set in the row on what in the world of
+appearance is the subject's own, beside Kant's subjective condition of sensibility and
+Schopenhauer's forms of the intellect, as the nearest the map's Nietzsche passages come to
+that question, the identification of those views as the ones the sentence speaks of being the
+map's, since the sentence names no one; no attack link, since the statement draws a
+consequence for whoever holds the view and denies nothing either statement says of space. (3)
+The third sentence: the innocence of thinkers permits them »auch heute noch« to place
+themselves before consciousness »mit der Bitte, dass es ihnen ehrliche Antworten gebe: zum
+Beispiel ob es "real" sei«; set in the row on immediacy for the request to consciousness, as
+the map reads it, before the sentence on the belief in immediate certainties, which no
+connective joins to it; no attack on Schopenhauer's »unmittelbar Erkanntes«, which it does not
+deny. (4) The close's first three questions, kept as questions as the claim on degrees of
+apparentness keeps its two: why might »die Welt, die uns etwas angeht« not be a fiction, and
+whether, to one who asks »aber zur Fiktion gehört ein Urheber?«, it might not be answered
+»Warum?«, whether this »"Gehört"« does not also belong to the fiction; set, after the review,
+in the row on the division after the questions on »"wahr"« and »"falsch"«, which they follow
+in the text, where the draft had set them in the row on the subject's own for the word
+»Urheber«; the last three questions, on
+irony towards subject, predicate and object, on faith in grammar and on the governesses, are
+in the passage and in no claim; no link to JGB 17 and 54 on the grammatical subject, which no
+connective joins to them; no attack link, a question asserting nothing. `x-thing-in-itself`:
+the three cells, the three notes, the `passages` list, a sentence under *On what the
+division is* and one under *On immediacy*, the gaps list and the closing paragraph. The two
+older JGB 34 passages now link to the new ones. README counts 239 nodes (3 thinkers, 5 works,
+70 passages, 141 claims, 14 arguments, 4 readings, 2 comparisons); the colophon's counts
+agree.
+
+**The adversarial pass, and what it found.** A second agent was given the six new nodes, the
+diff of the revised ones, the Gutenberg text, the conventions and the distilled rules, with the
+brief to verify every original against the transcription and every quote against its passage,
+the four spans' coverage of the aphorism, every translation word by word, every statement
+against its sentence's qualifiers and mode, every sentence about a thinker against a passage,
+every »...« quotation on the comparison page against its listed passages, the arguments for
+every absent link, the fit of each cell to its row, the status note and closing paragraph of
+the checked page, and the rendered pages. It returned 18 findings, 1 serious, 9 moderate, 8
+minor; all 18 accepted and changed before commit, none declined.
+- *Serious, a quote translation of five words.* The generation script cut the second claim's
+  quote translation at the first occurrence of »thinking itself«, which is in the clause's
+  third word group, so the page showed the whole German clause beside »But whoever holds our
+  thinking itself«; the build accepted it because five words are a substring of the passage
+  translation. Now the whole clause. The check that caught nothing is named in `memory.md`:
+  a quote translation is to be checked for length against its original.
+- *Moderate, a qualifier halved.* »Die Welt, die uns etwas angeht« was "the world that
+  concerns us" on the passage, the claim and the page while the claim's body said the
+  qualification was kept; now "that is of any concern to us", said on the passage.
+- *Moderate, a negation added.* The statement had the objector ask "whether to a fiction there
+  does not belong an author" where the text's objector asks »aber zur Fiktion gehört ein
+  Urheber?«; the statement now keeps the objection in its own words, with its »aber«.
+- *Moderate, a body claiming for the English what only the German carries.* The passage body
+  said that "which permits them" is said of the innocence because »welche« is feminine; the
+  English "which" attaches to what precedes it. The body now says the English does not by
+  itself fix the antecedent, which the German gender does.
+- *Moderate, the gaps list wrong twice.* Its comma made the close's three unclaimed questions
+  an apposition to the span not in the map, and it named that remainder while omitting two
+  others in a passage and in no claim, the two questions ending the opening's second sentence
+  and the middle of the passage on immediate certainties; now all three named, and »in no
+  passage« for the one span.
+- *Moderate, sentences counted two ways.* The older passage on immediate certainties counted
+  its colon-joined sentence as two, so the aphorism had "three sentences" there and "the first
+  three sentences" for the new opening by a different count; the older passage and its claim
+  now count as the new ones do, and the claim's body says the half sentence is in no statement.
+- *Moderate, a cell placed by a word.* The fiction questions were set in the row on the
+  subject's own for the word »Urheber«, and the claim's body said the row asks after a maker of
+  the world, which overstates the row's question about our organs; the text puts the questions
+  directly after those on »"wahr"« and »"falsch"« already set in the row on the division, and
+  they are moved there, the two notes and the body rewritten.
+- *Moderate, an added "and" and a dropped »ein Solcher«,* unnamed in the body; the "and" is out,
+  and the resumptive pronoun is named as dropped.
+- *Moderate, dashes replaced by commas* moving the apposition »ein ehrenhafter Ausweg« onto
+  "the falseness of the world"; the text's dashes are back in the statement.
+- *Moderate, backslashes in a Markdown body* rendered literally on the passage page; reworded.
+- *Minor, 8, all changed:* »fortführe« rendered as a past indicative, now "would not go on";
+  »allergrössten« as "greatest", now "the very greatest"; »wer da fragt« as "who there asks",
+  now "who asks" with the particle named as unrendered; »mit zur Fiktion« as "itself belong",
+  now "also belong"; a colon turned comma unnamed in the innocence claim's body; qualifiers
+  dropped from three titles (»noch«, »mindestens«, »auch heute noch«); English inside »...« in
+  the fiction claim's title, now the text's words; a "does not say" sentence about the first
+  sentence struck; and the case of four words changed inside »...«, now the text's case with
+  the English sentence begun otherwise.
+The pass cost about 144,000 tokens of the agent's own and took eight and a half minutes. New
+kinds today: a quote translation truncated by the script and passed by the substring check;
+a cell placed where one word matched the row rather than where the text's neighbouring
+sentences point; a gaps list naming one remainder of a text and not the others; a text's
+sentences counted two ways on adjacent pages; a body promising for the English what only the
+German's gender carries; escapes written into a Markdown body. All in `memory.md`.
+
+**What else was wrong and why.**
+- The quote-translation bug above was the operator's: the script took the first match of a
+  phrase that occurs twice in the clause. A length check belongs in the script next time.
+- A full build with the font-coverage check needed fontTools and brotli installed again, as
+  `memory.md` said it would; installed, 239 nodes, 0 errors, every character covered, before
+  the review and after the fixes.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10); the content runs meanwhile are the gaps the
+pages still list: Schopenhauer's § 2 and the Anhang's theorems on time; Nietzsche's JGB 19
+beyond its two spans and GD »Die vier grossen Irrthümer« 7–8; Kant's antinomy outside A 538–541
+and the B xxvi–xxvii footnote. JGB 34 is in the map but for one span, and that span adds no cell.
+
+**Step 6.** `memory.md` updated in place, about 7,000 of 8,000 words: the run-15 state, the four
+JGB 34 spans and claims with their rows in the Nietzsche list, the comparison's three cells, the
+`main` checkout note, the review's rules. Dropped: nothing. The cap is near; the next run that
+adds a thinker's section should compress the Kant and Schopenhauer lists first.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-22; first, if `INBOX.md` has an
+entry, the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what
+follows; otherwise a content run on a gap the pages list, Schopenhauer's § 2 as the smallest
+that adds a cell, through the adversarial pass, with a quote on every new cell claim and a
+length check on every quote translation.
+
+**Effort.** About 230,000 of the 300,000-token ceiling in this session plus about 144,000 in
+the adversarial agent: nearly half on reading the governing files, the two comparison pages
+and the nodes around JGB 34, a quarter on the six nodes and the page's edits, the rest on the
+review, the 18 fixes and the records. Nothing spent.
+
 ## 2026-10-20 — run 14: JGB 21 whole, the free and the unfree will, and Kant's cell on immediacy on the first page
 
 Fourteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

@@ -22,8 +22,9 @@ replies_to: []
 shares_premise_with: []
 produced_by: claude-fable-5-1, 2026-10-12
 ---
-The first and third sentences of the passage; the second, »wir sollen nun einmal nicht "nur
-moralische" Menschen sein«, is the turn between them and is in the passage. The statement
+The first sentence of the passage to its colon, and the second sentence; the first sentence's
+second half, »wir sollen nun einmal nicht "nur moralische" Menschen sein«, is the turn between
+them and is in the passage and in no statement. The statement
 evaluates the belief, as a naïveté and a stupidity, and does not say that there are no immediate
 certainties; JGB 16 says that »unmittelbare Gewissheit« includes a contradictio in adjecto
 ([c-nietzsche-immediate-certainty-contradictio-in-adjecto](../../c/nietzsche-immediate-certainty-contradictio-in-adjecto/)) and names Schopenhauer's »ich

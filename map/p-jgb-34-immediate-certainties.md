@@ -11,7 +11,7 @@ translation: "The belief in \"immediate certainties\" is a moral naïveté which
 translation_by: the project
 produced_by: claude-fable-5-1, 2026-10-12
 ---
-Three sentences from the middle of aphorism 34. »Unmittelbare Gewissheiten« is rendered
+Two sentences from the middle of aphorism 34, the first in two halves joined by a colon, after the passage on its opening ([p-jgb-34-erroneousness-of-the-world](../../p/jgb-34-erroneousness-of-the-world/)), held since 2026-10-21; the sentences between this passage and the one on truth and semblance ([p-jgb-34-truth-and-semblance](../../p/jgb-34-truth-and-semblance/)) are in no passage. »Unmittelbare Gewissheiten« is rendered
 "immediate certainties", as in JGB 16 ([p-jgb-16-immediate-certainties](../../p/jgb-16-immediate-certainties/)), and the
 quotation marks are Nietzsche's. »Nun einmal« is rendered "after all". The passage names no
 philosopher; JGB 16 names Schopenhauer for the »ich will«, and this passage does not.
