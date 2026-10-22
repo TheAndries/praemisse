@@ -2,20 +2,20 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-21 (run 15, end)
+## State as of 2026-10-22 (run 16, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–15 were
-served on that model, no handover note needed. Runs 12 to 15 fired on consecutive days. **No run is recorded for 2026-10-16 or
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–16 were
+served on that model, no handover note needed. Runs 12 to 16 fired on consecutive days. **No run is recorded for 2026-10-16 or
 2026-10-17** (no commit, no changelog entry between run 11 on 10-15 and run 12 on 10-18);
 the operator cannot see the routine's run history and asked the owner to look (Ask 10).
 The GitHub and Claude Code Remote tools in the tool list are platform-attached to every
 cloud session and are not a config change (`ROUTINE.md`, Ask 6): do not raise it again, and
 do not use them; everything goes through git and the repository. Open disputes: none.
-Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; nothing new at runs 1–15; no form filing yet; nothing arrived
-between run 14 and run 15 (`origin/main` at run 14's commit when run 15 began). Open asks: 4 (mailbox; deferred by owner; now the second filing
+Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; nothing new at runs 1–16; no form filing yet; nothing arrived
+between run 15 and run 16 (`origin/main` at run 15's commit when run 16 began). Open asks: 4 (mailbox; deferred by owner; now the second filing
 route, for anyone without a GitHub account), 9 (the owner's qualified review of https://praemisse.com/x/the-will/,
 opened 2026-10-15; blocks nothing), **10 (opened 2026-10-18: test the filing route once from
 a node page, and look at the routine's run history for 10-16 and 10-17; blocks the
@@ -210,9 +210,9 @@ resolution outside A 538–541 (A 532–537, A 542 ff.), the Grundlegung and the
 morality presupposes freedom; B xxviii only supposes it, »da ich zur Moral nichts weiter
 brauche, als daß Freiheit sich nur nicht selbst widerspreche«).
 
-**Schopenhauer nodes on `main` (65: 1 t, 1 w, 20 p, 39 c, 4 a):** `t-schopenhauer`; `w-schopenhauer-wwv1`
+**Schopenhauer nodes on `main` (70: 1 t, 1 w, 22 p, 42 c, 4 a):** `t-schopenhauer`; `w-schopenhauer-wwv1`
 (Zürcher Ausgabe 1977 after Hübscher 1859; vol. 1 = Books 1–2, vol. 2 = Books 3–4 and the
-Anhang, continuous pagination); 20 passages `p-wwv1-*`: § 1 (ZA I 28, 30), § 18 (142;
+Anhang, continuous pagination); 22 passages `p-wwv1-*`: § 1 (ZA I 28, 30), **§ 2 since run 16, from zeno.org collated against Grisebach: the first paragraph whole, eight sentences (ZA I 30; zeno's »daist« kept, its consistent one-word form and not a slip, named with Grisebach's »da ist«, the footnote mark after »unmittelbares Objekt ist« omitted), and the second paragraph's first seven sentences to »ein sehr großes« (ZA I 31; zeno's »d.h.« for »d. h.« named); the paragraph's remainder on the Satz vom Grunde in no passage**, § 18 (142;
 144–145), § 19 (146–147; 147–148), § 21 (153–154), § 22 (154; 155), § 23 (156; 157), § 24
 from Projekt Gutenberg-DE with Grisebach's pages and no ZA page (the first paragraph »Wir
 haben von dem großen Kant gelernt«; the second »Kant richtig geschlossen«; »Wenn daher auch
@@ -220,8 +220,8 @@ alle Mathematik« to »nicht im Mindesten erklärt«, »in Hinsicht aus« kept),
 »untheilbar«), Anhang (ZA II 513–514 Kant's greatest merit, six sentences; 516 »Er zeigte,
 daß die Gesetze« to »Eichhörnchen im Rade«, zeno's »Kam zeigte« kept and noted; 534–535
 Kant's derivation of the thing in itself; 535 only the derivation is faulty; 536–537 the
-Transcendental Aesthetic paragraph whole, »Formen seines Erkennens« noted); 39 claims, all
-`draft`, with quotes on every cell claim; 4 arguments, all `checked`:
+Transcendental Aesthetic paragraph whole, »Formen seines Erkennens« noted); 42 claims, all
+`draft`, with quotes on every cell claim (**run 16, § 2, all three in row 7 of the first page:** the subject, »was Alles erkennt und von Keinem erkannt wird«, is »der Träger der Welt, die durchgängige, stets vorausgesetzte Bedingung alles Erscheinenden, alles Objekts«, the first two sentences joined by an added "and", the »denn« clause kept inside; the forms of all object »auch ohne die Erkenntniß des Objekts selbst, vom Subjekt ausgehend gefunden und vollständig erkannt werden können, d.h. in Kants Sprache, a priori in unserm Bewußtseyn liegen«, »dieser Gränze« restated as the boundary at which subject and object bound each other; »Dieses entdeckt zu haben, ist ein Hauptverdienst Kants und ein sehr großes«, »Dieses« restated; the twelve sentences of the two spans in no claim are listed on the passages and in the gaps list; no argument, no attack link); 4 arguments, all `checked`:
 `a-schopenhauer-corporeal-world-in-itself-is-will` (m→a, a→(v∨w), m→¬v ⊢ m→w; premises 1 and
 3 the map's, the conclusion epistemic), `a-schopenhauer-kant-derivation-cannot-reach-thing-in-itself`
 (k, b, (k∧b)→¬e ⊢ ¬e; b the § 19 principle; the bridge the definition at ZA II 535),
@@ -240,17 +240,17 @@ given a priori); A 26/B 42 (b) ↔ Anhang 534 (a subjective form); A 26/B 42 ↔
 236/B 295 with Prol § 57 ↔ Anhang 516 (the laws of experience have no use beyond it, the
 identification of Grundsätze and Gesetze the map's, carried by § 57); A 42/B 59 ↔ Anhang
 513 »auf Grund der Nachweisung, daß« (things not cognized as in themselves; a factive noun
-asserts as a factive verb does). Terms: Vorstellung "representation", Erscheinung
+asserts as a factive verb does); **A 24/B 38 ↔ § 2 »a priori in unserm Bewußtseyn liegen« (space given a priori, the third entry under that premise, run 16; what § 2 adds, »vom Subjekt ausgehend«, the premise does not cover)**. Terms: Vorstellung "representation", Erscheinung
 "appearance", Objektität "objectity", Satz vom Grunde "principle of sufficient reason",
 nachweisen "show" vs beweisen "prove", Voraussetzung "presupposition", Annahme
 "assumption", Besonnenheit "discernment", »X ist uns bewußt« = "we are conscious of X". The
 identity of will and body is a claim, not an argument, because § 18 says it can never be
-proved. Not in the map: § 2, § 20, § 24 beyond its first two paragraphs, § 25 beyond its
+proved. Not in the map: § 2 beyond its two spans, § 20, § 24 beyond its first two paragraphs, § 25 beyond its
 first paragraph, §§ 26–29, the fourth Book, the Anhang beyond the four spans held (nothing
 of 517–533 or 537–650, the Fichte paragraph, the theorems on time, the categories).
 
-**Nietzsche nodes on `main` (83: 1 t, 2 w, 23 p, 52 c, 4 a, 2 r; 239 nodes in all: 3 t, 5 w,
-70 p, 141 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
+**Nietzsche nodes on `main` (83: 1 t, 2 w, 23 p, 52 c, 4 a, 2 r; 244 nodes in all: 3 t, 5 w,
+72 p, 144 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
 cited by aphorism and, for GD, chapter and section (Fabel by stage 1–6), KSA pages not
 given; 23 passages: JGB 15 (two spans), 16 (two), 17, 19 (two), 21 whole in four spans since run 14 (the first sentence;
 »Das Verlangen« to »hinausläuft«; »Man soll nicht« to »mythologisch«; »Der "unfreie Wille"« to the end, from the same Gutenberg text), 34 in four spans since run 15 (the opening, »Auf welchen Standpunkt« to »Fragen mehr sind«, three sentences; »Der Glaube an« to »wenig Ehre macht«; »Es ist nicht mehr« to »die Sprache der Maler«; the close, »Warum dürfte« to the end, six questions; the span between the second and the third, »Mag im bürgerlichen Leben« to »Warum nicht?«, in no passage), 36 (two), 54; GD Vernunft 2, 5, 6; Fabel;
@@ -324,7 +324,7 @@ added since; re-read it against the whole table every run): seven rows (a thing 
 `c-kant-intelligible-character-never-known-immediately`, set for »unmittelbar«, the *On immediacy* paragraph's
 sentence »No Kant passage in the map speaks of immediacy« replaced, since it was false from run 13 on; what
 can be said of it; the division and refusing it; the will; the world of appearance the
-subject's own work; Nietzsche's cells in rows 3, 5 and 7 since run 15 also JGB 34's opening and close, with a sentence each under *On immediacy* and *On what the division is*), seven `shared` entries (above), divergences (B xxvi's ground is the
+subject's own work; Nietzsche's cells in rows 3, 5 and 7 since run 15 also JGB 34's opening and close, with a sentence each under *On immediacy* and *On what the division is*; Schopenhauer's cell in row 7 since run 16 also the three § 2 claims, with sentences in the note and under *Space is given a priori*), ten `shared` entries (above; the memory of runs 13–15 said seven, which was stale), divergences (B xxvi's ground is the
 absurdity of appearance without anything that appears, not a causal inference; B xxvi
 against Fabel stage 6; immediacy; the will; causality and the in-itself), what depends on
 the reading of Kant, gaps, and a closing paragraph naming what the owner ordered and what
@@ -357,12 +357,12 @@ range of the section and the AA line (the section A 538 / B 566 begins at 3:366.
 the `korpora.zim.uni-duisburg-essen.de` host fails through the proxy. *Schopenhauer:*
 zeno.org `http://www.zeno.org/Philosophie/M/Schopenhauer,+Arthur/Die+Welt+als+Wille+und+Vorstellung/Erster+Band/<Erstes+Buch|Zweites+Buch|Anhang.+Kritik+der+Kantischen+Philosophie>`,
 ISO-8859-1, text in `<div class="zenoCOMain">`, `<h5>` the § numbers, `[N]` in
-`class="zenoTXKonk"` marks where ZA page N begins; down on 10-09 and 10-13, up on 10-14; OCR
+`class="zenoTXKonk"` marks where ZA page N begins; down on 10-09 and 10-13, up on 10-14 and 10-22; OCR
 slips (»Kam«, »hohem« for »höhern«): collate every span word by word against Grisebach's
 text, keep the transcription's letters, name every non-orthographic variant on the passage.
 Fallback Projekt Gutenberg-DE
-`https://projekt-gutenberg.org/authors/arthur-schopenhauer/books/die-welt-als-wille-und-vorstellung-band-i/chapter/N`
-(Grisebach, Reclam 1892; chapter = § + 2, chapter 74 the Anhang, 2 the prefaces; `<p>`
+`https://projekt-gutenberg.org/authors/arthur-schopenhauer/books/die-welt-als-wille-und-vorstellung-band-i/chapter/N/`
+(**the trailing slash is required since 10-22: without it the redirect's body is empty; `curl -L -A "Mozilla/5.0"`**; Grisebach, Reclam 1892; chapter = § + 2, chapter 74 the Anhang, 2 the prefaces; `<p>`
 elements, every paragraph repeated once, not byte-identical, strip by searching; two
 advertising paragraphs at the end; `<a name="pageN">` anchors give Grisebach's pages; say
 »ZA page not given; Grisebach's pagination ... p. N« in `ref` and keep its orthography).
@@ -450,7 +450,7 @@ claim for the English what only the German carries (the antecedent of »welche«
 a Markdown body, where they render; keep the text's dashes when commas would move an apposition; inside »...« keep the
 text's case and start the English sentence otherwise; a "does not say" sentence about a sentence is still an unsourced
 absence. The review of run 15 took 144,000 tokens and eight and a half minutes on 6 new and 3 revised nodes and returned 18
-findings, 1 serious, 9 moderate, 8 minor, all accepted.
+findings, 1 serious, 9 moderate, 8 minor, all accepted. Run 16 added: before naming a transcription's form a slip, grep the stored passages of the same text for it (zeno's »daist« is its consistent orthography, not a slip); a row note may not say one passage "gives the ground" of another's cell without a connective; "a third time" is the map's order of entry, not the text's, so say where the sentence stands in the text; »selbst« attaches to the word before it (»von denen selbst«), »welchen selbst« and »auch jenes« are "even"; a pronoun's resolution must carry the antecedent sentence's qualifiers (»daher«, »unmittelbar«); every new claim's body says why each neighbouring link is not set, including the attack from JGB 17 on any claim about the subject. The review of run 16 took 126,000 tokens and six minutes on 5 new and 3 revised nodes and returned 13 findings, 3 moderate, 10 minor, 12 accepted, 1 declined as a judgement.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
 runs 1–12. The card used for the domain is still unreported.
@@ -482,12 +482,11 @@ run them by path.
 (above). If the owner answered Ask 9: apply as under Ask 7 (`checked` with `status_note`;
 versions for changed statements with credit). If Ask 8: read the brief before building.
 Otherwise: a fourth thinker is not yet due (Phase 2 should see one filing or the owner's
-word first); useful content runs meanwhile are the gaps both pages list (Schopenhauer § 2 and the Anhang's
-theorems on time; Nietzsche JGB 19 beyond its two spans; GD Irrthümer 7–8;
+word first); useful content runs meanwhile are the gaps both pages list (the Anhang's
+theorems on time; § 2's unclaimed sentences only if a row asks after the subject, which none does; Nietzsche JGB 19 beyond its two spans; GD Irrthümer 7–8;
 the antinomy's resolution outside A 538–541; the B xxvi–xxvii footnote),
 each only where it adds a cell or a row, with quotes on every new cell claim; and the
 quotation check could be extended from comparisons to all bodies after measuring how many old
 nodes fail.
 
-**Dropped from memory this run:** nothing; run 15 added the JGB 34 spans and claims, their rows, the
-review's rules and the `main` checkout note; about 7,000 words of 8,000.
+**Dropped from memory this run:** nothing; run 16 added the § 2 spans and claims, the third entry under the space premise, the Gutenberg-DE trailing slash and the review's rules, and corrected the count of `shared` entries; about 7,400 words of 8,000. The next run that adds a thinker's section should compress the Kant and Schopenhauer lists first.

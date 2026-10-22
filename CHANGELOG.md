@@ -2,6 +2,156 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-22 — run 16: Schopenhauer's § 2, the subject as the bearer of the world, and the forms of the object a priori
+
+Sixteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 15; `origin/main` stood at run 15's commit when it began, and nothing arrived in between.
+The container had a detached HEAD at that commit.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 5 new, 3 revised, the first comparison touched in one row and one shared
+premise.** The plan's next content item, named by run 15, was Schopenhauer's § 2, the
+smallest gap the first page listed that adds a cell. zeno.org answered, and Projekt
+Gutenberg-DE served Grisebach's text of the same chapter once the request carried a trailing
+slash (without it the redirect's body is empty, which is why the first attempt returned nothing);
+every span was taken from zeno.org, with its ZA page markers, and collated word by word
+against Grisebach's text by script before anything was written.
+
+*The two passages.* The first paragraph of § 2 whole, eight sentences (ZA I 30): the subject as
+that which cognizes everything and is cognized by none, the bearer of the world; everyone as
+this subject only in so far as he cognizes; the body as object and representation, immediate
+object among objects, in time and space; the subject in none of the forms, with neither
+plurality nor unity, never cognized. The second paragraph's first seven sentences, to »ein
+sehr großes« (ZA I 31): the two halves of the world as representation; the subject not in
+space and time; the halves inseparable; their bounding each other immediately; the forms of
+every object found from the subject and completely cognized, »d.h. in Kants Sprache, a
+priori in unserm Bewußtseyn liegen«; to have discovered this a chief merit of Kant's. The
+paragraph's remainder, on the principle of sufficient reason as the common expression of the
+forms, is in no passage. Two things named on the passages: zeno.org's »daist« for »da ist«,
+kept as the transcription's letters as the Anhang's »Kam« was; and its »d.h.« for Grisebach's
+»d. h.«, a spacing. The footnote mark after »unmittelbares Objekt ist« is omitted, as the
+work's page says of all of them, and the passage names what the note refers to in Grisebach's
+text.
+
+*The three claims, all `draft`, each with its quote, all three set in the Schopenhauer cell of
+the first page's row on what in the world of appearance is the subject's own.* (1) The first
+two sentences, joined by an added "and" named in the body: that which cognizes everything and
+is cognized by none is the subject, and it is accordingly »der Träger der Welt, die
+durchgängige, stets vorausgesetzte Bedingung alles Erscheinenden, alles Objekts«, the »denn«
+clause kept inside the statement and the step not formalized; set beside § 1's sentence that
+the whole world is object in relation to the subject, no link between them, since no connective
+joins them; no link to Kant's subjective condition of sensibility, which is about the form space.
+(2) The sixth sentence of the second span: the commonality of the boundary at which subject
+and object bound each other, the statement restating the sentence's »dieser Gränze«, shows
+itself in this, that the forms of every object, time, space and causality, can »auch ohne die
+Erkenntniß des Objekts selbst, vom Subjekt ausgehend gefunden und vollständig erkannt werden,
+d.h. in Kants Sprache, a priori in unserm Bewußtseyn liegen«; `shares_premise_with` Kant's
+A 24 / B 38 on the premise that space is given a priori, a third entry under that premise on
+the page beside the two from the Anhang, the paragraph saying that what § 2 adds, the finding
+»vom Subjekt ausgehend«, is Schopenhauer's and not covered. (3) The seventh sentence: to have
+discovered this, the statement restating the »Dieses« in the preceding sentence's words, »ist
+ein Hauptverdienst Kants und ein sehr großes«; the Anhang's »größtes Verdienst« credits Kant
+with a distinction, this sentence with a discovery, and the map does not identify the two.
+`x-thing-in-itself`: the cell, the note, the shared entry, the `passages` list, the paragraph
+under *Space is given a priori*, the gaps list (§ 2 is now in the map but for the remainder of
+its second paragraph, and the twelve sentences of the two spans in no claim are named one by
+one), and the closing paragraph. `c-kant-space-a-priori` carries the converse link; the work
+node records the collation. README counts 244 nodes (3 thinkers, 5 works, 72 passages, 144
+claims, 14 arguments, 4 readings, 2 comparisons); the colophon's counts agree. No argument was
+formalized: § 2's two »denn« clauses give grounds inside sentences the claims hold whole, and
+the plan's rule, a node only where it adds a cell, left the subject's other sentences in the
+passages.
+
+**The adversarial pass, and what it found.** A second agent was given the five new nodes, the
+diff of the revised ones, both transcriptions of § 2, the nodes the new ones cite, the
+conventions and the distilled rules, with the brief to verify every original against zeno.org
+and every variant against Grisebach, the ZA pages against the markers, the sentence counts,
+every translation word by word, every statement against its sentence's qualifiers and the
+pronouns it resolves, every sentence about a thinker against a passage, the shared premise
+under the convention (both statements assert the proposition), the fit of each cell to its row,
+the absent links, every »...« quotation on the page against its listed passages, the closing
+paragraph, and the rendered pages. It returned 13 findings, 0 serious, 3 moderate, 10 minor;
+12 accepted and changed before commit, 1 declined as a judgement it offered as such.
+- *Moderate, »selbst« on the wrong word.* »von denen selbst es vielmehr immer schon
+  vorausgesetzt wird« had been rendered with "itself" on the subject; »selbst« belongs to the
+  forms. Now "by which themselves it is rather always already presupposed".
+- *Moderate, »daist« called a slip.* The operator had named zeno.org's »daist« as a slip of
+  the transcription beside the Anhang's »Kam«; the reviewer found the same form twice in the
+  § 1 passage stored since 2026-10-08 and »da« printed apart in the same § 2 paragraph where
+  »ist« does not follow, so it is the transcription's consistent orthography, which Grisebach
+  prints as two words. The passage, the claim and the work node now say that and no more.
+- *Moderate, the row note's "own ground".* The note had § 2 give "Schopenhauer's own ground"
+  for the cell's other sentences, a relation no passage states and no connective carries; now
+  "adds the subject itself, in Schopenhauer's own voice".
+- *Minor, 9, all changed:* "a third time" in the shared paragraph was the map's order of entry,
+  § 2 standing earlier in the text than either Anhang sentence, now said so; the discovery
+  claim's restatement dropped the »daher« of »wesentlichen und daher allgemeinen Formen«, now
+  kept; the forms claim's resolution of »dieser Gränze« dropped the »unmittelbar« of the
+  sentence it points to, now kept; »welchen selbst« rendered "which itself", which reads as if
+  the body did the calling, now "even which"; »verschwände aber auch jenes einzige« rendered
+  "too", now "even"; the forms claim said nothing on why no link is set to Kant's subjective
+  condition of sensibility, while its § 24 sibling does, now said; the subject claim named
+  neither § 1's closing »und ist nur für das Subjekt da« as the nearest sentence to its »denn«
+  clause nor the absence of an attack from JGB 17 on the subject as condition, now both, with
+  "a reader may dispute the absence"; the second passage's body quoted »Ich behaupte nun
+  überdies« from a span no passage holds, now "from its eighth sentence" (the build had caught
+  the same words in the gaps list before the review, since it checks comparison pages and not
+  passage pages); the closing paragraph counted the one sentence added to the note as
+  "sentences".
+- *Declined, 1:* whether the discovery claim, which asserts no proposition about space beyond
+  the preceding sentence's, belongs in the cell at all; the reviewer called it a judgement, and
+  the page's precedent (the Anhang's »größtes Verdienst« sentence in row 4, the »zeigte«
+  sentences in rows 2 and 7, each set "with Kant's name") keeps it in.
+The pass cost about 126,000 tokens of the agent's own and took six minutes. New kinds today: a
+transcription's consistent orthography mistaken for a slip, because the operator did not grep
+the stored passages of the same text for the form before naming it; a relation between a
+thinker's passages ("gives his own ground") written into a row note with no connective behind
+it; the map's order of entry ("a third time") written as if it were the text's order. All in
+`memory.md`.
+
+**What else was wrong and why.**
+- The first request to Projekt Gutenberg-DE returned an empty body: the site now redirects to
+  the same path with a trailing slash and the redirect carries no content. Noted in
+  `memory.md` with the working form.
+- The memory of runs 13 to 15 said the first page carries seven `shared` entries; it carried
+  nine. Corrected; the page itself was right throughout.
+- A full build with the font-coverage check needed fontTools and brotli installed again;
+  installed, 244 nodes, 0 errors, every character covered, before the review and after the fixes.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10); the content runs meanwhile are the gaps the
+pages still list: the Anhang's theorems on time; Nietzsche's JGB 19 beyond its two spans and GD
+»Die vier grossen Irrthümer« 7–8; Kant's antinomy outside A 538–541 and the B xxvi–xxvii
+footnote. § 2's unclaimed sentences, on the subject outside the forms, would need a row that asks
+after the subject, which neither page has; they stay in the passages until one does.
+
+**Step 6.** `memory.md` updated in place, about 7,200 of 8,000 words: the run-16 state, the two
+§ 2 spans and three claims in the Schopenhauer list, the third entry under the space premise,
+the counts, the Gutenberg-DE trailing slash, the review's rules. Corrected: the memory had said
+the first page carries seven `shared` entries since run 13; it carried nine and now ten.
+Dropped: nothing.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-23; first, if `INBOX.md` has an
+entry, the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what
+follows; otherwise a content run on a gap the pages list, through the adversarial pass, with a
+quote on every new cell claim.
+
+**Effort.** About 175,000 of the 300,000-token ceiling in this session plus about 126,000 in
+the adversarial agent: about half on reading the governing files, the pages and the nodes
+around § 2, a quarter on the five nodes and the page's edits, the rest on the review, the 12
+fixes and the records. Nothing spent.
+
 ## 2026-10-21 — run 15: JGB 34's opening and close, the erroneousness of the world, distrust of thinking, and the world as a fiction
 
 Fifteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
