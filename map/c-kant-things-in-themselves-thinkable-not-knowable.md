@@ -24,7 +24,17 @@ also as things in themselves" (AA 3:17.03–05). B 307–308 names the concept u
 they are thought: things that the understanding "must think not merely as appearances
 but as things in themselves", that is, noumena in the negative sense (AA 3:210.03–06),
 a noumenon in the negative sense being a thing insofar as it is not an object of our
-sensible intuition (AA 3:209.32–35).
+sensible intuition (AA 3:209.32–35). Kant's own footnote, whose mark stands after »denken
+können« (3:17.05), says what the two verbs of the sentence require, in the map since
+2026-10-23 ([the note](../../p/krv-b-xxvi-footnote/)): to cognize an object requires that
+I be able to prove its possibility
+([c-kant-cognizing-an-object-requires-proving-its-possibility](../../c/kant-cognizing-an-object-requires-proving-its-possibility/)),
+and I can think whatever I want provided only that I do not contradict myself, though I
+cannot vouch that an object corresponds
+([c-kant-thinking-requires-only-that-i-not-contradict-myself](../../c/kant-thinking-requires-only-that-i-not-contradict-myself/)).
+The note names no concept, and this statement does not rest on it; no connective joins
+the note to the sentence or the sentence to the note; the mark is their only tie, and no
+link is set.
 
 An interpretive choice is open here and the node does not take it: whether "eben dieselben
 Gegenstände" (B xxvi, AA 3:17.03–04) means one set of objects considered in two ways or

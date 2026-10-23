@@ -2,6 +2,181 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-23 — run 17: Kant's footnote at B xxvi, what cognizing and what thinking an object require
+
+Seventeenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 16; `origin/main` stood at run 16's commit when it began, and nothing arrived in between.
+The container had a detached HEAD at that commit.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 5 new, 4 revised, both comparisons touched, one cell added.** The plan's next content
+item was the smallest gap the pages list that adds a cell; both pages named Kant's footnote at
+B xxvi, four sentences, and it was taken. korpora.org answered at once; the note is printed at
+the foot of AA III 17, in the `*)` block after the page's twenty-eight numbered lines, without
+line numbers of its own, its text carrying a double space at nine places where the ten printed
+lines of the note break. The `original` was extracted by script, the double spaces reduced to
+one, and asserted against the file before anything was written.
+
+*The passage.* The whole note, `p-krv-b-xxvi-footnote`, cited by the page of its mark, B xxvi,
+after »denken können« at 3:17.05 in the sentence that the same objects must at least be
+thinkable as things in themselves; on which page or pages of the second edition the note itself
+is printed the map does not verify, and the passage says so. The terms are those of every Kant
+passage in the map (»erkennen« cognize, »Erkenntnißquellen« sources of cognition), with
+»Zeugniß« testimony, »Wirklichkeit« actuality, »Inbegriff« sum total, »dafür stehen« vouch for,
+»beilegen« ascribe; the »will« of »was ich will« is named as the verb of the idiom and not the
+noun of B xxvii, and no cell on the will is set for it; »eben« in »braucht eben nicht« is
+rendered "for that matter" and named. The passage that carries the mark, B xxvi–xxvii, had said
+since 2026-10-06 that the note is not part of it, and now also links to it.
+
+*The four claims, all `draft`, each with its quote, one per sentence, all four set in the Kant
+cell of the first page's row on what can be said of the thing in itself, for the words
+»erkennen« and »denken«.* (1) To cognize an object requires that I be able to prove its
+possibility, »es sei nach dem Zeugniß der Erfahrung aus seiner Wirklichkeit, oder a priori durch
+Vernunft«, the parenthesis kept as a "whether ... or" clause. (2) »Aber denken kann ich, was ich
+will, wenn ich mir nur nicht selbst widerspreche, d. i. wenn mein Begriff nur ein möglicher
+Gedanke ist, ob ich zwar dafür nicht stehen kann, ob im Inbegriffe aller Möglichkeiten diesem
+auch ein Object correspondire oder nicht«, whole, less the opening »Aber«, which the body
+names as the contrast with (1). (3) To ascribe »objective Gültigkeit (reale Möglichkeit, denn
+die erstere war bloß die logische)« to such a concept, something more is required; the
+statement resolves »einem solchen Begriffe« as the possible thought of (2) and »die erstere« as
+the possibility (2) gave it, keeps the parenthesis and its »denn«, and does not formalize the
+ground, which grounds the gloss and not the requirement. (4) »Dieses Mehrere aber braucht eben
+nicht in theoretischen Erkenntnißquellen gesucht zu werden, es kann auch in praktischen
+liegen«, »kann auch« kept, so that the sentence asserts a possibility, »Dieses Mehrere«
+resolved and »aber« dropped, both named. No link on any of the four: »Aber« is a contrast,
+»Dieses Mehrere« resumptive, and the parenthesis's »denn« grounds a gloss; the note names no
+concept, and that its sentences bear on the thing in itself is read from the place of the mark,
+said on every node and on the page. Two readings the map draws and marks as its own: that
+B xxviii's »so kann ich mir doch die Freiheit denken, d. i. die Vorstellung davon enthält
+wenigstens keinen Widerspruch in sich« is the application to freedom of what (2) says of
+thinking as such, with the same »d. i.«, no connective joining them and no link set; and that
+(4)'s »praktischen« points to B xxviii–xxx, where morality needs only »daß Freiheit sich nur
+nicht selbst widerspreche«, no connective and no link. No attack link from JGB 16's
+»contradictio in adjecto« on (2), which is set against the B xxvi sentence that applies thinking
+to »Dinge an sich selbst« where (2) names no concept; no shared premise, since no Schopenhauer
+or Nietzsche statement in the map states a condition on thinking or cognizing a concept as such;
+each absence argued on the node and open to dispute. On the second page the note is set on no
+row, after the review (below): the parallel to B xxviii stands as one sentence under *On
+freedom*, the map's reading, and the row note on freedom says why no cell is set. `x-thing-in-itself`: the cell, the note, the
+Kant paragraph under *What the three say*, the `passages` list, the gaps list (the footnote,
+once listed, is in the map, its four sentences each in a claim) and the closing paragraph.
+`x-the-will`: the sentence under *On freedom*, the note of the row on freedom, the `passages`
+list, the gaps list and the closing paragraph; both pages now refer to the note the same way, "the footnote at B xxvi", where the
+will page had "B xxvi–xxvii". The B xxvi claim on thinkability names the note in its body and
+sets no link. README counts 249 nodes (3 thinkers, 5 works, 73 passages, 148 claims, 14
+arguments, 4 readings, 2 comparisons); the colophon's counts agree. No argument was formalized:
+the note states requirements and infers nothing.
+
+**The adversarial pass, and what it found.** A second agent was given the five new nodes, the
+diff of the revised ones, the korpora file of AA III 17, the nodes the new ones cite, the
+conventions and the distilled rules, with the brief to verify the original character by
+character against the transcription and the passage body's account of the note's ten printed
+lines and missing line numbers, the mark's position, every quote and the length of its
+translation, every translation word by word (»die erstere«, »eben«, »auch«, »was ich will«
+named as points to attack), every statement against its sentence's qualifiers and the pronouns
+it resolves, every sentence about a thinker against a passage, the absences the bodies assert
+(by grepping the Schopenhauer and Nietzsche statements), the fit of each cell to its row on both
+pages, the gaps lists and closing paragraphs, and the rendered pages. It returned 18 findings,
+2 serious, 7 moderate, 9 minor; all 18 accepted and changed before commit, among them two it
+offered as judgements.
+- *Serious, »nur« with the wrong scope.* »wenn mein Begriff nur ein möglicher Gedanke ist« had
+  been rendered "provided my concept is only a possible thought", a restriction on the concept
+  the text does not state; the »nur« scopes the »wenn«, as in the clause it glosses. Now
+  "provided only that my concept is a possible thought", on the passage, the statement, the
+  quote, and in statement 3, which had resolved the concept as "only a possible thought".
+- *Serious, an absence asserted that the map refutes.* The body of the thinking claim and the
+  first page's note said no Schopenhauer statement in the map states a condition on thinking a
+  concept; § 19's »Außer dem Willen und der Vorstellung ist uns gar nichts bekannt, noch
+  denkbar« and § 25's plurality »nur in ihnen denkbar« do. Both now name the two, say that
+  whether their »denkbar« is the note's »denken« no passage says, and set no link.
+- *Moderate, two cells placed by a word.* The operator had set the thinking sentence in the will
+  page's row on freedom for »widerspreche« and the practical sentence in its row on what is
+  drawn for »praktischen«; the reviewer called both the known failure, neither sentence naming
+  the will or freedom or drawing anything from the will, and recommended dropping them. Both
+  cells are dropped; the passage stays in the page's list; the parallel to B xxviii is one
+  sentence under *On freedom*, marked as the map's reading; the row note on freedom says the
+  note is set on no row and why.
+- *Moderate, the first page's reason for the cell.* "Set here for the words »erkennen« and
+  »denken«" and "read from the place of its mark" named the wrong tie: the marked sentence is
+  set in row 1, not row 4. The note now says the note is attached to the row-1 sentence, says
+  what its verbs require, and is set in row 4 because, read of that sentence's objects, what it
+  says is what can be said of the thing in itself, its third and fourth sentences reaching it
+  only through »einem solchen Begriffe« and »Dieses Mehrere«.
+- *Moderate, a sentence no passage supports.* The practical claim's body said God, freedom and
+  immortality "are to be assumed" for the practical use of reason; B xxix–xxx says they cannot
+  even be assumed for it unless speculative reason is deprived of its pretension. Now said so.
+- *Moderate, a pronoun resolved without its qualifier.* »Dieses Mehrere« had been resolved as
+  the more required "to ascribe objective validity to a concept", dropping »einem solchen
+  Begriffe«; now "to a concept that is a possible thought", as the page note had it.
+- *Moderate, two changes unnamed* in the objective-validity claim's body (the dropped »aber«,
+  the apposition rendered "that is"); now named.
+- *Moderate, two renderings (judgements, taken):* »ob ... auch ... oder nicht« is the particle of
+  the indirect question, so "does correspond ... or not" for "also corresponds"; »braucht eben
+  nicht« is "simply need not" for "need not, for that matter", which extended rather than
+  emphasized and did not parse well alone. Both noted on the passage.
+- *Minor, 9, all changed:* "without vouching" dropped the modal of »nicht stehen kann«, now
+  "though I cannot vouch" in four places; a title turned the »denn« ground into a comparandum;
+  "the same »d. i.«" overstated two equations of different pairs, now said what each equates;
+  the line-break reading of the transcription's double spaces stated as fact, now "as the map
+  reads the transcription"; the will page's gaps sentence said the note was set in two rows
+  (moot once dropped); JGB 21's »Selbst-Widerspruch« and its »Fiktionen« named as the nearest
+  Nietzsche sentences, with why no link is due; the thinkable claim's "drawing nothing" phrased
+  as the other bodies phrase an absent connective; and the two stale "B xxvi–xxvii footnote"
+  mentions in `memory.md`, which the memory edit already removed.
+The pass cost about 152,000 tokens of the agent's own and took eight and a half minutes. New
+kinds today: a »nur« given the scope of the following noun instead of its »wenn«; a cell
+justified by the place of a footnote mark when the marked sentence sits in another row; an
+absence ("no statement states a condition on thinking") asserted without grepping the
+statements for the term; a sentence that names neither the row's subject nor its question set
+on the row for a word, twice, after run 15 had named the failure. All in `memory.md`.
+
+**What else was wrong and why.**
+- The operator's watcher for the reviewer's transcript fired twice before the report was in
+  (the file goes quiet while the agent thinks); the third watcher waited for a final text
+  message with no tool call. Noted in `memory.md`.
+- The thinking claim's body had cited "§ 23" for the plurality sentence, which is § 25; caught
+  by the operator while applying the review's fix.
+- A full build with the font-coverage check needed fontTools and brotli installed again;
+  installed, 249 nodes, 0 errors, every character covered, before the review and after the
+  fixes.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10); the content runs meanwhile are the gaps the
+pages still list: the Anhang's theorems on time; Nietzsche's JGB 19 beyond its two spans and GD
+»Die vier grossen Irrthümer« 7–8; Kant's antinomy outside A 538–541 and the chapter on phenomena
+and noumena beyond its opening and B 307–309. The footnote at B xxvi, listed on both pages since
+2026-10-11 and 2026-10-15, is struck from both.
+
+**Step 6.** `memory.md` updated in place, about 7,500 of 8,000 words: the run-17 state, the
+footnote passage and four claims in the Kant list, the cell on the first page, the counts, the
+review's rules. Compressed: the design paragraph from 346 to about 200 words (the `build.py`
+helper names, the merge hash, the owner's screenshot tooling, two copy notes already in
+`PLAN.md`), and the review-rules paragraph from about 1,700 to about 1,300 words, regrouped by
+kind instead of by run, the per-run cost sentences reduced to one line (the full record is in
+this file), every rule kept. Dropped: nothing else.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-24; first, if `INBOX.md` has an
+entry, the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what
+follows; otherwise a content run on a gap the pages list, through the adversarial pass, with a
+quote on every new cell claim, and no cell set for a word where the sentence names neither the
+row's subject nor its question.
+
+**Effort.** About 240,000 of the 300,000-token ceiling in this session plus about 152,000 in
+the adversarial agent: nearly half on reading the governing files, the two pages and the nodes
+around B xxvi, a fifth on the five nodes and the pages' edits, the rest on the review, the 18
+fixes, the memory compression and the records. Nothing spent.
+
 ## 2026-10-22 — run 16: Schopenhauer's § 2, the subject as the bearer of the world, and the forms of the object a priori
 
 Sixteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

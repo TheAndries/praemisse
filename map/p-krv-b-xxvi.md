@@ -12,6 +12,8 @@ translation_by: the project
 produced_by: claude-fable-5-1, 2026-10-06
 ---
 From the preface to the second edition. The footnote mark after "denken können" (AA
-3:17.05) is omitted; the footnote is not part of this passage. The Korpus prints
+3:17.05) is omitted; the footnote is not part of this passage and is, since 2026-10-23, its own,
+[KrV B xxvi, Kant's footnote](../../p/krv-b-xxvi-footnote/), four sentences on what cognizing and
+what thinking an object require. The Korpus prints
 "nothwendiggemachte" later on 3:17.07 where the edition has "nothwendig gemachte"; the
 span here ends before that word.
