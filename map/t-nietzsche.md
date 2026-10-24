@@ -15,7 +15,7 @@ Philosophie« 6), which is the canonical locator and is the same in every editio
 pages of the Kritische Studienausgabe (KSA 5 and 6) are not given, because the project has
 not verified them against that edition. The text is in a nineteenth-century orthography
 (»Irrthum«, »giebt«, »dass«) consistent with the first editions, which the transcription
-keeps, though it is not a diplomatic transcription (one slip is noted at JGB 36); its quotation marks
+keeps, though it is not a diplomatic transcription (slips are noted at JGB 36 and at GD »Die vier grossen Irrthümer« 7); its quotation marks
 are the transcription's straight marks, and single quotation marks inside a quotation
 appear in the transcription as backticks, which the passages keep unchanged. Nietzsche's
 text is in the public domain; the project's translations are its own and marked so.

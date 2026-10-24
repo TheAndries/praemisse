@@ -2,6 +2,211 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-24 — run 18: GD »Die vier grossen Irrthümer« 7 and 8, the error of free will, and nobody responsible
+
+Eighteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 17; `origin/main` stood at run 17's commit when it began, and nothing arrived in between.
+The container had `main` checked out, tracking `origin/main`.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 7 new, both comparisons touched, four claims added to one cell.** The
+plan's next content item was a gap both pages list that adds a cell; the will page's row on
+whether the will is free named GD »Die vier grossen Irrthümer« 7–8 and JGB 19 beyond its two
+spans, and the two GD sections were taken, since section 7 is titled »Irrthum vom freien
+Willen« and answers the row's question in its own words, where JGB 19's remainder is on the
+will's complexity. The Gutenberg text (eBook 7203, the same transcription as every GD passage in
+the map) was fetched, the two sections extracted by start and end substring with the line breaks
+joined by one space, and asserted verbatim before anything was written.
+
+*The passages.* `p-gd-irrthuemer-7-error-of-free-will`, section 7 whole, nine sentences
+counting its title line, and `p-gd-irrthuemer-8-nobody-responsible`, section 8 whole, the last
+of the chapter, eleven counting its opening question. Two forms of the transcription are kept
+and named on the first passage: »überall« opening its sentence in lower case, which the
+transcription prints elsewhere too, and »Willens-Psychiologie«, which the map reads as the
+transcription's slip for the word the same sentence uses and keeps as transcribed, the printed
+edition unchecked. Terms new to the map: »Theologen-Kunststück« "theologians' artifice",
+»Unschuld des Werdens« "innocence of becoming", »Schuldig-finden-wollen« "wanting to find
+guilty", »Falschmünzerei« "counterfeiting", »sittliche Weltordnung« "moral world-order",
+»Befreiung« "liberation" (not »Freiheit«), »erlösen« "redeem"; and »ein Stück Verhängniss«
+rendered "a piece of fate" where Vernunft 5's »Verhängniss von Irrthum« is "calamity", the
+difference argued on the passage (»Fatalität« twice in the sentence before, »nothwendig« in the
+sentence itself) rather than hidden.
+
+*The five claims, all `draft`, each with its quote.* From section 7: (1) today »wir« have no
+pity any more for the concept »"freier Wille"«, »das anrüchigste Theologen-Kunststück, das es
+giebt«, for the purpose of making humanity »"verantwortlich"« in the theologians' sense, that
+is, dependent on them; (2) becoming has been stripped of its innocence when any being-so-and-so
+is traced back to will, intentions, acts of responsibility: »die Lehre vom Willen ist wesentlich
+erfunden zum Zweck der Strafe, das heisst des Schuldig-finden-wollens«; (3) »Die Menschen wurden
+"frei" gedacht, um gerichtet, um gestraft werden zu können«, »folglich« every action had to be
+thought as willed and as originating in consciousness, the »folglich« inside one sentence, which
+the map formalizes as no argument and sets no `depends_on` for, since it runs from the purpose
+of a thought to what had to be thought. From section 8: (4) nobody gives man his qualities,
+»noch er selbst«, the nonsense of that notion »als "intelligible Freiheit" von Kant, vielleicht
+auch schon von Plato gelehrt worden«, the one sentence of the two sections that names Kant,
+reported as Nietzsche's attribution; (5) that nobody is made responsible any more, that the kind
+of being is not traced back to a »causa prima«, that the world is no unity, »dies erst ist die
+grosse Befreiung«, and with it the innocence of becoming is restored. The other fifteen sentences
+of the two sections are in the passages and in no claim, listed on the passages and in the will
+page's gaps list. No link on any of the five: the texts join the sentences by no connective the
+map could quote, and no attack is set. Argued on the nodes: no attack on Kant's B xxvii–xxviii
+or on the antinomy's resolution, since (1) says what the concept is and what it is for and
+denies no statement that a will is free, (3) says why men were thought free, and (4) denies that
+man gives himself his »Eigenschaften«, which no Kant statement in the map asserts, the phrase
+»intelligible Freiheit« being in no Kant passage the map holds (the nearest the »intelligibelen
+Charakter« of A 539 / B 567); no attack on Schopenhauer's § 23, whose »frei« is freedom from
+the forms, which none of the sentences speaks of; no link between (1) and JGB 21's »Unbegriff
+"freier Wille"«, the same term three years earlier, since neither text names the other; and GD
+8's »causa prima« is not identified with JGB 21's »causa sui«. The sentence on the will in
+section 8, »Er ist nicht die Folge einer eignen Absicht, eines Willens, eines Zwecks«, is in no
+claim and named on the page.
+
+*The pages.* `x-the-will`: claims (1) to (4) added to the Nietzsche cell of the row on freedom
+after JGB 21's six, the note extended, the two passages listed, a paragraph added under *On
+freedom* (what is parallel to Kant, both texts' »gedacht«, said to be the map's reading; what is
+not, Kant's »jenem nicht unterworfen« against GD's »"frei"« as the condition of being judged
+and punished, responsibility before a judge, a sense of freedom no Kant passage in the map
+names; the sentence naming Kant and why no attack is set; the close of the two sections on no
+row), one sentence under *On what is drawn from the will* saying why neither section is set in
+that row, the gaps list and the closing paragraph. `x-thing-in-itself`: the gaps list, which had
+named GD 7–8 since 2026-10-12, now says they are in the map and set on the will page, and the
+closing paragraph records the change. README counts 256 nodes (3 thinkers, 5 works, 75
+passages, 153 claims, 14 arguments, 4 readings, 2 comparisons); the colophon agrees. No
+argument was formalized: the sections state a genealogy and a doctrine and the one »folglich«
+is inside a sentence.
+
+**The adversarial pass, and what it found.** A second agent was given the seven new nodes, the diff of the three revised files, the
+Gutenberg file, the Kant, Schopenhauer and Nietzsche nodes the new ones cite or argue absences
+against, the conventions and the distilled rules, with the brief to verify both originals
+character by character by script, count the sentences the passages and the gaps list assert,
+check every quote and its translation, every translation word by word (»Theologen-Kunststück«,
+»pflegt es«, »abwälzen«, »Stück Verhängniss«, »die hier zuletzt abgelehnten Vorstellung«, »Art
+des Seins«, »damit erst« named as points to attack), every statement against its sentence's
+qualifiers, every asserted absence by grepping the map, whether any attack link or `depends_on`
+is due, the fit of each of the four cells to its row, the page prose, the gaps lists, the
+provenance paragraphs, the format, the counts and the rendered pages, and to grep both pages and
+the Nietzsche thinker and work nodes for sentences today's additions falsify. It confirmed the
+originals (1,895 and 1,689 characters, both verbatim), the five quotes, the sentence counts,
+the twenty-sentence accounting, the attributions and every asserted absence (no Kant or
+Schopenhauer passage or statement in the map has »verantwortlich«, »Strafe«, »Schuld«, a judge
+or »zurechnen«; »intelligible Freiheit« is in no Kant passage; Kant's »Eigenschaft« occurrences
+are B xxviii's »Freiheit als Eigenschaft unseres Willens« and B 566–569's »außer der
+Eigenschaft, dadurch er erscheint«, neither that man gives himself his qualities), and that
+section 8's Kant sentence is the only one in the two sections naming him. It returned 21
+findings, 2 serious, 9 moderate, 10 minor, and six judgements; all 21 accepted and changed
+before commit, and three of the judgements taken.
+- *Serious, a sentence falsified by accretion.* "Nietzsche's cells in this row are JGB 21's ...
+  six of them in this cell" under *On freedom*, true since 2026-10-20, was false once the cell
+  held ten; now says so and points to the end of the paragraph. The rule from run 17, grep the
+  page for such sentences before the review, was in `memory.md` and was not applied to this one.
+- *Serious, the page's passage refuting the page.* "GD 7, which names neither morality nor Kant":
+  its eighth sentence has the theologians' »"sittlichen Weltordnung"« against »wir
+  Immoralisten«, and the map's own translation says "moral world-order". Now says whose word for
+  morality the section has and that it does not name Kant.
+- *Moderate, 9:* the passage body said the transcription prints lower-case »überall«
+  "elsewhere too", but every other lower-case one is mid-sentence and the transcription prints
+  »Überall« at the head of a sentence twice (»Das Problem des Sokrates« 5 and 9), so the form is
+  a slip on the same footing as »Psychiologie«, now said; `t-nietzsche`'s "one slip is noted at
+  JGB 36" falsified today, now names GD 7; »wieder« dropped from the liberation claim's
+  statement ("restored again"); »auch« dropped from "perhaps already by Plato" in the passage,
+  the quote and the statement ("perhaps also already"); »hier« and the word order of »der hier
+  zuletzt abgelehnten Vorstellung« rewritten in the statement without being named, now kept;
+  »die Art des Seins« rendered "the kind of being", which reads in English as a sort of entity,
+  now "the manner of being" in the passage, the quote, the statement, the title and two bodies,
+  and the title's "is not traced back" restored to »darf« as "may not be"; the gloss defending
+  "artifice" said the word means a feat of skill rather than a deception, which misdescribes the
+  English, now says that both words say contrivance and neither deception outright; "the sense
+  of »frei« in these sentences is responsibility before a judge" generalized over four
+  sentences and held of one (the seventh of section 7, »gerichtet, gestraft, schuldig«): the
+  first names »"verantwortlich"« and dependence and section 8's names a giving of qualities, so
+  the row note and the first claim's body now say what each names; and the row note and the
+  page called the Kant sentence "the first sentence of 8" where the passage counts the opening
+  question as the first, now "the second, the answer to its opening question".
+- *Minor, 10, all changed:* the gaps list's "among them" listed fourteen of fifteen unclaimed
+  sentences, now also »Ich gebe hier nur die Psychologie alles Verantwortlichmachens«; "the
+  sentences between" named two of six, now "the six sentences between, among them"; the
+  assertion that morality needs freedom not to contradict itself is the »So aber« claim's, now
+  linked beside the supposition's; the first claim's title dropped Nietzsche's quotation marks on
+  »"verantwortlich"«; three titles had the term in straight quotes where the older titles on the
+  same term keep the German in guillemets, now »freier Wille«, »frei«, »intelligible Freiheit«;
+  "was taught" in a title against the passage's "has been taught"; "the last in a claim" in the
+  row note read as section 8's last sentence, which is in no claim, now "the one on the great
+  liberation"; "Everywhere responsibilities are sought, it is usually" parsed only with an
+  elided "that", now "Wherever"; »erst« added to the passage's terms with the temporal sense it
+  does not carry; and `w-nietzsche-gd` said »Die vier grossen Irrthümer« "(sections 1–8)" where
+  the map holds 3, 7 and 8, now says so.
+- *Judgements taken:* the doctrine-of-the-will cell had been justified "under the section's
+  title", a reason from outside the sentence, which is the pattern the placement rule exists to
+  stop; the reviewer found the sentence names the row's subject (»auf Wille«, »die Lehre vom
+  Willen«) and recommended the reason from inside it, now "for its tracing of being to »Wille
+  ... Akte der Verantwortlichkeit«, the tracing the section's title calls the error of free
+  will", on the note and the node; the »intelligible Freiheit« cell's admission "names neither
+  the will nor its freedom" undersold a sentence that names a »Freiheit« and Kant, beside a
+  Kant cell set for »frei« and »Freiheit« from a section where »Wille« does not occur either,
+  now "names a »"intelligible Freiheit"« and Kant, not the will"; and the sentence "What is
+  parallel to Kant: both texts have men or the will »gedacht« as free" rested on a shared verb
+  and was overreach, dropped, the "what is not" kept. *Judgements confirmed:* the first and
+  seventh sentences of section 7 belong in the row, the liberation claim on no row; "fate" for
+  »Stück Verhängniss« against Vernunft 5's "calamity" argued soundly; no attack, `depends_on` or
+  shared premise due (the »folglich« is inside a sentence; the parallel lists of GD 8 and
+  JGB 21, »Gott, Gesellschaft, Eltern und Vorfahren«, are one thinker's). *Declined:* "holding
+  responsible" for »Verantwortlichmachen«, offered as optional; the exact "making-responsible"
+  stays, since the sentence is about the act of making and the gloss says so.
+The pass cost about 154,000 tokens of the agent's own and took eight and a half minutes. New
+kinds today: a transcription form called common without checking its sentence-initial
+occurrences; an ordinal counted one way on the passage and another on the page; a gloss that
+misdescribes the English word it defends; a "sense of X in these sentences" generalization;
+a cell justified by the section's title; a "what is parallel" built on a shared verb; and three
+pre-existing sentences falsified by accretion (the row's cell count, the thinker node's "one
+slip", the work node's "sections 1–8") that the memory's rule named in kind and the operator did
+not grep for. All in `memory.md`.
+
+**What else was wrong and why.**
+- The rule of run 17, grep the pages for sentences true when written and falsified by
+  accretion before the review, stood in `memory.md` and was not applied: the reviewer found three
+  (the row's cell count under *On freedom*, `t-nietzsche`'s "one slip", `w-nietzsche-gd`'s
+  "sections 1–8"). The rule is now stated with the three kinds to grep for.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has,
+  and the run waited in the foreground on the reviewer's transcript (nine and a half minutes) and
+  then on the report, which arrived as a message; the background watcher of earlier runs did not
+  fire, since the transcript's last line is not a plain text record, and was left to time out.
+- A full build with the font-coverage check needed fontTools and brotli installed again;
+  installed, 256 nodes, 0 errors, every character covered, before the review and after the fixes.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10); the content runs meanwhile are the gaps the
+pages still list: Nietzsche's JGB 19 beyond its two spans; the Anhang's theorems on time; Kant's
+antinomy outside A 538–541 and the chapter on phenomena and noumena beyond its opening and
+B 307–309. GD »Die vier grossen Irrthümer« 7–8, listed on both pages since 2026-10-12 and
+2026-10-15, are struck from both.
+
+**Step 6.** `memory.md` updated in place, about 7,900 of 8,000 words: the run-18 state, the two GD passages and
+five claims in the Nietzsche list, the cell on the will page, the counts, the review's rules.
+Compressed: the cloud-container paragraph from about 230 to about 170 words (the detached-HEAD
+history of runs up to 14, the requirements-file detail). Dropped: nothing else.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-25; first, if `INBOX.md` has an
+entry, the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what
+follows; otherwise a content run on a gap the pages list, through the adversarial pass, with a
+quote on every new cell claim, and no cell set for a word where the sentence names neither the
+row's subject nor its question.
+
+**Effort.** About 235,000 of the 300,000-token ceiling in this session plus about 154,000 in
+the adversarial agent: two fifths on reading the governing files, the memory, the last entry and
+the will page's row and paragraphs, a fifth on the seven nodes and the pages' edits, the rest on
+the wait, the 21 fixes, the memory and the records. Nothing spent.
+
 ## 2026-10-23 — run 17: Kant's footnote at B xxvi, what cognizing and what thinking an object require
 
 Seventeenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

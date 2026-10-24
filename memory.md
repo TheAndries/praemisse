@@ -2,20 +2,20 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-23 (run 17, end)
+## State as of 2026-10-24 (run 18, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–17 were
-served on that model, no handover note needed. Runs 12 to 17 fired on consecutive days. **No run is recorded for 2026-10-16 or
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–18 were
+served on that model, no handover note needed. Runs 12 to 18 fired on consecutive days. **No run is recorded for 2026-10-16 or
 2026-10-17** (no commit, no changelog entry between run 11 on 10-15 and run 12 on 10-18);
 the operator cannot see the routine's run history and asked the owner to look (Ask 10).
 The GitHub and Claude Code Remote tools in the tool list are platform-attached to every
 cloud session and are not a config change (`ROUTINE.md`, Ask 6): do not raise it again, and
 do not use them; everything goes through git and the repository. Open disputes: none.
-Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; nothing new at runs 1–17; no form filing yet; nothing arrived
-between run 16 and run 17 (`origin/main` at run 16's commit when run 17 began). Open asks: 4 (mailbox; deferred by owner; now the second filing
+Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; nothing new at runs 1–18; no form filing yet; nothing arrived
+between run 17 and run 18 (`origin/main` at run 17's commit when run 18 began). Open asks: 4 (mailbox; deferred by owner; now the second filing
 route, for anyone without a GitHub account), 9 (the owner's qualified review of https://praemisse.com/x/the-will/,
 opened 2026-10-15; blocks nothing), **10 (opened 2026-10-18: test the filing route once from
 a node page, and look at the routine's run history for 10-16 and 10-17; blocks the
@@ -239,12 +239,12 @@ proved. Not in the map: § 2 beyond its two spans, § 20, § 24 beyond its first
 first paragraph, §§ 26–29, the fourth Book, the Anhang beyond the four spans held (nothing
 of 517–533 or 537–650, the Fichte paragraph, the theorems on time, the categories).
 
-**Nietzsche nodes on `main` (83: 1 t, 2 w, 23 p, 52 c, 4 a, 2 r; 249 nodes in all: 3 t, 5 w,
-73 p, 148 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
+**Nietzsche nodes on `main` (90: 1 t, 2 w, 25 p, 57 c, 4 a, 2 r; 256 nodes in all: 3 t, 5 w,
+75 p, 153 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
 cited by aphorism and, for GD, chapter and section (Fabel by stage 1–6), KSA pages not
-given; 23 passages: JGB 15 (two spans), 16 (two), 17, 19 (two), 21 whole in four spans since run 14 (the first sentence;
+given; 25 passages: JGB 15 (two spans), 16 (two), 17, 19 (two), 21 whole in four spans since run 14 (the first sentence;
 »Das Verlangen« to »hinausläuft«; »Man soll nicht« to »mythologisch«; »Der "unfreie Wille"« to the end, from the same Gutenberg text), 34 in four spans since run 15 (the opening, »Auf welchen Standpunkt« to »Fragen mehr sind«, three sentences; »Der Glaube an« to »wenig Ehre macht«; »Es ist nicht mehr« to »die Sprache der Maler«; the close, »Warum dürfte« to the end, six questions; the span between the second and the third, »Mag im bürgerlichen Leben« to »Warum nicht?«, in no passage), 36 (two), 54; GD Vernunft 2, 5, 6; Fabel;
-Irrthümer 3 (to »Das folgt daraus!«). 52 claims, all `draft`: JGB 16 (Schopenhauer's »ich
+Irrthümer 3 (to »Das folgt daraus!«); **Irrthümer 7 and 8 whole since run 18**, nine sentences counting the title line and eleven counting the opening question, the transcription's »überall« in lower case and »Willens-Psychiologie« kept and named, »ein Stück Verhängniss« rendered "fate" against Vernunft 5's "calamity" with the reason on the passage. 57 claims, all `draft`: JGB 16 (Schopenhauer's »ich
 will« a superstition; immediate certainty a contradictio in adjecto; »ich denke«
 presupposes comparison), 17 and 54 (the subject a grammatical habit; the I a synthesis), 19
 (Schopenhauer took over a popular prejudice; willing complicated; the belief that will and
@@ -276,7 +276,7 @@ predicate thought in the appearance; whether it is Nietzsche's »unfreie Wille«
 the nodes; the four set first in the Nietzsche cell of `x-the-will`'s row on freedom, the mythology
 sentence leading), 34 (belief in immediate certainties a naïveté; truth worth more than
 semblance a moral prejudice; doing away with the apparent world leaves nothing of truth,
-»gesetzt, ihr könntet das«; **run 15, the opening and the close:** »die Irrthümlichkeit der Welt, in der wir zu leben glauben« is »das Sicherste und Festeste«, the grounds »verlocken möchten« to conjectures about a deceptive principle in the »"Wesen der Dinge"«, a temptation reported, set in row 5 of the first page; whoever makes »"den Geist"« responsible for the world's falseness and takes it »sammt Raum, Zeit, Gestalt, Bewegung, als falsch erschlossen« »hätte mindestens guten Anlass« to distrust all thinking, the two questions after that colon in no statement, names no one, no attack link on Kant's subjective condition or Schopenhauer's forms (a consequence drawn, no denial), row 7; the innocence of thinkers permits them to ask consciousness for honest answers, »ob es "real" sei«, no connective to »Der Glaube an«, row 3 for the request to consciousness; the close's first three questions, why the world that concerns us might not be a fiction and whether the »"Gehört"« of »zur Fiktion gehört ein Urheber« belongs to the fiction, kept as questions, row 5 after the »"wahr"« / »"falsch"« questions they follow in the text (the reviewer moved them from row 7, where they had been set for the word »Urheber«; »die uns etwas angeht« is "that is of any concern to us", »mit zur Fiktion« "also belong"), the last three questions (irony towards subject, predicate and object; faith in grammar; the governesses) in the passage and in no claim, no link to JGB 17 / 54). 4 arguments, all `checked`:
+»gesetzt, ihr könntet das«; **run 15, the opening and the close:** »die Irrthümlichkeit der Welt, in der wir zu leben glauben« is »das Sicherste und Festeste«, the grounds »verlocken möchten« to conjectures about a deceptive principle in the »"Wesen der Dinge"«, a temptation reported, set in row 5 of the first page; whoever makes »"den Geist"« responsible for the world's falseness and takes it »sammt Raum, Zeit, Gestalt, Bewegung, als falsch erschlossen« »hätte mindestens guten Anlass« to distrust all thinking, the two questions after that colon in no statement, names no one, no attack link on Kant's subjective condition or Schopenhauer's forms (a consequence drawn, no denial), row 7; the innocence of thinkers permits them to ask consciousness for honest answers, »ob es "real" sei«, no connective to »Der Glaube an«, row 3 for the request to consciousness; the close's first three questions, why the world that concerns us might not be a fiction and whether the »"Gehört"« of »zur Fiktion gehört ein Urheber« belongs to the fiction, kept as questions, row 5 after the »"wahr"« / »"falsch"« questions they follow in the text (the reviewer moved them from row 7, where they had been set for the word »Urheber«; »die uns etwas angeht« is "that is of any concern to us", »mit zur Fiktion« "also belong"), the last three questions (irony towards subject, predicate and object; faith in grammar; the governesses) in the passage and in no claim, no link to JGB 17 / 54); **run 18, GD Irrthümer 7–8, five claims, four in the will page's row on freedom after JGB 21's six:** the concept »"freier Wille"« »das anrüchigste Theologen-Kunststück«, for making humanity »"verantwortlich"« in the theologians' sense; »die Lehre vom Willen ist wesentlich erfunden zum Zweck der Strafe«, set under the section's title, not in the row on what is drawn; »Die Menschen wurden "frei" gedacht, um gerichtet, um gestraft werden zu können«, »folglich« every action thought as willed, the »folglich« inside one sentence, no argument, no `depends_on`; nobody gives man his »Eigenschaften«, »noch er selbst«, the nonsense taught »als "intelligible Freiheit" von Kant« by Nietzsche's attribution, the one sentence naming Kant, no attack (no Kant statement says the subject gives itself its qualities; the phrase is in no Kant passage; the nearest the »intelligibelen Charakter«); »dies erst ist die grosse Befreiung«, the innocence of becoming restored, on no row (»Befreiung« not »Freiheit«; »causa prima« not identified with JGB 21's »causa sui«); GD's »"frei"« is responsibility before a judge, a sense no Kant passage in the map names; the fifteen other sentences, among them »Er ist nicht die Folge ... eines Willens«, in the passages and in no claim, listed in the will page's gaps list). 4 arguments, all `checked`:
 `a-nietzsche-external-world-not-work-of-organs` (w→b, b→o, s→¬o ⊢ s→¬w; s→¬o the map's
 bridge), `a-nietzsche-ich-denke-has-no-immediate-certainty` (c, c→b, b→¬g ⊢ ¬g),
 `a-nietzsche-true-world-does-not-obligate` (¬r, ¬r→¬k, ¬k→¬o ⊢ ¬o; stage 4),
@@ -304,7 +304,7 @@ Terms: Gewissheit "certainty", Erkenntniss "cognition", Schein/Anschein "semblan
 scheinbar "apparent", wirken "work", Thatsache "fact", Empirie "empirical evidence",
 Verhängniss "calamity", Vermögen "faculty". Gutenberg's »wie es in ein Satz ist« (JGB 36)
 is read as »mein Satz«, "as is my proposition", said on the passage. Not in the map: JGB
-20 (adds no cell), JGB 34's span from »Mag im bürgerlichen Leben« to »Warum nicht?«, JGB 19 beyond its two spans, JGB 230; GD Irrthümer 7–8; Nachlass
+20 (adds no cell), JGB 34's span from »Mag im bürgerlichen Leben« to »Warum nicht?«, JGB 19 beyond its two spans, JGB 230; GD Irrthümer 1–2, 4–6; Nachlass
 nothing, by design.
 
 **The two comparisons.** `x-thing-in-itself` (/x/thing-in-itself/, `checked` with the
@@ -323,8 +323,8 @@ he has not read (everything since 2026-10-10, listed). `x-the-will` (/x/the-will
 with »niemals unmittelbar gekannt« for the word »unmittelbar«; cause of the body's
 actions, Kant's cell filled in run 13 from A 538–541 for »Ursache«/»Handlungen«/»Wirkungen«;
 free, and free of what, the Schopenhauer cell set for the word »frei«, the Nietzsche cell since run 14 the four
-JGB 21 claims first and then the two set for »die Freiheit« / »"psychologischer Unfreiheit"«, Kant's since run 13 also the three antinomy sentences and since run 17 the footnote's »widerspreche« sentence, Schopenhauer's also § 24;
-what is drawn from it, Kant's cell since run 17 also the footnote's »praktischen« sentence), two `shared` entries since run 13, both the premise on time, *a
+JGB 21 claims first and then the two set for »die Freiheit« / »"psychologischer Unfreiheit"« and since run 18 the four GD Irrthümer 7–8 claims after them, Kant's since run 13 also the three antinomy sentences and since run 17 the footnote's »widerspreche« sentence, Schopenhauer's also § 24;
+what is drawn from it, Kant's cell since run 17 also the footnote's »praktischen« sentence, GD 7–8 set there on no cell with the reason in the paragraph), two `shared` entries since run 13, both the premise on time, *a
 condition or form of appearances only, and no determination of the thing in itself* (Kant's
 »denn« clause ↔ § 24's »Kant richtig geschlossen, daß Zeit, Raum und Kausalität ... nicht
 Bestimmungen desselben seyn« and ↔ § 23's »frei von allen Formen«, the same two claims that
@@ -370,8 +370,8 @@ passages they cite, the conventions, and the order validity, fidelity, attack li
 translation, references, readings, links, format, rendered page; for a comparison also
 rows' fit, shared premises asserted by both, divergences, readings not picked, quotations.
 The Agent tool runs the reviewer in the background; it takes six to sixteen minutes and
-120,000–260,000 of its own tokens (runs 13–17: 212k/16 min on 21 nodes; 145k/7 min; 144k/8.5
-min; 126k/6 min; 152k/8.5 min; 13–18 findings each, nearly all accepted); draft memory and the
+120,000–260,000 of its own tokens (runs 13–18: 212k/16 min on 21 nodes; 145k/7 min; 144k/8.5
+min; 126k/6 min; 152k/8.5 min; 154k/8.5 min on 7 nodes, 21 findings and 6 judgements; 13–18 findings each, nearly all accepted); draft memory and the
 changelog meanwhile; the stop hook asks for a commit while it runs, which must be refused until
 the report is in; wait with a background loop on the agent's transcript, not by ending the turn.
 Rules distilled, runs 2–17. *Forms:* when a form's conclusion is not word for word the
@@ -445,7 +445,7 @@ can be verbatim, inside a listed passage, and still transplanted to another subj
 escapes belong in YAML, never in a Markdown body; a sentence true when written (»the one empty
 cell«, »no Kant passage speaks of immediacy«, the closing paragraph's "on his instructions", a
 status note) is falsified by accretion, so grep the page for them before every review; a rule
-the model states and nothing enforces will be broken, so write the check.
+the model states and nothing enforces will be broken, so write the check. *Run 18 added:* before writing that a transcription prints a form "elsewhere too", grep for the form at the head of a sentence and mid-sentence separately (GD's lower-case »überall« was sentence-initial once, a slip on the footing of »Psychiologie«); a sentence's ordinal must be counted the same way on the passage, the claim and the page ("the first sentence of 8" against the passage's count from the opening question); a gloss that defends a rendering must describe the English word, not an ideal one ("artifice" says contrivance); »auch«, »hier«, »wieder« are qualifiers like the rest, and »Art des Seins« is "manner of being"; a "sense of X in these sentences" claim is a generalization and must hold of each sentence; a reason for a cell must come from inside the sentence, never from the section's title; a shared verb (»gedacht« in two texts) is no "what is parallel"; new titles keep the German term in guillemets as the older titles on the same term do; sentences that count or list a row's cells ("Nietzsche's cells in this row are JGB 21's"), a thinker node's "one slip is noted at", and a work node's "(sections 1–8)" are falsified by accretion, so grep them before every review.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
 runs 1–12. The card used for the domain is still unreported.
@@ -456,32 +456,17 @@ runs 1–12. The card used for the domain is still unreported.
 Commits as `TheAndries`; push with plain `git push`. Owner-session commit messages begin
 »owner session —«.
 
-**Tooling facts, cloud container.** Python 3.11 with PyYAML (korpora.org answered at once on 10-23), Node 22 with a global
-`playwright` and Chromium at `/opt/pw-browsers/chromium` (screenshots: `NODE_PATH=$(npm root
--g) node script.js`, viewport 390 for phone). WebSearch and WebFetch work (Cambridge/OUP
-catalogue pages return nothing useful); `pip install` and raw downloads work through the
-proxy; `gh` exists on the path but is not to be used by the routine (no connector; the
-scripts that call it run only in Actions). Git author `Claude <noreply@anthropic.com>`;
-commits carry the session trailer. A full build needs fontTools and brotli, which the container lacks and which `pip install -r site/requirements.txt`
-did not supply for this interpreter: `python3 -m pip install fonttools brotli` did; `--check` runs no font-coverage
-check, so run a full build to a scratch `--out` before the review. In an edit script, `re.sub` with a lambda does not
-expand `\1`; a mangled front-matter line is recovered from `git show HEAD:map/<file>`. The container has checked out a detached HEAD whose local
-`main` is stale (runs up to 14; run 15 found `main` checked out and tracking `origin/main`): `git fetch origin main && git pull --rebase origin main` is not possible on
-a detached HEAD, so `git fetch origin main`, `git rebase origin/main` if the inbox workflow
-has pushed, then `git push origin HEAD:refs/heads/main`. A stop hook asks for a commit
-whenever the turn ends with uncommitted changes; do not commit nodes before the review.
-Writing a Python heredoc through the shell can hang; write scripts to the scratchpad and
-run them by path.
+**Tooling facts, cloud container.** Python 3.11 with PyYAML; Node 22 with a global `playwright` and Chromium at `/opt/pw-browsers/chromium` (`NODE_PATH=$(npm root -g) node script.js`, viewport 390 for phone). WebSearch, WebFetch, `pip install` and raw downloads work through the proxy; korpora.org and gutenberg.org answered at once on 10-23 and 10-24; `gh` exists but is not to be used by the routine. Git author `Claude <noreply@anthropic.com>`; commits carry the session trailer. A full build needs fontTools and brotli: `python3 -m pip install fonttools brotli` (not the requirements file); `--check` runs no font-coverage check, so run a full build to a scratch `--out` before the review. Write edit scripts to the scratchpad and run them by path with `python3 -I` (a shell heredoc can hang; `re.sub` with a lambda does not expand `\1`; a mangled front-matter line is recovered from `git show HEAD:map/<file>`). Since run 15 the container checks out `main` tracking `origin/main`: `git fetch origin main`, rebase if the inbox workflow has pushed, `git push origin main`. A stop hook asks for a commit whenever the turn ends with uncommitted changes; do not commit nodes before the review.
 
 **Next.** If `INBOX.md` has an entry: handle it first, inside the protocol's deadlines
 (above). If the owner answered Ask 9: apply as under Ask 7 (`checked` with `status_note`;
 versions for changed statements with credit). If Ask 8: read the brief before building.
 Otherwise: a fourth thinker is not yet due (Phase 2 should see one filing or the owner's
-word first); useful content runs meanwhile are the gaps both pages list (the Anhang's
-theorems on time; § 2's unclaimed sentences only if a row asks after the subject, which none does; Nietzsche JGB 19 beyond its two spans; GD Irrthümer 7–8;
+word first); useful content runs meanwhile are the gaps both pages list (Nietzsche JGB 19 beyond its two spans, the one Nietzsche gap left on the will page; the Anhang's
+theorems on time; § 2's unclaimed sentences only if a row asks after the subject, which none does;
 the antinomy's resolution outside A 538–541; A 236–260 / B 295–315 beyond the opening),
 each only where it adds a cell or a row, with quotes on every new cell claim; and the
 quotation check could be extended from comparisons to all bodies after measuring how many old
 nodes fail.
 
-**Dropped from memory this run:** the design paragraph compressed from 346 to about 200 words (the list of `build.py` helper names, the `524d00e` merge note, the screenshot tooling on the owner's machine, the two copy notes already in `PLAN.md` §5); the review-rules paragraph rewritten from 1,700 to about 1,300 words, grouped by kind instead of by run, the per-run cost sentences reduced to one line (the full record is in `CHANGELOG.md`), every rule kept; run 17 added the footnote passage and four claims, the cell, and the review's rules; about 7,500 words of 8,000.
+**Dropped from memory this run:** the cloud-container paragraph compressed from about 230 to about 170 words (the detached-HEAD history of runs up to 14, the requirements-file detail, the watcher note folded into the review paragraph); run 18 added the two GD passages and five claims, the cell, and the review's rules; about 7,900 words of 8,000.

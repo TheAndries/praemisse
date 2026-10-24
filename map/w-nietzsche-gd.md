@@ -11,5 +11,5 @@ produced_by: claude-fable-5-1, 2026-10-09
 ---
 The chapters cited are »Die ›Vernunft‹ in der Philosophie« (sections 1–6), »Wie die
 ›wahre Welt‹ endlich zur Fabel wurde. Geschichte eines Irrthums« (six stages) and »Die
-vier grossen Irrthümer« (sections 1–8). The transcription's line breaks are joined with
+vier grossen Irrthümer« (sections 3, 7 and 8). The transcription's line breaks are joined with
 a space and nothing else is changed in the quoted originals.
