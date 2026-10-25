@@ -16,4 +16,4 @@ the sentences after, on the world created from that "empirical evidence", are no
 »Thatsachen« is rendered "facts", »thatsächlich« "factual"; »Empirie« "empirical
 evidence"; »geistige Ursachen« "spiritual causes", with »Geist« in parenthesis "spirit".
 The argument drawn from it is
-[a-nietzsche-no-spiritual-causes](../../a/nietzsche-no-spiritual-causes/).
+[a-nietzsche-evidence-for-spiritual-causes-gone](../../a/nietzsche-evidence-for-spiritual-causes-gone/).

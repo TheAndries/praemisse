@@ -2,6 +2,184 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-25 — run 19: JGB 19 held whole, »Freiheit des Willens« as the affect of superiority and as the word for a state of pleasure, all willing as commanding and obeying
+
+Nineteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 18; `origin/main` stood at run 18's commit when it began, and nothing arrived in between.
+The container had a detached HEAD at that commit; `main` was checked out to it.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 6 new, 3 revised, the will page touched in three rows.** The plan's next
+content item was a gap the pages list that adds a cell; the will page named Nietzsche's JGB 19
+beyond its two spans, the one Nietzsche gap left on it, and it was taken: the aphorism is now held
+whole in four spans. The Gutenberg text (eBook 7204, the transcription of every JGB passage in the
+map) was fetched, the two remaining spans extracted by start and end substring, and the four spans
+asserted by script to concatenate to the whole aphorism, less the dash the transcription prints
+after its last full stop, before anything was written.
+
+*The two passages.* `p-jgb-19-freedom-of-the-will-the-affect-of-superiority`, the seventh and
+eighth of the aphorism's fourteen sentences (full stop, question mark and exclamation mark; a colon
+joins halves), from »Das, was "Freiheit des Willens" genannt wird« to »dass es gehorcht«; and
+`p-jgb-19-close-freedom-of-the-will-the-word-for-a-state-of-pleasure`, the eleventh to the
+fourteenth, from »"Freiheit des Willens" - das ist das Wort« to »entsteht«. Named on the passages:
+the transcription's one kind of quotation mark at both levels in »"ich bin frei, "er" muss
+gehorchen"«, kept; the closing dash not reproduced, now also said on `w-nietzsche-jgb`. Terms new
+to the map: »Überlegenheits-Affekt« "affect of superiority", »Lust-Zustand« "state of pleasure",
+»Unterwillen« "under-wills", »Gesellschaftsbau« "social edifice", »Gemeinwesen« "commonwealth",
+»Herrschafts-Verhältnisse« "relations of domination", »Gesichtskreis« "purview"; »Noth« rendered
+"needful" so that »Nothwendigkeit« keeps "necessity"; »Wollen an sich schon« "willing as such
+already", never "in itself"; »dass gehorcht werden wird« "that there will be obedience", the noun
+supplied where English has no impersonal passive.
+
+*The four claims, all `draft`, each with its quote.* (7) What is called »"Freiheit des Willens"«
+is »wesentlich der Überlegenheits-Affekt in Hinsicht auf Den, der gehorchen muss«, »"ich bin frei,
+"er" muss gehorchen"«, a consciousness that lies in every will, with the tension of attention, the
+gaze, the valuation and the inner certainty that there will be obedience; (8) »Ein Mensch, der will
+-, befiehlt einem Etwas in sich, das gehorcht oder von dem er glaubt, dass es gehorcht«; (11)
+»"Freiheit des Willens"« is the word for the manifold »Lust-Zustand des Wollenden, der befiehlt und
+sich zugleich mit dem Ausführenden als Eins setzt«, who shares in the triumph over resistances but
+judges to himself that his will itself overcomes them, the reported subjunctive carried by the
+frame; (14) »Bei allem Wollen handelt es sich schlechterdings um Befehlen und Gehorchen« on a
+»Gesellschaftsbau vieler "Seelen"«, »weshalb« a philosopher should claim the right to bring willing
+as such already within the purview of morality, understood as the doctrine of the relations of
+domination under which »"Leben"« arises, the »weshalb« inside one sentence, no argument and no
+`depends_on`, as with GD 7's »folglich«; »wie gesagt« dropped from the statement and named. Sentences
+12 (the under-wills and under-souls, »unser Leib ist ja nur ein Gesellschaftsbau vieler Seelen«, to
+which »wie gesagt« points) and 13 (»L'effet c'est moi«) are in the passage and in no claim. No link
+on any of the four, argued on the nodes: no Kant or Schopenhauer statement in the map speaks of
+commanding, obeying, superiority, an affect, domination or pleasure, or of a consciousness of
+freedom (B xxviii has freedom thought); Kant's »frei« is a predicate of the will as belonging to a
+thing in itself, under the critique's conditional, and the antinomy's independence from natural
+necessity, which none of the four denies; Schopenhauer's § 18 identity is denied by the ninth and
+tenth sentences, already the attack, not by the eleventh, which has the one who wills posit himself
+as one with the one who carries it out, a positing and not a denial; § 23's »frei« is freedom from
+the forms; JGB 21's same term in another aphorism, JGB 17 and 54 on the subject, neither naming
+the other, no link; and each absence is open to dispute, said on the nodes.
+
+*The page.* `x-the-will`: (8) and (14) added to the Nietzsche cell of the row on what the will is,
+for what a man who wills does and what all willing is a matter of; (7) and (11) to the Nietzsche
+cell of the row on freedom, after JGB 21's six and before GD's four, for the term »Freiheit des
+Willens«, the one saying what is so called, the other what the word is the word for; (14) also to
+the Nietzsche cell of the row on what is drawn from the will, for its »weshalb« clause, after the
+review (below); the three notes extended; sentences added under *On what the will is* (what is
+parallel to Schopenhauer's cells: nothing the map sets), under *On freedom* (what is parallel to
+Kant: nothing the map sets; what is not: Kant's »frei« a predicate of a will as belonging to a thing
+in itself, JGB 19's what is called by a name and what a word is the word for, saying nothing of a
+thing in itself or the law of nature) and under *On what is drawn from the will* (a philosopher's
+right over a doctrine beside Kant's place of morality; no passage joins the two »Moral«); the gaps
+list, which now names the sentences of all four spans in no claim; the closing paragraph. README
+counts 262 nodes (3 thinkers, 5 works, 77 passages, 157 claims, 14 arguments, 4 readings, 2
+comparisons); the colophon agrees. No argument was formalized.
+
+**The adversarial pass, and what it found.** A second agent was given the six new nodes, the diff
+of the page and the README, the Gutenberg file, the older JGB 19 nodes and every Kant, Schopenhauer
+and Nietzsche node the bodies cite or argue absences against, the conventions and the distilled
+rules, with the brief to verify both originals by script and the four spans' concatenation, count
+the sentences and check every ordinal on passage, claim and page, check every quote and its
+translation's length, every translation word by word (twenty-four points named), every statement's
+qualifiers and mode, every asserted absence by grepping the statements, whether any link is due,
+the fit and the stated reason of each cell, the page prose for generalizations and accretion, the
+format, the counts and the rendered pages. It confirmed the originals (the four spans the whole
+aphorism less the final dash), the fourteen-sentence count and every ordinal but one, the four
+quotes, every asserted absence, the cells' reasons, the accretion sweep and the format, and returned
+20 findings, 2 serious, 10 moderate, 8 minor, and ten judgements; all 20 accepted and changed
+before commit, and seven of the judgements taken.
+- *Serious, a dead link the build did not catch.* The body of the last claim linked
+  `../../M/RALITYID/`: the operator's link helper sliced a placeholder id instead of the id it was
+  later replaced with, and `--check` resolves only front-matter links. Fixed; and `build.py` now
+  has `check_body_links`, which fails the build on any relative body link that names no node. Run
+  on the whole map, the new check found one old dead link, GD »Die vier grossen Irrthümer« 3's
+  passage pointing to an `a-nietzsche-no-spiritual-causes` that never existed (the argument is
+  `a-nietzsche-evidence-for-spiritual-causes-gone`, from 2026-10-09); fixed, no statement changed.
+- *Serious, a counting sentence false on the page's own account.* "The attacks the map holds from
+  JGB 19 are the tenth sentence's": the map holds two, the second sentence's on § 22 and the
+  ninth and tenth sentences' on § 18, and the page's own *On immediacy* paragraph describes the
+  first. Now says both.
+- *Moderate, 10:* the attack claim spans sentences 9 and 10 (»irrthümlichen Schlüssen« is in the
+  ninth), so "the tenth sentence, set as the attack" in four places is now "the ninth and tenth";
+  statement 14 had dropped »wie gesagt« and »nämlich« unnamed, now keeps "morality, namely" and
+  names the drop of »wie gesagt« with the reason, and the body no longer says the first colon
+  became "which is why" (»weshalb« did); statement 7 had turned »dies Bewusstsein steckt in jedem
+  Willen« after a colon and dash into an apposition, so that »und ebenso« could read as a second
+  predicate of "is essentially", now the text's structure; the row note said JGB 19 was "three years
+  earlier in the same book", true of neither JGB 21 (same year) nor GD (another book), now "two
+  before 21 in the same book and three years before GD"; *On freedom* said JGB 21 "asks to be
+  struck" the term »Freiheit des Willens«, where it supposes »"freier Wille"« struck and asks for
+  the »"unfreien Willen"«, now "the term whose desire JGB 21 calls the causa sui"; the gaps list
+  named only the new spans' unclaimed sentences, now also the ninth sentence and the first's
+  opening clause from the older spans; "the clause on morality is set on no row of its own, since
+  the statement is one sentence" was no reason, claims already sitting in two rows, and the clause
+  names the row's question, so the claim is now also in the row on what is drawn, for the clause,
+  with a note and a paragraph; »dienstbaren« "serviceable" described fitness for use, now
+  "subservient"; "The one who wills in this way adds" read as a kind of willing, now "In this way
+  the one who wills adds"; »dem Ausführenden« "the executor" collided with the English sense beside
+  "will", now "the one who carries it out", glossed.
+- *Minor, 8, all changed:* »wir« miscited as »uns«; "an affect from the side of the one commanded"
+  misdescribed whose affect it is; "over what must obey" for »in Hinsicht auf Den«, a person; "what
+  a name is called"; "so that the aphorism is held whole" drawn from two cells; "take the right to
+  grasp willing within the purview" word for word, now "claim the right to bring"; "say what morality
+  presupposes" of a sentence that supposes it; and the work node's "nothing else is changed" against
+  the dropped closing dash.
+- *Judgements taken:* »mit geniesst« "shares in"; »Gesellschaftsbau« "social edifice", echoing
+  »gut gebauten«; a line on the seventh sentence's »Eins fixirt« beside »als Eins setzt«; »dergestalt«
+  "continues from", a manner adverb and no connective; the position of the sentences in the text
+  stated beside the order of entry; the row-1 note now says neither sentence names appearance or a
+  thing in itself, as none of the Nietzsche cells in that row does; "a reader who holds that this
+  sentence denies B xxvii–xxviii / § 18 may dispute the absence" added to claims 7 and 11.
+  *Declined:* "a human being" for »Ein Mensch« (the map renders »Mensch« "man" in GD 8); "achievements"
+  for »Erfolgen« (the body already says the two words share one stem); "as said" restored inside
+  statement 14 (readable alone, as the reviewer's own judgement preferred).
+The pass cost about 162,000 tokens of the agent's own and took seventeen minutes. New kinds today: a
+dead link in a body, which nothing checked; a counting sentence about attack links; the ordinal of a
+claim that spans two sentences; a colon and dash dropped from a statement so that »ebenso« moved;
+a chronology true of neither comparandum; a term rendered by an English word with a legal sense
+beside "will"; and a "no row of its own" with no reason behind it. All in `memory.md`.
+
+**What else was wrong and why.**
+- The operator's edit script failed midway on a pattern that did not match (quotes escaped in YAML,
+  bodies wrapped), leaving half its edits applied; two reruns failed on the already-applied half
+  before the script was made idempotent and whitespace-flexible. Noted in `memory.md` as a rule.
+- `memory.md` still said that run 17's footnote sentences were set in two cells of the will page,
+  which run 17's own review had dropped; corrected while compressing.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+- A full build with the font-coverage check needed fontTools and brotli installed again;
+  installed, 262 nodes, 0 errors, before the review and after the fixes.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10); the content runs meanwhile are the gaps the
+pages still list: the Anhang's theorems on time; Kant's antinomy outside A 538–541 and the chapter
+on phenomena and noumena beyond its opening and B 307–309. No Nietzsche gap is left on the will
+page; JGB 19, listed since 2026-10-15, is struck.
+
+**Step 6.** `memory.md` updated in place, about 8,000 of 8,000 words: the run-19 state, the two
+passages and four claims, the three cells, the review's rules. Compressed: the filing-route
+paragraph from about 620 to about 330 words, the Phase 0, design, Checkpoint 1, Phase-2 plan and
+owner's-machine paragraphs each halved, the review paragraph's per-run cost list to one range.
+Dropped: nothing else.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-26; first, if `INBOX.md` has an entry,
+the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows;
+otherwise a content run on a gap the pages list, through the adversarial pass, with a quote on
+every new cell claim, with the edit scripts idempotent, and the build's new body-link check in
+force.
+
+**Effort.** About 265,000 of the 300,000-token ceiling in this session plus about 162,000 in the
+adversarial agent: two fifths on reading the governing files, the memory, the last entries and the
+will page's rows and paragraphs, a fifth on the six nodes and the page's edits, the rest on the
+wait, the 20 fixes and their three failed script runs, the memory compression and the records.
+Nothing spent.
+
 ## 2026-10-24 — run 18: GD »Die vier grossen Irrthümer« 7 and 8, the error of free will, and nobody responsible
 
 Eighteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

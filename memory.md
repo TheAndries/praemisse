@@ -2,115 +2,34 @@
 
 Carried state for the operator. Capped at 8,000 words. Rewritten each run.
 
-## State as of 2026-10-24 (run 18, end)
+## State as of 2026-10-25 (run 19, end)
 
 **Identity and governance.** Name `praemisse`; domain praemisse.com at TransIP; site live at
 https://praemisse.com/ (GitHub Pages, HTTPS enforced, certificate to 2027-01-03, GitHub
 renews). Repository https://github.com/TheAndries/praemisse, public, `main`. Routine
-`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–18 were
-served on that model, no handover note needed. Runs 12 to 18 fired on consecutive days. **No run is recorded for 2026-10-16 or
+`trig_01CybW54QF5Q5hCdyVQzM8qX`, `34 5 * * *` UTC, model `claude-fable-5-1`; runs 1–19 were
+served on that model, no handover note needed. Runs 12 to 19 fired on consecutive days. **No run is recorded for 2026-10-16 or
 2026-10-17** (no commit, no changelog entry between run 11 on 10-15 and run 12 on 10-18);
 the operator cannot see the routine's run history and asked the owner to look (Ask 10).
 The GitHub and Claude Code Remote tools in the tool list are platform-attached to every
 cloud session and are not a config change (`ROUTINE.md`, Ask 6): do not raise it again, and
 do not use them; everything goes through git and the repository. Open disputes: none.
-Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; nothing new at runs 1–18; no form filing yet; nothing arrived
-between run 17 and run 18 (`origin/main` at run 17's commit when run 18 began). Open asks: 4 (mailbox; deferred by owner; now the second filing
+Attestations: none. Open motions: none (the design motion of 2026-10-19 closed as moot; owner decision instead). INBOX: three owner notes of 2026-10-19, all handled in the owner sessions; nothing new at runs 1–19; no form filing yet; nothing arrived
+between run 18 and run 19 (`origin/main` at run 18's commit when run 19 began). Open asks: 4 (mailbox; deferred by owner; now the second filing
 route, for anyone without a GitHub account), 9 (the owner's qualified review of https://praemisse.com/x/the-will/,
 opened 2026-10-15; blocks nothing), **10 (opened 2026-10-18: test the filing route once from
 a node page, and look at the routine's run history for 10-16 and 10-17; blocks the
 confidence of Phase 2, not the plan)**. Asks 1, 2, 3, 5, 6, 7, 8, 11, 12 done.
 
-**The design, merged into `main` on 2026-10-19 (Asks 11, 12 done).** The owner's brief of 2026-10-11
-(`DESIGN-BRIEF-2026-10-11.md`) chose direction A, *the edition*; the owner approved the specimen
-("Yes to all"), said the look is his to decide and not the board's, and *Colour, space and pages*
-is binding in `DESIGN.md`. Files: `site/static/tokens.css`, `site.css`, templates `base`,
-`comparison`, `node` (claim, argument, reading), `measure` (thinker, work, passage, dispute,
-attestation), `index`, `about`; `site/site.yaml` (palette, `start_here`); `build.py` renders
-(`render_node`, `render_index`, `render_front`, `render_pair`, `--specimen ID PATH`); specimens
-and screenshots under `site/specimens/`; verification in `DESIGN.md`. Branch `design-type`
-(merged) made the type fluid (`--size-3` 19px to 22px at 1920, `--measure` 60ch, hyphens off at
-720px and above except in passages, the front page's lead in roman from "Broken into explicit
-premises") and subset the fonts by `tools/subset_fonts.py` (the full faces in
-`site/fonts/libertinus/full/`, unpublished); **rerun the script when a passage brings a new
-character, since `build.py` fails on a character the subsets lack**. A node page is 161 KB on
-first visit; the 120 KB budget is not met (fonts; `PLAN.md` §5); the dispute and attestation
-templates have no page to render until the first filing. A colour or spacing change: `tokens.css`
-only; B's grid: the four `--grid-*` tokens.
+**The design, merged into `main` on 2026-10-19 (Asks 11, 12 done).** The owner's brief (`DESIGN-BRIEF-2026-10-11.md`) chose direction A, *the edition*; the owner approved the specimen ("Yes to all"), said the look is his to decide, and *Colour, space and pages* binds in `DESIGN.md`. Files: `site/static/tokens.css`, `site.css`, templates `base`, `comparison`, `node`, `measure`, `index`, `about`; `site/site.yaml`; `build.py` renders them (`--specimen ID PATH`); specimens and screenshots under `site/specimens/`; verification in `DESIGN.md`. Branch `design-type` (merged) made the type fluid (`--size-3` 19–22px, `--measure` 60ch, hyphens off at 720px and above except in passages) and subset the fonts by `tools/subset_fonts.py` (full faces in `site/fonts/libertinus/full/`); **rerun the script when a passage brings a new character, since `build.py` fails on a character the subsets lack**. A node page is 161 KB on first visit; the 120 KB budget is not met (fonts; `PLAN.md` §5); the dispute and attestation templates have no page until the first filing. Colour or spacing: `tokens.css` only; B's grid: the four `--grid-*` tokens.
 
-**Checkpoint 1 (Ask 7) was answered 2026-10-10 in an owner session:** the owner read the
-first comparison against the project's translations, found nothing that reads as
-fabrication, gave eight decisions (owner decision in `BOARD.md`; his note verbatim in that
-changelog entry), applied the same day. He did not say in the ask's words whether the page
-is better than what he could find elsewhere; no rethink was ordered; proceed.
+**Checkpoint 1 (Ask 7) answered 2026-10-10** in an owner session: nothing read as fabrication, eight decisions applied the same day (`BOARD.md`); the owner did not say in the ask's words whether the page beats what he could find elsewhere; no rethink was ordered; proceed.
 
-**`PLAN.md` rewritten 2026-10-18 (run 12): Phase 2 opened.** The filing route is settled
-in `MODEL.md`, *Filing*, and built (below). What follows: the owner's test (Ask 10); the
-operator handles any filing inside the deadlines of `DISPUTES.md`, which now bind (publish
-in the next run, reply within three runs); the owner invites two or three people in his own
-name, the operator does no outreach; the mailbox of Ask 4 as the second route when he sets
-it up; meanwhile the map grows where a filing or his review points, otherwise by the plan: a
-fourth thinker by lineage (Phase 3) comes after Phase 2 has had its first filing or the
-owner says to go on. A new risk in §5: the route is unexercised and a run that fails to fire
-would let a deadline pass.
+**`PLAN.md` rewritten 2026-10-18 (run 12): Phase 2 opened.** The filing route is built (below); the deadlines of `DISPUTES.md` bind (publish next run, reply within three runs); the owner invites people in his own name, the operator does no outreach; the mailbox of Ask 4 is the second route; a fourth thinker by lineage (Phase 3) comes after Phase 2's first filing or the owner's word; §5 names the risk that the route is unexercised and a run that fails to fire lets a deadline pass.
 
-**The filing route (run 12, 2026-10-18; `MODEL.md`, *Filing*; a method decision).**
-`.github/ISSUE_TEMPLATE/dispute.yml` (fields, by id: `node`, `kind` dropdown fidelity /
-validity, `contested`, `alternative`, `passages`, `literature` optional, `name`,
-`affiliation` optional, `terms` checkbox consenting to publication by name under CC BY-SA
-4.0; title »Dispute: <node id>«) and `attestation.yml` (`node`, `statement`, `passage` optional, `sides_with`
-optional, `name`, `affiliation`, `terms`; title »Attestation: <node id>«).
-`site/build.py`: `REPO` constant; `render_filing(n)` appends to the `.meta` paragraph of
-every c/a/p/r/x page »Dispute this node« and, on c/a/x, »Attest this node«, plain links to
-`REPO/issues/new?template=<form>.yml&title=...&node=<id>` (prefill by field id), followed by
-one sentence saying under your real name, citing a passage, the form is a GitHub issue and
-what is filed is published on the page under `DISPUTES.md` (linked to the repository); t/w/d/v pages get nothing; `check_filing_issue`
-allows `issue:` (a positive integer, the issue number) on `d-` and `v-` nodes and refuses
-anything else (negative test passed). `.github/workflows/inbox.yml` (permissions `contents:
-write` on the intake job only, `issues: write`, built-in token, **no concurrency group**,
-since GitHub keeps one pending run per group and would drop a filing; `workflow_dispatch`
-with an optional `issue` input re-runs the intake): job `intake` on `issues: opened` runs
-`tools/inbox_from_issue.py intake --issue N`, which takes the issue through `gh issue view
---json`, recognizes a filing by the form headings alone (`### Node`, `### Your name`, and
-`### The claim contested` for a dispute or `### What you attest` for an attestation; the
-title is ignored, since a filer may edit it; anything else is left alone, so the owner's
-issues and the open-asks issue pass through), appends to `INBOX.md` a `##` entry
-(date, kind, node, issue number, login, URL, then the body verbatim), replacing the
-`*(empty)*` line if present, commits as `github-actions[bot]` with the message »<date> —
-INBOX: <kind> filed through the form, issue #N«, pushes `HEAD:main` with up to four `pull
---rebase` retries, and posts one receipt comment (fingerprint `<!--
-praemisse-inbox:received:N -->`; says carried into INBOX.md, handled in the next scheduled
-run, one run a day, recorded in CHANGELOG.md, a published filing gets a permanent address
-posted here, a filing without passage or real name is returned with a one-line reason,
-replies are written by the operator, an AI system, signed as the project, posted by the
-workflow); job `record` on a push to `main` touching `map/d-*.md`, `map/v-*.md` or
-`CHANGELOG.md` (installs PyYAML) posts on each node's `issue:` the permanent address
-`https://praemisse.com/<p>/<slug>/` and the state (outcome; dates of reply / counter /
-ruling), once per state by fingerprint, and posts once every return the operator writes in
-`CHANGELOG.md` as **`Returned (issue #N, YYYY-MM-DD): reason.`** (that exact form, on one
-line); before posting anything it reads the issue and checks it is a filing from the forms.
-A push by the token does not start `site.yml`, and the build never reads `INBOX.md`, so
-nothing is published automatically. Dry-runs of both paths passed on a fake issue. **The
-daily run must now `git pull --rebase origin main` before pushing**, since the workflow may
-have committed `INBOX.md` meanwhile. A returned filing: no node; the operator writes the `Returned (...)` line in the changelog
-entry that handles it, and the workflow posts it. The about page says how to file and that filing needs
-a GitHub account, reading none. Handling a filing in a run: publish the `d-`/`v-` node
-(`MODEL.md`, *Disputes and attestations*: `target`, `disputant`/`attester`, `date`, `kind`,
-`contested_claim`, `alternative`, `passages`, `issue`, `outcome: published`; the target's
-`disputes`/`verified_by` list must equal the set targeting it), move the INBOX entry to the
-changelog with what was done, reply within three runs by `reply: {date, text}` and outcome
-`argued`/`conceded` (a concession adds a `versions:` entry with `credit: d-...`); an
-attestation moves a `c-`/`a-`/`x-` to `attested`, two independent to `established`.
+**The filing route (run 12, 2026-10-18; `MODEL.md`, *Filing*; a method decision).** Two issue forms in `.github/ISSUE_TEMPLATE/`: `dispute.yml` (fields `node`, `kind` fidelity / validity, `contested`, `alternative`, `passages`, `literature`, `name`, `affiliation`, `terms` consent to CC BY-SA 4.0 by name; title »Dispute: <node id>«) and `attestation.yml` (`node`, `statement`, `passage`, `sides_with`, `name`, `affiliation`, `terms`). `site/build.py`: `REPO`; `render_filing(n)` appends »Dispute this node« (c/a/p/r/x) and »Attest this node« (c/a/x) to the `.meta` paragraph, links to `REPO/issues/new?template=...&node=<id>`, one sentence on real name, passage, publication; `check_filing_issue` allows `issue:` (positive integer) on `d-`/`v-` only. `.github/workflows/inbox.yml` (no concurrency group, or a filing would be dropped; `workflow_dispatch` with `issue` re-runs intake): job `intake` on `issues: opened` runs `tools/inbox_from_issue.py intake --issue N`, which recognizes a filing by the form headings alone (`### Node`, `### Your name`, `### The claim contested` or `### What you attest`), appends a `##` entry to `INBOX.md` (date, kind, node, issue, login, URL, body verbatim), commits as `github-actions[bot]` (»<date> — INBOX: <kind> filed through the form, issue #N«), pushes `HEAD:main` with retries, posts one receipt (fingerprint `<!-- praemisse-inbox:received:N -->`, saying handled in the next run, one a day, replies written by an AI system signed as the project); job `record` on a push touching `map/d-*.md`, `map/v-*.md` or `CHANGELOG.md` posts on the node's `issue:` its address `https://praemisse.com/<p>/<slug>/` and state once per state, and posts every `Returned (issue #N, YYYY-MM-DD): reason.` line (that exact form, one line) the operator writes in the changelog; it checks the issue is a form filing before posting. The token's push does not start `site.yml`; the build never reads `INBOX.md`. **The daily run must `git fetch origin main` and rebase before pushing.** Handling a filing: publish the `d-`/`v-` node (`target`, `disputant`/`attester`, `date`, `kind`, `contested_claim`, `alternative`, `passages`, `issue`, `outcome: published`; the target's `disputes`/`verified_by` must equal the set targeting it), move the INBOX entry to the changelog, reply within three runs by `reply: {date, text}` and outcome `argued`/`conceded` (a concession adds a `versions:` entry with `credit: d-...`); an attestation moves a `c-`/`a-`/`x-` to `attested`, two independent to `established`.
 
-**Phase 0 complete (2026-10-05).** `site/build.py` (reads `map/*.md`, validates against
-`MODEL.md`, renders to `site/_build/`, gitignored; `--check` for CI; `--map DIR` for a
-scratch copy; `--out DIR`; `--domain praemisse.com` in the workflow; PyYAML the only
-dependency; own small Markdown subset with `[text](../../c/slug/)` links between node pages,
-which live at `/<prefix>/<slug>/`), `site/static/style.css` and `type.css` (Libertine, owner
-decision), `.github/workflows/site.yml` (check, build, deploy on push to `main`),
-`notify-asks.yml` + `tools/open_asks_issue.py` (one GitHub issue *praemisse - open asks*;
-keep the `| # | Date | Ask | Blocks | Status |` table; `done ...` closes,
-*deferred*/*queued* lists as no action).
+**Phase 0 complete (2026-10-05).** `site/build.py` (reads `map/*.md`, validates against `MODEL.md`, renders to `site/_build/`, gitignored; `--check` for CI; `--map DIR`; `--out DIR`; `--domain`; PyYAML the only dependency; own Markdown subset, node pages at `/<prefix>/<slug>/`), `.github/workflows/site.yml` (check, build, deploy on push to `main`), `notify-asks.yml` + `tools/open_asks_issue.py` .
 
 **The model as applied (`MODEL.md`, *How the model is applied*; all enforced by `--check`).**
 `versions:` in the same file (date, reason, superseded statement, credit) when a statement
@@ -165,7 +84,7 @@ understanding's principles only for experience; Prol § 57 the two absurdities, 
 against limits, metaphysics leads to limits; B xxvii–xxix the same will not free as
 appearance and free »als einem Dinge an sich selbst angehörig«, conditional; freedom not
 cognized by speculative reason; freedom thinkable if the critical distinction holds,
-»wenigstens«; morality would yield had freedom been proved unthinkable, under »supposing«; **run 17, the footnote's four sentences, each a claim with its quote, all four in row 4 of the first page (what can be said), set for »erkennen« and »denken« on the strength of the mark's place: to cognize an object requires »daß ich seine Möglichkeit ... beweisen könne«; »denken kann ich, was ich will, wenn ich mir nur nicht selbst widerspreche, d. i. wenn mein Begriff nur ein möglicher Gedanke ist«, no vouching that an object corresponds, »was ich will« the idiom and not »Wille«; objective validity, »reale Möglichkeit, denn die erstere war bloß die logische«, needs »etwas mehr«, »einem solchen Begriffe« resolved as the possible thought; »Dieses Mehrere ... kann auch in praktischen« sources of cognition lie, »kann auch« kept, »eben« as "for that matter"; no link on any of the four (»Aber« a contrast, »Dieses Mehrere« resumptive, the parenthesis's »denn« grounds a gloss), the rule / application relation to B xxviii's »d. i. die Vorstellung davon enthält wenigstens keinen Widerspruch« and the pointer of »praktischen« to B xxviii–xxx both the map's reading, said on the nodes; sentence 2 also in the will page's row on freedom for »widerspreche«, sentence 4 in its row on what is drawn for »praktischen«**; **run 13, 15
+»wenigstens«; morality would yield had freedom been proved unthinkable, under »supposing«; **run 17, the footnote's four sentences, each a claim with its quote, all four in row 4 of the first page (what can be said), the note attached to the row-1 sentence and set in row 4 because, read of that sentence's objects, what it says is what can be said of the thing in itself: to cognize an object requires »daß ich seine Möglichkeit ... beweisen könne«; »denken kann ich, was ich will, wenn ich mir nur nicht selbst widerspreche« ("provided only that", the »nur« scoping the »wenn«; »was ich will« the idiom, not »Wille«); objective validity, »reale Möglichkeit«, needs »etwas mehr«; »Dieses Mehrere ... kann auch in praktischen« sources lie; no link on any of the four; the rule / application relation to B xxviii's »wenigstens keinen Widerspruch« and the pointer of »praktischen« to B xxviii–xxx the map's reading, said on the nodes; on the will page the note is set on no row (two cells set for »widerspreche« and »praktischen« were dropped on review), one sentence under *On freedom* says how the map reads it**; **run 13, 15
 claims from A 538–541, all subjunctive »würde« kept as »would« except the asserted clauses:
 »intelligibel« defined; the causality of a being from two sides, conditional; the double side
 contradicts no concept of experience; a transcendental object must underlie appearances; nothing
@@ -239,16 +158,16 @@ proved. Not in the map: § 2 beyond its two spans, § 20, § 24 beyond its first
 first paragraph, §§ 26–29, the fourth Book, the Anhang beyond the four spans held (nothing
 of 517–533 or 537–650, the Fichte paragraph, the theorems on time, the categories).
 
-**Nietzsche nodes on `main` (90: 1 t, 2 w, 25 p, 57 c, 4 a, 2 r; 256 nodes in all: 3 t, 5 w,
-75 p, 153 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
+**Nietzsche nodes on `main` (96: 1 t, 2 w, 27 p, 61 c, 4 a, 2 r; 262 nodes in all: 3 t, 5 w,
+77 p, 157 c, 14 a, 4 r, 2 x):** `t-nietzsche`; `w-nietzsche-jgb` (1886), `w-nietzsche-gd` (1889),
 cited by aphorism and, for GD, chapter and section (Fabel by stage 1–6), KSA pages not
-given; 25 passages: JGB 15 (two spans), 16 (two), 17, 19 (two), 21 whole in four spans since run 14 (the first sentence;
+given; 27 passages: JGB 15 (two spans), 16 (two), 17, **19 whole in four spans since run 19 (the opening to »Affekt des Commando's«; the seventh and eighth sentences, »Das, was "Freiheit des Willens" genannt wird« to »dass es gehorcht«; »Nun aber beachte man« to »mit sich bringt«; the close, »"Freiheit des Willens" - das ist das Wort« to »entsteht«, the transcription's closing dash not reproduced; fourteen sentences by full stop, question and exclamation mark, a colon joining halves; the transcription's one kind of quotation mark for both levels in »"ich bin frei, "er" muss gehorchen"« kept and named)**, 21 whole in four spans since run 14 (the first sentence;
 »Das Verlangen« to »hinausläuft«; »Man soll nicht« to »mythologisch«; »Der "unfreie Wille"« to the end, from the same Gutenberg text), 34 in four spans since run 15 (the opening, »Auf welchen Standpunkt« to »Fragen mehr sind«, three sentences; »Der Glaube an« to »wenig Ehre macht«; »Es ist nicht mehr« to »die Sprache der Maler«; the close, »Warum dürfte« to the end, six questions; the span between the second and the third, »Mag im bürgerlichen Leben« to »Warum nicht?«, in no passage), 36 (two), 54; GD Vernunft 2, 5, 6; Fabel;
-Irrthümer 3 (to »Das folgt daraus!«); **Irrthümer 7 and 8 whole since run 18**, nine sentences counting the title line and eleven counting the opening question, the transcription's »überall« in lower case and »Willens-Psychiologie« kept and named, »ein Stück Verhängniss« rendered "fate" against Vernunft 5's "calamity" with the reason on the passage. 57 claims, all `draft`: JGB 16 (Schopenhauer's »ich
+Irrthümer 3 (to »Das folgt daraus!«); **Irrthümer 7 and 8 whole since run 18**, nine sentences counting the title line and eleven counting the opening question, the transcription's »überall« in lower case and »Willens-Psychiologie« kept and named, »ein Stück Verhängniss« rendered "fate" against Vernunft 5's "calamity" with the reason on the passage. 61 claims, all `draft`: JGB 16 (Schopenhauer's »ich
 will« a superstition; immediate certainty a contradictio in adjecto; »ich denke«
 presupposes comparison), 17 and 54 (the subject a grammatical habit; the I a synthesis), 19
 (Schopenhauer took over a popular prejudice; willing complicated; the belief that will and
-action are one from erroneous inferences; »scheint mir« kept), 36 (the mechanistic world not
+action are one from erroneous inferences; »scheint mir« kept; **run 19, four more, sentences 7, 8, 11 and 14:** what is called »"Freiheit des Willens"« is »wesentlich der Überlegenheits-Affekt in Hinsicht auf Den, der gehorchen muss«, »"ich bin frei, "er" muss gehorchen"«, a consciousness in every will, »genannt wird« kept as "is called"; »Ein Mensch, der will -, befiehlt einem Etwas in sich, das gehorcht oder von dem er glaubt, dass es gehorcht«; »"Freiheit des Willens"« the word for the »Lust-Zustand des Wollenden, der befiehlt und sich zugleich mit dem Ausführenden als Eins setzt«, the reported »sei ... überwinde« inside "judges to himself that"; »Bei allem Wollen handelt es sich schlechterdings um Befehlen und Gehorchen« on a »Gesellschaftsbau vieler "Seelen"«, the »weshalb« clause on morality as the doctrine of »Herrschafts-Verhältnisse« carried in the one statement, inside a sentence, no argument, no `depends_on`, the same claim also in the will page's row on what is drawn for that clause; »Wollen an sich schon« is "willing as such already", never "in itself"; »Noth« "needful" so that »Nothwendigkeit« keeps "necessity"; sentences 12 (the under-wills and under-souls, »unser Leib ist ja nur ein Gesellschaftsbau vieler Seelen«, to which »wie gesagt« points) and 13 (»L'effet c'est moi«) in the passage and in no claim; no link on any of the four: no Kant or Schopenhauer statement speaks of commanding, obeying, superiority, an affect or a consciousness of freedom; § 18's identity is denied by the tenth sentence, already the attack, not by the eleventh's »als Eins setzt«, a positing; JGB 21's same term in another aphorism, no link; JGB 17 / 54 on the subject, no link), 36 (the mechanistic world not
 representation in Schopenhauer's sense; will-causality posited as the only, conditional;
 the world would be will to power, conditional), GD Vernunft (the apparent world the only
 one; dividing the world is décadence; the will as cause the great error), Fabel (stage 4
@@ -304,7 +223,7 @@ Terms: Gewissheit "certainty", Erkenntniss "cognition", Schein/Anschein "semblan
 scheinbar "apparent", wirken "work", Thatsache "fact", Empirie "empirical evidence",
 Verhängniss "calamity", Vermögen "faculty". Gutenberg's »wie es in ein Satz ist« (JGB 36)
 is read as »mein Satz«, "as is my proposition", said on the passage. Not in the map: JGB
-20 (adds no cell), JGB 34's span from »Mag im bürgerlichen Leben« to »Warum nicht?«, JGB 19 beyond its two spans, JGB 230; GD Irrthümer 1–2, 4–6; Nachlass
+20 (adds no cell), JGB 34's span from »Mag im bürgerlichen Leben« to »Warum nicht?«, JGB 230; GD Irrthümer 1–2, 4–6; Nachlass
 nothing, by design.
 
 **The two comparisons.** `x-thing-in-itself` (/x/thing-in-itself/, `checked` with the
@@ -319,11 +238,11 @@ absurdity of appearance without anything that appears, not a causal inference; B
 against Fabel stage 6; immediacy; the will; causality and the in-itself), what depends on
 the reading of Kant, gaps, and a closing paragraph naming what the owner ordered and what
 he has not read (everything since 2026-10-10, listed). `x-the-will` (/x/the-will/,
-`draft`, Ask 9): five rows (what the will is; immediately known, Kant's cell since run 13
+`draft`, Ask 9): five rows (what the will is, the Nietzsche cell since run 19 also JGB 19's eighth and fourteenth sentences after the two older JGB 19 claims, set for what a man who wills does and what all willing is a matter of; immediately known, Kant's cell since run 13
 with »niemals unmittelbar gekannt« for the word »unmittelbar«; cause of the body's
 actions, Kant's cell filled in run 13 from A 538–541 for »Ursache«/»Handlungen«/»Wirkungen«;
 free, and free of what, the Schopenhauer cell set for the word »frei«, the Nietzsche cell since run 14 the four
-JGB 21 claims first and then the two set for »die Freiheit« / »"psychologischer Unfreiheit"« and since run 18 the four GD Irrthümer 7–8 claims after them, Kant's since run 13 also the three antinomy sentences and since run 17 the footnote's »widerspreche« sentence, Schopenhauer's also § 24;
+JGB 21 claims first and then the two set for »die Freiheit« / »"psychologischer Unfreiheit"« and since run 18 the four GD Irrthümer 7–8 claims after them, and since run 19 JGB 19's seventh and eleventh sentences between JGB 21's six and GD's four, set for the term »Freiheit des Willens« (what is so called; what the word is the word for), with a "what is parallel to Kant: nothing the map sets; what is not" passage under *On freedom*; what is drawn, the Nietzsche cell since run 19 also JGB 19's fourteenth sentence for its »weshalb« clause, Kant's since run 13 also the three antinomy sentences and since run 17 the footnote's »widerspreche« sentence, Schopenhauer's also § 24;
 what is drawn from it, Kant's cell since run 17 also the footnote's »praktischen« sentence, GD 7–8 set there on no cell with the reason in the paragraph), two `shared` entries since run 13, both the premise on time, *a
 condition or form of appearances only, and no determination of the thing in itself* (Kant's
 »denn« clause ↔ § 24's »Kant richtig geschlossen, daß Zeit, Raum und Kausalität ... nicht
@@ -343,8 +262,7 @@ passage does, and no passage says whether JGB 36's quotation marks point at Kant
 **Sources.** *Kant:* https://korpora.org/kant/aa{03,04}/{page:03d}.html, one AA page per
 file, lines in `<tr>` rows, ISO-8859-1 with HTML entities; join hyphenated words by hand; the
 transcription marks no A/B page breaks, so inside a section longer than a page give the A/B
-range of the section and the AA line (the section A 538 / B 566 begins at 3:366.05; A 236 / B 295 at 3:203.04; B 307 at 3:209.32);
-the `korpora.zim.uni-duisburg-essen.de` host fails through the proxy. *Schopenhauer:*
+range of the section and the AA line (the section A 538 / B 566 begins at 3:366.05; A 236 / B 295 at 3:203.04; B 307 at 3:209.32). *Schopenhauer:*
 zeno.org `http://www.zeno.org/Philosophie/M/Schopenhauer,+Arthur/Die+Welt+als+Wille+und+Vorstellung/Erster+Band/<Erstes+Buch|Zweites+Buch|Anhang.+Kritik+der+Kantischen+Philosophie>`,
 ISO-8859-1, text in `<div class="zenoCOMain">`, `<h5>` the § numbers, `[N]` in
 `class="zenoTXKonk"` marks where ZA page N begins; down on 10-09 and 10-13, up on 10-14 and 10-22; OCR
@@ -356,23 +274,18 @@ Fallback Projekt Gutenberg-DE
 elements, every paragraph repeated once, not byte-identical, strip by searching; two
 advertising paragraphs at the end; `<a name="pageN">` anchors give Grisebach's pages; say
 »ZA page not given; Grisebach's pagination ... p. N« in `ref` and keep its orthography).
-The Internet Archive has the 1859 scans (`bub_gb_xhfF5h_0EggC`, vol. 2). *Nietzsche:*
+ *Nietzsche:*
 Project Gutenberg eBooks 7204 (JGB) and 7203 (GD),
 `https://www.gutenberg.org/cache/epub/<n>/pg<n>.txt`, after Projekt Gutenberg-DE,
 first-edition orthography, edition unstated (said on the nodes); aphorisms as a line `N.`
-alone, chapters as `Erstes Hauptstück:` lines, GD chapters by title; zeno.org resets
-connections for Nietzsche; deutschestextarchiv, de.wikisource and nietzschesource are
-unusable. Every `original` is extracted by start/end substring and asserted verbatim.
+alone, chapters as `Erstes Hauptstück:` lines, GD chapters by title;  deutschestextarchiv, de.wikisource, nietzschesource unusable; zeno.org resets connections for Nietzsche. Every `original` is extracted by start/end substring and asserted verbatim.
 
 **The adversarial pass is not optional, and it finds what the truth table cannot.** Brief
 for the reviewer: the new and revised nodes, the diffs, the corpus files, the older
 passages they cite, the conventions, and the order validity, fidelity, attack links,
 translation, references, readings, links, format, rendered page; for a comparison also
 rows' fit, shared premises asserted by both, divergences, readings not picked, quotations.
-The Agent tool runs the reviewer in the background; it takes six to sixteen minutes and
-120,000–260,000 of its own tokens (runs 13–18: 212k/16 min on 21 nodes; 145k/7 min; 144k/8.5
-min; 126k/6 min; 152k/8.5 min; 154k/8.5 min on 7 nodes, 21 findings and 6 judgements; 13–18 findings each, nearly all accepted); draft memory and the
-changelog meanwhile; the stop hook asks for a commit while it runs, which must be refused until
+The Agent tool runs the reviewer in the background, six to sixteen minutes and 120,000–260,000 of its own tokens (runs 13–19: 13–21 findings each, nearly all accepted); draft memory and the changelog meanwhile; the stop hook asks for a commit while it runs, which must be refused until
 the report is in; wait with a background loop on the agent's transcript, not by ending the turn.
 Rules distilled, runs 2–17. *Forms:* when a form's conclusion is not word for word the
 conclusion claim, the missing step is a tacit premise, an `assumption` said to be the map's; a
@@ -445,28 +358,22 @@ can be verbatim, inside a listed passage, and still transplanted to another subj
 escapes belong in YAML, never in a Markdown body; a sentence true when written (»the one empty
 cell«, »no Kant passage speaks of immediacy«, the closing paragraph's "on his instructions", a
 status note) is falsified by accretion, so grep the page for them before every review; a rule
-the model states and nothing enforces will be broken, so write the check. *Run 18 added:* before writing that a transcription prints a form "elsewhere too", grep for the form at the head of a sentence and mid-sentence separately (GD's lower-case »überall« was sentence-initial once, a slip on the footing of »Psychiologie«); a sentence's ordinal must be counted the same way on the passage, the claim and the page ("the first sentence of 8" against the passage's count from the opening question); a gloss that defends a rendering must describe the English word, not an ideal one ("artifice" says contrivance); »auch«, »hier«, »wieder« are qualifiers like the rest, and »Art des Seins« is "manner of being"; a "sense of X in these sentences" claim is a generalization and must hold of each sentence; a reason for a cell must come from inside the sentence, never from the section's title; a shared verb (»gedacht« in two texts) is no "what is parallel"; new titles keep the German term in guillemets as the older titles on the same term do; sentences that count or list a row's cells ("Nietzsche's cells in this row are JGB 21's"), a thinker node's "one slip is noted at", and a work node's "(sections 1–8)" are falsified by accretion, so grep them before every review.
+the model states and nothing enforces will be broken, so write the check. *Run 18 added:* before writing that a transcription prints a form "elsewhere too", grep for the form at the head of a sentence and mid-sentence separately (GD's lower-case »überall« was sentence-initial once, a slip on the footing of »Psychiologie«); a sentence's ordinal must be counted the same way on the passage, the claim and the page ("the first sentence of 8" against the passage's count from the opening question); a gloss that defends a rendering must describe the English word, not an ideal one ("artifice" says contrivance); »auch«, »hier«, »wieder« are qualifiers like the rest, and »Art des Seins« is "manner of being"; a "sense of X in these sentences" claim is a generalization and must hold of each sentence; a reason for a cell must come from inside the sentence, never from the section's title; a shared verb (»gedacht« in two texts) is no "what is parallel"; new titles keep the German term in guillemets as the older titles on the same term do; sentences that count or list a row's cells ("Nietzsche's cells in this row are JGB 21's"), a thinker node's "one slip is noted at", and a work node's "(sections 1–8)" are falsified by accretion, so grep them before every review. *Run 19 added:* `build.py` checks every relative Markdown link in a body (`check_body_links`), after a helper wrote `../../M/RALITYID/` into a body and the check then found one old dead link (GD Irrthümer 3's passage to a non-existent `a-nietzsche-no-spiritual-causes`, fixed); an edit script must be idempotent (skip a pair whose new text is present) and match whitespace-flexibly, since bodies wrap and YAML escapes quotes; "the attacks from JGB 19 are the tenth sentence's" is a counting sentence, and a claim spanning sentences 9–10 is "the ninth and tenth"; keep the text's colon and dash when dropping them moves »ebenso«; a »weshalb« clause inside one sentence that names another row's question sets the claim in that row too, "for the clause"; state each chronological relation separately; »dienstbar« "subservient", »der Ausführende« "the one who carries it out" (never "executor" beside "will"), »sich das Recht nehmen« "claim the right", »unter den Gesichtskreis fassen« "bring within the purview", »mit geniessen« "share in", »Gesellschaftsbau« "social edifice", »in Hinsicht auf Den« "with regard to him"; an adverb in mid-position can turn restrictive, so head the sentence with it; a gaps list for a text newly held whole names the older spans' unclaimed sentences too.
 
 **Money.** 10.88 EUR incl. BTW spent in Q4 2026 of 200 EUR (`LEDGER.md`). Nothing spent in
 runs 1–12. The card used for the domain is still unreported.
 
-**Tooling facts, owner's machine (Windows, Git Bash).** `python` (3.11, PyYAML), not
-`python3`; set `PYTHONIOENCODING=utf-8`; a long inline heredoc fails in Git Bash and `rm
--rf` in the scratchpad was denied: write scripts to the scratchpad and run them by path.
-Commits as `TheAndries`; push with plain `git push`. Owner-session commit messages begin
-»owner session —«.
+**Tooling facts, owner's machine (Windows, Git Bash).** `python` not `python3`; `PYTHONIOENCODING=utf-8`; long heredocs fail, so scripts go to the scratchpad and run by path. Commits as `TheAndries`, plain `git push`; owner-session commit messages begin »owner session —«.
 
-**Tooling facts, cloud container.** Python 3.11 with PyYAML; Node 22 with a global `playwright` and Chromium at `/opt/pw-browsers/chromium` (`NODE_PATH=$(npm root -g) node script.js`, viewport 390 for phone). WebSearch, WebFetch, `pip install` and raw downloads work through the proxy; korpora.org and gutenberg.org answered at once on 10-23 and 10-24; `gh` exists but is not to be used by the routine. Git author `Claude <noreply@anthropic.com>`; commits carry the session trailer. A full build needs fontTools and brotli: `python3 -m pip install fonttools brotli` (not the requirements file); `--check` runs no font-coverage check, so run a full build to a scratch `--out` before the review. Write edit scripts to the scratchpad and run them by path with `python3 -I` (a shell heredoc can hang; `re.sub` with a lambda does not expand `\1`; a mangled front-matter line is recovered from `git show HEAD:map/<file>`). Since run 15 the container checks out `main` tracking `origin/main`: `git fetch origin main`, rebase if the inbox workflow has pushed, `git push origin main`. A stop hook asks for a commit whenever the turn ends with uncommitted changes; do not commit nodes before the review.
+**Tooling facts, cloud container.** Python 3.11 with PyYAML; Node 22 with `playwright` and Chromium at `/opt/pw-browsers/chromium`. Fetches through the proxy work (korpora.org, gutenberg.org answered at once on 10-23 to 10-25); `gh` exists but is not used by the routine. Git author `Claude <noreply@anthropic.com>`; commits carry the session trailer. A full build needs `python3 -m pip install fonttools brotli`; `--check` runs no font-coverage check, so build to a scratch `--out` before the review. Write edit scripts to the scratchpad and run them with `python3 -I`; recover a mangled line from `git show HEAD:map/<file>`. The container checks out `main` tracking `origin/main`: `git fetch origin main`, rebase if the inbox workflow has pushed, `git push origin main`. A stop hook asks for a commit whenever the turn ends with uncommitted changes; refuse before the review is in.
 
 **Next.** If `INBOX.md` has an entry: handle it first, inside the protocol's deadlines
 (above). If the owner answered Ask 9: apply as under Ask 7 (`checked` with `status_note`;
-versions for changed statements with credit). If Ask 8: read the brief before building.
+versions for changed statements with credit). 
 Otherwise: a fourth thinker is not yet due (Phase 2 should see one filing or the owner's
-word first); useful content runs meanwhile are the gaps both pages list (Nietzsche JGB 19 beyond its two spans, the one Nietzsche gap left on the will page; the Anhang's
+word first); useful content runs meanwhile are the gaps both pages list (no Nietzsche gap is left on the will page; the Anhang's
 theorems on time; § 2's unclaimed sentences only if a row asks after the subject, which none does;
 the antinomy's resolution outside A 538–541; A 236–260 / B 295–315 beyond the opening),
-each only where it adds a cell or a row, with quotes on every new cell claim; and the
-quotation check could be extended from comparisons to all bodies after measuring how many old
-nodes fail.
+each only where it adds a cell or a row, with quotes on every new cell claim.
 
-**Dropped from memory this run:** the cloud-container paragraph compressed from about 230 to about 170 words (the detached-HEAD history of runs up to 14, the requirements-file detail, the watcher note folded into the review paragraph); run 18 added the two GD passages and five claims, the cell, and the review's rules; about 7,900 words of 8,000.
+**Dropped from memory this run:** the filing-route paragraph compressed from about 620 to about 330 words (the per-field prose kept as field lists; the dry-run and about-page sentences), the Phase 0, design, Checkpoint 1 and PLAN-2018 paragraphs and the owner's-machine tooling paragraph each halved (details that stand in `PLAN.md`, `DESIGN.md`, `BOARD.md` and the changelog), the review paragraph's per-run cost list reduced to one range; a stale sentence corrected (run 17's footnote cells on the will page were dropped on review, the memory still listed them as set); run 19 added JGB 19 whole, four claims, three cells and the review's rules.

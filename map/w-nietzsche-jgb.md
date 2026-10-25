@@ -11,5 +11,4 @@ produced_by: claude-fable-5-1, 2026-10-09
 ---
 Aphorisms 15, 16, 17, 19 and 21 stand in the first Hauptstück, »Von den Vorurtheilen der
 Philosophen«; 34 and 36 in the second, »Der freie Geist«; 54 in the third, »Das religiöse
-Wesen«. The transcription's line breaks are joined with a space and nothing else is
-changed in the quoted originals.
+Wesen«. The transcription's line breaks are joined with a space and nothing else is changed in the quoted originals; a span may stop before a dash the transcription prints after its last full stop, and its passage says so (JGB 19's close).

@@ -213,6 +213,7 @@ def check(nodes: list[Node]) -> list[str]:
             errors.append(f"{where}: status_note is allowed only on a checked comparison")
         if n.meta.get("quotes") is not None:
             errors.extend(f"{where}: {e}" for e in check_quotes(n, ids))
+        errors.extend(f"{where}: {e}" for e in check_body_links(n, ids))
         for i, v in enumerate(as_list(n.meta.get("versions"))):
             if not isinstance(v, dict) or not v.get("date") or not v.get("reason") or not v.get("statement"):
                 errors.append(f"{where}: versions[{i}] needs date, reason and the superseded statement")
@@ -241,6 +242,26 @@ def check(nodes: list[Node]) -> list[str]:
 
 def norm(text) -> str:
     return " ".join(str(text if text is not None else "").split())
+
+
+def check_body_links(n: Node, ids: dict) -> list[str]:
+    """Every relative Markdown link in a body must name a node that exists (`../../<prefix>/<slug>/`),
+    so that no page carries a dead link to a node; the front-matter links are checked above, and
+    before 2026-10-25 nothing checked the body's. Links to `/`, `../../about/`, the indexes and
+    absolute URLs are left alone."""
+    errs: list[str] = []
+    for text, href in re.findall(r"\[([^\]]+)\]\(([^)\s]+)\)", n.body):
+        if "://" in href or not href.startswith("../../"):
+            continue
+        m = re.fullmatch(r"\.\./\.\./([a-z])/([a-z0-9-]+)/", href)
+        if not m:
+            if re.fullmatch(r"\.\./\.\./[a-z]+/", href):
+                continue  # an index or the about page
+            errs.append(f"body link {href!r} ({text[:40]!r}) is not ../../<prefix>/<slug>/")
+            continue
+        if f"{m.group(1)}-{m.group(2)}" not in ids:
+            errs.append(f"body link {href!r} ({text[:40]!r}) names no node")
+    return errs
 
 
 def check_quotes(n: Node, ids: dict) -> list[str]:
