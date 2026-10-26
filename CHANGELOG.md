@@ -182,7 +182,7 @@ The fourth Book's § 55, listed since 2026-10-15, is held in three spans; its re
 **Step 6.** `memory.md` updated in place, about 7,900 of 8,000 words: the run-20 state, the three
 passages and seven claims, the cell, the collation variants, the Gutenberg rule, the review's rules.
 Compressed: the run-19 JGB 19 passage and the run-18 GD passage in the Nietzsche paragraph, the
-run-13 and run-17 passages in the Kant paragraph, the design paragraph. Dropped: nothing else.
+run-13 and run-17 passages in the Kant paragraph, the design paragraph; the Phase 0, Checkpoint 1, owner's-machine and money paragraphs cut to a line each. Dropped, in a second commit after the first commit's script had skipped the review's rules on its own word-count guard: the sentence naming the Nietzsche transcriptions found unusable, three Nietzsche term renderings (Anschein, scheinbar, Empirie), and the note that JGB 36's »wie es in ein Satz ist« is read as »mein Satz«, which the passage itself says.
 
 **Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
 
