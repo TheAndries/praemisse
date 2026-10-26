@@ -2,6 +2,200 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-26 — run 20: Schopenhauer's § 55, the will as such free since it is the thing in itself, the person never free, and Kant's distinction of intelligible and empirical character retained
+
+Twentieth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 19; `origin/main` stood at run 19's commit when it began, and nothing arrived in between.
+The container had a detached HEAD at that commit; `main` was checked out to it.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 10 new, 3 revised, the will page touched in one row.** The plan's next
+content item was a gap the pages list that adds a cell. The will page's row on whether the will is
+free, and free of what, had Schopenhauer's cell set for § 23's word »frei« alone, freedom from the
+forms, and its note said outright that no passage in the map had Schopenhauer on the freedom of the
+will in the sense of B xxvii; the gaps list named the fourth Book, »including § 55«. § 55 is where
+the fourth Book answers that question in its own words, and it was taken, in three spans. zeno.org
+answered (the Viertes Buch page), and its text, Hübscher's with the ZA pages, is the transcription;
+Projekt Gutenberg-DE served Grisebach's chapter 57 the same day, and every span was collated word by
+word against it by script before anything was written.
+
+*The three passages.* `p-wwv1-s55-will-as-such-free-everything-as-appearance-necessary`, the
+section's first eight sentences by Grisebach's full stops, from »Daß der Wille als solcher frei sei«
+to »für alle Ewigkeit« (ZA I 360); `p-wwv1-s55-person-never-free`, two sentences later in the same
+paragraph, from »Die Freiheit des Willens als Dinges an sich geht« to »mit der Gesetzmäßigkeit einer
+Naturkraft sich darstellt« (ZA I 362); and `p-wwv1-s55-kant-intelligible-and-empirical-character`,
+two sentences from »Die Nothwendigkeit des einzelnen Handelns hat Priestley« to »erfahrungsmäßig
+darstellt« (ZA I 363). The collation found seven variants, all named on the passages: zeno's
+»Beides«, »Ihre« after »der Natur,« and »Räume« in »dem Räume nach« (the last two read as the
+transcription's slips, kept as transcribed), its consistent »d.h.«, a comma after »geredet worden«
+where Grisebach prints the full stop that ends the seventh sentence, and Hübscher's »absehn« and
+»Zusammenbestehn«; and one thing new: after »nachgewiesen« the ZA text carries the mark of
+footnote 80, the reference to »Kritik der reinen Vernunft«, erste Auflage, S. 532–558; fünfte
+Auflage, S. 560–586, and to the second Critique, and Projekt Gutenberg-DE prints the note's words
+inside the sentence, without brackets, so that a span stored from Gutenberg alone would have carried
+them as Schopenhauer's sentence. The mark is omitted as every footnote mark is, the note's text is
+given on the passage, and the rule is in `memory.md`. Grisebach letterspaces »frei« twice and »an
+sich« once in the opening, as emphasis, not reproduced and said on the passage. Terms new to the map:
+»Wechselbegriffe« "convertible concepts", »Einheitspunkt« "point of unity", »außerzeitlich« "outside
+time" (as § 25's »außer aller Zeit«), »Willensakt« "act of will", »Korporisation« "corporization",
+»Handlungsweise« "manner of acting", »dargethan« "set forth" so that »nachgewiesen« keeps "shown".
+
+*The seven claims, all `draft`, each with its quote, all set in the Schopenhauer cell of the row on
+freedom after the three older.* (1) That the will as such is free »folgt schon daraus, daß er, nach
+unserer Ansicht, das Ding an sich, der Gehalt aller Erscheinung ist«, "on the view of Schopenhauer's
+work" in the statement so that it reads alone; (5) the world in all its appearances is objectity of
+the will, which, being thing in itself, is not subject to »dem Satz vom Grunde, der Form alles
+Objekts«, »also nicht als Folge durch einen Grund bestimmt ist, also keine Nothwendigkeit kennt,
+d.h. frei ist«, the answer to free of what, the opening »Andererseits nun aber« dropped and named;
+(6) »Der Begriff der Freiheit ist also eigentlich ein negativer«, its content »bloß die Verneinung
+der Nothwendigkeit«, drawn by »also« from (5), the one link set today, `depends_on` with the
+connective quoted; (8) »Jedes Ding ist als Erscheinung, als Objekt, durchweg nothwendig: dasselbe
+ist an sich Wille, und dieser ist völlig frei, für alle Ewigkeit«; the person, »das vernünftige
+Thier mit individuellem Charakter«, »ist nie frei, obwohl sie die Erscheinung eines freien Willens
+ist«, the sentence that answers for the will in its actions, B xxvii's sense, and answers no; Kant,
+»dessen Verdienst hier besonders groß ist«, was the first to show the coexistence of the necessity
+of individual action with the freedom of the will in itself, »indem er den Unterschied zwischen
+intelligiblem und empirischem Charakter aufstellte, welchen ich ganz und gar beibehalte«, with
+Schopenhauer's own definitions of the two, the Priestley half of the sentence dropped and named; and
+the intelligible character of every man »als ein außerzeitlicher, daher untheilbarer und
+unveränderlicher Willensakt zu betrachten sei«, the frame naming the »einleitenden Abhandlung«
+dropped and named, »zu betrachten sei« kept. No shared premise and no attack, argued on each node:
+Kant's B xxvii has the same will »gedacht« as free under »Wenn aber die Kritik nicht geirrt hat«,
+and the antinomy's two characters stand under »würde«, where § 55 asserts; Kant's will belongs to
+a thing in itself where Schopenhauer's thing is in itself will, the hinge both pages name; Kant's
+asserted »denn« clause on time is not what the sentence on the »außerzeitlicher Willensakt« states;
+JGB 21 denies an unfree will where § 55 denies the person's freedom and calls the will free; and
+whether GD 8's »noch er selbst« denies that a man's intelligible character is his own act of will
+no sentence says, the identification would be the map's, and each absence is open to dispute, said
+on the nodes.
+
+*The page.* `x-the-will`: the seven claims appended to the Schopenhauer cell of the row on freedom;
+the row's sentence that no passage in the map had Schopenhauer on the freedom of the will in the
+sense of B xxvii, true since 2026-10-15 and false today, replaced by the sentences on § 55, and
+"the three statements" made "the first three"; a passage added to *Kant and Schopenhauer on the law
+and the thing in itself* on the two nearest unset premises, § 55's »auch nicht dem Satz vom Grunde
+... unterworfen« beside Kant's B xxvii clause and »Jedes Ding ist als Erscheinung ... nothwendig:
+dasselbe ist an sich Wille« beside the very same will of B xxvii–xxviii; a paragraph added at the
+end of *On freedom* saying what is parallel to Kant in Schopenhauer's own sentence (the distinction
+retained, the pages his footnote names, inside which the map's A 538–541 lies) and what is not (an
+act of will asserted against »würde« predicates of a subject of the world of sense; the concept of
+freedom negative, with no counterpart in a Kant passage the map holds; the person never free beside
+»so fern nicht frei«), and beside Nietzsche (JGB 21's mythology; GD 8's »"intelligible Freiheit"«
+and § 55's intelligible character the two sentences in the map naming a doctrine of Kant's by that
+adjective, not identified); the gaps list, which now names the five sentences of the three spans in
+no claim and § 55's remainder; the three passages in `passages:`; the closing paragraph. The work
+and thinker nodes say where the fourth Book's first passages come from. README counts 272 nodes
+(3 thinkers, 5 works, 80 passages, 164 claims, 14 arguments, 4 readings, 2 comparisons); the colophon
+agrees. No argument was formalized. The comparison on the thing in itself is untouched: § 55 adds no
+cell to its rows.
+
+**The adversarial pass, and what it found.** A second agent was given the ten new nodes, the diff
+of the page, the work and thinker nodes and the README, both corpus files (zeno.org's Viertes Buch
+and Gutenberg's chapter 57) with the extracted spans, the older Kant, Schopenhauer and Nietzsche
+nodes the bodies cite or argue absences against, the conventions and the distilled rules, with the
+brief to re-extract and collate the originals by script, check the ZA pages, count the sentences
+and the ordinals, check every quote and translation, every statement's qualifiers and mode, every
+asserted absence against every statement in the map, whether any link is due, the fit and reason of
+each cell, the page prose for generalizations and accretion, the format and the rendered pages. It
+confirmed the three originals verbatim, the pages 360, 362 and 363, the seven collation variants
+exactly, the counts 8 + 2 + 2 and every ordinal, the gaps list as exact, every quote and the twelve
+translations' content, the one link and its converse, every absence under the convention, the
+format and the build, and returned 26 findings, 4 serious, 11 moderate, 11 minor, and nine
+judgements; all 26 accepted and changed before commit, and one judgement taken.
+- *Serious, 4, all accretion: sentences true until today and false after it, on nodes and lines
+  the run did not touch.* JGB 21's mythology claim said "no passage in the map has Schopenhauer on
+  the latter", a will free or unfree in its actions; JGB 36's will-to-power claim said "no
+  Schopenhauer passage in the map carries the term" »intelligiblen Charakter«; the older part of
+  *On freedom* said no passage in the map has Schopenhauer on the freedom of the will in Kant's
+  sense; and "Schopenhauer's two sentences in this row" counted a cell that now holds ten. Each now
+  names § 55's sentence and links it. The run's own accretion sweep had grepped the page for the
+  row note's sentence and missed these: the rule in `memory.md` now says to grep every claim body
+  of the other thinkers for "no ... passage in the map" naming the thinker whose text is added.
+- *Moderate, 11:* »außer aller Zeit« cited as § 25's phrase, which is »außer der Zeit und dem
+  Raum«; § 21 misquoted (»das Ding an sich ist der Wille allein« for »Ding an sich aber ist allein
+  der Wille«); the gaps list said the Priestley half-sentence is in no passage, where it is in the
+  third span and dropped from its claim's statement, and paraphrased »hält ... sich ... für frei«;
+  "the five Kant passages set in this row" where the fifth, A 538's definition, is on no row;
+  Kant's »ersteren« and »zweiten« reversed in the body's "first" and "second"; the one Nietzsche
+  statement carrying »"intelligiblen Charakter"«, JGB 36, not named against the two claims on the
+  intelligible character, now named on both and on the page; JGB 21's »"Nothwendigkeit"«, the
+  nearest word in the map to »keine Nothwendigkeit kennt«, not named, now quoted with the reason no
+  premise is set; a sentence that Kant's negative and positive concepts of freedom stand in the
+  Grundlegung and the second Critique, about Kant and citing nothing (P1), now names the works as
+  absent only; the identification of »obigen ... Fall« with the will's self-denial stated flat in
+  three places, resting on sentences in no passage, now "as the map reads"; the row note's "the
+  sentence that answers for the will in its actions, the sense of B xxvii" outran a statement whose
+  subject is the person, now "the will's appearance in its actions ... answers no of the person";
+  and the letterspacing sentence implied a variant, where zeno.org italicizes the same three words,
+  now "both transcriptions mark ... the map reproduces neither".
+- *Minor, 11, all changed:* »Kants meisterhafte Darstellung« quoted from no passage; the fifth
+  edition's pages identified with B without saying so; »einleitende« for the text's »einleitenden«,
+  and the essay named as fact; »man ist nothwendig« for the passage's »Man«; the ground against
+  Kant given twice on one node, the first deleted and the antinomy's »Freiheit und Natur« carried
+  into the second; the second »aber« turned "and" unnamed; four translation qualifiers unnamed
+  (»nun«, an added "and", »Gehalt« and »Inhalt« both "content", »Folge« twice); »nachgewiesen«
+  "shown" against § 25's "demonstrated", now named; »unmittelbar« dropped from a passage body's
+  summary; "adds freedom" where § 23 already has »völlig frei«, now "adds »keine Nothwendigkeit
+  kennt, d.h. frei ist«"; the thinker node's new sentence inserted so that 13 ran to 26 to 14, moved
+  to the end.
+- *Judgement taken:* »Ihre gesammten Erscheinungen« "all its appearances" for "its appearances
+  taken together". *Declined:* reducing footnote 80's text on the passage to its page numbers (the
+  whole note is what identifies Kant's pages); »Eigenschaft« "capacity", »der Grund zu finden seyn
+  muß« "must be there to be found", "on the view of Schopenhauer's work", kept as the reviewer's own
+  judgement allowed.
+The pass cost about 186,000 tokens of the agent's own and took thirteen minutes. New kinds today:
+accretion on the other thinkers' nodes, which the sweep of the page cannot see; a footnote folded
+into a sentence by a transcription; Kant's own ordinals reversed by the body's; and an emphasis
+named as one edition's that both carry. All in `memory.md`.
+
+**What else was wrong and why.**
+- The first extraction took Projekt Gutenberg-DE as the transcription, as §§ 24–25 had, and the
+  stored span would have carried footnote 80's words as part of Schopenhauer's sentence; the
+  collation against zeno.org, done because zeno answered, caught it before anything was stored.
+  Rule in `memory.md`: collate every Gutenberg span against zeno before storing, and watch for
+  folded footnotes.
+- `--check` refused three quotations on the page that were not verbatim (»außerzeitlicher
+  Willensakt« for the text's »außerzeitlicher, daher untheilbarer und unveränderlicher Willensakt«,
+  »einleitende« for »einleitenden«, »ein Subject der Sinnenwelt« for Kant's »einem Subjecte der
+  Sinnenwelt«); fixed, the first with the convention's »...«.
+- The memory edit script's first anchors did not match across the file's line wraps; made
+  whitespace-flexible, as run 19's rule says, before it ran.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+- A full build with the font-coverage check needed fontTools and brotli installed again;
+  installed, 272 nodes, 0 errors, before the review and after the fixes.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10); the content runs meanwhile are the gaps the
+pages still list: the Anhang's theorems on time; Kant's antinomy outside A 538–541, now also as
+what § 55's footnote cites, A 532–558; the chapter on phenomena and noumena beyond its opening.
+The fourth Book's § 55, listed since 2026-10-15, is held in three spans; its remainder is listed.
+
+**Step 6.** `memory.md` updated in place, about 7,900 of 8,000 words: the run-20 state, the three
+passages and seven claims, the cell, the collation variants, the Gutenberg rule, the review's rules.
+Compressed: the run-19 JGB 19 passage and the run-18 GD passage in the Nietzsche paragraph, the
+run-13 and run-17 passages in the Kant paragraph, the design paragraph. Dropped: nothing else.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-27; first, if `INBOX.md` has an entry,
+the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows;
+otherwise a content run on a gap the pages list, through the adversarial pass, with a quote on
+every new cell claim, every Gutenberg span collated against zeno.org before it is stored.
+
+**Effort.** About 290,000 of the 300,000-token ceiling in this session plus about 186,000 in the
+adversarial agent: two fifths on reading the governing files, the memory, the last entries and the
+will page; a fifth on the sources, the collation and the ten nodes; the rest on the page, the wait,
+the 26 fixes, the memory compression and the records. Nothing spent.
+
 ## 2026-10-25 — run 19: JGB 19 held whole, »Freiheit des Willens« as the affect of superiority and as the word for a state of pleasure, all willing as commanding and obeying
 
 Nineteenth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

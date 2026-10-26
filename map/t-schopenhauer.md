@@ -20,4 +20,4 @@ Grisebach's page instead of the ZA page; each says so. On 2026-10-14 zeno.org an
 passages of the appendix added that day (ZA II 513–514, 516, 536–537) are from it, with ZA
 pages; where its transcription has a slip (»Kam« for »Kant«, »hohem« for »höhern«) the
 original keeps the letters, the passage names the slip, and the reading was checked against
-Grisebach's text at Projekt Gutenberg-DE.
+Grisebach's text at Projekt Gutenberg-DE. The first passages of the fourth Book, three spans of § 55 added on 2026-10-26, are from zeno.org with ZA pages, collated against Grisebach's text; each names the variants.
