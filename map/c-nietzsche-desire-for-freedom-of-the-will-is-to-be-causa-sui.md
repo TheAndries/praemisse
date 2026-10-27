@@ -32,7 +32,7 @@ in der Sinnenwelt zuschreibe« (B xxviii,
 [c-kant-freedom-cannot-be-cognized-by-speculative-reason](../../c/kant-freedom-cannot-be-cognized-by-speculative-reason/)) or with the antinomy's
 active being that would begin its effects in the world of sense »von selbst«
 ([c-kant-subject-begins-its-effects-of-itself](../../c/kant-subject-begins-its-effects-of-itself/)), and the map does not identify
-them. No attack link is set on Kant's claim that freedom can be thought, its representation
+them; nor, since 2026-10-27, with the idea reason creates for itself at A 533 of »einer Spontaneität, die von selbst anheben könne zu handeln, ohne daß eine andere Ursache vorangeschickt werden dürfe« ([c-kant-reason-creates-the-idea-of-a-spontaneity-that-could-begin-to-act-of-itself](../../c/kant-reason-creates-the-idea-of-a-spontaneity-that-could-begin-to-act-of-itself/)), the nearest Kant sentence in the map to a cause of itself, which Kant asserts as reason's idea and not in its content, and which this sentence names no more than it names the others. No attack link is set on Kant's claim that freedom can be thought, its representation
 containing »wenigstens keinen Widerspruch«
 ([c-kant-freedom-thinkable-if-critical-distinction-holds](../../c/kant-freedom-thinkable-if-critical-distinction-holds/)): a denial of it would
 need this sentence joined to the one before it, that the causa sui is a self-contradiction,

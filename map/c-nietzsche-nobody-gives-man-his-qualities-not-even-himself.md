@@ -36,7 +36,7 @@ and the row's note says so. No attack link is set on any Kant statement in the m
 »von aller Naturnothwendigkeit ... unabhängig und frei«
 ([c-kant-active-being-free-of-natural-necessity-by-intelligible-character](../../c/kant-active-being-free-of-natural-necessity-by-intelligible-character/)), and
 the subject that »seine Wirkungen in der Sinnenwelt von selbst anfange«
-([c-kant-subject-begins-its-effects-of-itself](../../c/kant-subject-begins-its-effects-of-itself/)), each under »würde«; neither states
+([c-kant-subject-begins-its-effects-of-itself](../../c/kant-subject-begins-its-effects-of-itself/)), each under »würde«, and, since 2026-10-27, A 537's effect that »kann ... in Ansehung ihrer intelligibelen Ursache als frei ... angesehen werden« ([c-kant-effect-regardable-as-free-with-respect-to-its-intelligible-cause-and-as-necessary-as-appearance](../../c/kant-effect-regardable-as-free-with-respect-to-its-intelligible-cause-and-as-necessary-as-appearance/)), the one Kant sentence in the map joining the adjective and »frei« in a clause not under »würde«, which says what can be regarded; none states
 that man gives himself his qualities, »Eigenschaften«, and what this sentence denies is
 that, so that it denies no Kant statement in the map, and whether Kant's intelligible
 character is Nietzsche's »"intelligible Freiheit"« no passage in the map says. The map

@@ -23,4 +23,4 @@ the translation takes the nearer, »that action«, and the claim says so. The re
 ... zusammen stattfinden« is plural and has the two concepts as its nearest antecedent; it is
 rendered as the text has it. »Vermögen« is »faculty«, »Wesen« »being«, »Handlung« »action«,
 »Wirkung« »effect«, »Sinnenwelt« »world of sense«, throughout the five passages of this
-section. The text that precedes the heading (3:365.21–366.04) is not in the map.
+section. Of the text that precedes the heading, 3:365.14–35 is in the map since 2026-10-27 (p-krv-a536-537-if-appearances-are-things-in-themselves-freedom-not-to-be-saved); 3:365.35–366.04 is not.

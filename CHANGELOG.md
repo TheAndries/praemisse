@@ -2,6 +2,226 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-27 — run 21: Kant's A 532–537, freedom in the cosmological and the practical sense, the human power of choice as arbitrium liberum, and the effect regardable as free and as necessary
+
+Twenty-first scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 20; `origin/main` stood at run 20's commit when it began, and nothing arrived in between.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 14 new, 11 revised, the will page touched in one row and five places of its prose.**
+The plan's next content item was a gap the pages list that adds a cell. The will page's gaps list
+named, first among Kant's, the resolution of the third antinomy before A 538–541, »A 532–537 / B
+560–565 before it«, and since run 20 the same pages stand on the page a second time as what § 55's
+footnote cites; the row on whether the will is free, and free of what, had Kant's cell set from
+B xxvii–xxix, conditional throughout, and from A 538–541, under »würde« throughout, and the paragraph
+under *On freedom* said that Schopenhauer's negative concept of freedom had no counterpart in a Kant
+passage the map held. A 532–537 is where the first Critique says outright what freedom is, in two
+senses, and it was taken in three spans from korpora.org's Akademie text (AA III 362–366), the A
+pages checked against the page-by-page transcription of the 1781 scan on de.wikisource.org before
+anything was written.
+
+*The three passages.* `p-krv-a532-533-two-kinds-of-causality-freedom-in-the-cosmological-sense`, the
+first six sentences of section III, from »Man kann sich nur zweierlei Causalität« to »zur Handlung zu
+bestimmen« (AA 3:362.29–363.24; A 532–533 / B 560–561); `p-krv-a533-534-freedom-in-the-practical-sense`,
+the second and third paragraphs whole, six sentences from »Es ist überaus merkwürdig« to »ganz von
+selbst anzufangen« (3:363.25–364.15; A 533–534 / B 561–562, the definition of practical freedom
+straddling the 1781 page break at »Die«); and
+`p-krv-a536-537-if-appearances-are-things-in-themselves-freedom-not-to-be-saved`, seven sentences of
+the fifth paragraph from »Und hier zeigt die zwar gemeine« to »in der Anwendung aufklären wird«
+(3:365.14–35; A 536–537 / B 564–565). Named on the passages: korpora's »Bedarf« with a capital where
+the 1781 scan reads »bedarf«, kept as transcribed; the transcription's spaces inside the tag that sets
+the Latin terms, »( arbitrium brutum )«, normalized to the Akademie-Ausgabe's »(arbitrium brutum)«,
+the one normalization made; the 1781 edition's letterspacing of »Freiheit im practischen Verstande«,
+not reproduced; the B page breaks inside B 560–565 unverified, the AA line the locator. Terms new to
+the map: »Willkür« "power of choice", never "will", since the map holds Kant's »Wille« at B xxvii and
+no passage says how the two words relate; »Nöthigung« "necessitation", »Antriebe« "impulses",
+»Bewegursachen« "motive causes", »beiwohnt« "dwells in", »Aufhebung« "annulment" (as »aufheben« is
+"annul" at B xxx), »vertilgen« "destroy", »retten« "save", »Erfolg« "result", »Inbegriff« "sum",
+»Spontaneität« "spontaneity", »anheben« "begin", »vorangeschickt« "sent ahead".
+
+*The eleven claims, all `draft`, each with its quote, all set in the Kant cell of the row on freedom
+after the A 538–541 claims, for the words »Freiheit« and »Willkür« (two were on no row until the review; below).* (1) »Man kann sich
+nur zweierlei Causalität in Ansehung dessen, was geschieht, denken, entweder nach der Natur, oder aus
+Freiheit«, the frame; (4) Kant's own definition,
+»verstehe ich unter«, carried as "as Kant understands the term": freedom in the cosmological sense is
+»das Vermögen, einen Zustand von selbst anzufangen, deren Causalität also nicht nach dem Naturgesetze
+wiederum unter einer anderen Ursache steht, welche sie der Zeit nach bestimmte«, »deren« read as the
+faculty's causality and the reading open to dispute; (5) freedom in that sense »eine reine
+transscendentale Idee« whose object »in keiner Erfahrung bestimmt gegeben werden kann«, the closing
+»wodurch denn« clause dropped and named; (6) reason »schafft sich ... die Idee von einer Spontaneität,
+die von selbst anheben könne zu handeln, ohne daß eine andere Ursache vorangeschickt werden dürfe«,
+the idea asserted as reason's and its content under »könne«; (7) »Es ist überaus merkwürdig, daß« the
+practical concept of freedom »sich ... gründe« on the transcendental idea, the frame kept, »jene« read
+as the idea and »dieser« as practical freedom; (8) »Die Freiheit im praktischen Verstande ist die
+Unabhängigkeit der Willkür von der Nöthigung durch Antriebe der Sinnlichkeit«; (10) »Die menschliche
+Willkür ist zwar ein arbitrium sensitivum, aber nicht brutum, sondern liberum, weil Sinnlichkeit ihre
+Handlung nicht nothwendig macht, sondern dem Menschen ein Vermögen beiwohnt, sich unabhängig von der
+Nöthigung durch sinnliche Antriebe von selbst zu bestimmen«, the one sentence in the map in which Kant
+asserts a human faculty free; (11) under »wenn alle Causalität in der Sinnenwelt bloß Natur wäre«,
+the annulment of transcendental freedom »würde ... zugleich alle praktische Freiheit vertilgen«, »Man
+sieht leicht, daß« dropped and named, drawn by »Denn« from (12) practical freedom »setzt voraus, daß
+... nicht in unserer Willkür eine Causalität liege ... mithin eine Reihe von Begebenheiten ganz von
+selbst anzufangen«, the one link set today, `depends_on` with the connective quoted; (14) »Denn sind
+Erscheinungen Dinge an sich selbst, so ist Freiheit nicht zu retten«, which belongs also on the
+comparison on the thing in itself, in the row on the division, not touched today, said on the node; and (19) »Die Wirkung kann also in Ansehung ihrer intelligibelen
+Ursache als frei und doch zugleich in Ansehung der Erscheinungen als Erfolg aus denselben nach der
+Nothwendigkeit der Natur angesehen werden«, what can be regarded, the modal kept, the apposition on the
+distinction's subtlety dropped and named. No shared premise and no attack, argued on each node: Kant's
+definitions are neither one proposition with Schopenhauer's negative concept nor denials of it; A 534's
+»liberum« of the human »Willkür« beside § 55's person who »ist nie frei« is the nearest denial in the
+map, and whether the person is the bearer of the power of choice and »nie frei« denies »liberum«, two
+senses of free, no passage says, the identification the map's; A 537's »kann ... angesehen werden«
+beside § 55's »Jedes Ding ist als Erscheinung ... nothwendig: dasselbe ist an sich Wille« is the nearest
+unset premise, a modal asserting what can be regarded and not what is; A 536's conditional beside § 55's
+»folgt schon daraus« makes freedom turn on the distinction from opposite sides; the spontaneity that
+begins to act without a prior cause beside JGB 21's causa sui, the identification the map's, the denial
+needing two Nietzsche sentences joined and hitting a content Kant does not assert; and GD 7, GD 8 and
+JGB 21's mythology sentence deny none of the eleven in their words. Each absence is open to dispute,
+said on the nodes.
+
+*The page.* `x-the-will`: the eleven claims appended to the Kant cell of the row on freedom and the
+row's note extended, saying that the cell is set for »Freiheit« and »Willkür« and that the map does not
+identify the power of choice with the will; the sentence under *On freedom* that had the resolution of
+the antinomy »under »würde« throughout« narrowed to its section A 538–541; the sentence counting »the
+five Kant passages listed on this page« extended; the sentence that Schopenhauer's negative concept
+»has no counterpart in a Kant passage the map holds«, true since 2026-10-26 and false today, dated and
+answered; a paragraph added under *On freedom* on A 532–537, listing free-of-what in Kant's four
+sentences and Schopenhauer's two, and what is and is not parallel to § 55 and to JGB 21; a clause added
+to the JGB 21 paragraph; a passage added under *Kant and Schopenhauer on the law and the thing in
+itself* naming A 537 the nearest unset premise on the page; the three passages in `passages:`; the
+gaps list, which now names the nineteen sentences of the three spans, eleven in claims, which eight are
+in no claim and which paragraphs of section III are in no passage, and keeps A 542 ff.; the closing
+paragraph. Seven existing nodes received a dated sentence on today's Kant sentences, by the rule of run
+20 that the other thinkers' claim bodies carry absences the page sweep cannot see: § 55's negative
+concept of freedom (its sentence that no Kant statement in the map said what freedom is, dated and
+answered), the person never free (A 534 the nearest denial), every thing necessary as appearance (A 537
+the nearest unset premise), the will as such free (A 536 beside it), JGB 21's causa sui desire and its
+self-contradiction (A 533's spontaneity the nearest), and the unfree will as mythology (A 534). README
+counts 286 nodes (3 thinkers, 5 works, 83 passages, 175 claims, 14 arguments, 4 readings, 2
+comparisons); the colophon agrees. No argument was formalized. The comparison on the thing in itself
+is untouched, and today's fourth sentence of A 536–537, that appearances are in fact mere
+representations that must have grounds that are not appearances, is held in the passage and in no
+claim for a run that touches that page, said on the passage, on the gaps list and in `memory.md`.
+
+**The adversarial pass, and what it found.** A second agent was given the fourteen new nodes, the
+diff of the page and of the seven edited nodes, the korpora pages and the wikisource transcriptions
+of A 532–538 with the extraction script, the conventions and the distilled rules, with the brief to
+re-extract and collate the originals by script, check the A pages and every page-break claim, count
+the sentences and the ordinals, check every quote and translation, every statement's qualifiers and
+mode, every asserted absence and every "the nearest" against every statement in the map, whether any
+link is due, the fit and reason of each cell, the page prose for generalizations and accretion, the
+format and the rendered pages. It confirmed the three originals verbatim, the A pages and page breaks,
+the paragraph numbering, the counts 6 + 6 + 7 and every ordinal and AA line, every quote block, the
+statements' modes and qualifiers, the uniqueness claims against all 71 Kant statements, the accretion
+sweep of the row notes, both pages, the thinker and work nodes and the README, the one link and its
+converse, every absence under the convention, the format and the build, and returned 22 findings, 4
+serious, 7 moderate, 11 minor, and nine judgements; all 22 accepted and changed before commit, and
+five judgements taken.
+- *Serious, 4: one translation, three accretions.* The English of A 533's first sentence, "the former
+  constitutes in the latter", ran by the English order and so reversed the map's own reading of »jene
+  ... in dieser« (the idea in practical freedom): the passage, the quote block and the bodies now
+  resolve the pronouns by name, "this idea constitutes in practical freedom", and say why "the former"
+  would not do; the rule is in `memory.md`. Three sentences true until today and false after it, none
+  of which the run's own sweep had found, since the sweep grepped for "no Kant" and "no passage in the
+  map" and not for page ranges: § 55's claim that Kant first showed the coexistence said that within
+  A 532–558 the map holds A 538–541; its passage said the same of B 560–586; and A 538's own passage
+  said that the text preceding its heading, 3:365.21–366.04, is not in the map. Each now names today's
+  spans, and the rule in `memory.md` says to grep for "not in the map" and "the map holds" with the
+  pages added and for the pages other thinkers' nodes cite.
+- *Moderate, 7:* "the nearest" Kant sentence to GD 8's »intelligible Freiheit« named A 539's
+  character in three places (the GD 8 node, the row note, *On freedom*) where A 537's »in Ansehung
+  ihrer intelligibelen Ursache als frei« is the one Kant sentence in the map joining the adjective and
+  »frei« in a clause not under »würde«, now named in all three; "A 536–537" on a sentence wholly on
+  A 536; the new paragraph's opening claimed for the first Critique what only the map's holdings
+  warrant and ran a circular clause (A 541 inside A 538–541), now "the first place among the Kant
+  passages the map holds" and the two older texts' modes named; the row note's "asserted outright"
+  governed a list holding the subjunctive »gründe« and the spontaneity's »könne«, now restructured by
+  mode; the collation note listed orthography only, where the 1781 scan has two wording variants
+  inside the spans, »in einen Inbegriff« and »und so durch andere Erscheinungen«, and three
+  punctuation differences, now listed on all three passages; "letterspaced" for a phrase wikisource
+  marks bold as it marks a dozen others, now "emphasized, as it marks a dozen other words"; and K1's
+  absence sentence did not name JGB 36's »als die einzige«, the one Nietzsche statement on one kind of
+  causality, now named with why no link is due.
+- *Minor, 11, all changed:* »deren« could bind only to »Freiheit« (»Zustand« would take »dessen«);
+  »selbst« moved from »selbst wiederum« to »auch entstanden« in a translation; »zwar« dropped from
+  »die zwar gemeine, aber betrügliche«; »von selbst« "of himself" at 3:364.03 unnamed against "of
+  itself" elsewhere; »aber« of »Da aber« dropped unnamed; "the two claims before it assert" where one
+  defines; a clause that identified what the next denied; "as the map reads the two" missing on an
+  identification of A 537 with A 541; the fifth unclaimed sentence of the third span undescribed in the
+  gaps list; "every sentence of the practical sense" where the first has neither word; and a doubled
+  "and" on the page from 2026-10-26.
+- *Judgements taken, 5:* the two claims set on no row because they do not name the will, where the
+  definitions, which name it no more, were set for the word »Freiheit«, are now set in the row by the
+  same criterion, so the cell holds eleven and the first page's row on the division is named as the
+  other home of A 536; "the first Kant statement that says what freedom is" now "by the text's order";
+  »bestimmte« called preterite, not subjunctive; "not conditional" of A 537 now "not under »wenn« or
+  »würde«"; "the section before" now "the untitled opening of section III before the subsection".
+  *Declined:* naming JGB 21's »die Freiheit« among the invented signs against the transcendental idea
+  (the sentence says what we invented, not what an idea contains); JGB 19's copula as a definition of
+  freedom (the body names it and the claim stands on "defines").
+The pass cost about 220,000 tokens of the agent's own and took eleven and a half minutes. New kinds
+today: an English pronoun resolution that reverses a correct German reading; stale coverage sentences
+on older passages of the same text and on another thinker's nodes that cite the pages; a note's mode
+word governing a list; a collation that stopped at orthography. All in `memory.md`.
+
+**What else was wrong and why.**
+- The run's own accretion sweep grepped the nodes for "no Kant" and "no passage in the map" and
+  found seven sentences; it did not grep for page ranges, and the reviewer found three more (above).
+- `--check` refused, after the fixes, a second quotation on the page not inside a listed passage
+  (the subsection's title »Möglichkeit der Causalität durch Freiheit«); referred to without quoting.
+- A full build with the font-coverage check needed fontTools and brotli installed again, and the
+  first `pip install` landed in another interpreter's packages; installed for the build's, 286 nodes,
+  0 errors, every character covered, before the review and after the fixes.
+- `--check` refused one quotation on the page that was not inside a listed passage (»Hier habe ich
+  nur«, the close of the fifth paragraph, which the gaps list named by its words); referred to without
+  quoting.
+- The first version of two passage bodies numbered section III's paragraphs wrongly (the third span
+  called the fourth paragraph; it is the fifth, since »Es geschieht also hier« opens a paragraph of its
+  own at 3:364.17); corrected before the review from the transcription's blank line.
+- The memory edit overshot the cap by about 450 words and was brought under it by compressing
+  the filing-route, sources and model-as-applied paragraphs and five per-run blocks (below).
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10); the content runs meanwhile are the gaps the
+pages still list: the Anhang's theorems on time; the chapter on phenomena and noumena beyond its
+opening; the antinomy's resolution beyond the map's A 532–541 (A 542 ff.); and, on the comparison on
+the thing in itself, the row on the division, which A 536's »Freiheit nicht zu retten« and A 537's
+sentence on appearances as mere representations would add to, a run that touches that page's status
+note. A 532–537, listed on the will page since 2026-10-15, is held in three spans; its two unheld
+paragraphs are listed.
+
+**Step 6.** `memory.md` updated in place, about 7,990 of 8,000 words: the run-21 state, the three
+passages and eleven claims, the cell and the paragraph, the terms, the review's rules. Compressed:
+the run-13 Kant block, the run-17 footnote block, the run-14, run-15 and run-18 Nietzsche blocks, the
+run-20 § 55 block, the filing-route paragraph (about 330 to 216 words), the sources paragraph, the
+model-as-applied paragraph (about 490 to 250 words, keeping only what `MODEL.md` does not say), the
+Ask 6 sentence. Dropped: the per-sentence detail of those blocks, which stands in the changelog
+entries of 10-19 to 10-26 and on the nodes; the zeno.org downtime dates after the first two; the
+list of the Grisebach page anchors' orthography.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-28; first, if `INBOX.md` has an entry,
+the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows;
+otherwise a content run on a gap the pages list, through the adversarial pass, with a quote on
+every new cell claim, and, on a Kant span, the A pages checked on wikisource before writing.
+
+**Effort.** About 300,000 of the 300,000-token ceiling in this session plus about 220,000 in the
+adversarial agent: two fifths on reading the governing files, the memory, the last entries and the
+will page's row and paragraphs; a fifth on the sources, the two transcriptions and the fourteen nodes;
+the rest on the page, the wait, the 22 fixes, the memory compression, which took six passes to get
+under the cap, and the records. Nothing spent.
+
 ## 2026-10-26 — run 20: Schopenhauer's § 55, the will as such free since it is the thing in itself, the person never free, and Kant's distinction of intelligible and empirical character retained
 
 Twentieth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
