@@ -33,4 +33,4 @@ writes »Ding überhaupt (als Sache an sich selbst)« (3:17.16–17), the parent
 the noun, and the statement renders both nouns »thing«. The contradiction is of saying free and not free of
 one thing in one meaning; the next sentence
 ([c-kant-same-will-not-free-as-appearance-free-as-thing-in-itself](../../c/kant-same-will-not-free-as-appearance-free-as-thing-in-itself/))
-removes it by the two meanings.
+removes it by the two meanings. Since 2026-10-28 the claim is set also on the comparison on the thing in itself, in the row on the division of appearance from thing in itself and what follows from refusing it, beside A 536's »sind Erscheinungen Dinge an sich selbst, so ist Freiheit nicht zu retten« ([c-kant-if-appearances-are-things-in-themselves-freedom-not-to-be-saved](../../c/kant-if-appearances-are-things-in-themselves-freedom-not-to-be-saved/)), the same consequence of the same case in the resolution of the third antinomy, as the map reads the two. The two places draw the consequence by no connective from each other, and no link is set between them.
