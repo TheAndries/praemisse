@@ -20,4 +20,4 @@ shares_premise_with: [c-schopenhauer-will-free-of-forms-of-appearance, c-schopen
 produced_by: claude-fable-5-1, 2026-10-06
 ---
 Conclusion (a) from the exposition of space, A 26 / B 42 (AA 3:55.02–05). It is the
-conclusion of the argument linked under *Depends on*.
+conclusion of the argument linked under *Depends on*. Since 2026-10-29 the [comparison on the thing in itself](../../x/thing-in-itself/) sets the claim also in its row on the division of appearance from thing in itself, for what the sentence says divides them for space, by the criterion that set A 539's »denn« clause on time there the same day ([c-kant-intelligible-character-under-no-conditions-of-time](../../c/kant-intelligible-character-under-no-conditions-of-time/)); until then the claim stood on that page in its two shared entries on space and in no row.

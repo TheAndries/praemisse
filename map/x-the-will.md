@@ -135,8 +135,7 @@ The premise is worded to cover both texts' terms, Kant's »Bedingung der Erschei
 of the three statements asserts it among other things; Kant's main clause, what would hold of
 the acting subject, is under »würde« and is shared with nobody, and the link rests on the
 »denn« clause alone. The parallel premise on space, between A 26 / B 42 and the same two
-sections, is set on the [comparison on the thing in itself](../../x/thing-in-itself/), where both Schopenhauer claims already name A 26 / B 42; the identification of Kant's »Bedingung« with
-Schopenhauer's »Form« is the map's, and the other page makes the same step for space. No
+sections, is set on the [comparison on the thing in itself](../../x/thing-in-itself/), where both Schopenhauer claims already name A 26 / B 42; the identification of Kant's »Bedingung« with Schopenhauer's »Form« and, for § 24, with »Bestimmung« is the map's, and the other page makes the same step for space. Since 2026-10-29 that page enters the premise on time as well, in two entries naming the same pairs, beside the one on space, and sets the Kant sentence in its row on the division of appearance from thing in itself. No
 other link is set on this page, and it says why for the two nearest candidates on the will
 itself.
 

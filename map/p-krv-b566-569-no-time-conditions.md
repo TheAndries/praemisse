@@ -25,4 +25,4 @@ vorigen Zustandes) seine Ursache antreffe« states the law of all determination 
 subjunctive of indirect statement and is rendered in the indicative as the law's content.
 »nicht aber der Dinge an sich selbst« is the one place in the five passages of this section
 where Kant says outright, in his own voice and not under a »würde«, what time is not the
-condition of; the comparison on the will sets a shared premise on it.
+condition of; the comparison on the will sets a shared premise on it, and since 2026-10-29 the comparison on the thing in itself enters the same premise and sets the sentence in its row on the division of appearance from thing in itself.

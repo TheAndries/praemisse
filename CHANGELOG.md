@@ -2,6 +2,186 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-10-29 — run 23: the first page's row on the division filled from the second paragraph of the resolution's section on causality through freedom and from A 26 / B 42, time the condition of appearances and not of things in themselves, the transcendental object laid under appearances in thought, and the twelfth shared premise, time no determination of the thing in itself, entered on the page whose question it answers
+
+Twenty-third scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 22; `origin/main` stood at run 22's commit when it began, one ahead of the container's
+detached checkout, which was fast-forwarded before anything was written; nothing arrived in
+between.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 0 new, 7 revised in their bodies, the first page touched in one row, two shared entries and six places of its prose, the will page in one sentence.**
+The plan's next content item was the one `memory.md` carried over from run 22, a one-page run that
+needed no new source: the comparison on the thing in itself, `checked` with the owner's status note,
+had since 2026-10-28 a Kant cell in its row on the division that answered the row's second question,
+what follows from refusing the division, from B xxvi, Prolegomena § 57, B xxvii and A 536–538, and its
+first question, what the division is, only with what appearances are (»bloße Vorstellungen«, »an sich
+keine Dinge«); and the gaps list excepted by name two sentences of the resolution's second paragraph,
+in the map since 2026-10-19, as saying what divides appearances from things in themselves: A 539's
+»denn die Zeit ist nur die Bedingung der Erscheinungen, nicht aber der Dinge an sich selbst« (AA
+3:367.07–08, the ground of a main clause under »würde«, itself indicative and asserted), set until
+today on the comparison on the will and in its shared premise on time, and A 540's »so wie wir überhaupt
+einen transscendentalen Gegenstand den Erscheinungen in Gedanken zum Grunde legen müssen, ob wir zwar
+von ihm, was er an sich selbst sei, nichts wissen« (3:367.18–20, the comparison clause of a main clause
+under »könnte«, itself asserted), set until today in that page's row on immediacy for its »unmittelbar«.
+AA III 367 was fetched again from korpora for the line numbers, and the 1781 pages A 539 and A 540 were
+read on wikisource: A 539 ends at »mithin würde« (3:367.09, catchword »es«), so the first sentence is on
+A 539 and the »so wie« clause on A 540; the B page inside the section stays unverified and is given as
+the section's range, as the convention has it.
+
+*The cell.* The Kant cell of the row on the division holds, after the seven of run 22, the two claims,
+by one criterion, what their asserted subordinate clauses say divides appearances from things in
+themselves (the embedded indirect question's »sei« excepted, said on the page), and, on the review's
+finding that the same criterion reaches it, A 26 / B 42's »Der Raum stellt gar keine Eigenschaft irgend
+einiger Dinge an sich ... vor«, in the map since 2026-10-06 and until today on the page in two shared
+entries and in no row: time, which is the condition of the one and not of the other; and what is known, appearances
+being what is perceived and what is laid under them in thought being that of which nothing is known as
+it is in itself. The note says so in one sentence per claim, without the quotations, which stand under
+*On what the division is*, with the references and the dates, beside the reading, marked as the map's,
+that the division the two clauses state is the one A 26 / B 42 states for space, drawn by no connective
+and carrying no link. What each main clause says of the acting subject's intelligible character, under
+»würde« and »könnte«, is not what sets the claims in the row, and the A 540 sentence stays in the row on
+immediacy for its one word.
+
+*The shared premise, the twelfth on the page.* »Time is a condition or form of appearances only, and no
+determination of the thing in itself«, between the A 539 claim and Schopenhauer's § 24 (»Kant richtig
+geschlossen, daß Zeit, Raum und Kausalität ... nicht Bestimmungen desselben seyn«, the factive asserting
+what it reports, with Kant's name) and § 23 (the will as thing in itself »völlig frei von allen Formen«,
+»wohin bekanntlich auch Zeit und Raum gehören«), the same two Schopenhauer claims that share the
+premise on space with A 26 / B 42 on this page, in two entries as the space premise has, since one entry
+cannot hold two claims of one thinker. The pairs were entered on the comparison on the will on
+2026-10-19, the day the Kant sentence was set in that page's row on freedom, and the links were already
+set on the nodes; what today adds is the entry on the page whose question the premise answers, with its
+paragraph: the premise worded to cover Kant's »Bedingung« and Schopenhauer's »Bestimmungen« and
+»Formen«, the identification with »Form« and, for § 24, with »Bestimmung« the map's step as for space; the link on the »denn« clause alone; § 25's
+restatement not entered, for the reason the space paragraph gives; the A 539 clause the one sentence of
+the Kant passages in the map that says of time, in Kant's own voice, that it is not of things in
+themselves, B xxvi's opening clause saying the »nur« and not the »nicht aber« (in a passage on the page
+and in no claim, named in the gaps list as nearest the row's first question), no passage of the
+Aesthetic's section on time being in the map; the two entries and the paragraph placed after the space
+premise's, so that »beside« is true on the page. The paragraph on the premise that there is a thing in itself to a given appearance,
+which named A 540's transcendental object as near it and not entered, now says the clause is set in the
+row on the division. The gaps list no longer excepts the two sentences; its generalization over the
+resolution's other claims, that none says what appearances are, is widened to what divides them and
+names, as the map reads them, A 538's »intelligibel« as a third term and not the division, A 539's
+relative clause as describing the character granted under a subjunctive main clause, and A 541's
+ground clause and parenthesis as saying what is not found in, and what is known of, the supposed
+subject's noumenon and intelligible character. The closing paragraph is dated. Seven node bodies carry a dated
+sentence: the A 26 / B 42 claim (set in the row today, by which criterion, where it stood before); the two Kant claims (set in the row today, for which clause); the §§ 23 and 24 Schopenhauer
+claims, whose bodies described only the link on space while their front matter carried the link on time
+since 2026-10-19, a disagreement between front matter and prose that nothing enforces and that today's
+sentence ends, naming both links and both pages; the A 539–540 passage (the premise entered on both
+comparisons); and the will page's paragraph on the premise (the other page enters it too). The status
+note of the first page is unchanged: its clause that cells added since 2026-10-10 are not reviewed by
+the owner covers today's. README counts 287 nodes; the colophon agrees. No argument was formalized.
+
+**The adversarial pass, and what it found.** A second agent was given the diff, the korpora page AA III
+367, the wikisource transcriptions of A 539 and A 540, the passages the quotations must sit in, the
+rendered build, the conventions and the distilled rules, with the brief to re-extract and verify every
+AA line and A page, to check every quotation by hand in the node bodies and by the build on the pages,
+the mode of every clause, the one placement criterion against every Kant statement in the map, the
+shared premise from all three sides, every "the one" and "nearest" claim by grep, every sentence today
+falsifies on both pages and the nodes, front matter against prose, the translation of the »so wie«
+clause, the dates and the rendering. It confirmed the four AA line ranges and both page breaks, every
+quotation, the modes of the main and the »denn« clauses, the three statements' assertion of the premise,
+the identity of the two pages' entries, the dates, the accretion sweep, the YAML and the rendered cell,
+and returned 14 findings, 3 serious, 5 moderate, 6 minor, and five judgements; all 14 accepted and
+changed before commit, and one judgement taken.
+- *Serious, 3.* "The one sentence of the Kant passages in the map that says it of time" was refuted by
+  B xxvi, a passage on this very page, whose opening clause, »Daß Raum und Zeit nur Formen der
+  sinnlichen Anschauung, also nur Bedingungen der Existenz der Dinge als Erscheinungen sind«, says under
+  the factive »wird ... bewiesen« the »nur« half of the premise in its own word »Bedingungen«; the run
+  had not grepped »Zeit«, which sits in twelve Kant passages. Now "the one sentence ... that says of
+  time, in Kant's own voice, that it is not of things in themselves", with the B xxvi clause named as
+  saying the »nur« and not the »nicht aber«, in a passage and in no claim, not entered, and added to
+  the gaps list as the sentence nearest the row's first question. One criterion, two outcomes: the
+  »denn« clause was set in the row for what it says divides appearances from things in themselves, and
+  the page itself said the division is the one A 26 / B 42 states for space, while A 26 / B 42's claim
+  sat in no row; now in the row, with the note's sentence and the node's, the honest of the two fixes
+  the reviewer offered. "The resolution's second paragraph" named, on the map's own references, A
+  533–534; now "the second paragraph of the resolution's section on the possibility of causality
+  through freedom (A 538–541 / B 566–569)" in both places.
+- *Moderate, 5.* The gaps list's generalization, "none other says ... what divides them", failed for
+  A 541's »da« clause and parenthesis, indicative under a »würde« main clause, the very structure that
+  admits the »denn« clause: now named with A 539's relative clause and the map's reason. »überhaupt«
+  had moved onto "appearances" ("appearances in general" would be »Erscheinungen überhaupt«), and
+  "to be laid" had dropped »müssen« and »wir«, "while" the concession of »ob ... zwar«: now "that we
+  must in general lay a transcendental object in thought under appearances, although we know nothing
+  of what it is in itself". "Where appearances are what is perceived" reversed the »weil« clause
+  (nothing is perceived except insofar as it appears) and borrowed it from the main clause set in the
+  row on immediacy: now said that way. "Subordinate clauses, indicative and asserted" did not hold of
+  the embedded indirect question »was er an sich selbst sei«, Konjunktiv I: excepted by name in the
+  note, the paragraph and the node. The § 24 node said the map's identification is of »Bedingung«
+  with »Bestimmung«, "said on both pages", where both pages said »Form«: now both pages say "and, for
+  § 24, with »Bestimmung«".
+- *Minor, 6, all changed:* "beside the premise on space" where four premises stood between them (the
+  entries and the paragraph moved to follow the space premise's); "no passage of the Transcendental
+  Aesthetic on time" loose, since A 43 / B 60 names time (now the section, §§ 4–7, A 30–41 / B 46–58,
+  on the page and the node); "the sentence's »Zeit und Raum«" where the quote block holds two
+  sentences; "in the row on immediacy" without saying whose row or since when; the row-1 paragraph's
+  spine dating A 540's clause in the division row from 10-28; »Ding an sich« in a Kant node whose
+  passage has »Dinge an sich selbst«.
+- *Judgements, five, recorded:* the »so wie« placement thin but consistent with run 22's A 538 »da«
+  clause and marked as the map's; A 538's »intelligibel« as a third term stands, marked; the reading
+  that the clauses state A 26 / B 42's division is true of the »denn« clause only, and the page now
+  restricts it so and says A 26 / B 42 says nothing of the »so wie« clause (taken); copying the entries
+  rather than moving them is within `MODEL.md`; the rendered cell's span reference beside the prose's
+  single pages is structural, not a breach.
+The pass cost about 179,000 tokens of the agent's own and took ten and a half minutes. New kinds today:
+a "the one sentence" claim refuted by a passage on the same page; a criterion applied to the new claims
+and not to the thinker's older claims on the page; a paragraph count that named the wrong unit; a
+counterexample hidden in a parenthesis; a front-matter link that an older run set without a sentence in
+the body (found by the run, not the reviewer). All in `memory.md`.
+
+**What else was wrong and why.**
+- The container's checkout began detached one commit behind `origin/main`, as run 22's did; `main` was
+  fast-forwarded before anything was written.
+- The edit script's whitespace-flexible anchor, matching the eleventh `shared` entry to insert the two
+  new ones after it, dropped the entry's trailing newline from the match, so the inserted YAML began on
+  the same line as the old entry's closing bracket and `--check` refused the file; fixed by hand, and
+  the rule in `memory.md` now says an `after` insertion of YAML entries must start with its own newline.
+- The §§ 23 and 24 Schopenhauer nodes carried, since 2026-10-19, a `shares_premise_with` link on time
+  in their front matter that their prose did not describe (the § 24 body spoke of "the link" on space
+  only); nothing enforces that agreement, and the run that set the link did not write it. Both bodies
+  now name both links and both pages.
+- `memory.md` overshot the cap by about 180 words before today's rules were in and was brought under it
+  by compressing six blocks (Step 6).
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The one-page item `memory.md` carried from
+run 22 is done. What remains before a fourth thinker is Phase 2's first filing or the owner's word
+(Ask 10); the content runs meanwhile take the gaps the pages list: the Anhang's theorems on time; the
+chapter on phenomena and noumena beyond its opening; the resolution beyond A 541 and section III's
+two unheld paragraphs; § 2's and § 55's unclaimed sentences only if a row asks after them.
+
+**Step 6.** `memory.md` updated in place, 7,982 of 8,000 words: the run-23 state, the row-5 cell, the
+twelfth shared premise, the A 539 and A 540 page ends, the review's rules, the YAML lesson. Compressed:
+the run-22 Kant block, the *Sources* paragraph, the filing-route paragraph (its handling list is in
+`MODEL.md`), the JGB 19 and the whole Nietzsche claims block, the model-as-applied paragraph, the Phase 0
+line and the cloud-tooling paragraph. Dropped: the done item from *Next*; the detail named, all of it in
+the changelog entries of 10-12 to 10-28, in `MODEL.md` or on the nodes.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-10-30; first, if `INBOX.md` has an entry,
+the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows;
+otherwise a content run on a gap the pages list, through the adversarial pass, with a quote on
+every new cell claim, and, on a Kant span, the A pages checked on wikisource before writing.
+
+**Effort.** About 265,000 of the 300,000-token ceiling in this session plus about 179,000 in the
+adversarial agent: two fifths on reading the governing files, the memory, the last entry and the two
+pages' rows and paragraphs; a fifth on the page and the nodes; the rest on the wait, the fixes, the
+memory compression, which took five passes, and the records. Nothing spent.
+
 ## 2026-10-28 — run 22: the first page's row on the division filled from Kant's resolution of the third antinomy and preface, appearances as mere representations that must have grounds that are not appearances, and the eleventh shared premise, an appearance is a representation and nothing more
 
 Twenty-second scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
