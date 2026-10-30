@@ -15,7 +15,7 @@ disputes: []
 depends_on: []
 supports: []
 attacked_by: []
-replies_to: [c-kant-things-in-themselves-thinkable-not-knowable]
+replies_to: [c-kant-things-in-themselves-thinkable-not-knowable, c-kant-concept-of-a-noumenon-not-contradictory]
 shares_premise_with: []
 produced_by: claude-fable-5-1, 2026-10-09
 ---
@@ -31,3 +31,5 @@ includes a contradictio in adjecto cannot be consistently thought, so the statem
 denies what the target states. No sentence of the aphorism names Kant or a passage of
 his, and the sentence gives no ground; the link rests on the words »Ding an sich« alone,
 and the map says so.
+
+Since 2026-10-30 the same claim is set also as an attack on Kant's [c-kant-concept-of-a-noumenon-not-contradictory](../../c/kant-concept-of-a-noumenon-not-contradictory/), the sentence at A 254 / B 310 that the concept of a noumenon, a thing to be thought as a thing in itself, »ist gar nicht widersprechend«: there the target states in its own words the absence of the contradiction this sentence asserts, so the denial needs no step; as before, no sentence of the aphorism names Kant, and the link rests on the words »Ding an sich«.

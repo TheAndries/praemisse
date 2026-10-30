@@ -24,7 +24,6 @@ als die lediglich in der Sinnenwelt angetroffen wird, unabhängig und frei« is 
 »independent of all natural necessity, such as is found only in the world of sense, and free
 in its actions«, the »als die« clause qualifying the necessity, »in seinen Handlungen«
 moved to the end. »erkannt wäre« is »were cognized«, kept apart from »gekannt«. »Noumenon«
-is the text's word, and the map's other Kant sentence on it is B 307
-([c-kant-noumenon-negative-only](../../c/kant-noumenon-negative-only/)). »derselben« in »in
+is the text's word, and the map's other Kant sentences on it are B 307 ([c-kant-noumenon-negative-only](../../c/kant-noumenon-negative-only/)) and, since 2026-10-30, the two paragraphs at A 254–256 / B 310–312 ([c-kant-concept-of-a-noumenon-not-contradictory](../../c/kant-concept-of-a-noumenon-not-contradictory/) and the claims set with it). »derselben« in »in
 derselben« binds to »Sinnenwelt«. The word »Wille« does not occur in this section; its
 subject is »dieses Subject«, »dieses thätige Wesen«, and its »Handlungen«.

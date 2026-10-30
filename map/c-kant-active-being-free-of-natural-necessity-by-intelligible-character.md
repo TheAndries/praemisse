@@ -36,6 +36,4 @@ map's reading, said on the page. The subject's other side is
 [c-kant-actions-explicable-by-laws-of-nature-by-empirical-character](../../c/kant-actions-explicable-by-laws-of-nature-by-empirical-character/),
 and the sentence that joins the two is
 [c-kant-freedom-and-nature-together-in-the-same-actions](../../c/kant-freedom-and-nature-together-in-the-same-actions/).
-»Noumenon« is the text's word; the map's other Kant sentence on it is B 307
-([c-kant-noumenon-negative-only](../../c/kant-noumenon-negative-only/)), and the map does not
-say how the two uses relate.
+»Noumenon« is the text's word; the map's other Kant sentences on it are B 307 ([c-kant-noumenon-negative-only](../../c/kant-noumenon-negative-only/)) and, since 2026-10-30, the two paragraphs at A 254–256 / B 310–312 ([c-kant-concept-of-a-noumenon-not-contradictory](../../c/kant-concept-of-a-noumenon-not-contradictory/) and the claims set with it), and the map does not say how the uses relate.

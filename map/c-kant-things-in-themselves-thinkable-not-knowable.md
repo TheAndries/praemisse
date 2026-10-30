@@ -46,3 +46,5 @@ themselves are the same objects considered in two ways, and the
 [two-object reading](../../r/kant-two-object/), on which things in themselves are distinct
 entities that ground the appearances. Each lists the passages it rests on and what depends
 on it.
+
+Since 2026-10-30 the map holds the two paragraphs of the chapter on phenomena and noumena at A 254–256 / B 310–312, where the concept of a thing to be thought as a thing in itself is said to be »gar nicht widersprechend« ([c-kant-concept-of-a-noumenon-not-contradictory](../../c/kant-concept-of-a-noumenon-not-contradictory/)) and the understanding to think things in themselves »nur unter dem Namen eines unbekannten Etwas« ([c-kant-understanding-calls-things-in-themselves-noumena-and-thinks-them-only-as-an-unknown-something](../../c/kant-understanding-calls-things-in-themselves-noumena-and-thinks-them-only-as-an-unknown-something/)); the fit of their »denken« and »erkennen« with this sentence's is the map's reading, drawn by no connective across the two texts, and no link is set. JGB 16's attack on this claim is set since that day also on the first of them, where its words meet the target's without a step.
