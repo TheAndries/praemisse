@@ -2,6 +2,222 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-11-01 — run 25: the close of Kant's chapter on phenomena and noumena, A 258–260 / B 313–315, the understanding representing objects as they are only in an empirical sense, what objects may be as objects of the pure understanding remaining unknown, understanding and sensibility determining objects only in combination, and the concept of merely intelligible objects empty of all principles of its application
+
+Twenty-fifth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 24; `origin/main` stood at run 24's commit when it began, the container's checkout detached
+at the same commit; nothing arrived in between.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 6 new (2 passages, 4 claims), 6 revised (four in their bodies, two also in a link or a quote block), the first page touched in two rows, one shared entry and seven places of its prose.**
+The plan's next content item was the gap `memory.md` carried from run 24 that continues the
+source the run before it opened: the chapter on phenomena and noumena's close, from 3:212.28 to
+its end (A 256–260 / B 312–315), named in the first page's list of what the map does not yet
+contain since 2026-10-30. Of its three paragraphs, the two last were taken from korpora.org's
+Akademie text (AA III 213–214) as two passages, each a paragraph whole:
+`p-krv-a258-b313-314-understanding-and-sensibility-determine-objects-only-in-combination`
+(3:213.22–36, four sentences) and
+`p-krv-a258-260-b314-315-concept-of-purely-intelligible-objects-empty-of-all-principles-of-its-application`
+(3:213.37–214.28, seven sentences); the first paragraph of the close, on the moderns' use of
+the terms *mundus sensibilis* and *intelligibilis* (3:212.28–213.21, A 256–257 / B 312–313),
+was left in no passage. The 1781 pages A 256–260 were read on wikisource before anything was
+written: the first paragraph taken stands whole on A 258, which opens with it (A 257 ends
+»beantwortet haben«, catchword »Wenn«); the second begins on A 258, which ends at »oder nur die
+Einheit«, runs over A 259, which ends at »einzuschränken,« with the catchword »ohne«, and
+closes on A 260, where the Anhang on the amphiboly begins; the B pages are the concordance's
+and unverified. The 1781 text differs in one word, »die empirische Grundsätze« for »die
+empirischen Grundsätze«, and in punctuation, six added commas in the first paragraph's first
+sentence and, in the second paragraph, a comma, a colon and a semicolon turned comma, listed
+sentence by sentence on the passages; the Akademie text, as korpora renders it, sets nothing in
+either paragraph in another face, and the words wikisource bolds (»wie sie erscheinen,«, »wie
+sie sind,«, »Verstand«, »Sinnlichkeit«, »nur in Verbindung«) are named.
+
+*The four claims, all `draft`, each with its quote.* From the first paragraph: its first
+sentence, that if we say »die Sinne stellen uns die Gegenstände vor, wie sie erscheinen, der
+Verstand aber, wie sie sind«, the latter »ist ... nicht in transscendentaler, sondern bloß
+empirischer Bedeutung zu nehmen«, a conditional on a saying, kept conditional, its opening
+»denn also« dropped and named; its second, the ground by »Denn« (3:213.29), that what objects
+may be »außer der Beziehung auf mögliche Erfahrung ... mithin als Gegenstände des reinen
+Verstandes« »wird uns immer unbekannt bleiben, so gar, daß es auch unbekannt bleibt, ob eine
+solche transscendentale (außerordentliche) Erkenntniß überall möglich sei«, the »dieses«
+resolved by name, the first claim set to `depends_on` this one by the connective, the one link
+of the day; its third and fourth together, »Verstand und Sinnlichkeit können bei uns nur in
+Verbindung Gegenstände bestimmen«, and apart they leave »Vorstellungen, die wir auf keinen
+bestimmten Gegenstand beziehen können«. From the second paragraph its last sentence, »So ist
+denn der Begriff reiner, bloß intelligibeler Gegenstände gänzlich leer von allen Grundsätzen
+ihrer Anwendung«, the problematic thought of them serving »nur wie ein leerer Raum, die
+empirischen Grundsätze einzuschränken«, the »So ... denn« dropped and said to draw from the
+six sentences before it, a challenge, two questions and a verdict in the passage and in no
+claim, so that no `depends_on` is set. Terms: »Bedeutung« "sense" as at B 308–309, »Sinne
+überhaupt« "the senses in general", »überall möglich« "possible at all" as at B 311, »so gar,
+daß« "so much so that", »zum wenigsten« "at least", »bei uns« "in our case", »ersinnen«
+"devise", »aufweisen« "exhibit" kept apart from »nachweisen« "show", »Behauptung« "assertion",
+»Satz« "proposition" and »Grundsatz« "principle" kept apart; »der letzteren« resolved as the
+empirical principles. No claim names the thing in itself by Kant's term: the first two say
+»Gegenstände des reinen Verstandes« and the fourth »bloß intelligibeler Gegenstände«, and the
+nodes say the map supplies no term, the identification of the fourth's objects with the
+paragraph's own »(Noumena)« being the map's reading of the paragraph's words.
+
+*The links.* One `depends_on`, above, with its converse, and, after the review, one shared
+premise: the B 314 claim entered with the Anhang's first sentence under the premise that things
+cannot be cognized as they may be in themselves, in a second entry beside A 42 / B 59's, the
+bridge from »außer der Beziehung auf ... Sinne überhaupt« to »an sich« being Kant's own »und« at
+A 42 / B 59, the map's step, open to dispute. No attack: the first claim is a conditional on a
+saying whose consequent is a prescription and by the convention shares and denies nothing; § 22's immediate cognition does not
+deny it, since the sentence leaves unknown a cognition »unter unseren gewöhnlichen Kategorien«
+and no passage says Schopenhauer's is one; JGB 16's »"absolute Erkenntniss"«, GD Vernunft 6's
+»absolut unnachweisbar« and Fabel stage 4's »unbekannt« are named with why no link; the third
+names § 19's »Anschauung« as the nearest Schopenhauer word and the Anhang's critique of the
+categories as not in the map; the fourth parallels B 310–311's limiting concept (»einschränken«,
+»Sphäre« for »Umfang«) with no connective and no link, and Fabel stage 5's useless idea would
+need the identification the map refused on 2026-10-30.
+
+*The page.* `x-thing-in-itself`: the second and fourth claims appended to the Kant cell of the
+row on what can be said, by the criterion of 2026-10-30, and the first to the Kant cell of the
+row on the division, for what it says the distinction between how objects appear and how they
+are is and is not, the row's first question; the third set in no cell, since its sentences name
+neither the thing in itself nor a noumenon, and named in the notes and under *What the three
+say* as the general sentence of which the chapter's sentences on the one concept without an
+intuition are the particular, the map's reading with no link. The quotations are under *What
+the three say* and, for the first claim, in a new paragraph under *On what the division is*,
+which sets it beside B 311's division sentence and says that whether the chapter's »positiver
+Bedeutung« and »transscendentaler ... Bedeutung« name one sense no connective says. The
+paragraph on the premise that things cannot be cognized as they may be in themselves names the
+second claim as the nearest Kant sentence not entered, with the reason. The gaps list now holds
+the chapter beyond its opening in three parts, B 307–309, the two paragraphs of 2026-10-30 and
+the two of today, counts the two paragraphs' eleven sentences, five in four claims, says which
+of the last paragraph's six unclaimed sentences pass the row's criterion (the fourth to sixth,
+left by this run's choice) and which do not (the first to third), and names the paragraph
+between as in no passage; the two passages are in `passages:`; the closing paragraph is dated.
+The status note is unchanged, its clause on cells added since 2026-10-10 covering today's. After the review, Prolegomena § 57's claim that it would be absurd
+to lay claim to the least cognition of a thing assumed not to be an object of possible
+experience, in the map since 2026-10-07 and in no row of either comparison, is set in the row on
+what can be said by the same criterion, with a quote block. Four
+existing nodes carry a dated sentence: the B 311–312 passage, whose sentence that the chapter
+from 3:212.28 to its end is in no passage was true until today; B 307's negative-sense claim
+(the chapter's »immer unbekannt« and the empty concept, no link); and the A 541 passage and
+claim, whose sentence listing the map's other Kant sentences with »Noumenon« gains the last
+paragraph's fourth sentence. README counts 301 nodes (3 thinkers, 5 works, 87 passages, 186
+claims, 14 arguments, 4 readings, 2 comparisons), as `--check` does. No argument was
+formalized.
+
+**The adversarial pass, and what it found.** A second agent was given the six new nodes, the
+diff, the korpora pages AA III 212–214 and the wikisource transcriptions of A 256–261, the rendered
+build, the conventions and the distilled rules, with the brief to re-extract both originals and
+verify every AA line, the 1781 collation comma by comma, the page ends and the emphasis notes,
+every translation qualifier and resolution, every statement's mode, the one link's direction and
+every link refused by grep over the other thinkers' statements, the placements by one criterion
+against every Kant claim already on the page and the unclaimed sentences, every »...« on the page
+and in the bodies, the accretion sweep, front matter against prose and the rendered pages. It
+confirmed both originals character for character, all eleven line ranges, every collation variant
+and that none was missed, the emphasis notes, the paragraph starts, the dates, the counts, the
+rendered cells and dependency lists, and returned 17 findings, 1 serious, 9 moderate, 7 minor,
+and eleven judgements; all 17 accepted and changed before commit, and one judgement taken against
+the run's first decision.
+- *Serious, 1.* The last paragraph's passage said in one breath that 3:212.28–213.21 is in no
+  passage and that the chapter's text from 3:211.15 to its end is in the map; the second half
+  now excepts that paragraph.
+- *Moderate, 9.* B xxvii quoted as »die Unterscheidung ...« where »die« and »Unterscheidung« are
+  four words apart (the pre-review grep had passed it, the pieces being substrings): the article
+  dropped. Text in no passage quoted in guillemets twice (A 257's close, 3:213.16's »bloß
+  intelligibel«): referred to without them. »ihrer Anwendung«, a genitive plural, rendered "its
+  application" with no note: the resolution named on passage and claim, with the candidates
+  (»Gegenstände«, the paragraph's »Kategorien«), the map's, open to dispute. The refusal to enter
+  the B 314 claim under the premise that things cannot be cognized as they may be in themselves
+  rested on its lacking »an sich«, while the entered Kant statement itself, A 42 / B 59, joins
+  »an sich« by »und« to »abgesondert von aller dieser Receptivität unserer Sinnlichkeit«, the very
+  phrase B 314 has as »außer der Beziehung auf ... Sinne überhaupt«; the reviewer's preferred fix
+  taken, the claim entered in a second entry under the premise, the bridge named as Kant's own
+  apposition and the map's step, open to dispute, on the node, the Schopenhauer node and the
+  page. "A conditional whose antecedent Kant does not assert" characterized Kant without a
+  passage; the no-link verdict now rests on the consequent's form, a prescription, »ist ... zu
+  nehmen«, with "in no passage in the map asserted as Kant's own", on node and page. The B 314
+  claim said the map supplies no term where the B 315 claim gave the identification with the
+  chapter's noumena as the map's reading: now both do. The criterion that set the two was not
+  applied to the older Kant claims on the page, and Prolegomena § 57's »würde es Ungereimtheit
+  sein ... nur auf das mindeste Erkenntniß Anspruch machten, es ... wie es an sich selbst ist, zu
+  bestimmen«, in the map since 2026-10-07 and in no row of either comparison, passes it: set in
+  the row on what can be said, with a quote block added, a dated sentence on the node and the
+  quotation under *What the three say*. The row-4 note dropped »zum wenigsten als eine solche,
+  die unter unseren gewöhnlichen Kategorien steht«: restored. "The nearest sentences are these"
+  had not grepped § 19's »Außer dem Willen und der Vorstellung ist uns gar nichts bekannt, noch
+  denkbar« (the reviewer placed the sentence in § 18; its passage is § 19's, and the run's first
+  fix quoted it from memory, wrongly, before the grep caught it), § 24's inner nature, Prolegomena § 57,
+  JGB 21's »reiner Begriffe« and three Kant claims on »Grundsätze«: each named with why no link.
+- *Minor, 7, all changed:* A 258 ends inside the word, Ein-|heit, catchword »heit«, where the run
+  had read the transcription's completed word as the page's end; an invented rule on the B 314
+  no-row claim ("the map does not set a cell on a sentence for what its neighbours say") replaced
+  by the convention memory records; »das letztere« named as the other neuter candidate for
+  »dieses«; »gar keine ... Verwandtschaft« now "no ... kinship at all", »dieser« named as resolved
+  to the concept, »demnach« "accordingly", the B 314 title's "even whether" made the statement's
+  "also"; two wordings on the page (whose »Denn«; which paragraph); a space before a comma in two
+  revised bodies; the B 313 claim's node now says why it fails the row-4 criterion.
+- *Judgements, eleven:* the link's direction, the three placements, the no-row claim, the
+  unclaimed sentences' sorting, »der letzteren«, »dieses«, and five renderings all in the
+  direction taken; the shared-premise refusal and the "does not assert" wording against it, both
+  changed as above.
+The pass cost about 189,000 tokens of the agent's own and took seventeen minutes. New kinds today:
+a coverage sentence contradicting its own node; a quotation that passes the substring grep because
+each piece is a substring; a placement criterion applied to the new claims and not to the
+thinker's older claims on the page (the run-23 rule, broken again); a refusal reasoned from a word
+the entered statement itself glosses. All in `memory.md`.
+
+**What else was wrong and why.**
+- Two quotations in the new claim bodies were written from memory before being grepped,
+  B xxvii's distinction sentence with two commas the text does not have and B 307's
+  »Möglichkeit nicht einsehen« as a »deren« clause where the text has »von welcher wir auch«;
+  the guillemet grep over every new and edited body, run before the review as the rule of
+  2026-10-30 asks, caught both, and they were corrected before the review. The grep also flags
+  lemma glosses (»beziehen auf«, »aufweisen«), which are no quotations and were left.
+- The first memory edit overshot the cap (8,045 words) and was brought under it by compressing
+  the run-17 to run-24 Kant blocks, four Nietzsche parentheses, the row-5 history and the will
+  page's freedom paragraph (Step 6).
+- The container's checkout began detached at `origin/main`'s commit; `main` was checked out
+  before anything was written.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+- The review-fix script asserted on a no-op pair and then on the YAML anchor of the shared
+  entry, whose premise is quoted; the node half had been written when the page half failed, so
+  the page half was rerun alone.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The chapter on phenomena and noumena
+is now held from 3:211.15 to its end, with 3:210.35–211.14 and 3:212.28–213.21 in no passage.
+What remains before a fourth thinker is Phase 2's first filing or the owner's word (Ask 10); the
+content runs meanwhile take the gaps the pages list: the Anhang's theorems on time; the two
+unheld stretches of the chapter, the second of which closes with the sentence that the question
+of a transcendental use of the understanding reaching the noumenon has been answered in the
+negative, a candidate for the row on what can be said; the resolution beyond A 541 and section
+III's two unheld paragraphs; Prolegomena §§ 58–59.
+
+**Step 6.** `memory.md` updated in place, under 8,000 words: the run-25 state, the two passages
+and four claims with their terms and placements, the gaps now left in the chapter, the review's
+rules, the pre-review grep as a fixed step. Compressed: the run-17, run-21, run-22, run-13 and
+run-24 Kant blocks, four Nietzsche parentheses, the row-5 history, the will page's freedom
+paragraph. Dropped: those blocks' per-claim parentheses, term lists and unclaimed-sentence
+lists, the quotations beyond the load-bearing words, the A 26 / B 42 quotation and reading in
+the row-5 history, the freedom paragraph's sentence pairs, the done items from *Next*; all in the
+changelog entries of 10-19 to 10-31 or on the nodes.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-11-02; first, if `INBOX.md` has an entry,
+the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows;
+otherwise a content run on a gap the pages list, through the adversarial pass, with a quote on
+every new cell claim, and, on a Kant span, the A pages checked on wikisource before writing.
+
+**Effort.** About 230,000 of the 300,000-token ceiling in this session plus about 189,000 in the
+adversarial agent: a third on reading the governing files, the memory, the last three entries and
+the page; a quarter on the sources, the six nodes and the page; the rest on the wait, the 17 fixes,
+the memory compression, which took four passes, and the records. Nothing spent.
+
 ## 2026-10-30 — run 24: Kant's chapter on phenomena and noumena at A 254–256 / B 310–312, the concept of a noumenon not contradictory, necessary, its possibility not to be seen, a limiting concept of negative use, the division into phenomena and noumena not admissible in a positive sense, and the understanding thinking things in themselves only under the name of an unknown something
 
 Twenty-fourth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

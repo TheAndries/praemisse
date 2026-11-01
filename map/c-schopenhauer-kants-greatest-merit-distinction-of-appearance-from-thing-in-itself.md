@@ -16,7 +16,7 @@ depends_on: []
 supports: []
 attacked_by: []
 replies_to: []
-shares_premise_with: [c-kant-things-in-themselves-unknown]
+shares_premise_with: [c-kant-things-in-themselves-unknown, c-kant-what-objects-may-be-as-objects-of-the-pure-understanding-remains-unknown]
 produced_by: claude-fable-5-1, 2026-10-14
 ---
 The first sentence of the appendix. It does three things in one sentence, and the statement
@@ -36,7 +36,11 @@ say it was shown, and the map reads the one as it reads the other
 ([c-schopenhauer-kant-showed-laws-of-experience-not-applicable-to-derive-existence](../../c/schopenhauer-kant-showed-laws-of-experience-not-applicable-to-derive-existence/)),
 so both statements assert that things cannot be cognized as they may be in themselves; the
 comparison names the pair under that premise. A reader who holds that a sentence praising a
-doctrine for its ground does not assert the ground may dispute the link. The same sentence stands at the head of the comparison's row on what can be said of
+doctrine for its ground does not assert the ground may dispute the link. Since 2026-11-01 the same link is set with a second Kant claim, A 258 / B 314's, that what objects may be
+apart from relation to possible experience, as objects of the pure understanding, will always remain
+unknown to us ([c-kant-what-objects-may-be-as-objects-of-the-pure-understanding-remains-unknown](../../c/kant-what-objects-may-be-as-objects-of-the-pure-understanding-remains-unknown/)), a second entry under the same premise on the page, the bridge from
+»außer der Beziehung auf ... Sinne überhaupt« to »an sich« being Kant's own »und« at A 42 / B 59, said there
+and on the page. The same sentence stands at the head of the comparison's row on what can be said of
 the thing in itself ([x-thing-in-itself](../../x/thing-in-itself/)). The attack this appendix makes on Kant's
 derivation ([c-schopenhauer-kant-derivation-cannot-reach-thing-in-itself](../../c/schopenhauer-kant-derivation-cannot-reach-thing-in-itself/)) comes twenty
 pages later and leaves this merit standing, as
