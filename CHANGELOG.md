@@ -200,6 +200,8 @@ for two. All in `memory.md`.
   commit stood on the next line of the same call, unchained, so it ran. Nothing in that commit is
   wrong, the memory it carries was 43 words over the cap, and this commit completes the run; the
   rule, never put the commit in the same call as a script that may assert, is in `memory.md`.
+  The second commit, `8dab245`, broke the same rule once more and carried `memory.md` at 8,029
+  words; a third commit, the run's last, brings it to 7,990 and adds this sentence.
 - The transcription of A 256 ended in the catchword »ten«, which the run first read as the
   completed word »Alten« until the rule of 2026-11-01 on tails (Ein-|heit) sent it to the scan;
   the scan then showed what the transcription had only implied, that the 1781 page carries no
