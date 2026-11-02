@@ -18,7 +18,7 @@ from »Die Eintheilung der Gegenstände« to »zu denken« (AA 3:212.03–27): t
 3:212.21–24, the sixth 3:212.24–27. The text stands in both editions, with the variants below:
 the 1781 page A 255 ends at »daß unsere Categorien,« with the catchword »(wel-«, so the second
 sentence straddles the page break at »Kategorien | (welche«, and the rest of the paragraph is on
-A 256, which runs on into the paragraph after this one, on the moderns' use of the Latin terms for a world of sense and a world of understanding, in no passage. The B pages, 311–312, are given from the
+A 256, which runs on into the paragraph after this one, on the moderns' use of the Latin terms for a world of sense and a world of understanding, in the map since 2026-11-02 ([p-krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative](../../p/krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative/)). The B pages, 311–312, are given from the
 standard concordance and are not verified. The AA line is the locator.
 
 **The 1781 text, collated on wikisource's page-by-page transcription of the scan.** One

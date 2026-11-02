@@ -16,7 +16,7 @@ der Unterscheidung aller Gegenstände überhaupt in Phaenomena und Noumena*, fro
 also sagen« to »beziehen können« (AA 3:213.22–36): the first sentence 3:213.22–29, the second
 3:213.29–32, the third 3:213.32–33, the fourth 3:213.33–36. The text stands in both editions.
 The whole paragraph is on the 1781 page A 258, which opens with it: the page before, A 257,
-ends with the words beantwortet haben, the close of the chapter's sentence that the question of a transcendental use of the understanding has been answered in the negative, with the catchword »Wenn«, and A 258
+ends with the words »beantwortet haben«, the close of the chapter's sentence that the question of a transcendental use of the understanding has been answered in the negative, in the map since 2026-11-02 ([p-krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative](../../p/krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative/)), with the catchword »Wenn«, and A 258
 runs on into [the paragraph after this one](../../p/krv-a258-260-b314-315-concept-of-purely-intelligible-objects-empty-of-all-principles-of-its-application/),
 the chapter's last. The B pages, 313–314, are given from the standard concordance and are not
 verified. The AA line is the locator.
@@ -55,5 +55,5 @@ since they name neither the thing in itself nor a noumenon. The paragraph before
 (3:212.28–213.21, A 256–257 / B 312–313), on the moderns' use of the terms *mundus sensibilis*
 and *intelligibilis*, with its footnote, and on the question whether a transcendental use of
 the understanding that reaches the noumenon as an object is possible, which the chapter says
-it has answered in the negative, is in no passage; between the map's B 308–309 (3:210.24–34)
+it has answered in the negative, was in no passage until 2026-11-02 and is in the map since then ([p-krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative](../../p/krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative/), with [p-krv-b312-footnote](../../p/krv-b312-footnote/)); between the map's B 308–309 (3:210.24–34)
 and the paragraph at A 254–255 / B 310–311, 3:210.35–211.14 is in no passage.

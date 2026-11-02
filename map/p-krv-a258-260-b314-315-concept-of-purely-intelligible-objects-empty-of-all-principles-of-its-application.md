@@ -74,6 +74,4 @@ the understanding, which say what cannot be said of things in themselves, the cr
 row on what can be said, and are left in the passage and in no claim by this run's choice, the
 fourth and fifth asserting in the form of questions, named so in that page's list of what the
 map does not yet contain. The paragraph before the one before this (3:212.28–213.21, A 256–257 /
-B 312–313), on the moderns' use of the terms *mundus sensibilis* and *intelligibilis*, is in no
-passage; with this paragraph the chapter's text from 3:211.15 to its end is in the map except that
-paragraph, 3:212.28–213.21.
+B 312–313), on the moderns' use of the terms *mundus sensibilis* and *intelligibilis*, was in no passage until 2026-11-02 and is in the map since then ([p-krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative](../../p/krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative/)), with its footnote at B 312 ([p-krv-b312-footnote](../../p/krv-b312-footnote/)); since that day the chapter's text from 3:211.15 to its end is in the map.

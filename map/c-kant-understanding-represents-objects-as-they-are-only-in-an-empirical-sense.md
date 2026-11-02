@@ -24,7 +24,7 @@ paragraph. The sentence is a conditional whose antecedent is a saying, »Wenn wi
 sagen«, and whose consequent prescribes how the saying's second half is to be taken, »ist ... zu
 nehmen«; the statement keeps both the conditional and the prescription, and drops the sentence's
 opening connectives »denn also«, which draw the sentence from the paragraph before it
-(3:212.28–213.21, in no passage), so that it reads alone; the body names the drop here. The
+(3:212.28–213.21, in the map since 2026-11-02, [p-krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative](../../p/krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative/)), so that it reads alone; the body names the drop here. The
 sentence does not assert that the understanding represents objects as they are, and the
 statement does not either. »Bedeutung« is "sense", as the map renders it at B 308–309 (»nur in
 negativer Bedeutung«); »das letztere« "the latter", in English as in the German the second of

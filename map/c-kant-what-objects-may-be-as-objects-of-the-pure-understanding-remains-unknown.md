@@ -33,8 +33,7 @@ cognition of objects as objects of the pure understanding, which the sentence ca
 The sentence says what remains unknown and what the understanding's »wie sie sind« therefore
 cannot mean; it says »Gegenstände des reinen Verstandes« and not »Ding an sich« or »Noumenon«, and
 that these objects are what the chapter calls noumena, things thought as given to the understanding
-alone and not to the senses (the chapter's paragraph before this one, 3:213.15–17, in no passage;
-B 307 and B 310 in the map), is the map's reading, open to dispute, as it is for the last
+alone and not to the senses (the chapter's paragraph before this one, 3:213.15–17, in the map since 2026-11-02, [c-kant-object-taken-as-noumenon-when-thought-as-in-itself-merely-intelligible](../../c/kant-object-taken-as-noumenon-when-thought-as-in-itself-merely-intelligible/); B 307 and B 310 in the map), is the map's reading, open to dispute, as it is for the last
 paragraph's »bloß intelligibeler Gegenstände«.
 
 The sentence is the ground, by its »Denn« (3:213.29), of the sentence before it, which the map
