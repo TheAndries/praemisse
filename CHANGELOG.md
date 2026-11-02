@@ -2,6 +2,255 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-11-02 — run 26: the paragraph of Kant's chapter on phenomena and noumena between B 312 and B 313, the moderns' use of the terms mundus sensibilis and intelligibilis, the sense in which an object is taken as noumenon, the question of a transcendental use of the understanding answered in the negative, and Kant's footnote at B 312 on the terms intellectual and intelligible
+
+Twenty-sixth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 25; `origin/main` stood at run 25's commit when it began, one ahead of the container's
+detached checkout, which was fast-forwarded before anything was written; nothing arrived in
+between.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 5 new (2 passages, 3 claims), 9 revised in their bodies, the first page touched in two rows, its passage list and five places of its prose, no link set.**
+The plan's next content item was the gap both the first page and `memory.md` named first since
+2026-11-01: the one paragraph of the chapter on phenomena and noumena still in no passage
+between B 310 and the chapter's end, the paragraph on the moderns' use of the terms *mundus
+sensibilis* and *intelligibilis*, closing with the sentence that the question of a transcendental
+use of the understanding reaching the noumenon as an object has been answered in the negative, a
+candidate for the row on what can be said. It was taken from korpora.org's Akademie text (AA III
+212–213) as one passage whole,
+`p-krv-a256-257-b312-313-the-moderns-use-of-mundus-sensibilis-and-intelligibilis-and-the-question-answered-in-the-negative`
+(3:212.28–213.21, six sentences by full stop and question mark, the fifth's semicolon joining two
+halves), and Kant's footnote, whose mark stands in its first sentence after »intelligibilis,«
+(3:212.29), as a second passage on the model of the footnote at B xxvi, `p-krv-b312-footnote`
+(two sentences, five printed lines, cited by the page of its mark). The 1781 pages were read
+before anything was written, A 257 on wikisource's transcription and A 256 on the scan of the
+page itself, after the transcription's catchword »ten« made the page's end suspect: A 256 ends
+inside the first sentence's »Alten«, Al-|ten, as A 258 ends inside »Einheit« (run 25), and A 257
+ends with the paragraph at »beantwortet haben«, catchword »Wenn«. The scan settled a second
+thing the transcription only suggested: the 1781 page carries neither a footnote mark after
+»intelligibilis,« nor any note at its foot, and the transcription of A 257 carries none, so the
+map holds the note as the second edition's and says so on both passages, the three nodes that
+cite it and the page. The 1781 text differs in no word; five comma variants are listed sentence
+by sentence (a comma after »nichts« in the first, after »dagegen« and none after »Welt« in the
+third, after »dadurch« in the fourth, the semicolon a comma and a comma after »allein« in the
+fifth), and the orthography named and not listed; the transcription marks nothing as emphasized
+and sets the Latin terms in antiqua, and the Akademie text sets »mundi sensibilis« and
+»intelligibilis« in another face, the tag spaces normalized.
+
+*The three claims, all `draft`, each with its quote.* From the paragraph's fifth sentence,
+one claim with its three parts in the text's order: that in regard to appearances understanding
+and reason »läßt sich allerdings ... brauchen«; that the question is whether they still have
+»einigen Gebrauch« when the object is not appearance, »(Noumenon)«, kept as a question; and that
+»in diesem Sinne nimmt man ihn, wenn er an sich als bloß intelligibel, d. i. dem Verstande
+allein und gar nicht den Sinnen gegeben, gedacht wird«, the mode »gedacht wird« kept
+(`c-kant-object-taken-as-noumenon-when-thought-as-in-itself-merely-intelligible`). From the
+sixth, the question »ob außer jenem empirischen Gebrauche des Verstandes ... noch ein
+transscendentaler möglich sei, der auf das Noumenon als einen Gegenstand gehe, welche Frage wir
+verneinend beantwortet haben«, the »also« dropped, »jenem empirischen Gebrauche« resolved as the
+fifth sentence's use in regard to appearances, the text's »wir« kept, and the node saying that
+reading a sentence which reports its author's answer as given as asserting that answer is the
+map's reading, open to dispute
+(`c-kant-question-of-a-transcendental-use-of-the-understanding-reaching-the-noumenon-answered-in-the-negative`).
+From the footnote's second sentence, the prescription »müssen (unerachtet der Härte des Lauts)
+intelligibel oder sensibel heißen« of what can only be an object of the one or the other kind
+of intuition, its »aber« dropped and named, the first sentence's ban on the expression of an
+intellectual world and its ground, »denn intellectuell oder sensitiv sind nur die
+Erkenntnisse«, in the passage and in no claim and named on the claim
+(`c-kant-objects-of-one-or-the-other-kind-of-intuition-must-be-called-intelligible-or-sensible`).
+The paragraph's first four sentences, on the moderns' usage, the two astronomies and such a
+twisting of words as »eine bloße sophistische Ausflucht«, are in the passage and in no claim:
+they speak of a use of words and of what it evades, name no noumenon in the chapter's sense,
+and say nothing of what can be said of the thing in itself or of what divides it from
+appearance, so fall outside both rows' criteria, said on the passage and in the gaps list.
+Terms: »Wortkrämerei« "word-mongering", »Wortverdrehung« "twisting of words", »Ausflucht«
+"evasion", »Gemächlichkeit« "convenience", »freilich« "admittedly" kept apart from »allerdings«
+"certainly" as at B 311, »Inbegriff« "sum total" as in the B xxvi footnote, »Weltbau« "the
+structure of the world", »unerachtet« "notwithstanding", »Härte des Lauts« "harshness of the
+sound"; the subjunctives of the indirect question rendered by the indicative as on every Kant
+passage; »die erstere ... die zweite« "the former ... the second", the English order the
+German.
+
+*The links.* None set. The sixth sentence's claim names where the map holds the answer it
+reports, B 308–309's use of the categories reaching in no way beyond the limit of the objects
+of experience, and says that this is the answer is the map's reading, drawn by no connective
+that names the place, so no `depends_on`; it names, too, that B 314 two paragraphs on leaves
+unknown whether a transcendental cognition is possible at all where this sentence has the
+question of a transcendental use answered in the negative, the two in one row and not
+reconciled by the map, open to dispute. The fifth sentence's claim refuses to identify its
+sense of the noumenon with the positive sense B 311 refuses or with B 307's negative sense,
+each identification the map's; names A 538's »intelligibel«, of something in an object of the
+senses, and the footnote's, of objects by their kind of intuition, as uses the map does not
+relate; and names § 19's and § 25's »denkbar« (the sentence says how an object is taken when
+thought so, not what is thinkable), § 22's immediate cognition (the divergence on immediacy)
+and GD Vernunft 6's fourth proposition (a division of a world, where this names the sense of
+one object). The footnote's claim names B 311's division of concepts into sensible and
+intellectual, with no passage saying whether »Begriffe« fall under »Erkenntnisse«, and the
+other thinkers' »intelligibel«, which names a character or a freedom (§ 55, JGB 36, GD
+Irrthümer 8) and never objects by their kind of intuition; a prescription, by the convention,
+shares and denies nothing.
+
+*The page.* `x-thing-in-itself`: the sixth sentence's claim appended to the Kant cell of the row
+on what can be said, by the criterion of 2026-10-30, for what it says has been denied of the
+noumenon; the fifth sentence's and the footnote's appended to the Kant cell of the row on the
+division, the row's first question, the one for what its last clause says the object is taken
+as when it is not appearance, the other for what it says the division of objects into sensible
+and intelligible goes by. Both notes gain their sentences; the two passages join the page's list;
+under *What the three say* the sentence that the paragraph is in no passage gives way to its
+quotation, and the new paragraph under *On what the division is* sets the fifth sentence beside
+B 311 and B 307 and the footnote beside B 311's division of concepts, names the three places
+of »intelligibel« in the map's Kant passages as unrelated by the map, and says why neither a
+premise nor an attack is set against § 21 and GD Vernunft 2 and 6. The gaps list now says the
+paragraph is held, counts its six sentences, two in two claims, names the four and the
+footnote's first sentence as unclaimed with the reason, says that the chapter's text from
+3:211.15 to its end is in the map, and names, for the first time, a stretch no node had named:
+3:210.12–24, on B 308, from the sentence beginning *Wo diese Zeiteinheit* to the words
+*Noumenon in positiver Bedeutung*, between the map's B 307–308 (3:209.32–210.12) and B 308–309
+(3:210.24–34), in no passage; `memory.md` had carried "the rest of B 307–315 is held", which was
+false of those twelve lines since run 2 and is corrected. The closing paragraph is dated; the
+status note is unchanged, its clause on cells added since 2026-10-10 covering today's. Nine
+existing nodes carry a dated sentence: the three passages and two claims of runs 24 and 25 whose
+sentences said the paragraph was in no passage; the A 541 passage and claim, whose list of the
+map's other Kant sentences with »Noumenon« gains the paragraph's fifth and sixth; and B 307's
+negative-sense claim, which now names the sixth sentence as reporting an answer the map reads
+as its own, with no link. README counts 306 nodes (3 thinkers, 5 works, 89 passages, 189
+claims, 14 arguments, 4 readings, 2 comparisons), as `--check` does. No argument was
+formalized.
+
+**The adversarial pass, and what it found.** A second agent was given the five new nodes, the
+diff, the korpora pages AA III 210–213, the wikisource transcriptions of A 255–258 and the scan
+of A 256, the rendered build, the conventions and the distilled rules, with the brief to re-extract
+both originals and verify every AA line, the page ends and catchwords, the 1781 collation comma
+by comma, the footnote's absence from the 1781 pages and its line breaks, every translation
+qualifier and resolution, every statement's mode, every link refused by grep over the other
+statements, the placements by one criterion against every Kant claim on the page and the
+unclaimed sentences, every »...« on the page and in the bodies, the accretion sweep, front matter
+against prose and the rendered pages. It confirmed both originals character for character, all
+six line ranges, the page ends, every collation variant and that none was missed, the orthography
+list, the footnote's absence from A 256 on the scan and from A 257 on the transcription, the five
+printed lines, the quote blocks, the front matter, the build and the rendering, and returned 17
+findings, 1 serious, 8 moderate, 8 minor, and eight judgements; all 17 accepted and changed before
+commit, and one judgement, on the reason for leaving the paragraph's first four sentences
+unclaimed, taken against the run's first decision.
+- *Serious, 1.* The fifth sentence's claim refused links by grepping »denkbar« and »intelligibel«
+  and not the proposition: B 310's two claims in the row on what can be said, the concept of a
+  thing »welches gar nicht als Gegenstand der Sinne, sondern als ein Ding an sich selbst
+  (lediglich durch einen reinen Verstand) gedacht werden soll« and the possibility of such
+  noumena not to be seen, describe the noumenon in the sentence's own terms, thought by the pure
+  understanding alone and not as an object of the senses, and went unnamed; both now named on
+  the node and, in one clause, on the page, the identification the map's, with no link.
+- *Moderate, 8.* B 314's »immer unbekannt bleiben« placed "two paragraphs on" where it stands in
+  the paragraph after: corrected. The stretch named for the first time as in no passage, on
+  B 308, given as 3:210.12–23 where the words that close it stand on 3:210.24, the line on which
+  B 308–309 begins: 3:210.12–24 on both pages, both end lines shared with held passages. The
+  transcription's faces counted as four where it marks three, the sixth sentence's »Noumenon«
+  unmarked, and the scan claimed for a term on A 257, a page the run had read on the transcription
+  only: corrected. »auch noch einigen Gebrauch« rendered "still have any use" with the »auch«
+  absorbed and unnamed: named on passage and claim. The sixth sentence's claim named A 236 / B 295
+  and not its row-mate Prolegomena § 57, nor the Prolegomena's sentences on the restricted use of
+  reason: each named with why no link. The footnote's claim did not name B 307, which names one
+  thing by the kind of intuition of which it is or is not an object, the note's own criterion, nor
+  B xxviii's two kinds of representation: named, the identification the map's, no link. The
+  paragraph's first four sentences were left unclaimed by a term test, "name no noumenon in the
+  chapter's sense", where the second names »die Sinnenwelt« and »die Verstandeswelt«, the words
+  that set B 311 in the row on the division, and the first and fourth pass Kant's outright
+  verdict on that division; the reviewer's preferred reason taken, that the division the four
+  report and judge is the moderns' division of »den Inbegriff der Erscheinungen« into a world
+  intuited and a world thought under laws, a division within appearances and not the row's, so
+  that what they say that division is not is said of another division, written on the passage and
+  in the gaps list as the map's reading, open to dispute. "The thing »an sich«" claimed for a
+  sentence that says »er an sich« of the object: "the object »an sich«".
+- *Minor, 8, all changed:* "answers in the negative" for a sentence that reports the question as
+  already answered; »die Neueren« and »die Alten« quoted in the nominative where the text has the
+  genitive; "one's own convenience" for »zu seiner Gemächlichkeit«, now "one's convenience"; the
+  colon of »Es ist also die Frage: ob« dropped unnamed, now named; »Nach demselben« unresolved, now
+  resolved as the first sentence's »Gebrauch«; the title's "as noumenon" a resolution of »in diesem
+  Sinne« the body did not name, now named, and the title's "not to the senses" restored to "not at
+  all"; »dieses Ausdrucks«, singular, read as the pair »mundi sensibilis und intelligibilis« with
+  the nearer alternative, *mundus intelligibilis* alone, unnamed, now named on the passage, and the
+  claim's "the two Latin terms" made "the expression the marked sentence names"; A 258's passage
+  still gave »beantwortet haben« without guillemets, written so when the words were in no passage,
+  now quoted and linked, the one accretion the run's sweep missed.
+- *Judgements, eight:* the negative answer read as Kant's own (the attack that the sentence asserts
+  only a question fails, »beantwortet haben« being an indicative factive report), the fifth
+  sentence as one claim with three parts (accepted with the reservation that a third of the
+  statement is a question the sixth sentence's claim carries again; the run keeps the whole
+  sentence, as B 311's »obgleich« clause was kept, and the body says which part sets the row), the
+  footnote's prescription in the row on the division, no `depends_on` to B 308–309, "word-mongering",
+  the passive for »pflegt« and the unverified B pages, all in the direction taken; the reason for
+  the four unclaimed sentences against it, changed as above.
+The pass cost about 175,000 tokens of the agent's own and took ten minutes. New kinds today: a
+no-link verdict grepped by term and not by proposition, which missed the thinker's own nearest
+description of the same object; a gap's end line given one short of the words that close it; a
+transcription's faces counted without opening the page; the scan read for one page and claimed
+for two. All in `memory.md`.
+
+**What else was wrong and why.**
+- **This entry is in the run's second commit.** The first, `d439b52`, pushed the nodes, the page,
+  README and `memory.md` without this changelog entry: the script that trimmed the memory under
+  its cap asserted on the word count after writing the file and before writing the entry, and the
+  commit stood on the next line of the same call, unchained, so it ran. Nothing in that commit is
+  wrong, the memory it carries was 43 words over the cap, and this commit completes the run; the
+  rule, never put the commit in the same call as a script that may assert, is in `memory.md`.
+- The transcription of A 256 ended in the catchword »ten«, which the run first read as the
+  completed word »Alten« until the rule of 2026-11-01 on tails (Ein-|heit) sent it to the scan;
+  the scan then showed what the transcription had only implied, that the 1781 page carries no
+  footnote, a fact that would otherwise have been assumed from the Akademie text.
+- The first edit script asserted on the page's `passages:` anchor, which the shared entries
+  share, before writing anything; the second stopped after seven of nine files on a tail the
+  A 541 passage words differently from the A 541 claim, and the remaining three edits were run
+  alone.
+- The guillemet grep before the review again passed what the review caught: a case changed inside
+  »...« (»die Neueren« for »der Neueren«), because the grep tests substrings and the nominative is
+  one; the two accepted exceptions, 1781 variants in collation notes and work titles, also pass
+  through it unmarked.
+- `memory.md` carried "the rest of B 307–315 is held" since 2026-10-30; B 308's 3:210.12–24 was in
+  no passage since run 2 and in no gaps list until today.
+- The memory edit overshot the cap (8,353 words) and was brought under it in six passes by
+  compressing the run-13, run-21, run-22 and run-24 Kant blocks, four Nietzsche parentheses, the
+  will page's block, the run-16 and run-20 Schopenhauer blocks, the Phase 0 line and the tooling
+  and money lines.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The chapter on phenomena and noumena
+is now held from 3:211.15 to its end, and of B 307–309 all but 3:210.12–24 and 3:210.35–211.14.
+What remains before a fourth thinker is Phase 2's first filing or the owner's word (Ask 10); the
+content runs meanwhile take the gaps the pages list: 3:210.12–24, whose sentence that at the
+noumenon the whole use and even all meaning of the categories ceases is a candidate for the row
+on what can be said; the Anhang's theorems on time; the resolution beyond A 541 and section
+III's two unheld paragraphs; Prolegomena §§ 58–59; 3:210.35–211.14 names no noumenon and adds no
+cell.
+
+**Step 6.** `memory.md` updated in place, under 8,000 words: the run-26 state, the two passages
+and three claims with their placements and refusals, the footnote's absence from the 1781
+pages, the B 308 stretch now named, the review's rules. Compressed: the run-13, run-21 and
+run-22 Kant blocks, the JGB 19, 21 and 34 and GD 7–8 parentheses, the will page's block.
+Dropped: the run-25 term list and its in-no-passage sentence, the compressed blocks' per-claim
+parentheses, term lists and sentence pairs, the done items from *Next*; all in the changelog
+entries of 10-19 to 11-01 or on the nodes.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-11-03; first, if `INBOX.md` has an entry,
+the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows;
+otherwise a content run on a gap the pages list, through the adversarial pass, with a quote on
+every new cell claim, and, on a Kant span, the A pages checked on wikisource before writing and,
+where a catchword is a word's tail or a note is in doubt, on the scan.
+
+**Effort.** About 285,000 of the 300,000-token ceiling in this session by the session's own count, plus
+about 175,000 in the adversarial agent: a third on reading the governing files, the memory, the
+last three entries and the page; a quarter on the sources, the scan, the five nodes and the page;
+the rest on the wait, the 17 fixes, the memory compression, which took six passes, the premature
+commit and the records. Nothing spent.
+
 ## 2026-11-01 — run 25: the close of Kant's chapter on phenomena and noumena, A 258–260 / B 313–315, the understanding representing objects as they are only in an empirical sense, what objects may be as objects of the pure understanding remaining unknown, understanding and sensibility determining objects only in combination, and the concept of merely intelligible objects empty of all principles of its application
 
 Twenty-fifth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
