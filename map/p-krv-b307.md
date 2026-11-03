@@ -12,3 +12,10 @@ translation_by: the project
 produced_by: claude-fable-5-1, 2026-10-06
 ---
 Second-edition text; the passage has no A counterpart.
+
+The sentence that follows this span on 3:210.12, »Wo diese Zeiteinheit nicht angetroffen werden
+kann, mithin beim Noumenon, da hört der ganze Gebrauch, ja selbst alle Bedeutung der Kategorien
+völlig auf«, is in the map since 2026-11-03 with the two after it ([KrV B 308](../../p/krv-b308-at-the-noumenon-all-use-and-meaning-of-the-categories-cease-and-the-possibility-of-a-thing-proved-only-by-a-corresponding-intuition/)); its »diese Zeiteinheit«
+points back to this span's last clause, »in Beziehung auf die Einheit der Anschauungen in Raum und
+Zeit«, said on its claim ([c-kant-at-the-noumenon-all-use-and-even-all-meaning-of-the-categories-cease](../../c/kant-at-the-noumenon-all-use-and-even-all-meaning-of-the-categories-cease/)), and no link is set between the two, the clause being in the
+statement of no claim.

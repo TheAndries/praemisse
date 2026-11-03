@@ -58,3 +58,5 @@ Set on the comparison on the thing in itself, in the row on what can be said of 
 itself, since 2026-10-30, for what the sentence says of the concept of a thing thought as a
 thing in itself, with the four other claims of the chapter's two paragraphs set there the same
 day.
+
+Since 2026-11-03 the map holds also B 308's sentence, in the same paragraph and two sentences before B 308–309's, that the possibility of a thing can never be proved merely from the non-contradiction of a concept of it, but only by supporting the concept with a corresponding intuition ([c-kant-possibility-of-a-thing-never-proved-from-the-non-contradiction-of-its-concept-but-only-by-a-corresponding-intuition](../../c/kant-possibility-of-a-thing-never-proved-from-the-non-contradiction-of-its-concept-but-only-by-a-corresponding-intuition/)); that this sentence's »gar nicht widersprechend« and the next sentence's possibility of such noumena not to be seen apply that principle to one concept is the map's reading, no connective joins the places, and no link is set.

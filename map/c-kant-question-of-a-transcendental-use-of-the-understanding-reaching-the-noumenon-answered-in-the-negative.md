@@ -43,6 +43,7 @@ is to be understood only in the negative sense
 ([c-kant-noumenon-negative-only](../../c/kant-noumenon-negative-only/)), and that this is the
 answer the sentence reports is the map's reading, drawn by no connective that names the place,
 so that no `depends_on` is set; a reader who wants the step made an argument may ask for it.
+Since 2026-11-03 the map holds also B 308's sentence, in the same paragraph and three sentences before B 308–309's, that where the unity of time cannot be met with, hence in the case of the noumenon, the whole use and even all meaning of the categories cease entirely ([c-kant-at-the-noumenon-all-use-and-even-all-meaning-of-the-categories-cease](../../c/kant-at-the-noumenon-all-use-and-even-all-meaning-of-the-categories-cease/)), a place in the map where the answer may stand, the earlier of the two in the text and the later added to the map, nearer to this sentence in its word, »Gebrauch« for this sentence's »Gebrauche«; B 310's clause that the understanding cannot be used assertorically beyond the field of sensibility and B 312's limits against cognizing things in themselves through any category, both in claims in this row, are places in the same sense; that any is the answer is the map's reading, drawn by no connective, the map weighs none, and no link is set.
 In the paragraph after this one, at B 314, the sentence that what objects may be as objects of the pure
 understanding will always remain unknown, »so gar, daß es auch unbekannt bleibt, ob eine solche
 transscendentale (außerordentliche) Erkenntniß überall möglich sei«

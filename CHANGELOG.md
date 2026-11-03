@@ -2,6 +2,224 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-11-03 — run 27: the stretch of B 308 in no passage since run 2, where the unity of time cannot be met with, at the noumenon, all use and even all meaning of the categories cease; the possibility of a thing proved never from the non-contradiction of its concept but only by a corresponding intuition; and applying the categories to objects not regarded as appearances would require an intuition other than the sensible, the object then a noumenon in the positive sense
+
+Twenty-seventh scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 26; `origin/main` stood at run 26's third commit when it began, the container's detached
+checkout at the same commit, and `main` was checked out and fast-forwarded before anything was
+written; nothing arrived in between.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the
+plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in
+the session that received it; nothing new. No dispute, no attestation, no form filing (the
+workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 4 new (1 passage, 3 claims), 9 revised in their bodies, the first page touched in one row, its passage list and four places of its prose, two `depends_on` links set.**
+The plan's next content item was the gap named for the first time on 2026-11-02, after sitting
+unnamed in no passage since run 2: the twelve lines of B 308 between the map's B 307–308
+(3:209.32–210.12) and B 308–309 (3:210.24–34), from »Wo diese Zeiteinheit« to »Noumenon in
+positiver Bedeutung« (AA 3:210.12–24), whose first sentence the plan held as a candidate for the row
+on what can be said. It was taken from korpora.org's Akademie text as one passage of three sentences,
+`p-krv-b308-at-the-noumenon-all-use-and-meaning-of-the-categories-cease-and-the-possibility-of-a-thing-proved-only-by-a-corresponding-intuition`,
+the first sentence's semicolon joining two halves by the map's count, its two end lines shared with
+the passages on either side, so that the chapter's text from 3:209.32 to 3:210.34 is now held
+without a gap and, of the chapter from there on, only 3:210.35–211.14 is in no passage. The two
+passages it joins are recorded as second-edition text with no first-edition counterpart, and the
+run checked that this stretch is the same before writing: wikisource's transcription of the 1781
+scan was read for A 249–254, the pages of the first edition at this place of the chapter, none of
+the three sentences nor their distinctive words stands on them, and A 253 carries the sentence
+beginning *Wenn ich alles Denken*, which the Akademie text has at 3:210.35, the line after B 308–309;
+the B page is from the concordance and unverified, as on its neighbours; the korpora HTML sets
+nothing in these lines in another face.
+
+*The three claims, all `draft`, each with its quote.* From the first sentence, that where this
+unity of time cannot be met with, »mithin beim Noumenon, da hört der ganze Gebrauch, ja selbst alle
+Bedeutung der Kategorien völlig auf; denn selbst die Möglichkeit der Dinge, die den Kategorien
+entsprechen sollen, läßt sich gar nicht einsehen«, the »denn« clause kept as the ground, the
+»weshalb« clause, Kant's appeal to what he adduced at the beginning of the general remark to the
+previous chapter (the *Allgemeine Anmerkung zum System der Grundsätze*, B 288–294, in no passage),
+dropped from the statement and named, »diese Zeiteinheit« resolved in the body from the sentence
+before, B 307–308's »nur in Beziehung auf die Einheit der Anschauungen in Raum und Zeit Bedeutung
+haben«, the demonstrative dropped from the statement, the resolution the map's, and »beim Noumenon« kept as "the
+noumenon" without identifying it with the sentence before's noumenon in the negative sense
+(`c-kant-at-the-noumenon-all-use-and-even-all-meaning-of-the-categories-cease`). From the second,
+the general principle that »die Möglichkeit eines Dinges niemals bloß aus dem Nichtwidersprechen
+eines Begriffs desselben, sondern nur dadurch, daß man diesen durch eine ihm correspondirende
+Anschauung belegt, bewiesen werden« can, »Nun ... aber« dropped and named, »diesen« resolved as the
+concept
+(`c-kant-possibility-of-a-thing-never-proved-from-the-non-contradiction-of-its-concept-but-only-by-a-corresponding-intuition`).
+From the third, the conditional »Wenn wir also die Kategorien auf Gegenstände, die nicht als
+Erscheinungen betrachtet werden, anwenden wollten, so müßten wir eine andere Anschauung als die
+sinnliche zum Grunde legen, und alsdann wäre der Gegenstand ein Noumenon in positiver Bedeutung«,
+whose antecedent Kant asserts in no passage in the map, the mode kept
+(`c-kant-applying-the-categories-to-objects-not-regarded-as-appearances-would-require-another-intuition-and-the-object-would-be-a-noumenon-in-the-positive-sense`).
+Terms: »Zeiteinheit« "unity of time", the word of the text where the sentence before names space
+and time; »Bedeutung« "meaning" of the categories in the first sentence, as in B 307–308's last
+clause, and "sense" of a term in the third, as at B 307 and B 308–309, the two renderings of one word
+named on the passage; »beim Noumenon« "in the case of the noumenon"; »ja selbst« "indeed even";
+»einsehen« "see" as at B 307 and B 310; »belegt« "supporting"; »Hauptstück« "chapter"; »Nichtwidersprechen«
+"non-contradiction"; »zum Grunde legen« "take as ground", A 540's dative "lay ... under" named.
+
+*The links.* Two set, both `depends_on` on the third sentence's claim, by the one connective »also«
+with which the text draws it from the two sentences before it: from the second, that possibility
+is proved only by a corresponding intuition, and from the first's »denn« clause, that at the
+noumenon the possibility of things to correspond to the categories is not to be seen; that the
+connective reaches back to both is the map's reading, said on the node, and a reader who wants the
+step made an argument may ask. None other: the first sentence follows the ground clause of
+B 307–308's last sentence, which is in that passage and in the statement of no claim; the premise
+entered between A 236 / B 295 with Prolegomena § 57 and the Anhang's sentence on the laws of
+experience is refused for the first sentence, since it would identify the categories with those
+laws and the noumenon with what lies beyond experience; JGB 21's »"An-sich"« says what is not in the
+in-itself where the sentence says what the categories cannot do, neither naming the other's
+subject; a conditional shares and denies nothing. The nearest places are named on each node: B 310's
+possibility of noumena not to be seen, a third denial in the verb »einsehen« counting B 307's; the
+B xxvi footnote's four sentences, with the one tension the run did not reconcile, the second
+sentence's »nur dadurch«, only by a corresponding intuition, against the footnote's »es kann auch in
+praktischen liegen«, named on three nodes and open to dispute; and B 313's sentence that the question
+of a transcendental use of the understanding has been answered in the negative, for which the first
+sentence is now a place in the map where the answer may stand, earlier in the text than B 308–309's
+clause on the use of the categories and added after it, B 310's and B 312's sentences named as places
+too and none weighed, said on both nodes and twice on the page. That clause, »so kann auch der
+Gebrauch der Kategorien keinesweges über die Grenze der Gegenstände der Erfahrung hinausreichen«
+(3:210.24–27), is in a passage held since run 2 and in the statement of no claim; B 308–309 draws it
+from today's third sentence by »Da nun eine solche, nämlich die intellectuelle Anschauung ... so«,
+Kant's own identification of the other intuition with the intellectual, and from it by »also« the
+sentence in the first page's row since 2026-10-10, that what we call noumenon is to be understood only
+in the negative sense. No link is set from that claim to the third sentence, since the step runs
+through the unclaimed clause; the chain is named on four nodes and the page as a second candidate in
+the chapter for an argument with a form, after B 311's »also« of 2026-10-30, and `memory.md` carries it as the next content item.
+
+*The page.* `x-thing-in-itself`: the first and the third sentence's claims appended to the Kant cell
+of the row on what can be said, by the criterion of 2026-10-30, the one for what it says cannot be
+said of the noumenon, the other for what its last clause says the object would be under the
+supposition and what that would require, the reading the map did not take, that a conditional says
+nothing of the noumenon outright and could be held on no row, said on the node; the second sentence's
+claim set in no row, since it names neither the thing in itself nor a noumenon, and named under *What
+the three say* with the two quotations beside it. The note gains its sentences; the passage joins the
+list; the two sentences that said B 308–309's sentence is the answer B 313 reports now say "or
+B 308's", earlier in the text; the gaps list says the stretch is held, counts its three sentences and three claims, names
+the »weshalb« clause as in the statement of no claim, and says the chapter's text from 3:209.32 to
+3:210.34 is in the map; the closing paragraph is dated; the status note is unchanged, its clause on
+cells added since 2026-10-10 covering today's. Nine existing nodes carry a dated sentence: B 308–309's
+passage, whose note gave the third sentence without quotation when the words were in no passage and
+now quotes and links it; B 307–308's passage, which names the sentence that follows it; the A 256–257
+passage, whose gap sentence is closed; the B 313 claim and the noumenon-negative-only claim, which
+name the second place of the answer and the chain; the B 310 claim on possibility, the B 310 claim on
+non-contradiction, and the two footnote claims on the more required and on practical sources, which
+name the second sentence and the tension. README counts 310 nodes (3 thinkers, 5 works, 90 passages,
+192 claims, 14 arguments, 4 readings, 2 comparisons), as `--check` does. No argument was formalized.
+
+**The adversarial pass, and what it found.** A second agent was given the four new nodes, the diff,
+the korpora pages AA III 209–210, the wikisource transcriptions of A 249–254, the rendered build, the
+conventions and the distilled rules, with the brief to re-extract the original and verify every line
+range, the shared end lines, the absence of the stretch from the 1781 pages, every translation
+qualifier and resolution, every statement's mode, every link refused by grep over the other
+statements for the proposition and not the term, the placements by one criterion, every »...«, the
+accretion sweep, front matter against prose and the rendered pages. It confirmed the original
+character for character, the three line ranges and the shared end lines, the absence from A 249–254
+and A 253's sentence, every qualifier, mode and resolution, the converses, the quotations, the build
+and the rendering, the placements by the criterion (the second sentence out as the sentence on
+understanding and sensibility only in combination was, the third in by the reading the page took on
+2026-10-10 for the positive sense), and the refusals of the shared premise and of JGB 21 and JGB 16;
+and returned 18 findings, 3 serious, 6 moderate, 9 minor, and six judgements; all 18 accepted and
+changed before commit, and one judgement, on the register of »belegt«, taken as the reviewer preferred.
+- *Serious, 3.* The first and the third sentence's claims named six and two of the seventeen claims
+  in their cell and missed the ones that assert the same proposition in other words: B 312's things in
+  themselves »(nicht als Erscheinungen betrachtet)« with the limits »sie durch keine Kategorien zu
+  erkennen«, B 310's lacking intuition and its sensibility not the only kind of intuition, A 257's
+  question whether understanding and reason still have any use when the object is not appearance,
+  and the rest of the row; every row-mate is now named on each with why no link, and B 311's second
+  sentence, nearer in words than most and in no claim, is named on the first two claims. Two revised
+  nodes placed B 308's sentences "in the paragraph before B 308–309's", where korpora's blank rows show
+  3:210.03–34 to be one paragraph: "in the same paragraph, three (two) sentences before". The first
+  claim's statement resolved »diese Zeiteinheit« by an apposition that supplied space and B 307–308's
+  »nur ... Bedeutung haben«, a clause in no claim, against the passage body's own sentence that the map
+  does not supply space: the demonstrative is dropped, the resolution stands in the bodies, and the
+  dropped »da« is named.
+- *Moderate, 6.* "A second place where the answer B 313 reports may stand" was the map's order of
+  entry where in the text B 308's sentence is the earlier, and B 310's and B 312's sentences in the row
+  say the same of the categories' use and were not weighed: reworded on three nodes and twice on the
+  page, the two named as places too, none weighed. "The chapter's first candidate for an argument with
+  a form" was false, B 311's »also« link of 2026-10-30 being one: "a second candidate, after B 311's
+  »also«". The double `depends_on` rested on a paraphrase the first claim does not make; it rests now
+  on the text's own frame, »denn« (3:210.14), »Nun kann aber« (3:210.18), »also« (3:210.21), on both
+  claims. "The nearest sentences in the map are these" omitted B 311's second sentence. A sentence on
+  the B 311–312 passage, edited on 2026-11-02, still said the paragraph that follows it was in no
+  passage: corrected and dated. »beim Noumenon« was "in the case of the noumenon" in the translation
+  and "at the noumenon" in two titles, a ref and five places of prose: one rendering everywhere.
+- *Minor, 9, all changed:* »da« dropped unnamed; »zum Grunde legen« "lay at the ground", a calque
+  beside A 540's "lay ... under", now "take as ground" with A 540 named; the *Allgemeine Anmerkung*
+  located by B pages only, now AA 3:198.13 ff. with the concordance caveat, on the passage, the claim
+  and the page; "counting B 307's" for a denial on 3:210.01, in the passage B 307–308; "(3:210.24–27)"
+  for a clause on 3:210.26–27; a pre-existing "(3:211.01–14)" on the B 310–311 passage for a paragraph
+  that begins at 3:210.35; the first claim's title dropping »gar« and "the"; the closing paragraph's
+  "sentences added" for one changed; and, the reviewer's reservation on register, "backing" for
+  »belegt«, now "supporting", in translation, statement, quote and titles.
+- *Judgements, six:* »beim Noumenon« not identified with the negative-sense noumenon of the sentence
+  before, "in the case of the noumenon", the identification of the general remark with the *Allgemeine
+  Anmerkung zum System der Grundsätze* (its opening sentence at 3:198.14–17 the one the appeal points
+  to) and the chain named as an argument candidate rather than formalized, all accepted; "backing"
+  accepted with the reservation taken; "a second place" and "the first candidate" rejected as worded
+  and reworded.
+The pass cost about 190,000 tokens of the agent's own and took fourteen minutes. New kinds today: a
+cell's row-mates named by term and not by proposition, eleven missed; a paragraph boundary assumed
+from passage boundaries; a statement's apposition contradicting its own passage body; "second" said
+of the map's order of entry; "first candidate" said without grepping the links set. All in `memory.md`.
+
+**What else was wrong and why.**
+- The pre-review guillemet grep caught three slips before the reviewer saw them: a gloss given as the
+  infinitive »belegen« for the text's »belegt«, a quotation of B 307 whose "..." was glued to a comma so
+  that the check could not split it, and the B xxvi footnote's clause quoted from memory as »kann auch
+  in praktischen Erkenntnißquellen liegen« where the text has »es kann auch in praktischen liegen«, the
+  noun in the clause before; the same grep still passes the page's pre-existing work title in
+  guillemets, the accepted exception.
+- The generator's verbatim check against korpora failed on its first run because it joined the
+  line-number cells into the text; the text was verbatim, the check was wrong, and it was rewritten to
+  read the text cells only.
+- The fix script asserted on a title it had already changed by an earlier global replacement in the
+  same script, and a second time on a word split across a line break; each run wrote nothing, as the
+  rule requires, and the third run wrote all three file groups.
+- The memory script wrote the file before asserting on the word count, so `memory.md` stood at 8,200
+  words on disk for one step; the next script asserted before writing, as the rule of 2026-11-02
+  requires, and brought it under the cap by compressing the run-18, run-20, run-22, run-23 and run-24 rules and
+  removing two duplicated sentences, the run-25 and run-26 blocks having been compressed before the review.
+- The accretion sweep of 2026-11-02 did not re-read the B 311–312 passage body it had edited, which
+  still said the paragraph after it was in no passage; the reviewer found it, the sweep did not.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The chapter on phenomena and noumena is
+now held from 3:209.32 to 3:210.34 and from 3:211.15 to its end; 3:210.35–211.14 names no noumenon
+and adds no cell. What remains before a fourth thinker is Phase 2's first filing or the owner's word
+(Ask 10); the next content item is the one the day's text put in front of the run, the chapter's
+argument chain, from the second sentence through the third to B 308–309's clause on the
+use of the categories, which needs that clause as a claim; after it the Anhang's theorems on time,
+the resolution beyond A 541 and section III's two unheld paragraphs, Prolegomena §§ 58–59.
+
+**Step 6.** `memory.md` updated in place, under 8,000 words: the run-27 state, the passage and
+three claims with their placements, refusals and the tension named, the argument candidate as the
+next item, the review's rules. Compressed: the run-25 and run-26 Kant blocks and the run-18, run-20,
+run-22, run-23 and run-24 rules. Dropped: their
+per-sentence detail, collation and term lists and refusals by node; all in the changelog entries of
+2026-11-01 and 2026-11-02 or on the nodes.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-11-04; first, if `INBOX.md` has an entry,
+the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows;
+otherwise the argument named above, through the adversarial pass, with B 308–309's clause on the use
+of the categories as a new claim with its quote, a `form:` that `tools/validity.py` passes, the
+bridges said to be the map's, and the conclusion claim's `depends_on` set.
+
+**Effort.** About 295,000 of the 300,000-token ceiling in this session by the session's own count, plus
+about 190,000 in the adversarial agent: a quarter on reading the governing files, the memory, the
+last entries and the page; a quarter on the sources, the A pages, the four nodes and the page; the
+rest on the wait, the 18 fixes, the memory and the records. Nothing spent.
+
 ## 2026-11-02 — run 26: the paragraph of Kant's chapter on phenomena and noumena between B 312 and B 313, the moderns' use of the terms mundus sensibilis and intelligibilis, the sense in which an object is taken as noumenon, the question of a transcendental use of the understanding answered in the negative, and Kant's footnote at B 312 on the terms intellectual and intelligible
 
 Twenty-sixth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

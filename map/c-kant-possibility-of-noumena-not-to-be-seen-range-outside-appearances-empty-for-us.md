@@ -23,7 +23,7 @@ The fourth sentence of the passage (AA 3:211.28–34; A 255 / B 310–311), asse
 an intellectual intuition is what »wir auch die Möglichkeit nicht einsehen können«
 ([c-kant-noumenon-negative-only](../../c/kant-noumenon-negative-only/)); the two sentences deny
 the same thing in the same verb, the one of the intuition and the other of the noumena, and the
-map draws no link between them, since no connective joins the two places. The sentence's
+map draws no link between them, since no connective joins the two places. Since 2026-11-03 the map holds also B 308's »denn« clause, that »selbst die Möglichkeit der Dinge, die den Kategorien entsprechen sollen, läßt sich gar nicht einsehen« ([c-kant-at-the-noumenon-all-use-and-even-all-meaning-of-the-categories-cease](../../c/kant-at-the-noumenon-all-use-and-even-all-meaning-of-the-categories-cease/)), a third denial in the same verb, counting B 307–308's, there of the things that are to correspond to the categories; that it and this sentence are one denial is the map's reading, no connective joins the places, and no link is set. The sentence's
 »könne« governs what the missing intuition would do and is kept as "could".
 
 The sentence says what we lack, intuition and even the concept of a possible intuition beyond

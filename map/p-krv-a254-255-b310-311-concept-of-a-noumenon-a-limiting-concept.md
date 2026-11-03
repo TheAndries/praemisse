@@ -49,8 +49,7 @@ the fourth
 the fifth and sixth together
 ([c-kant-concept-of-a-noumenon-merely-a-limiting-concept-of-negative-use](../../c/kant-concept-of-a-noumenon-merely-a-limiting-concept-of-negative-use/)).
 The first sentence, the definition of a problematic concept, is in the passage and in no claim:
-it defines a term and says nothing of the thing in itself. The paragraph before this one
-(3:211.01–14), on what remains when intuition or thought is taken away and on the categories
+it defines a term and says nothing of the thing in itself. The paragraph before this one (3:210.35–211.14), on what remains when intuition or thought is taken away and on the categories
 extending further than sensible intuition without determining a greater sphere of objects, is
 in no passage; the paragraph after it is
 [the next passage](../../p/krv-a255-256-b311-312-division-into-phenomena-and-noumena-not-admissible-in-a-positive-sense/).

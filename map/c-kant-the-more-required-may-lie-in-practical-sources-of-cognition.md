@@ -39,3 +39,5 @@ that the note's »praktischen« points there is the map's reading, no connective
 note to those sentences, and no link is set. No Schopenhauer or Nietzsche statement in the
 map speaks of a practical source of a concept's validity, so no shared premise and no
 attack link is set, and a reader may dispute the absence.
+
+Since 2026-11-03 the map holds also B 308's sentence that the possibility of a thing can never be proved merely from the non-contradiction of a concept of it, but only by supporting the concept with a corresponding intuition, »nur dadurch« ([c-kant-possibility-of-a-thing-never-proved-from-the-non-contradiction-of-its-concept-but-only-by-a-corresponding-intuition](../../c/kant-possibility-of-a-thing-never-proved-from-the-non-contradiction-of-its-concept-but-only-by-a-corresponding-intuition/)); how that »nur« and this sentence's »es kann auch in praktischen liegen« relate, no passage in the map says, the map does not reconcile them, no connective joins the preface to the chapter, and no link is set, said on that claim.
