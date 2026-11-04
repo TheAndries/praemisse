@@ -38,7 +38,7 @@ no transcendental use of the understanding reaches it as an object.
 
 No link is set, and the nearest sentences are these. Where in the chapter the question was
 answered the sentence does not say; the map holds, at B 308–309, that the use of the categories
-can in no way reach beyond the limit of the objects of experience and that what we call noumenon
+can in no way reach beyond the limit of the objects of experience (since 2026-11-04 a claim of its own, [c-kant-use-of-the-categories-can-in-no-way-reach-beyond-the-limit-of-the-objects-of-experience](../../c/kant-use-of-the-categories-can-in-no-way-reach-beyond-the-limit-of-the-objects-of-experience/), the conclusion of the map's argument [a-kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience](../../a/kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience/)) and that what we call noumenon
 is to be understood only in the negative sense
 ([c-kant-noumenon-negative-only](../../c/kant-noumenon-negative-only/)), and that this is the
 answer the sentence reports is the map's reading, drawn by no connective that names the place,

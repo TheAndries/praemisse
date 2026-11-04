@@ -13,7 +13,7 @@ status: draft
 verified_by: []
 disputes: []
 depends_on: [c-kant-at-the-noumenon-all-use-and-even-all-meaning-of-the-categories-cease, c-kant-possibility-of-a-thing-never-proved-from-the-non-contradiction-of-its-concept-but-only-by-a-corresponding-intuition]
-supports: []
+supports: [a-kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience]
 attacked_by: []
 replies_to: []
 shares_premise_with: []
@@ -44,10 +44,7 @@ two senses and B 308–309's conclusion); the sentence after this one names this
 intuition as that one, »Da nun eine solche, nämlich die intellectuelle Anschauung, schlechterdings
 außer unserem Erkenntnißvermögen liegt« ([KrV B 308–309](../../p/krv-b308-309/)), the identification
 Kant's own, and draws from it by »Da nun ... so« that »der Gebrauch der Kategorien keinesweges über die
-Grenze der Gegenstände der Erfahrung hinausreichen« can, a clause in that passage and in the statement
-of no claim, from which the sentence's last clause, that what we call noumenon is to be understood
-only in the negative sense, follows by »also«. No link is set from that claim to this sentence, since
-the step from this sentence to it runs through the unclaimed clause; the chain from the second sentence through this one to B 308–309's conclusion is a second candidate in the chapter for an argument with a form, after B 311's »also« from the possibility of noumena to the limiting concept, set on 2026-10-30, and the first of three sentences; a reader may ask for it. By the map's convention a conditional whose
+Grenze der Gegenstände der Erfahrung hinausreichen« can, a clause in that passage and in the statement of no claim until 2026-11-04, since that day a claim ([c-kant-use-of-the-categories-can-in-no-way-reach-beyond-the-limit-of-the-objects-of-experience](../../c/kant-use-of-the-categories-can-in-no-way-reach-beyond-the-limit-of-the-objects-of-experience/)) that the map's argument [a-kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience](../../a/kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience/) draws from this sentence and from that ground clause, itself a claim since the same day ([c-kant-intellectual-intuition-lies-absolutely-outside-our-faculty-of-cognition](../../c/kant-intellectual-intuition-lies-absolutely-outside-our-faculty-of-cognition/)), on two bridges the argument names as the map's, this claim its first premise, named in `supports`; from the clause, after the sentence's clauses on beings of the understanding (3:210.28–32), in the passage and in the statement of no claim, the sentence's last clause, that what we call noumenon is to be understood only in the negative sense, follows by »also«, set as a link on that claim since the same day. No link is set from that claim to this sentence, since the step from this sentence to it runs through the argument and the clause's claim; the chain from the second sentence through this one to B 308–309's conclusion, named on 2026-11-03 as a second candidate in the chapter for an argument with a form, after B 311's »also« from the possibility of noumena to the limiting concept, set on 2026-10-30, is since 2026-11-04 that argument as far as the clause, and from the clause a link. By the map's convention a conditional whose
 antecedent the author does not assert shares and denies nothing, so no premise is entered and no
 attack is set for this sentence. In the same row, B 307's positive sense, in the statement just named,
 says what that sense assumes, where this sentence says what applying the categories beyond

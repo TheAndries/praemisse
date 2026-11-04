@@ -2,6 +2,176 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-11-04 — run 28: the chapter's one step framed by its own connective, B 308–309's »Da nun ..., so«, formalized as the map's seventh Kant argument; its ground clause, that the intellectual intuition lies absolutely outside our faculty of cognition, and its clause that the use of the categories can in no way reach beyond the limit of the objects of experience, each a claim; the noumenon-only-in-the-negative-sense claim linked to the clause by »also«
+
+Twenty-eighth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 27; `origin/main` stood at run 27's commit when it began, the container's detached checkout at
+the same commit, and `main` was checked out and fast-forwarded before anything was written; nothing
+arrived in between.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in the
+session that received it; nothing new. No dispute, no attestation, no form filing (the workflow made
+no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 3 new (2 claims, 1 argument), 9 revised in their bodies or links, one passage's translation revised, the first page touched in three places of its prose.**
+The plan's next content item, named on 2026-11-03 and carried in `memory.md` as the one chain in the
+chapter on phenomena and noumena whose steps the text's own connectives state, was the step from
+B 308's third sentence through B 308–309's »Da nun ..., so« to its clause on the use of the
+categories, which needed that clause as a claim. The sentence (AA 3:210.24–34, one by the map's
+count, its two semicolons joining halves) was re-read on korpora.org against the stored passage,
+verbatim, nothing set in another face. From it two claims, both `draft`, each with its quote: the
+ground clause, »Da nun eine solche, nämlich die intellectuelle Anschauung, schlechterdings außer
+unserem Erkenntnißvermögen liegt« (3:210.24–26), as
+`c-kant-intellectual-intuition-lies-absolutely-outside-our-faculty-of-cognition`, the »Da nun«
+dropped and named, »eine solche« resolved by name as the sentence before's »eine andere Anschauung
+als die sinnliche« and the text's own »nämlich die intellectuelle« kept so that the identification is
+Kant's, a »da ..., so« clause read as asserted as A 538's was on 2026-10-19; and the main clause,
+»so kann auch der Gebrauch der Kategorien keinesweges über die Grenze der Gegenstände der Erfahrung
+hinausreichen« (3:210.26–27), as
+`c-kant-use-of-the-categories-can-in-no-way-reach-beyond-the-limit-of-the-objects-of-experience`,
+the »auch« dropped from the statement and named, and, since the passage's translation of 2026-10-06
+had not rendered it, that translation revised to "too" with a dated note, the one change to a
+passage. Neither clause names the thing in itself or a noumenon, so both sit in no row of the first
+page, as B xxvi's sentence on speculative cognition, which has cited the clause since 2026-10-06,
+sits in no row, and are named under *What the three say*. The second claim is not entered under the
+premise that the laws governing experience are not to be applied beyond it, for the reason given on
+2026-11-03 for B 308's first sentence.
+
+*The argument,* `a-kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience`,
+`checked` by its form, the first since 2026-10-19 and the seventh of Kant's: premise 1 the conditional
+of B 308's third sentence, `a -> (i and o)`, the claim whole, its second consequent carried in an atom
+no step uses; premise 2 the ground clause, `e`, its statement, where the »nämlich« identifies the
+other intuition with the intellectual; premise 3 the map's bridge that if that intuition lies outside our
+faculty of cognition none other than the sensible is taken as ground, `e -> not i`; premise 4 the map's bridge that a use
+reaching beyond the limit of the objects of experience applies the categories to objects not
+regarded as appearances, `u -> a`, resting on every object regarded as appearance being an object of
+experience and on »Gebrauch« being »anwenden«, both named as the map's; conclusion `not u`, the clause word for word, `u` carrying its
+»kann«; one step of modus ponens and two of modus tollens; the rival single-bridge form named;
+`tools/validity.py`: valid in the two assignments that satisfy the premises. That the »so« draws from
+the third sentence as well as from the ground clause it follows is said to be the map's reading of
+the frame, the clause's »eine solche« pointing there. The argument stops at the clause: the
+sentence's »also« (3:210.32) to the noumenon »nur in negativer Bedeutung« runs over the clause on
+beings of the understanding (3:210.28–32), in the passage and in the statement of no claim, and is
+set as a link, `c-kant-noumenon-negative-only` `depends_on` the clause's claim by that connective,
+read as reaching back over the clause between, said on the node with the invitation to ask for the
+step as an argument; the two readings of Kant are named on the argument as not needed by the form.
+The converses are set on the four nodes. Nine existing nodes carry a dated sentence or a changed
+one: the two passages, the three B 308 claims' bodies where they said the clause was in the
+statement of no claim and the chain a candidate, the B xxvi claim, the B 313 claim's list of places
+where the reported answer may stand, and the noumenon claim; the page's paragraph under *What the
+three say* now says what the sentence's clauses are and what the argument joins, the gaps list
+counts B 308–309's clauses, and the closing paragraph is dated. README counts 313 nodes (3 thinkers,
+5 works, 90 passages, 194 claims, 15 arguments, 4 readings, 2 comparisons), as `--check` does. No cell
+was added to either page.
+
+**The adversarial pass, and what it found.** A second agent was given the three new nodes, the diff of
+the nine revised files, the korpora page AA III 210, the rendered build, the conventions and the
+distilled rules, with the brief to re-extract the sentence and compare it character for character,
+to break the form (its bridges, an idle premise, the conclusion atom for atom), to test every
+qualifier and mode, every link set and refused by proposition and not by term, the placements by the
+page's criterion, the references and counts, and to sweep the map for every sentence the day
+falsifies. It confirmed the original character for character and nothing in another face, the four
+line ranges, the one-sentence count, that no premise is idle (dropping any one breaks the form) and
+that `o` may go without breaking it, the modes, the resolution of »eine solche« and the »nämlich«
+kept as Kant's, the »da ..., so« clause read as asserted as A 538's was, the converses on every
+node, the two placements by the criterion, the counts, the rendering; and returned 17 findings,
+2 serious, 9 moderate, 6 minor, and six judgements; all 17 accepted and changed before commit, and
+the judgements taken as the operator had them, with the reviewer's preferences recorded.
+- *Serious, 2.* The form's atoms swapped the middle term: `i` imported "namely the intellectual" into
+  premise 1, whose sentence says only »eine andere Anschauung als die sinnliche«, and `e` dropped
+  "an intuition other than the sensible, namely" from premise 2's statement, so that assumption 3 was
+  not premise 2 atom for atom and the page showed the mismatch; `e` is now premise 2's statement, `i`
+  the words of its own sentence, assumption 3 reworded, and the body says the identification enters
+  the derivation by premise 2's »nämlich« and not in premise 1. The first page's note on the row on
+  what can be said, rendered live, still said the clause was in the statement of no claim, the step
+  ran through the unclaimed clause and the chain was a candidate; the morning's edit had touched the
+  page's body and gaps list and not the note. Dated and corrected.
+- *Moderate, 9.* "As the check flattens every modal" was a rule invented on the page, the check
+  flattening nothing and three older forms keeping their modals in the atoms; `u` now carries "can",
+  so that `not u` is the statement's "can in no way", and premise 1's »müßten« is said to be flattened
+  by the map. The second bridge identified the verbs too, »Gebrauch« with »anwenden«, unnamed, and
+  was described two ways on the assumption, the body and the page; it is now one direction, every
+  object regarded as appearance an object of experience, in one wording on all three, with both
+  identifications named. The rival form, the »da ..., so« as the text's one step on one bridge,
+  `e -> not u`, as the 2026-10-19 argument read A 538's and named its rival, was not named; it is, with
+  the reason the map prefers two bridges of its own, the »eine solche« pointing to premise 1. "The
+  one step in the chapter that the text frames with its own connective" generalized over text not in
+  the map and was false of the chapter's »also« and »denn« steps: "the one such step in the chapter's
+  text in the map". The refusal of the premise on the laws of experience cited "the reason given on
+  2026-11-03", which had two identifications, one inapplicable here, and said no passage calls the
+  categories the understanding's, false of B 307–308's »von seinen Kategorien« and this sentence's
+  »unsere Verstandesbegriffe«; the refusal now rests on »Grundsätze« and »Gesetze« not being
+  »Kategorien« in any passage. The no-link sweep of the clause claim missed, by proposition, B 307–308's
+  third sentence, in a passage and in no claim and nearer in words than any named, two row-mates
+  (B 314's "under our ordinary categories", B 310's restriction of sensible cognition) and four
+  claims in no row (B xxvii–xxviii, B xxix–xxx, Prolegomena § 57, A 42 / B 59); the ground clause's
+  sweep missed four (A 42 / B 59, the critical distinction's "sensible and intellectual", B xxvii's
+  intuition laid under no concept, B 310's restriction); every one is now named with its reason. The
+  noumenon claim's first paragraph, of 2026-10-06, compressed the sentence's two steps into one and
+  contradicted its own last paragraph and the argument, and its 2026-11-02 paragraph called the
+  categories clause "this claim's sentence": both corrected and dated. The gloss on »auch« said it
+  set the clause beside "the ground clause's restriction", which states none; what the »auch« answers
+  to is now given as the map's reading, B 308's first sentence, with B 307–308's »keinen Gebrauch« as
+  the other candidate.
+- *Minor, 6, all changed:* "two steps of modus tollens" for three steps, the first modus ponens; the
+  argument's statement generalizing the first bridge beyond its assumption and rewording premise 2;
+  the clause claim's drop of the »so« with its ground unnamed, where the 2026-10-19 main-clause claim
+  kept its "since"; »schlechterdings« "absolutely" here and "utterly" at B xxviii, now named; "the
+  clause on beings of the understanding" for three clauses, on five nodes and the page; and the
+  counts today's entry must carry.
+- *Judgements, six:* `o` kept as an inert atom so that premise 1 is the claim whole, accepted by the
+  reviewer; the »da« clause as asserted, accepted; the two-bridge form over the single-bridge rival,
+  accepted once the rival is named, the reviewer preferring the single bridge; "too" for »auch«,
+  accepted, "also" preferred; the »also« link set over the three clauses between to the first,
+  accepted as the map's reading, the reviewer preferring to claim the last of them and link from it,
+  which the node now names as the nearer antecedent a reader may ask for; the premise refused,
+  right in outcome, its ground rewritten.
+The pass cost about 200,000 tokens of the agent's own and took thirteen minutes. New kinds today: a
+middle term placed in the wrong premise's atom; a rule stated on a page that nothing enforces and no
+other node follows; a bridge worded three ways; a sweep that touched a page's body and gaps list
+and not its row note; a refusal citing an earlier reason that does not transfer. All in `memory.md`.
+
+**What else was wrong and why.**
+- The edit script's whitespace-flexible anchors, matching a leading indent as `\s+`, consumed the
+  newline before two YAML lines in the argument's front matter, so that the build failed on
+  `mapping values are not allowed here` after the fixes; the newlines were restored and the build
+  passed. The rule is in `memory.md`: an anchor never begins with whitespace.
+- The morning's text put an English phrase in guillemets ("I can lay no intuition under my concept"),
+  which the guillemet grep does not catch because it tests only against the originals; fixed by eye.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The chapter's text from B 307 to its end is
+held but for 3:210.35–211.14, which names no noumenon, and of B 307–309 only the clause on beings of
+the understanding is in the statement of no claim; the chapter holds no further candidate for an
+argument whose steps the text's own connectives state. What remains before a fourth thinker is
+Phase 2's first filing or the owner's word (Ask 10); the next content items are the Anhang's
+theorems on time, the resolution beyond A 541 and section III's two unheld paragraphs, Prolegomena
+§§ 58–59, in that order.
+
+**Step 6.** `memory.md` updated in place, under 8,000 words: the run-28 state, the two claims, the
+argument's form and bridges, the link, the next items, the review's rules. Compressed: the run-24,
+run-25, run-26 and run-27 Kant blocks and the filing-route paragraph. Dropped: their per-sentence
+detail, term lists, collations and refusals by node; all in the changelog entries of 2026-10-30 to
+2026-11-03 or on the nodes, and the filing route in `MODEL.md`.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-11-05; first, if `INBOX.md` has an entry,
+the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows;
+otherwise the Anhang's theorems on time from zeno.org collated against Grisebach, through the
+adversarial pass, set where the first page's rows on the division and on what is the subject's own
+ask after them.
+
+**Effort.** About 290,000 of the 300,000-token ceiling in this session by the session's own count, plus
+about 200,000 in the adversarial agent: a third on reading the governing files, the memory, the last
+entries, the nodes of the chain and the page; a fifth on the source, the three nodes and the nine
+revisions; the rest on the wait, the 17 fixes, the memory and the records. Nothing spent.
+
 ## 2026-11-03 — run 27: the stretch of B 308 in no passage since run 2, where the unity of time cannot be met with, at the noumenon, all use and even all meaning of the categories cease; the possibility of a thing proved never from the non-contradiction of its concept but only by a corresponding intuition; and applying the categories to objects not regarded as appearances would require an intuition other than the sensible, the object then a noumenon in the positive sense
 
 Twenty-seventh scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

@@ -36,7 +36,7 @@ use and no meaning in its case, and that even the possibility of things that are
 them is not to be seen.
 
 The third sentence of the passage is drawn from this one and the second by »also«
-([c-kant-applying-the-categories-to-objects-not-regarded-as-appearances-would-require-another-intuition-and-the-object-would-be-a-noumenon-in-the-positive-sense](../../c/kant-applying-the-categories-to-objects-not-regarded-as-appearances-would-require-another-intuition-and-the-object-would-be-a-noumenon-in-the-positive-sense/)), named in `supports`; no claim in the map is the sentence this one follows, the
+([c-kant-applying-the-categories-to-objects-not-regarded-as-appearances-would-require-another-intuition-and-the-object-would-be-a-noumenon-in-the-positive-sense](../../c/kant-applying-the-categories-to-objects-not-regarded-as-appearances-would-require-another-intuition-and-the-object-would-be-a-noumenon-in-the-positive-sense/)), named in `supports`; since 2026-11-04 the step from that third sentence and B 308–309's ground clause to its clause on the use of the categories is the map's argument [a-kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience](../../a/kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience/), of which this sentence is not a premise, its »denn« clause reaching the argument through the third sentence's `depends_on`; no claim in the map is the sentence this one follows, the
 ground clause of B 307–308's last sentence, which is in that passage and in the statement of no
 claim, so no `depends_on` is set. The nearest sentences in the map are these, and no link is set from
 any. In the same row, B 310's sentence that »die Möglichkeit solcher Noumenorum« is »gar nicht
@@ -49,8 +49,7 @@ whether a transcendental use of the understanding going to the noumenon as an ob
 been answered in the negative
 ([c-kant-question-of-a-transcendental-use-of-the-understanding-reaching-the-noumenon-answered-in-the-negative](../../c/kant-question-of-a-transcendental-use-of-the-understanding-reaching-the-noumenon-answered-in-the-negative/))
 does not say where the answer stands; this sentence, that in the case of the noumenon the whole use of the categories ceases, is since 2026-11-03 a place in the map where it may stand, the earlier of two in the text and the later added to the map, before B 308–309's clause that the use of the categories can in no way reach beyond the limit of the objects
-of experience, which is in [that passage](../../p/krv-b308-309/) and in the statement of no claim
-([c-kant-noumenon-negative-only](../../c/kant-noumenon-negative-only/) carries the sentence's last
+of experience, which is in [that passage](../../p/krv-b308-309/) and, since 2026-11-04, in a claim ([c-kant-use-of-the-categories-can-in-no-way-reach-beyond-the-limit-of-the-objects-of-experience](../../c/kant-use-of-the-categories-can-in-no-way-reach-beyond-the-limit-of-the-objects-of-experience/)) ([c-kant-noumenon-negative-only](../../c/kant-noumenon-negative-only/) carries the sentence's last
 clause, [c-kant-knowledge-limited-to-experience](../../c/kant-knowledge-limited-to-experience/) cites
 the passage under B xxvi's words); that either is the answer is the map's reading, drawn by no connective that names the place, and no link is set; B 310's clause that the understanding cannot be used assertorically beyond the field of sensibility and B 312's »sie durch keine Kategorien zu erkennen«, both in claims in this row and named below, are places in the same sense, and the map weighs none of the four. B 315's sentence that the concept of merely
 intelligible objects is empty of all principles of its application

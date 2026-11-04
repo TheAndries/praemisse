@@ -69,5 +69,4 @@ that would require; the text draws it from the two before it by »also«, and th
 antecedent the text does not assert, »wollten ... müßten ... wäre«. The sentence after the span,
 B 308–309's, opens »Da nun eine solche, nämlich die intellectuelle Anschauung«, naming the third
 sentence's »eine andere Anschauung als die sinnliche« as the intellectual, and draws from it that the
-use of the categories can in no way reach beyond the limit of the objects of experience, a clause in
-that passage and in the statement of no claim, said on the third sentence's claim.
+use of the categories can in no way reach beyond the limit of the objects of experience, a clause in that passage and, since 2026-11-04, in a claim ([c-kant-use-of-the-categories-can-in-no-way-reach-beyond-the-limit-of-the-objects-of-experience](../../c/kant-use-of-the-categories-can-in-no-way-reach-beyond-the-limit-of-the-objects-of-experience/)), the conclusion of the map's argument from the third sentence and from that sentence's ground clause ([a-kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience](../../a/kant-use-of-the-categories-cannot-reach-beyond-the-limit-of-the-objects-of-experience/)), said on the third sentence's claim.
