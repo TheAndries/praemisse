@@ -2,6 +2,270 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-11-05 — run 29: the Transcendental Aesthetic's section on time enters the map, its first spans: § 4's second and third points, time a necessary representation given a priori; § 6's conclusion (a), time neither something subsisting for itself nor an objective determination attaching to things, formalized with its own grounds as the map's eighth Kant argument; and the paragraph after conclusion (c), time nothing when the objects are taken as they may be in themselves, a subjective condition of our intuition and in itself, apart from the subject, nothing; two premises on time entered beside the premises on space
+
+Twenty-ninth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the
+last entry records; no handover). Read all governing files first. The run fired the day after
+run 28; `origin/main` stood at run 28's commit when it began, one ahead of the container's
+detached checkout, which was fast-forwarded before anything was written; nothing arrived in
+between.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in the
+session that received it; nothing new. No dispute, no attestation, no form filing (the workflow made
+no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 11 new (3 passages, 7 claims, 1 argument), 14 revised in their bodies or links, the first page touched in two rows, four shared entries, its passage list and six places of its prose, the will page in one sentence.**
+The entry of 2026-11-04 named as the next content item "the Anhang's theorems on time from
+zeno.org collated against Grisebach". The phrase named no span: the Anhang's paragraph on the
+Transcendental Aesthetic (ZA II 536–537, in the map since 2026-10-14) endorses the Aesthetic's
+»Lehrsätze« as a whole and names none, and a grep of the whole Anhang on zeno.org, fetched this
+morning, finds no separate treatment of time in it; the first page's gaps list, which says of the
+Anhang "so neither its theorems on time nor the critique of the categories", meant the theorems
+Schopenhauer endorses, which are Kant's. The gap the page actually names, under the premise on time
+and on the A 539 claim since 2026-10-19, is that no passage of the Aesthetic's section on time
+(§§ 4–7, A 30–41 / B 46–58) was in the map, so that the premise on time between Kant and
+Schopenhauer rested on a »denn« clause in the resolution of the third antinomy while the premise on
+space rests on the Aesthetic's own conclusions. The run read the plan's phrase as that gap and filled
+it with the three spans of the section on time that parallel the three space passages the map holds,
+and says so here rather than in `PLAN.md`, whose strategy is unchanged.
+
+*The passages,* from korpora.org's Akademie text (AA III 57–61), every original checked sentence
+by sentence against the fetched pages before writing, the A pages read on wikisource's
+transcription of the 1781 scan and A 34's end on the scan itself, the B pages from the
+concordance and said unverified: `p-krv-a31-b46-47-time-a-necessary-representation-given-a-priori`,
+§ 4's second and third points (3:57.27–58.14, ten sentences, the numerals omitted as the space
+passage A 24 / B 38 omits them; the 1781 page reads »selbsten«, »sondern zugleich seyn)«, »nur eine
+Dimension« for the Akademie's marked »Eine«, and lower-case »strenge« for its »Strenge«, listed with
+the comma variants); `p-krv-a32-33-b49-time-not-subsisting-for-itself-nor-an-objective-determination-of-things`,
+§ 6's conclusion (a) (3:59.19–30, four sentences, the first's colon joining halves; A 32 carries
+the heading without the section number the second edition added and ends at »Was aber das« with
+the catchword »zweite«; the 1781 text reads »vor sich selbst bestünde« for »für sich selbst
+bestände« and »Diese letztere« for »Dieses letztere«); and
+`p-krv-a34-35-b51-time-nothing-when-the-objects-are-taken-as-they-may-be-in-themselves`, the
+paragraph after conclusion (c) (3:60.28–61.11, six sentences; A 34 ends inside »objectiv«,
+ob-|jectiv, read on the scan, which also shows the letterspacing of »Gegenstände unsrer Sinne«; the
+1781 text reads »diese aber die eigentliche Bedingung ist« where the Akademie has »dieser aber«, a
+variant that settles the demonstrative, named on the passage, and »so ist die Zeit Nichts«).
+Terms: »aufheben« "annul", the map's word since B xxx; »Wirklichkeit« "actuality"; »zugleich« and
+»nach einander« "simultaneous" and "successive"; »Eine Dimension« "only one dimension";
+»lediglich« "merely"; »befassen« "encompassing", after the review; »an sich, außer dem Subjecte, nichts« "in itself,
+apart from the subject, nothing".
+
+*The seven claims, all `draft`, each with its quote, the parallels of the map's space nodes.*
+From § 4, its first, third, fifth and tenth sentences in one claim, as A 24 / B 38's points are in
+`c-kant-space-a-priori`: `c-kant-time-a-necessary-representation-underlying-all-intuitions-given-a-priori`,
+»Die Zeit ist eine nothwendige Vorstellung, die allen Anschauungen zum Grunde liegt ... Die Zeit
+ist also a priori gegeben«, with the fifth's »können insgesammt wegfallen, aber sie selbst ... kann
+nicht aufgehoben werden« and the tenth's principles that »belehren uns vor derselben«; in no row,
+named under *What the three say*. From conclusion (a), its main clause
+`c-kant-time-not-subsisting-for-itself-nor-an-objective-determination-attaching-to-things`, the
+subjunctives kept and the »mithin« clause, what would remain if one abstracted from all subjective
+conditions of the intuition of them, kept as drawn from either limb, the parallel of A 26 / B 42's
+conclusion (a), with which it ends in the same clause; its »denn« clause
+`c-kant-time-subsisting-for-itself-would-be-actual-without-an-actual-object`, »im ersten Fall«
+restated as its antecedent; and its second sentence
+`c-kant-time-as-a-determination-attaching-to-things-themselves-could-not-precede-the-objects-and-be-cognized-a-priori`,
+»könnte« kept, the parallel of A 26 / B 42's ground on determinations; the third and fourth
+sentences, a conditional on time as the subjective condition of intuition and its ground, in the
+passage and in no claim. From the paragraph after conclusion (c), its first sentence
+`c-kant-taking-the-objects-as-they-may-be-in-themselves-time-is-nothing`, a conditional on an act
+of abstraction in the first person plural, »wir« and »mögen« kept, whose consequent is indicative;
+its second `c-kant-time-objectively-valid-only-in-regard-to-appearances-not-objective-of-things-in-general`,
+whole; and its third
+`c-kant-time-merely-a-subjective-condition-of-our-intuition-and-in-itself-apart-from-the-subject-nothing`,
+the »also« dropped and set as two `depends_on` links by that connective, to the first and the
+second sentence, the reading that it reaches back to both said on the node; the fourth to sixth
+sentences in the passage and in no claim, the fifth and sixth, on what may be said of things in
+general and of things as appearances, drawing the second sentence's contrast and, after the review,
+outside the row's criterion as that sentence is, said on the passage and in the gaps list.
+
+*The argument,* `a-kant-time-not-subsisting-for-itself-nor-an-objective-determination-of-things`,
+`checked` by its form, the eighth of Kant's and the parallel of the space argument of 2026-10-06:
+premise 1 the § 4 claim, `t`, its statement; premise 2 the map's bridge `t -> p`, from § 4's words
+to the words of conclusion (a)'s second sentence, time preceding the objects as their condition and
+cognized and intuited a priori through synthetic propositions, with its three identifications named
+(§ 4's »Erscheinungen« with the sentence's »Gegenstände«, »Bedingung ihrer Möglichkeit« and »a priori
+gegeben« with »vor den Gegenständen als ihre Bedingung vorhergehen« and »a priori ... erkannt«, and
+the apodictic »Grundsätze« with the »synthetische Sätze«, the text calling them synthetic at
+3:58.21 and 3:59.15, both in no passage and not relied on); premise 3 the second sentence, `o -> not p`,
+its »könnte« flattened and the flattening named; premise 4 the »denn« clause, `f -> r`; premise 5 the
+map's, `not r`, time is not something that, without an actual object, would nevertheless be actual, the
+instance for time of the premise that nothing is, the denial of the consequence the sentence treats as
+absurd, the map's as the bridges of its earlier Kant arguments are; premise 6, after the review, the
+sentence's own »mithin«, `(not f and not o) -> not m`, the clause that time would remain if one abstracts
+from all subjective conditions of the intuition of things its own atom and the connective read as one
+step from both denials, the map's reading; conclusion `not f and not o and not m`, the statement word
+for word; one modus ponens, two modus tollens and a last modus ponens; no premise idle (`tools/validity.py`:
+dropping any one of the six gives a countermodel); the rival form, the first limb taken as a premise
+without its ground as the space argument takes it, named with the reason the map prefers to carry
+the ground the text gives.
+
+*Links and premises.* Four `shares_premise_with` pairs, in four `shared` entries on the first page
+under two new premises worded as the premises on space are: "Time is given a priori", between the
+§ 4 claim and the two Schopenhauer sentences that share the premise on space with A 24 / B 38 and
+name time in the same breath, § 2's forms of every object, »welche Zeit, Raum und Kausalität sind ...
+a priori in unserm Bewußtseyn liegen«, and the Anhang's »weil Bedingungen desselben, Raum, Zeit und
+Kausalität, von uns a priori erkannt werden«; and "Time is no determination of the thing in itself",
+between conclusion (a)'s main clause and §§ 23–24, the two sentences that share the premise on space
+with A 26 / B 42, § 24's »nicht Bestimmungen desselben« being the Kant sentence's own word, the
+identification of the things to which time would attach, and which the abstraction from all
+subjective conditions of intuition would leave, with Schopenhauer's »Ding an sich« named as the map's
+step on the node and the page, the same step the page makes for space. Not entered, each named with
+its reason: § 24's forms in consciousness independent of the objects beside § 4's »können insgesammt
+wegfallen«, independence in other words, which the convention does not enter without both statements'
+words; the Anhang at ZA II 534, which names space and not time; § 25's restatement; the two other
+Aesthetic sentences in the row on the division, a conditional and the sentence named beside the
+entry. No attack: JGB 34's »sammt Raum, Zeit, Gestalt, Bewegung, als falsch erschlossen« stands inside
+a conditional on whoever holds that view, JGB 21's »"An-sich"« names causality and not time, said on
+the nodes. No link between Kant's own claims without a connective: A 539's »denn« clause, A 26 / B 42
+and the three new row-5 claims say the same of time or of space in other words and are named on each
+other, with § 23's second paragraph and § 55's intelligible character, which assert that the will lies
+outside time, named as restatements after the review; the row-mates of the Kant cell of the row on the division are named by proposition on each new
+claim set there.
+
+*The pages.* `x-thing-in-itself`: conclusion (a), the conditional and the »also« sentence appended
+to the Kant cell of the row on the division, by the criterion of 2026-10-29, the »also« sentence also
+to the Kant cell of the row on what is the subject's own, beside conclusion (b) on space, for its
+first half; the two rows' notes gain their sentences; the four entries and the two paragraphs under
+*Where a premise is shared*, and the paragraph on the premise on time of A 539 revised where it said
+that clause was the one sentence of the map's Kant passages that says so of time and that no passage
+of the Aesthetic's section on time was in the map, both false since today; the sentences under *What
+the three say* and *On what the division is*; the gaps list's new clause on the section on time, what
+is held, what is unclaimed and why, and what is in no passage; the closing paragraph dated. `x-the-will`:
+one sentence that the other page enters two further premises on time and this page's one stands.
+Fourteen existing nodes carry a dated sentence: the four Schopenhauer claims that gain a link, the
+§ 24 claim on independence, the theorems claim, the three space claims, the ground on determinations,
+the space argument, the A 539 claim where it said no passage of the Aesthetic's section on time was
+in the map. README counts 324 nodes (3 thinkers, 5 works, 93 passages, 201 claims, 16 arguments,
+4 readings, 2 comparisons), as `--check` does.
+
+**The adversarial pass, and what it found.** A second agent was given the eleven new nodes, the diff
+of the fifteen revised files, the korpora pages AA III 57–61, the wikisource transcriptions of A 30–36,
+the scan of A 34, the rendered build, the conventions and the distilled rules, with the brief to
+re-extract every original and check every line range and count, to collate the 1781 pages variant by
+variant, to test every qualifier, mode and resolution, to break the form (atoms against statements,
+the bridges, each premise dropped, the rival form), to test every link set and refused by proposition,
+the placements by the criterion, the references, the accretion sweep and the rendering. It confirmed
+the three originals character for character (the numerals rightly omitted), every line range but
+one, the sentence counts, the 1781 pages and catchwords on the transcriptions and the scans (it
+opened A 35 too), every variant listed, every qualifier and resolution, every quote block, the
+validity with each premise dropped, the converses, the refusals, the placements, the B pages as the
+concordance gives them, the README count, the accretion sweep, the guillemets, the build and the
+rendering; and returned 23 findings, 1 serious, 6 moderate, 16 minor, and eight judgements; all 23
+accepted and changed before commit, three of them the reviewer's own judgement calls taken as it
+preferred, and the other judgements taken as the operator had them, with the reviewer's preferences
+recorded.
+- *Serious, 1.* The form's atoms `o` and `f` carried the sentence's »mithin« clause, "and so would
+  remain if one abstracted from all subjective conditions of the intuition of them", which premises 3
+  and 4's claims do not carry, so that the premises were not their claims atom for atom and `not o`
+  was weaker than the sentence's denial. The clause is now its own atom `m`, the atoms `o` and `f` are
+  the suppositions of the two claims word for word, and the sentence's »mithin« is a sixth premise,
+  `(not f and not o) -> not m`, said to be the map's reading of the connective as one step from both
+  denials; the conclusion `not f and not o and not m` is the statement word for word; valid, no
+  premise idle. Memory had the rule since 2026-11-04 (an atom is its claim's statement) and the
+  morning broke it in the other direction, by adding to the atom.
+- *Moderate, 6.* Three nodes said A 26 / B 42's "first limb has no ground", false: that sentence has
+  no limb on space subsisting for itself, and its one ground covers both its limbs, property and
+  relation; reworded on the argument, the »denn« clause's claim and the space argument. The
+  collation of A 34–35 missed three commas (after »anzuschauen«, »abstrahiren« and »abstrahirt«),
+  added. Conclusion (a)'s row-mate sweep named fourteen older claims and not the two Aesthetic
+  sentences set in the same cell the same day, and called A 539 "the one" that says the same; both
+  named, "the two". One criterion gave two outcomes for the »Dinge überhaupt« contrast, the paragraph's
+  second sentence in no row because things in general are not identified with things in themselves
+  and its fifth and sixth said to fall under the row's criterion; the three now get one outcome, outside
+  the criterion, on the passage, the claim and the gaps list, and "left by this run's choice" is gone.
+  The § 4 claim's statement resolved »Diese Grundsätze« by the sixth sentence's words, in no claim,
+  unnamed; named on the claim and the argument's atom. Conclusion (a)'s no-link sweep missed two
+  Schopenhauer statements that assert outright that the will as thing in itself lies outside time,
+  § 23's second paragraph and § 55's intelligible character; named with the reason no link is set.
+- *Minor, 16, all changed:* the main clause's end line 3:59.21, not 22, on the claim and twice on the
+  page, and 3:58.20–21 for the synthetic sentence; the § 4 claim's statement turning the fifth
+  sentence's parenthesis into commas while its body said it was kept, and two pronoun resolutions
+  unnamed; the colon counts on A 31 and A 34–35; A 31's "comma after »nicht aber«" a comma for a
+  colon, and »seyn« listed as orthography where the span's only »seyn« is the wording variant;
+  »anhangende« filed as orthography without the call shown, now in the wording list with the call;
+  the scan claimed for A 35, which the run had not opened; "abstracted" for the text's indicative
+  »abstrahirt« in a title, the argument's atoms and statement, two revised nodes and the page, now
+  "abstracts" throughout, and "the same clause" as A 26's now "the parallel clause" with the three
+  differences named; the gaps list's "three in three claims" for two sentences; A 31's body saying
+  the claim names sentences as what the bridge draws on, which it did not; the will page's "the same
+  Schopenhauer sections" for a premise with § 2 and the Anhang; § 2's next sentence on Kant's merit
+  and § 25's shapes of the principle unnamed under the premise that time is given a priori; the
+  gloss misassigning »Eine«'s capital to "only"; assumption 5 worded as the general premise where the
+  form uses its instance for time; »Begriff«, the grammatical candidate for the Akademie's »dieser«,
+  unnamed; the second sentence's conjunction reading stated as grammar, now the map's reading, which
+  the distributive one entails; and "comprehending" for »befassen«, now "encompassing".
+- *Judgements, eight:* the »mithin« clause out of the atoms, taken; the flattening of »könnte« in
+  premise 3, accepted as named, the reviewer preferring the modal in `p`; the conditional on taking
+  the objects as they may be in themselves in the row on the division, accepted as consistent with the
+  Prolegomena § 57 and B 308 precedents, the reviewer preferring no row with the »also« sentence
+  carrying the division; `not r` as the map's premise and the two-ground form over the rival,
+  accepted; B 51 for the paragraph, plausible and said unverified, no finding; »anhangende«, listed as
+  the reviewer preferred; the identification of »den Dingen« with the thing in itself, named the same
+  way on every node and the page, right; the fifth and sixth sentences unclaimed, right once the
+  criterion gives one outcome.
+The pass cost about 243,000 tokens of the agent's own and took thirteen minutes. New kinds today: an
+atom widened by a clause the connective draws from it; a parallel claimed limb by limb without
+checking the older sentence's limbs; one criterion applied twice to one contrast; a scan claimed for a
+page not opened. All in `memory.md`.
+
+**What else was wrong and why.**
+- The generator's korpora parser took the first table cell as the line number, which is empty on
+  korpora's rows, and failed on its first run; it now finds the numbered cell by pattern. The rule is
+  in `memory.md`.
+- The edit script's guard against anchors beginning with whitespace, the rule of 2026-11-04, refused
+  the two YAML `shared` entries, whose indentation is exact and is the anchor; the guard now excepts
+  YAML list entries, and the rule is amended.
+- The memory script was first written as a shell heredoc with straight double quotes inside Python
+  double-quoted strings and did not parse; rewritten as a file with triple-quoted strings. Its first
+  run then found `memory.md` at 8,018 words, asserted before writing as the rule of 2026-11-02 requires,
+  and the runs-24-to-28 Kant block and three enumerations on the comparisons line were compressed
+  before the review.
+- The pre-review guillemet grep caught one quotation from memory, A 42 / B 59's »aller Receptivität
+  unserer Sinnlichkeit«, which drops the text's »dieser«; fixed before the reviewer saw it. The same
+  grep passes, as before, the Nietzsche quotations with straight quotes inside and the 1781 readings
+  quoted from the collation notes, the accepted exceptions, and the catchword »ob-«.
+- The argument's body cited the argument from B xxix–xxx as the precedent for a premise that a
+  consequence is unacceptable, read from memory; that argument's bridge is of another kind, and the
+  sentence was reworded to the map's bridges in general before the review.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. What the entry of 2026-11-04 called "the
+Anhang's theorems on time" is answered by the Aesthetic's own section on time, now in the map in the
+three spans that parallel the space passages; the Anhang holds no such span, and the next items are
+as before: the resolution beyond A 541 and section III's two unheld paragraphs, then Prolegomena
+§§ 58–59, and, from today, § 6's conclusions (b) and (c) on time and the paragraph on its empirical
+reality and transcendental ideality, if a row or cell asks for them. What remains before a fourth
+thinker is Phase 2's first filing or the owner's word (Ask 10).
+
+**Step 6.** `memory.md` updated in place, under 8,000 words: the run-29 state, the three passages,
+the seven claims with their placements and refusals, the argument's six-premise form, the two
+premises, the next items, the review's rules. Compressed: the runs-24-to-28 Kant block into one,
+the run-21 span ids, three enumerations on the comparisons line, and the JGB 34 gap sentence.
+Dropped: their per-sentence detail, variant lists and refusals by node; all in the changelog entries
+of 2026-10-30 to 2026-11-04 or on the nodes.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-11-06; first, if `INBOX.md` has an entry,
+the filing handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows;
+otherwise the resolution of the third antinomy beyond A 541 / B 569, from korpora with the A pages on
+wikisource, through the adversarial pass, set on the will page's row on freedom and, where a
+sentence says what divides appearances from things in themselves, on the first page's row on the
+division.
+
+**Effort.** About 390,000 tokens in this session by the session's own count, a third over the
+300,000-token ceiling, plus about 243,000 in the adversarial agent: a quarter on reading the governing
+files, the memory, the last entries, the space nodes and the page; a quarter on the sources, the
+eleven nodes and the fifteen revisions; the rest on the wait, the 23 fixes, the memory and the
+records. The overrun is the size of the day, eleven nodes and a 23-finding fix pass; a run of this
+size should be split in two, the passages and claims one day and the argument and premises the next.
+Nothing spent.
+
 ## 2026-11-04 — run 28: the chapter's one step framed by its own connective, B 308–309's »Da nun ..., so«, formalized as the map's seventh Kant argument; its ground clause, that the intellectual intuition lies absolutely outside our faculty of cognition, and its clause that the use of the categories can in no way reach beyond the limit of the objects of experience, each a claim; the noumenon-only-in-the-negative-sense claim linked to the clause by »also«
 
 Twenty-eighth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the

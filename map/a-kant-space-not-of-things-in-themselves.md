@@ -42,3 +42,5 @@ contrapositive use Kant makes of the general sentence at AA 3:55.06–08; the eq
 "before the existence of the things" with "a priori" is Kant's "mithin" in that sentence
 and belongs to premise 2, not to premise 1. The form does not represent the generality of
 that sentence (every determination of things), only its application to space.
+
+The parallel argument for time, from conclusion (a) of the section on time with the grounds that sentence gives and § 4's second and third points, is [a-kant-time-not-subsisting-for-itself-nor-an-objective-determination-of-things](../../a/kant-time-not-subsisting-for-itself-nor-an-objective-determination-of-things/), in the map since 2026-11-05; its sentence has a limb this one has not, time subsisting for itself, with its own ground, which that form carries; this sentence's one ground covers both its limbs, property and relation.

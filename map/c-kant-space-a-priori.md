@@ -31,3 +31,5 @@ though one can think that no objects are found in it (AA 3:52.31–33), is not f
 here. The second half is the third point and its conclusion: space is a pure intuition, not
 a discursive concept (AA 3:53.05–06), and an a priori, non-empirical intuition underlies all
 concepts of it (AA 3:53.14–16).
+
+The parallel for time, § 4's second and third points, A 31 / B 46–47, is in the map since 2026-11-05 ([c-kant-time-a-necessary-representation-underlying-all-intuitions-given-a-priori](../../c/kant-time-a-necessary-representation-underlying-all-intuitions-given-a-priori/)), whose first sentence matches this claim's first word for word but for »a priori« and »äußeren«; the two are drawn from no connective to each other, and no link joins them. Both are premises of parallel arguments, this one of [a-kant-space-not-of-things-in-themselves](../../a/kant-space-not-of-things-in-themselves/), that one of [a-kant-time-not-subsisting-for-itself-nor-an-objective-determination-of-things](../../a/kant-time-not-subsisting-for-itself-nor-an-objective-determination-of-things/).

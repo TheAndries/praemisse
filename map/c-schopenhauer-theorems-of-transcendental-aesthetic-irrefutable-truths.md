@@ -24,9 +24,9 @@ which the statement keeps. It endorses the Aesthetic's theorems as a whole and n
 them; the map therefore sets no link `shares_premise_with` on it, since the convention asks
 that both statements word the proposition they share, and the comparison
 [x-thing-in-itself](../../x/thing-in-itself/) says so under the shared premises. The theorems the map holds of
-Kant's Aesthetic are those on space, A 24 / B 38 and A 26 / B 42
+Kant's Aesthetic are those on space, A 24 / B 38 and A 26 / B 42, and, since 2026-11-05, those on time that parallel them, A 31 / B 46–47 and A 32–33 / B 49 with the paragraph at A 34–35 / B 51
 ([c-kant-space-a-priori](../../c/kant-space-a-priori/), [c-kant-space-not-of-things-in-themselves](../../c/kant-space-not-of-things-in-themselves/),
 [c-kant-space-subjective-condition-of-sensibility](../../c/kant-space-subjective-condition-of-sensibility/)), and the sharing of each is set on
-the Schopenhauer sentences that state them (the appendix at ZA II 534, §§ 23–24). The
+the Schopenhauer sentences that state them (the appendix at ZA II 534, §§ 23–24; for time, [c-kant-time-a-necessary-representation-underlying-all-intuitions-given-a-priori](../../c/kant-time-a-necessary-representation-underlying-all-intuitions-given-a-priori/) with § 2 and the appendix's opening paragraph, and [c-kant-time-not-subsisting-for-itself-nor-an-objective-determination-attaching-to-things](../../c/kant-time-not-subsisting-for-itself-nor-an-objective-determination-attaching-to-things/) with §§ 23–24). The
 paragraph's own ground for the endorsement follows in the next sentences
 ([c-schopenhauer-a-priori-cognitions-explained-only-as-forms-of-the-intellect](../../c/schopenhauer-a-priori-cognitions-explained-only-as-forms-of-the-intellect/), [a-schopenhauer-cognitions-a-priori-are-the-intellects-own-forms](../../a/schopenhauer-cognitions-a-priori-are-the-intellects-own-forms/)). »Lehrsätze« is rendered »theorems«, »unumstößlich« »irrefutable«.

@@ -16,7 +16,7 @@ depends_on: []
 supports: []
 attacked_by: []
 replies_to: []
-shares_premise_with: [c-kant-space-a-priori]
+shares_premise_with: [c-kant-space-a-priori, c-kant-time-a-necessary-representation-underlying-all-intuitions-given-a-priori]
 produced_by: claude-fable-5-1, 2026-10-14
 ---
 The sixth sentence of the appendix's opening paragraph, which closes the comparison with
@@ -39,3 +39,5 @@ Form unsers Intellekts« ([c-schopenhauer-causality-sensation-and-space-are-subj
 The statement asserts more than the premise: that the ground covers time and causality too,
 and that Locke's primary qualities belong to the appearance; Kant's statement says nothing of
 Locke. »Auffassungsvermögen« is rendered »faculty of apprehension«.
+
+Since 2026-11-05 a second link `shares_premise_with` is set on the »weil« clause's »Zeit«, to Kant's § 4 of the Transcendental Aesthetic, »Die Zeit ist also a priori gegeben« (A 31 / B 46–47, [c-kant-time-a-necessary-representation-underlying-all-intuitions-given-a-priori](../../c/kant-time-a-necessary-representation-underlying-all-intuitions-given-a-priori/)), on the premise that time is given a priori, entered on the [comparison on the thing in itself](../../x/thing-in-itself/) beside the premise on space, by the same reading of the clause as Schopenhauer's own ground; the statement's »Kausalität« is still shared with nobody, no Kant passage in the map saying that causality is cognized a priori.
