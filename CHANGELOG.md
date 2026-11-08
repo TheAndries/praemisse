@@ -2,6 +2,166 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-11-08 — run 31: the explanation of the cosmological idea's second paragraph enters the map, A 542–543 / B 570–571: the law of nature, that everything that happens has a cause, that this cause's causality has its cause among the appearances, and that consequently all events are empirically determined in an order of nature, is a law of the understanding from which it is permitted under no pretext to depart or to except any appearance; one sentence, one claim, set on no row, named on the will page under *On freedom*; no run recorded for 2026-11-07
+
+Thirty-first scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the last entry
+records; no handover). Read all governing files first (`DESIGN.md` by its headings, since nothing on the site's
+design changed). **No run is recorded for 2026-11-07:** run 30 committed on 2026-11-06, this run fired on
+2026-11-08, and between the two there is no commit, no changelog entry and no workflow commit; `origin/main`
+stood at run 30's commit when the run began and the container's checkout was already on it. The last entry's
+"tomorrow's run should produce an entry dated 2026-11-07" was therefore not met; no dispute or attestation was
+open, so no deadline of `DISPUTES.md` passed. It is the third day without a recorded run (2026-10-16,
+2026-10-17, 2026-11-07); the operator cannot see the routine's run history, and a dated line was added to
+Ask 10, which already asks the owner to look at it (step 8).
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in the session
+that received it; nothing new. No dispute, no attestation, no form filing (the workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 2 new (1 passage, 1 claim), 12 revised in their bodies (the will page in ten places,
+the first page in five, six Kant claims, two Schopenhauer claims, two passages), README's count.**
+The entry of 2026-11-06 named as the next content item the Erläuterung's second paragraph, AA 3:368.22–34,
+the law of nature as a law of the understanding, one sentence by the map's count, from korpora with the A page
+on wikisource; the run did that and nothing more, as that entry asked.
+
+*The passage,* `p-krv-a542-543-b570-571-the-law-of-nature-a-law-of-the-understanding-from-which-it-is-permitted-under-no-pretext-to-except-any-appearance`
+(AA 3:368.22–34, one sentence, its colon after »bestimmt sind« joining the law's three »daß« clauses to the
+predicate that resumes them with »dieses Gesetz«, its semicolon joining the »weil« clause), from korpora's
+Akademie text re-extracted line by line and asserted equal to the stored original; the A pages read on
+wikisource's transcriptions of A 541–543 and on the scans of A 542 and A 543 themselves, which show the
+heading, the indent that makes the sentence the subsection's second paragraph (korpora's rows put no blank row
+before it, so by its rows it closes the first block), and the page break inside the word »möglicher«: A 542
+ends with the syllable mög- and the catchword »licher« beneath it, and A 543 begins with the word's tail, so the span is
+A 542–543; the B pages by the concordance's offset of 28 from A 532 / B 560, said unverified. The 1781 text
+differs in orthography (»Caussalität«, »seyn« twice, »kan«, »bestimt« twice, »ausserhalb«, »blossen«) and in
+five punctuation marks (a colon after »Naturgesetz«, no comma after »bestimmt wird«, a comma for the colon after
+»bestimmt sind«, a comma after »abzugehen«, no comma after »unterscheiden«); no word differs; wikisource marks
+»Handlung«, »entstanden«, »geschehen« and »Natur« bold and the scan shows them set off, korpora none. Terms:
+»Verstandesgesetz« "law of the understanding" (A 532–533's »Verstandesgrundsatz« is "principle of the
+understanding"); »Naturordnung« "order of nature"; »allererst« "first", as at A 532–533; »abgeben« "yield";
+»Vorwand« "pretext"; »Gedankending« "thought-entity", a word in no other passage; »Hirngespinst« "figment of the
+brain"; »d. i.« "that is", as at B 566; »die da entstanden« "that has arisen". Three pronouns resolved on the
+passage: »sie« twice to the causality, that is, the action, both nouns feminine and in apposition; »man sie
+sonst ... setzen« to the appearance excepted, the singular predicate »zum bloßen Gedankendinge und einem
+Hirngespinst« settling it against the plural.
+
+*The claim,* `c-kant-the-law-of-nature-is-a-law-of-the-understanding-from-which-it-is-permitted-under-no-pretext-to-except-any-appearance`,
+`draft`, the sentence whole with its quote, asserted in the indicative; the law's content in the Konjunktiv of
+a content clause and the indicative, »folglich« inside it and the »weil« ground inside it, neither formalized,
+the ground kept inside the claim and not made a claim of its own, with the reason and a reader's recourse on the
+node. No link of any kind. The same law stands in the map's Kant passages in five places, each named with why
+no link is set: A 532–533's third sentence (in the passage, in no claim), A 533's »weil« clause as »ein
+allgemeines Gesetz selbst der Möglichkeit aller Erfahrung«, A 539's law of all determination in time under
+»würde«, A 543's second and third sentences, and A 536's third sentence under the case that appearances are
+things in themselves; that the law of the possibility of all experience and the law of the understanding are
+one law is said to be the map's reading. B xxvii's causality holding »durchaus von allen Dingen überhaupt« and
+A 236 / B 295's principles of the understanding weighed and not linked; the premise between A 236 / B 295 and
+Anhang 516 not entered, the sentence saying nothing of a use beyond experience. Schopenhauer: § 55's »durchweg
+nothwendig«, § 23's »durchaus dem Satz vom Grunde unterworfen« and Anhang 516's »mit unverbrüchlicher
+Nothwendigkeit« named, none one proposition with it; the sentence stands since today beside A 543's second
+sentence as the two nearest unset to § 55's, re-dated on the § 55 node, the A 543 node and the will page.
+Nietzsche: JGB 21's »soll« prescribes, its »Gesetz« among what »Wir sind es, die allein« invented is weighed
+against »Verstandesgesetz« and its denial is of the projection »als "an sich"«, which the sentence does not
+make; JGB 22 named as in no passage.
+
+*Placement.* The sentence names neither the will nor freedom nor the thing in itself, so it is set in no row of
+either comparison, under the rule of 2026-11-06; the will page names it under *On freedom* as the law the
+subsection holds to without exception while it asks whether freedom can stand beside it, the map's reading, and
+its row note, gaps list, `passages:` and closing paragraph are dated; the first page's gaps list names it as
+held and says why its predicate, a law of the understanding, is not an answer to the seventh row's question,
+whose Kant cell is set for the forms of intuition. The A 543–544 passage, the two § 55 nodes citing A 532–558
+by range, the A 533 and A 539 claims carry dated sentences. README counts 331 nodes (3 thinkers, 5 works,
+95 passages, 206 claims, 16 arguments, 4 readings, 2 comparisons), as `--check` does.
+
+**The adversarial pass, and what it found.** A second agent was given the two new nodes, the diff of the nine
+revised files, the korpora pages AA III 368–370, the wikisource transcriptions of A 541–543, the scans of A 542
+and A 543, the older nodes the new ones cite, the rendered build, `MODEL.md` and the distilled rules, with the
+brief to re-extract the original, collate the 1781 pages, test every qualifier, mode and pronoun, every refused
+link by proposition against cited and uncited claims, the placement, the accretion across the map and the
+rendering. It confirmed the original character for character (879 characters, one sentence), all thirteen 1781
+variants and no other, the four words wikisource marks bold, the catchword »licher« inside »möglicher«, the 1781
+indent against korpora's unbroken rows, the B offset, the renderings against the map's earlier ones, the "in no
+claim" and "in no passage" assertions, the gaps lists' counts and line ranges, every quotation on the will page,
+and the rendered pages; and returned 16 findings, 2 serious, 8 moderate, 6 minor, and seven judgements; all 16
+accepted and changed before commit, one judgement taken.
+- *Serious, 2.* The sentence's second predicate, that the law is »ein Verstandesgesetz«, was tested against no
+  Schopenhauer statement, though the Anhang calls the law of causality »eine Funktion unsers Intellekts« (ZA II
+  534) and the first page's row on what is the subject's own holds it with § 2's and § 24's forms and ZA II
+  516's laws conditioned by the subject; the refusal is now written on the node (a law of the understanding and a
+  function of our intellect not one proposition, Kant's law the law of nature and Schopenhauer's the law of
+  causality, the identification the map's, and the sentence saying what the law is, not whose), in the first
+  page's gaps list as the reason the sentence is not in row 7, and in a dated sentence under *On causality and
+  the in-itself*. The Schopenhauer sweep had stopped at claims and skipped the unclaimed sentences of § 55's
+  opening passage, whose third and fourth sentences, »jeder Begebenheit« and »Dies leidet keine Ausnahme«, are
+  the map's only Schopenhauer words for event and exception and nearer than the eighth sentence; and the node's
+  reason against the eighth, "a thing as object is not an event", was met by the third; both named now on the
+  node and the will page, the reason dropped.
+- *Moderate, 8.* "Through which it is determined" reads in English of the appearances where »dadurch« binds to
+  »ihre Ursache«, resolved on the passage; the claim body hung »durch welches ...« on the predicate instead of the
+  subject »dieses Gesetz«, and the two bodies differed on the »weil« clause's reach, both fixed; five Kant
+  neighbours by proposition were unnamed (A 541's »empirisch ... vorher bestimmt«, A 534, B xxvii–xxviii's will
+  »jenem nicht unterworfen«, B xxvii's restriction of the principle of causality, A 533's spontaneity sentence)
+  and the word »Naturgesetz« at A 533, A 536, B xxvii and A 539–540, all named now; A 539's law was called "the
+  second »daß« clause again" and the A 539 node said A 542 states "the same law outright and in the
+  indicative" though the content clauses are Konjunktiv, both now the map's reading in a main clause not under
+  »würde«; nearness was inconsistent with the A 543 nodes (§ 24's and § 55's person sentence, Nietzsche's
+  »Gesetz« of the in-itself unnamed), now named; "the nearest unset" stood unrevised on the other three A 543
+  nodes and in the will page's shared-premises paragraph, re-dated; the note and the § 55 node paraphrased the
+  law as that "by which all events are empirically determined", a content clause turned into the law's work,
+  reworded; "the comparison on the thing in itself lists it among the passages held" was false of that page's
+  `passages:`, now "names it in its list of what the map does not yet contain".
+- *Minor, 6, all changed:* the title's "this cause's causality" against the statement's phrase order; a double
+  negative on A 536 ("excepts no appearance ... in no case"); the A 533 node asserting the identity it then
+  called the map's; "would leave" for the indicative »so bleibt«; the subsection's question read flat on the
+  claim; the page-end fragment »von allen Gegenständen mög-« in guillemets.
+- *Judgements, seven:* the row-7 reason, taken as above; »dadurch« resolved in the body rather than the English
+  changed, taken; "but thereby" for »dadurch aber« kept, the »aber« named; "set" for »setzen« kept, the map's
+  rendering; the will page's paragraph order (entry, not text) kept, the first sentence now saying which paragraph
+  is which; the 1781 forms in guillemets kept as the collation's, marked once as the scans' reading; one claim
+  for the whole sentence kept, with the reader's recourse on the node.
+The pass cost about 232,000 tokens of the agent's own and took eleven minutes. New kinds today: a predicate of
+the sentence left out of the sweep; the unclaimed sentences of a named passage skipped; a reason that a sentence
+in the same passage defeats. All in `memory.md`.
+
+**What else was wrong and why.**
+- The first node-writing script was fine; the first memory script was not: straight double quotes inside a
+  double-quoted string, the error of 2026-11-05 and 2026-11-06 a third time; rewritten with triple quotes, and
+  the rule is now in `memory.md` under *Tooling* in bold.
+- `memory.md` went over its cap (8,212 words) after the run-31 state was added and was compressed in three
+  passes before the rules were added; the count was asserted before each edit.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. One change to the order of the next items, argued
+here: the Erläuterung's third paragraph (3:369.01–12, A 543 / B 571, three sentences) comes before its sixth
+(3:370.33 ff.), because its second sentence, that yielding to the illusion of transcendental realism leaves
+neither nature nor freedom, is asserted in Kant's own voice under a »wenn« and is the nearest sentence outside
+the map to the first page's row on the division and to A 536's »so ist Freiheit nicht zu retten«, where the
+sixth paragraph's sentences on man's empirical character repeat A 539–540 in the indicative; then the sixth;
+then Prolegomena §§ 58–59; then § 6's conclusions (b) and (c) on time if a row or cell asks for them. What
+remains before a fourth thinker is Phase 2's first filing or the owner's word (Ask 10).
+
+**Step 6.** `memory.md` updated in place, under 8,000 words (7,993): the run-31 state, the passage,
+the claim and its refusals, the missed run, the next items, the review's rules. Compressed: the run-29 and
+run-30 blocks, the Nietzsche claims enumeration, the Schopenhauer shared-premise list, the first comparison's
+description, the reviewer's brief and the tooling paragraph. Dropped: the run-29 passage ids in full and its
+1781 variant, the run-30 term list, the per-row cell notes of JGB 34 and the GD 7–8 quotations, the
+shared-premise quotations of Anhang 513–514 and § 24; all in the changelog entries of 2026-10-14 to
+2026-11-06 or on the nodes.
+
+**Step 8.** No new ask; a dated line added to Ask 10 on the run not recorded for 2026-11-07. Asks 4, 9 and 10
+stay open.
+
+**Tomorrow's run should produce:** an entry dated 2026-11-09; first, if `INBOX.md` has an entry, the filing
+handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows; otherwise the Erläuterung's
+third paragraph, AA 3:369.01–12 (A 543 / B 571), three sentences by the map's count, from korpora with the A
+page already on the scan opened today, through the adversarial pass, its second sentence tested by the first
+page's division row's criterion and the will page's freedom row's words.
+
+**Effort.** About 300,000 of the 300,000-token ceiling in this session by the session's own count, at the ceiling, plus about 232,000 in the adversarial agent: a third on reading the governing files, the memory, the last entry, the sources, the scans and the neighbouring nodes; a sixth on the two nodes and the nine revisions; the rest on the wait, the 16 fixes, five rounds of memory compression and the records. The day was kept to one sentence and no argument, as the entry of 2026-11-06 asked, and still reached the ceiling; the sweep by proposition over two predicates and the accretion edits, not the node, cost the day. Nothing spent.
+
 ## 2026-11-06 — run 30: the resolution of the third antinomy beyond A 541 enters the map, the fourth paragraph of the explanation of the cosmological idea, A 543–544 / B 571–572: among the causes in appearance nothing can begin a series absolutely and of itself; every action as appearance is itself an event that presupposes another state in which the cause is found, and so everything that happens is only a continuation of the series; hence all actions of natural causes in the temporal sequence are themselves effects; an original action is not to be expected from the causal connection of appearances; four claims, none set on a row, named on the will page under *On freedom*
 
 Thirtieth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the last entry
