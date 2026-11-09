@@ -2,6 +2,198 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-11-09 — run 32: the explanation of the cosmological idea's third paragraph enters the map, A 543 / B 571: the scruple that the matter looks like a chain of causes permitting no absolute totality has already been removed in the general assessment of the antinomy; if we want to yield to the deception of transcendental realism, neither nature nor freedom remains; and the subsection's question, whether the same event that is a mere effect of nature can nonetheless be regarded as an effect from freedom, or whether a direct contradiction is found between the two kinds of causality; three claims, two set in the Kant cell of the will page's row on freedom for the word »Freiheit«, one on no row
+
+Thirty-second scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the last entry
+records; no handover). Read all governing files first (`DESIGN.md` by its headings, since nothing on the site's
+design changed). The run fired the day after run 31, as that entry asked. **The container's checkout began
+detached at run 31's commit while its local `main` and `origin/main` refs stood a commit behind, at run 30's;
+the first reading of the changelog therefore showed run 30 as the latest entry, and only `git fetch origin main`
+brought run 31's commit, after which `main` was fast-forwarded before anything was written.** The rule is in
+`memory.md` under *Tooling*: fetch first, then read.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in the session
+that received it; nothing new. No dispute, no attestation, no form filing (the workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 4 new (1 passage, 3 claims), 13 revised in their bodies (the will page in eight places,
+the first page in four, the run-31 passage and claim, the A 543–544 passage, seven Kant claims, one Schopenhauer
+claim, one Schopenhauer passage), README's count.** The entry of 2026-11-08 named as the next content item the
+Erläuterung's third paragraph, AA 3:369.01–12, three sentences, from korpora with the A page on the scan opened
+that day; the run did that and nothing more.
+
+*The passage,* `p-krv-a543-b571-the-question-whether-the-same-event-can-be-regarded-as-an-effect-of-nature-and-as-an-effect-from-freedom`
+(AA 3:369.01–12, three sentences by the map's count, the first's semicolon joining its »denn« clause, the third's
+colon joining »Hier ist nur die Frage« to its indirect question), from korpora's Akademie text extracted line by line
+and asserted equal to the stored original; the A page read on wikisource's transcription of A 543 and on the scan
+itself, which shows the paragraph whole on the page, indented, between the tail »licher« of »möglicher« and the
+indent of »Unter den Ursachen«, so the span is A 543 / B 571, the B page by the concordance's offset of 28, said
+unverified. The 1781 text differs in orthography (»hiebey«, »anerkent«, »sey«, »blosse«, »Caussalität«, »einer
+Seits« and »anderer Seits« as two words), in one word form (»zween Arten«) and in one punctuation mark (a colon after
+»nachgeben wollen«); wikisource marks »absolute Totalität« bold and the scan shows the two words letterspaced,
+korpora nothing. Terms: »Bedenklichkeit« "scruple"; »gehoben worden« "has been removed", the verb »heben«, not the
+»aufheben« the map renders "annul"; »Beurtheilung« "assessment"; »aufs Unbedingte ausgeht« "goes out to the
+unconditioned"; »Täuschung« "deception", as the map has it in JGB 36 and GD Vernunft 6; »lauter« "nothing but";
+»Naturwirkung« "effect of nature"; »Wirkung aus Freiheit« "effect from freedom", as A 532's »aus Freiheit«; »Arten
+von Causalität« "kinds of causality", the English the map also has for A 532's »zweierlei Causalität«, named;
+»gerader Widerspruch« "direct contradiction"; the two »gar« and the two »doch« kept. Five pronouns resolved on the
+passage: »sie« in »denn sie ist« the scruple; »sie« in »wenn sie ... ausgeht« reason, the noun nearest, with the
+antinomy, the assessment, the scruple, the chain and the totality the other feminine singulars weighed, and "reason"
+supplied in the English after the review; »ihren« in »zu ihren Bedingungen« the causes', the chain's the other
+reading, named after the review; »eben dieselbe« the event, the singular of »Begebenheiten«, "event" supplied in
+the translation, the question, the series and the necessity the other feminine singulars before it and none an
+effect; »diesen zwei Arten« the two the sentence names. »hiebei« read as the law of the paragraph before, the map's
+reading, said on the claim; the opening »aber« dropped from translation and statement and named.
+
+*The three claims, all `draft`, each with its quote, one per sentence:*
+`c-kant-the-scruple-about-a-chain-of-causes-permitting-no-absolute-totality-does-not-hold-us-up-having-been-removed-in-the-general-assessment-of-the-antinomy`
+(the concessive »Ob es aber gleich ... aussieht« conceding how the matter looks and asserting nothing of how it is;
+the »denn« ground kept inside, since the general assessment of the antinomy of reason, what the map reads as a text,
+is in no passage; the scruple's words those of A 533's »keine absolute Totalität der Bedingungen im
+Causalverhältnisse«, the two totalities one as the map's reading, no connective, no link);
+`c-kant-if-we-yield-to-the-deception-of-transcendental-realism-neither-nature-nor-freedom-remains` (a conditional
+whose antecedent Kant does not assert, »wollen« kept; »transscendentalen Realismus« in no other passage of the map
+and undefined by the sentence); and
+`c-kant-the-only-question-is-whether-the-same-event-that-is-a-mere-effect-of-nature-can-be-regarded-as-an-effect-from-freedom`
+(the sentence asserts only what the question is, in the main clause »Hier ist nur die Frage«, and neither answer,
+the Konjunktiv of the two indirect questions marked by the English indicative of an indirect question). No link of
+any kind on the three. Refused and named, each with its reason: for the second, A 536's »sind Erscheinungen Dinge an
+sich selbst, so ist Freiheit nicht zu retten« as nearest in form, whether its case is transcendental realism unsaid
+in any passage, and A 536's next sentence keeping nature as the complete cause where this sentence leaves neither
+nature nor freedom; A 534's »so würde die Aufhebung der transscendentalen Freiheit zugleich alle praktische Freiheit
+vertilgen«, the other conditional of the same shape in the cell, after the review; B xxvii's two sentences; A 541's
+»Freiheit und Natur ... zugleich« under »würde«; the Kant words for a deception in the map, A 536's »betrügliche
+Voraussetzung« and A 235's »Scheins« and »täuscht«, after the review; § 55's »Jedes Ding ist als Erscheinung ...
+nothwendig: dasselbe ist an sich Wille«; GD Vernunft 6's »moralisch-optische Täuschung«, in the passage and in no
+claim; and the Fabel's stage 6, »mit der wahren Welt haben wir auch die scheinbare abgeschafft«, nearest in form
+among Nietzsche's sentences, after the review. For the third, seven Kant places saying in their own modes what the
+question asks, each joined by no connective: A 537's effect »kann ... als frei und doch zugleich ... angesehen
+werden«, in the same verb; A 541's »ohne allen Widerstreit«, »Widerstreit« not »Widerspruch«; B xxvii–xxviii's
+»ohne daß hiebei ein Widerspruch vorgeht« and B xxvii's »offenbaren Widerspruch«, of the will, which the question
+does not name; and, after the review, B xxviii–xxix's freedom that »dem Naturmechanism eben derselben Handlung (in
+anderer Beziehung genommen) gar kein Hinderniß in den Weg lege«, the nearest by proposition, in another row of the
+same page; A 538's causality »auf zwei Seiten« under »kann man« with the unclaimed »bei einer und derselben Wirkung
+zusammen stattfinden«; and A 538–539's double side that »widerspricht keinem von den Begriffen«; the two kinds of
+causality A 532's pair as the map reads it; Schopenhauer's § 55, where Kant was the first to show »das Zusammenbestehn
+dieser Nothwendigkeit mit der Freiheit des Willens an sich«, asserting what the question asks, and its unclaimed
+»Vereinigung der Freiheit mit der Nothwendigkeit« the nearest Schopenhauer sentence in matter; Nietzsche's causa sui
+as »Selbst-Widerspruch«, the unfree will, the feeling of unfreedom and »"intelligible Freiheit"«. For the first,
+»Antinomie«, »Regressus«, »Unbedingte« and »Kette von Ursachen« in no other passage, »Kette« only in JGB 19's chain
+of inferences and »Totalität« at A 533 and in section III's heading, GD 8's »causa prima« the end of a regress in
+other words, after the review.
+
+*Placement.* The second and third sentences name »Freiheit« and are set in the Kant cell of the will page's row on
+freedom, for that word, as every sentence of the resolution in the map that names it is, after the eleven A 532–537
+claims; what the third sets there is a question, said in the row's note, with the thing-in-itself page's Nietzsche
+cell on the division, which holds two questions kept as questions, as precedent. The first names neither the will
+nor freedom nor the thing in itself and is set on no row. The second is not set in the first page's row on the
+division, though it is a conditional of the same form as A 536's there: the sentence says what yielding to
+transcendental realism leaves and not what transcendental realism is, so whether its case is A 536's, appearances
+taken for things in themselves, or B xxvii's, the distinction not made, is said in no passage the map holds and
+would be the map's identification; the first page names it in its gaps list as among the nearest unset, with A 534's
+conditional and B xxviii–xxix's clause on what the critique's restriction made possible, both on the will page and
+on no row there, and under *On what the division is*, open to dispute. The will page's row note, two *On freedom*
+paragraphs, a new *On freedom* paragraph, gaps list, `passages:` and closing paragraph are dated; the first page's
+gaps list (the explanation now in an eleventh passage) and closing paragraph; the run-31 passage and claim and the
+A 543–544 passage no longer say the third paragraph is in no passage; A 536's, A 532's, A 541's, A 537's, A 533's
+spontaneity and B xxvii's contradiction claims and § 55's Kant-first-showed claim carry a dated paragraph, the
+§ 55 passage citing A 532–558 by range its list of pages held; the two "nearest unset premise" sentences on the will
+page are re-tested and re-dated, A 543's »lauter Naturnothwendigkeit« standing inside the »wenn« of a question and
+asserting nothing. README counts 335 nodes (3 thinkers, 5 works, 96 passages, 209 claims, 16 arguments, 4 readings,
+2 comparisons), as `--check` does.
+
+**The adversarial pass, and what it found.** A second agent was given the four new nodes, the diff of the fourteen
+revised files, the korpora pages AA III 368–370, the wikisource transcriptions of A 543 and A 544, the scan of
+A 543, the older nodes the new ones cite, the rendered build, `MODEL.md` and the distilled rules, with the brief to
+re-extract the original, collate the 1781 page, test every qualifier, mode and pronoun, every refused link by
+proposition against cited and uncited claims and the unclaimed sentences, the placement both ways, the accretion
+across the map and the rendering. It fetched in addition wikisource's A 542 and korpora's AA III 366–367. It
+confirmed the original character for character (820 characters, three sentences, no face markup on korpora), the
+collation exactly as listed and nothing else, the indents and the letterspaced »absolute Totalität« on the scan,
+the paragraph whole on A 543, the cited renderings, every »...« in the new and revised bodies inside a stored
+passage but for the declared collation forms and titles, every link pointing at a node that says what the body
+says, the cell's 21 claims with the two new last after exactly eleven A 532–537 claims, »Realismus«, »Antinomie«,
+»Regressus« and »Unbedingte« in no other passage, the rendered pages and the build; and returned 22 findings,
+1 serious, 9 moderate, 12 minor, and six judgements; all 22 accepted and changed before commit, one judgement taken.
+- *Serious, 1.* The sweep by proposition for the question counted "four places" and missed three Kant sentences
+  in the map: B xxviii–xxix's »eben derselben Handlung (in anderer Beziehung genommen)«, the nearest by
+  proposition, sitting in the will page's row on what is drawn; A 538's two sides with the unclaimed »einer und
+  derselben Wirkung«; and A 538–539's »widerspricht keinem von den Begriffen«. All three named now on the node and
+  the page, the count corrected to seven.
+- *Moderate, 9.* "Two paragraphs before the subsection" of A 536 and A 537 was false by korpora's rows (the three
+  paragraphs of the section on causality through freedom stand between); "six pages after" of A 536 was seven; "the
+  one other word for a deception in the map's Kant passages" missed A 235's »Scheins« and »täuscht«; A 534's
+  conditional, a row-mate of the same shape, was weighed nowhere beside A 536's "nearest in form"; the first page's
+  "nearest the row on the division's second question" ignored A 534 and B xxviii–xxix's clause on the critique's
+  restriction; the first page's gaps list still counted the explanation's passages as a ninth and a tenth; the
+  translation's two "it"s hid the resolution of the second »sie« to reason, now "reason"; "the other feminine noun"
+  omitted four candidates; »ihren« was an unnamed resolution.
+- *Minor, 12, all changed:* "dative" for a genitive; »Frage« missing from the feminine singulars; the first claim's
+  title reordering the statement and dropping "at all"; the »aber« dropped from the translation and named only for
+  the statement; »Kette« and »Totalität« in other passages against "found in no other passage"; GD 8's »causa
+  prima« unweighed; "after the fourth paragraph's sentences" of sentences in no cell; B xxvii given A 536's wording;
+  plural "sentences" for one each in the first page's closing paragraph; "a blank row before 3:369.01" read off
+  page 368's foot, said so; the two "nearest unset" superlatives not re-tested; "a text in no passage" for what Kant
+  names by a description, now the map's identification.
+- *Judgements, six:* the second sentence kept out of the division row, defensible and stricter than the row's own
+  practice with B xxvii, kept with the reason and the invitation to dispute; a question in a cell, consistent with
+  the first page's precedent; "Here" opening two statements, kept, with precedent; "scruple", "removed",
+  "assessment", kept; "event" supplied, sound; the Fabel's stage 6 as nearest in form to the second sentence, taken
+  and named on the node.
+The pass cost about 262,000 tokens of the agent's own and took sixteen minutes. New kinds today: a count of places
+as an unchecked superlative; a paragraph count across two sections; the possessive as a pronoun; a case named
+wrongly. All in `memory.md`.
+
+**What else was wrong and why.**
+- The run began reading the changelog at run 30's entry, because the container's `main` and `origin/main` refs
+  stood a commit behind the remote while the checkout was detached at run 31's commit; `git fetch origin main`
+  corrected it before anything was written. The rule is in `memory.md`: fetch first.
+- The build's P1 check caught one quotation on the will page in the nominative, »transscendentaler Realismus«, where
+  the text has the genitive; the same form stood in the second claim's body, which the check does not read; both
+  fixed before the review. The pre-review guillemet grep then caught two more: A 541's sentence quoted with a
+  »würden« the text does not have, and a gloss quoting »aufhalten« for the text's »hält ... auf«.
+- The reviewer's Fabel quotation, taken into the second claim's body with a capital »Mit«, failed the grep against
+  the passage, whose sentence has »mit«; fixed.
+- The first fix script aborted at an anchor whose text had been quoted from memory rather than from the file, after
+  three files were written; the remaining edits were re-run from a second script, verified by the build and the
+  grep.
+- The first wording of the second claim's refusal of Nietzsche linked a claim that does not exist, GD Vernunft 6's
+  second proposition being in the passage and in no claim; the build caught it.
+- `memory.md` went over its cap three times (8,236, 8,069, 8,072 words) and was compressed in six passes to 7,995,
+  the count asserted before each edit.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The next items, in order: the Erläuterung's fifth paragraph
+(3:369.24–35, A 544 / B 572, three sentences by the map's count, two questions and a »D. i.« sentence), which asks
+whether the causality of a cause that is itself appearance must be merely empirical, the question the third
+paragraph's »oder ob« is answered by, as the map will have to read the two; then the sixth (3:370.33 ff.), man as
+one of the natural causes with an empirical character; then Prolegomena §§ 58–59; then § 6's conclusions (b) and (c)
+on time if a row or cell asks for them. What remains before a fourth thinker is Phase 2's first filing or the owner's
+word (Ask 10).
+
+**Step 6.** `memory.md` updated in place, under 8,000 words (7,995): the run-32 state, the passage, the three claims
+and their refusals, the will page's row on freedom, the stale-ref rule, the review's rules. Compressed: the run-13
+and run-21 claim enumerations, the Schopenhauer passage list, the Nietzsche JGB 34 and GD 7–8 enumerations, and the
+rules of runs 21 to 28. Dropped: the run-13 line number, the run-21 quotation of A 534, the Schopenhauer span
+openings and the examples inside the compressed rules; all in the changelog entries of 2026-10-19 to 2026-11-04 or
+on the nodes.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-11-10; first, if `INBOX.md` has an entry, the filing
+handled under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows; otherwise the Erläuterung's fifth
+paragraph, AA 3:369.24–35 (A 544 / B 572), three sentences by the map's count, from korpora with the A page on
+wikisource and the scan, through the adversarial pass, its two questions tested as the third paragraph's question
+was and its »D. i.« sentence by the will page's row on the will as cause.
+
+**Effort.** About 320,000 of the 300,000-token ceiling in this session by the session's own count, over the ceiling
+by the records, plus about 262,000 in the adversarial agent: a third on reading the governing files, the memory, the
+last entries, the sources, the scan and the neighbouring nodes; a sixth on the four nodes and the thirteen revisions;
+the rest on the wait, the 22 fixes, seven rounds of memory compression and the records. Nothing spent.
+
 ## 2026-11-08 — run 31: the explanation of the cosmological idea's second paragraph enters the map, A 542–543 / B 570–571: the law of nature, that everything that happens has a cause, that this cause's causality has its cause among the appearances, and that consequently all events are empirically determined in an order of nature, is a law of the understanding from which it is permitted under no pretext to depart or to except any appearance; one sentence, one claim, set on no row, named on the will page under *On freedom*; no run recorded for 2026-11-07
 
 Thirty-first scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the last entry
