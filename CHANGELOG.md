@@ -2,6 +2,173 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-11-12 — run 35: the explanation of the cosmological idea's sixth paragraph enters the map whole, A 544–547 / B 572–575 (AA 3:369.36–371.14), thirteen sentences from the principle of causality to the faculties called understanding and reason; three claims: supposing it should otherwise also be merely invented, it does the understanding not the least damage if one assumes that among the natural causes there are also some that have a faculty which is only intelligible, yet so that the action in appearance of this cause is in accordance with all laws of empirical causality, set in the Kant cell of the will page's row on the will as cause by the criterion of 2026-11-10 with two identifications named as the map's; man is one of the appearances of the world of sense and in so far also one of the natural causes whose causality must stand under empirical laws; man cognizes himself also through mere apperception and is to himself in one part phenomenon, in another, with respect to certain faculties, a merely intelligible object, both on no row
+
+Thirty-fifth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the last entry records; no
+handover). Read all governing files first (`DESIGN.md` to its *Decisions* section; nothing on the site's design
+changed). The run fired the day after run 34, as that entry asked. The container's checkout again began detached at
+run 34's commit with the local refs behind; `git fetch origin main` and a fast-forward came first, the changelog read
+after.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in the session that received
+it; nothing new. No dispute, no attestation, no form filing (the workflow made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 4 new (1 passage, 3 claims), 8 files revised in their bodies (the will page in five places, the
+first page in three, the four earlier passages of the explanation, the § 55 passage, README's count).** The entry of
+2026-11-11 named as the next content item the explanation's sixth paragraph from 3:369.36, delimited on korpora's rows
+and the scans before entry; the run did that and nothing more.
+
+*Delimiting.* Korpora's rows put a blank row before 3:369.36 and the next before 3:371.15; the 1781 edition indents
+»Wir bedürfen« on A 544 (scan opened on 2026-11-10) and »Daß diese Vernunft« on A 547 (scan opened today) and nothing
+between, so the two agree and the sentences on man from 3:370.32 on stand inside the sixth paragraph, not in a seventh
+of their own, the question the entry of 2026-11-10 left open. The paragraph runs over four pages: A 544 ends inside
+»Eräugnissen« (catchword »äugnissen«), A 545 ends at »das Denken im reinen Verstande« (signature Mm, catchword »und,«),
+A 546 at »weil die Handlung desselben« (catchword »gar«), A 547 carries the paragraph's end, »macht.«, and the seventh's
+indent (signature Mm 2, catchword »Grund«); the scans of A 545, A 546 and A 547 were opened and read, the B pages by the
+concordance, unverified.
+
+*The passage,* `p-krv-a544-547-b572-575-the-principle-of-causality-natural-causes-with-a-faculty-that-is-only-intelligible-and-man-as-phenomenon-and-intelligible-object`
+(3,675 characters, thirteen sentences by full stop and question mark, none a question; the colon of the fifth and the
+semicolons of the sixth and thirteenth join halves), extracted from korpora's rows line by line and asserted equal to
+the stored original; korpora's one italic tag, »causa phaenomenon« at 3:370.13, normalized to roman and named; the 1781
+edition sets it and »phaenomenon« in antiqua and letterspaces »Handlung in der Erscheinung« on A 545, emphasis the map's
+text does not carry. The collation, from a token-by-token diff of the Akademie text against the four transcriptions:
+thirty-odd orthographic forms with their counts, thirteen punctuation variants, and three word forms, »physische
+Erklärungen«, »vor ein Grund« (the »vor« for »für« A 537 also has) and, from the scan and not the transcription,
+»empirische Fragen« (the review's finding). Terms and the pronouns on the passage: »ihrer« in »aller ihrer Handlungen«,
+feminine or plural where »Subject« is neuter, read as the subject's by sense with nature named as the form's candidate;
+»derselben« in »den bloß empirischen Charakter derselben« the cause's, the effects the other; »desselben« in »die
+Handlung desselben« singular, so not the faculties, read as the intelligible object with man the other candidate;
+»ihm« in the third sentence the understanding, with »Satzes der Causalität« named as the other masculine singular after
+the review. »Apperception« and »Naturregel« occur in no other passage; »intelligibel« stands five times in the paragraph
+and never of a cause, so A 541's count of three places stands. Ten sentences are in no claim, each named on the passage
+with what it says and its test by the row-3 criterion.
+
+*The three claims, all `draft`, each with its quote.*
+`c-kant-assuming-natural-causes-with-a-faculty-that-is-only-intelligible-does-the-understanding-not-the-least-damage`
+(the third sentence, 3:370.05–12, whole on A 545): the statement drops »Nun«, moves the »gesetzt« clause to the front so
+that it reads alone, and asserts only what the sentence asserts, that the assumption does the understanding not the
+least damage, the assumption itself standing under »wenn man annimmt« and its invented-ness conceded under »gesetzt«;
+the English "it" does not resolve, said on the node after the review. Set in the Kant cell of the will page's row on
+the will as cause by the criterion of 2026-11-10, with two identifications named as the map's on the node, in the row
+note and under *On the will as cause*: that the natural causes the sentence names belong to the world of sense, which the
+paragraph's eighth sentence says of man as one of them and A 544's explication of its cause, and no sentence says of
+natural causes as such; and that a faculty »welches nur intelligibel ist«, whose determination to action rests on mere
+grounds of the understanding, is what the criterion calls a causality named as other than merely empirical, as A 538's
+second sentence, the first of the four in the cell, rests the two sides of a causality on a faculty; and, after the
+review, that what the two A 537 claims lack, a sentence calling their cause one of the world of sense, this sentence has
+from the eighth sentence of its own paragraph, the difference the setting rests on. Both open to dispute, and a reader
+who holds that the sentence names no causality but the empirical one of its »so doch« clause may ask for it to be set on
+no row. No link: the fourth sentence grounds it by »Denn« and is in no claim; A 538–539's double-side sentence, the
+nearest in predicate and the nearest pair in the map to a shared premise inside one section of Kant, is refused with the
+reason, the predicates and the subjects differing, open to dispute (the review's judgement J6, taken).
+`c-kant-man-one-of-the-appearances-of-the-world-of-sense-and-one-of-the-natural-causes-whose-causality-must-stand-under-empirical-laws`
+(the eighth, 3:370.33–35, whole on A 546): the sentence whole; names man's causality only as one that must stand under
+empirical laws, so it stands to the criterion as the fifth paragraph's first question does and is on no row; the ninth
+draws from it by »demnach« and is in no claim.
+`c-kant-man-cognizes-himself-through-mere-apperception-and-is-to-himself-in-one-part-phenomenon-in-another-part-a-merely-intelligible-object`
+(the twelfth, 3:371.02–09, A 546–547): »Allein« dropped and named; on no row of the will page (names faculties, an action
+and an object, no causality; neither the will nor »unmittelbar«, so not in the row on immediacy, where B xxviii's
+sentence on cognizing the soul is the nearest row-mate, named after the review, and a sentence added to that row's note)
+and on no row of the first page: it divides man as phenomenon from man as intelligible object, and whether that
+intelligible object is the object B 312's sentence in the division row says is taken as noumenon when thought as in
+itself merely intelligible is an identification the map does not make, named on the node and the page after the review.
+Refusals by proposition on all three, with the target's words and mode, among them A 538's definition and second
+sentence, A 539–541's four, A 544's three, A 537's two, A 542–544's six, A 533's two, B xxvii, B xxviii, B 312; § 55,
+§ 23, § 24, § 21, § 18, the Anhang; JGB 16 (both nodes), 17, 21, 36, 54, GD Irrthümer 3 and 8. The ten unclaimed
+sentences were tested by the criterion: after the review, the sixth passes it (a cause in appearance whose intelligible
+character is the transcendental cause of its empirical one, a character being by A 539 the law of a cause's causality,
+as the cell's A 539 sentence is set) and is left unclaimed by this run's choice, and the fourth does not (the subject's
+causality named only in appearance and conditions of its phaenomenon, no causality other than the empirical), the first
+draft having had the two the other way round. Both pages' gaps lists and closing paragraphs are dated; the four earlier
+passages of the explanation and the § 55 passage name the sixth as held and 3:371.15 as where the unheld text begins;
+the first page's count of the places where »intelligibel« is applied to an object is re-dated and re-worded. README counts
+345 nodes (3 thinkers, 5 works, 98 passages, 217 claims, 16 arguments, 4 readings, 2 comparisons), as `--check` does.
+
+**The adversarial pass, and what it found.** A second agent was given the four new nodes, the diff of the eight revised
+files, korpora's AA III 369–371, wikisource's transcriptions of A 544–547, the scans of A 545–547, the token-diff files,
+the rendered build, `MODEL.md` and the distilled rules, with the brief to re-extract the original, collate the four
+pages, test every qualifier, mode and pronoun, every refusal by proposition against cited and uncited claims, the
+placement both ways under the row-3 criterion for every sentence of the paragraph, the accretion across the map and the
+rendering. It confirmed the original character for character (3,675 characters, the one italic tag), thirteen sentences
+on both texts, the three claimed sentences' lines and quotes, every dropped word named, every qualifier kept, the token
+diff yielding exactly the listed variants, the page boundaries, signatures and catchwords on the scans, the
+letterspacing and the antiqua, every »...« inside a listed passage, every pronoun resolution, the English of all
+thirteen sentences, the two words in no other passage, the row-3 cell and the ordinals on both pages, README's count on
+the files, and the rendering of six pages with every link resolving; and returned 22 findings, 0 serious, 10 moderate,
+12 minor, and six judgements; all 22 accepted and changed before commit, all six judgements taken.
+- *Moderate, 10.* The scan of A 545 reads »empirische Fragen« where the transcription has »empirischen«, a third word
+  form the collation now lists as the scan's; the will page's gaps list, edited today, had grouped the subsection's
+  first paragraph with what is in the map since today, now regrouped; "A 538's first sentence" for the two-sides
+  sentence, the section's second, in three new places and one of 2026-11-10, all corrected; the never-known-immediately
+  sentence cited as A 539 under »würde«, now A 540 under »könnte«; the ich-denke node said to carry JGB 16's attacks,
+  which the contradictio-in-adjecto node carries, now named; the proposition sweep had missed A 538–539's double-side
+  sentence on both the third and the twelfth, and the two »würde« restatements of the faculty on the third, now named;
+  the twelfth's refusals from the row on immediacy and the division row named no row-mate, now B xxviii and B 312 with
+  the reasons; »ihm« had no alternative named, now »Satzes der Causalität« with the reason for the understanding; the
+  first page's "»intelligibel« ... in three places" was stale since A 537, A 539–541 and A 544 entered, re-worded as the
+  places where the word is applied to an object and re-dated; "»Gebrauch« as at B 303" named a page in no passage, now
+  A 236 / B 295.
+- *Minor, 12, all changed:* "the sentences on man from 3:370.33 on, the seventh to the thirteenth" (the seventh is not
+  on man); the sixth sentence's semicolon uncounted; the fifth sentence's colon rendered ", then" unnamed; "»bey« twice"
+  for »bey« and »Bey«; one comma counted twice in the collation; »desselben« in »mit aller Causalität desselben« with no
+  alternative; the body claiming the English carried the resolution of »das« and »es«; a catchword's word tail in
+  guillemets; "said there" for a row note that said nothing; divergent earlier renderings of seven glossed terms
+  unnamed; "in respect of" in the passage's title against "with respect to" everywhere else; "what the damage would be
+  to" without "on the map's resolution of »ihm«".
+- *Judgements, six, all taken:* the third sentence's setting defensible with the second identification worded as a
+  faculty and not a causality named in the word, and the difference from the A 537 claims said (J1); the fourth sentence
+  does not pass the criterion (J2) and the sixth does, by the cell's own precedent (J3), one criterion, one outcome; the
+  twelfth on no row of either page, with B 312's row-mate named and the identification left unmade (J4); "also" restored
+  in the third's title (J5); no shared premise with the double-side sentence, the refusal written on the node (J6).
+The pass cost about 242,000 tokens of the agent's own and took fifteen minutes. New kinds today: a word form the scan
+has and the transcription does not; a list's grouping broken by an insertion; an ordinal of a sentence inside a section
+misremembered; a criterion applied to two unclaimed sentences with the outcomes reversed. All in `memory.md`.
+
+**What else was wrong and why.**
+- The first guillemet grep flagged the two comparison pages' every quotation, because the pages wrap lines inside
+  »...« and the check did not fold whitespace; the real misses it found in the new nodes were fixed before the review:
+  the seventh paragraph's first words in guillemets (text in no passage), 1781 page-boundary fragments quoted with the
+  1781 comma, and six glosses in the infinitive where the rule asks for the sentence's own form.
+- The first fix script aborted on an anchor that lacked the guillemets round »Apperception«; it writes a file only
+  after all its anchors match, so the passage and the first claim were written and the second claim and both pages
+  not, and a second script finished them; the commit was never in the same call.
+- `memory.md` went over its cap (8,379 words) with the run-35 block; the run-30 to run-33 blocks were compressed to
+  their ids, counts and placements, and it stands at 7,971.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. The next items, in order: the explanation's seventh paragraph,
+from 3:371.15 (A 547 / B 575), on reason's causality and the imperatives, »Das Sollen«, to be delimited on korpora's
+rows (AA III 371–372) and the scans of A 547–548 before entry, its sentences tested by the row-3 criterion and by the row
+on freedom's words, with the question whether an »Imperativ« or a »Sollen« sentence belongs to the row on what is drawn
+from the will decided on the page; then the sixth paragraph's fourth and sixth sentences as claims if a row or a link
+asks for them (the sixth passes the criterion and is unclaimed by choice); then A 536–537's first and third sentences and
+A 538's »bei einer und derselben Wirkung« sentence; then Prolegomena §§ 58–59; then § 6's conclusions (b) and (c) on
+time. What remains before a fourth thinker is Phase 2's first filing or the owner's word (Ask 10).
+
+**Step 6.** `memory.md` updated in place, under 8,000 words (7,971): the run-35 state, the passage with its pages and
+collation, the three claims with their resolutions and placements, the two identifications the cell setting rests on,
+the outcomes for the unclaimed sentences, the review's rules. Compressed: the run-30 to run-33 blocks (their terms,
+refusal lists, pronoun bindings and 1781 variants are on the nodes and in the entries of 2026-11-06 to 2026-11-10) and
+the run-34 block (its collation and refusals on the nodes and in the entry of 2026-11-11). Dropped: nothing not in a
+changelog entry or on a node.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-11-13; first, if `INBOX.md` has an entry, the filing handled
+under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows; otherwise the explanation's seventh paragraph
+from 3:371.15, delimited on korpora's rows (AA III 371–372) and the scans of A 547–548, from korpora through the
+adversarial pass.
+
+**Effort.** About 290,000 of the 300,000-token ceiling in this session by the session's own count, under the ceiling,
+plus about 242,000 in the adversarial agent: two fifths on reading the governing files, the memory, the last three
+entries, the sources, the three scans and the neighbouring nodes; a quarter on the four nodes and the eight revisions;
+the rest on the wait, the 22 fixes, the records and the commit. Nothing spent.
+
 ## 2026-11-11 — run 34: the fifth and sixth sentences of A 537 / B 565 enter the map as claims, the reviewer's deferred judgement of 2026-11-10: such an intelligible cause is not determined with respect to its causality by appearances, although its effects appear and can be determined by other appearances; it is therefore, together with its causality, outside the series, whereas its effects are found in the series of empirical conditions; the sixth drawn from the fifth by »also« and the seventh, already a claim, from the sixth, both links set; both claims tested by the row-3 criterion of 2026-11-10 and set on no row of either comparison
 
 Thirty-fourth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the last entry
