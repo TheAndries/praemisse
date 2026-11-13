@@ -2,6 +2,198 @@
 
 Newest first. What was done, decided, and got wrong.
 
+## 2026-11-13 — run 36: the explanation of the cosmological idea's seventh paragraph enters the map whole, A 547 / B 575 (AA 3:371.15–26), five sentences on reason's causality and the ought; three claims, all on no row of either comparison: that reason has causality, or at least that we represent to ourselves a causality of that kind in it, is clear from the imperatives which we in everything practical assign as rules to the executing powers; the ought expresses a kind of necessity and connection with grounds that otherwise does not occur in the whole of nature; it is impossible that something in nature ought to be otherwise than it in fact is in all these temporal relations, and the ought, if one has merely the course of nature before one's eyes, has no meaning at all; the first tested by the row-3 criterion of 2026-11-10 and not set, the reason argued on the page
+
+Thirty-sixth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the last entry records; no
+handover). Read all governing files first (`DESIGN.md` to its *Decisions* section; nothing on the site's design
+changed). The run fired the day after run 35, as that entry asked. The container's checkout again began detached at
+run 35's commit with the local refs behind; `git fetch origin main` and a fast-forward came first, the changelog read
+after.
+
+**Step 1.** No ask changed status. Asks 4 (deferred), 9 and 10 stay open; none blocks the plan.
+
+**Step 2.** `INBOX.md` carries the owner notes of 2026-10-11 and 2026-10-19, each handled in the session that received
+it; nothing new (last changed 2026-10-19 by the git history). No dispute, no attestation, no form filing (the workflow
+made no commit).
+
+**Step 3.** No open motion.
+
+**Step 4, the nodes: 4 new (1 passage, 3 claims), 8 files revised in their bodies (the will page in six places, the
+first page in three, the four earlier passages of the explanation and the sixth paragraph's passage, README's count).**
+The entry of 2026-11-12 named as the next content item the explanation's seventh paragraph from 3:371.15, delimited on
+korpora's rows and the scans before entry, its sentences tested by the row-3 criterion and by the row on freedom's
+words, with the question whether an »Imperativ« or »Sollen« sentence belongs to the row on what is drawn from the will
+decided on the page; the run did that and nothing more.
+
+*Delimiting.* Korpora's rows put a blank row before 3:371.15 and the next before 3:371.27; the 1781 edition indents
+»Daß diese Vernunft« and »Dieses Sollen nun«, both on A 547, read on the scan today, so the two agree, and the
+paragraph is five sentences on one page, between the sixth paragraph's »macht.« and the eighth's first line, which runs
+on to A 548 with the catchword »Grund«; signature Mm 2; the running head of the ninth section. The B page by the
+concordance, unverified.
+
+*The passage,* `p-krv-a547-b575-that-reason-has-causality-is-clear-from-the-imperatives-and-the-ought-has-no-meaning-for-the-mere-course-of-nature`
+(818 characters, five sentences by full stop and question mark, none a question; the semicolon of the fourth and the
+two of the fifth join halves), extracted from korpora's rows line by line and asserted equal to the stored original;
+nothing set off on korpora; the 1781 edition letterspaces »Imperativen«, »was da ist,« and »seyn soll,« and sets
+»Sollen« in a larger face, emphases the map's text does not carry, named. The collation, from a token-by-token diff of
+the Akademie text against the transcription and from the scan: nine orthographic forms (»Caussalität«, »Practischen«,
+»vorkomt«, »kan«, »seyn« twice, »ia«, »blos«, »leztere«), eight punctuation variants, one word form (»vor
+Eigenschaften«, the »vor« for »für« of A 537 and A 546), and one variant the scan has and the transcription does not:
+no comma after »vorstellen« before »ist aus«, where the transcription prints one, as run 35 found »empirische Fragen«
+on A 545. Terms and pronouns on the passage: »Sollen« "the ought" and »soll« "ought to", against B 308's »entsprechen
+sollen« "are to" and beside A 534's »habe geschehen sollen«; »Bedeutung« "meaning" as at A 541, "sense" at B 307–312;
+»ja« "indeed" against A 537's "after all"; »die ... vorkommt« singular, so »Art«, »Nothwendigkeit« or »Verknüpfung«
+and not »Gründen«, read as the kind; »dieser« in the third sentence feminine singular, read as nature with the three
+other candidates named; »darin« nature; »diesen Zeitverhältnissen« the third sentence's what is, has been, will be;
+»der letztere« the circle. the stem of »Imperativen« stands in one other passage, the Fabel's stage 3, »ein Imperativ« of the true world, in
+no claim (the first draft said "no other passage", the review's first serious finding); »Wollen« and »Willkür« stand in
+the eighth paragraph, in no passage, »Willkür« in the map at A 533–534; nothing in the paragraph names the will, freedom,
+the thing in itself or appearance.
+
+*The three claims, all `draft`, each with its quote, none linked to anything.*
+`c-kant-that-reason-has-causality-or-at-least-that-we-represent-one-in-it-is-clear-from-the-imperatives` (the first
+sentence, 3:371.15–17): the statement drops »nun« and the demonstrative of »diese Vernunft«, which points back to the
+sixth paragraph's last sentence, »Wir nennen diese Vermögen Verstand und Vernunft«, in that passage and in no claim,
+and keeps the alternative »wenigstens« frames, so that what is asserted is that it is clear from the imperatives that
+reason has causality, or at least that we represent to ourselves a causality of that kind in it, the weaker limb
+asserted at least. Tested by the row-3 criterion of 2026-11-10 (a cause that belongs to the world of sense whose
+causality is named as other than merely empirical): the sentence names a cause, reason, and its causality, and names
+the causality neither as merely empirical nor as other, and no cause of the world of sense; the map resolves
+»diese Vernunft« to the sixth paragraph's faculty, and so read the sentence's cause is the faculty with respect to
+which man is to himself a merely intelligible object, which no sentence in the map places in the world of sense, so
+the first limb fails, the thirteenth sentence's »von allen empirisch bedingten Kräften unterschieden« being of the
+power, not its causality; the sentence would pass only if its cause were man, one of the natural causes by the eighth
+sentence, and reason his faculty, an identification across three sentences of two paragraphs that A 545's sentence in
+the cell makes inside itself and A 544's explication inside itself; the map reads the criterion, since today and as
+its own reading, as met by what a sentence names in its own words with identifications of those words only, dated on
+the page, does not make the identification and sets the sentence on no row, said on the node, in the row note and
+under *On the will as cause*, open to dispute, a reader who holds that the eighth sentence's man and this sentence's
+reason make one cause may ask. The first draft had argued the refusal the other way round, that the map "does not
+make" the resolution it had just made, and that the carried predicates would pass the criterion; the review (M6, J1)
+showed that, carried in, they defeat the first limb, and the reason was rewritten on both nodes. The question the entry of 2026-11-12 left to the page, whether an imperative sentence
+belongs to the row on what is drawn from the will, is answered no, under *On what is drawn from the will*: the
+sentence draws reason's causality from the imperatives, not anything from the will, which it does not name; its
+»Praktischen« and »Imperativen« are the Kant words in the map nearest the »Moral« of that row's cells, which the
+paragraph does not name. Not in the row on freedom (no »Freiheit«, »frei«, »Willkür«), not on the first page.
+`c-kant-the-ought-expresses-a-kind-of-necessity-and-connection-with-grounds-that-otherwise-does-not-occur-in-the-whole-of-nature`
+(the second, 3:371.17–19): the sentence whole; says what the ought expresses and that this does not occur in nature
+otherwise, not that there is such a necessity, the map's reading of »drückt ... aus«; no cause, no causality, no row.
+`c-kant-impossible-that-something-in-nature-ought-to-be-otherwise-than-it-is-and-the-ought-has-no-meaning-for-the-mere-course-of-nature`
+(the fourth, 3:371.21–23): »darin« rendered "in nature", resolved through the third sentence's »dieser«; »diesen
+Zeitverhältnissen« kept and resolved on the node, not written into the statement (run 34's J1); two assertions joined
+by the semicolon and »ja«, an intensifier, the »wenn« condition on the second only; no row.
+*Refusals by proposition on all three,* with the target's words and mode: A 534's practical freedom presupposing that
+something »habe geschehen sollen« and a causality in the power of choice, the one other Kant sentence in the map that
+joins an ought to a causality, not one proposition with any of the three and not contradictory with the fourth
+sentence on the map's reading, open to dispute; A 533's two, the B xxvi footnote's »praktischen«, A 545's assumption
+(whether this reason is a faculty of that assumption no passage says), A 546's man, A 538–541's four, A 544's two,
+A 537's, B xxviii's two, A 542–543's law of nature (the nearest to the course of nature), A 543–544's four, A 543's
+conditional, A 539's »denn« clause on time and the Aesthetic's time claim (no identification of the temporal relations
+with time as condition), A 236 / B 295 (nearest the unclaimed third sentence); Schopenhauer's § 55 (negative freedom,
+sharing »Nothwendigkeit« and »Grund« and no proposition; every thing as appearance necessary, whose »nothwendig« says
+what a thing is where Kant's »unmöglich« governs an ought; the person never free; Kant first showed the coexistence),
+§ 19's key; Nietzsche's GD 3 (»dass Wille ein Vermögen ist«, »Der Wille bewegt nichts mehr«, »Es giebt gar keine
+geistigen Ursachen!«, the nearest to a causality of reason, which deny of the will and of spiritual causes what the
+first sentence asserts of reason, the identification of reason with either the map's to make and not made, and the
+weaker limb denied by nothing, no attack, open to dispute), JGB 36, JGB 19's »weshalb« clause, JGB 21's conventional
+fictions (a »soll«), its invented »Zwang«, »Gesetz«, »Grund« (who invented the sign-world, not a denial that the ought
+expresses a necessity found nowhere else in nature), its »"An-sich"« and »Folgen-Müssen«, GD 7's two, GD 8's two. The
+two unclaimed sentences, the third (what the understanding can cognize of nature) and the fifth (what we cannot ask of
+nature), each with what it says and the nearest claim, named on the passage; a reader may ask for either.
+*Pages.* The will page: the row-3 note gains a sentence, *On the will as cause* a paragraph, *On what is drawn from
+the will* a sentence, the gaps list the seventh paragraph as held and 3:371.27 as where the unheld text begins, the
+closing paragraph the date, `passages:` the new passage; the first page the same in its gaps list, closing paragraph
+and `passages:`; the four earlier passages of the explanation and the sixth paragraph's passage name the seventh as
+held and the eighth paragraph as where the unheld text begins, the sixth's »Daß diese Vernunft nun Causalität habe«
+now in guillemets as text in a passage. README counts 349 nodes (3 thinkers, 5 works, 99 passages, 220 claims, 16
+arguments, 4 readings, 2 comparisons), as `--check` does. The guillemet check over the new claim bodies, run before the
+review, found five quotations wrong and one running head quoted from no passage, all corrected before the review:
+GD 3's »dass Wille ein Vermögen ist« (written with »der«), § 55's negative-freedom clause (its word order), JGB 21's
+sentence on inventing causes (»Wir sind es, die allein ...«, written as »Es sind wir allein, welche ...«), »Folgen-Müssen«
+(written lower-case), and »geistige Ursache« in the singular (the passage has the plural).
+
+**The adversarial pass, and what it found.** A second agent was given the four new nodes, the diff of the eight revised
+files, korpora's AA III 371–372, wikisource's transcriptions of A 547–548, the scan of A 547 with two enlarged crops,
+the token-diff files, the rendered build, `MODEL.md` and the distilled rules, with the brief to re-extract the original,
+collate the page against the transcription and the scan, test every qualifier, mode, pronoun and relative, every refusal
+by proposition against cited and uncited claims and the unclaimed sentences, the placement of all five sentences under
+the row-3 criterion with the precedents (A 545's S3 set, A 537's two and A 544's Q1 not), the row on what is drawn, the
+accretion across the map and the rendering. It confirmed the original character for character (818 characters, five
+sentences, three semicolons), the token diff yielding exactly the listed variants, the scan's two indents, running head,
+signature, catchword, the three letterspaced terms and the larger »Sollen«, no comma visible after »vorstellen«, all
+five sentences' English, every qualifier and mode, every pronoun's candidates, every cited node's words and mode, every
+»...« in the new bodies inside a passage, the eight revised files' sentences true of the files, README's count, and six
+rendered pages with all 1,204 internal links resolving; and returned 26 findings, 3 serious, 11 moderate, 12 minor, and
+four judgements; all 26 accepted and changed before commit, all four judgements taken.
+- *Serious, 3.* "»Imperativen«, a word in no other passage" was false: the Fabel's stage 3 has »ein Imperativ« of the
+  true world, »königsbergisch«, in the passage and in no claim, now named on the passage, in the first claim's Nietzsche
+  sweep and in the will page's row-5 paragraph, with the offer of stage 3 as a claim; "the one other Kant sentence in
+  the map with »praktisch«" was false, the word standing at A 533–534 three times, B xxviii and B xxix–xxx, in claims
+  the same body names, now listed; the »sollen« gloss named two of seven Kant places and "the one other Kant sentence
+  with an ought" held only as "rendered 'ought'", now said so with all seven places, and § 55's unclaimed clause »kann
+  daher in keiner Beziehung anders seyn, als es ist«, the Schopenhauer words nearest in form to the fourth sentence,
+  now named on the third claim with the »kann« against »soll« contrast the refusal rests on.
+- *Moderate, 11.* »Natur« counted four times where it stands three, and »Vernunft« misplaced; "»Wollen« and »Willkür«
+  first occur in the eighth paragraph" unsourced for the first paragraph and false for the map; the »ja« gloss citing an
+  "after all" at A 537 where no »ja« stands ("after all" renders »doch« there); the »Bedeutung« gloss misstating B 308
+  ("all meaning of the categories") and omitting six places, now listed by rendering; »eben so wohl« at A 543–544, not
+  A 537, and »vor ein Grund« on A 545, not A 546; the placement reason's mechanism wrong (above); the in-sentence limit
+  of the criterion formulated today and undated, now dated on the page; the row-5 sentence calling the paragraph's two
+  words "the words in the map's Kant passages nearest to »Moral«" a false superlative (B xxviii has »Moral«); the
+  fourth sentence's statement keeping "these temporal relations" where the first drops its demonstrative, the reason now
+  written; the scan's missing comma read without naming the comma-wide gap; the faces not counted term by term.
+- *Minor, 12, all changed:* the third sentence's English commas the 1781 edition's, unnamed; »wenigstens«, »Praktischen«
+  and »in der That« glosses naming one earlier place where several exist; the catchword made the page-end fragment by
+  an apposition; "which runs on to A 548" attached to a word; the 1781 forms in guillemets against the no-passage rule,
+  now reconciled in one sentence on the passage; the first claim's Kant sweep missing A 537's sixth sentence, A 538's
+  nothing-hinders, A 539's every-cause-has-a-character and A 540's intellectual causality; the second claim's Nietzsche
+  sweep missing JGB 21's »"Causal-Verknüpfung"« and »"psychologischer Nothwendigkeit"«; A 532–533 and A 540–541 cited by
+  one page; summaries of unheld text beyond the reference; "set against" as a paraphrase of A 534.
+- *Judgements, four, all taken:* the first sentence not set in the row on the will as cause, A 545's S3 not unset, the
+  reason rewritten (J1); not in the row on what is drawn from the will (J2); not in the row on freedom nor on the first
+  page (J3); no link due to A 534, § 55, JGB 21 or GD, the one gap the Fabel's stage 3 in no claim (J4).
+The pass cost about 245,000 tokens of the agent's own and took fourteen minutes. New kinds today: a word-absence claim
+that greps the word and not the stem; a placement reason that contradicts the node's own pronoun resolution; a gloss
+citing a rendering at a page where the word does not stand. All in `memory.md`.
+
+**What else was wrong and why.**
+- The guillemet grep before the review caught five misquotations and a running head quoted from no passage (above);
+  the build's own check, which covers the comparison pages only, then refused the will page's »ein Imperativ«, quoted
+  from a passage the page does not list, reworded in plain words.
+- `memory.md` went over its cap twice today (8,173 and 8,232 words) and was brought to 7,999 by compressing the run-34
+  and run-35 blocks, the Nietzsche claims list, the Schopenhauer shared-premise list, the comparisons paragraph and two
+  argument descriptions; their details are on the nodes and in the entries of 2026-11-11 and 2026-11-12.
+- The stop hook asked for a commit while the reviewer ran; refused, as every content run has, and a watch on the report
+  file was armed instead.
+
+**Step 5.** Strategy unchanged; `PLAN.md` not rewritten. No checkpoint was missed: Checkpoint 2 waits on the first
+filing. The next items, in order: the explanation's eighth paragraph, 3:371.27–372.11 (A 547–548 / B 575–576), on the
+ought as expressing a possible action, the first paragraph of the subsection with »Willkür« and »Wollen«, to be
+delimited on korpora's rows (AA III 371–372) and the scan of A 548 before entry, its sentences tested by the row-3
+criterion as read since today, by the row on freedom's words and by the row on what is drawn; then the Fabel's stage 3
+as a claim if a row or a link asks for it; then the sixth paragraph's fourth and sixth sentences, the seventh's third
+and fifth, A 536–537's first and third and A 538's »bei einer und derselben Wirkung« sentence as claims if asked; then
+Prolegomena §§ 58–59; then § 6's conclusions (b) and (c) on time. What remains before a fourth thinker is Phase 2's
+first filing or the owner's word (Ask 10).
+
+**Step 6.** `memory.md` updated in place, under 8,000 words (7,999): the run-36 state, the passage with its page and
+collation, the three claims with their resolutions and placements, the criterion's reading dated today, the review's
+rules. Compressed: the run-34 and run-35 blocks, the Nietzsche claims list, the Schopenhauer shared-premise list and
+terms, the comparisons paragraph, two Kant argument descriptions, the tooling note. Dropped: nothing not in a changelog
+entry or on a node.
+
+**Step 8.** No new ask. Asks 4, 9 and 10 stay open as they were.
+
+**Tomorrow's run should produce:** an entry dated 2026-11-14; first, if `INBOX.md` has an entry, the filing handled
+under `DISPUTES.md`; if the owner has answered Ask 9 or 10, what follows; otherwise the explanation's eighth paragraph
+from 3:371.27, delimited on korpora's rows (AA III 371–372) and the scan of A 548, from korpora through the adversarial
+pass.
+
+**Effort.** About 300,000 of the 300,000-token ceiling in this session by the session's own count, at the ceiling,
+plus about 245,000 in the adversarial agent: a third on reading the governing files, the memory, the last three
+entries, the sources and the scan; a quarter on the four nodes and the eight revisions; the rest on the wait, the 26
+fixes, the records and the commit. Nothing spent.
+
 ## 2026-11-12 — run 35: the explanation of the cosmological idea's sixth paragraph enters the map whole, A 544–547 / B 572–575 (AA 3:369.36–371.14), thirteen sentences from the principle of causality to the faculties called understanding and reason; three claims: supposing it should otherwise also be merely invented, it does the understanding not the least damage if one assumes that among the natural causes there are also some that have a faculty which is only intelligible, yet so that the action in appearance of this cause is in accordance with all laws of empirical causality, set in the Kant cell of the will page's row on the will as cause by the criterion of 2026-11-10 with two identifications named as the map's; man is one of the appearances of the world of sense and in so far also one of the natural causes whose causality must stand under empirical laws; man cognizes himself also through mere apperception and is to himself in one part phenomenon, in another, with respect to certain faculties, a merely intelligible object, both on no row
 
 Thirty-fifth scheduled run, on `main`, on the configured model `claude-fable-5-1` (the same the last entry records; no
